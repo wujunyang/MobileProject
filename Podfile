@@ -1,0 +1,8 @@
+platform :ios, '7.0'
+pod 'AFNetworking', '~>2.6.0'
+pod 'SDWebImage', '~>3.7'
+pod 'JSONModel', '~> 1.0.1'
+pod 'Masonry','~>0.6.1'
+pod 'FMDB/common' , '~>2.5'
+pod 'FMDB/SQLCipher', '~>2.5'
+pod 'CocoaLumberjack', '~> 2.0.0-rc'
