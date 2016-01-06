@@ -655,6 +655,8 @@
 		34E894CD1C3BBF79001327C8 /* LogInApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894CC1C3BBF79001327C8 /* LogInApi.m */; settings = {ASSET_TAGS = (); }; };
 		34E894D31C3BC153001327C8 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894D21C3BC153001327C8 /* LogInViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34E894D61C3BCD2F001327C8 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894D51C3BCD2F001327C8 /* LoginModel.m */; settings = {ASSET_TAGS = (); }; };
+		34EC47C01C3D6B490041CB85 /* 项目目录.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC47BF1C3D6B490041CB85 /* 项目目录.png */; settings = {ASSET_TAGS = (); }; };
+		34EC47C11C3D6B490041CB85 /* 项目目录.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC47BF1C3D6B490041CB85 /* 项目目录.png */; settings = {ASSET_TAGS = (); }; };
 		9014C40DD45909D3FC1F2EBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 533C667C4AE7D52B4A1E63C2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -1324,6 +1326,7 @@
 		34E894D21C3BC153001327C8 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 		34E894D41C3BCD2F001327C8 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
 		34E894D51C3BCD2F001327C8 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		34EC47BF1C3D6B490041CB85 /* 项目目录.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "项目目录.png"; sourceTree = "<group>"; };
 		533C667C4AE7D52B4A1E63C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A48D3EEAEFFB901D36D8E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1453,6 +1456,7 @@
 		34E890851C3B89B2001327C8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				34EC47BF1C3D6B490041CB85 /* 项目目录.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -3154,6 +3158,7 @@
 				34E08B9F1C3BFB90005C6CA3 /* Assets.xcassets in Resources */,
 				34E08BA01C3BFB90005C6CA3 /* MJRefresh.bundle in Resources */,
 				34E08BA11C3BFB90005C6CA3 /* NSDateTimeAgo.bundle in Resources */,
+				34EC47C11C3D6B490041CB85 /* 项目目录.png in Resources */,
 				34E08BA21C3BFB90005C6CA3 /* Main.storyboard in Resources */,
 				34E08BA31C3BFB90005C6CA3 /* File.strings in Resources */,
 				34E08BA41C3BFB90005C6CA3 /* MJPhotoBrowser.bundle in Resources */,
@@ -3174,6 +3179,7 @@
 				34E890901C3B89B2001327C8 /* Main.storyboard in Resources */,
 				34E8914E1C3B9986001327C8 /* File.strings in Resources */,
 				34E8948F1C3B9FC1001327C8 /* MJPhotoBrowser.bundle in Resources */,
+				34EC47C01C3D6B490041CB85 /* 项目目录.png in Resources */,
 				34E8949E1C3B9FC1001327C8 /* QBImagePickerController.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
