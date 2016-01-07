@@ -41,6 +41,10 @@
 {
     [super viewDidLoad];
     
+    self.extendedLayoutIncludesOpaqueBars=YES;
+    [self.navigationController.navigationBar setTranslucent:NO];
+    [self.navigationController setNavigationBarHidden:NO];
+    
     if ([self respondsToSelector:@selector(backgroundImage)]) {
         UIImage *bgimage = [self navBackgroundImage];
         [self setNavigationBack:bgimage];
@@ -69,8 +73,6 @@
 {
     [super viewWillAppear:animated];
     
-    [self.navigationController.navigationBar setTranslucent:YES];
-    [self.navigationController setNavigationBarHidden:NO];
     if ([self respondsToSelector:@selector(set_colorBackground)]) {
         UIColor *backgroundColor =  [self set_colorBackground];
         UIImage *bgimage = [UIImage imageWithColor:backgroundColor];
