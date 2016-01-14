@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "LogInViewController.h"
 #import "MyFileLogger.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-
+//跳转到首页
+-(void)setupHomeViewController;
 @end
 

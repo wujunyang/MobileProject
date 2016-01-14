@@ -657,6 +657,10 @@
 		34E894D61C3BCD2F001327C8 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894D51C3BCD2F001327C8 /* LoginModel.m */; settings = {ASSET_TAGS = (); }; };
 		34EC47C01C3D6B490041CB85 /* 项目目录.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC47BF1C3D6B490041CB85 /* 项目目录.png */; settings = {ASSET_TAGS = (); }; };
 		34EC47C11C3D6B490041CB85 /* 项目目录.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC47BF1C3D6B490041CB85 /* 项目目录.png */; settings = {ASSET_TAGS = (); }; };
+		34EC806C1C472BF100C7E40A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC806B1C472BF100C7E40A /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34EC806D1C472BF100C7E40A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC806B1C472BF100C7E40A /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34EC80721C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC80711C472E2100C7E40A /* UIPlaceHolderTextView.m */; settings = {ASSET_TAGS = (); }; };
+		34EC80731C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC80711C472E2100C7E40A /* UIPlaceHolderTextView.m */; settings = {ASSET_TAGS = (); }; };
 		9014C40DD45909D3FC1F2EBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 533C667C4AE7D52B4A1E63C2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -1327,6 +1331,10 @@
 		34E894D41C3BCD2F001327C8 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
 		34E894D51C3BCD2F001327C8 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		34EC47BF1C3D6B490041CB85 /* 项目目录.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "项目目录.png"; sourceTree = "<group>"; };
+		34EC806A1C472BF100C7E40A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		34EC806B1C472BF100C7E40A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		34EC80701C472E2100C7E40A /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
+		34EC80711C472E2100C7E40A /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
 		533C667C4AE7D52B4A1E63C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A48D3EEAEFFB901D36D8E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1482,6 +1490,8 @@
 		34E890B81C3B89D0001327C8 /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
+				34EC80651C472B5C00C7E40A /* Home(首页) */,
+				34EC80621C472A6A00C7E40A /* Public(公共) */,
 				34E890C91C3B8D70001327C8 /* Base(基类) */,
 				34E890C41C3B8C68001327C8 /* LogIn(登录) */,
 			);
@@ -1506,6 +1516,7 @@
 		34E890BA1C3B8A52001327C8 /* Vender(第三方) */ = {
 			isa = PBXGroup;
 			children = (
+				34EC806F1C472DFB00C7E40A /* UIPlaceHolderTextView */,
 				34E08A521C3BE80F005C6CA3 /* GVUserDefaults */,
 				34E894A81C3BA300001327C8 /* JDStatusBarNotification */,
 				34E894AF1C3BA300001327C8 /* SVProgressHUD */,
@@ -3018,6 +3029,89 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		34EC80621C472A6A00C7E40A /* Public(公共) */ = {
+			isa = PBXGroup;
+			children = (
+				34EC806E1C472D1A00C7E40A /* Other */,
+				34EC80641C472AA900C7E40A /* Model */,
+				34EC80631C472A9100C7E40A /* View */,
+			);
+			name = "Public(公共)";
+			path = Public;
+			sourceTree = "<group>";
+		};
+		34EC80631C472A9100C7E40A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34EC80641C472AA900C7E40A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34EC80651C472B5C00C7E40A /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				34EC80691C472BCC00C7E40A /* Other */,
+				34EC80681C472BB000C7E40A /* Controller */,
+				34EC80671C472BA000C7E40A /* Model */,
+				34EC80661C472B8E00C7E40A /* View */,
+			);
+			name = "Home(首页)";
+			path = Home;
+			sourceTree = "<group>";
+		};
+		34EC80661C472B8E00C7E40A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34EC80671C472BA000C7E40A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34EC80681C472BB000C7E40A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34EC806A1C472BF100C7E40A /* HomeViewController.h */,
+				34EC806B1C472BF100C7E40A /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34EC80691C472BCC00C7E40A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		34EC806E1C472D1A00C7E40A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		34EC806F1C472DFB00C7E40A /* UIPlaceHolderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				34EC80701C472E2100C7E40A /* UIPlaceHolderTextView.h */,
+				34EC80711C472E2100C7E40A /* UIPlaceHolderTextView.m */,
+			);
+			path = UIPlaceHolderTextView;
+			sourceTree = "<group>";
+		};
 		549E38115AE0AD579BD3EB1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -3285,6 +3379,7 @@
 				34E08A6F1C3BFB90005C6CA3 /* UIViewController+Visible.m in Sources */,
 				34E08A701C3BFB90005C6CA3 /* MKMapView+ZoomLevel.m in Sources */,
 				34E08A711C3BFB90005C6CA3 /* YTKChainRequestAgent.m in Sources */,
+				34EC80731C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */,
 				34E08A721C3BFB90005C6CA3 /* UIDevice+PasscodeStatus.m in Sources */,
 				34E08A731C3BFB90005C6CA3 /* UIScrollView+MJExtension.m in Sources */,
 				34E08A741C3BFB90005C6CA3 /* UIApplication+NetworkActivityIndicator.m in Sources */,
@@ -3453,6 +3548,7 @@
 				34E08B171C3BFB90005C6CA3 /* UIImageView+Reflect.m in Sources */,
 				34E08B181C3BFB90005C6CA3 /* UIView+GestureCallback.m in Sources */,
 				34E08B191C3BFB90005C6CA3 /* NSURL+Param.m in Sources */,
+				34EC806D1C472BF100C7E40A /* HomeViewController.m in Sources */,
 				34E08B1A1C3BFB90005C6CA3 /* UIImageView+GeometryConversion.m in Sources */,
 				34E08B1B1C3BFB90005C6CA3 /* UIView+Debug.m in Sources */,
 				34E08B1C1C3BFB90005C6CA3 /* NSArray+Block.m in Sources */,
@@ -3600,6 +3696,7 @@
 				34E8943B1C3B9A03001327C8 /* UIViewController+Visible.m in Sources */,
 				34E893BD1C3B9A03001327C8 /* MKMapView+ZoomLevel.m in Sources */,
 				34E891431C3B9739001327C8 /* YTKChainRequestAgent.m in Sources */,
+				34EC80721C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */,
 				34E893DE1C3B9A03001327C8 /* UIDevice+PasscodeStatus.m in Sources */,
 				34E891271C3B92AA001327C8 /* UIScrollView+MJExtension.m in Sources */,
 				34E893C71C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.m in Sources */,
@@ -3768,6 +3865,7 @@
 				34E893F71C3B9A03001327C8 /* UIImageView+Reflect.m in Sources */,
 				34E894281C3B9A03001327C8 /* UIView+GestureCallback.m in Sources */,
 				34E893B41C3B9A03001327C8 /* NSURL+Param.m in Sources */,
+				34EC806C1C472BF100C7E40A /* HomeViewController.m in Sources */,
 				34E893F51C3B9A03001327C8 /* UIImageView+GeometryConversion.m in Sources */,
 				34E894231C3B9A03001327C8 /* UIView+Debug.m in Sources */,
 				34E8936C1C3B9A03001327C8 /* NSArray+Block.m in Sources */,
