@@ -20,7 +20,29 @@
     //日志初始化
     [MyFileLogger sharedManager];
     
-    // Override point for customization after application launch.
+    //启动友盟统计
+    [MPUmengHelper UMAnalyticStart];
+    
+    //地图定位初始化
+    [MPLocationManager installMapSDK];
+    
+    //百度地图定位
+    [[MPLocationManager shareInstance] startBMKLocationWithReg:^(BMKUserLocation *loction, NSError *error) {
+        if (error) {
+            DDLogError(@"定位失败,失败原因：%@",error);
+        }
+        else
+        {
+            DDLogError(@"定位信息：%f,%f",loction.location.coordinate.latitude,loction.location.coordinate.longitude);
+        }
+    }];
+    
+    //系统自带定位
+//    [[MPLocationManager shareInstance]  startSystemLocationWithRes:^(CLLocation *loction, NSError *error) {
+//        DDLogError(@"系统自带定位信息：%f,%f",loction.coordinate.latitude,loction.coordinate.longitude);
+//    }];
+    
+    //加载页面
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];

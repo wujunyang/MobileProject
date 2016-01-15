@@ -116,7 +116,7 @@ static NSString *const kCompletedCallbackKey = @"completed";
     __block SDWebImageDownloaderOperation *operation;
     __weak __typeof(self)wself = self;
 
-    [self addProgressCallback:progressBlock andCompletedBlock:completedBlock forURL:url createCallback:^{
+    [self addProgressCallback:progressBlock completedBlock:completedBlock forURL:url createCallback:^{
         NSTimeInterval timeoutInterval = wself.downloadTimeout;
         if (timeoutInterval == 0.0) {
             timeoutInterval = 15.0;
@@ -142,8 +142,10 @@ static NSString *const kCompletedCallbackKey = @"completed";
                                                                  callbacksForURL = [sself.URLCallbacks[url] copy];
                                                              });
                                                              for (NSDictionary *callbacks in callbacksForURL) {
-                                                                 SDWebImageDownloaderProgressBlock callback = callbacks[kProgressCallbackKey];
-                                                                 if (callback) callback(receivedSize, expectedSize);
+                                                                 dispatch_async(dispatch_get_main_queue(), ^{
+                                                                     SDWebImageDownloaderProgressBlock callback = callbacks[kProgressCallbackKey];
+                                                                     if (callback) callback(receivedSize, expectedSize);
+                                                                 });
                                                              }
                                                          }
                                                         completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
@@ -170,7 +172,9 @@ static NSString *const kCompletedCallbackKey = @"completed";
                                                         }];
         operation.shouldDecompressImages = wself.shouldDecompressImages;
         
-        if (wself.username && wself.password) {
+        if (wself.urlCredential) {
+            operation.credential = wself.urlCredential;
+        } else if (wself.username && wself.password) {
             operation.credential = [NSURLCredential credentialWithUser:wself.username password:wself.password persistence:NSURLCredentialPersistenceForSession];
         }
         
@@ -191,7 +195,7 @@ static NSString *const kCompletedCallbackKey = @"completed";
     return operation;
 }
 
-- (void)addProgressCallback:(SDWebImageDownloaderProgressBlock)progressBlock andCompletedBlock:(SDWebImageDownloaderCompletedBlock)completedBlock forURL:(NSURL *)url createCallback:(SDWebImageNoParamsBlock)createCallback {
+- (void)addProgressCallback:(SDWebImageDownloaderProgressBlock)progressBlock completedBlock:(SDWebImageDownloaderCompletedBlock)completedBlock forURL:(NSURL *)url createCallback:(SDWebImageNoParamsBlock)createCallback {
     // The URL will be used as the key to the callbacks dictionary so it cannot be nil. If it is nil immediately call the completed block with no image or data.
     if (url == nil) {
         if (completedBlock != nil) {

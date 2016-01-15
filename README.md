@@ -36,4 +36,10 @@
 
 虽然项目中已经用Pod来管理第三方插件，但对于一些可能要进行修改的第三方可以存放在这边，本实例中引用的几个比较常用的第三方插件，简单介绍其中的几个，GVUserDefaults是对UserDefaults的封装，简单就可以用于存取操作；JDStatusBarNotification是在状态栏提示效果的插件；ActionSheetPicker底部弹出如时间选择、选项的插件；QBImagePickerController是照片选择插件，支持多选并可以设置最多选择张数；
 
+3:功能模块的集成
 
+3.1 集成百度地图(2.9.1版)，目前有百度定位功能（ThirdMacros.h修改相应的key值）
+
+3.2 集成友盟统计（ThirdMacros.h修改相应的key值）
+
+3.3 集成CocoaLumberjack日志记录

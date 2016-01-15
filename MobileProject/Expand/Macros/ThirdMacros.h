@@ -10,4 +10,10 @@
 #define ThirdMacros_h
 
 
+//百度地图SDK的Key
+#define  kBaiduMapKey @"20TTpXTnnp8TodtDXWjZBOvP"
+
+//友盟统计SDK的key
+#define kUmengKey @"569886bc67e58e7d95001e22"
+
 #endif /* ThirdMacros_h */

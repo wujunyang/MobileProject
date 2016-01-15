@@ -74,7 +74,12 @@ static char imageURLStorageKey;
         dispatch_main_sync_safe(^{
             __strong UIButton *sself = wself;
             if (!sself) return;
-            if (image) {
+            if (image && (options & SDWebImageAvoidAutoSetImage) && completedBlock)
+            {
+                completedBlock(image, error, cacheType, url);
+                return;
+            }
+            else if (image) {
                 [sself setImage:image forState:state];
             }
             if (completedBlock && finished) {
@@ -106,7 +111,7 @@ static char imageURLStorageKey;
 }
 
 - (void)sd_setBackgroundImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options completed:(SDWebImageCompletionBlock)completedBlock {
-    [self sd_cancelImageLoadForState:state];
+    [self sd_cancelBackgroundImageLoadForState:state];
 
     [self setBackgroundImage:placeholder forState:state];
 
@@ -117,7 +122,12 @@ static char imageURLStorageKey;
             dispatch_main_sync_safe(^{
                 __strong UIButton *sself = wself;
                 if (!sself) return;
-                if (image) {
+                if (image && (options & SDWebImageAvoidAutoSetImage) && completedBlock)
+                {
+                    completedBlock(image, error, cacheType, url);
+                    return;
+                }
+                else if (image) {
                     [sself setBackgroundImage:image forState:state];
                 }
                 if (completedBlock && finished) {

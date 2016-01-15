@@ -661,6 +661,12 @@
 		34EC806D1C472BF100C7E40A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC806B1C472BF100C7E40A /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34EC80721C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC80711C472E2100C7E40A /* UIPlaceHolderTextView.m */; settings = {ASSET_TAGS = (); }; };
 		34EC80731C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC80711C472E2100C7E40A /* UIPlaceHolderTextView.m */; settings = {ASSET_TAGS = (); }; };
+		34F212FD1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F212FC1C48C133003AC13D /* CLLocation+MPLocation.m */; settings = {ASSET_TAGS = (); }; };
+		34F212FE1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F212FC1C48C133003AC13D /* CLLocation+MPLocation.m */; settings = {ASSET_TAGS = (); }; };
+		34F213011C48C283003AC13D /* MPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F213001C48C283003AC13D /* MPLocationManager.m */; settings = {ASSET_TAGS = (); }; };
+		34F213021C48C283003AC13D /* MPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F213001C48C283003AC13D /* MPLocationManager.m */; settings = {ASSET_TAGS = (); }; };
+		34F213061C48DB97003AC13D /* MPUmengHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F213051C48DB97003AC13D /* MPUmengHelper.m */; settings = {ASSET_TAGS = (); }; };
+		34F213071C48DB97003AC13D /* MPUmengHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F213051C48DB97003AC13D /* MPUmengHelper.m */; settings = {ASSET_TAGS = (); }; };
 		9014C40DD45909D3FC1F2EBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 533C667C4AE7D52B4A1E63C2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -1335,6 +1341,12 @@
 		34EC806B1C472BF100C7E40A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		34EC80701C472E2100C7E40A /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
 		34EC80711C472E2100C7E40A /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
+		34F212FB1C48C133003AC13D /* CLLocation+MPLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+MPLocation.h"; sourceTree = "<group>"; };
+		34F212FC1C48C133003AC13D /* CLLocation+MPLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+MPLocation.m"; sourceTree = "<group>"; };
+		34F212FF1C48C283003AC13D /* MPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLocationManager.h; sourceTree = "<group>"; };
+		34F213001C48C283003AC13D /* MPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLocationManager.m; sourceTree = "<group>"; };
+		34F213041C48DB97003AC13D /* MPUmengHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUmengHelper.h; sourceTree = "<group>"; };
+		34F213051C48DB97003AC13D /* MPUmengHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPUmengHelper.m; sourceTree = "<group>"; };
 		533C667C4AE7D52B4A1E63C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A48D3EEAEFFB901D36D8E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1414,12 +1426,13 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		34E08A5A1C3BEEC8005C6CA3 /* Logger */ = {
+		34E08A5A1C3BEEC8005C6CA3 /* Logger(日志记录) */ = {
 			isa = PBXGroup;
 			children = (
 				34E08A5B1C3BEEF2005C6CA3 /* MyFileLogger.h */,
 				34E08A5C1C3BEEF2005C6CA3 /* MyFileLogger.m */,
 			);
+			name = "Logger(日志记录)";
 			path = Logger;
 			sourceTree = "<group>";
 		};
@@ -1453,9 +1466,9 @@
 				34E890B91C3B89FE001327C8 /* Expand(扩展) */,
 				34E890BB1C3B8A7C001327C8 /* Resource(资源) */,
 				34E890BA1C3B8A52001327C8 /* Vender(第三方) */,
+				34F212F81C48B74A003AC13D /* SDKFile(集成) */,
 				34E8908B1C3B89B2001327C8 /* ViewController.h */,
 				34E8908C1C3B89B2001327C8 /* ViewController.m */,
-				34E8908E1C3B89B2001327C8 /* Main.storyboard */,
 				34E890851C3B89B2001327C8 /* Supporting Files */,
 			);
 			path = MobileProject;
@@ -1601,8 +1614,10 @@
 		34E890BF1C3B8B36001327C8 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
-				34E08A5A1C3BEEC8005C6CA3 /* Logger */,
-				34E894C71C3BAFBC001327C8 /* Reachability */,
+				34F213031C48DB2F003AC13D /* UmengHelper(友盟管理) */,
+				34F212FA1C48BF82003AC13D /* LcationManager(定位管理) */,
+				34E08A5A1C3BEEC8005C6CA3 /* Logger(日志记录) */,
+				34E894C71C3BAFBC001327C8 /* Reachability(网络状态) */,
 			);
 			name = "Tool(工具类)";
 			path = Tool;
@@ -1867,6 +1882,7 @@
 		34E8912B1C3B93DA001327C8 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				34E8908E1C3B89B2001327C8 /* Main.storyboard */,
 				34E890861C3B89B2001327C8 /* main.m */,
 				34E890931C3B89B2001327C8 /* LaunchScreen.storyboard */,
 				34E890881C3B89B2001327C8 /* AppDelegate.h */,
@@ -3020,12 +3036,13 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
-		34E894C71C3BAFBC001327C8 /* Reachability */ = {
+		34E894C71C3BAFBC001327C8 /* Reachability(网络状态) */ = {
 			isa = PBXGroup;
 			children = (
 				34E894C81C3BAFBC001327C8 /* Reachability.h */,
 				34E894C91C3BAFBC001327C8 /* Reachability.m */,
 			);
+			name = "Reachability(网络状态)";
 			path = Reachability;
 			sourceTree = "<group>";
 		};
@@ -3110,6 +3127,36 @@
 				34EC80711C472E2100C7E40A /* UIPlaceHolderTextView.m */,
 			);
 			path = UIPlaceHolderTextView;
+			sourceTree = "<group>";
+		};
+		34F212F81C48B74A003AC13D /* SDKFile(集成) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "SDKFile(集成)";
+			path = SDKFile;
+			sourceTree = "<group>";
+		};
+		34F212FA1C48BF82003AC13D /* LcationManager(定位管理) */ = {
+			isa = PBXGroup;
+			children = (
+				34F212FB1C48C133003AC13D /* CLLocation+MPLocation.h */,
+				34F212FC1C48C133003AC13D /* CLLocation+MPLocation.m */,
+				34F212FF1C48C283003AC13D /* MPLocationManager.h */,
+				34F213001C48C283003AC13D /* MPLocationManager.m */,
+			);
+			name = "LcationManager(定位管理)";
+			path = LcationManager;
+			sourceTree = "<group>";
+		};
+		34F213031C48DB2F003AC13D /* UmengHelper(友盟管理) */ = {
+			isa = PBXGroup;
+			children = (
+				34F213041C48DB97003AC13D /* MPUmengHelper.h */,
+				34F213051C48DB97003AC13D /* MPUmengHelper.m */,
+			);
+			name = "UmengHelper(友盟管理)";
+			path = UmengHelper;
 			sourceTree = "<group>";
 		};
 		549E38115AE0AD579BD3EB1A /* Pods */ = {
@@ -3455,6 +3502,7 @@
 				34E08ABA1C3BFB90005C6CA3 /* UIView+Nib.m in Sources */,
 				34E08ABB1C3BFB90005C6CA3 /* UIColor+HEX.m in Sources */,
 				34E08ABC1C3BFB90005C6CA3 /* NSData+Encrypt.m in Sources */,
+				34F213071C48DB97003AC13D /* MPUmengHelper.m in Sources */,
 				34E08ABD1C3BFB90005C6CA3 /* UIScrollView+APParallaxHeader.m in Sources */,
 				34E08ABE1C3BFB90005C6CA3 /* NSString+Pinyin.m in Sources */,
 				34E08ABF1C3BFB90005C6CA3 /* UIViewController+ScrollingStatusBar.m in Sources */,
@@ -3593,6 +3641,7 @@
 				34E08B431C3BFB90005C6CA3 /* MJRefreshBackStateFooter.m in Sources */,
 				34E08B441C3BFB90005C6CA3 /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				34E08B451C3BFB90005C6CA3 /* YTKNetworkConfig.m in Sources */,
+				34F213021C48C283003AC13D /* MPLocationManager.m in Sources */,
 				34E08B461C3BFB90005C6CA3 /* NSString+XML.m in Sources */,
 				34E08B471C3BFB90005C6CA3 /* NSObject+AutoCoding.m in Sources */,
 				34E08B481C3BFB90005C6CA3 /* UIImage+FileName.m in Sources */,
@@ -3628,6 +3677,7 @@
 				34E08B661C3BFB90005C6CA3 /* UIImage+Resize.m in Sources */,
 				34E08B671C3BFB90005C6CA3 /* NSString+RemoveEmoji.m in Sources */,
 				34E08B681C3BFB90005C6CA3 /* QBAssetsCollectionViewLayout.m in Sources */,
+				34F212FE1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */,
 				34E08B691C3BFB90005C6CA3 /* UIViewController+RecursiveDescription.m in Sources */,
 				34E08B6A1C3BFB90005C6CA3 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				34E08B6B1C3BFB90005C6CA3 /* UIResponder+UIAdapt.m in Sources */,
@@ -3772,6 +3822,7 @@
 				34E894291C3B9A03001327C8 /* UIView+Nib.m in Sources */,
 				34E893D71C3B9A03001327C8 /* UIColor+HEX.m in Sources */,
 				34E893711C3B9A03001327C8 /* NSData+Encrypt.m in Sources */,
+				34F213061C48DB97003AC13D /* MPUmengHelper.m in Sources */,
 				34E8940C1C3B9A03001327C8 /* UIScrollView+APParallaxHeader.m in Sources */,
 				34E893A81C3B9A03001327C8 /* NSString+Pinyin.m in Sources */,
 				34E894381C3B9A03001327C8 /* UIViewController+ScrollingStatusBar.m in Sources */,
@@ -3910,6 +3961,7 @@
 				34E891211C3B92AA001327C8 /* MJRefreshBackStateFooter.m in Sources */,
 				34E893691C3B9A03001327C8 /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				34E891451C3B9739001327C8 /* YTKNetworkConfig.m in Sources */,
+				34F213011C48C283003AC13D /* MPLocationManager.m in Sources */,
 				34E893B11C3B9A03001327C8 /* NSString+XML.m in Sources */,
 				34E893951C3B9A03001327C8 /* NSObject+AutoCoding.m in Sources */,
 				34E893E81C3B9A03001327C8 /* UIImage+FileName.m in Sources */,
@@ -3945,6 +3997,7 @@
 				34E893EF1C3B9A03001327C8 /* UIImage+Resize.m in Sources */,
 				34E893AA1C3B9A03001327C8 /* NSString+RemoveEmoji.m in Sources */,
 				34E8949C1C3B9FC1001327C8 /* QBAssetsCollectionViewLayout.m in Sources */,
+				34F212FD1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */,
 				34E894371C3B9A03001327C8 /* UIViewController+RecursiveDescription.m in Sources */,
 				34E894121C3B9A03001327C8 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				34E894091C3B9A03001327C8 /* UIResponder+UIAdapt.m in Sources */,
@@ -4030,6 +4083,7 @@
 				34E8908F1C3B89B2001327C8 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		34E890931C3B89B2001327C8 /* LaunchScreen.storyboard */ = {

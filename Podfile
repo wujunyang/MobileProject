@@ -6,3 +6,5 @@ pod 'Masonry','~>0.6.1'
 pod 'FMDB/common' , '~>2.5'
 pod 'FMDB/SQLCipher', '~>2.5'
 pod 'CocoaLumberjack', '~> 2.0.0-rc'
+pod 'BaiduMapKit' #百度地图SDK
+pod 'UMengAnalytics-NO-IDFA'#友盟统计无IDFA版SDK

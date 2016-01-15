@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LogInViewController.h"
 #import "MyFileLogger.h"
+#import "MPLocationManager.h"
+#import "MPUmengHelper.h"
+#import "LogInViewController.h"
 #import "HomeViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

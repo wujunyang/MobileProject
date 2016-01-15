@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - BaiduMapKit (2.9.1)
   - CocoaLumberjack (2.0.3):
     - CocoaLumberjack/Default (= 2.0.3)
     - CocoaLumberjack/Extensions (= 2.0.3)
@@ -34,31 +35,36 @@ PODS:
     - SQLCipher
   - JSONModel (1.0.2)
   - Masonry (0.6.4)
-  - SDWebImage (3.7.3):
-    - SDWebImage/Core (= 3.7.3)
-  - SDWebImage/Core (3.7.3)
+  - SDWebImage (3.7.4):
+    - SDWebImage/Core (= 3.7.4)
+  - SDWebImage/Core (3.7.4)
   - SQLCipher (3.1.0):
     - SQLCipher/standard (= 3.1.0)
   - SQLCipher/common (3.1.0)
   - SQLCipher/standard (3.1.0):
     - SQLCipher/common
+  - UMengAnalytics-NO-IDFA (3.6.7)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.0)
+  - BaiduMapKit
   - CocoaLumberjack (~> 2.0.0-rc)
   - FMDB/common (~> 2.5)
   - FMDB/SQLCipher (~> 2.5)
   - JSONModel (~> 1.0.1)
   - Masonry (~> 0.6.1)
   - SDWebImage (~> 3.7)
+  - UMengAnalytics-NO-IDFA
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  BaiduMapKit: 97d2d44b41a876de2371fb91ddf78cdf84dafa05
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
-  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SDWebImage: 247edd7dd80dd6124197b0d6a17846fe9d1df968
   SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
+  UMengAnalytics-NO-IDFA: 6d02561a00579b2e37718f204eb81347df5d7b8b
 
 COCOAPODS: 0.38.2

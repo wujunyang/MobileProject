@@ -66,7 +66,7 @@
 
 
 //App版本号
-#define appVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define appMPVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
 //AppDelegate对象
 #define AppDelegateInstance [[UIApplication sharedApplication] delegate]
