@@ -655,6 +655,8 @@
 		34E894CD1C3BBF79001327C8 /* LogInApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894CC1C3BBF79001327C8 /* LogInApi.m */; settings = {ASSET_TAGS = (); }; };
 		34E894D31C3BC153001327C8 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894D21C3BC153001327C8 /* LogInViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34E894D61C3BCD2F001327C8 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894D51C3BCD2F001327C8 /* LoginModel.m */; settings = {ASSET_TAGS = (); }; };
+		34E95EBA1C4F82F600376777 /* UUInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E95EB91C4F82F600376777 /* UUInputAccessoryView.m */; settings = {ASSET_TAGS = (); }; };
+		34E95EBB1C4F82F700376777 /* UUInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E95EB91C4F82F600376777 /* UUInputAccessoryView.m */; settings = {ASSET_TAGS = (); }; };
 		34EC47C01C3D6B490041CB85 /* 项目目录.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC47BF1C3D6B490041CB85 /* 项目目录.png */; settings = {ASSET_TAGS = (); }; };
 		34EC47C11C3D6B490041CB85 /* 项目目录.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC47BF1C3D6B490041CB85 /* 项目目录.png */; settings = {ASSET_TAGS = (); }; };
 		34EC806C1C472BF100C7E40A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC806B1C472BF100C7E40A /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -1336,6 +1338,8 @@
 		34E894D21C3BC153001327C8 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 		34E894D41C3BCD2F001327C8 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
 		34E894D51C3BCD2F001327C8 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		34E95EB81C4F82F600376777 /* UUInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUInputAccessoryView.h; sourceTree = "<group>"; };
+		34E95EB91C4F82F600376777 /* UUInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUInputAccessoryView.m; sourceTree = "<group>"; };
 		34EC47BF1C3D6B490041CB85 /* 项目目录.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "项目目录.png"; sourceTree = "<group>"; };
 		34EC806A1C472BF100C7E40A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		34EC806B1C472BF100C7E40A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -1462,6 +1466,7 @@
 		34E890841C3B89B2001327C8 /* MobileProject */ = {
 			isa = PBXGroup;
 			children = (
+				34E890851C3B89B2001327C8 /* Supporting Files */,
 				34E890B81C3B89D0001327C8 /* Main(主要) */,
 				34E890B91C3B89FE001327C8 /* Expand(扩展) */,
 				34E890BB1C3B8A7C001327C8 /* Resource(资源) */,
@@ -1469,7 +1474,6 @@
 				34F212F81C48B74A003AC13D /* SDKFile(集成) */,
 				34E8908B1C3B89B2001327C8 /* ViewController.h */,
 				34E8908C1C3B89B2001327C8 /* ViewController.m */,
-				34E890851C3B89B2001327C8 /* Supporting Files */,
 			);
 			path = MobileProject;
 			sourceTree = "<group>";
@@ -1529,6 +1533,7 @@
 		34E890BA1C3B8A52001327C8 /* Vender(第三方) */ = {
 			isa = PBXGroup;
 			children = (
+				34E95EB71C4F82B900376777 /* UUInputAccessoryView */,
 				34EC806F1C472DFB00C7E40A /* UIPlaceHolderTextView */,
 				34E08A521C3BE80F005C6CA3 /* GVUserDefaults */,
 				34E894A81C3BA300001327C8 /* JDStatusBarNotification */,
@@ -3046,6 +3051,15 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		34E95EB71C4F82B900376777 /* UUInputAccessoryView */ = {
+			isa = PBXGroup;
+			children = (
+				34E95EB81C4F82F600376777 /* UUInputAccessoryView.h */,
+				34E95EB91C4F82F600376777 /* UUInputAccessoryView.m */,
+			);
+			path = UUInputAccessoryView;
+			sourceTree = "<group>";
+		};
 		34EC80621C472A6A00C7E40A /* Public(公共) */ = {
 			isa = PBXGroup;
 			children = (
@@ -3611,6 +3625,7 @@
 				34E08B251C3BFB90005C6CA3 /* YTKBaseRequest.m in Sources */,
 				34E08B261C3BFB90005C6CA3 /* UIImage+Capture.m in Sources */,
 				34E08B271C3BFB90005C6CA3 /* UIControl+Block.m in Sources */,
+				34E95EBB1C4F82F700376777 /* UUInputAccessoryView.m in Sources */,
 				34E08B281C3BFB90005C6CA3 /* ActionSheetLocalePicker.m in Sources */,
 				34E08B291C3BFB90005C6CA3 /* UINavigationItem+Margin.m in Sources */,
 				34E08B2A1C3BFB90005C6CA3 /* NSString+RegexCategory.m in Sources */,
@@ -3931,6 +3946,7 @@
 				34E8913F1C3B9739001327C8 /* YTKBaseRequest.m in Sources */,
 				34E893E61C3B9A03001327C8 /* UIImage+Capture.m in Sources */,
 				34E893DC1C3B9A03001327C8 /* UIControl+Block.m in Sources */,
+				34E95EBA1C4F82F600376777 /* UUInputAccessoryView.m in Sources */,
 				34E891131C3B92AA001327C8 /* ActionSheetLocalePicker.m in Sources */,
 				34E894051C3B9A03001327C8 /* UINavigationItem+Margin.m in Sources */,
 				34E893A91C3B9A03001327C8 /* NSString+RegexCategory.m in Sources */,
