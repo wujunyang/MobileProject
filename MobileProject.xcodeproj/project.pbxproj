@@ -669,6 +669,14 @@
 		34F213021C48C283003AC13D /* MPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F213001C48C283003AC13D /* MPLocationManager.m */; settings = {ASSET_TAGS = (); }; };
 		34F213061C48DB97003AC13D /* MPUmengHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F213051C48DB97003AC13D /* MPUmengHelper.m */; settings = {ASSET_TAGS = (); }; };
 		34F213071C48DB97003AC13D /* MPUmengHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F213051C48DB97003AC13D /* MPUmengHelper.m */; settings = {ASSET_TAGS = (); }; };
+		34F4B6B91C54CBAC00615E49 /* btn_navigation_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F4B6B21C54CBAC00615E49 /* btn_navigation_close@2x.png */; settings = {ASSET_TAGS = (); }; };
+		34F4B6BA1C54CBAC00615E49 /* btn_navigation_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F4B6B21C54CBAC00615E49 /* btn_navigation_close@2x.png */; settings = {ASSET_TAGS = (); }; };
+		34F4B6BB1C54CBAC00615E49 /* WJIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B41C54CBAC00615E49 /* WJIndicatorView.m */; settings = {ASSET_TAGS = (); }; };
+		34F4B6BC1C54CBAC00615E49 /* WJIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B41C54CBAC00615E49 /* WJIndicatorView.m */; settings = {ASSET_TAGS = (); }; };
+		34F4B6BD1C54CBAC00615E49 /* WJPopupMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B61C54CBAC00615E49 /* WJPopupMenuView.m */; settings = {ASSET_TAGS = (); }; };
+		34F4B6BE1C54CBAC00615E49 /* WJPopupMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B61C54CBAC00615E49 /* WJPopupMenuView.m */; settings = {ASSET_TAGS = (); }; };
+		34F4B6BF1C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B81C54CBAC00615E49 /* WJScrollerMenuView.m */; settings = {ASSET_TAGS = (); }; };
+		34F4B6C01C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B81C54CBAC00615E49 /* WJScrollerMenuView.m */; settings = {ASSET_TAGS = (); }; };
 		9014C40DD45909D3FC1F2EBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 533C667C4AE7D52B4A1E63C2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -1351,6 +1359,13 @@
 		34F213001C48C283003AC13D /* MPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLocationManager.m; sourceTree = "<group>"; };
 		34F213041C48DB97003AC13D /* MPUmengHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUmengHelper.h; sourceTree = "<group>"; };
 		34F213051C48DB97003AC13D /* MPUmengHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPUmengHelper.m; sourceTree = "<group>"; };
+		34F4B6B21C54CBAC00615E49 /* btn_navigation_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_navigation_close@2x.png"; sourceTree = "<group>"; };
+		34F4B6B31C54CBAC00615E49 /* WJIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJIndicatorView.h; sourceTree = "<group>"; };
+		34F4B6B41C54CBAC00615E49 /* WJIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJIndicatorView.m; sourceTree = "<group>"; };
+		34F4B6B51C54CBAC00615E49 /* WJPopupMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJPopupMenuView.h; sourceTree = "<group>"; };
+		34F4B6B61C54CBAC00615E49 /* WJPopupMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJPopupMenuView.m; sourceTree = "<group>"; };
+		34F4B6B71C54CBAC00615E49 /* WJScrollerMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJScrollerMenuView.h; sourceTree = "<group>"; };
+		34F4B6B81C54CBAC00615E49 /* WJScrollerMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJScrollerMenuView.m; sourceTree = "<group>"; };
 		533C667C4AE7D52B4A1E63C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A48D3EEAEFFB901D36D8E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1533,6 +1548,7 @@
 		34E890BA1C3B8A52001327C8 /* Vender(第三方) */ = {
 			isa = PBXGroup;
 			children = (
+				34F4B6B11C54CBAC00615E49 /* WJScrollerMenuView */,
 				34E95EB71C4F82B900376777 /* UUInputAccessoryView */,
 				34EC806F1C472DFB00C7E40A /* UIPlaceHolderTextView */,
 				34E08A521C3BE80F005C6CA3 /* GVUserDefaults */,
@@ -3173,6 +3189,20 @@
 			path = UmengHelper;
 			sourceTree = "<group>";
 		};
+		34F4B6B11C54CBAC00615E49 /* WJScrollerMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				34F4B6B21C54CBAC00615E49 /* btn_navigation_close@2x.png */,
+				34F4B6B31C54CBAC00615E49 /* WJIndicatorView.h */,
+				34F4B6B41C54CBAC00615E49 /* WJIndicatorView.m */,
+				34F4B6B51C54CBAC00615E49 /* WJPopupMenuView.h */,
+				34F4B6B61C54CBAC00615E49 /* WJPopupMenuView.m */,
+				34F4B6B71C54CBAC00615E49 /* WJScrollerMenuView.h */,
+				34F4B6B81C54CBAC00615E49 /* WJScrollerMenuView.m */,
+			);
+			path = WJScrollerMenuView;
+			sourceTree = "<group>";
+		};
 		549E38115AE0AD579BD3EB1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -3314,6 +3344,7 @@
 				34E08BA01C3BFB90005C6CA3 /* MJRefresh.bundle in Resources */,
 				34E08BA11C3BFB90005C6CA3 /* NSDateTimeAgo.bundle in Resources */,
 				34EC47C11C3D6B490041CB85 /* 项目目录.png in Resources */,
+				34F4B6BA1C54CBAC00615E49 /* btn_navigation_close@2x.png in Resources */,
 				34E08BA21C3BFB90005C6CA3 /* Main.storyboard in Resources */,
 				34E08BA31C3BFB90005C6CA3 /* File.strings in Resources */,
 				34E08BA41C3BFB90005C6CA3 /* MJPhotoBrowser.bundle in Resources */,
@@ -3333,6 +3364,7 @@
 				34E8937D1C3B9A03001327C8 /* NSDateTimeAgo.bundle in Resources */,
 				34E890901C3B89B2001327C8 /* Main.storyboard in Resources */,
 				34E8914E1C3B9986001327C8 /* File.strings in Resources */,
+				34F4B6B91C54CBAC00615E49 /* btn_navigation_close@2x.png in Resources */,
 				34E8948F1C3B9FC1001327C8 /* MJPhotoBrowser.bundle in Resources */,
 				34EC47C01C3D6B490041CB85 /* 项目目录.png in Resources */,
 				34E8949E1C3B9FC1001327C8 /* QBImagePickerController.strings in Resources */,
@@ -3701,6 +3733,7 @@
 				34E08B6E1C3BFB90005C6CA3 /* UIBezierPath+Length.m in Sources */,
 				34E08B6F1C3BFB90005C6CA3 /* MJRefreshHeader.m in Sources */,
 				34E08B701C3BFB90005C6CA3 /* UIApplication+Permissions.m in Sources */,
+				34F4B6BC1C54CBAC00615E49 /* WJIndicatorView.m in Sources */,
 				34E08B711C3BFB90005C6CA3 /* MJPhotoView.m in Sources */,
 				34E08B721C3BFB90005C6CA3 /* UIViewController+BlockSegue.m in Sources */,
 				34E08B731C3BFB90005C6CA3 /* MJRefreshBackNormalFooter.m in Sources */,
@@ -3708,9 +3741,11 @@
 				34E08B751C3BFB90005C6CA3 /* YTKNetworkPrivate.m in Sources */,
 				34E08B761C3BFB90005C6CA3 /* NSString+Score.m in Sources */,
 				34E08B771C3BFB90005C6CA3 /* CAShapeLayer+UIBezierPath.m in Sources */,
+				34F4B6C01C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */,
 				34E08B781C3BFB90005C6CA3 /* UINavigationBar+CustomHeight.m in Sources */,
 				34E08B791C3BFB90005C6CA3 /* MJRefreshNormalHeader.m in Sources */,
 				34E08B7A1C3BFB90005C6CA3 /* CAAnimation+EasingEquations.m in Sources */,
+				34F4B6BE1C54CBAC00615E49 /* WJPopupMenuView.m in Sources */,
 				34E08B7B1C3BFB90005C6CA3 /* NSDictionary+SafeAccess.m in Sources */,
 				34E08B7C1C3BFB90005C6CA3 /* UIView+BlockGesture.m in Sources */,
 				34E08B7D1C3BFB90005C6CA3 /* QBAssetsCollectionCheckmarkView.m in Sources */,
@@ -4022,6 +4057,7 @@
 				34E893CB1C3B9A03001327C8 /* UIBezierPath+Length.m in Sources */,
 				34E8911B1C3B92AA001327C8 /* MJRefreshHeader.m in Sources */,
 				34E893C81C3B9A03001327C8 /* UIApplication+Permissions.m in Sources */,
+				34F4B6BB1C54CBAC00615E49 /* WJIndicatorView.m in Sources */,
 				34E894941C3B9FC1001327C8 /* MJPhotoView.m in Sources */,
 				34E894341C3B9A03001327C8 /* UIViewController+BlockSegue.m in Sources */,
 				34E891201C3B92AA001327C8 /* MJRefreshBackNormalFooter.m in Sources */,
@@ -4029,9 +4065,11 @@
 				34E891461C3B9739001327C8 /* YTKNetworkPrivate.m in Sources */,
 				34E893AC1C3B9A03001327C8 /* NSString+Score.m in Sources */,
 				34E893C21C3B9A03001327C8 /* CAShapeLayer+UIBezierPath.m in Sources */,
+				34F4B6BF1C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */,
 				34E893FD1C3B9A03001327C8 /* UINavigationBar+CustomHeight.m in Sources */,
 				34E891231C3B92AA001327C8 /* MJRefreshNormalHeader.m in Sources */,
 				34E893BF1C3B9A03001327C8 /* CAAnimation+EasingEquations.m in Sources */,
+				34F4B6BD1C54CBAC00615E49 /* WJPopupMenuView.m in Sources */,
 				34E893821C3B9A03001327C8 /* NSDictionary+SafeAccess.m in Sources */,
 				34E894201C3B9A03001327C8 /* UIView+BlockGesture.m in Sources */,
 				34E894961C3B9FC1001327C8 /* QBAssetsCollectionCheckmarkView.m in Sources */,

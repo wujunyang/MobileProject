@@ -43,3 +43,7 @@
 3.2 集成友盟统计（ThirdMacros.h修改相应的key值）
 
 3.3 集成CocoaLumberjack日志记录
+
+3.4 引入第三方inputAccessoryView 解决为一些无输入源的控件添加输入响应。比如按钮、cell、view等
+
+3.5 整理封装WJScrollerMenuView 用于解决滚动菜单的使用
