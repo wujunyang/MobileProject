@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GeTuiSdk.h"
 #import "MyFileLogger.h"
 #import "MPLocationManager.h"
 #import "MPUmengHelper.h"
 #import "LogInViewController.h"
 #import "HomeViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,UIAlertViewDelegate,GeTuiSdkDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

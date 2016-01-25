@@ -16,4 +16,9 @@
 //友盟统计SDK的key
 #define kUmengKey @"569886bc67e58e7d95001e22"
 
+//个推开发者网站中申请App时，注册的AppId、AppKey、AppSecret
+#define kGtAppId           @"0uuwznWonIANoK07JeRWgA"
+#define kGtAppKey          @"6LeO4stbrA7TeyMUJdXlx3"
+#define kGtAppSecret       @"282vl0IwZd9KL3ZpDyoUL7"
+
 #endif /* ThirdMacros_h */

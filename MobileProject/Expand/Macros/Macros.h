@@ -93,20 +93,6 @@
     //异步耗时任务
 //})
 
-//判断是否要Log
-#ifdef NEED_DEBUG
-#define NSLog(format, ...) \
-do { \
-NSLog(@"<%@ : %d : %s>-: %@", \
-[[NSString stringWithUTF8String:__FILE__] lastPathComponent], \
-__LINE__, \
-__FUNCTION__, \
-[NSString stringWithFormat:format, ##__VA_ARGS__]); \
-} while(0)
-#else
-#define NSLog(format, ...) do{ } while(0)
-#endif
-
 //DDLog等级
 #ifdef DEBUG
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
