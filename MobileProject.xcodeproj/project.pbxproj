@@ -47,7 +47,6 @@
 		34E08A831C3BFB90005C6CA3 /* UITextView+PinchZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893091C3B9A03001327C8 /* UITextView+PinchZoom.m */; settings = {ASSET_TAGS = (); }; };
 		34E08A841C3BFB90005C6CA3 /* UIViewController+DDPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8933D1C3B9A03001327C8 /* UIViewController+DDPopUpViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34E08A851C3BFB90005C6CA3 /* NSDate+CupertinoYankee.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891881C3B9A03001327C8 /* NSDate+CupertinoYankee.m */; settings = {ASSET_TAGS = (); }; };
-		34E08A861C3BFB90005C6CA3 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894871C3B9FC1001327C8 /* TPKeyboardAvoidingCollectionView.m */; settings = {ASSET_TAGS = (); }; };
 		34E08A871C3BFB90005C6CA3 /* UIView+Visuals.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893321C3B9A03001327C8 /* UIView+Visuals.m */; settings = {ASSET_TAGS = (); }; };
 		34E08A881C3BFB90005C6CA3 /* NSUserDefaults+iCloudSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892201C3B9A03001327C8 /* NSUserDefaults+iCloudSync.m */; settings = {ASSET_TAGS = (); }; };
 		34E08A891C3BFB90005C6CA3 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892F41C3B9A03001327C8 /* UITableView+FDKeyedHeightCache.m */; settings = {ASSET_TAGS = (); }; };
@@ -179,7 +178,6 @@
 		34E08B071C3BFB90005C6CA3 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890E91C3B92AA001327C8 /* MJRefreshComponent.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B081C3BFB90005C6CA3 /* UIView+Find.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8931E1C3B9A03001327C8 /* UIView+Find.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B091C3BFB90005C6CA3 /* NSManagedObjectContext+Fetching.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8915F1C3B9A02001327C8 /* NSManagedObjectContext+Fetching.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B0A1C3BFB90005C6CA3 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8948D1C3B9FC1001327C8 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B0B1C3BFB90005C6CA3 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8918A1C3B9A03001327C8 /* NSDate+Extension.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B0C1C3BFB90005C6CA3 /* MyFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E08A5C1C3BEEF2005C6CA3 /* MyFileLogger.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B0D1C3BFB90005C6CA3 /* QBAssetsCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894731C3B9FC1001327C8 /* QBAssetsCollectionFooterView.m */; settings = {ASSET_TAGS = (); }; };
@@ -198,7 +196,6 @@
 		34E08B1A1C3BFB90005C6CA3 /* UIImageView+GeometryConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892AC1C3B9A03001327C8 /* UIImageView+GeometryConversion.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B1B1C3BFB90005C6CA3 /* UIView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893181C3B9A03001327C8 /* UIView+Debug.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B1C1C3BFB90005C6CA3 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891711C3B9A02001327C8 /* NSArray+Block.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B1D1C3BFB90005C6CA3 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8948B1C3B9FC1001327C8 /* TPKeyboardAvoidingTableView.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B1E1C3BFB90005C6CA3 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891941C3B9A03001327C8 /* NSDate+Utilities.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B1F1C3BFB90005C6CA3 /* QBAssetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894791C3B9FC1001327C8 /* QBAssetsCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B201C3BFB90005C6CA3 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891F31C3B9A03001327C8 /* NSString+Hash.m */; settings = {ASSET_TAGS = (); }; };
@@ -269,7 +266,6 @@
 		34E08B611C3BFB90005C6CA3 /* UIResponder+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892D61C3B9A03001327C8 /* UIResponder+Chain.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B621C3BFB90005C6CA3 /* NSSet+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891E41C3B9A03001327C8 /* NSSet+Block.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B631C3BFB90005C6CA3 /* NSObject+KVOBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891D81C3B9A03001327C8 /* NSObject+KVOBlocks.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B641C3BFB90005C6CA3 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894891C3B9FC1001327C8 /* TPKeyboardAvoidingScrollView.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B651C3BFB90005C6CA3 /* UIBarButtonItem+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8924C1C3B9A03001327C8 /* UIBarButtonItem+Action.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B661C3BFB90005C6CA3 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8929F1C3B9A03001327C8 /* UIImage+Resize.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B671C3BFB90005C6CA3 /* NSString+RemoveEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891FD1C3B9A03001327C8 /* NSString+RemoveEmoji.m */; settings = {ASSET_TAGS = (); }; };
@@ -637,10 +633,6 @@
 		34E8949E1C3B9FC1001327C8 /* QBImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34E894801C3B9FC1001327C8 /* QBImagePickerController.strings */; settings = {ASSET_TAGS = (); }; };
 		34E8949F1C3B9FC1001327C8 /* QBImagePickerGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894821C3B9FC1001327C8 /* QBImagePickerGroupCell.m */; settings = {ASSET_TAGS = (); }; };
 		34E894A01C3B9FC1001327C8 /* QBImagePickerThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894841C3B9FC1001327C8 /* QBImagePickerThumbnailView.m */; settings = {ASSET_TAGS = (); }; };
-		34E894A11C3B9FC1001327C8 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894871C3B9FC1001327C8 /* TPKeyboardAvoidingCollectionView.m */; settings = {ASSET_TAGS = (); }; };
-		34E894A21C3B9FC1001327C8 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894891C3B9FC1001327C8 /* TPKeyboardAvoidingScrollView.m */; settings = {ASSET_TAGS = (); }; };
-		34E894A31C3B9FC1001327C8 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8948B1C3B9FC1001327C8 /* TPKeyboardAvoidingTableView.m */; settings = {ASSET_TAGS = (); }; };
-		34E894A41C3B9FC1001327C8 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8948D1C3B9FC1001327C8 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {ASSET_TAGS = (); }; };
 		34E894A71C3BA26E001327C8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894A61C3BA26E001327C8 /* BaseViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34E894B81C3BA300001327C8 /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894AA1C3BA300001327C8 /* JDStatusBarNotification.m */; settings = {ASSET_TAGS = (); }; };
 		34E894B91C3BA300001327C8 /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894AC1C3BA300001327C8 /* JDStatusBarStyle.m */; settings = {ASSET_TAGS = (); }; };
@@ -657,6 +649,14 @@
 		34E894D61C3BCD2F001327C8 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894D51C3BCD2F001327C8 /* LoginModel.m */; settings = {ASSET_TAGS = (); }; };
 		34E95EBA1C4F82F600376777 /* UUInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E95EB91C4F82F600376777 /* UUInputAccessoryView.m */; settings = {ASSET_TAGS = (); }; };
 		34E95EBB1C4F82F700376777 /* UUInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E95EB91C4F82F600376777 /* UUInputAccessoryView.m */; settings = {ASSET_TAGS = (); }; };
+		34E9D0D01C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0C91C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m */; settings = {ASSET_TAGS = (); }; };
+		34E9D0D11C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0C91C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m */; settings = {ASSET_TAGS = (); }; };
+		34E9D0D21C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CB1C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m */; settings = {ASSET_TAGS = (); }; };
+		34E9D0D31C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CB1C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m */; settings = {ASSET_TAGS = (); }; };
+		34E9D0D41C571296007D4FD9 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CD1C571296007D4FD9 /* TPKeyboardAvoidingTableView.m */; settings = {ASSET_TAGS = (); }; };
+		34E9D0D51C571296007D4FD9 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CD1C571296007D4FD9 /* TPKeyboardAvoidingTableView.m */; settings = {ASSET_TAGS = (); }; };
+		34E9D0D61C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CF1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		34E9D0D71C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CF1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {ASSET_TAGS = (); }; };
 		34EC47C01C3D6B490041CB85 /* 项目目录.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC47BF1C3D6B490041CB85 /* 项目目录.png */; settings = {ASSET_TAGS = (); }; };
 		34EC47C11C3D6B490041CB85 /* 项目目录.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC47BF1C3D6B490041CB85 /* 项目目录.png */; settings = {ASSET_TAGS = (); }; };
 		34EC806C1C472BF100C7E40A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC806B1C472BF100C7E40A /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -1308,14 +1308,6 @@
 		34E894821C3B9FC1001327C8 /* QBImagePickerGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerGroupCell.m; sourceTree = "<group>"; };
 		34E894831C3B9FC1001327C8 /* QBImagePickerThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerThumbnailView.h; sourceTree = "<group>"; };
 		34E894841C3B9FC1001327C8 /* QBImagePickerThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerThumbnailView.m; sourceTree = "<group>"; };
-		34E894861C3B9FC1001327C8 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
-		34E894871C3B9FC1001327C8 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
-		34E894881C3B9FC1001327C8 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
-		34E894891C3B9FC1001327C8 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
-		34E8948A1C3B9FC1001327C8 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
-		34E8948B1C3B9FC1001327C8 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
-		34E8948C1C3B9FC1001327C8 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
-		34E8948D1C3B9FC1001327C8 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		34E894A51C3BA26E001327C8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		34E894A61C3BA26E001327C8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		34E894A91C3BA300001327C8 /* JDStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarNotification.h; sourceTree = "<group>"; };
@@ -1348,6 +1340,14 @@
 		34E894D51C3BCD2F001327C8 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		34E95EB81C4F82F600376777 /* UUInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUInputAccessoryView.h; sourceTree = "<group>"; };
 		34E95EB91C4F82F600376777 /* UUInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUInputAccessoryView.m; sourceTree = "<group>"; };
+		34E9D0C81C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		34E9D0C91C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		34E9D0CA1C571296007D4FD9 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		34E9D0CB1C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		34E9D0CC1C571296007D4FD9 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		34E9D0CD1C571296007D4FD9 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		34E9D0CE1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		34E9D0CF1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		34EC47BF1C3D6B490041CB85 /* 项目目录.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "项目目录.png"; sourceTree = "<group>"; };
 		34EC806A1C472BF100C7E40A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		34EC806B1C472BF100C7E40A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -3017,14 +3017,14 @@
 		34E894851C3B9FC1001327C8 /* TPKeyboardAvoiding */ = {
 			isa = PBXGroup;
 			children = (
-				34E894861C3B9FC1001327C8 /* TPKeyboardAvoidingCollectionView.h */,
-				34E894871C3B9FC1001327C8 /* TPKeyboardAvoidingCollectionView.m */,
-				34E894881C3B9FC1001327C8 /* TPKeyboardAvoidingScrollView.h */,
-				34E894891C3B9FC1001327C8 /* TPKeyboardAvoidingScrollView.m */,
-				34E8948A1C3B9FC1001327C8 /* TPKeyboardAvoidingTableView.h */,
-				34E8948B1C3B9FC1001327C8 /* TPKeyboardAvoidingTableView.m */,
-				34E8948C1C3B9FC1001327C8 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
-				34E8948D1C3B9FC1001327C8 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				34E9D0C81C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.h */,
+				34E9D0C91C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m */,
+				34E9D0CA1C571296007D4FD9 /* TPKeyboardAvoidingScrollView.h */,
+				34E9D0CB1C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m */,
+				34E9D0CC1C571296007D4FD9 /* TPKeyboardAvoidingTableView.h */,
+				34E9D0CD1C571296007D4FD9 /* TPKeyboardAvoidingTableView.m */,
+				34E9D0CE1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				34E9D0CF1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 			);
 			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
@@ -3485,6 +3485,7 @@
 				34E08A701C3BFB90005C6CA3 /* MKMapView+ZoomLevel.m in Sources */,
 				34E08A711C3BFB90005C6CA3 /* YTKChainRequestAgent.m in Sources */,
 				34EC80731C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */,
+				34E9D0D11C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				34E08A721C3BFB90005C6CA3 /* UIDevice+PasscodeStatus.m in Sources */,
 				34E08A731C3BFB90005C6CA3 /* UIScrollView+MJExtension.m in Sources */,
 				34E08A741C3BFB90005C6CA3 /* UIApplication+NetworkActivityIndicator.m in Sources */,
@@ -3505,7 +3506,6 @@
 				34E08A831C3BFB90005C6CA3 /* UITextView+PinchZoom.m in Sources */,
 				34E08A841C3BFB90005C6CA3 /* UIViewController+DDPopUpViewController.m in Sources */,
 				34E08A851C3BFB90005C6CA3 /* NSDate+CupertinoYankee.m in Sources */,
-				34E08A861C3BFB90005C6CA3 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				34E08A871C3BFB90005C6CA3 /* UIView+Visuals.m in Sources */,
 				34E08A881C3BFB90005C6CA3 /* NSUserDefaults+iCloudSync.m in Sources */,
 				34E08A891C3BFB90005C6CA3 /* UITableView+FDKeyedHeightCache.m in Sources */,
@@ -3540,6 +3540,7 @@
 				34E08AA61C3BFB90005C6CA3 /* QBAssetsCollectionViewController.m in Sources */,
 				34E08AA71C3BFB90005C6CA3 /* UIWebView+MetaParser.m in Sources */,
 				34E08AA81C3BFB90005C6CA3 /* NSString+DictionaryValue.m in Sources */,
+				34E9D0D51C571296007D4FD9 /* TPKeyboardAvoidingTableView.m in Sources */,
 				34E08AA91C3BFB90005C6CA3 /* UIWebView+JS.m in Sources */,
 				34E08AAA1C3BFB90005C6CA3 /* UINavigationController+KeyboardFix.m in Sources */,
 				34E08AAB1C3BFB90005C6CA3 /* UIImage+Merge.m in Sources */,
@@ -3638,7 +3639,6 @@
 				34E08B071C3BFB90005C6CA3 /* MJRefreshComponent.m in Sources */,
 				34E08B081C3BFB90005C6CA3 /* UIView+Find.m in Sources */,
 				34E08B091C3BFB90005C6CA3 /* NSManagedObjectContext+Fetching.m in Sources */,
-				34E08B0A1C3BFB90005C6CA3 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				34E08B0B1C3BFB90005C6CA3 /* NSDate+Extension.m in Sources */,
 				34E08B0C1C3BFB90005C6CA3 /* MyFileLogger.m in Sources */,
 				34E08B0D1C3BFB90005C6CA3 /* QBAssetsCollectionFooterView.m in Sources */,
@@ -3658,7 +3658,6 @@
 				34E08B1A1C3BFB90005C6CA3 /* UIImageView+GeometryConversion.m in Sources */,
 				34E08B1B1C3BFB90005C6CA3 /* UIView+Debug.m in Sources */,
 				34E08B1C1C3BFB90005C6CA3 /* NSArray+Block.m in Sources */,
-				34E08B1D1C3BFB90005C6CA3 /* TPKeyboardAvoidingTableView.m in Sources */,
 				34E08B1E1C3BFB90005C6CA3 /* NSDate+Utilities.m in Sources */,
 				34E08B1F1C3BFB90005C6CA3 /* QBAssetsCollectionViewCell.m in Sources */,
 				34E08B201C3BFB90005C6CA3 /* NSString+Hash.m in Sources */,
@@ -3700,6 +3699,7 @@
 				34E08B431C3BFB90005C6CA3 /* MJRefreshBackStateFooter.m in Sources */,
 				34E08B441C3BFB90005C6CA3 /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				34E08B451C3BFB90005C6CA3 /* YTKNetworkConfig.m in Sources */,
+				34E9D0D31C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				34F213021C48C283003AC13D /* MPLocationManager.m in Sources */,
 				34E08B461C3BFB90005C6CA3 /* NSString+XML.m in Sources */,
 				34E08B471C3BFB90005C6CA3 /* NSObject+AutoCoding.m in Sources */,
@@ -3731,7 +3731,6 @@
 				34E08B611C3BFB90005C6CA3 /* UIResponder+Chain.m in Sources */,
 				34E08B621C3BFB90005C6CA3 /* NSSet+Block.m in Sources */,
 				34E08B631C3BFB90005C6CA3 /* NSObject+KVOBlocks.m in Sources */,
-				34E08B641C3BFB90005C6CA3 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				34E08B651C3BFB90005C6CA3 /* UIBarButtonItem+Action.m in Sources */,
 				34E08B661C3BFB90005C6CA3 /* UIImage+Resize.m in Sources */,
 				34E08B671C3BFB90005C6CA3 /* NSString+RemoveEmoji.m in Sources */,
@@ -3762,6 +3761,7 @@
 				34E08B7C1C3BFB90005C6CA3 /* UIView+BlockGesture.m in Sources */,
 				34E08B7D1C3BFB90005C6CA3 /* QBAssetsCollectionCheckmarkView.m in Sources */,
 				34E08B7E1C3BFB90005C6CA3 /* main.m in Sources */,
+				34E9D0D71C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				34E08B7F1C3BFB90005C6CA3 /* MJRefreshAutoStateFooter.m in Sources */,
 				34E08B801C3BFB90005C6CA3 /* MJPhotoToolbar.m in Sources */,
 				34E08B811C3BFB90005C6CA3 /* NSObject+MKBlockTimer.m in Sources */,
@@ -3809,6 +3809,7 @@
 				34E893BD1C3B9A03001327C8 /* MKMapView+ZoomLevel.m in Sources */,
 				34E891431C3B9739001327C8 /* YTKChainRequestAgent.m in Sources */,
 				34EC80721C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */,
+				34E9D0D01C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				34E893DE1C3B9A03001327C8 /* UIDevice+PasscodeStatus.m in Sources */,
 				34E891271C3B92AA001327C8 /* UIScrollView+MJExtension.m in Sources */,
 				34E893C71C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.m in Sources */,
@@ -3829,7 +3830,6 @@
 				34E8941C1C3B9A03001327C8 /* UITextView+PinchZoom.m in Sources */,
 				34E894351C3B9A03001327C8 /* UIViewController+DDPopUpViewController.m in Sources */,
 				34E893761C3B9A03001327C8 /* NSDate+CupertinoYankee.m in Sources */,
-				34E894A11C3B9FC1001327C8 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				34E894301C3B9A03001327C8 /* UIView+Visuals.m in Sources */,
 				34E893B91C3B9A03001327C8 /* NSUserDefaults+iCloudSync.m in Sources */,
 				34E894131C3B9A03001327C8 /* UITableView+FDKeyedHeightCache.m in Sources */,
@@ -3864,6 +3864,7 @@
 				34E8949B1C3B9FC1001327C8 /* QBAssetsCollectionViewController.m in Sources */,
 				34E894411C3B9A03001327C8 /* UIWebView+MetaParser.m in Sources */,
 				34E893A21C3B9A03001327C8 /* NSString+DictionaryValue.m in Sources */,
+				34E9D0D41C571296007D4FD9 /* TPKeyboardAvoidingTableView.m in Sources */,
 				34E8943F1C3B9A03001327C8 /* UIWebView+JS.m in Sources */,
 				34E894011C3B9A03001327C8 /* UINavigationController+KeyboardFix.m in Sources */,
 				34E893EB1C3B9A03001327C8 /* UIImage+Merge.m in Sources */,
@@ -3962,7 +3963,6 @@
 				34E891191C3B92AA001327C8 /* MJRefreshComponent.m in Sources */,
 				34E894261C3B9A03001327C8 /* UIView+Find.m in Sources */,
 				34E893661C3B9A03001327C8 /* NSManagedObjectContext+Fetching.m in Sources */,
-				34E894A41C3B9FC1001327C8 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				34E893771C3B9A03001327C8 /* NSDate+Extension.m in Sources */,
 				34E08A5D1C3BEEF2005C6CA3 /* MyFileLogger.m in Sources */,
 				34E894971C3B9FC1001327C8 /* QBAssetsCollectionFooterView.m in Sources */,
@@ -3982,7 +3982,6 @@
 				34E893F51C3B9A03001327C8 /* UIImageView+GeometryConversion.m in Sources */,
 				34E894231C3B9A03001327C8 /* UIView+Debug.m in Sources */,
 				34E8936C1C3B9A03001327C8 /* NSArray+Block.m in Sources */,
-				34E894A31C3B9FC1001327C8 /* TPKeyboardAvoidingTableView.m in Sources */,
 				34E8937C1C3B9A03001327C8 /* NSDate+Utilities.m in Sources */,
 				34E8949A1C3B9FC1001327C8 /* QBAssetsCollectionViewCell.m in Sources */,
 				34E893A51C3B9A03001327C8 /* NSString+Hash.m in Sources */,
@@ -4024,6 +4023,7 @@
 				34E891211C3B92AA001327C8 /* MJRefreshBackStateFooter.m in Sources */,
 				34E893691C3B9A03001327C8 /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				34E891451C3B9739001327C8 /* YTKNetworkConfig.m in Sources */,
+				34E9D0D21C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				34F213011C48C283003AC13D /* MPLocationManager.m in Sources */,
 				34E893B11C3B9A03001327C8 /* NSString+XML.m in Sources */,
 				34E893951C3B9A03001327C8 /* NSObject+AutoCoding.m in Sources */,
@@ -4055,7 +4055,6 @@
 				34E894071C3B9A03001327C8 /* UIResponder+Chain.m in Sources */,
 				34E8939E1C3B9A03001327C8 /* NSSet+Block.m in Sources */,
 				34E893991C3B9A03001327C8 /* NSObject+KVOBlocks.m in Sources */,
-				34E894A21C3B9FC1001327C8 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				34E893C91C3B9A03001327C8 /* UIBarButtonItem+Action.m in Sources */,
 				34E893EF1C3B9A03001327C8 /* UIImage+Resize.m in Sources */,
 				34E893AA1C3B9A03001327C8 /* NSString+RemoveEmoji.m in Sources */,
@@ -4086,6 +4085,7 @@
 				34E894201C3B9A03001327C8 /* UIView+BlockGesture.m in Sources */,
 				34E894961C3B9FC1001327C8 /* QBAssetsCollectionCheckmarkView.m in Sources */,
 				34E890871C3B89B2001327C8 /* main.m in Sources */,
+				34E9D0D61C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				34E8911E1C3B92AA001327C8 /* MJRefreshAutoStateFooter.m in Sources */,
 				34E894931C3B9FC1001327C8 /* MJPhotoToolbar.m in Sources */,
 				34E8939A1C3B9A03001327C8 /* NSObject+MKBlockTimer.m in Sources */,

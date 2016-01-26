@@ -45,6 +45,7 @@ PODS:
   - SQLCipher/standard (3.1.0):
     - SQLCipher/common
   - UMengAnalytics-NO-IDFA (3.6.7)
+  - UMengSocial (4.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.0)
@@ -57,6 +58,7 @@ DEPENDENCIES:
   - Masonry (~> 0.6.1)
   - SDWebImage (~> 3.7)
   - UMengAnalytics-NO-IDFA
+  - UMengSocial (~> 4.3)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
@@ -69,5 +71,6 @@ SPEC CHECKSUMS:
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
   UMengAnalytics-NO-IDFA: 6d02561a00579b2e37718f204eb81347df5d7b8b
+  UMengSocial: aba7296602310385114d82c255539a7bef3b7ab0
 
 COCOAPODS: 0.38.2
