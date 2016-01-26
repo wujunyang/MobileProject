@@ -49,3 +49,5 @@
 3.5 整理封装WJScrollerMenuView 用于解决滚动菜单的使用
 
 3.6 集成个推消息推送功能（ThirdMacros.h修改相应的key值），证书也要用你们自个的消息证书；
+
+3.7 集成友盟分享SDK，并在登录页实现的（QQ,微信，新浪）三种的第三方登录功能（ThirdMacros.h修改相应的key值）

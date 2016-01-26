@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "GeTuiSdk.h"
+#import <UMSocial.h>
+#import <UMSocialWechatHandler.h>
+#import <UMSocialQQHandler.h>
+#import <UMSocialSinaHandler.h>
+#import <UMSocialSinaSSOHandler.h>
 #import "MyFileLogger.h"
 #import "MPLocationManager.h"
 #import "MPUmengHelper.h"
