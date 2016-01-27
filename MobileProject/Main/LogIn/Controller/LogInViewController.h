@@ -8,13 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "UMSocial.h"
-#import "WXApi.h"
-#import <TencentOpenApi/QQApiInterface.h>
-#import "WeiboSDK.h"
 #import "LogInApi.h"
 #import "LoginModel.h"
 
-@interface LogInViewController : UIViewController<UMSocialUIDelegate>
+#import "UMengSocialLoginViewController.h"
+#import "UMengSocialViewController.h"
+
+@interface LogInViewController : UIViewController
 
 @end

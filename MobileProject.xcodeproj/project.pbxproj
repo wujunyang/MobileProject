@@ -663,6 +663,16 @@
 		34EC806D1C472BF100C7E40A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC806B1C472BF100C7E40A /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34EC80721C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC80711C472E2100C7E40A /* UIPlaceHolderTextView.m */; settings = {ASSET_TAGS = (); }; };
 		34EC80731C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC80711C472E2100C7E40A /* UIPlaceHolderTextView.m */; settings = {ASSET_TAGS = (); }; };
+		34EC96201C58A5BB00985444 /* UMengSocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC961F1C58A5BB00985444 /* UMengSocialViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34EC96211C58A5BB00985444 /* UMengSocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC961F1C58A5BB00985444 /* UMengSocialViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34EC96241C58A61F00985444 /* UMengSocialLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC96231C58A61F00985444 /* UMengSocialLoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34EC96251C58A61F00985444 /* UMengSocialLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC96231C58A61F00985444 /* UMengSocialLoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34EC96271C58AA9600985444 /* Preview.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EC96261C58AA9600985444 /* Preview.xcassets */; settings = {ASSET_TAGS = (); }; };
+		34EC96281C58AA9600985444 /* Preview.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EC96261C58AA9600985444 /* Preview.xcassets */; settings = {ASSET_TAGS = (); }; };
+		34EC962A1C58AB0A00985444 /* Public.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EC96291C58AB0A00985444 /* Public.xcassets */; settings = {ASSET_TAGS = (); }; };
+		34EC962B1C58AB0A00985444 /* Public.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EC96291C58AB0A00985444 /* Public.xcassets */; settings = {ASSET_TAGS = (); }; };
+		34EC962D1C58AB1A00985444 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EC962C1C58AB1A00985444 /* Home.xcassets */; settings = {ASSET_TAGS = (); }; };
+		34EC962E1C58AB1A00985444 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EC962C1C58AB1A00985444 /* Home.xcassets */; settings = {ASSET_TAGS = (); }; };
 		34F212FD1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F212FC1C48C133003AC13D /* CLLocation+MPLocation.m */; settings = {ASSET_TAGS = (); }; };
 		34F212FE1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F212FC1C48C133003AC13D /* CLLocation+MPLocation.m */; settings = {ASSET_TAGS = (); }; };
 		34F213011C48C283003AC13D /* MPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F213001C48C283003AC13D /* MPLocationManager.m */; settings = {ASSET_TAGS = (); }; };
@@ -1353,6 +1363,13 @@
 		34EC806B1C472BF100C7E40A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		34EC80701C472E2100C7E40A /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
 		34EC80711C472E2100C7E40A /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
+		34EC961E1C58A5BB00985444 /* UMengSocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMengSocialViewController.h; sourceTree = "<group>"; };
+		34EC961F1C58A5BB00985444 /* UMengSocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMengSocialViewController.m; sourceTree = "<group>"; };
+		34EC96221C58A61F00985444 /* UMengSocialLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMengSocialLoginViewController.h; sourceTree = "<group>"; };
+		34EC96231C58A61F00985444 /* UMengSocialLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMengSocialLoginViewController.m; sourceTree = "<group>"; };
+		34EC96261C58AA9600985444 /* Preview.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Preview.xcassets; sourceTree = "<group>"; };
+		34EC96291C58AB0A00985444 /* Public.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Public.xcassets; sourceTree = "<group>"; };
+		34EC962C1C58AB1A00985444 /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
 		34F212FB1C48C133003AC13D /* CLLocation+MPLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+MPLocation.h"; sourceTree = "<group>"; };
 		34F212FC1C48C133003AC13D /* CLLocation+MPLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+MPLocation.m"; sourceTree = "<group>"; };
 		34F212FF1C48C283003AC13D /* MPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLocationManager.h; sourceTree = "<group>"; };
@@ -1522,6 +1539,7 @@
 		34E890B81C3B89D0001327C8 /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
+				34EC96191C58A4EB00985444 /* Preview(预演) */,
 				34EC80651C472B5C00C7E40A /* Home(首页) */,
 				34EC80621C472A6A00C7E40A /* Public(公共) */,
 				34E890C91C3B8D70001327C8 /* Base(基类) */,
@@ -1675,6 +1693,9 @@
 			isa = PBXGroup;
 			children = (
 				34E890911C3B89B2001327C8 /* Assets.xcassets */,
+				34EC96261C58AA9600985444 /* Preview.xcassets */,
+				34EC96291C58AB0A00985444 /* Public.xcassets */,
+				34EC962C1C58AB1A00985444 /* Home.xcassets */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -3159,6 +3180,50 @@
 			path = UIPlaceHolderTextView;
 			sourceTree = "<group>";
 		};
+		34EC96191C58A4EB00985444 /* Preview(预演) */ = {
+			isa = PBXGroup;
+			children = (
+				34EC961D1C58A53700985444 /* View */,
+				34EC961C1C58A53100985444 /* Model */,
+				34EC961B1C58A52800985444 /* Controller */,
+				34EC961A1C58A52100985444 /* Other */,
+			);
+			name = "Preview(预演)";
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		34EC961A1C58A52100985444 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		34EC961B1C58A52800985444 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34EC961E1C58A5BB00985444 /* UMengSocialViewController.h */,
+				34EC961F1C58A5BB00985444 /* UMengSocialViewController.m */,
+				34EC96221C58A61F00985444 /* UMengSocialLoginViewController.h */,
+				34EC96231C58A61F00985444 /* UMengSocialLoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34EC961C1C58A53100985444 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34EC961D1C58A53700985444 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		34F212F81C48B74A003AC13D /* SDKFile(集成) */ = {
 			isa = PBXGroup;
 			children = (
@@ -3353,9 +3418,12 @@
 				34E08B9D1C3BFB90005C6CA3 /* LaunchScreen.storyboard in Resources */,
 				34E08B9E1C3BFB90005C6CA3 /* SVProgressHUD.bundle in Resources */,
 				34E08B9F1C3BFB90005C6CA3 /* Assets.xcassets in Resources */,
+				34EC962B1C58AB0A00985444 /* Public.xcassets in Resources */,
+				34EC962E1C58AB1A00985444 /* Home.xcassets in Resources */,
 				34E08BA01C3BFB90005C6CA3 /* MJRefresh.bundle in Resources */,
 				34E08BA11C3BFB90005C6CA3 /* NSDateTimeAgo.bundle in Resources */,
 				34EC47C11C3D6B490041CB85 /* 项目目录.png in Resources */,
+				34EC96281C58AA9600985444 /* Preview.xcassets in Resources */,
 				34F4B6BA1C54CBAC00615E49 /* btn_navigation_close@2x.png in Resources */,
 				34E08BA21C3BFB90005C6CA3 /* Main.storyboard in Resources */,
 				34E08BA31C3BFB90005C6CA3 /* File.strings in Resources */,
@@ -3368,6 +3436,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EC962A1C58AB0A00985444 /* Public.xcassets in Resources */,
 				34E890951C3B89B2001327C8 /* LaunchScreen.storyboard in Resources */,
 				34E894BD1C3BA300001327C8 /* SVProgressHUD.bundle in Resources */,
 				34E890921C3B89B2001327C8 /* Assets.xcassets in Resources */,
@@ -3375,11 +3444,13 @@
 				34E08BAD1C3BFCE3005C6CA3 /* MobileProject_Local-Info.plist in Resources */,
 				34E8937D1C3B9A03001327C8 /* NSDateTimeAgo.bundle in Resources */,
 				34E890901C3B89B2001327C8 /* Main.storyboard in Resources */,
+				34EC962D1C58AB1A00985444 /* Home.xcassets in Resources */,
 				34E8914E1C3B9986001327C8 /* File.strings in Resources */,
 				34F4B6B91C54CBAC00615E49 /* btn_navigation_close@2x.png in Resources */,
 				34E8948F1C3B9FC1001327C8 /* MJPhotoBrowser.bundle in Resources */,
 				34EC47C01C3D6B490041CB85 /* 项目目录.png in Resources */,
 				34E8949E1C3B9FC1001327C8 /* QBImagePickerController.strings in Resources */,
+				34EC96271C58AA9600985444 /* Preview.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3755,6 +3826,7 @@
 				34F4B6C01C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */,
 				34E08B781C3BFB90005C6CA3 /* UINavigationBar+CustomHeight.m in Sources */,
 				34E08B791C3BFB90005C6CA3 /* MJRefreshNormalHeader.m in Sources */,
+				34EC96251C58A61F00985444 /* UMengSocialLoginViewController.m in Sources */,
 				34E08B7A1C3BFB90005C6CA3 /* CAAnimation+EasingEquations.m in Sources */,
 				34F4B6BE1C54CBAC00615E49 /* WJPopupMenuView.m in Sources */,
 				34E08B7B1C3BFB90005C6CA3 /* NSDictionary+SafeAccess.m in Sources */,
@@ -3773,6 +3845,7 @@
 				34E08B871C3BFB90005C6CA3 /* NSMutableString+Ruby.m in Sources */,
 				34E08B881C3BFB90005C6CA3 /* UIFont+DynamicFontControl.m in Sources */,
 				34E08B891C3BFB90005C6CA3 /* UIViewController+StoreKit.m in Sources */,
+				34EC96211C58A5BB00985444 /* UMengSocialViewController.m in Sources */,
 				34E08B8A1C3BFB90005C6CA3 /* UIFont+WDCustomLoader.m in Sources */,
 				34E08B8B1C3BFB90005C6CA3 /* MJRefreshFooter.m in Sources */,
 				34E08B8C1C3BFB90005C6CA3 /* UIButton+Block.m in Sources */,
@@ -4079,6 +4152,7 @@
 				34F4B6BF1C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */,
 				34E893FD1C3B9A03001327C8 /* UINavigationBar+CustomHeight.m in Sources */,
 				34E891231C3B92AA001327C8 /* MJRefreshNormalHeader.m in Sources */,
+				34EC96241C58A61F00985444 /* UMengSocialLoginViewController.m in Sources */,
 				34E893BF1C3B9A03001327C8 /* CAAnimation+EasingEquations.m in Sources */,
 				34F4B6BD1C54CBAC00615E49 /* WJPopupMenuView.m in Sources */,
 				34E893821C3B9A03001327C8 /* NSDictionary+SafeAccess.m in Sources */,
@@ -4097,6 +4171,7 @@
 				34E8939F1C3B9A03001327C8 /* NSMutableString+Ruby.m in Sources */,
 				34E893DF1C3B9A03001327C8 /* UIFont+DynamicFontControl.m in Sources */,
 				34E894391C3B9A03001327C8 /* UIViewController+StoreKit.m in Sources */,
+				34EC96201C58A5BB00985444 /* UMengSocialViewController.m in Sources */,
 				34E893E01C3B9A03001327C8 /* UIFont+WDCustomLoader.m in Sources */,
 				34E8911A1C3B92AA001327C8 /* MJRefreshFooter.m in Sources */,
 				34E893D01C3B9A03001327C8 /* UIButton+Block.m in Sources */,
@@ -4178,7 +4253,8 @@
 			baseConfigurationReference = 141989AA73B56A56D9B2BD49 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology Co.,Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MobileProject/Resource/Global/PrefixHeader.pch";
@@ -4190,9 +4266,9 @@
 				INFOPLIST_FILE = "$(SRCROOT)/MobileProject/Resource/Plist/MobileProject_Local-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.MobileProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Umeng.UMSocial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e568bc17-551f-4093-a3ae-b7498e42543a";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -4201,8 +4277,8 @@
 			baseConfigurationReference = A8A48D3EEAEFFB901D36D8E8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology Co.,Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology Co.,Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MobileProject/Resource/Global/PrefixHeader.pch";
@@ -4214,9 +4290,9 @@
 				INFOPLIST_FILE = "$(SRCROOT)/MobileProject/Resource/Plist/MobileProject_Local-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.MobileProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Umeng.UMSocial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e568bc17-551f-4093-a3ae-b7498e42543a";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
