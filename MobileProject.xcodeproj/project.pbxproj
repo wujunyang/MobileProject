@@ -673,6 +673,10 @@
 		34EC962B1C58AB0A00985444 /* Public.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EC96291C58AB0A00985444 /* Public.xcassets */; settings = {ASSET_TAGS = (); }; };
 		34EC962D1C58AB1A00985444 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EC962C1C58AB1A00985444 /* Home.xcassets */; settings = {ASSET_TAGS = (); }; };
 		34EC962E1C58AB1A00985444 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EC962C1C58AB1A00985444 /* Home.xcassets */; settings = {ASSET_TAGS = (); }; };
+		34EC96361C58C77400985444 /* LoggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC96351C58C77400985444 /* LoggerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34EC96371C58C77400985444 /* LoggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC96351C58C77400985444 /* LoggerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34EC963A1C58C7A400985444 /* LoggerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC96391C58C7A400985444 /* LoggerDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34EC963B1C58C7A400985444 /* LoggerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC96391C58C7A400985444 /* LoggerDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34F212FD1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F212FC1C48C133003AC13D /* CLLocation+MPLocation.m */; settings = {ASSET_TAGS = (); }; };
 		34F212FE1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F212FC1C48C133003AC13D /* CLLocation+MPLocation.m */; settings = {ASSET_TAGS = (); }; };
 		34F213011C48C283003AC13D /* MPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F213001C48C283003AC13D /* MPLocationManager.m */; settings = {ASSET_TAGS = (); }; };
@@ -1370,6 +1374,10 @@
 		34EC96261C58AA9600985444 /* Preview.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Preview.xcassets; sourceTree = "<group>"; };
 		34EC96291C58AB0A00985444 /* Public.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Public.xcassets; sourceTree = "<group>"; };
 		34EC962C1C58AB1A00985444 /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
+		34EC96341C58C77400985444 /* LoggerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerViewController.h; sourceTree = "<group>"; };
+		34EC96351C58C77400985444 /* LoggerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerViewController.m; sourceTree = "<group>"; };
+		34EC96381C58C7A400985444 /* LoggerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerDetailViewController.h; sourceTree = "<group>"; };
+		34EC96391C58C7A400985444 /* LoggerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerDetailViewController.m; sourceTree = "<group>"; };
 		34F212FB1C48C133003AC13D /* CLLocation+MPLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+MPLocation.h"; sourceTree = "<group>"; };
 		34F212FC1C48C133003AC13D /* CLLocation+MPLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+MPLocation.m"; sourceTree = "<group>"; };
 		34F212FF1C48C283003AC13D /* MPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLocationManager.h; sourceTree = "<group>"; };
@@ -1539,6 +1547,7 @@
 		34E890B81C3B89D0001327C8 /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
+				34EC962F1C58C6C000985444 /* Logger(日志) */,
 				34EC96191C58A4EB00985444 /* Preview(预演) */,
 				34EC80651C472B5C00C7E40A /* Home(首页) */,
 				34EC80621C472A6A00C7E40A /* Public(公共) */,
@@ -3224,6 +3233,50 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		34EC962F1C58C6C000985444 /* Logger(日志) */ = {
+			isa = PBXGroup;
+			children = (
+				34EC96331C58C6FB00985444 /* View */,
+				34EC96321C58C6F500985444 /* Model */,
+				34EC96311C58C6EE00985444 /* Controller */,
+				34EC96301C58C6E500985444 /* Other */,
+			);
+			name = "Logger(日志)";
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		34EC96301C58C6E500985444 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		34EC96311C58C6EE00985444 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34EC96341C58C77400985444 /* LoggerViewController.h */,
+				34EC96351C58C77400985444 /* LoggerViewController.m */,
+				34EC96381C58C7A400985444 /* LoggerDetailViewController.h */,
+				34EC96391C58C7A400985444 /* LoggerDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34EC96321C58C6F500985444 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34EC96331C58C6FB00985444 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		34F212F81C48B74A003AC13D /* SDKFile(集成) */ = {
 			isa = PBXGroup;
 			children = (
@@ -3565,6 +3618,7 @@
 				34E08A771C3BFB90005C6CA3 /* UIViewController+BackButtonHandler.m in Sources */,
 				34E08A781C3BFB90005C6CA3 /* MJRefreshConst.m in Sources */,
 				34E08A791C3BFB90005C6CA3 /* NSDecimalNumber+Extensions.m in Sources */,
+				34EC963B1C58C7A400985444 /* LoggerDetailViewController.m in Sources */,
 				34E08A7A1C3BFB90005C6CA3 /* UILabel+ESAdjustableLabel.m in Sources */,
 				34E08A7B1C3BFB90005C6CA3 /* UITextField+History.m in Sources */,
 				34E08A7C1C3BFB90005C6CA3 /* UIImage+animatedGIF.m in Sources */,
@@ -3810,6 +3864,7 @@
 				34E08B691C3BFB90005C6CA3 /* UIViewController+RecursiveDescription.m in Sources */,
 				34E08B6A1C3BFB90005C6CA3 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				34E08B6B1C3BFB90005C6CA3 /* UIResponder+UIAdapt.m in Sources */,
+				34EC96371C58C77400985444 /* LoggerViewController.m in Sources */,
 				34E08B6C1C3BFB90005C6CA3 /* NSDate+InternetDateTime.m in Sources */,
 				34E08B6D1C3BFB90005C6CA3 /* NSManagedObject+DictionaryExport.m in Sources */,
 				34E08B6E1C3BFB90005C6CA3 /* UIBezierPath+Length.m in Sources */,
@@ -3891,6 +3946,7 @@
 				34E894311C3B9A03001327C8 /* UIViewController+BackButtonHandler.m in Sources */,
 				34E891261C3B92AA001327C8 /* MJRefreshConst.m in Sources */,
 				34E8938E1C3B9A03001327C8 /* NSDecimalNumber+Extensions.m in Sources */,
+				34EC963A1C58C7A400985444 /* LoggerDetailViewController.m in Sources */,
 				34E893FA1C3B9A03001327C8 /* UILabel+ESAdjustableLabel.m in Sources */,
 				34E894191C3B9A03001327C8 /* UITextField+History.m in Sources */,
 				34E893E31C3B9A03001327C8 /* UIImage+animatedGIF.m in Sources */,
@@ -4136,6 +4192,7 @@
 				34E894371C3B9A03001327C8 /* UIViewController+RecursiveDescription.m in Sources */,
 				34E894121C3B9A03001327C8 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				34E894091C3B9A03001327C8 /* UIResponder+UIAdapt.m in Sources */,
+				34EC96361C58C77400985444 /* LoggerViewController.m in Sources */,
 				34E893791C3B9A03001327C8 /* NSDate+InternetDateTime.m in Sources */,
 				34E893631C3B9A03001327C8 /* NSManagedObject+DictionaryExport.m in Sources */,
 				34E893CB1C3B9A03001327C8 /* UIBezierPath+Length.m in Sources */,

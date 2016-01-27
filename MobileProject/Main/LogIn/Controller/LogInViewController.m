@@ -37,8 +37,12 @@
 //    [self.navigationController pushViewController:umLogin animated:YES];
     
     //友盟分享跳转
-    UMengSocialViewController *um=[[UMengSocialViewController alloc]init];
-    [self.navigationController pushViewController:um animated:YES];
+//    UMengSocialViewController *um=[[UMengSocialViewController alloc]init];
+//    [self.navigationController pushViewController:um animated:YES];
+    
+    //日志列表查看
+    LoggerViewController *lv=[[LoggerViewController alloc]init];
+    [self.navigationController pushViewController:lv animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

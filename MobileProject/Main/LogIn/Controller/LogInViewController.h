@@ -13,6 +13,7 @@
 
 #import "UMengSocialLoginViewController.h"
 #import "UMengSocialViewController.h"
+#import "LoggerViewController.h"
 
 @interface LogInViewController : UIViewController
 
