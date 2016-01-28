@@ -14,6 +14,8 @@
 #import "UMengSocialLoginViewController.h"
 #import "UMengSocialViewController.h"
 #import "LoggerViewController.h"
+#import "BaiDuCoordinateModel.h"
+#import "BaiDuMapViewController.h"
 
 @interface LogInViewController : UIViewController
 

@@ -29,7 +29,6 @@
 
 
 + (void)installMapSDK{
-
     BMKMapManager *manager = [[BMKMapManager alloc] init];
     [manager start:kBaiduMapKey generalDelegate:nil];
 }
@@ -123,4 +122,16 @@
     self.kBMKLocationBlock(nil, error);
 }
 
+
+- (void)onGetPermissionState:(int)iError
+{
+    if (iError == 0)
+    {
+        NSLog(@"授权成功");
+    }
+    else
+    {
+        NSLog(@"授权错误码%d",iError);
+    }
+}
 @end

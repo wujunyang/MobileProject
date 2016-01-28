@@ -361,4 +361,5 @@
 {
     [UMSocialSnsService  applicationDidBecomeActive];
 }
+
 @end

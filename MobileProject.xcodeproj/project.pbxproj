@@ -657,6 +657,12 @@
 		34E9D0D51C571296007D4FD9 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CD1C571296007D4FD9 /* TPKeyboardAvoidingTableView.m */; settings = {ASSET_TAGS = (); }; };
 		34E9D0D61C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CF1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {ASSET_TAGS = (); }; };
 		34E9D0D71C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CF1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		34E9D8471C59C33B00E98C2A /* BaiDuMapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D8461C59C33B00E98C2A /* BaiDuMapViewController.mm */; settings = {ASSET_TAGS = (); }; };
+		34E9D8481C59C33B00E98C2A /* BaiDuMapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D8461C59C33B00E98C2A /* BaiDuMapViewController.mm */; settings = {ASSET_TAGS = (); }; };
+		34E9D84B1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D84A1C59DB8800E98C2A /* BaiDuRouteAnnotation.m */; settings = {ASSET_TAGS = (); }; };
+		34E9D84C1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D84A1C59DB8800E98C2A /* BaiDuRouteAnnotation.m */; settings = {ASSET_TAGS = (); }; };
+		34E9D84F1C59DD2800E98C2A /* BaiDuCoordinateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D84E1C59DD2800E98C2A /* BaiDuCoordinateModel.m */; settings = {ASSET_TAGS = (); }; };
+		34E9D8501C59DD2800E98C2A /* BaiDuCoordinateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D84E1C59DD2800E98C2A /* BaiDuCoordinateModel.m */; settings = {ASSET_TAGS = (); }; };
 		34EC47C01C3D6B490041CB85 /* 项目目录.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC47BF1C3D6B490041CB85 /* 项目目录.png */; settings = {ASSET_TAGS = (); }; };
 		34EC47C11C3D6B490041CB85 /* 项目目录.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC47BF1C3D6B490041CB85 /* 项目目录.png */; settings = {ASSET_TAGS = (); }; };
 		34EC806C1C472BF100C7E40A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC806B1C472BF100C7E40A /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -1362,6 +1368,12 @@
 		34E9D0CD1C571296007D4FD9 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
 		34E9D0CE1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		34E9D0CF1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		34E9D8451C59C33B00E98C2A /* BaiDuMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiDuMapViewController.h; sourceTree = "<group>"; };
+		34E9D8461C59C33B00E98C2A /* BaiDuMapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaiDuMapViewController.mm; sourceTree = "<group>"; };
+		34E9D8491C59DB8800E98C2A /* BaiDuRouteAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiDuRouteAnnotation.h; sourceTree = "<group>"; };
+		34E9D84A1C59DB8800E98C2A /* BaiDuRouteAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiDuRouteAnnotation.m; sourceTree = "<group>"; };
+		34E9D84D1C59DD2800E98C2A /* BaiDuCoordinateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiDuCoordinateModel.h; sourceTree = "<group>"; };
+		34E9D84E1C59DD2800E98C2A /* BaiDuCoordinateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiDuCoordinateModel.m; sourceTree = "<group>"; };
 		34EC47BF1C3D6B490041CB85 /* 项目目录.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "项目目录.png"; sourceTree = "<group>"; };
 		34EC806A1C472BF100C7E40A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		34EC806B1C472BF100C7E40A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -3215,6 +3227,8 @@
 				34EC961F1C58A5BB00985444 /* UMengSocialViewController.m */,
 				34EC96221C58A61F00985444 /* UMengSocialLoginViewController.h */,
 				34EC96231C58A61F00985444 /* UMengSocialLoginViewController.m */,
+				34E9D8451C59C33B00E98C2A /* BaiDuMapViewController.h */,
+				34E9D8461C59C33B00E98C2A /* BaiDuMapViewController.mm */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3222,6 +3236,10 @@
 		34EC961C1C58A53100985444 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				34E9D8491C59DB8800E98C2A /* BaiDuRouteAnnotation.h */,
+				34E9D84A1C59DB8800E98C2A /* BaiDuRouteAnnotation.m */,
+				34E9D84D1C59DD2800E98C2A /* BaiDuCoordinateModel.h */,
+				34E9D84E1C59DD2800E98C2A /* BaiDuCoordinateModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -3622,6 +3640,7 @@
 				34E08A7A1C3BFB90005C6CA3 /* UILabel+ESAdjustableLabel.m in Sources */,
 				34E08A7B1C3BFB90005C6CA3 /* UITextField+History.m in Sources */,
 				34E08A7C1C3BFB90005C6CA3 /* UIImage+animatedGIF.m in Sources */,
+				34E9D8501C59DD2800E98C2A /* BaiDuCoordinateModel.m in Sources */,
 				34E08A7D1C3BFB90005C6CA3 /* NSString+Trims.m in Sources */,
 				34E08A7E1C3BFB90005C6CA3 /* UIResponder+FirstResponder.m in Sources */,
 				34E08A7F1C3BFB90005C6CA3 /* ViewController.m in Sources */,
@@ -3836,6 +3855,7 @@
 				34E08B4D1C3BFB90005C6CA3 /* RDVTabBar.m in Sources */,
 				34E08B4E1C3BFB90005C6CA3 /* NSInvocation+Bb.m in Sources */,
 				34E08B4F1C3BFB90005C6CA3 /* UIView+Animation.m in Sources */,
+				34E9D8481C59C33B00E98C2A /* BaiDuMapViewController.mm in Sources */,
 				34E08B501C3BFB90005C6CA3 /* RDVTabBarController.m in Sources */,
 				34E08B511C3BFB90005C6CA3 /* NSURLConnection+SelfSigned.m in Sources */,
 				34E08B521C3BFB90005C6CA3 /* UIView+Shake.m in Sources */,
@@ -3877,6 +3897,7 @@
 				34E08B741C3BFB90005C6CA3 /* UIView+Constraints.m in Sources */,
 				34E08B751C3BFB90005C6CA3 /* YTKNetworkPrivate.m in Sources */,
 				34E08B761C3BFB90005C6CA3 /* NSString+Score.m in Sources */,
+				34E9D84C1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */,
 				34E08B771C3BFB90005C6CA3 /* CAShapeLayer+UIBezierPath.m in Sources */,
 				34F4B6C01C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */,
 				34E08B781C3BFB90005C6CA3 /* UINavigationBar+CustomHeight.m in Sources */,
@@ -3950,6 +3971,7 @@
 				34E893FA1C3B9A03001327C8 /* UILabel+ESAdjustableLabel.m in Sources */,
 				34E894191C3B9A03001327C8 /* UITextField+History.m in Sources */,
 				34E893E31C3B9A03001327C8 /* UIImage+animatedGIF.m in Sources */,
+				34E9D84F1C59DD2800E98C2A /* BaiDuCoordinateModel.m in Sources */,
 				34E893AE1C3B9A03001327C8 /* NSString+Trims.m in Sources */,
 				34E894081C3B9A03001327C8 /* UIResponder+FirstResponder.m in Sources */,
 				34E8908D1C3B89B2001327C8 /* ViewController.m in Sources */,
@@ -4164,6 +4186,7 @@
 				34E894581C3B9D05001327C8 /* RDVTabBar.m in Sources */,
 				34E8938A1C3B9A03001327C8 /* NSInvocation+Bb.m in Sources */,
 				34E8941F1C3B9A03001327C8 /* UIView+Animation.m in Sources */,
+				34E9D8471C59C33B00E98C2A /* BaiDuMapViewController.mm in Sources */,
 				34E894591C3B9D05001327C8 /* RDVTabBarController.m in Sources */,
 				34E893B61C3B9A03001327C8 /* NSURLConnection+SelfSigned.m in Sources */,
 				34E8942D1C3B9A03001327C8 /* UIView+Shake.m in Sources */,
@@ -4205,6 +4228,7 @@
 				34E894211C3B9A03001327C8 /* UIView+Constraints.m in Sources */,
 				34E891461C3B9739001327C8 /* YTKNetworkPrivate.m in Sources */,
 				34E893AC1C3B9A03001327C8 /* NSString+Score.m in Sources */,
+				34E9D84B1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */,
 				34E893C21C3B9A03001327C8 /* CAShapeLayer+UIBezierPath.m in Sources */,
 				34F4B6BF1C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */,
 				34E893FD1C3B9A03001327C8 /* UINavigationBar+CustomHeight.m in Sources */,
@@ -4323,7 +4347,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/MobileProject/Resource/Plist/MobileProject_Local-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Umeng.UMSocial;
+				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.MobileProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -4347,7 +4371,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/MobileProject/Resource/Plist/MobileProject_Local-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Umeng.UMSocial;
+				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.MobileProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
