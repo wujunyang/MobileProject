@@ -19,6 +19,10 @@
 #import "LogInViewController.h"
 #import "HomeViewController.h"
 
+#if DEBUG
+#import "FLEXManager.h"
+#endif
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate,UIAlertViewDelegate,GeTuiSdkDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

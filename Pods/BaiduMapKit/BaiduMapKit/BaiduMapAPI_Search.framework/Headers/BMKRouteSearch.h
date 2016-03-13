@@ -38,6 +38,13 @@
  */
 - (BOOL)walkingSearch:(BMKWalkingRoutePlanOption*)walkingRoutePlanOption;
 
+/**
+ *骑行路线检索
+ *异步函数，返回结果在BMKRouteSearchDelegate的onGetRidingRouteResult通知
+ *@param ridingRoutePlanOption 骑行检索信息类
+ *@return 成功返回YES，否则返回NO
+ */
+- (BOOL)ridingSearch:(BMKRidingRoutePlanOption*) ridingRoutePlanOption;
 
 @end
 
@@ -66,5 +73,13 @@
  *@param error 错误号，@see BMKSearchErrorCode
  */
 - (void)onGetWalkingRouteResult:(BMKRouteSearch*)searcher result:(BMKWalkingRouteResult*)result errorCode:(BMKSearchErrorCode)error;
+
+/**
+ *返回骑行搜索结果
+ *@param searcher 搜索对象
+ *@param result 搜索结果，类型为BMKRidingRouteResult
+ *@param error 错误号，@see BMKSearchErrorCode
+ */
+- (void)onGetRidingRouteResult:(BMKRouteSearch*)searcher result:(BMKRidingRouteResult*)result errorCode:(BMKSearchErrorCode)error;
 
 @end

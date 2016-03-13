@@ -41,6 +41,14 @@
  */
 - (BOOL)requestLocationShareURL:(BMKLocationShareURLOption *)reverseGeoShareUrlSearchOption;
 
+/**
+ *获取路线规划短串分享url
+ *异步函数，返回结果在BMKShareUrlSearchDelegate的onGetRoutePlanShareURLResult通知
+ *@param routePlanShareUrlSearchOption 取路线规划短串分享检索信息类
+ *@return 成功返回YES，否则返回NO
+ */
+- (BOOL)requestRoutePlanShareURL:(BMKRoutePlanShareURLOption *)routePlanShareUrlSearchOption;
+
 
 @end
 
@@ -63,9 +71,12 @@
  */
 - (void)onGetLocationShareURLResult:(BMKShareURLSearch *)searcher result:(BMKShareURLResult *)result errorCode:(BMKSearchErrorCode)error;
 
+/**
+ *返回路线规划分享url
+ *@param searcher 搜索对象
+ *@param result 返回结果
+ *@param error 错误号，@see BMKSearchErrorCode
+ */
+- (void)onGetRoutePlanShareURLResult:(BMKShareURLSearch *)searcher result:(BMKShareURLResult *)result errorCode:(BMKSearchErrorCode)error;
+
 @end
-
-
-
-
-

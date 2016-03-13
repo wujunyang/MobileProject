@@ -18,7 +18,7 @@
 
 /**
  *获取当前地图API radar组件 的版本号
- *当前radar组件版本 : 2.9.1
+ *当前radar组件版本 : 2.10.0
  *return  返回当前API radar组件 的版本号
  */
 UIKIT_EXTERN NSString* BMKGetMapApiRadarComponentVersion();

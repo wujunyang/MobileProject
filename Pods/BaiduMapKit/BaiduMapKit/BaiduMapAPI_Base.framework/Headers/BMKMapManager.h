@@ -17,8 +17,21 @@ enum EN_PERMISSION_STATUS
     
 };
 
+//地图模块枚举
+typedef enum {
+    BMKMapModuleTile = 0,   //瓦片图模块
+}BMKMapModule;
+
 ///主引擎类
 @interface BMKMapManager : NSObject
+
+/**
+ *是否开启打印某模块的log，默认不打印log
+ *debug时，建议打开，有利于调试程序；release时建议关闭
+ *@param enable 是否开启
+ *@param mapModule 地图模块
+ */
++ (void)logEnable:(BOOL) enable module:(BMKMapModule) mapModule;
 
 /**
 *启动引擎

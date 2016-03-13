@@ -19,7 +19,7 @@
 /// tileLayer的可见最小Zoom值，默认3
 @property (nonatomic, assign) NSInteger minZoom;
 
-/// tileLayer的可见最大Zoom值，默认20，且不能小于minZoom
+/// tileLayer的可见最大Zoom值，默认21，且不能小于minZoom
 @property (nonatomic, assign) NSInteger maxZoom;
 
 /// tileOverlay的可渲染区域，默认世界范围

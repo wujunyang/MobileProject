@@ -20,7 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - BaiduMapKit (2.9.1)
+  - BaiduMapKit (2.10.0)
   - CocoaLumberjack (2.0.3):
     - CocoaLumberjack/Default (= 2.0.3)
     - CocoaLumberjack/Extensions (= 2.0.3)
@@ -29,6 +29,7 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.0.3):
     - CocoaLumberjack/Default
+  - FLEX (2.1.1)
   - FMDB/common (2.5)
   - FMDB/SQLCipher (2.5):
     - FMDB/common
@@ -51,6 +52,7 @@ DEPENDENCIES:
   - AFNetworking (~> 2.6.0)
   - BaiduMapKit
   - CocoaLumberjack (~> 2.0.0-rc)
+  - FLEX (~> 2.0)
   - FMDB/common (~> 2.5)
   - FMDB/SQLCipher (~> 2.5)
   - GTSDK
@@ -62,8 +64,9 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  BaiduMapKit: 97d2d44b41a876de2371fb91ddf78cdf84dafa05
+  BaiduMapKit: 5df028c6b455d29e68e89694adbcf9d37a4bcc99
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
+  FLEX: 27b768fcae23a313a1eb115076d429180ca9b472
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   GTSDK: 9ea284237331495fd76a71088bfd2da30981d510
   JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03

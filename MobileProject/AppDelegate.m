@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+     //如果是测试本地版本开启调试工具FLEX
+     #if DEBUG&LOCAL
+     [[FLEXManager sharedManager] showExplorer];
+     #endif
+    
     //日志初始化
     [MyFileLogger sharedManager];
     

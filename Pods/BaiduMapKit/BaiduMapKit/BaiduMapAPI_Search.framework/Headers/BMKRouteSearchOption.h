@@ -14,9 +14,9 @@
     BMKPlanNode        *_from;
     BMKPlanNode        *_to;
 }
-///检索的起点，可通过关键字、坐标两种方式指定
+///检索的起点，可通过关键字、坐标两种方式指定。cityName和cityID同时指定时，优先使用cityID
 @property (nonatomic, strong) BMKPlanNode *from;
-///检索的终点，可通过关键字、坐标两种方式指定
+///检索的终点，可通过关键字、坐标两种方式指定。cityName和cityID同时指定时，优先使用cityID
 @property (nonatomic, strong) BMKPlanNode *to;
 @end
 /// 步行查询基础信息类
@@ -53,5 +53,8 @@
 
 @end
 
+/// 骑行查询基础信息类
+@interface BMKRidingRoutePlanOption : BMKBaseRoutePlanOption
 
+@end
 
