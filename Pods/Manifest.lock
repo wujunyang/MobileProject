@@ -1,4 +1,5 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.0.5)
   - AFNetworking (2.6.3):
     - AFNetworking/NSURLConnection (= 2.6.3)
     - AFNetworking/NSURLSession (= 2.6.3)
@@ -49,6 +50,7 @@ PODS:
   - UMengSocial (4.4)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
   - AFNetworking (~> 2.6.0)
   - BaiduMapKit
   - CocoaLumberjack (~> 2.0.0-rc)
@@ -63,6 +65,7 @@ DEPENDENCIES:
   - UMengSocial (~> 4.3)
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 8312778b6815578e6a86d630fbcf31dc94c534e7
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   BaiduMapKit: 5df028c6b455d29e68e89694adbcf9d37a4bcc99
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e

@@ -178,14 +178,21 @@
         string = [[NSTimeZone localTimeZone] name];
 
     NSArray *array = [string componentsSeparatedByString:@"/"];
-
-    if (array.count == 2)
+    if (array.count == 1)
+    {
+        // Unknown time zone - appeared only in travis builds.
+        self.selectedContinent = _continents[0];
+        self.selectedCity = [self getCitiesByContinent:self.selectedContinent][0];
+    }
+    else if (array.count == 2)
     {
         self.selectedContinent = array[0];
         self.selectedCity = array[1];
     }
     else
+    {
         assert(NO);
+    }
 
 }
 
@@ -304,7 +311,8 @@
 
         pickerLabel = [[UILabel alloc] initWithFrame:frame];
         [pickerLabel setTextAlignment:NSTextAlignmentCenter];
-        [pickerLabel setMinimumScaleFactor:0.5];
+        if ([pickerLabel respondsToSelector:@selector(setMinimumScaleFactor:)])
+            [pickerLabel setMinimumScaleFactor:0.5];
         [pickerLabel setAdjustsFontSizeToFitWidth:YES];
         [pickerLabel setBackgroundColor:[UIColor clearColor]];
         [pickerLabel setFont:[UIFont systemFontOfSize:20]];
@@ -367,14 +375,31 @@
     UIBarButtonItem *button = (UIBarButtonItem*)sender;
     NSInteger index = button.tag;
     NSAssert((index >= 0 && index < self.customButtons.count), @"Bad custom button tag: %ld, custom button count: %lu", (long)index, (unsigned long)self.customButtons.count);
+    
     NSDictionary *buttonDetails = (self.customButtons)[(NSUInteger) index];
-    id itemValue = buttonDetails[kButtonValue];
-    if ( [itemValue isKindOfClass:[NSTimeZone class]] )
-    {
-        NSTimeZone *timeZone = (NSTimeZone *) itemValue;
-        self.initialTimeZone = timeZone;
-        [self setSelectedRows];
-        [self selectCurrentLocale:(UIPickerView *) self.pickerView];
+    NSAssert(buttonDetails != NULL, @"Custom button dictionary is invalid");
+    
+    ActionType actionType = (ActionType) [buttonDetails[kActionType] intValue];
+    switch (actionType) {
+        case ActionTypeValue: {
+            id itemValue = buttonDetails[kButtonValue];
+            if ( [itemValue isKindOfClass:[NSTimeZone class]] )
+            {
+                NSTimeZone *timeZone = (NSTimeZone *) itemValue;
+                self.initialTimeZone = timeZone;
+                [self setSelectedRows];
+                [self selectCurrentLocale:(UIPickerView *) self.pickerView];
+            }
+            break;
+        }
+            
+        case ActionTypeBlock:
+        case ActionTypeSelector:
+            [super customButtonPressed:sender];
+            break;
+        default:
+            NSAssert(false, @"Unknown action type");
+            break;
     }
 }
 

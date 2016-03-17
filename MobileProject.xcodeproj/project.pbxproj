@@ -159,7 +159,6 @@
 		34E08AF41C3BFB90005C6CA3 /* NSManagedObjectContext+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8915D1C3B9A02001327C8 /* NSManagedObjectContext+Extensions.m */; settings = {ASSET_TAGS = (); }; };
 		34E08AF51C3BFB90005C6CA3 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892401C3B9A03001327C8 /* UIAlertView+Block.m */; settings = {ASSET_TAGS = (); }; };
 		34E08AF61C3BFB90005C6CA3 /* NSManagedObjectContext+FetchRequestsConstructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891611C3B9A02001327C8 /* NSManagedObjectContext+FetchRequestsConstructors.m */; settings = {ASSET_TAGS = (); }; };
-		34E08AF71C3BFB90005C6CA3 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890DF1C3B92AA001327C8 /* DistancePickerView.m */; settings = {ASSET_TAGS = (); }; };
 		34E08AF81C3BFB90005C6CA3 /* UIButton+Submitting.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892641C3B9A03001327C8 /* UIButton+Submitting.m */; settings = {ASSET_TAGS = (); }; };
 		34E08AF91C3BFB90005C6CA3 /* YTKNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891381C3B9739001327C8 /* YTKNetworkAgent.m */; settings = {ASSET_TAGS = (); }; };
 		34E08AFA1C3BFB90005C6CA3 /* NSIndexPath+Offset.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891B41C3B9A03001327C8 /* NSIndexPath+Offset.m */; settings = {ASSET_TAGS = (); }; };
@@ -170,7 +169,6 @@
 		34E08AFF1C3BFB90005C6CA3 /* UIImage+Vector.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892A31C3B9A03001327C8 /* UIImage+Vector.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B001C3BFB90005C6CA3 /* NSString+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891F11C3B9A03001327C8 /* NSString+Encrypt.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B011C3BFB90005C6CA3 /* NSString+Matcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891F51C3B9A03001327C8 /* NSString+Matcher.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B021C3BFB90005C6CA3 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890E11C3B92AA001327C8 /* SWActionSheet.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B031C3BFB90005C6CA3 /* UITableView+iOS7Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892EF1C3B9A03001327C8 /* UITableView+iOS7Style.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B041C3BFB90005C6CA3 /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890F41C3B92AA001327C8 /* MJRefreshAutoNormalFooter.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B051C3BFB90005C6CA3 /* AFDownloadRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8914A1C3B9808001327C8 /* AFDownloadRequestOperation.m */; settings = {ASSET_TAGS = (); }; };
@@ -206,7 +204,6 @@
 		34E08B251C3BFB90005C6CA3 /* YTKBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8912E1C3B9739001327C8 /* YTKBaseRequest.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B261C3BFB90005C6CA3 /* UIImage+Capture.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8928D1C3B9A03001327C8 /* UIImage+Capture.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B271C3BFB90005C6CA3 /* UIControl+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892761C3B9A03001327C8 /* UIControl+Block.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B281C3BFB90005C6CA3 /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890DB1C3B92AA001327C8 /* ActionSheetLocalePicker.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B291C3BFB90005C6CA3 /* UINavigationItem+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892D01C3B9A03001327C8 /* UINavigationItem+Margin.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B2A1C3BFB90005C6CA3 /* NSString+RegexCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891FB1C3B9A03001327C8 /* NSString+RegexCategory.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B2B1C3BFB90005C6CA3 /* UIWebView+Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893501C3B9A03001327C8 /* UIWebView+Canvas.m */; settings = {ASSET_TAGS = (); }; };
@@ -215,7 +212,6 @@
 		34E08B2E1C3BFB90005C6CA3 /* QBAssetsCollectionVideoIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894771C3B9FC1001327C8 /* QBAssetsCollectionVideoIndicatorView.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B2F1C3BFB90005C6CA3 /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8922E1C3B9A03001327C8 /* CAAnimation+Blocks.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B301C3BFB90005C6CA3 /* UIView+Recursion.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893261C3B9A03001327C8 /* UIView+Recursion.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B311C3BFB90005C6CA3 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890D41C3B92AA001327C8 /* ActionSheetCustomPicker.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B321C3BFB90005C6CA3 /* NetWorkBaseUrlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894C21C3BAEB9001327C8 /* NetWorkBaseUrlConfig.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B331C3BFB90005C6CA3 /* NSURLRequest+ParamsFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8921D1C3B9A03001327C8 /* NSURLRequest+ParamsFromDictionary.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B341C3BFB90005C6CA3 /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8918C1C3B9A03001327C8 /* NSDate+Formatter.m */; settings = {ASSET_TAGS = (); }; };
@@ -228,7 +224,6 @@
 		34E08B3B1C3BFB90005C6CA3 /* NSDictionary+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891A51C3B9A03001327C8 /* NSDictionary+XML.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B3C1C3BFB90005C6CA3 /* NSNumber+CGFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891C31C3B9A03001327C8 /* NSNumber+CGFloat.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B3D1C3BFB90005C6CA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890891C3B89B2001327C8 /* AppDelegate.m */; };
-		34E08B3E1C3BFB90005C6CA3 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890D71C3B92AA001327C8 /* ActionSheetDatePicker.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B3F1C3BFB90005C6CA3 /* NSString+Ruby.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891FF1C3B9A03001327C8 /* NSString+Ruby.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B401C3BFB90005C6CA3 /* UISplitViewController+QuickAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892EC1C3B9A03001327C8 /* UISplitViewController+QuickAccess.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B411C3BFB90005C6CA3 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894B71C3BA300001327C8 /* SVProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
@@ -260,9 +255,7 @@
 		34E08B5B1C3BFB90005C6CA3 /* GVUserDefaults+BBProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E08A581C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B5C1C3BFB90005C6CA3 /* NSNotificationCenter+MainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891BC1C3B9A03001327C8 /* NSNotificationCenter+MainThread.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B5D1C3BFB90005C6CA3 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892951C3B9A03001327C8 /* UIImage+GIF.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B5E1C3BFB90005C6CA3 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890D91C3B92AA001327C8 /* ActionSheetDistancePicker.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B5F1C3BFB90005C6CA3 /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891731C3B9A02001327C8 /* NSArray+SafeAccess.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B601C3BFB90005C6CA3 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890DD1C3B92AA001327C8 /* ActionSheetStringPicker.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B611C3BFB90005C6CA3 /* UIResponder+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892D61C3B9A03001327C8 /* UIResponder+Chain.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B621C3BFB90005C6CA3 /* NSSet+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891E41C3B9A03001327C8 /* NSSet+Block.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B631C3BFB90005C6CA3 /* NSObject+KVOBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891D81C3B9A03001327C8 /* NSObject+KVOBlocks.m */; settings = {ASSET_TAGS = (); }; };
@@ -299,7 +292,6 @@
 		34E08B831C3BFB90005C6CA3 /* NSUserDefaults+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892221C3B9A03001327C8 /* NSUserDefaults+SafeAccess.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B841C3BFB90005C6CA3 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8932A1C3B9A03001327C8 /* UIView+Screenshot.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B851C3BFB90005C6CA3 /* UIWebView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8934E1C3B9A03001327C8 /* UIWebView+Blocks.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B861C3BFB90005C6CA3 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890D21C3B92AA001327C8 /* AbstractActionSheetPicker.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B871C3BFB90005C6CA3 /* NSMutableString+Ruby.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891E71C3B9A03001327C8 /* NSMutableString+Ruby.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B881C3BFB90005C6CA3 /* UIFont+DynamicFontControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8927E1C3B9A03001327C8 /* UIFont+DynamicFontControl.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B891C3BFB90005C6CA3 /* UIViewController+StoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893451C3B9A03001327C8 /* UIViewController+StoreKit.m */; settings = {ASSET_TAGS = (); }; };
@@ -338,14 +330,6 @@
 		34E890951C3B89B2001327C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E890931C3B89B2001327C8 /* LaunchScreen.storyboard */; };
 		34E890A01C3B89B3001327C8 /* MobileProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8909F1C3B89B3001327C8 /* MobileProjectTests.m */; };
 		34E890AB1C3B89B3001327C8 /* MobileProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890AA1C3B89B3001327C8 /* MobileProjectUITests.m */; };
-		34E8910F1C3B92AA001327C8 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890D21C3B92AA001327C8 /* AbstractActionSheetPicker.m */; settings = {ASSET_TAGS = (); }; };
-		34E891101C3B92AA001327C8 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890D41C3B92AA001327C8 /* ActionSheetCustomPicker.m */; settings = {ASSET_TAGS = (); }; };
-		34E891111C3B92AA001327C8 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890D71C3B92AA001327C8 /* ActionSheetDatePicker.m */; settings = {ASSET_TAGS = (); }; };
-		34E891121C3B92AA001327C8 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890D91C3B92AA001327C8 /* ActionSheetDistancePicker.m */; settings = {ASSET_TAGS = (); }; };
-		34E891131C3B92AA001327C8 /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890DB1C3B92AA001327C8 /* ActionSheetLocalePicker.m */; settings = {ASSET_TAGS = (); }; };
-		34E891141C3B92AA001327C8 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890DD1C3B92AA001327C8 /* ActionSheetStringPicker.m */; settings = {ASSET_TAGS = (); }; };
-		34E891151C3B92AA001327C8 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890DF1C3B92AA001327C8 /* DistancePickerView.m */; settings = {ASSET_TAGS = (); }; };
-		34E891161C3B92AA001327C8 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890E11C3B92AA001327C8 /* SWActionSheet.m */; settings = {ASSET_TAGS = (); }; };
 		34E891171C3B92AA001327C8 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890E51C3B92AA001327C8 /* MJRefreshAutoFooter.m */; settings = {ASSET_TAGS = (); }; };
 		34E891181C3B92AA001327C8 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890E71C3B92AA001327C8 /* MJRefreshBackFooter.m */; settings = {ASSET_TAGS = (); }; };
 		34E891191C3B92AA001327C8 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890E91C3B92AA001327C8 /* MJRefreshComponent.m */; settings = {ASSET_TAGS = (); }; };
@@ -743,23 +727,6 @@
 		34E890A61C3B89B3001327C8 /* MobileProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E890AA1C3B89B3001327C8 /* MobileProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileProjectUITests.m; sourceTree = "<group>"; };
 		34E890AC1C3B89B3001327C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34E890D11C3B92AA001327C8 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
-		34E890D21C3B92AA001327C8 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
-		34E890D31C3B92AA001327C8 /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPicker.h; sourceTree = "<group>"; };
-		34E890D41C3B92AA001327C8 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetCustomPicker.m; sourceTree = "<group>"; };
-		34E890D51C3B92AA001327C8 /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
-		34E890D61C3B92AA001327C8 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDatePicker.h; sourceTree = "<group>"; };
-		34E890D71C3B92AA001327C8 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDatePicker.m; sourceTree = "<group>"; };
-		34E890D81C3B92AA001327C8 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDistancePicker.h; sourceTree = "<group>"; };
-		34E890D91C3B92AA001327C8 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDistancePicker.m; sourceTree = "<group>"; };
-		34E890DA1C3B92AA001327C8 /* ActionSheetLocalePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetLocalePicker.h; sourceTree = "<group>"; };
-		34E890DB1C3B92AA001327C8 /* ActionSheetLocalePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetLocalePicker.m; sourceTree = "<group>"; };
-		34E890DC1C3B92AA001327C8 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetStringPicker.h; sourceTree = "<group>"; };
-		34E890DD1C3B92AA001327C8 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetStringPicker.m; sourceTree = "<group>"; };
-		34E890DE1C3B92AA001327C8 /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistancePickerView.h; sourceTree = "<group>"; };
-		34E890DF1C3B92AA001327C8 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistancePickerView.m; sourceTree = "<group>"; };
-		34E890E01C3B92AA001327C8 /* SWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWActionSheet.h; sourceTree = "<group>"; };
-		34E890E11C3B92AA001327C8 /* SWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWActionSheet.m; sourceTree = "<group>"; };
 		34E890E41C3B92AA001327C8 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		34E890E51C3B92AA001327C8 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		34E890E61C3B92AA001327C8 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -1599,7 +1566,6 @@
 				34E8945B1C3B9D6A001327C8 /* iCarousel */,
 				34E894511C3B9D05001327C8 /* RDVTabBarController */,
 				34E891481C3B97C5001327C8 /* AFDownloadRequestOperation */,
-				34E890D01C3B92AA001327C8 /* ActionSheetPicker */,
 				34E890E21C3B92AA001327C8 /* MJRefresh */,
 			);
 			name = "Vender(第三方)";
@@ -1823,30 +1789,6 @@
 			children = (
 			);
 			path = BaseOther;
-			sourceTree = "<group>";
-		};
-		34E890D01C3B92AA001327C8 /* ActionSheetPicker */ = {
-			isa = PBXGroup;
-			children = (
-				34E890D11C3B92AA001327C8 /* AbstractActionSheetPicker.h */,
-				34E890D21C3B92AA001327C8 /* AbstractActionSheetPicker.m */,
-				34E890D31C3B92AA001327C8 /* ActionSheetCustomPicker.h */,
-				34E890D41C3B92AA001327C8 /* ActionSheetCustomPicker.m */,
-				34E890D51C3B92AA001327C8 /* ActionSheetCustomPickerDelegate.h */,
-				34E890D61C3B92AA001327C8 /* ActionSheetDatePicker.h */,
-				34E890D71C3B92AA001327C8 /* ActionSheetDatePicker.m */,
-				34E890D81C3B92AA001327C8 /* ActionSheetDistancePicker.h */,
-				34E890D91C3B92AA001327C8 /* ActionSheetDistancePicker.m */,
-				34E890DA1C3B92AA001327C8 /* ActionSheetLocalePicker.h */,
-				34E890DB1C3B92AA001327C8 /* ActionSheetLocalePicker.m */,
-				34E890DC1C3B92AA001327C8 /* ActionSheetStringPicker.h */,
-				34E890DD1C3B92AA001327C8 /* ActionSheetStringPicker.m */,
-				34E890DE1C3B92AA001327C8 /* DistancePickerView.h */,
-				34E890DF1C3B92AA001327C8 /* DistancePickerView.m */,
-				34E890E01C3B92AA001327C8 /* SWActionSheet.h */,
-				34E890E11C3B92AA001327C8 /* SWActionSheet.m */,
-			);
-			path = ActionSheetPicker;
 			sourceTree = "<group>";
 		};
 		34E890E21C3B92AA001327C8 /* MJRefresh */ = {
@@ -3764,7 +3706,6 @@
 				34E08AF41C3BFB90005C6CA3 /* NSManagedObjectContext+Extensions.m in Sources */,
 				34E08AF51C3BFB90005C6CA3 /* UIAlertView+Block.m in Sources */,
 				34E08AF61C3BFB90005C6CA3 /* NSManagedObjectContext+FetchRequestsConstructors.m in Sources */,
-				34E08AF71C3BFB90005C6CA3 /* DistancePickerView.m in Sources */,
 				34E08AF81C3BFB90005C6CA3 /* UIButton+Submitting.m in Sources */,
 				34E08AF91C3BFB90005C6CA3 /* YTKNetworkAgent.m in Sources */,
 				34E08AFA1C3BFB90005C6CA3 /* NSIndexPath+Offset.m in Sources */,
@@ -3775,7 +3716,6 @@
 				34E08AFF1C3BFB90005C6CA3 /* UIImage+Vector.m in Sources */,
 				34E08B001C3BFB90005C6CA3 /* NSString+Encrypt.m in Sources */,
 				34E08B011C3BFB90005C6CA3 /* NSString+Matcher.m in Sources */,
-				34E08B021C3BFB90005C6CA3 /* SWActionSheet.m in Sources */,
 				34E08B031C3BFB90005C6CA3 /* UITableView+iOS7Style.m in Sources */,
 				34E08B041C3BFB90005C6CA3 /* MJRefreshAutoNormalFooter.m in Sources */,
 				34E08B051C3BFB90005C6CA3 /* AFDownloadRequestOperation.m in Sources */,
@@ -3813,7 +3753,6 @@
 				34E08B261C3BFB90005C6CA3 /* UIImage+Capture.m in Sources */,
 				34E08B271C3BFB90005C6CA3 /* UIControl+Block.m in Sources */,
 				34E95EBB1C4F82F700376777 /* UUInputAccessoryView.m in Sources */,
-				34E08B281C3BFB90005C6CA3 /* ActionSheetLocalePicker.m in Sources */,
 				34E08B291C3BFB90005C6CA3 /* UINavigationItem+Margin.m in Sources */,
 				34E08B2A1C3BFB90005C6CA3 /* NSString+RegexCategory.m in Sources */,
 				34E08B2B1C3BFB90005C6CA3 /* UIWebView+Canvas.m in Sources */,
@@ -3822,7 +3761,6 @@
 				34E08B2E1C3BFB90005C6CA3 /* QBAssetsCollectionVideoIndicatorView.m in Sources */,
 				34E08B2F1C3BFB90005C6CA3 /* CAAnimation+Blocks.m in Sources */,
 				34E08B301C3BFB90005C6CA3 /* UIView+Recursion.m in Sources */,
-				34E08B311C3BFB90005C6CA3 /* ActionSheetCustomPicker.m in Sources */,
 				34E08B321C3BFB90005C6CA3 /* NetWorkBaseUrlConfig.m in Sources */,
 				34E08B331C3BFB90005C6CA3 /* NSURLRequest+ParamsFromDictionary.m in Sources */,
 				34E08B341C3BFB90005C6CA3 /* NSDate+Formatter.m in Sources */,
@@ -3835,7 +3773,6 @@
 				34E08B3B1C3BFB90005C6CA3 /* NSDictionary+XML.m in Sources */,
 				34E08B3C1C3BFB90005C6CA3 /* NSNumber+CGFloat.m in Sources */,
 				34E08B3D1C3BFB90005C6CA3 /* AppDelegate.m in Sources */,
-				34E08B3E1C3BFB90005C6CA3 /* ActionSheetDatePicker.m in Sources */,
 				34E08B3F1C3BFB90005C6CA3 /* NSString+Ruby.m in Sources */,
 				34E08B401C3BFB90005C6CA3 /* UISplitViewController+QuickAccess.m in Sources */,
 				34E08B411C3BFB90005C6CA3 /* SVProgressHUD.m in Sources */,
@@ -3870,9 +3807,7 @@
 				34E08B5B1C3BFB90005C6CA3 /* GVUserDefaults+BBProperties.m in Sources */,
 				34E08B5C1C3BFB90005C6CA3 /* NSNotificationCenter+MainThread.m in Sources */,
 				34E08B5D1C3BFB90005C6CA3 /* UIImage+GIF.m in Sources */,
-				34E08B5E1C3BFB90005C6CA3 /* ActionSheetDistancePicker.m in Sources */,
 				34E08B5F1C3BFB90005C6CA3 /* NSArray+SafeAccess.m in Sources */,
-				34E08B601C3BFB90005C6CA3 /* ActionSheetStringPicker.m in Sources */,
 				34E08B611C3BFB90005C6CA3 /* UIResponder+Chain.m in Sources */,
 				34E08B621C3BFB90005C6CA3 /* NSSet+Block.m in Sources */,
 				34E08B631C3BFB90005C6CA3 /* NSObject+KVOBlocks.m in Sources */,
@@ -3917,7 +3852,6 @@
 				34E08B831C3BFB90005C6CA3 /* NSUserDefaults+SafeAccess.m in Sources */,
 				34E08B841C3BFB90005C6CA3 /* UIView+Screenshot.m in Sources */,
 				34E08B851C3BFB90005C6CA3 /* UIWebView+Blocks.m in Sources */,
-				34E08B861C3BFB90005C6CA3 /* AbstractActionSheetPicker.m in Sources */,
 				34E08B871C3BFB90005C6CA3 /* NSMutableString+Ruby.m in Sources */,
 				34E08B881C3BFB90005C6CA3 /* UIFont+DynamicFontControl.m in Sources */,
 				34E08B891C3BFB90005C6CA3 /* UIViewController+StoreKit.m in Sources */,
@@ -4095,7 +4029,6 @@
 				34E893651C3B9A03001327C8 /* NSManagedObjectContext+Extensions.m in Sources */,
 				34E893C41C3B9A03001327C8 /* UIAlertView+Block.m in Sources */,
 				34E893671C3B9A03001327C8 /* NSManagedObjectContext+FetchRequestsConstructors.m in Sources */,
-				34E891151C3B92AA001327C8 /* DistancePickerView.m in Sources */,
 				34E893D41C3B9A03001327C8 /* UIButton+Submitting.m in Sources */,
 				34E891441C3B9739001327C8 /* YTKNetworkAgent.m in Sources */,
 				34E893891C3B9A03001327C8 /* NSIndexPath+Offset.m in Sources */,
@@ -4106,7 +4039,6 @@
 				34E893F11C3B9A03001327C8 /* UIImage+Vector.m in Sources */,
 				34E893A41C3B9A03001327C8 /* NSString+Encrypt.m in Sources */,
 				34E893A61C3B9A03001327C8 /* NSString+Matcher.m in Sources */,
-				34E891161C3B92AA001327C8 /* SWActionSheet.m in Sources */,
 				34E894111C3B9A03001327C8 /* UITableView+iOS7Style.m in Sources */,
 				34E8911D1C3B92AA001327C8 /* MJRefreshAutoNormalFooter.m in Sources */,
 				34E8914B1C3B9808001327C8 /* AFDownloadRequestOperation.m in Sources */,
@@ -4144,7 +4076,6 @@
 				34E893E61C3B9A03001327C8 /* UIImage+Capture.m in Sources */,
 				34E893DC1C3B9A03001327C8 /* UIControl+Block.m in Sources */,
 				34E95EBA1C4F82F600376777 /* UUInputAccessoryView.m in Sources */,
-				34E891131C3B92AA001327C8 /* ActionSheetLocalePicker.m in Sources */,
 				34E894051C3B9A03001327C8 /* UINavigationItem+Margin.m in Sources */,
 				34E893A91C3B9A03001327C8 /* NSString+RegexCategory.m in Sources */,
 				34E8943E1C3B9A03001327C8 /* UIWebView+Canvas.m in Sources */,
@@ -4153,7 +4084,6 @@
 				34E894991C3B9FC1001327C8 /* QBAssetsCollectionVideoIndicatorView.m in Sources */,
 				34E893BE1C3B9A03001327C8 /* CAAnimation+Blocks.m in Sources */,
 				34E8942A1C3B9A03001327C8 /* UIView+Recursion.m in Sources */,
-				34E891101C3B92AA001327C8 /* ActionSheetCustomPicker.m in Sources */,
 				34E894C31C3BAEB9001327C8 /* NetWorkBaseUrlConfig.m in Sources */,
 				34E893B81C3B9A03001327C8 /* NSURLRequest+ParamsFromDictionary.m in Sources */,
 				34E893781C3B9A03001327C8 /* NSDate+Formatter.m in Sources */,
@@ -4166,7 +4096,6 @@
 				34E893841C3B9A03001327C8 /* NSDictionary+XML.m in Sources */,
 				34E8938F1C3B9A03001327C8 /* NSNumber+CGFloat.m in Sources */,
 				34E8908A1C3B89B2001327C8 /* AppDelegate.m in Sources */,
-				34E891111C3B92AA001327C8 /* ActionSheetDatePicker.m in Sources */,
 				34E893AB1C3B9A03001327C8 /* NSString+Ruby.m in Sources */,
 				34E894101C3B9A03001327C8 /* UISplitViewController+QuickAccess.m in Sources */,
 				34E894BE1C3BA300001327C8 /* SVProgressHUD.m in Sources */,
@@ -4201,9 +4130,7 @@
 				34E08A591C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.m in Sources */,
 				34E8938C1C3B9A03001327C8 /* NSNotificationCenter+MainThread.m in Sources */,
 				34E893EA1C3B9A03001327C8 /* UIImage+GIF.m in Sources */,
-				34E891121C3B92AA001327C8 /* ActionSheetDistancePicker.m in Sources */,
 				34E8936D1C3B9A03001327C8 /* NSArray+SafeAccess.m in Sources */,
-				34E891141C3B92AA001327C8 /* ActionSheetStringPicker.m in Sources */,
 				34E894071C3B9A03001327C8 /* UIResponder+Chain.m in Sources */,
 				34E8939E1C3B9A03001327C8 /* NSSet+Block.m in Sources */,
 				34E893991C3B9A03001327C8 /* NSObject+KVOBlocks.m in Sources */,
@@ -4248,7 +4175,6 @@
 				34E893BA1C3B9A03001327C8 /* NSUserDefaults+SafeAccess.m in Sources */,
 				34E8942C1C3B9A03001327C8 /* UIView+Screenshot.m in Sources */,
 				34E8943D1C3B9A03001327C8 /* UIWebView+Blocks.m in Sources */,
-				34E8910F1C3B92AA001327C8 /* AbstractActionSheetPicker.m in Sources */,
 				34E8939F1C3B9A03001327C8 /* NSMutableString+Ruby.m in Sources */,
 				34E893DF1C3B9A03001327C8 /* UIFont+DynamicFontControl.m in Sources */,
 				34E894391C3B9A03001327C8 /* UIViewController+StoreKit.m in Sources */,
