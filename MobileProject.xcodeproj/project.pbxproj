@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34799A5F1CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; settings = {ASSET_TAGS = (); }; };
+		34799A601CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; settings = {ASSET_TAGS = (); }; };
+		34799A611CD34C5A003518C5 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5C1CD34C5A003518C5 /* UICKeyChainStore.m */; settings = {ASSET_TAGS = (); }; };
+		34799A621CD34C5A003518C5 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5C1CD34C5A003518C5 /* UICKeyChainStore.m */; settings = {ASSET_TAGS = (); }; };
+		34799A631CD34C5A003518C5 /* UIDevice+FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5E1CD34C5A003518C5 /* UIDevice+FCUUID.m */; settings = {ASSET_TAGS = (); }; };
+		34799A641CD34C5A003518C5 /* UIDevice+FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5E1CD34C5A003518C5 /* UIDevice+FCUUID.m */; settings = {ASSET_TAGS = (); }; };
 		34E08A551C3BE80F005C6CA3 /* GVUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E08A541C3BE80F005C6CA3 /* GVUserDefaults.m */; settings = {ASSET_TAGS = (); }; };
 		34E08A591C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E08A581C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.m */; settings = {ASSET_TAGS = (); }; };
 		34E08A5D1C3BEEF2005C6CA3 /* MyFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E08A5C1C3BEEF2005C6CA3 /* MyFileLogger.m */; settings = {ASSET_TAGS = (); }; };
@@ -697,6 +703,12 @@
 
 /* Begin PBXFileReference section */
 		141989AA73B56A56D9B2BD49 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		34799A591CD34C5A003518C5 /* FCUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCUUID.h; sourceTree = "<group>"; };
+		34799A5A1CD34C5A003518C5 /* FCUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCUUID.m; sourceTree = "<group>"; };
+		34799A5B1CD34C5A003518C5 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
+		34799A5C1CD34C5A003518C5 /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStore.m; sourceTree = "<group>"; };
+		34799A5D1CD34C5A003518C5 /* UIDevice+FCUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+FCUUID.h"; sourceTree = "<group>"; };
+		34799A5E1CD34C5A003518C5 /* UIDevice+FCUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+FCUUID.m"; sourceTree = "<group>"; };
 		34E08A531C3BE80F005C6CA3 /* GVUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVUserDefaults.h; sourceTree = "<group>"; };
 		34E08A541C3BE80F005C6CA3 /* GVUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVUserDefaults.m; sourceTree = "<group>"; };
 		34E08A571C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults+BBProperties.h"; sourceTree = "<group>"; };
@@ -1419,6 +1431,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		34799A581CD34C5A003518C5 /* FCUUID(获取设备标识) */ = {
+			isa = PBXGroup;
+			children = (
+				34799A591CD34C5A003518C5 /* FCUUID.h */,
+				34799A5A1CD34C5A003518C5 /* FCUUID.m */,
+				34799A5B1CD34C5A003518C5 /* UICKeyChainStore.h */,
+				34799A5C1CD34C5A003518C5 /* UICKeyChainStore.m */,
+				34799A5D1CD34C5A003518C5 /* UIDevice+FCUUID.h */,
+				34799A5E1CD34C5A003518C5 /* UIDevice+FCUUID.m */,
+			);
+			name = "FCUUID(获取设备标识)";
+			path = FCUUID;
+			sourceTree = "<group>";
+		};
 		34E08A521C3BE80F005C6CA3 /* GVUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
@@ -1628,6 +1654,7 @@
 		34E890BF1C3B8B36001327C8 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				34799A581CD34C5A003518C5 /* FCUUID(获取设备标识) */,
 				34F213031C48DB2F003AC13D /* UmengHelper(友盟管理) */,
 				34F212FA1C48BF82003AC13D /* LcationManager(定位管理) */,
 				34E08A5A1C3BEEC8005C6CA3 /* Logger(日志记录) */,
@@ -3660,6 +3687,7 @@
 				34E08ADA1C3BFB90005C6CA3 /* UIColor+Web.m in Sources */,
 				34E08ADB1C3BFB90005C6CA3 /* JDStatusBarStyle.m in Sources */,
 				34E08ADC1C3BFB90005C6CA3 /* UIFont-TTF.m in Sources */,
+				34799A601CD34C5A003518C5 /* FCUUID.m in Sources */,
 				34E08ADD1C3BFB90005C6CA3 /* MJRefreshBackGifFooter.m in Sources */,
 				34E08ADE1C3BFB90005C6CA3 /* UITextView+Select.m in Sources */,
 				34E08ADF1C3BFB90005C6CA3 /* MJRefreshStateHeader.m in Sources */,
@@ -3761,6 +3789,7 @@
 				34E08B441C3BFB90005C6CA3 /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				34E08B451C3BFB90005C6CA3 /* YTKNetworkConfig.m in Sources */,
 				34E9D0D31C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				34799A641CD34C5A003518C5 /* UIDevice+FCUUID.m in Sources */,
 				34F213021C48C283003AC13D /* MPLocationManager.m in Sources */,
 				34E08B461C3BFB90005C6CA3 /* NSString+XML.m in Sources */,
 				34E08B471C3BFB90005C6CA3 /* NSObject+AutoCoding.m in Sources */,
@@ -3810,6 +3839,7 @@
 				34E08B731C3BFB90005C6CA3 /* MJRefreshBackNormalFooter.m in Sources */,
 				34E08B741C3BFB90005C6CA3 /* UIView+Constraints.m in Sources */,
 				34E08B751C3BFB90005C6CA3 /* YTKNetworkPrivate.m in Sources */,
+				34799A621CD34C5A003518C5 /* UICKeyChainStore.m in Sources */,
 				34E08B761C3BFB90005C6CA3 /* NSString+Score.m in Sources */,
 				34E9D84C1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */,
 				34E08B771C3BFB90005C6CA3 /* CAShapeLayer+UIBezierPath.m in Sources */,
@@ -3980,6 +4010,7 @@
 				34E893DA1C3B9A03001327C8 /* UIColor+Web.m in Sources */,
 				34E894B91C3BA300001327C8 /* JDStatusBarStyle.m in Sources */,
 				34E893E11C3B9A03001327C8 /* UIFont-TTF.m in Sources */,
+				34799A5F1CD34C5A003518C5 /* FCUUID.m in Sources */,
 				34E8911F1C3B92AA001327C8 /* MJRefreshBackGifFooter.m in Sources */,
 				34E8941E1C3B9A03001327C8 /* UITextView+Select.m in Sources */,
 				34E891241C3B92AA001327C8 /* MJRefreshStateHeader.m in Sources */,
@@ -4081,6 +4112,7 @@
 				34E893691C3B9A03001327C8 /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				34E891451C3B9739001327C8 /* YTKNetworkConfig.m in Sources */,
 				34E9D0D21C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				34799A631CD34C5A003518C5 /* UIDevice+FCUUID.m in Sources */,
 				34F213011C48C283003AC13D /* MPLocationManager.m in Sources */,
 				34E893B11C3B9A03001327C8 /* NSString+XML.m in Sources */,
 				34E893951C3B9A03001327C8 /* NSObject+AutoCoding.m in Sources */,
@@ -4130,6 +4162,7 @@
 				34E891201C3B92AA001327C8 /* MJRefreshBackNormalFooter.m in Sources */,
 				34E894211C3B9A03001327C8 /* UIView+Constraints.m in Sources */,
 				34E891461C3B9739001327C8 /* YTKNetworkPrivate.m in Sources */,
+				34799A611CD34C5A003518C5 /* UICKeyChainStore.m in Sources */,
 				34E893AC1C3B9A03001327C8 /* NSString+Score.m in Sources */,
 				34E9D84B1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */,
 				34E893C21C3B9A03001327C8 /* CAShapeLayer+UIBezierPath.m in Sources */,
