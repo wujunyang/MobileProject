@@ -759,6 +759,42 @@
  3、修复拖拽地图时，点击到标注，会触发didSelectAnnotationView:的回调，不回调regionDidChangeAnimated的问题
  4、修复BMKTransitStep 里的stepType中地铁和公交未做区分的问题
  
+ 
+ --------------------
+ --------------------
+ v2.10.2
+ 
+ 注：百度地图iOS SDK向广大开发者提供了配置更简单的 .framework形式的开发包，请开发者选择此种类型的开发包使用。自v2.9.0起，百度地图iOS SDK将不再提供 .a形式的开发包。
+ 自v2.9.0起，采用分包的形式提供 .framework包，请广大开发者使用时确保各分包的版本保持一致。其中BaiduMapAPI_Base.framework为基础包，使用SDK任何功能都需导入，其他分包可按需导入。
+ 
+ 【 新版提示 】
+ 1.自v2.9.0起，将启用新的地图资源服务，旧地图离线包在新版上不可使用；同时官方不再支持地图离线包下载，所以v2.9.0起，去掉“手动离线导入接口”，SDK离线下载接口维持不变。
+ 2.自v2.9.0起，iOS SDK采用分包形式，旧包无法与新包同时混用，请将之前所有旧包(包含bundle资源)并全部替换为新包。
+ 3.自v2.9.0起，iOS SDK使用新的矢量地图样式，地图显示更加清新，和百度地图客户端保持一致
+ 
+ 【 新  增 】
+   基础地图
+ 1、新增个性化地图道路文字颜色设置（包括高速及国道、城市主路、普通道路）
+ 
+ 【 变  更 】
+   检索功能
+ 1、行政区边界数据检索：为兼容不连续的行政区，行政区边界数据检索结果(BMKDistrictResult)，行政区边界坐标点变更为：
+ /// 行政区边界直角地理坐标点数据(NSString数组，字符串数据格式为: @"x,y;x,y")
+ @property (nonatomic, strong) NSArray *paths;
+ 原接口作废
+ 
+ 【 优  化 】
+ 1、优化瓦片图性能：支持同时下载多张瓦片图、优化下载中断的重加载机制
+ 
+ 【 修  复 】
+ 1、修复sug检索某些特殊case，city、district为空的情况
+ 2、修复同步瓦片图内存问题
+ 3、修复在iOS6运行crash的问题
+ 4、修复 CVHttpResponse::ReadData 极其偶现的crash
+ 5、修复某些case下，点击polyline不会回调的问题
+ 6、修复调起客户端驾车导航后，关闭导航后，不会弹出“是否返回原应用”提示的问题
+ 
+ 
  *********************/
 /**
  *获取当前地图API的版本号
@@ -766,12 +802,12 @@
  */
 UIKIT_STATIC_INLINE NSString* BMKGetMapApiVersion()
 {
-    return @"2.10.0";
+    return @"2.10.2";
 }
 
 /**
  *获取当前地图API base组件 的版本号
- *当前base组件版本 : 2.10.0
+ *当前base组件版本 : 2.10.2
  *return  返回当前API base组件 的版本号
  */
 UIKIT_EXTERN NSString* BMKGetMapApiBaseComponentVersion();

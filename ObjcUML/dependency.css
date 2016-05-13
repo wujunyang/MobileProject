@@ -1,0 +1,138 @@
+
+
+.node.filtered {
+  fill-opacity:0.3;
+  stroke-opacity:0.3;
+}
+
+text.filtered {
+  fill-opacity:0;
+  stroke-opacity:0;
+}
+
+.link.filtered {
+  stroke: #ddd;
+  fill-opacity:0.1;
+  stroke-opacity:0.1;
+}
+
+.link.dependency {
+  stroke: #900;
+  fill:#900;
+  pointer-events: none;
+}
+
+.link.dependants {
+  stroke: #090;
+  fill:#090;
+  pointer-events: none;
+}
+
+
+.node.skipped {
+  fill-opacity:0.0;
+  stroke-opacity:0.0;
+}
+
+text.skipped {
+  fill-opacity:0;
+  stroke-opacity:0;
+}
+
+.link.skipped {
+  stroke: #ddd;
+  fill-opacity:0.0;
+  stroke-opacity:0.0;
+}
+
+.node {
+  stroke: #000;
+  stroke-width: 0.5px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+  fill: none;
+  stroke-width: 1.5px;
+  pointer-events: none;
+}
+
+.marker#default {
+  stroke: #999;
+  fill:#999;
+  pointer-events: none;
+}
+
+.marker#dependency {
+  stroke: #900;
+  fill:#900;
+  pointer-events: none;
+}
+
+.marker#dependants {
+  stroke: #090;
+  fill:#090;
+  pointer-events: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  overflow: hidden;
+}
+
+text {
+  stroke: #000;
+  stroke-width: 0.5px;
+  text-anchor:middle;
+  font: 10px sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  pointer-events: none;
+}
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 60px;
+}
+
+#simple-menu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+}
+.editor-button {
+    background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #6a7175);
+  background-image: -moz-linear-gradient(top, #000000, #6a7175);
+  background-image: -ms-linear-gradient(top, #000000, #6a7175);
+  background-image: -o-linear-gradient(top, #000000, #6a7175);
+  background-image: linear-gradient(to bottom, #000000, #6a7175);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 2px 1px 5px #000000;
+  font-family: Menlo;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+
+}
+
+.editor-button:hover {
+  background: #545f66;
+  background-image: -webkit-linear-gradient(top, #545f66, #111112);
+  background-image: -moz-linear-gradient(top, #545f66, #111112);
+  background-image: -ms-linear-gradient(top, #545f66, #111112);
+  background-image: -o-linear-gradient(top, #545f66, #111112);
+  background-image: linear-gradient(to bottom, #545f66, #111112);
+  text-decoration: none;
+}

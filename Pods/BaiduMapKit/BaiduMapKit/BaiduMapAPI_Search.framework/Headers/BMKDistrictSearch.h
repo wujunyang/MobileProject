@@ -32,11 +32,8 @@
 @property (nonatomic, strong) NSString *name;
 /// 行政区域中心点
 @property (nonatomic, assign) CLLocationCoordinate2D center;
-/// 行政区边界地理坐标集合
-//@property (nonatomic, strong) NSArray *polylines;
-@property (nonatomic) BMKMapPoint* points;
-///行政区边界地理坐标集合内点的个数
-@property (nonatomic) NSInteger pointsCount;
+/// 行政区边界直角地理坐标点数据(NSString数组，字符串数据格式为: @"x,y;x,y")
+@property (nonatomic, strong) NSArray *paths;
 
 @end
 
