@@ -62,6 +62,14 @@ typedef enum{
 @property (nonatomic, assign) CLLocationCoordinate2D rightTop;
 @end
 
+///室内POI检索参数信息类
+@interface BMKPoiIndoorSearchOption : BMKBasePoiSearchOption
+/// 室内ID（必须）
+@property (nonatomic, strong) NSString *indoorId;
+/// 楼层（可选），设置后，会优先获取该楼层的室内POI，然后是其它楼层的
+@property (nonatomic, strong) NSString *floor;
+@end
+
 ///poi详情检索信息类
 @interface BMKPoiDetailSearchOption : NSObject {
     NSString* _poiUid;

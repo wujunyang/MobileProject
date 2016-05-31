@@ -11,6 +11,7 @@
 #import "BMKAnnotationView.h"
 
 #import "BMKMapView.h"
+#import "BMKBaseIndoorMapInfo.h"
 #import "BMKOfflineMap.h"
 #import "BMKOfflineMapType.h"
 

@@ -94,6 +94,8 @@ CG_INLINE BOOL isIPhone4() {
 @property(nonatomic, assign) SEL successAction;
 @property(nonatomic, assign) SEL cancelAction;
 @property(nonatomic, strong) UIPopoverController *popOverController;
+@property(nonatomic, strong) CIFilter *filter;
+@property(nonatomic, strong) CIContext *context;
 @property(nonatomic, strong) NSObject *selfReference;
 
 - (void)presentPickerForView:(UIView *)aView;
@@ -162,6 +164,9 @@ CG_INLINE BOOL isIPhone4() {
         NSMutableParagraphStyle *labelParagraphStyle = [[NSMutableParagraphStyle alloc] init];
         labelParagraphStyle.alignment = NSTextAlignmentCenter;
         self.pickerTextAttributes = @{NSParagraphStyleAttributeName : labelParagraphStyle};
+
+        self.context = [CIContext contextWithOptions:nil];
+        self.filter = [CIFilter filterWithName:@"CIGaussianBlur"];
     }
 
     return self;
@@ -254,7 +259,12 @@ CG_INLINE BOOL isIPhone4() {
         self.pickerView.frame = CGRectMake(0, halfWidth, self.viewSize.width, 220 - halfWidth);
     }
     [masterView addSubview:_pickerView];
-    [self presentPickerForView:masterView];
+
+    if (![MyPopoverController canShowPopover] && !self.pickerBackgroundColor && [self.pickerBlurRadius intValue] > 0) {
+        [self blurPickerBackground];
+    } else {
+        [self presentPickerForView:masterView];
+    }
 
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "UnavailableInDeploymentTarget"
@@ -555,6 +565,46 @@ CG_INLINE BOOL isIPhone4() {
 - (void)setPickerBackgroundColor:(UIColor *)backgroundColor {
     _pickerBackgroundColor = backgroundColor;
     _actionSheet.bgView.backgroundColor = backgroundColor;
+}
+
+#pragma mark - Picker blur effect
+
+- (void)blurPickerBackground {
+    UIWindow *window = [UIApplication sharedApplication].delegate.window;
+    UIViewController *rootViewController = window.rootViewController;
+
+    UIView *masterView = self.pickerView.superview;
+
+    self.pickerView.backgroundColor = [UIColor clearColor];
+    masterView.backgroundColor = [UIColor clearColor];
+
+    // Get the snapshot
+    UIGraphicsBeginImageContext(rootViewController.view.bounds.size);
+    [rootViewController.view drawViewHierarchyInRect:rootViewController.view.bounds afterScreenUpdates:NO];
+    UIImage *backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    [self presentPickerForView:masterView];
+
+    // Crop the snapshot to match picker frame
+    CIImage *image = [CIImage imageWithCGImage:[backgroundImage CGImage]];
+    [self.filter setValue:image forKey:kCIInputImageKey];
+    [self.filter setValue:self.pickerBlurRadius forKey:kCIInputRadiusKey];
+
+    CGRect blurFrame = [rootViewController.view convertRect:self.pickerView.frame fromView:masterView];
+    // CoreImage coordinate system and UIKit coordinate system differs, so we need to adjust the frame
+    blurFrame.origin.y = - (blurFrame.origin.y - rootViewController.view.frame.size.height) - blurFrame.size.height;
+
+    CGImageRef imageRef = [self.context createCGImage:self.filter.outputImage fromRect:blurFrame];
+
+    UIImageView *blurredImageView = [[UIImageView alloc] initWithFrame:self.pickerView.frame];
+    blurredImageView.image = [UIImage imageWithCGImage:imageRef];
+    blurredImageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+
+    [masterView addSubview:blurredImageView];
+    [masterView sendSubviewToBack:blurredImageView];
+
+    CGImageRelease(imageRef);
 }
 
 #pragma mark - Utilities and Accessors

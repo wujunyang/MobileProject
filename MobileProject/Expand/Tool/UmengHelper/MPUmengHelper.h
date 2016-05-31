@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MobClick.h"
+#import "UMMobClick/MobClick.h"
 
 @interface MPUmengHelper : NSObject
 

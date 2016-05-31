@@ -1,5 +1,5 @@
 PODS:
-  - ActionSheetPicker-3.0 (2.0.5)
+  - ActionSheetPicker-3.0 (2.1.0)
   - AFNetworking (2.6.3):
     - AFNetworking/NSURLConnection (= 2.6.3)
     - AFNetworking/NSURLSession (= 2.6.3)
@@ -21,7 +21,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - BaiduMapKit (2.10.2)
+  - BaiduMapKit (3.0.0)
   - CocoaLumberjack (2.0.3):
     - CocoaLumberjack/Default (= 2.0.3)
     - CocoaLumberjack/Extensions (= 2.0.3)
@@ -46,7 +46,7 @@ PODS:
   - SQLCipher/common (3.1.0)
   - SQLCipher/standard (3.1.0):
     - SQLCipher/common
-  - UMengAnalytics-NO-IDFA (3.6.7)
+  - UMengAnalytics-NO-IDFA (4.0.5)
   - UMengSocial (4.4)
 
 DEPENDENCIES:
@@ -65,9 +65,9 @@ DEPENDENCIES:
   - UMengSocial (~> 4.3)
 
 SPEC CHECKSUMS:
-  ActionSheetPicker-3.0: 8312778b6815578e6a86d630fbcf31dc94c534e7
+  ActionSheetPicker-3.0: db66605feb85689279d328206c61f0e4f398df92
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  BaiduMapKit: b1706a062597c70ec62a0cca93212cba1d3017e1
+  BaiduMapKit: de2a726d5296d6b2dc0e974b683af73153608dcd
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
   FLEX: 27b768fcae23a313a1eb115076d429180ca9b472
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
@@ -76,7 +76,7 @@ SPEC CHECKSUMS:
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
-  UMengAnalytics-NO-IDFA: 6d02561a00579b2e37718f204eb81347df5d7b8b
+  UMengAnalytics-NO-IDFA: 965a219b05475ff2a4c09a164139a27bbaa0e25b
   UMengSocial: aba7296602310385114d82c255539a7bef3b7ab0
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

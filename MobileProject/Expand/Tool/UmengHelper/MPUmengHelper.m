@@ -11,8 +11,10 @@
 @implementation MPUmengHelper
 
 + (void)UMAnalyticStart {
-    [MobClick startWithAppkey:kUmengKey reportPolicy:BATCH channelId:@"App Store"];
-    
+
+    UMConfigInstance.appKey=kUmengKey;
+    UMConfigInstance.channelId=@"App Store";
+    [MobClick startWithConfigure:UMConfigInstance];
     // version标识
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     [MobClick setAppVersion:version];

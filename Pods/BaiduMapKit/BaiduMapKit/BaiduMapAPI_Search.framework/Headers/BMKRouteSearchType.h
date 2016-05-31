@@ -270,6 +270,13 @@ typedef enum
 @property (nonatomic) bool isSupportTraffic;
 ///路线途经点列表，成员类型为BMKPlanNode
 @property (nonatomic, strong) NSArray* wayPoints;
+///路线红绿灯个数
+@property (nonatomic, assign) NSInteger lightNum;
+///路线拥堵米数，发起请求时需设置参数 drivingRequestTrafficType = BMK_DRIVING_REQUEST_TRAFFICE_TYPE_PATH_AND_TRAFFICE 才有值
+@property (nonatomic, assign) NSInteger congestionMetres;
+///路线预估打车费(元)，负数表示无打车费信息
+@property (nonatomic, assign) NSInteger taxiFares;
+
 @end
 
 ///此类表示一条步行路线
@@ -319,6 +326,8 @@ typedef enum
 @property (nonatomic, strong) NSString* busCompany;
 ///公交线路名称
 @property (nonatomic, strong) NSString* busLineName;
+///公交线路方向
+@property (nonatomic, strong) NSString* busLineDirection;
 ///公交线路uid
 @property (nonatomic, strong) NSString* uid;
 ///公交路线首班车时间
@@ -327,6 +336,10 @@ typedef enum
 @property (nonatomic, strong) NSString* endTime;
 ///公交是线是否有月票
 @property (nonatomic) int isMonTicket;
+///起步票价
+@property (nonatomic, assign) CGFloat basicPrice;
+///全程票价
+@property (nonatomic, assign) CGFloat totalPrice;
 ///所有公交站点信息,成员类型为BMKBusStation
 @property (nonatomic, strong) NSArray* busStations;
 ///公交路线分段信息，成员类型为BMKBusStep

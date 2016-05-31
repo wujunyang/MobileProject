@@ -33,7 +33,7 @@
 //    int geometrylayerID;
 }
 /// 设置该overlay的GeometryDelegate
-- (void)setGeometryDelegate:(id)delegate;
+- (void)setOverlayGeometryDelegate:(id)delegate;
 
 /**
  *初始化并返回一个overlay view

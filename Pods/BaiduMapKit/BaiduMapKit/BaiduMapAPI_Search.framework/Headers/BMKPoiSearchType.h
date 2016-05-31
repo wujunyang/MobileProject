@@ -66,6 +66,8 @@ enum {
 @property (nonatomic) int epoitype;
 ///POI坐标
 @property (nonatomic) CLLocationCoordinate2D pt;
+///是否有全景
+@property (nonatomic, assign) BOOL panoFlag;
 @end
 
 ///POI门址信息类
@@ -183,5 +185,55 @@ enum {
 @property (nonatomic, strong) NSString* shopHours;
 @end
 
+///室内POI信息类
+@interface BMKPoiIndoorInfo : NSObject
 
+///POI名称
+@property (nonatomic, strong) NSString* name;
+///POIuid
+@property (nonatomic, strong) NSString* uid;
+///该室内POI所在 室内ID
+@property (nonatomic, strong) NSString* indoorId;
+///该室内POI所在楼层
+@property (nonatomic, strong) NSString* floor;
+///POI地址
+@property (nonatomic, strong) NSString* address;
+///POI所在城市
+@property (nonatomic, strong) NSString* city;
+///POI电话号码
+@property (nonatomic, strong) NSString* phone;
+///POI坐标
+@property (nonatomic) CLLocationCoordinate2D pt;
+///POI标签
+@property (nonatomic, strong) NSString* tag;
+///价格
+@property (nonatomic, assign) double price;
+///星级（0-50），50表示五星
+@property (nonatomic, assign) NSInteger starLevel;
+///是否有团购
+@property (nonatomic, assign) BOOL grouponFlag;
+///是否有外卖
+@property (nonatomic, assign) BOOL takeoutFlag;
+///是否排队
+@property (nonatomic, assign) BOOL waitedFlag;
+///团购数,-1表示没有团购信息
+@property (nonatomic, assign) NSInteger grouponNum;
+
+@end
+
+///POI室内搜索结果类
+@interface BMKPoiIndoorResult : NSObject
+
+///本次POI室内搜索的总结果数
+@property (nonatomic, assign) NSInteger totalPoiNum;
+///当前页的室内POI结果数
+@property (nonatomic, assign) NSInteger currPoiNum;
+///本次POI室内搜索的总页数
+@property (nonatomic, assign) NSInteger pageNum;
+///当前页的索引
+@property (nonatomic) int pageIndex;
+///室内POI列表，成员是BMKPoiIndoorInfo
+@property (nonatomic, strong) NSArray* poiIndoorInfoList;
+
+@end
 

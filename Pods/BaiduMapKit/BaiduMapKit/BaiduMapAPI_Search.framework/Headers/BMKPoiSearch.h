@@ -48,6 +48,13 @@
  *@return 成功返回YES，否则返回NO
  */
 - (BOOL)poiDetailSearch:(BMKPoiDetailSearchOption*)option;
+/**
+ *poi室内检索
+ *异步函数，返回结果在BMKPoiSearchDelegate的onGetPoiIndoorResult通知
+ *@param option poi室内检索参数类（BMKPoiIndoorSearchOption）
+ *@return 成功返回YES，否则返回NO
+ */
+- (BOOL)poiIndoorSearch:(BMKPoiIndoorSearchOption*)option;
 @end
 
 ///搜索delegate，用于获取搜索结果
@@ -68,8 +75,12 @@
  *@param errorCode 错误号，@see BMKSearchErrorCode
  */
 - (void)onGetPoiDetailResult:(BMKPoiSearch*)searcher result:(BMKPoiDetailResult*)poiDetailResult errorCode:(BMKSearchErrorCode)errorCode;
+
+/**
+ *返回POI室内搜索结果
+ *@param searcher 搜索对象
+ *@param poiIndoorResult 搜索结果列表
+ *@param errorCode 错误号，@see BMKSearchErrorCode
+ */
+- (void)onGetPoiIndoorResult:(BMKPoiSearch*)searcher result:(BMKPoiIndoorResult*)poiIndoorResult errorCode:(BMKSearchErrorCode)errorCode;
 @end
-
-
-
-

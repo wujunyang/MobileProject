@@ -5,7 +5,7 @@ LBS云检索：包括LBS云检索（周边、区域、城市内、详情）；
 
 --------------------------------------------------------------------------------------
 
-iOS 地图 SDK v2.10.2是适用于iOS系统移动设备的矢量地图开发包
+iOS 地图 SDK v3.0.0是适用于iOS系统移动设备的矢量地图开发包
 
 --------------------------------------------------------------------------------------
 
@@ -47,31 +47,69 @@ LBS云检索：支持查询存储在LBS云内的自有数据；
 
 ---------------------------------------------------------------------------------------
 
-【新版提示】
-1.自V2.9.0起，将启用新的地图资源服务，旧地图离线包在新版上不可使用；同时官方不再支持地图离线包下载，所以V2.9.0起，去掉“手动离线导入接口”，SDK离线下载接口维持不变。
-
-2.自V2.9.0起，iOS SDK采用分包形式，旧包无法与新包同时混用，请将之前所有旧包(包含bundle资源)并全部替换为新包。
-3.自V2.9.0起，iOS SDK使用新的矢量地图样式，地图显示更加清新，和百度地图客户端保持一致。
-
-较之v2.10.0，升级功能：
- 【 新  增 】
+ 【 新版提示 】
+ 1.自v3.0.0起，iOS SDK全面支持ipv6网格
+ 
+ 【 新  增 】
    基础地图
- 1、新增个性化地图道路文字颜色设置（包括高速及国道、城市主路、普通道路）
+ 1、新增室内地图功能
+ 新增室内地图信息类：BMKBaseIndoorMapInfo
+ BMKMapView新增接口:
+ /// 设定地图是否显示室内图（包含室内图标注），默认不显示
+ @property (nonatomic, assign) BOOL baseIndoorMapEnabled;
+ /// 设定室内图标注是否显示，默认YES，仅当显示室内图（baseIndoorMapEnabled为YES）时生效
+ @property (nonatomic, assign) BOOL showIndoorMapPoi;
+ // 设置室内图楼层
+ - (BMKSwitchIndoorFloorError)switchBaseIndoorMapFloor:(NSString*)strFloor withID:(NSString*)strID;
+ // 获取当前聚焦的室内图信息
+ - (BMKBaseIndoorMapInfo*)getFocusedBaseIndoorMapInfo;
+ BMKMapViewDelegate新增接口：
+ //地图进入/移出室内图会调用此接口
+ - (void)mapview:(BMKMapView *)mapView baseIndoorMapWithIn:(BOOL)flag baseIndoorMapInfo:(BMKBaseIndoorMapInfo *)info;
+ 2、普通地图与个性化地图切换可以自由切换，BMKMapView新增接口:
+ + (void)enableCustomMapStyle:(BOOL) enable;
+ 3、个性化地图配置json文件出错时，打印log提示
+ 4、设置mapPadding时可控制地图中心是否跟着移动，BMKMapView新增接口:
+ @property (nonatomic) BOOL updateTargetScreenPtWhenMapPaddingChanged;
+ 5、BMKMapPoi中新增属性：
+ ///点标注的uid，可能为空
+ @property (nonatomic,strong) NSString* uid;
  
- 【 变  更 】
    检索功能
- 1、行政区边界数据检索：为兼容不连续的行政区，行政区边界数据检索结果(BMKDistrictResult)，行政区边界坐标点变更为：
- /// 行政区边界直角地理坐标点数据(NSString数组，字符串数据格式为: @"x,y;x,y")
- @property (nonatomic, strong) NSArray *paths;
- 原接口作废
+ 1、新增室内POI检索
+ 新增室内POI检索参数信息类：BMKPoiIndoorSearchOption
+ 新增室内POI搜索结果类：BMKPoiIndoorResult
+ 新增室内POI信息类：BMKPoiIndoorInfo
+ BMKPoiSearch新增接口：
+ //poi室内检索
+ - (BOOL)poiIndoorSearch:(BMKPoiIndoorSearchOption*)option;
+ BMKPoiSearchDelegate新增接口：
+ //返回POI室内搜索结果
+- (void)onGetPoiIndoorResult:(BMKPoiSearch*)searcher result:(BMKPoiIndoorResult*)poiIndoorResult errorCode:(BMKSearchErrorCode)errorCode;
+ 2、驾车路线规划结果新增3个属性：打车费用信息、拥堵米数、红路灯个数，BMKDrivingRouteLine新增接口：
+ ///路线红绿灯个数
+ @property (nonatomic, assign) NSInteger lightNum;
+ ///路线拥堵米数，发起请求时需设置参数 drivingRequestTrafficType = BMK_DRIVING_REQUEST_TRAFFICE_TYPE_PATH_AND_TRAFFICE 才有值
+ @property (nonatomic, assign) NSInteger congestionMetres;
+ ///路线预估打车费(元)，负数表示无打车费信息
+ @property (nonatomic, assign) NSInteger taxiFares;
+ 3、busline检索新增参考票价和上下线行信息，BMKBusLineResult新增接口：
+ ///公交线路方向
+ @property (nonatomic, strong) NSString* busLineDirection;
+ ///起步票价
+ @property (nonatomic, assign) CGFloat basicPrice;
+ ///全程票价
+ @property (nonatomic, assign) CGFloat totalPrice;
+ 4、poi检索结果新增是否有全景信息，BMKPoiInfo新增接口：
+ @property (nonatomic, assign) BOOL panoFlag;
  
- 【 优  化 】
- 1、优化瓦片图性能：支持同时下载多张瓦片图、优化下载中断的重加载机制
+   计算工具
+ 新增调起百度地图客户端全景功能
+ 新增调起百度地图全景类：BMKOpenPanorama
+ 新增调起百度地图全景参数类：BMKOpenPanoramaOption
+ 新增调起百度地图全景delegate：BMKOpenPanoramaDelegate
  
  【 修  复 】
- 1、修复sug检索某些特殊case，city、district为空的情况
- 2、修复同步瓦片图内存问题
- 3、修复在iOS6运行crash的问题
- 4、修复 CVHttpResponse::ReadData 极其偶现的crash
- 5、修复某些case下，点击polyline不会回调的问题
- 6、修复调起客户端驾车导航后，关闭导航后，不会弹出“是否返回原应用”提示的问题
+ 1、修复反复添加移除离线瓦片图时偶现的crash问题
+ 2、修复上传AppStore时提示访问私有api:-setOverlayGeometryDelegate:的问题
+ 3、修复地图网络解析时偶现的crash问题
