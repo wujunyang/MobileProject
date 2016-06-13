@@ -30,8 +30,15 @@ NSString * const jsPatchJsFileName=@"main.js";
 {
     //从本地获取下载的JS文件
     NSURL *p = FilePath;
+    
+    //判断文件是否存在
+    NSString *curFilePath=[p.path stringByAppendingString:[NSString stringWithFormat:@"/%@",jsPatchJsFileName]];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:curFilePath]) {
+        return;
+    }
+    
     //获取内容
-    NSString *js = [NSString stringWithContentsOfFile:[p.path stringByAppendingString:[NSString stringWithFormat:@"/%@",jsPatchJsFileName]] encoding:NSUTF8StringEncoding error:nil];
+    NSString *js = [NSString stringWithContentsOfFile:curFilePath encoding:NSUTF8StringEncoding error:nil];
     
     //如果有内容
     if (js.length > 0)
