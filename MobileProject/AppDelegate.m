@@ -389,7 +389,7 @@
 {
     [UMSocialSnsService  applicationDidBecomeActive];
     
-    //热更新JS文件下载 最好做一个时间限制 比如隔多久进行下载
+    //热更新JS文件下载 最好做一个时间限制 比如隔多久进行下载(间隔一小时)
     [JSPatchHelper loadJSPatch];
 }
 

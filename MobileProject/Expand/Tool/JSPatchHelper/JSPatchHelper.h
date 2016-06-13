@@ -27,7 +27,7 @@
 /**
  *  @author wujunyang, 16-06-13 14:06:21
  *
- *  @brief  下载JS文件
+ *  @brief  下载JS文件 **方案可以再优化 增加一些比如是否更新等字段的JSON 返回一下载JS路径URL**
  */
 +(void)loadJSPatch;
 

@@ -14,6 +14,8 @@
 		341093FE1D0E848F00A8D63F /* JSPatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093FC1D0E848F00A8D63F /* JSPatchHelper.m */; settings = {ASSET_TAGS = (); }; };
 		341094021D0E982100A8D63F /* JSPatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341094011D0E982100A8D63F /* JSPatchViewController.m */; settings = {ASSET_TAGS = (); }; };
 		341094031D0E982100A8D63F /* JSPatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341094011D0E982100A8D63F /* JSPatchViewController.m */; settings = {ASSET_TAGS = (); }; };
+		341094061D0EAF0D00A8D63F /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 341094051D0EAF0D00A8D63F /* demo.js */; settings = {ASSET_TAGS = (); }; };
+		341094071D0EAF0D00A8D63F /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 341094051D0EAF0D00A8D63F /* demo.js */; settings = {ASSET_TAGS = (); }; };
 		34799A5F1CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; settings = {ASSET_TAGS = (); }; };
 		34799A601CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; settings = {ASSET_TAGS = (); }; };
 		34799A611CD34C5A003518C5 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5C1CD34C5A003518C5 /* UICKeyChainStore.m */; settings = {ASSET_TAGS = (); }; };
@@ -721,6 +723,7 @@
 		341093FF1D0E86DC00A8D63F /* MBConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBConstants.h; sourceTree = "<group>"; };
 		341094001D0E982100A8D63F /* JSPatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchViewController.h; sourceTree = "<group>"; };
 		341094011D0E982100A8D63F /* JSPatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchViewController.m; sourceTree = "<group>"; };
+		341094051D0EAF0D00A8D63F /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		34799A591CD34C5A003518C5 /* FCUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCUUID.h; sourceTree = "<group>"; };
 		34799A5A1CD34C5A003518C5 /* FCUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCUUID.m; sourceTree = "<group>"; };
 		34799A5B1CD34C5A003518C5 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
@@ -1475,6 +1478,7 @@
 		341094041D0EA14900A8D63F /* JsHtmlCss */ = {
 			isa = PBXGroup;
 			children = (
+				341094051D0EAF0D00A8D63F /* demo.js */,
 			);
 			path = JsHtmlCss;
 			sourceTree = "<group>";
@@ -3492,6 +3496,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341094071D0EAF0D00A8D63F /* demo.js in Resources */,
 				34E08B9D1C3BFB90005C6CA3 /* LaunchScreen.storyboard in Resources */,
 				34E08B9E1C3BFB90005C6CA3 /* SVProgressHUD.bundle in Resources */,
 				34E08B9F1C3BFB90005C6CA3 /* Assets.xcassets in Resources */,
@@ -3520,6 +3525,7 @@
 				34E891251C3B92AA001327C8 /* MJRefresh.bundle in Resources */,
 				34E08BAD1C3BFCE3005C6CA3 /* MobileProject_Local-Info.plist in Resources */,
 				34E8937D1C3B9A03001327C8 /* NSDateTimeAgo.bundle in Resources */,
+				341094061D0EAF0D00A8D63F /* demo.js in Resources */,
 				34E890901C3B89B2001327C8 /* Main.storyboard in Resources */,
 				34EC962D1C58AB1A00985444 /* Home.xcassets in Resources */,
 				34E8914E1C3B9986001327C8 /* File.strings in Resources */,

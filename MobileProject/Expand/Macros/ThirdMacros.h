@@ -37,7 +37,7 @@
 
 
 //JSPatch中JS的路径
-#define kJSPatchServerPath @"http://blog.methodname.com/content/test.js"
+#define kJSPatchServerPath @"http://test.qshmall.net:9090/demo.js"
 
 
 #endif /* ThirdMacros_h */

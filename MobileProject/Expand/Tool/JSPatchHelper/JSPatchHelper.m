@@ -8,6 +8,7 @@
 
 #import "JSPatchHelper.h"
 
+//文件名称
 NSString * const jsPatchJsFileName=@"main.js";
 
 @implementation JSPatchHelper
@@ -49,6 +50,16 @@ NSString * const jsPatchJsFileName=@"main.js";
 
 +(void)loadJSPatch
 {
+    //优化间隔一段时间 再去请求一次 否则太频繁(这边定义为一个小时才去请求一次)
+    NSDate *myNowDate=[NSDate date];
+    if (!BBUserDefault.MBJsPatchTime) {
+        BBUserDefault.MBJsPatchTime=myNowDate;
+        return;
+    }
+    if ([myNowDate timeIntervalSinceDate:BBUserDefault.MBJsPatchTime]<3600) {
+        return;
+    }
+    
     //使用AFNetWork下载在服务器的js文件
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];

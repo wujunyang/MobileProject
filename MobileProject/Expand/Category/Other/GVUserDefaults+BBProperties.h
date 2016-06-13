@@ -17,5 +17,5 @@
 @property (nonatomic,weak) NSString *name;
 @property (nonatomic,weak) NSString *role;
 
-
+@property(nonatomic,weak)NSDate *MBJsPatchTime;
 @end
