@@ -18,7 +18,7 @@
 #import "MPUmengHelper.h"
 #import "LogInViewController.h"
 #import "HomeViewController.h"
-
+#import "JSPatchHelper.h"
 #if DEBUG
 #import "FLEXManager.h"
 #endif

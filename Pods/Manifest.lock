@@ -37,10 +37,13 @@ PODS:
     - SQLCipher
   - GTSDK (1.4.2)
   - JSONModel (1.0.2)
+  - JSPatch (1.0):
+    - JSPatch/Core (= 1.0)
+  - JSPatch/Core (1.0)
   - Masonry (0.6.4)
-  - SDWebImage (3.7.6):
-    - SDWebImage/Core (= 3.7.6)
-  - SDWebImage/Core (3.7.6)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
   - SQLCipher (3.1.0):
     - SQLCipher/standard (= 3.1.0)
   - SQLCipher/common (3.1.0)
@@ -59,6 +62,7 @@ DEPENDENCIES:
   - FMDB/SQLCipher (~> 2.5)
   - GTSDK
   - JSONModel (~> 1.0.1)
+  - JSPatch
   - Masonry (~> 0.6.1)
   - SDWebImage (~> 3.7)
   - UMengAnalytics-NO-IDFA
@@ -73,8 +77,9 @@ SPEC CHECKSUMS:
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   GTSDK: 51a12836895312a872f75a2fe0f2e788dee75b19
   JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
+  JSPatch: c689ea4dde17441f2f4a95d40dfedb8900c20099
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
-  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
   UMengAnalytics-NO-IDFA: 965a219b05475ff2a4c09a164139a27bbaa0e25b
   UMengSocial: aba7296602310385114d82c255539a7bef3b7ab0

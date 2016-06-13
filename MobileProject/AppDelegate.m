@@ -31,6 +31,9 @@
     //地图定位初始化
     [MPLocationManager installMapSDK];
     
+    //热更新加载
+    [JSPatchHelper HSDevaluateScript];
+    
     //百度地图定位
     [[MPLocationManager shareInstance] startBMKLocationWithReg:^(BMKUserLocation *loction, NSError *error) {
         if (error) {
@@ -385,6 +388,9 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     [UMSocialSnsService  applicationDidBecomeActive];
+    
+    //热更新JS文件下载 最好做一个时间限制 比如隔多久进行下载
+    [JSPatchHelper loadJSPatch];
 }
 
 @end

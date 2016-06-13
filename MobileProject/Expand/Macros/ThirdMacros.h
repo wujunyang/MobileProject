@@ -35,4 +35,9 @@
 #define kGtAppKey          @"6LeO4stbrA7TeyMUJdXlx3"
 #define kGtAppSecret       @"282vl0IwZd9KL3ZpDyoUL7"
 
+
+//JSPatch中JS的路径
+#define kJSPatchServerPath @"http://blog.methodname.com/content/test.js"
+
+
 #endif /* ThirdMacros_h */

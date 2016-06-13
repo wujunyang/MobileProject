@@ -10,6 +10,10 @@
 		341093F21D0E605800A8D63F /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093ED1D0E605800A8D63F /* Helper.m */; settings = {ASSET_TAGS = (); }; };
 		341093F31D0E605800A8D63F /* imageCompressHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093EF1D0E605800A8D63F /* imageCompressHelper.m */; settings = {ASSET_TAGS = (); }; };
 		341093F41D0E605800A8D63F /* UITapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093F11D0E605800A8D63F /* UITapImageView.m */; settings = {ASSET_TAGS = (); }; };
+		341093FD1D0E848F00A8D63F /* JSPatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093FC1D0E848F00A8D63F /* JSPatchHelper.m */; settings = {ASSET_TAGS = (); }; };
+		341093FE1D0E848F00A8D63F /* JSPatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093FC1D0E848F00A8D63F /* JSPatchHelper.m */; settings = {ASSET_TAGS = (); }; };
+		341094021D0E982100A8D63F /* JSPatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341094011D0E982100A8D63F /* JSPatchViewController.m */; settings = {ASSET_TAGS = (); }; };
+		341094031D0E982100A8D63F /* JSPatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341094011D0E982100A8D63F /* JSPatchViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34799A5F1CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; settings = {ASSET_TAGS = (); }; };
 		34799A601CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; settings = {ASSET_TAGS = (); }; };
 		34799A611CD34C5A003518C5 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5C1CD34C5A003518C5 /* UICKeyChainStore.m */; settings = {ASSET_TAGS = (); }; };
@@ -712,6 +716,11 @@
 		341093EF1D0E605800A8D63F /* imageCompressHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageCompressHelper.m; sourceTree = "<group>"; };
 		341093F01D0E605800A8D63F /* UITapImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITapImageView.h; sourceTree = "<group>"; };
 		341093F11D0E605800A8D63F /* UITapImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITapImageView.m; sourceTree = "<group>"; };
+		341093FB1D0E848F00A8D63F /* JSPatchHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchHelper.h; sourceTree = "<group>"; };
+		341093FC1D0E848F00A8D63F /* JSPatchHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchHelper.m; sourceTree = "<group>"; };
+		341093FF1D0E86DC00A8D63F /* MBConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBConstants.h; sourceTree = "<group>"; };
+		341094001D0E982100A8D63F /* JSPatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchViewController.h; sourceTree = "<group>"; };
+		341094011D0E982100A8D63F /* JSPatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchViewController.m; sourceTree = "<group>"; };
 		34799A591CD34C5A003518C5 /* FCUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCUUID.h; sourceTree = "<group>"; };
 		34799A5A1CD34C5A003518C5 /* FCUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCUUID.m; sourceTree = "<group>"; };
 		34799A5B1CD34C5A003518C5 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
@@ -1453,6 +1462,23 @@
 			path = OtherHelper;
 			sourceTree = "<group>";
 		};
+		341093FA1D0E843100A8D63F /* JSPatchHelper(热更新) */ = {
+			isa = PBXGroup;
+			children = (
+				341093FB1D0E848F00A8D63F /* JSPatchHelper.h */,
+				341093FC1D0E848F00A8D63F /* JSPatchHelper.m */,
+			);
+			name = "JSPatchHelper(热更新)";
+			path = JSPatchHelper;
+			sourceTree = "<group>";
+		};
+		341094041D0EA14900A8D63F /* JsHtmlCss */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JsHtmlCss;
+			sourceTree = "<group>";
+		};
 		34799A581CD34C5A003518C5 /* FCUUID(获取设备标识) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1611,6 +1637,7 @@
 		34E890BB1C3B8A7C001327C8 /* Resource(资源) */ = {
 			isa = PBXGroup;
 			children = (
+				341094041D0EA14900A8D63F /* JsHtmlCss */,
 				34E8912B1C3B93DA001327C8 /* Global */,
 				34E890C31C3B8BE2001327C8 /* Image */,
 				34E890C21C3B8BC4001327C8 /* Plist */,
@@ -1676,6 +1703,7 @@
 		34E890BF1C3B8B36001327C8 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				341093FA1D0E843100A8D63F /* JSPatchHelper(热更新) */,
 				341093EB1D0E600200A8D63F /* OtherHelper */,
 				34799A581CD34C5A003518C5 /* FCUUID(获取设备标识) */,
 				34F213031C48DB2F003AC13D /* UmengHelper(友盟管理) */,
@@ -1700,6 +1728,7 @@
 		34E890C11C3B8B9A001327C8 /* Const(常量) */ = {
 			isa = PBXGroup;
 			children = (
+				341093FF1D0E86DC00A8D63F /* MBConstants.h */,
 			);
 			name = "Const(常量)";
 			path = Const;
@@ -3203,6 +3232,8 @@
 				34EC96231C58A61F00985444 /* UMengSocialLoginViewController.m */,
 				34E9D8451C59C33B00E98C2A /* BaiDuMapViewController.h */,
 				34E9D8461C59C33B00E98C2A /* BaiDuMapViewController.mm */,
+				341094001D0E982100A8D63F /* JSPatchViewController.h */,
+				341094011D0E982100A8D63F /* JSPatchViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3709,6 +3740,7 @@
 				34E08AC91C3BFB90005C6CA3 /* NSDictionary+Merge.m in Sources */,
 				34E08ACA1C3BFB90005C6CA3 /* NSString+UUID.m in Sources */,
 				34E08ACB1C3BFB90005C6CA3 /* CLLocation+CH1903.m in Sources */,
+				341093FE1D0E848F00A8D63F /* JSPatchHelper.m in Sources */,
 				34E08ACC1C3BFB90005C6CA3 /* MKMapView+BetterMaps.m in Sources */,
 				34E08ACD1C3BFB90005C6CA3 /* UIView+Frame.m in Sources */,
 				34E08ACE1C3BFB90005C6CA3 /* NSDictionary+JSONString.m in Sources */,
@@ -3794,6 +3826,7 @@
 				34E08B201C3BFB90005C6CA3 /* NSString+Hash.m in Sources */,
 				34E08B211C3BFB90005C6CA3 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				34E08B221C3BFB90005C6CA3 /* NSData+SDDataCache.m in Sources */,
+				341094031D0E982100A8D63F /* JSPatchViewController.m in Sources */,
 				34E08B231C3BFB90005C6CA3 /* UIImage+PDF.m in Sources */,
 				34E08B241C3BFB90005C6CA3 /* NSData+Hash.m in Sources */,
 				34E08B251C3BFB90005C6CA3 /* YTKBaseRequest.m in Sources */,
@@ -3945,6 +3978,7 @@
 				34E893C71C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.m in Sources */,
 				34E894BB1C3BA300001327C8 /* SVIndefiniteAnimatedView.m in Sources */,
 				34E893B21C3B9A03001327C8 /* NSTimer+Addition.m in Sources */,
+				341093FD1D0E848F00A8D63F /* JSPatchHelper.m in Sources */,
 				34E894311C3B9A03001327C8 /* UIViewController+BackButtonHandler.m in Sources */,
 				34E891261C3B92AA001327C8 /* MJRefreshConst.m in Sources */,
 				34E8938E1C3B9A03001327C8 /* NSDecimalNumber+Extensions.m in Sources */,
@@ -3952,6 +3986,7 @@
 				34E893FA1C3B9A03001327C8 /* UILabel+ESAdjustableLabel.m in Sources */,
 				34E894191C3B9A03001327C8 /* UITextField+History.m in Sources */,
 				34E893E31C3B9A03001327C8 /* UIImage+animatedGIF.m in Sources */,
+				341094021D0E982100A8D63F /* JSPatchViewController.m in Sources */,
 				34E9D84F1C59DD2800E98C2A /* BaiDuCoordinateModel.m in Sources */,
 				34E893AE1C3B9A03001327C8 /* NSString+Trims.m in Sources */,
 				34E894081C3B9A03001327C8 /* UIResponder+FirstResponder.m in Sources */,

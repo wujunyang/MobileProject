@@ -16,6 +16,7 @@
 #import "LoggerViewController.h"
 #import "BaiDuCoordinateModel.h"
 #import "BaiDuMapViewController.h"
+#import "JSPatchViewController.h"
 
 @interface LogInViewController : UIViewController
 
