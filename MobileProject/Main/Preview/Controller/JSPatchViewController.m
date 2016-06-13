@@ -9,7 +9,7 @@
 #import "JSPatchViewController.h"
 
 @interface JSPatchViewController ()
-
+@property(nonatomic,strong)UILabel *myLabel;
 @end
 
 @implementation JSPatchViewController
@@ -19,7 +19,19 @@
     
     self.title=@"JSPathch";
     
-    NSLog(@"%@",[self getMessage]);
+    if (!self.myLabel) {
+        self.myLabel=[[UILabel alloc]init];
+        self.myLabel.textAlignment=NSTextAlignmentCenter;
+        self.myLabel.text=[self getMessage];
+        self.myLabel.font=CHINESE_SYSTEM(20);
+        self.myLabel.textColor=[UIColor redColor];
+        [self.view addSubview:self.myLabel];
+        [self.myLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.mas_equalTo(0);
+            make.right.and.left.mas_equalTo(0);
+            make.height.mas_equalTo(25);
+        }];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -61,11 +61,15 @@ NSString * const jsPatchJsFileName=@"main.js";
     NSDate *myNowDate=[NSDate date];
     if (!BBUserDefault.MBJsPatchTime) {
         BBUserDefault.MBJsPatchTime=myNowDate;
-        return;
     }
+    
     if ([myNowDate timeIntervalSinceDate:BBUserDefault.MBJsPatchTime]<3600) {
         return;
     }
+    
+    //重新赋值
+    BBUserDefault.MBJsPatchTime=myNowDate;
+    
     
     //使用AFNetWork下载在服务器的js文件
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
