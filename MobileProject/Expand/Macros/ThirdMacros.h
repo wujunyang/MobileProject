@@ -36,7 +36,7 @@
 #define kGtAppSecret       @"282vl0IwZd9KL3ZpDyoUL7"
 
 
-//JSPatch中JS的路径
+//JSPatch中JS的路径  路径可以增加一个版本的文件夹用来区分不同的版本 （这个文件夹可以APP版本号为区分http://test.qshmall.net:9090/v1.1.1/demo.js  版本号宏appMPVersion）
 #define kJSPatchServerPath @"http://test.qshmall.net:9090/demo.js"
 
 
