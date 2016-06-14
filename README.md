@@ -63,3 +63,5 @@
 3.12 增加FCUIID帮助类，用于获取设备标识
 
 3.13 增加热更新JSPatch插件，并增加相应的帮助类及测试功能（JSPatchViewController）
+
+3.14 集成启动广告功能模块，如果这功能可以在AppDelegate里面进行注掉
