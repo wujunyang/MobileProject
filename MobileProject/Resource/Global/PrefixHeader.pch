@@ -13,6 +13,8 @@
 #import <CocoaLumberjack.h>
 #import "Macros.h"
 #import "ThirdMacros.h"
+#import "MBConstants.h"
+#import "NotificationContants.h"
 #import <AFNetworking/AFNetworking.h>
 #import <Masonry/Masonry.h>
 #import <JSONModel/JSONModel.h>

@@ -19,6 +19,7 @@
 #import "LogInViewController.h"
 #import "HomeViewController.h"
 #import "JSPatchHelper.h"
+#import "AdvertiseHelper.h"
 #if DEBUG
 #import "FLEXManager.h"
 #endif

@@ -9,7 +9,7 @@
 #import "JSPatchHelper.h"
 
 //文件名称
-NSString * const jsPatchJsFileName=@"main.js";
+static NSString * const jsPatchJsFileName=@"main.js";
 
 @implementation JSPatchHelper
 
