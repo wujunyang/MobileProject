@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "MPCheckBankCard.h"
 
 @interface MobileProjectTests : XCTestCase
 
@@ -27,6 +28,17 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+}
+
+- (void)testCheckBankCard
+{
+    //6228480402564890018  -- 有效卡号
+    BOOL isValid = [MPCheckBankCard checkBankCard:@"6228480402564890018"];
+    XCTAssertTrue(isValid);
+    
+    //6228480402564890019 --无效卡号
+    isValid = [MPCheckBankCard checkBankCard:@"6228480402564890019"];
+    XCTAssertFalse(isValid);
 }
 
 - (void)testPerformanceExample {
