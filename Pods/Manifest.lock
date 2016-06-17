@@ -41,6 +41,7 @@ PODS:
     - JSPatch/Core (= 1.0)
   - JSPatch/Core (1.0)
   - Masonry (0.6.4)
+  - MBProgressHUD (0.9.2)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
@@ -64,6 +65,7 @@ DEPENDENCIES:
   - JSONModel (~> 1.0.1)
   - JSPatch
   - Masonry (~> 0.6.1)
+  - MBProgressHUD (~> 0.9.2)
   - SDWebImage (~> 3.7)
   - UMengAnalytics-NO-IDFA
   - UMengSocial (~> 4.3)
@@ -79,6 +81,7 @@ SPEC CHECKSUMS:
   JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
   JSPatch: c689ea4dde17441f2f4a95d40dfedb8900c20099
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
   UMengAnalytics-NO-IDFA: 965a219b05475ff2a4c09a164139a27bbaa0e25b

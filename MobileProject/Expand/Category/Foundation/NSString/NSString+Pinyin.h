@@ -19,4 +19,12 @@
 - (NSArray*)pinyinInitialsArray;
 - (NSString*)pinyinInitialsString;
 
+
+/**
+ *  正则验证－是否为中文
+ *
+ *  @return return value description
+ */
+- (BOOL)isChinese;
+
 @end

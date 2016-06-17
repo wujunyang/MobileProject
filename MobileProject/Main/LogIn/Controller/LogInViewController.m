@@ -7,6 +7,8 @@
 //
 
 #import "LogInViewController.h"
+#import "MPQRCodeViewController.h"
+#import "MPUtils.h"
 
 
 @interface LogInViewController ()
@@ -69,9 +71,15 @@
 //    [self.navigationController pushViewController:vc animated:YES];
     
     //热更新
-    JSPatchViewController *vc=[[JSPatchViewController alloc]init];
+//    JSPatchViewController *vc=[[JSPatchViewController alloc]init];
+//    [self.navigationController pushViewController:vc animated:YES];
+    
+    //二维码
+    MPQRCodeViewController *vc = [[MPQRCodeViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
     
+    
+    [MPUtils showToast:@"测试提示" delay:5];
 }
 
 - (void)didReceiveMemoryWarning {
