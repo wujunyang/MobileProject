@@ -9,6 +9,8 @@
 #import <XCTest/XCTest.h>
 #import "MPCheckBankCard.h"
 #import "MPUtils.h"
+#import "NSString+Pinyin.h"
+#import "UIImage+QR.h"
 
 @interface MobileProjectTests : XCTestCase
 
@@ -76,10 +78,23 @@
     XCTAssertFalse(isValid);
 }
 
+- (void)testStringPinyin
+{
+    //
+    NSString *str = @"汉字";
+    BOOL isChinese = [str isChinese];
+    XCTAssertTrue(isChinese);
+    
+    str = @"hello";
+    isChinese = [str isChinese];
+    XCTAssertFalse(isChinese);
+}
+
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
+        UIImage *img = [UIImage qrCodeImageWithString:@"http://www.baidu.com" withSize:100 withRed:0 andGreen:0 andBlue:0];
     }];
 }
 
