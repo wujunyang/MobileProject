@@ -747,7 +747,7 @@
 		D9E9F5F91D13CE9600A8128A /* UIImage+QR.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E9F5F81D13CE9600A8128A /* UIImage+QR.m */; };
 		D9E9F5FC1D13D17E00A8128A /* MPQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E9F5FB1D13D17E00A8128A /* MPQRCodeViewController.m */; };
 		D9E9F6001D13D5EF00A8128A /* MPCheckBankCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E9F5FF1D13D5EF00A8128A /* MPCheckBankCard.m */; };
-		D9E9F6031D13E39500A8128A /* MAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E9F6021D13E39500A8128A /* MAUtils.m */; };
+		D9E9F6031D13E39500A8128A /* MPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E9F6021D13E39500A8128A /* MPUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1486,8 +1486,8 @@
 		D9E9F5FB1D13D17E00A8128A /* MPQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPQRCodeViewController.m; sourceTree = "<group>"; };
 		D9E9F5FE1D13D5EF00A8128A /* MPCheckBankCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCheckBankCard.h; sourceTree = "<group>"; };
 		D9E9F5FF1D13D5EF00A8128A /* MPCheckBankCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCheckBankCard.m; sourceTree = "<group>"; };
-		D9E9F6011D13E39500A8128A /* MAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAUtils.h; sourceTree = "<group>"; };
-		D9E9F6021D13E39500A8128A /* MAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAUtils.m; sourceTree = "<group>"; };
+		D9E9F6011D13E39500A8128A /* MPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUtils.h; sourceTree = "<group>"; };
+		D9E9F6021D13E39500A8128A /* MPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1604,8 +1604,8 @@
 				341093EF1D0E605800A8D63F /* imageCompressHelper.m */,
 				341093F01D0E605800A8D63F /* UITapImageView.h */,
 				341093F11D0E605800A8D63F /* UITapImageView.m */,
-				D9E9F6011D13E39500A8128A /* MAUtils.h */,
-				D9E9F6021D13E39500A8128A /* MAUtils.m */,
+				D9E9F6011D13E39500A8128A /* MPUtils.h */,
+				D9E9F6021D13E39500A8128A /* MPUtils.m */,
 			);
 			path = OtherHelper;
 			sourceTree = "<group>";
@@ -4531,7 +4531,7 @@
 				34E893D01C3B9A03001327C8 /* UIButton+Block.m in Sources */,
 				34E8939D1C3B9A03001327C8 /* NSRunLoop+PerformBlock.m in Sources */,
 				34E894171C3B9A03001327C8 /* UITableViewCell+TS_delaysContentTouches.m in Sources */,
-				D9E9F6031D13E39500A8128A /* MAUtils.m in Sources */,
+				D9E9F6031D13E39500A8128A /* MPUtils.m in Sources */,
 				34E893C31C3B9A03001327C8 /* CATransaction+AnimateWithDuration.m in Sources */,
 				34E893901C3B9A03001327C8 /* NSNumber+RomanNumerals.m in Sources */,
 				34E893CF1C3B9A03001327C8 /* UIButton+BackgroundColor.m in Sources */,

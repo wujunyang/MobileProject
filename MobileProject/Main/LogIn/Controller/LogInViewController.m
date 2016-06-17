@@ -8,7 +8,7 @@
 
 #import "LogInViewController.h"
 #import "MPQRCodeViewController.h"
-#import "MAUtils.h"
+#import "MPUtils.h"
 
 
 @interface LogInViewController ()
@@ -79,7 +79,7 @@
     [self.navigationController pushViewController:vc animated:YES];
     
     
-    [MAUtils showToast:@"测试提示" delay:5];
+    [MPUtils showToast:@"测试提示" delay:5];
 }
 
 - (void)didReceiveMemoryWarning {
