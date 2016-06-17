@@ -745,6 +745,7 @@
 		34F4B6C01C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B81C54CBAC00615E49 /* WJScrollerMenuView.m */; };
 		9014C40DD45909D3FC1F2EBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 533C667C4AE7D52B4A1E63C2 /* libPods.a */; };
 		D9E9F5F91D13CE9600A8128A /* UIImage+QR.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E9F5F81D13CE9600A8128A /* UIImage+QR.m */; };
+		D9E9F5FC1D13D17E00A8128A /* MPQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E9F5FB1D13D17E00A8128A /* MPQRCodeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1479,6 +1480,8 @@
 		A8A48D3EEAEFFB901D36D8E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D9E9F5F71D13CE9600A8128A /* UIImage+QR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+QR.h"; sourceTree = "<group>"; };
 		D9E9F5F81D13CE9600A8128A /* UIImage+QR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QR.m"; sourceTree = "<group>"; };
+		D9E9F5FA1D13D17E00A8128A /* MPQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPQRCodeViewController.h; sourceTree = "<group>"; };
+		D9E9F5FB1D13D17E00A8128A /* MPQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPQRCodeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3407,6 +3410,8 @@
 				34E9D8461C59C33B00E98C2A /* BaiDuMapViewController.mm */,
 				341094001D0E982100A8D63F /* JSPatchViewController.h */,
 				341094011D0E982100A8D63F /* JSPatchViewController.m */,
+				D9E9F5FA1D13D17E00A8128A /* MPQRCodeViewController.h */,
+				D9E9F5FB1D13D17E00A8128A /* MPQRCodeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4498,6 +4503,7 @@
 				34E8943D1C3B9A03001327C8 /* UIWebView+Blocks.m in Sources */,
 				34E8939F1C3B9A03001327C8 /* NSMutableString+Ruby.m in Sources */,
 				34E893DF1C3B9A03001327C8 /* UIFont+DynamicFontControl.m in Sources */,
+				D9E9F5FC1D13D17E00A8128A /* MPQRCodeViewController.m in Sources */,
 				34E894391C3B9A03001327C8 /* UIViewController+StoreKit.m in Sources */,
 				34EC96201C58A5BB00985444 /* UMengSocialViewController.m in Sources */,
 				34E893E01C3B9A03001327C8 /* UIFont+WDCustomLoader.m in Sources */,
