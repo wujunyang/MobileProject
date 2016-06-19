@@ -1,6 +1,6 @@
 //
 //  NotificationContants.h
-//  MobileProject 通知Key
+//  MobileProject 通知Key管理
 //
 //  Created by wujunyang on 16/6/14.
 //  Copyright © 2016年 wujunyang. All rights reserved.

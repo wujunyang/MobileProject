@@ -808,6 +808,7 @@
 		34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseHelper.m; sourceTree = "<group>"; };
 		34420CBB1D0FAD10007D1AAC /* AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseView.h; sourceTree = "<group>"; };
 		34420CBC1D0FAD10007D1AAC /* AdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseView.m; sourceTree = "<group>"; };
+		346FEC671D13C91400F4EAB8 /* MBTargetConfigContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBTargetConfigContants.h; sourceTree = "<group>"; };
 		34799A591CD34C5A003518C5 /* FCUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCUUID.h; sourceTree = "<group>"; };
 		34799A5A1CD34C5A003518C5 /* FCUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCUUID.m; sourceTree = "<group>"; };
 		34799A5B1CD34C5A003518C5 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
@@ -1880,6 +1881,7 @@
 			children = (
 				341093FF1D0E86DC00A8D63F /* MBConstants.h */,
 				34A9A3401D104AB4006E6987 /* NotificationContants.h */,
+				346FEC671D13C91400F4EAB8 /* MBTargetConfigContants.h */,
 			);
 			name = "Const(常量)";
 			path = Const;
@@ -3611,6 +3613,7 @@
 		34E8907A1C3B89B2001327C8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MP;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = wujunyang;
 				TargetAttributes = {
@@ -4581,7 +4584,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MobileProject/Resource/Global/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
 					"COCOAPODS=1",
 					LOCAL,
 				);

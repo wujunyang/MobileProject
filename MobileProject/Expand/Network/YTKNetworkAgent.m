@@ -84,7 +84,7 @@
     YTKRequestMethod method = [request requestMethod];
     NSString *url = [self buildRequestUrl:request];
     id param = request.requestArgument;
-    YTKLog(@"请求参数%@",param);
+    NSLog(@"请求参数%@",param);
     AFConstructingBlock constructingBlock = [request constructingBodyBlock];
 
     if (request.requestSerializerType == YTKRequestSerializerTypeHTTP) {
@@ -120,7 +120,7 @@
     if (customUrlRequest) {
         AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:customUrlRequest];
         [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-            YTKLog(@"请求回应：%@",responseObject);
+            NSLog(@"请求回应：%@",responseObject);
             [self handleRequestResult:operation];
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             [self handleRequestResult:operation];
@@ -139,7 +139,7 @@
                                                                                                  targetPath:request.resumableDownloadPath shouldResume:YES];
                 [operation setProgressiveDownloadProgressBlock:request.resumableDownloadProgressBlock];
                 [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-                    YTKLog(@"请求回应：%@",responseObject);
+                    NSLog(@"请求回应：%@",responseObject);
                     [self handleRequestResult:operation];
                 }                                failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                     [self handleRequestResult:operation];
@@ -148,7 +148,7 @@
                 [_manager.operationQueue addOperation:operation];
             } else {
                 request.requestOperation = [_manager GET:url parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                    YTKLog(@"请求回应：%@",responseObject);
+                    NSLog(@"请求回应：%@",responseObject);
                     [self handleRequestResult:operation];
                 }                                failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                     [self handleRequestResult:operation];
@@ -158,14 +158,14 @@
             if (constructingBlock != nil) {
                 request.requestOperation = [_manager POST:url parameters:param constructingBodyWithBlock:constructingBlock
                                                   success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                                                      YTKLog(@"请求回应：%@",responseObject);
+                                                      NSLog(@"请求回应：%@",responseObject);
                                                       [self handleRequestResult:operation];
                                                   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                             [self handleRequestResult:operation];
                         }];
             } else {
                 request.requestOperation = [_manager POST:url parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                    YTKLog(@"请求回应：%@",responseObject);
+                    NSLog(@"请求回应：%@",responseObject);
                     [self handleRequestResult:operation];
                 }                                 failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                     [self handleRequestResult:operation];
@@ -185,25 +185,25 @@
             }];
         } else if (method == YTKRequestMethodDelete) {
             request.requestOperation = [_manager DELETE:url parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                YTKLog(@"请求回应：%@",responseObject);
+                NSLog(@"请求回应：%@",responseObject);
                 [self handleRequestResult:operation];
             }                                   failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                 [self handleRequestResult:operation];
             }];
         } else if (method == YTKRequestMethodPatch) {
             request.requestOperation = [_manager PATCH:url parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                YTKLog(@"请求回应：%@",responseObject);
+                NSLog(@"请求回应：%@",responseObject);
                 [self handleRequestResult:operation];
             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                 [self handleRequestResult:operation];
             }];
         } else {
-            YTKLog(@"Error, unsupport method type");
+            DDLogError(@"Error, unsupport method type");
             return;
         }
     }
 
-    YTKLog(@"Add request: %@", NSStringFromClass([request class]));
+    NSLog(@"Add request: %@", NSStringFromClass([request class]));
     [self addOperation:request];
 }
 
@@ -235,10 +235,10 @@
 }
 
 - (void)handleRequestResult:(AFHTTPRequestOperation *)operation {
-    YTKLog(@"Request内容：%@",operation.response);
+    NSLog(@"Request内容：%@",operation.response);
     NSString *key = [self requestHashKey:operation];
     YTKBaseRequest *request = _requestsRecord[key];
-    YTKLog(@"Finished Request: %@", NSStringFromClass([request class]));
+    NSLog(@"Finished Request: %@", NSStringFromClass([request class]));
     if (request) {
         BOOL succeed = [self checkResult:request];
         if (succeed) {
@@ -252,7 +252,7 @@
             }
             [request toggleAccessoriesDidStopCallBack];
         } else {
-            YTKLog(@"Request %@ failed, status code = %ld",
+            DDLogError(@"Request %@ failed, status code = %ld",
                      NSStringFromClass([request class]), (long)request.responseStatusCode);
             [request toggleAccessoriesWillStopCallBack];
             [request requestFailedFilter];
@@ -288,7 +288,7 @@
     @synchronized(self) {
         [_requestsRecord removeObjectForKey:key];
     }
-    YTKLog(@"Request queue size = %lu", (unsigned long)[_requestsRecord count]);
+    NSLog(@"Request queue size = %lu", (unsigned long)[_requestsRecord count]);
 }
 
 @end

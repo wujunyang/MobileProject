@@ -39,11 +39,21 @@ static MyFileLogger *sharedManager=nil;
 
 - (void)configureLogging
 {
-#ifdef DEBUG
+    
+    // Enable XcodeColors利用XcodeColors显示色彩（不写没效果）
+    setenv("XcodeColors", "YES", 0);
+    
     [DDLog addLogger:[DDASLLogger sharedInstance]];
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
-#endif
     [DDLog addLogger:self.fileLogger];
+    
+    //设置颜色值
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor blueColor] backgroundColor:nil forFlag:DDLogFlagInfo];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor purpleColor] backgroundColor:nil forFlag:DDLogFlagDebug];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor redColor] backgroundColor:nil forFlag:DDLogFlagError];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor greenColor] backgroundColor:nil forFlag:DDLogFlagVerbose];
 }
 
 #pragma mark - Getters

@@ -104,7 +104,7 @@
 //})
 
 //DDLog等级
-#ifdef DEBUG
+#if DEBUG||LOCAL
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 #else
 static const int ddLogLevel = LOG_LEVEL_ERROR;

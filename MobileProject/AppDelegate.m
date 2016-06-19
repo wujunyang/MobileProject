@@ -33,7 +33,6 @@
     
     //热更新加载
     [JSPatchHelper HSDevaluateScript];
-
     
     //百度地图定位
     [[MPLocationManager shareInstance] startBMKLocationWithReg:^(BMKUserLocation *loction, NSError *error) {
