@@ -103,9 +103,3 @@
     //异步耗时任务
 //})
 
-//DDLog等级
-#if DEBUG||LOCAL
-static const int ddLogLevel = LOG_LEVEL_VERBOSE;
-#else
-static const int ddLogLevel = LOG_LEVEL_ERROR;
-#endif

@@ -11,18 +11,19 @@
 
 #import <DDLog.h>
 #import <CocoaLumberjack.h>
+#import <AFNetworking/AFNetworking.h>
+#import <Masonry/Masonry.h>
+#import <JSONModel/JSONModel.h>
+#import "SVProgressHUD.h"
+#import "UIImageView+WebCache.h"
 #import "Macros.h"
 #import "MBTargetConfigContants.h"
 #import "ThirdMacros.h"
 #import "MBConstants.h"
 #import "NotificationContants.h"
-#import <AFNetworking/AFNetworking.h>
-#import <Masonry/Masonry.h>
-#import <JSONModel/JSONModel.h>
-#import "UIImageView+WebCache.h"
 #import "MJRefresh.h"
 #import "GVUserDefaults+BBProperties.h"
-#import "SVProgressHUD.h"
+
 #import "MPUmengHelper.h"
 
 #endif /* PrefixHeader_pch */
