@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CocoaLumberjack.h>
+#import "MPLoggerFormatter.h"
 
 @interface MyFileLogger : NSObject
 @property (nonatomic, strong, readwrite) DDFileLogger *fileLogger;

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340242DF1D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
+		340242E01D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		340BCD171D0EFED10093CC7D /* MPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD161D0EFED10093CC7D /* MPWebViewController.m */; settings = {ASSET_TAGS = (); }; };
 		340BCD181D0EFED10093CC7D /* MPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD161D0EFED10093CC7D /* MPWebViewController.m */; settings = {ASSET_TAGS = (); }; };
 		340BCD1B1D0EFF3B0093CC7D /* MPRequstFailedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD1A1D0EFF3B0093CC7D /* MPRequstFailedHelper.m */; settings = {ASSET_TAGS = (); }; };
@@ -765,6 +767,8 @@
 
 /* Begin PBXFileReference section */
 		141989AA73B56A56D9B2BD49 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		340242DD1D16F98700ECD131 /* MPLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLoggerFormatter.h; sourceTree = "<group>"; };
+		340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLoggerFormatter.m; sourceTree = "<group>"; };
 		340BCD151D0EFED10093CC7D /* MPWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPWebViewController.h; sourceTree = "<group>"; };
 		340BCD161D0EFED10093CC7D /* MPWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPWebViewController.m; sourceTree = "<group>"; };
 		340BCD191D0EFF3B0093CC7D /* MPRequstFailedHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPRequstFailedHelper.h; sourceTree = "<group>"; };
@@ -1666,6 +1670,8 @@
 			children = (
 				34E08A5B1C3BEEF2005C6CA3 /* MyFileLogger.h */,
 				34E08A5C1C3BEEF2005C6CA3 /* MyFileLogger.m */,
+				340242DD1D16F98700ECD131 /* MPLoggerFormatter.h */,
+				340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */,
 			);
 			name = "Logger(日志记录)";
 			path = Logger;
@@ -4116,6 +4122,7 @@
 				34E08B621C3BFB90005C6CA3 /* NSSet+Block.m in Sources */,
 				34E08B631C3BFB90005C6CA3 /* NSObject+KVOBlocks.m in Sources */,
 				34E08B651C3BFB90005C6CA3 /* UIBarButtonItem+Action.m in Sources */,
+				340242E01D16F98700ECD131 /* MPLoggerFormatter.m in Sources */,
 				34E08B661C3BFB90005C6CA3 /* UIImage+Resize.m in Sources */,
 				34E08B671C3BFB90005C6CA3 /* NSString+RemoveEmoji.m in Sources */,
 				34E08B681C3BFB90005C6CA3 /* QBAssetsCollectionViewLayout.m in Sources */,
@@ -4448,6 +4455,7 @@
 				34E8938C1C3B9A03001327C8 /* NSNotificationCenter+MainThread.m in Sources */,
 				34E893EA1C3B9A03001327C8 /* UIImage+GIF.m in Sources */,
 				34E8936D1C3B9A03001327C8 /* NSArray+SafeAccess.m in Sources */,
+				340242DF1D16F98700ECD131 /* MPLoggerFormatter.m in Sources */,
 				34E894071C3B9A03001327C8 /* UIResponder+Chain.m in Sources */,
 				34E8939E1C3B9A03001327C8 /* NSSet+Block.m in Sources */,
 				34E893991C3B9A03001327C8 /* NSObject+KVOBlocks.m in Sources */,
