@@ -13,16 +13,13 @@
 #import <UMSocialQQHandler.h>
 #import <UMSocialSinaHandler.h>
 #import <UMSocialSinaSSOHandler.h>
-#import "MyFileLogger.h"
 #import "MPLocationManager.h"
 #import "MPUmengHelper.h"
 #import "LogInViewController.h"
 #import "HomeViewController.h"
 #import "JSPatchHelper.h"
 #import "AdvertiseHelper.h"
-#if DEBUG
-#import "FLEXManager.h"
-#endif
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,UIAlertViewDelegate,GeTuiSdkDelegate>
 

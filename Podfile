@@ -13,3 +13,4 @@ pod 'UMengSocial', '~> 4.3'  #友盟社会化分享及第三方登录
 pod 'FLEX', '~> 2.0', :configurations => ['Debug']
 pod 'ActionSheetPicker-3.0'
 pod 'JSPatch'
+pod 'XAspect'

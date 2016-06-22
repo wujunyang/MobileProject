@@ -73,6 +73,11 @@
 		34420CBA1D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */; settings = {ASSET_TAGS = (); }; };
 		34420CBD1D0FAD10007D1AAC /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CBC1D0FAD10007D1AAC /* AdvertiseView.m */; settings = {ASSET_TAGS = (); }; };
 		34420CBE1D0FAD10007D1AAC /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CBC1D0FAD10007D1AAC /* AdvertiseView.m */; settings = {ASSET_TAGS = (); }; };
+		3452EB8B1D1A8BF00001732E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EB8A1D1A8BF00001732E /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		3452EB901D1A8DAA0001732E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EB8A1D1A8BF00001732E /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		3452EBAB1D1A90DD0001732E /* XAspect-LogAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EBAA1D1A90DD0001732E /* XAspect-LogAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		3452EBAC1D1A90E00001732E /* XAspect-LogAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EBAA1D1A90DD0001732E /* XAspect-LogAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		3452EBAE1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EBAD1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		34799A5F1CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; settings = {ASSET_TAGS = (); }; };
 		34799A601CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; settings = {ASSET_TAGS = (); }; };
 		34799A611CD34C5A003518C5 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5C1CD34C5A003518C5 /* UICKeyChainStore.m */; settings = {ASSET_TAGS = (); }; };
@@ -292,7 +297,6 @@
 		34E08B3A1C3BFB90005C6CA3 /* UIWebView+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893581C3B9A03001327C8 /* UIWebView+Style.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B3B1C3BFB90005C6CA3 /* NSDictionary+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891A51C3B9A03001327C8 /* NSDictionary+XML.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B3C1C3BFB90005C6CA3 /* NSNumber+CGFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891C31C3B9A03001327C8 /* NSNumber+CGFloat.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B3D1C3BFB90005C6CA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890891C3B89B2001327C8 /* AppDelegate.m */; };
 		34E08B3F1C3BFB90005C6CA3 /* NSString+Ruby.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891FF1C3B9A03001327C8 /* NSString+Ruby.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B401C3BFB90005C6CA3 /* UISplitViewController+QuickAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892EC1C3B9A03001327C8 /* UISplitViewController+QuickAccess.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B411C3BFB90005C6CA3 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894B71C3BA300001327C8 /* SVProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
@@ -391,7 +395,6 @@
 		34E08BA51C3BFB90005C6CA3 /* QBImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34E894801C3B9FC1001327C8 /* QBImagePickerController.strings */; settings = {ASSET_TAGS = (); }; };
 		34E08BAD1C3BFCE3005C6CA3 /* MobileProject_Local-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34E08BAC1C3BFCE3005C6CA3 /* MobileProject_Local-Info.plist */; settings = {ASSET_TAGS = (); }; };
 		34E890871C3B89B2001327C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890861C3B89B2001327C8 /* main.m */; };
-		34E8908A1C3B89B2001327C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890891C3B89B2001327C8 /* AppDelegate.m */; };
 		34E8908D1C3B89B2001327C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8908C1C3B89B2001327C8 /* ViewController.m */; };
 		34E890901C3B89B2001327C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E8908E1C3B89B2001327C8 /* Main.storyboard */; };
 		34E890921C3B89B2001327C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E890911C3B89B2001327C8 /* Assets.xcassets */; };
@@ -812,6 +815,10 @@
 		34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseHelper.m; sourceTree = "<group>"; };
 		34420CBB1D0FAD10007D1AAC /* AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseView.h; sourceTree = "<group>"; };
 		34420CBC1D0FAD10007D1AAC /* AdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseView.m; sourceTree = "<group>"; };
+		3452EB891D1A8BF00001732E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3452EB8A1D1A8BF00001732E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3452EBAA1D1A90DD0001732E /* XAspect-LogAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-LogAppDelegate.m"; sourceTree = "<group>"; };
+		3452EBAD1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-GeTuiAppDelegate.m"; sourceTree = "<group>"; };
 		346FEC671D13C91400F4EAB8 /* MBTargetConfigContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBTargetConfigContants.h; sourceTree = "<group>"; };
 		34799A591CD34C5A003518C5 /* FCUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCUUID.h; sourceTree = "<group>"; };
 		34799A5A1CD34C5A003518C5 /* FCUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCUUID.m; sourceTree = "<group>"; };
@@ -830,8 +837,6 @@
 		34E08BAC1C3BFCE3005C6CA3 /* MobileProject_Local-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MobileProject_Local-Info.plist"; sourceTree = "<group>"; };
 		34E890821C3B89B2001327C8 /* MobileProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E890861C3B89B2001327C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
-		34E890881C3B89B2001327C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
-		34E890891C3B89B2001327C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
 		34E8908B1C3B89B2001327C8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		34E8908C1C3B89B2001327C8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		34E8908F1C3B89B2001327C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -1631,6 +1636,17 @@
 			path = AdvertiseHelper;
 			sourceTree = "<group>";
 		};
+		3452EB881D1A8B720001732E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3452EBAD1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m */,
+				3452EBAA1D1A90DD0001732E /* XAspect-LogAppDelegate.m */,
+				3452EB891D1A8BF00001732E /* AppDelegate.h */,
+				3452EB8A1D1A8BF00001732E /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		34799A581CD34C5A003518C5 /* FCUUID(获取设备标识) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1793,6 +1809,7 @@
 		34E890BB1C3B8A7C001327C8 /* Resource(资源) */ = {
 			isa = PBXGroup;
 			children = (
+				3452EB881D1A8B720001732E /* AppDelegate */,
 				341094041D0EA14900A8D63F /* JsHtmlCss */,
 				34E8912B1C3B93DA001327C8 /* Global */,
 				34E890C31C3B8BE2001327C8 /* Image */,
@@ -2121,8 +2138,6 @@
 				34E8908E1C3B89B2001327C8 /* Main.storyboard */,
 				34E890861C3B89B2001327C8 /* main.m */,
 				34E890931C3B89B2001327C8 /* LaunchScreen.storyboard */,
-				34E890881C3B89B2001327C8 /* AppDelegate.h */,
-				34E890891C3B89B2001327C8 /* AppDelegate.m */,
 				34E8912C1C3B9465001327C8 /* PrefixHeader.pch */,
 				34E891501C3B9986001327C8 /* File.strings */,
 			);
@@ -4042,6 +4057,7 @@
 				34E08B141C3BFB90005C6CA3 /* NSString+Contains.m in Sources */,
 				34E08B151C3BFB90005C6CA3 /* NSDate+TimeAgo.m in Sources */,
 				34E08B161C3BFB90005C6CA3 /* UIWebVIew+SwipeGesture.m in Sources */,
+				3452EB901D1A8DAA0001732E /* AppDelegate.m in Sources */,
 				34E08B171C3BFB90005C6CA3 /* UIImageView+Reflect.m in Sources */,
 				34E08B181C3BFB90005C6CA3 /* UIView+GestureCallback.m in Sources */,
 				34E08B191C3BFB90005C6CA3 /* NSURL+Param.m in Sources */,
@@ -4081,7 +4097,6 @@
 				34E08B3A1C3BFB90005C6CA3 /* UIWebView+Style.m in Sources */,
 				34E08B3B1C3BFB90005C6CA3 /* NSDictionary+XML.m in Sources */,
 				34E08B3C1C3BFB90005C6CA3 /* NSNumber+CGFloat.m in Sources */,
-				34E08B3D1C3BFB90005C6CA3 /* AppDelegate.m in Sources */,
 				34E08B3F1C3BFB90005C6CA3 /* NSString+Ruby.m in Sources */,
 				34E08B401C3BFB90005C6CA3 /* UISplitViewController+QuickAccess.m in Sources */,
 				34E08B411C3BFB90005C6CA3 /* SVProgressHUD.m in Sources */,
@@ -4130,6 +4145,7 @@
 				34F212FE1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */,
 				34E08B6A1C3BFB90005C6CA3 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				34E08B6B1C3BFB90005C6CA3 /* UIResponder+UIAdapt.m in Sources */,
+				3452EBAC1D1A90E00001732E /* XAspect-LogAppDelegate.m in Sources */,
 				34EC96371C58C77400985444 /* LoggerViewController.m in Sources */,
 				340BCD181D0EFED10093CC7D /* MPWebViewController.m in Sources */,
 				34E08B6C1C3BFB90005C6CA3 /* NSDate+InternetDateTime.m in Sources */,
@@ -4233,6 +4249,7 @@
 				34E8941C1C3B9A03001327C8 /* UITextView+PinchZoom.m in Sources */,
 				34E894351C3B9A03001327C8 /* UIViewController+DDPopUpViewController.m in Sources */,
 				34E893761C3B9A03001327C8 /* NSDate+CupertinoYankee.m in Sources */,
+				3452EB8B1D1A8BF00001732E /* AppDelegate.m in Sources */,
 				34E894301C3B9A03001327C8 /* UIView+Visuals.m in Sources */,
 				34E893B91C3B9A03001327C8 /* NSUserDefaults+iCloudSync.m in Sources */,
 				340BCD171D0EFED10093CC7D /* MPWebViewController.m in Sources */,
@@ -4289,6 +4306,7 @@
 				34E894291C3B9A03001327C8 /* UIView+Nib.m in Sources */,
 				34E893D71C3B9A03001327C8 /* UIColor+HEX.m in Sources */,
 				34E893711C3B9A03001327C8 /* NSData+Encrypt.m in Sources */,
+				3452EBAE1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m in Sources */,
 				34F213061C48DB97003AC13D /* MPUmengHelper.m in Sources */,
 				34E8940C1C3B9A03001327C8 /* UIScrollView+APParallaxHeader.m in Sources */,
 				34E893A81C3B9A03001327C8 /* NSString+Pinyin.m in Sources */,
@@ -4417,7 +4435,6 @@
 				34E894421C3B9A03001327C8 /* UIWebView+Style.m in Sources */,
 				34E893841C3B9A03001327C8 /* NSDictionary+XML.m in Sources */,
 				34E8938F1C3B9A03001327C8 /* NSNumber+CGFloat.m in Sources */,
-				34E8908A1C3B89B2001327C8 /* AppDelegate.m in Sources */,
 				34E893AB1C3B9A03001327C8 /* NSString+Ruby.m in Sources */,
 				34E894101C3B9A03001327C8 /* UISplitViewController+QuickAccess.m in Sources */,
 				34E894BE1C3BA300001327C8 /* SVProgressHUD.m in Sources */,
@@ -4463,6 +4480,7 @@
 				34E893C91C3B9A03001327C8 /* UIBarButtonItem+Action.m in Sources */,
 				34E893EF1C3B9A03001327C8 /* UIImage+Resize.m in Sources */,
 				34E893AA1C3B9A03001327C8 /* NSString+RemoveEmoji.m in Sources */,
+				3452EBAB1D1A90DD0001732E /* XAspect-LogAppDelegate.m in Sources */,
 				34E8949C1C3B9FC1001327C8 /* QBAssetsCollectionViewLayout.m in Sources */,
 				34F212FD1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */,
 				34E894121C3B9A03001327C8 /* UITableView+FDIndexPathHeightCache.m in Sources */,
