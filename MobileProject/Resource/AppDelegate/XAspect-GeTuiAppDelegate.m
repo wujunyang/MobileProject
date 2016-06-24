@@ -13,6 +13,13 @@
 
 #define AtAspectOfClass AppDelegate
 @classPatchField(AppDelegate)
+
+@synthesizeNucleusPatch(Default, -, BOOL, application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions);
+@synthesizeNucleusPatch(Default, -, void, application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken);
+@synthesizeNucleusPatch(Default, -, void, application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error);
+@synthesizeNucleusPatch(Default, -, void, application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings);
+
+
 AspectPatch(-, BOOL, application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions)
 {
     //个推初始化
@@ -20,6 +27,46 @@ AspectPatch(-, BOOL, application:(UIApplication *)application didFinishLaunching
     
     return XAMessageForward(application:application didFinishLaunchingWithOptions:launchOptions);
 }
+
+/** 远程通知注册成功委托 */
+AspectPatch(-, void, application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken)
+{
+    NSString *myToken = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    myToken = [myToken stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    [GeTuiSdk registerDeviceToken:myToken];
+    
+    NSLog(@"\n>>>[DeviceToken Success]:%@\n\n", myToken);
+    
+    return XAMessageForward(application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken);
+}
+
+/** 远程通知注册失败委托 */
+AspectPatch(-, void, application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error){
+    
+    [GeTuiSdk registerDeviceToken:@""];
+    
+    NSLog(@"\n>>>[DeviceToken Error]:%@\n\n", error.description);
+    
+    return XAMessageForward(application:application didFailToRegisterForRemoteNotificationsWithError:error);
+}
+
+
+#pragma mark - 用户通知(推送)回调 _IOS 8.0以上使用
+
+/** 已登记用户通知 */
+AspectPatch(-, void, application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings)
+{
+    // 注册远程通知（推送）
+    [application registerForRemoteNotifications];
+    
+    return XAMessageForward(application:application didRegisterUserNotificationSettings:notificationSettings);
+}
+
+
+
+
+
 
 #pragma mark 自定义关于个推的内容
 -(void)initLoadGeTui:(NSDictionary *)launchOptions
@@ -37,21 +84,7 @@ AspectPatch(-, BOOL, application:(UIApplication *)application didFinishLaunching
     [GeTuiSdk runBackgroundEnable:NO];
 }
 
-// 处理推送消息
-- (void)handlePushMessage:(NSDictionary *)dict notification:(UILocalNotification *)localNotification {
-    NSLog(@"开始处理从通知栏点击进来的推送消息");
-    
-    if ([UIApplication sharedApplication].applicationIconBadgeNumber != 0) {
-        if (localNotification) {
-            [[UIApplication sharedApplication] cancelLocalNotification:localNotification];
-        }
-        [UIApplication sharedApplication].applicationIconBadgeNumber -= 1;
-    }
-    else {
-        [[UIApplication sharedApplication] cancelAllLocalNotifications];
-        [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
-    }
-}
+
 
 #pragma mark - 用户通知(推送) _自定义方法
 
@@ -117,33 +150,7 @@ AspectPatch(-, BOOL, application:(UIApplication *)application didFinishLaunching
 }
 
 
-/** SDK收到透传消息回调 */
-- (void)GeTuiSdkDidReceivePayload:(NSString *)payloadId andTaskId:(NSString *)taskId andMessageId:(NSString *)aMsgId andOffLine:(BOOL)offLine fromApplication:(NSString *)appId {
-    
-    [self handlePushMessage:nil notification:nil];
-    // [4]: 收到个推消息
-    NSData *payload = [GeTuiSdk retrivePayloadById:payloadId];
-    NSString *payloadMsg = nil;
-    if (payload) {
-        payloadMsg = [[NSString alloc] initWithBytes:payload.bytes length:payload.length encoding:NSUTF8StringEncoding];
-    }
-    
-    NSString *msg = [NSString stringWithFormat:@" payloadId=%@,taskId=%@,messageId:%@,payloadMsg:%@%@", payloadId, taskId, aMsgId, payloadMsg, offLine ? @"<离线消息>" : @""];
-    
-    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"您有一条新消息，走个推" message:msg delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-    [alert show];
-    
-    NSLog(@"\n>>>[GexinSdk ReceivePayload]:%@\n\n", msg);
-    
-    /**
-     *汇报个推自定义事件
-     *actionId：用户自定义的actionid，int类型，取值90001-90999。
-     *taskId：下发任务的任务ID。
-     *msgId： 下发任务的消息ID。
-     *返回值：BOOL，YES表示该命令已经提交，NO表示该命令未提交成功。注：该结果不代表服务器收到该条命令
-     **/
-    [GeTuiSdk sendFeedbackMessage:90001 taskId:taskId msgId:aMsgId];
-}
+
 
 /** SDK收到sendMessage消息回调 */
 - (void)GeTuiSdkDidSendMessage:(NSString *)messageId result:(int)result {
@@ -167,6 +174,7 @@ AspectPatch(-, BOOL, application:(UIApplication *)application didFinishLaunching
     
     NSLog(@"\n>>>[GexinSdk SetModeOff]:%@\n\n", isModeOff ? @"开启" : @"关闭");
 }
+
 
 @end
 #undef AtAspectOfClass

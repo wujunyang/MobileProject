@@ -28,6 +28,8 @@
     //热更新加载
     [JSPatchHelper HSDevaluateScript];
     
+
+    
     //百度地图定位
     [[MPLocationManager shareInstance] startBMKLocationWithReg:^(BMKUserLocation *loction, NSError *error) {
         if (error) {
@@ -66,8 +68,7 @@
     
 
     
-    //友盟分享及第三方登录初始化
-    [self initLoadUMSocial];
+
     
     //加载页面
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
@@ -141,37 +142,11 @@
 
 
 
-#pragma mark - 用户通知(推送)回调 _IOS 8.0以上使用
 
-/** 已登记用户通知 */
-- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
-    // 注册远程通知（推送）
-    [application registerForRemoteNotifications];
-}
-
-#pragma mark - 远程通知(推送)回调
-
-/** 远程通知注册成功委托 */
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    NSString *myToken = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
-    myToken = [myToken stringByReplacingOccurrencesOfString:@" " withString:@""];
-    
-    [GeTuiSdk registerDeviceToken:myToken];
-    
-    NSLog(@"\n>>>[DeviceToken Success]:%@\n\n", myToken);
-}
-
-/** 远程通知注册失败委托 */
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    
-    [GeTuiSdk registerDeviceToken:@""];
-    
-    NSLog(@"\n>>>[DeviceToken Error]:%@\n\n", error.description);
-}
 
 #pragma mark - APP运行中接收到通知(推送)处理
 
-/** APP已经接收到“远程”通知(推送) - (App运行在后台) 当不走个推时，从苹果进来执行，获得userInfo里面的属性*/
+/**IOS7 APP已经接收到“远程”通知(推送) - (App运行在后台) 当不走个推时，从苹果进来执行，获得userInfo里面的属性*/
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     
     //处理applicationIconBadgeNumber-1
@@ -189,7 +164,7 @@
     NSLog(@"\n>>>[Receive RemoteNotification]:%@\n\n", userInfo);
 }
 
-/** APP已经接收到“远程”通知(推送) - 透传推送消息  当不走个推时，从苹果进来执行，获得userInfo里面的属性*/
+/**IOS7以后 APP已经接收到“远程”通知(推送) - 透传推送消息  当不走个推时，从苹果进来执行，获得userInfo里面的属性*/
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
     
     //处理applicationIconBadgeNumber-1
@@ -208,57 +183,55 @@
     completionHandler(UIBackgroundFetchResultNewData);
 }
 
-
-
-
-#pragma mark 初始化友盟分享
--(void)initLoadUMSocial
-{
-    //设置友盟社会化组件appkey
-    [UMSocialData setAppKey:kUmengKey];
+// 处理推送消息
+- (void)handlePushMessage:(NSDictionary *)dict notification:(UILocalNotification *)localNotification {
+    NSLog(@"开始处理从通知栏点击进来的推送消息");
     
-    //打开调试log的开关
-    [UMSocialData openLog:YES];
-    
-    //如果你要支持不同的屏幕方向，需要这样设置，否则在iPhone只支持一个竖屏方向
-    //[UMSocialConfig setSupportedInterfaceOrientations:UIInterfaceOrientationMaskAll];
-    
-    //设置微信AppId，设置分享url，默认使用友盟的网址
-    [UMSocialWechatHandler setWXAppId:kSocial_WX_ID appSecret:kSocial_WX_Secret url:kSocial_WX_Url];
-    
-    // 打开新浪微博的SSO开关
-    // 将在新浪微博注册的应用appkey、redirectURL替换下面参数，并在info.plist的URL Scheme中相应添加wb+appkey，如"wb3921700954"，详情请参考官方文档。
-    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:kSocial_Sina_Account
-                                         RedirectURL:kSocial_Sina_RedirectURL];
-    
-    //设置分享到QQ空间的应用Id，和分享url 链接
-    [UMSocialQQHandler setQQWithAppId:kSocial_QQ_ID appKey:kSocial_QQ_Secret url:kSocial_QQ_Url];
-    //设置支持没有客户端情况下使用SSO授权
-    [UMSocialQQHandler setSupportWebView:YES];
-    
-    //分享设置类型（QQ,微信好友，微信朋友圈）
-    [UMSocialData defaultData].extConfig.qqData.qqMessageType = UMSocialQQMessageTypeImage; //设置QQ分享纯图片，默认分享图文消息
-    [UMSocialData defaultData].extConfig.wechatSessionData.wxMessageType = UMSocialWXMessageTypeImage;  //设置微信好友分享纯图片
-    [UMSocialData defaultData].extConfig.wechatTimelineData.wxMessageType = UMSocialWXMessageTypeImage;  //设置微信朋友圈分享纯图片
+    if ([UIApplication sharedApplication].applicationIconBadgeNumber != 0) {
+        if (localNotification) {
+            [[UIApplication sharedApplication] cancelLocalNotification:localNotification];
+        }
+        [UIApplication sharedApplication].applicationIconBadgeNumber -= 1;
+    }
+    else {
+        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+        [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    }
 }
 
-/**
- 这里处理新浪微博SSO授权之后跳转回来，和微信分享完成之后跳转回来
- */
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
-{
-    return  [UMSocialSnsService handleOpenURL:url wxApiDelegate:nil];
+/** SDK收到透传消息回调 */
+- (void)GeTuiSdkDidReceivePayload:(NSString *)payloadId andTaskId:(NSString *)taskId andMessageId:(NSString *)aMsgId andOffLine:(BOOL)offLine fromApplication:(NSString *)appId {
+    
+    [self handlePushMessage:nil notification:nil];
+    // [4]: 收到个推消息
+    NSData *payload = [GeTuiSdk retrivePayloadById:payloadId];
+    NSString *payloadMsg = nil;
+    if (payload) {
+        payloadMsg = [[NSString alloc] initWithBytes:payload.bytes length:payload.length encoding:NSUTF8StringEncoding];
+    }
+    
+    NSString *msg = [NSString stringWithFormat:@" payloadId=%@,taskId=%@,messageId:%@,payloadMsg:%@%@", payloadId, taskId, aMsgId, payloadMsg, offLine ? @"<离线消息>" : @""];
+    
+    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"您有一条新消息，走个推" message:msg delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    [alert show];
+    
+    NSLog(@"\n>>>[GexinSdk ReceivePayload]:%@\n\n", msg);
 }
 
-/**
- 这里处理新浪微博SSO授权进入新浪微博客户端后进入后台，再返回原来应用
- */
+
+
+
+
+
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    [UMSocialSnsService  applicationDidBecomeActive];
-    
+
     //热更新JS文件下载 最好做一个时间限制 比如隔多久进行下载(间隔一小时)
     [JSPatchHelper loadJSPatch];
 }
+
+
+
+
 
 @end

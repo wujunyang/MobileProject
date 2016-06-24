@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		340242DF1D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		340242E01D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
+		340757071D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		340BCD171D0EFED10093CC7D /* MPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD161D0EFED10093CC7D /* MPWebViewController.m */; settings = {ASSET_TAGS = (); }; };
 		340BCD181D0EFED10093CC7D /* MPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD161D0EFED10093CC7D /* MPWebViewController.m */; settings = {ASSET_TAGS = (); }; };
 		340BCD1B1D0EFF3B0093CC7D /* MPRequstFailedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD1A1D0EFF3B0093CC7D /* MPRequstFailedHelper.m */; settings = {ASSET_TAGS = (); }; };
@@ -772,6 +773,7 @@
 		141989AA73B56A56D9B2BD49 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		340242DD1D16F98700ECD131 /* MPLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLoggerFormatter.h; sourceTree = "<group>"; };
 		340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLoggerFormatter.m; sourceTree = "<group>"; };
+		340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-UmengShareAppDelegate.m"; sourceTree = "<group>"; };
 		340BCD151D0EFED10093CC7D /* MPWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPWebViewController.h; sourceTree = "<group>"; };
 		340BCD161D0EFED10093CC7D /* MPWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPWebViewController.m; sourceTree = "<group>"; };
 		340BCD191D0EFF3B0093CC7D /* MPRequstFailedHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPRequstFailedHelper.h; sourceTree = "<group>"; };
@@ -1639,6 +1641,7 @@
 		3452EB881D1A8B720001732E /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */,
 				3452EBAD1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m */,
 				3452EBAA1D1A90DD0001732E /* XAspect-LogAppDelegate.m */,
 				3452EB891D1A8BF00001732E /* AppDelegate.h */,
@@ -4270,6 +4273,7 @@
 				34E893F61C3B9A03001327C8 /* UIImageView+Letters.m in Sources */,
 				34E8940D1C3B9A03001327C8 /* UIScrollView+EmptyDataSet.m in Sources */,
 				34E893D31C3B9A03001327C8 /* UIButton+MiddleAligning.m in Sources */,
+				340757071D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m in Sources */,
 				34E894331C3B9A03001327C8 /* UIViewController+BackButtonTouched.m in Sources */,
 				34E8948E1C3B9FC1001327C8 /* MJPhoto.m in Sources */,
 				34E893F31C3B9A03001327C8 /* UIImageView+BetterFace.m in Sources */,
@@ -4731,8 +4735,8 @@
 			baseConfigurationReference = 141989AA73B56A56D9B2BD49 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology Co.,Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology Co.,Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology CO.,LTD (469F2JN9F8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology CO.,LTD (469F2JN9F8)";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MobileProject/Resource/Global/PrefixHeader.pch";
@@ -4745,7 +4749,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.MobileProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e568bc17-551f-4093-a3ae-b7498e42543a";
+				PROVISIONING_PROFILE = "550daa44-62c6-4529-bf1c-62be410c9ff1";
 			};
 			name = Debug;
 		};
@@ -4754,8 +4758,8 @@
 			baseConfigurationReference = A8A48D3EEAEFFB901D36D8E8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology Co.,Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology Co.,Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology CO.,LTD (469F2JN9F8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology CO.,LTD (469F2JN9F8)";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MobileProject/Resource/Global/PrefixHeader.pch";
@@ -4769,7 +4773,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.MobileProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e568bc17-551f-4093-a3ae-b7498e42543a";
+				PROVISIONING_PROFILE = "550daa44-62c6-4529-bf1c-62be410c9ff1";
 			};
 			name = Release;
 		};

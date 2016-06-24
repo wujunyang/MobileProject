@@ -46,8 +46,8 @@
 //    [self.navigationController pushViewController:umLogin animated:YES];
     
     //友盟分享跳转
-//    UMengSocialViewController *um=[[UMengSocialViewController alloc]init];
-//    [self.navigationController pushViewController:um animated:YES];
+    UMengSocialViewController *um=[[UMengSocialViewController alloc]init];
+    [self.navigationController pushViewController:um animated:YES];
     
     //日志列表查看
 //    LoggerViewController *lv=[[LoggerViewController alloc]init];
@@ -77,8 +77,8 @@
 //    [self.navigationController pushViewController:vc animated:YES];
     
     //热更新
-    JSPatchViewController *vc=[[JSPatchViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+//    JSPatchViewController *vc=[[JSPatchViewController alloc]init];
+//    [self.navigationController pushViewController:vc animated:YES];
     
 }
 
