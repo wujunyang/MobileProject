@@ -1,8 +1,7 @@
 # MobileProject
 
-一个通用的IOS项目基础，整理的一些项目常用的内容；
+一个通用的IOS项目基础，整理的一些项目常用的内容(不断更新中)；
 
-![image](https://github.com/wujunyang/MobileProject/blob/master/MobileProject/%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95.png)
 
 主项目中的分层主要包含四个模块，Main(主要)、Expand(扩展)、Resource(资源)、Vender(第三方)，还有本项目是有多个Tag,用于区分不同的版本，比如本地环境测试版、产品版，主要是通过Tag来区分，不同的标识对应不同的连接地址；当然也可以设置其它不同的内容；
 
@@ -67,3 +66,14 @@
 3.14 集成启动广告功能模块，如果不要功能可以在AppDelegate里面进行注掉
 
 3.15 集成CYLTabBarController插件，为项目增加底部4个TabBar菜单
+
+
+
+
+
+
+
+效果图：
+
+![image](https://github.com/wujunyang/MobileProject/blob/master/MobileProject/%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95.png)
+![image](https://github.com/wujunyang/MobileProject/blob/master/MobileProject/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C.png)
