@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.title=@"友盟第三方登录";
     //测试第三方登录
     [self initPageLoad];
 }

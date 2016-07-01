@@ -120,9 +120,7 @@
 -(void)setupLoginViewController
 {
     LogInViewController *logInVc = [[LogInViewController alloc]init];
-    UINavigationController *navcLogin = [[UINavigationController alloc]initWithRootViewController:logInVc];
-    [navcLogin setNavigationBarHidden:YES];
-    self.window.rootViewController = navcLogin;
+    self.window.rootViewController = logInVc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 }
@@ -130,10 +128,8 @@
 //首页
 -(void)setupHomeViewController
 {
-    HomeViewController *logInVc = [[HomeViewController alloc]init];
-    UINavigationController *navcLogin = [[UINavigationController alloc]initWithRootViewController:logInVc];
-    [navcLogin setNavigationBarHidden:YES];
-    self.window.rootViewController = navcLogin;
+    MPHomeViewController *tabBarController = [[MPHomeViewController alloc] init];
+    [self.window setRootViewController:tabBarController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 }

@@ -18,6 +18,9 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor blueColor]];
     [self initPageLoad];
+    
+    self.navigationItem.title=@"友盟分享跳转";
+    [self.navigationController.tabBarItem setBadgeValue:@"2"];
 }
 
 - (void)didReceiveMemoryWarning {

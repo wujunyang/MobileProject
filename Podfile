@@ -14,3 +14,4 @@ pod 'FLEX', '~> 2.0', :configurations => ['Debug']
 pod 'ActionSheetPicker-3.0'
 pod 'JSPatch'
 pod 'XAspect'
+pod 'CYLTabBarController'

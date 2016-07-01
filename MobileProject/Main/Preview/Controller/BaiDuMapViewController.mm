@@ -20,10 +20,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.title=@"百度地图";
+    
+    //百度地图初始化默认数据
+    NSMutableArray *coordinates=[[NSMutableArray alloc]init];
+    
+    BaiDuCoordinateModel *first=[[BaiDuCoordinateModel alloc]init];
+    first.coordinate_comments=@"我是第一个坐标";
+    first.coordinate_title=@"第一站";
+    first.coordinate_objID=1;
+    first.coordinate_latitude=24.496589;
+    first.coordinate_longitude=118.188555;
+    [coordinates addObject:first];
+    
+    BaiDuCoordinateModel *second=[[BaiDuCoordinateModel alloc]init];
+    second.coordinate_comments=@"我是第二个坐标";
+    second.coordinate_title=@"第二站";
+    second.coordinate_objID=1;
+    second.coordinate_latitude=24.49672;
+    second.coordinate_longitude=118.182051;
+    [coordinates addObject:second];
+    self.coordinates=coordinates;
+    
+    
     //百度地图初始化
     self.myMapView=[[BMKMapView alloc] initWithFrame:CGRectMake(0, 0, Main_Screen_Width, Main_Screen_Height)];
     [self.view addSubview:self.myMapView];
-
+    
     self.myMapView.delegate = self;
     //百度定位
     self.locationService.delegate=self;

@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title=@"JSPathch";
+    self.navigationItem.title=@"热更新";
     
     if (!self.myLabel) {
         self.myLabel=[[UILabel alloc]init];

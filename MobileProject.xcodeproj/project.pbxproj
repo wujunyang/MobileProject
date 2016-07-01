@@ -741,6 +741,10 @@
 		34F213021C48C283003AC13D /* MPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F213001C48C283003AC13D /* MPLocationManager.m */; settings = {ASSET_TAGS = (); }; };
 		34F213061C48DB97003AC13D /* MPUmengHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F213051C48DB97003AC13D /* MPUmengHelper.m */; settings = {ASSET_TAGS = (); }; };
 		34F213071C48DB97003AC13D /* MPUmengHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F213051C48DB97003AC13D /* MPUmengHelper.m */; settings = {ASSET_TAGS = (); }; };
+		34F49B2E1D261AE600FA003C /* MPBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F49B2D1D261AE600FA003C /* MPBaseNavigationController.m */; settings = {ASSET_TAGS = (); }; };
+		34F49B2F1D261AE600FA003C /* MPBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F49B2D1D261AE600FA003C /* MPBaseNavigationController.m */; settings = {ASSET_TAGS = (); }; };
+		34F49B321D262AA400FA003C /* MPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F49B311D262AA400FA003C /* MPHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34F49B331D262AA400FA003C /* MPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F49B311D262AA400FA003C /* MPHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34F4B6B91C54CBAC00615E49 /* btn_navigation_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F4B6B21C54CBAC00615E49 /* btn_navigation_close@2x.png */; settings = {ASSET_TAGS = (); }; };
 		34F4B6BA1C54CBAC00615E49 /* btn_navigation_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F4B6B21C54CBAC00615E49 /* btn_navigation_close@2x.png */; settings = {ASSET_TAGS = (); }; };
 		34F4B6BB1C54CBAC00615E49 /* WJIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B41C54CBAC00615E49 /* WJIndicatorView.m */; settings = {ASSET_TAGS = (); }; };
@@ -1479,6 +1483,10 @@
 		34F213001C48C283003AC13D /* MPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLocationManager.m; sourceTree = "<group>"; };
 		34F213041C48DB97003AC13D /* MPUmengHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUmengHelper.h; sourceTree = "<group>"; };
 		34F213051C48DB97003AC13D /* MPUmengHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPUmengHelper.m; sourceTree = "<group>"; };
+		34F49B2C1D261AE600FA003C /* MPBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBaseNavigationController.h; sourceTree = "<group>"; };
+		34F49B2D1D261AE600FA003C /* MPBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBaseNavigationController.m; sourceTree = "<group>"; };
+		34F49B301D262AA400FA003C /* MPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPHomeViewController.h; sourceTree = "<group>"; };
+		34F49B311D262AA400FA003C /* MPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPHomeViewController.m; sourceTree = "<group>"; };
 		34F4B6B21C54CBAC00615E49 /* btn_navigation_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_navigation_close@2x.png"; sourceTree = "<group>"; };
 		34F4B6B31C54CBAC00615E49 /* WJIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJIndicatorView.h; sourceTree = "<group>"; };
 		34F4B6B41C54CBAC00615E49 /* WJIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJIndicatorView.m; sourceTree = "<group>"; };
@@ -1550,8 +1558,12 @@
 		340BCD141D0EF1770093CC7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				34F49B2C1D261AE600FA003C /* MPBaseNavigationController.h */,
+				34F49B2D1D261AE600FA003C /* MPBaseNavigationController.m */,
 				340BCD151D0EFED10093CC7D /* MPWebViewController.h */,
 				340BCD161D0EFED10093CC7D /* MPWebViewController.m */,
+				34F49B301D262AA400FA003C /* MPHomeViewController.h */,
+				34F49B311D262AA400FA003C /* MPHomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4112,6 +4124,7 @@
 				34F213021C48C283003AC13D /* MPLocationManager.m in Sources */,
 				34E08B461C3BFB90005C6CA3 /* NSString+XML.m in Sources */,
 				34E08B471C3BFB90005C6CA3 /* NSObject+AutoCoding.m in Sources */,
+				34F49B331D262AA400FA003C /* MPHomeViewController.m in Sources */,
 				34E08B481C3BFB90005C6CA3 /* UIImage+FileName.m in Sources */,
 				34E08B491C3BFB90005C6CA3 /* UIScreen+Frame.m in Sources */,
 				34E08B4A1C3BFB90005C6CA3 /* UIView+draggable.m in Sources */,
@@ -4173,6 +4186,7 @@
 				34E08B791C3BFB90005C6CA3 /* MJRefreshNormalHeader.m in Sources */,
 				34EC96251C58A61F00985444 /* UMengSocialLoginViewController.m in Sources */,
 				34E08B7A1C3BFB90005C6CA3 /* CAAnimation+EasingEquations.m in Sources */,
+				34F49B2F1D261AE600FA003C /* MPBaseNavigationController.m in Sources */,
 				34F4B6BE1C54CBAC00615E49 /* WJPopupMenuView.m in Sources */,
 				34E08B7B1C3BFB90005C6CA3 /* NSDictionary+SafeAccess.m in Sources */,
 				34E08B7C1C3BFB90005C6CA3 /* UIView+BlockGesture.m in Sources */,
@@ -4275,6 +4289,7 @@
 				34E893D31C3B9A03001327C8 /* UIButton+MiddleAligning.m in Sources */,
 				340757071D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m in Sources */,
 				34E894331C3B9A03001327C8 /* UIViewController+BackButtonTouched.m in Sources */,
+				34F49B321D262AA400FA003C /* MPHomeViewController.m in Sources */,
 				34E8948E1C3B9FC1001327C8 /* MJPhoto.m in Sources */,
 				34E893F31C3B9A03001327C8 /* UIImageView+BetterFace.m in Sources */,
 				34E891411C3B9739001327C8 /* YTKBatchRequestAgent.m in Sources */,
@@ -4505,6 +4520,7 @@
 				34E893AC1C3B9A03001327C8 /* NSString+Score.m in Sources */,
 				34E9D84B1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */,
 				34E893C21C3B9A03001327C8 /* CAShapeLayer+UIBezierPath.m in Sources */,
+				34F49B2E1D261AE600FA003C /* MPBaseNavigationController.m in Sources */,
 				34F4B6BF1C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */,
 				34E893FD1C3B9A03001327C8 /* UINavigationBar+CustomHeight.m in Sources */,
 				34E891231C3B92AA001327C8 /* MJRefreshNormalHeader.m in Sources */,

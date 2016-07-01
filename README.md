@@ -64,4 +64,6 @@
 
 3.13 增加热更新JSPatch插件，并增加相应的帮助类及测试功能（JSPatchViewController）
 
-3.14 集成启动广告功能模块，如果这功能可以在AppDelegate里面进行注掉
+3.14 集成启动广告功能模块，如果不要功能可以在AppDelegate里面进行注掉
+
+3.15 集成CYLTabBarController插件，为项目增加底部4个TabBar菜单
