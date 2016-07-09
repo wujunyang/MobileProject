@@ -51,11 +51,11 @@
 #define DSystemVersion          ([[[UIDevice currentDevice] systemVersion] doubleValue])
 #define SSystemVersion          ([[UIDevice currentDevice] systemVersion])
 
-// 是否IOS7
+// 是否大于等于IOS7
 #define isIOS7                  ([[[UIDevice currentDevice]systemVersion]floatValue] >= 7.0)
 // 是否IOS6
 #define isIOS6                  ([[[UIDevice currentDevice]systemVersion]floatValue] < 7.0)
-//
+// 是否大于等于IOS8
 #define isIOS8                  ([[[UIDevice currentDevice]systemVersion]floatValue] >=8.0)
 // 是否iPad
 #define isPad                   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
@@ -83,6 +83,13 @@
 
 //Library/Caches 文件路径
 #define FilePath ([[NSFileManager defaultManager] URLForDirectory:NSCachesDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:nil])
+//获取temp
+#define kPathTemp NSTemporaryDirectory()
+//获取沙盒 Document
+#define kPathDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+//获取沙盒 Cache
+#define kPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+
 
 //在Main线程上运行
 #define DISPATCH_ON_MAIN_THREAD(mainQueueBlock) dispatch_async(dispatch_get_main_queue(), mainQueueBlock);
@@ -91,6 +98,8 @@
 //DISPATCH_ON_MAIN_THREAD(^{
     //更新UI
 //})
+
+
 
 //在Global Queue上运行
 #define DISPATCH_ON_GLOBAL_QUEUE_HIGH(globalQueueBlocl) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), globalQueueBlocl);
@@ -102,4 +111,16 @@
 //DISPATCH_ON_GLOBAL_QUEUE_DEFAULT(^{
     //异步耗时任务
 //})
+
+
+//弱引用/强引用  可配对引用在外面用MPWeakSelf(self)，block用MPStrongSelf(self)  也可以单独引用在外面用MPWeakSelf(self) block里面用weakself
+#define MPWeakSelf(type)  __weak typeof(type) weak##type = type;
+#define MPStrongSelf(type)  __strong typeof(type) type = weak##type;
+
+
+
+
+
+
+
 

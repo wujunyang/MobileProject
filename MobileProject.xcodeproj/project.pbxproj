@@ -70,6 +70,8 @@
 		341094031D0E982100A8D63F /* JSPatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341094011D0E982100A8D63F /* JSPatchViewController.m */; settings = {ASSET_TAGS = (); }; };
 		341094061D0EAF0D00A8D63F /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 341094051D0EAF0D00A8D63F /* demo.js */; settings = {ASSET_TAGS = (); }; };
 		341094071D0EAF0D00A8D63F /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 341094051D0EAF0D00A8D63F /* demo.js */; settings = {ASSET_TAGS = (); }; };
+		341CA90F1D3097AF008B85D3 /* MBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */; settings = {ASSET_TAGS = (); }; };
+		341CA9101D3097AF008B85D3 /* MBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */; settings = {ASSET_TAGS = (); }; };
 		34420CB91D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */; settings = {ASSET_TAGS = (); }; };
 		34420CBA1D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */; settings = {ASSET_TAGS = (); }; };
 		34420CBD1D0FAD10007D1AAC /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CBC1D0FAD10007D1AAC /* AdvertiseView.m */; settings = {ASSET_TAGS = (); }; };
@@ -815,6 +817,8 @@
 		341094001D0E982100A8D63F /* JSPatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchViewController.h; sourceTree = "<group>"; };
 		341094011D0E982100A8D63F /* JSPatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchViewController.m; sourceTree = "<group>"; };
 		341094051D0EAF0D00A8D63F /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		341CA90D1D3097AF008B85D3 /* MBProgressHUD+MP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MP.h"; sourceTree = "<group>"; };
+		341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MP.m"; sourceTree = "<group>"; };
 		34420CB71D0FAC9E007D1AAC /* AdvertiseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseHelper.h; sourceTree = "<group>"; };
 		34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseHelper.m; sourceTree = "<group>"; };
 		34420CBB1D0FAD10007D1AAC /* AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseView.h; sourceTree = "<group>"; };
@@ -1688,6 +1692,8 @@
 				340BCD5D1D0F027F0093CC7D /* UIViewController+Swizzle.m */,
 				34E08A571C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.h */,
 				34E08A581C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.m */,
+				341CA90D1D3097AF008B85D3 /* MBProgressHUD+MP.h */,
+				341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -3894,6 +3900,7 @@
 				34E08A6C1C3BFB90005C6CA3 /* NSObject+AssociatedObject.m in Sources */,
 				34E08A6D1C3BFB90005C6CA3 /* UIView+ViewController.m in Sources */,
 				34E08A6E1C3BFB90005C6CA3 /* UIViewController+BackButtonItemTitle.m in Sources */,
+				341CA9101D3097AF008B85D3 /* MBProgressHUD+MP.m in Sources */,
 				34E08A6F1C3BFB90005C6CA3 /* UIViewController+Visible.m in Sources */,
 				34E08A701C3BFB90005C6CA3 /* MKMapView+ZoomLevel.m in Sources */,
 				34E08A711C3BFB90005C6CA3 /* YTKChainRequestAgent.m in Sources */,
@@ -4257,6 +4264,7 @@
 				340BCD241D0F011A0093CC7D /* LogInApi.m in Sources */,
 				34E8941C1C3B9A03001327C8 /* UITextView+PinchZoom.m in Sources */,
 				34E894351C3B9A03001327C8 /* UIViewController+DDPopUpViewController.m in Sources */,
+				341CA90F1D3097AF008B85D3 /* MBProgressHUD+MP.m in Sources */,
 				34E893761C3B9A03001327C8 /* NSDate+CupertinoYankee.m in Sources */,
 				3452EB8B1D1A8BF00001732E /* AppDelegate.m in Sources */,
 				34E894301C3B9A03001327C8 /* UIView+Visuals.m in Sources */,
