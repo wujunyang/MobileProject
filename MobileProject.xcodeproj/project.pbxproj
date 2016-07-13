@@ -21,6 +21,8 @@
 		3400E4CC1D35F0CE0056B673 /* MPLKDBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4CA1D35F0CE0056B673 /* MPLKDBUserModel.m */; settings = {ASSET_TAGS = (); }; };
 		340242DF1D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		340242E01D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
+		3403B0BE1D367954007CD7EF /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403B0BD1D367954007CD7EF /* UITextField+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		3403B0BF1D367954007CD7EF /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403B0BD1D367954007CD7EF /* UITextField+Extension.m */; settings = {ASSET_TAGS = (); }; };
 		340757071D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		340BCD171D0EFED10093CC7D /* MPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD161D0EFED10093CC7D /* MPWebViewController.m */; settings = {ASSET_TAGS = (); }; };
 		340BCD181D0EFED10093CC7D /* MPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD161D0EFED10093CC7D /* MPWebViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -802,6 +804,8 @@
 		3400E4CA1D35F0CE0056B673 /* MPLKDBUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLKDBUserModel.m; sourceTree = "<group>"; };
 		340242DD1D16F98700ECD131 /* MPLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLoggerFormatter.h; sourceTree = "<group>"; };
 		340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLoggerFormatter.m; sourceTree = "<group>"; };
+		3403B0BC1D367954007CD7EF /* UITextField+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extension.h"; sourceTree = "<group>"; };
+		3403B0BD1D367954007CD7EF /* UITextField+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension.m"; sourceTree = "<group>"; };
 		340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-UmengShareAppDelegate.m"; sourceTree = "<group>"; };
 		340BCD151D0EFED10093CC7D /* MPWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPWebViewController.h; sourceTree = "<group>"; };
 		340BCD161D0EFED10093CC7D /* MPWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPWebViewController.m; sourceTree = "<group>"; };
@@ -1603,6 +1607,29 @@
 			path = LKDBHelper;
 			sourceTree = "<group>";
 		};
+		3403B0B91D367264007CD7EF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3403B0BA1D367264007CD7EF /* LOCAL */,
+				3403B0BB1D367264007CD7EF /* PRODUCT */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		3403B0BA1D367264007CD7EF /* LOCAL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LOCAL;
+			sourceTree = "<group>";
+		};
+		3403B0BB1D367264007CD7EF /* PRODUCT */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PRODUCT;
+			sourceTree = "<group>";
+		};
 		340BCD141D0EF1770093CC7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1743,6 +1770,8 @@
 				34E08A581C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.m */,
 				341CA90D1D3097AF008B85D3 /* MBProgressHUD+MP.h */,
 				341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */,
+				3403B0BC1D367954007CD7EF /* UITextField+Extension.h */,
+				3403B0BD1D367954007CD7EF /* UITextField+Extension.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1873,6 +1902,7 @@
 		34E890BB1C3B8A7C001327C8 /* Resource(资源) */ = {
 			isa = PBXGroup;
 			children = (
+				3403B0B91D367264007CD7EF /* Config */,
 				3452EB881D1A8B720001732E /* AppDelegate */,
 				341094041D0EA14900A8D63F /* JsHtmlCss */,
 				34E8912B1C3B93DA001327C8 /* Global */,
@@ -4151,6 +4181,7 @@
 				34E08B271C3BFB90005C6CA3 /* UIControl+Block.m in Sources */,
 				34E95EBB1C4F82F700376777 /* UUInputAccessoryView.m in Sources */,
 				34E08B291C3BFB90005C6CA3 /* UINavigationItem+Margin.m in Sources */,
+				3403B0BF1D367954007CD7EF /* UITextField+Extension.m in Sources */,
 				34E08B2A1C3BFB90005C6CA3 /* NSString+RegexCategory.m in Sources */,
 				34E08B2B1C3BFB90005C6CA3 /* UIWebView+Canvas.m in Sources */,
 				34E08B2C1C3BFB90005C6CA3 /* LogInViewController.m in Sources */,
@@ -4551,6 +4582,7 @@
 				34E894901C3B9FC1001327C8 /* MJPhotoBrowser.m in Sources */,
 				34E894C61C3BAF38001327C8 /* NetworkUnit.m in Sources */,
 				34E893851C3B9A03001327C8 /* NSException+Trace.m in Sources */,
+				3403B0BE1D367954007CD7EF /* UITextField+Extension.m in Sources */,
 				34E893FB1C3B9A03001327C8 /* UILabel+SuggestSize.m in Sources */,
 				34E8937F1C3B9A03001327C8 /* NSDictionary+Block.m in Sources */,
 				34E8937A1C3B9A03001327C8 /* NSDate+Reporting.m in Sources */,

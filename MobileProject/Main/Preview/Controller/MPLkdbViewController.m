@@ -11,6 +11,11 @@
 #import "MPLKDBUserModel.h"
 #import "NSObject+PrintSQL.h"
 
+
+@interface MPLkdbViewController()<UITextFieldDelegate>
+@property(nonatomic,strong)UITextField *myTextField;
+@end
+
 @implementation MPLkdbViewController
 
 
@@ -20,6 +25,8 @@
     self.navigationItem.title=@"LKDB数据库操作";
 
     [self startLKDB];
+    
+    [self startLayout];
 }
 
 -(void)startLKDB
@@ -42,6 +49,29 @@
     //增加删除修改这些都可以放在model类去写
     [model saveToDB];
     [globalHelper insertToDB:model];
+}
+
+//测试输入框 电话号码、身份证、银行卡分隔
+-(void)startLayout
+{
+    if (!self.myTextField) {
+        self.myTextField=[[UITextField alloc]initWithFrame:CGRectMake(100, 150, 200, 40)];
+        self.myTextField.backgroundColor=[UIColor grayColor];
+        self.myTextField.delegate=self;
+        [self.view addSubview:self.myTextField];
+    }
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    NSArray *insertPosition = @[@(3), @(7)];
+    [textField insertWhitSpaceInsertPosition:insertPosition replacementString:string textlength:20];
+    return NO;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField;
+{
+    NSLog(@"当前值%@",textField.text);
 }
 
 - (void)didReceiveMemoryWarning {
