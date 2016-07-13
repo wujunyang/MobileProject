@@ -715,14 +715,6 @@
 		34E894D61C3BCD2F001327C8 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894D51C3BCD2F001327C8 /* LoginModel.m */; settings = {ASSET_TAGS = (); }; };
 		34E95EBA1C4F82F600376777 /* UUInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E95EB91C4F82F600376777 /* UUInputAccessoryView.m */; settings = {ASSET_TAGS = (); }; };
 		34E95EBB1C4F82F700376777 /* UUInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E95EB91C4F82F600376777 /* UUInputAccessoryView.m */; settings = {ASSET_TAGS = (); }; };
-		34E9D0D01C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0C91C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m */; settings = {ASSET_TAGS = (); }; };
-		34E9D0D11C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0C91C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m */; settings = {ASSET_TAGS = (); }; };
-		34E9D0D21C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CB1C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m */; settings = {ASSET_TAGS = (); }; };
-		34E9D0D31C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CB1C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m */; settings = {ASSET_TAGS = (); }; };
-		34E9D0D41C571296007D4FD9 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CD1C571296007D4FD9 /* TPKeyboardAvoidingTableView.m */; settings = {ASSET_TAGS = (); }; };
-		34E9D0D51C571296007D4FD9 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CD1C571296007D4FD9 /* TPKeyboardAvoidingTableView.m */; settings = {ASSET_TAGS = (); }; };
-		34E9D0D61C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CF1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {ASSET_TAGS = (); }; };
-		34E9D0D71C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D0CF1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {ASSET_TAGS = (); }; };
 		34E9D8471C59C33B00E98C2A /* BaiDuMapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D8461C59C33B00E98C2A /* BaiDuMapViewController.mm */; settings = {ASSET_TAGS = (); }; };
 		34E9D8481C59C33B00E98C2A /* BaiDuMapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D8461C59C33B00E98C2A /* BaiDuMapViewController.mm */; settings = {ASSET_TAGS = (); }; };
 		34E9D84B1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D84A1C59DB8800E98C2A /* BaiDuRouteAnnotation.m */; settings = {ASSET_TAGS = (); }; };
@@ -759,14 +751,6 @@
 		34F49B2F1D261AE600FA003C /* MPBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F49B2D1D261AE600FA003C /* MPBaseNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 		34F49B321D262AA400FA003C /* MPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F49B311D262AA400FA003C /* MPHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34F49B331D262AA400FA003C /* MPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F49B311D262AA400FA003C /* MPHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
-		34F4B6B91C54CBAC00615E49 /* btn_navigation_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F4B6B21C54CBAC00615E49 /* btn_navigation_close@2x.png */; settings = {ASSET_TAGS = (); }; };
-		34F4B6BA1C54CBAC00615E49 /* btn_navigation_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F4B6B21C54CBAC00615E49 /* btn_navigation_close@2x.png */; settings = {ASSET_TAGS = (); }; };
-		34F4B6BB1C54CBAC00615E49 /* WJIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B41C54CBAC00615E49 /* WJIndicatorView.m */; settings = {ASSET_TAGS = (); }; };
-		34F4B6BC1C54CBAC00615E49 /* WJIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B41C54CBAC00615E49 /* WJIndicatorView.m */; settings = {ASSET_TAGS = (); }; };
-		34F4B6BD1C54CBAC00615E49 /* WJPopupMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B61C54CBAC00615E49 /* WJPopupMenuView.m */; settings = {ASSET_TAGS = (); }; };
-		34F4B6BE1C54CBAC00615E49 /* WJPopupMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B61C54CBAC00615E49 /* WJPopupMenuView.m */; settings = {ASSET_TAGS = (); }; };
-		34F4B6BF1C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B81C54CBAC00615E49 /* WJScrollerMenuView.m */; settings = {ASSET_TAGS = (); }; };
-		34F4B6C01C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B6B81C54CBAC00615E49 /* WJScrollerMenuView.m */; settings = {ASSET_TAGS = (); }; };
 		9014C40DD45909D3FC1F2EBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 533C667C4AE7D52B4A1E63C2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -1476,14 +1460,6 @@
 		34E894D51C3BCD2F001327C8 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		34E95EB81C4F82F600376777 /* UUInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUInputAccessoryView.h; sourceTree = "<group>"; };
 		34E95EB91C4F82F600376777 /* UUInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUInputAccessoryView.m; sourceTree = "<group>"; };
-		34E9D0C81C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
-		34E9D0C91C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
-		34E9D0CA1C571296007D4FD9 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
-		34E9D0CB1C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
-		34E9D0CC1C571296007D4FD9 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
-		34E9D0CD1C571296007D4FD9 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
-		34E9D0CE1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
-		34E9D0CF1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		34E9D8451C59C33B00E98C2A /* BaiDuMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiDuMapViewController.h; sourceTree = "<group>"; };
 		34E9D8461C59C33B00E98C2A /* BaiDuMapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaiDuMapViewController.mm; sourceTree = "<group>"; };
 		34E9D8491C59DB8800E98C2A /* BaiDuRouteAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiDuRouteAnnotation.h; sourceTree = "<group>"; };
@@ -1516,13 +1492,6 @@
 		34F49B2D1D261AE600FA003C /* MPBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBaseNavigationController.m; sourceTree = "<group>"; };
 		34F49B301D262AA400FA003C /* MPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPHomeViewController.h; sourceTree = "<group>"; };
 		34F49B311D262AA400FA003C /* MPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPHomeViewController.m; sourceTree = "<group>"; };
-		34F4B6B21C54CBAC00615E49 /* btn_navigation_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_navigation_close@2x.png"; sourceTree = "<group>"; };
-		34F4B6B31C54CBAC00615E49 /* WJIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJIndicatorView.h; sourceTree = "<group>"; };
-		34F4B6B41C54CBAC00615E49 /* WJIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJIndicatorView.m; sourceTree = "<group>"; };
-		34F4B6B51C54CBAC00615E49 /* WJPopupMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJPopupMenuView.h; sourceTree = "<group>"; };
-		34F4B6B61C54CBAC00615E49 /* WJPopupMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJPopupMenuView.m; sourceTree = "<group>"; };
-		34F4B6B71C54CBAC00615E49 /* WJScrollerMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJScrollerMenuView.h; sourceTree = "<group>"; };
-		34F4B6B81C54CBAC00615E49 /* WJScrollerMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJScrollerMenuView.m; sourceTree = "<group>"; };
 		533C667C4AE7D52B4A1E63C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A48D3EEAEFFB901D36D8E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1881,7 +1850,6 @@
 		34E890BA1C3B8A52001327C8 /* Vender(第三方) */ = {
 			isa = PBXGroup;
 			children = (
-				34F4B6B11C54CBAC00615E49 /* WJScrollerMenuView */,
 				34E95EB71C4F82B900376777 /* UUInputAccessoryView */,
 				34EC806F1C472DFB00C7E40A /* UIPlaceHolderTextView */,
 				34E08A521C3BE80F005C6CA3 /* GVUserDefaults */,
@@ -1889,7 +1857,6 @@
 				34E894AF1C3BA300001327C8 /* SVProgressHUD */,
 				34E8945F1C3B9FC1001327C8 /* MJPhotoBrowser */,
 				34E8946F1C3B9FC1001327C8 /* QBImagePickerController */,
-				34E894851C3B9FC1001327C8 /* TPKeyboardAvoiding */,
 				34E8945B1C3B9D6A001327C8 /* iCarousel */,
 				34E894511C3B9D05001327C8 /* RDVTabBarController */,
 				34E891481C3B97C5001327C8 /* AFDownloadRequestOperation */,
@@ -3334,21 +3301,6 @@
 			path = QBImagePickerController;
 			sourceTree = "<group>";
 		};
-		34E894851C3B9FC1001327C8 /* TPKeyboardAvoiding */ = {
-			isa = PBXGroup;
-			children = (
-				34E9D0C81C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.h */,
-				34E9D0C91C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m */,
-				34E9D0CA1C571296007D4FD9 /* TPKeyboardAvoidingScrollView.h */,
-				34E9D0CB1C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m */,
-				34E9D0CC1C571296007D4FD9 /* TPKeyboardAvoidingTableView.h */,
-				34E9D0CD1C571296007D4FD9 /* TPKeyboardAvoidingTableView.m */,
-				34E9D0CE1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
-				34E9D0CF1C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
-			);
-			path = TPKeyboardAvoiding;
-			sourceTree = "<group>";
-		};
 		34E894A81C3BA300001327C8 /* JDStatusBarNotification */ = {
 			isa = PBXGroup;
 			children = (
@@ -3627,20 +3579,6 @@
 			path = UmengHelper;
 			sourceTree = "<group>";
 		};
-		34F4B6B11C54CBAC00615E49 /* WJScrollerMenuView */ = {
-			isa = PBXGroup;
-			children = (
-				34F4B6B21C54CBAC00615E49 /* btn_navigation_close@2x.png */,
-				34F4B6B31C54CBAC00615E49 /* WJIndicatorView.h */,
-				34F4B6B41C54CBAC00615E49 /* WJIndicatorView.m */,
-				34F4B6B51C54CBAC00615E49 /* WJPopupMenuView.h */,
-				34F4B6B61C54CBAC00615E49 /* WJPopupMenuView.m */,
-				34F4B6B71C54CBAC00615E49 /* WJScrollerMenuView.h */,
-				34F4B6B81C54CBAC00615E49 /* WJScrollerMenuView.m */,
-			);
-			path = WJScrollerMenuView;
-			sourceTree = "<group>";
-		};
 		549E38115AE0AD579BD3EB1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -3812,7 +3750,6 @@
 				34E08BA11C3BFB90005C6CA3 /* NSDateTimeAgo.bundle in Resources */,
 				34EC47C11C3D6B490041CB85 /* 项目目录.png in Resources */,
 				34EC96281C58AA9600985444 /* Preview.xcassets in Resources */,
-				34F4B6BA1C54CBAC00615E49 /* btn_navigation_close@2x.png in Resources */,
 				340BCD5B1D0F02180093CC7D /* Placeholder in Resources */,
 				34E08BA21C3BFB90005C6CA3 /* Main.storyboard in Resources */,
 				340BCD341D0F01790093CC7D /* Placeholder in Resources */,
@@ -3858,7 +3795,6 @@
 				34EC962D1C58AB1A00985444 /* Home.xcassets in Resources */,
 				34E8914E1C3B9986001327C8 /* File.strings in Resources */,
 				340BCD571D0F01F50093CC7D /* Placeholder in Resources */,
-				34F4B6B91C54CBAC00615E49 /* btn_navigation_close@2x.png in Resources */,
 				340BCD301D0F016D0093CC7D /* Placeholder in Resources */,
 				34E8948F1C3B9FC1001327C8 /* MJPhotoBrowser.bundle in Resources */,
 				340BCD3F1D0F01A40093CC7D /* Placeholder in Resources */,
@@ -3990,7 +3926,6 @@
 				34E08A701C3BFB90005C6CA3 /* MKMapView+ZoomLevel.m in Sources */,
 				34E08A711C3BFB90005C6CA3 /* YTKChainRequestAgent.m in Sources */,
 				34EC80731C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */,
-				34E9D0D11C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				34E08A721C3BFB90005C6CA3 /* UIDevice+PasscodeStatus.m in Sources */,
 				34E08A731C3BFB90005C6CA3 /* UIScrollView+MJExtension.m in Sources */,
 				34E08A741C3BFB90005C6CA3 /* UIApplication+NetworkActivityIndicator.m in Sources */,
@@ -4047,7 +3982,6 @@
 				34E08AA61C3BFB90005C6CA3 /* QBAssetsCollectionViewController.m in Sources */,
 				34E08AA71C3BFB90005C6CA3 /* UIWebView+MetaParser.m in Sources */,
 				34E08AA81C3BFB90005C6CA3 /* NSString+DictionaryValue.m in Sources */,
-				34E9D0D51C571296007D4FD9 /* TPKeyboardAvoidingTableView.m in Sources */,
 				34E08AA91C3BFB90005C6CA3 /* UIWebView+JS.m in Sources */,
 				34E08AAA1C3BFB90005C6CA3 /* UINavigationController+KeyboardFix.m in Sources */,
 				34E08AAB1C3BFB90005C6CA3 /* UIImage+Merge.m in Sources */,
@@ -4209,7 +4143,6 @@
 				34E08B431C3BFB90005C6CA3 /* MJRefreshBackStateFooter.m in Sources */,
 				34E08B441C3BFB90005C6CA3 /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				34E08B451C3BFB90005C6CA3 /* YTKNetworkConfig.m in Sources */,
-				34E9D0D31C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				34799A641CD34C5A003518C5 /* UIDevice+FCUUID.m in Sources */,
 				34F213021C48C283003AC13D /* MPLocationManager.m in Sources */,
 				34E08B461C3BFB90005C6CA3 /* NSString+XML.m in Sources */,
@@ -4260,7 +4193,6 @@
 				34E08B6F1C3BFB90005C6CA3 /* MJRefreshHeader.m in Sources */,
 				340BCD6A1D0F04DE0093CC7D /* UITapImageView.m in Sources */,
 				34E08B701C3BFB90005C6CA3 /* UIApplication+Permissions.m in Sources */,
-				34F4B6BC1C54CBAC00615E49 /* WJIndicatorView.m in Sources */,
 				34E08B711C3BFB90005C6CA3 /* MJPhotoView.m in Sources */,
 				34E08B721C3BFB90005C6CA3 /* UIViewController+BlockSegue.m in Sources */,
 				34E08B731C3BFB90005C6CA3 /* MJRefreshBackNormalFooter.m in Sources */,
@@ -4271,18 +4203,15 @@
 				34E9D84C1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */,
 				34E08B771C3BFB90005C6CA3 /* CAShapeLayer+UIBezierPath.m in Sources */,
 				340BCD691D0F04DB0093CC7D /* imageCompressHelper.m in Sources */,
-				34F4B6C01C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */,
 				34E08B781C3BFB90005C6CA3 /* UINavigationBar+CustomHeight.m in Sources */,
 				34E08B791C3BFB90005C6CA3 /* MJRefreshNormalHeader.m in Sources */,
 				34EC96251C58A61F00985444 /* UMengSocialLoginViewController.m in Sources */,
 				34E08B7A1C3BFB90005C6CA3 /* CAAnimation+EasingEquations.m in Sources */,
 				34F49B2F1D261AE600FA003C /* MPBaseNavigationController.m in Sources */,
-				34F4B6BE1C54CBAC00615E49 /* WJPopupMenuView.m in Sources */,
 				34E08B7B1C3BFB90005C6CA3 /* NSDictionary+SafeAccess.m in Sources */,
 				34E08B7C1C3BFB90005C6CA3 /* UIView+BlockGesture.m in Sources */,
 				34E08B7D1C3BFB90005C6CA3 /* QBAssetsCollectionCheckmarkView.m in Sources */,
 				34E08B7E1C3BFB90005C6CA3 /* main.m in Sources */,
-				34E9D0D71C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				34E08B7F1C3BFB90005C6CA3 /* MJRefreshAutoStateFooter.m in Sources */,
 				34E08B801C3BFB90005C6CA3 /* MJPhotoToolbar.m in Sources */,
 				34E08B811C3BFB90005C6CA3 /* NSObject+MKBlockTimer.m in Sources */,
@@ -4333,7 +4262,6 @@
 				34E893BD1C3B9A03001327C8 /* MKMapView+ZoomLevel.m in Sources */,
 				34E891431C3B9739001327C8 /* YTKChainRequestAgent.m in Sources */,
 				34EC80721C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */,
-				34E9D0D01C571296007D4FD9 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				34E893DE1C3B9A03001327C8 /* UIDevice+PasscodeStatus.m in Sources */,
 				34E891271C3B92AA001327C8 /* UIScrollView+MJExtension.m in Sources */,
 				34E893C71C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.m in Sources */,
@@ -4397,7 +4325,6 @@
 				34E8949B1C3B9FC1001327C8 /* QBAssetsCollectionViewController.m in Sources */,
 				34E894411C3B9A03001327C8 /* UIWebView+MetaParser.m in Sources */,
 				34E893A21C3B9A03001327C8 /* NSString+DictionaryValue.m in Sources */,
-				34E9D0D41C571296007D4FD9 /* TPKeyboardAvoidingTableView.m in Sources */,
 				34E8943F1C3B9A03001327C8 /* UIWebView+JS.m in Sources */,
 				34E894011C3B9A03001327C8 /* UINavigationController+KeyboardFix.m in Sources */,
 				34E893EB1C3B9A03001327C8 /* UIImage+Merge.m in Sources */,
@@ -4559,7 +4486,6 @@
 				34E891211C3B92AA001327C8 /* MJRefreshBackStateFooter.m in Sources */,
 				34E893691C3B9A03001327C8 /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				34E891451C3B9739001327C8 /* YTKNetworkConfig.m in Sources */,
-				34E9D0D21C571296007D4FD9 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				34799A631CD34C5A003518C5 /* UIDevice+FCUUID.m in Sources */,
 				34F213011C48C283003AC13D /* MPLocationManager.m in Sources */,
 				34E893B11C3B9A03001327C8 /* NSString+XML.m in Sources */,
@@ -4609,7 +4535,6 @@
 				34E893CB1C3B9A03001327C8 /* UIBezierPath+Length.m in Sources */,
 				34E8911B1C3B92AA001327C8 /* MJRefreshHeader.m in Sources */,
 				34E893C81C3B9A03001327C8 /* UIApplication+Permissions.m in Sources */,
-				34F4B6BB1C54CBAC00615E49 /* WJIndicatorView.m in Sources */,
 				34E894941C3B9FC1001327C8 /* MJPhotoView.m in Sources */,
 				34E894341C3B9A03001327C8 /* UIViewController+BlockSegue.m in Sources */,
 				34E891201C3B92AA001327C8 /* MJRefreshBackNormalFooter.m in Sources */,
@@ -4620,17 +4545,14 @@
 				34E9D84B1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */,
 				34E893C21C3B9A03001327C8 /* CAShapeLayer+UIBezierPath.m in Sources */,
 				34F49B2E1D261AE600FA003C /* MPBaseNavigationController.m in Sources */,
-				34F4B6BF1C54CBAC00615E49 /* WJScrollerMenuView.m in Sources */,
 				34E893FD1C3B9A03001327C8 /* UINavigationBar+CustomHeight.m in Sources */,
 				34E891231C3B92AA001327C8 /* MJRefreshNormalHeader.m in Sources */,
 				34EC96241C58A61F00985444 /* UMengSocialLoginViewController.m in Sources */,
 				34E893BF1C3B9A03001327C8 /* CAAnimation+EasingEquations.m in Sources */,
-				34F4B6BD1C54CBAC00615E49 /* WJPopupMenuView.m in Sources */,
 				34E893821C3B9A03001327C8 /* NSDictionary+SafeAccess.m in Sources */,
 				34E894201C3B9A03001327C8 /* UIView+BlockGesture.m in Sources */,
 				34E894961C3B9FC1001327C8 /* QBAssetsCollectionCheckmarkView.m in Sources */,
 				34E890871C3B89B2001327C8 /* main.m in Sources */,
-				34E9D0D61C571296007D4FD9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				34E8911E1C3B92AA001327C8 /* MJRefreshAutoStateFooter.m in Sources */,
 				34E894931C3B9FC1001327C8 /* MJPhotoToolbar.m in Sources */,
 				34E8939A1C3B9A03001327C8 /* NSObject+MKBlockTimer.m in Sources */,

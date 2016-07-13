@@ -41,6 +41,7 @@ PODS:
   - FMDB/standard (2.5):
     - FMDB/common
   - GTSDK (1.4.2)
+  - IQKeyboardManager (3.3.7)
   - JSONModel (1.0.2)
   - JSPatch (1.0):
     - JSPatch/Core (= 1.0)
@@ -48,6 +49,7 @@ PODS:
   - LKDBHelper (2.3.1):
     - FMDB
   - Masonry (0.6.4)
+  - RegexKitLite (4.0)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
@@ -75,10 +77,12 @@ DEPENDENCIES:
   - FMDB/common (~> 2.5)
   - FMDB/SQLCipher (~> 2.5)
   - GTSDK
+  - IQKeyboardManager
   - JSONModel (~> 1.0.1)
   - JSPatch
   - LKDBHelper
   - Masonry (~> 0.6.1)
+  - RegexKitLite (= 4.0)
   - SDWebImage (~> 3.7)
   - UMengAnalytics-NO-IDFA
   - UMengSocial (~> 4.3)
@@ -93,10 +97,12 @@ SPEC CHECKSUMS:
   FLEX: 27b768fcae23a313a1eb115076d429180ca9b472
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   GTSDK: 51a12836895312a872f75a2fe0f2e788dee75b19
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
   JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
   JSPatch: c689ea4dde17441f2f4a95d40dfedb8900c20099
   LKDBHelper: 8d140170652a1ceef59247af4fb55e0a0dcd91dc
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
   UMengAnalytics-NO-IDFA: 965a219b05475ff2a4c09a164139a27bbaa0e25b
