@@ -18,6 +18,7 @@
 #import "UIImageView+WebCache.h"
 #import "Macros.h"
 #import "MBTargetConfigContants.h"
+#import "MPTargetConfigMacros.h"
 #import "ThirdMacros.h"
 #import "MBConstants.h"
 #import "NotificationContants.h"

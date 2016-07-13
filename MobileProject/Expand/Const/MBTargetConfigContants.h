@@ -10,18 +10,17 @@
 #define MBTargetConfigContants_h
 
 
-#if PRODUCT
-//产品环境
+#if PRODUCT  //产品环境
+
 static NSString* const MBTargetConfig_NetWork_s=@"";
 
 //DDLog等级
 static const int ddLogLevel = LOG_LEVEL_ERROR;
 
-#else
-//其它环境
+#else   //其它环境
 
+//DDLog等级
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
-
 
 #endif
 

@@ -67,7 +67,7 @@
 
 3.15 集成CYLTabBarController插件，为项目增加底部4个TabBar菜单
 
-
+3.16 引入LKDBHelper并增加创建数据库帮助类，实现实体直接映射到数据库表
 
 
 

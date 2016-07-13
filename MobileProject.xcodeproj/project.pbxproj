@@ -11,6 +11,14 @@
 		3400E4B41D35E1500056B673 /* SYSafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4B21D35E1500056B673 /* SYSafeCategory.m */; settings = {ASSET_TAGS = (); }; };
 		3400E4B51D35E15A0056B673 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4B01D35E1500056B673 /* JRSwizzle.m */; settings = {ASSET_TAGS = (); }; };
 		3400E4B61D35E15D0056B673 /* SYSafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4B21D35E1500056B673 /* SYSafeCategory.m */; settings = {ASSET_TAGS = (); }; };
+		3400E4BF1D35EDF50056B673 /* NSObject+PrintSQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4BE1D35EDF50056B673 /* NSObject+PrintSQL.m */; settings = {ASSET_TAGS = (); }; };
+		3400E4C01D35EDF50056B673 /* NSObject+PrintSQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4BE1D35EDF50056B673 /* NSObject+PrintSQL.m */; settings = {ASSET_TAGS = (); }; };
+		3400E4C31D35EEF00056B673 /* MPLKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4C21D35EEF00056B673 /* MPLKDBHelper.m */; settings = {ASSET_TAGS = (); }; };
+		3400E4C41D35EEF00056B673 /* MPLKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4C21D35EEF00056B673 /* MPLKDBHelper.m */; settings = {ASSET_TAGS = (); }; };
+		3400E4C71D35F0690056B673 /* MPLkdbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4C61D35F0690056B673 /* MPLkdbViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3400E4C81D35F0690056B673 /* MPLkdbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4C61D35F0690056B673 /* MPLkdbViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3400E4CB1D35F0CE0056B673 /* MPLKDBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4CA1D35F0CE0056B673 /* MPLKDBUserModel.m */; settings = {ASSET_TAGS = (); }; };
+		3400E4CC1D35F0CE0056B673 /* MPLKDBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4CA1D35F0CE0056B673 /* MPLKDBUserModel.m */; settings = {ASSET_TAGS = (); }; };
 		340242DF1D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		340242E01D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		340757071D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
@@ -783,6 +791,15 @@
 		3400E4B01D35E1500056B673 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
 		3400E4B11D35E1500056B673 /* SYSafeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSafeCategory.h; sourceTree = "<group>"; };
 		3400E4B21D35E1500056B673 /* SYSafeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSafeCategory.m; sourceTree = "<group>"; };
+		3400E4BB1D35E6700056B673 /* MPTargetConfigMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTargetConfigMacros.h; sourceTree = "<group>"; };
+		3400E4BD1D35EDF50056B673 /* NSObject+PrintSQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PrintSQL.h"; sourceTree = "<group>"; };
+		3400E4BE1D35EDF50056B673 /* NSObject+PrintSQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PrintSQL.m"; sourceTree = "<group>"; };
+		3400E4C11D35EEF00056B673 /* MPLKDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLKDBHelper.h; sourceTree = "<group>"; };
+		3400E4C21D35EEF00056B673 /* MPLKDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLKDBHelper.m; sourceTree = "<group>"; };
+		3400E4C51D35F0690056B673 /* MPLkdbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLkdbViewController.h; sourceTree = "<group>"; };
+		3400E4C61D35F0690056B673 /* MPLkdbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLkdbViewController.m; sourceTree = "<group>"; };
+		3400E4C91D35F0CE0056B673 /* MPLKDBUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLKDBUserModel.h; sourceTree = "<group>"; };
+		3400E4CA1D35F0CE0056B673 /* MPLKDBUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLKDBUserModel.m; sourceTree = "<group>"; };
 		340242DD1D16F98700ECD131 /* MPLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLoggerFormatter.h; sourceTree = "<group>"; };
 		340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLoggerFormatter.m; sourceTree = "<group>"; };
 		340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-UmengShareAppDelegate.m"; sourceTree = "<group>"; };
@@ -1574,6 +1591,18 @@
 			path = SySafeCategory;
 			sourceTree = "<group>";
 		};
+		3400E4BC1D35EC6A0056B673 /* LKDBHelper(数据库管理) */ = {
+			isa = PBXGroup;
+			children = (
+				3400E4BD1D35EDF50056B673 /* NSObject+PrintSQL.h */,
+				3400E4BE1D35EDF50056B673 /* NSObject+PrintSQL.m */,
+				3400E4C11D35EEF00056B673 /* MPLKDBHelper.h */,
+				3400E4C21D35EEF00056B673 /* MPLKDBHelper.m */,
+			);
+			name = "LKDBHelper(数据库管理)";
+			path = LKDBHelper;
+			sourceTree = "<group>";
+		};
 		340BCD141D0EF1770093CC7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1911,6 +1940,7 @@
 		34E890BF1C3B8B36001327C8 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				3400E4BC1D35EC6A0056B673 /* LKDBHelper(数据库管理) */,
 				34420CB61D0FABD1007D1AAC /* AdvertiseHelper(启动广告) */,
 				341093FA1D0E843100A8D63F /* JSPatchHelper(热更新) */,
 				341093EB1D0E600200A8D63F /* OtherHelper */,
@@ -1929,6 +1959,7 @@
 			children = (
 				34E8912A1C3B9324001327C8 /* Macros.h */,
 				34E894BF1C3BA42F001327C8 /* ThirdMacros.h */,
+				3400E4BB1D35E6700056B673 /* MPTargetConfigMacros.h */,
 			);
 			name = "Macros(宏)";
 			path = Macros;
@@ -3460,6 +3491,8 @@
 				34E9D8461C59C33B00E98C2A /* BaiDuMapViewController.mm */,
 				341094001D0E982100A8D63F /* JSPatchViewController.h */,
 				341094011D0E982100A8D63F /* JSPatchViewController.m */,
+				3400E4C51D35F0690056B673 /* MPLkdbViewController.h */,
+				3400E4C61D35F0690056B673 /* MPLkdbViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3471,6 +3504,8 @@
 				34E9D84A1C59DB8800E98C2A /* BaiDuRouteAnnotation.m */,
 				34E9D84D1C59DD2800E98C2A /* BaiDuCoordinateModel.h */,
 				34E9D84E1C59DD2800E98C2A /* BaiDuCoordinateModel.m */,
+				3400E4C91D35F0CE0056B673 /* MPLKDBUserModel.h */,
+				3400E4CA1D35F0CE0056B673 /* MPLKDBUserModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -3965,6 +4000,7 @@
 				34E08A961C3BFB90005C6CA3 /* Reachability.m in Sources */,
 				34E08A971C3BFB90005C6CA3 /* UIControl+ActionBlocks.m in Sources */,
 				34E08A981C3BFB90005C6CA3 /* UIImageView+Letters.m in Sources */,
+				3400E4C01D35EDF50056B673 /* NSObject+PrintSQL.m in Sources */,
 				34E08A9A1C3BFB90005C6CA3 /* UIScrollView+EmptyDataSet.m in Sources */,
 				34E08A9B1C3BFB90005C6CA3 /* UIButton+MiddleAligning.m in Sources */,
 				34E08A9C1C3BFB90005C6CA3 /* UIViewController+BackButtonTouched.m in Sources */,
@@ -4086,6 +4122,7 @@
 				34E08B0D1C3BFB90005C6CA3 /* QBAssetsCollectionFooterView.m in Sources */,
 				34E08B0E1C3BFB90005C6CA3 /* NSFileManager+Paths.m in Sources */,
 				34E08B0F1C3BFB90005C6CA3 /* RDVTabBarItem.m in Sources */,
+				3400E4C81D35F0690056B673 /* MPLkdbViewController.m in Sources */,
 				34E08B101C3BFB90005C6CA3 /* UIButton+CountDown.m in Sources */,
 				34E08B111C3BFB90005C6CA3 /* LoginModel.m in Sources */,
 				34E08B121C3BFB90005C6CA3 /* SDWebImageManager+MJ.m in Sources */,
@@ -4137,6 +4174,7 @@
 				34E08B401C3BFB90005C6CA3 /* UISplitViewController+QuickAccess.m in Sources */,
 				34E08B411C3BFB90005C6CA3 /* SVProgressHUD.m in Sources */,
 				34E08B421C3BFB90005C6CA3 /* NSURL+QueryDictionary.m in Sources */,
+				3400E4C41D35EEF00056B673 /* MPLKDBHelper.m in Sources */,
 				34E08B431C3BFB90005C6CA3 /* MJRefreshBackStateFooter.m in Sources */,
 				34E08B441C3BFB90005C6CA3 /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				34E08B451C3BFB90005C6CA3 /* YTKNetworkConfig.m in Sources */,
@@ -4220,6 +4258,7 @@
 				34E08B821C3BFB90005C6CA3 /* MJRefreshAutoFooter.m in Sources */,
 				34E08B831C3BFB90005C6CA3 /* NSUserDefaults+SafeAccess.m in Sources */,
 				34E08B841C3BFB90005C6CA3 /* UIView+Screenshot.m in Sources */,
+				3400E4CC1D35F0CE0056B673 /* MPLKDBUserModel.m in Sources */,
 				34E08B851C3BFB90005C6CA3 /* UIWebView+Blocks.m in Sources */,
 				34E08B871C3BFB90005C6CA3 /* NSMutableString+Ruby.m in Sources */,
 				34E08B881C3BFB90005C6CA3 /* UIFont+DynamicFontControl.m in Sources */,
@@ -4257,6 +4296,7 @@
 				34E894151C3B9A03001327C8 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				34E893941C3B9A03001327C8 /* NSObject+AssociatedObject.m in Sources */,
 				34E8942F1C3B9A03001327C8 /* UIView+ViewController.m in Sources */,
+				3400E4C31D35EEF00056B673 /* MPLKDBHelper.m in Sources */,
 				34E894321C3B9A03001327C8 /* UIViewController+BackButtonItemTitle.m in Sources */,
 				34E8943B1C3B9A03001327C8 /* UIViewController+Visible.m in Sources */,
 				34E893BD1C3B9A03001327C8 /* MKMapView+ZoomLevel.m in Sources */,
@@ -4309,6 +4349,7 @@
 				34E893DB1C3B9A03001327C8 /* UIControl+ActionBlocks.m in Sources */,
 				34E893F61C3B9A03001327C8 /* UIImageView+Letters.m in Sources */,
 				34E8940D1C3B9A03001327C8 /* UIScrollView+EmptyDataSet.m in Sources */,
+				3400E4CB1D35F0CE0056B673 /* MPLKDBUserModel.m in Sources */,
 				34E893D31C3B9A03001327C8 /* UIButton+MiddleAligning.m in Sources */,
 				340757071D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m in Sources */,
 				34E894331C3B9A03001327C8 /* UIViewController+BackButtonTouched.m in Sources */,
@@ -4405,6 +4446,7 @@
 				34E8939C1C3B9A03001327C8 /* NSObject+Runtime.m in Sources */,
 				34E893D81C3B9A03001327C8 /* UIColor+Modify.m in Sources */,
 				34E8941A1C3B9A03001327C8 /* UITextField+Select.m in Sources */,
+				3400E4BF1D35EDF50056B673 /* NSObject+PrintSQL.m in Sources */,
 				34E893F41C3B9A03001327C8 /* UIImageView+FaceAwareFill.m in Sources */,
 				34E893831C3B9A03001327C8 /* NSDictionary+URL.m in Sources */,
 				34E893651C3B9A03001327C8 /* NSManagedObjectContext+Extensions.m in Sources */,
@@ -4429,6 +4471,7 @@
 				34E893661C3B9A03001327C8 /* NSManagedObjectContext+Fetching.m in Sources */,
 				34E893771C3B9A03001327C8 /* NSDate+Extension.m in Sources */,
 				34E08A5D1C3BEEF2005C6CA3 /* MyFileLogger.m in Sources */,
+				3400E4C71D35F0690056B673 /* MPLkdbViewController.m in Sources */,
 				34E894971C3B9FC1001327C8 /* QBAssetsCollectionFooterView.m in Sources */,
 				34E893871C3B9A03001327C8 /* NSFileManager+Paths.m in Sources */,
 				34E8945A1C3B9D05001327C8 /* RDVTabBarItem.m in Sources */,

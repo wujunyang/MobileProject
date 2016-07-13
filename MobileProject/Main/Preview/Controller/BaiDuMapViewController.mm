@@ -98,15 +98,15 @@
 #pragma mark - BMKMapViewDelegate
 
 - (void)mapViewDidFinishLoading:(BMKMapView *)mapView {
-    NSLog(@"BMKMapView控件初始化完成");
+    //NSLog(@"BMKMapView控件初始化完成");
 }
 
 - (void)mapView:(BMKMapView *)mapView onClickedMapBlank:(CLLocationCoordinate2D)coordinate {
-    NSLog(@"map view: click blank");
+    //NSLog(@"map view: click blank");
 }
 
 - (void)mapview:(BMKMapView *)mapView onDoubleClick:(CLLocationCoordinate2D)coordinate {
-    NSLog(@"map view: double click");
+    //NSLog(@"map view: double click");
 }
 
 #pragma mark BMKGeoCodeSearchDelegate, BMKRouteSearchDelegate
@@ -133,14 +133,14 @@
     if(flag)
     {
         [self.locationService stopUserLocationService];
-        NSLog(@"car检索发送成功");
+        //NSLog(@"car检索发送成功");
     }
     else
     {
-        NSLog(@"car检索发送失败");
+        //NSLog(@"car检索发送失败");
     }
     //当前位置
-    NSLog(@"didUpdateUserLocation lat %f,long %f",userLocation.location.coordinate.latitude,userLocation.location.coordinate.longitude);
+    //NSLog(@"didUpdateUserLocation lat %f,long %f",userLocation.location.coordinate.latitude,userLocation.location.coordinate.longitude);
 }
 
 
