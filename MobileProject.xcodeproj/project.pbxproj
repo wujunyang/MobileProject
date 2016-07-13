@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3400E4B31D35E1500056B673 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4B01D35E1500056B673 /* JRSwizzle.m */; settings = {ASSET_TAGS = (); }; };
+		3400E4B41D35E1500056B673 /* SYSafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4B21D35E1500056B673 /* SYSafeCategory.m */; settings = {ASSET_TAGS = (); }; };
+		3400E4B51D35E15A0056B673 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4B01D35E1500056B673 /* JRSwizzle.m */; settings = {ASSET_TAGS = (); }; };
+		3400E4B61D35E15D0056B673 /* SYSafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4B21D35E1500056B673 /* SYSafeCategory.m */; settings = {ASSET_TAGS = (); }; };
 		340242DF1D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		340242E01D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		340757071D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
@@ -775,6 +779,10 @@
 
 /* Begin PBXFileReference section */
 		141989AA73B56A56D9B2BD49 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3400E4AF1D35E1500056B673 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		3400E4B01D35E1500056B673 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		3400E4B11D35E1500056B673 /* SYSafeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSafeCategory.h; sourceTree = "<group>"; };
+		3400E4B21D35E1500056B673 /* SYSafeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSafeCategory.m; sourceTree = "<group>"; };
 		340242DD1D16F98700ECD131 /* MPLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLoggerFormatter.h; sourceTree = "<group>"; };
 		340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLoggerFormatter.m; sourceTree = "<group>"; };
 		340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-UmengShareAppDelegate.m"; sourceTree = "<group>"; };
@@ -1555,6 +1563,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3400E4AE1D35E1030056B673 /* SySafeCategory */ = {
+			isa = PBXGroup;
+			children = (
+				3400E4AF1D35E1500056B673 /* JRSwizzle.h */,
+				3400E4B01D35E1500056B673 /* JRSwizzle.m */,
+				3400E4B11D35E1500056B673 /* SYSafeCategory.h */,
+				3400E4B21D35E1500056B673 /* SYSafeCategory.m */,
+			);
+			path = SySafeCategory;
+			sourceTree = "<group>";
+		};
 		340BCD141D0EF1770093CC7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1688,6 +1707,7 @@
 		34E08A561C3BE95A005C6CA3 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				3400E4AE1D35E1030056B673 /* SySafeCategory */,
 				340BCD5C1D0F027F0093CC7D /* UIViewController+Swizzle.h */,
 				340BCD5D1D0F027F0093CC7D /* UIViewController+Swizzle.m */,
 				34E08A571C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.h */,
@@ -3951,6 +3971,7 @@
 				34E08A9D1C3BFB90005C6CA3 /* MJPhoto.m in Sources */,
 				34E08A9E1C3BFB90005C6CA3 /* UIImageView+BetterFace.m in Sources */,
 				34E08A9F1C3BFB90005C6CA3 /* YTKBatchRequestAgent.m in Sources */,
+				3400E4B51D35E15A0056B673 /* JRSwizzle.m in Sources */,
 				34E08AA01C3BFB90005C6CA3 /* NSObject+AppInfo.m in Sources */,
 				34E08AA11C3BFB90005C6CA3 /* UIBezierPath+LxThroughPointsBezier.m in Sources */,
 				34E08AA21C3BFB90005C6CA3 /* UIApplication+ApplicationSize.m in Sources */,
@@ -4209,6 +4230,7 @@
 				34E08B8C1C3BFB90005C6CA3 /* UIButton+Block.m in Sources */,
 				340BCD1C1D0EFF3B0093CC7D /* MPRequstFailedHelper.m in Sources */,
 				34E08B8D1C3BFB90005C6CA3 /* NSRunLoop+PerformBlock.m in Sources */,
+				3400E4B61D35E15D0056B673 /* SYSafeCategory.m in Sources */,
 				34E08B8E1C3BFB90005C6CA3 /* UITableViewCell+TS_delaysContentTouches.m in Sources */,
 				34E08B8F1C3BFB90005C6CA3 /* CATransaction+AnimateWithDuration.m in Sources */,
 				34E08B901C3BFB90005C6CA3 /* NSNumber+RomanNumerals.m in Sources */,
@@ -4245,6 +4267,7 @@
 				34E891271C3B92AA001327C8 /* UIScrollView+MJExtension.m in Sources */,
 				34E893C71C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.m in Sources */,
 				34E894BB1C3BA300001327C8 /* SVIndefiniteAnimatedView.m in Sources */,
+				3400E4B31D35E1500056B673 /* JRSwizzle.m in Sources */,
 				34E893B21C3B9A03001327C8 /* NSTimer+Addition.m in Sources */,
 				341093FD1D0E848F00A8D63F /* JSPatchHelper.m in Sources */,
 				34E894311C3B9A03001327C8 /* UIViewController+BackButtonHandler.m in Sources */,
@@ -4411,6 +4434,7 @@
 				34E8945A1C3B9D05001327C8 /* RDVTabBarItem.m in Sources */,
 				34E893D11C3B9A03001327C8 /* UIButton+CountDown.m in Sources */,
 				34E894D61C3BCD2F001327C8 /* LoginModel.m in Sources */,
+				3400E4B41D35E1500056B673 /* SYSafeCategory.m in Sources */,
 				34E894951C3B9FC1001327C8 /* SDWebImageManager+MJ.m in Sources */,
 				34E8936B1C3B9A03001327C8 /* CLLocationManager+Blocks.m in Sources */,
 				34E893A11C3B9A03001327C8 /* NSString+Contains.m in Sources */,

@@ -28,7 +28,8 @@
     //热更新加载
     [JSPatchHelper HSDevaluateScript];
     
-
+    //统一处理一些为数组、集合等对nil插入会引起闪退
+    [SYSafeCategory callSafeCategory];
     
     //百度地图定位
     [[MPLocationManager shareInstance] startBMKLocationWithReg:^(BMKUserLocation *loction, NSError *error) {
