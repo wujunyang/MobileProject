@@ -270,7 +270,6 @@
 		34E08B0C1C3BFB90005C6CA3 /* MyFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E08A5C1C3BEEF2005C6CA3 /* MyFileLogger.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B0D1C3BFB90005C6CA3 /* QBAssetsCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894731C3B9FC1001327C8 /* QBAssetsCollectionFooterView.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B0E1C3BFB90005C6CA3 /* NSFileManager+Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891AE1C3B9A03001327C8 /* NSFileManager+Paths.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B0F1C3BFB90005C6CA3 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894571C3B9D05001327C8 /* RDVTabBarItem.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B101C3BFB90005C6CA3 /* UIButton+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8925E1C3B9A03001327C8 /* UIButton+CountDown.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B111C3BFB90005C6CA3 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894D51C3BCD2F001327C8 /* LoginModel.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B121C3BFB90005C6CA3 /* SDWebImageManager+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8946E1C3B9FC1001327C8 /* SDWebImageManager+MJ.m */; settings = {ASSET_TAGS = (); }; };
@@ -327,10 +326,8 @@
 		34E08B4A1C3BFB90005C6CA3 /* UIView+draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8931A1C3B9A03001327C8 /* UIView+draggable.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B4B1C3BFB90005C6CA3 /* UIColor+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892691C3B9A03001327C8 /* UIColor+Gradient.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B4C1C3BFB90005C6CA3 /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893061C3B9A03001327C8 /* UITextField+Shake.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B4D1C3BFB90005C6CA3 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894531C3B9D05001327C8 /* RDVTabBar.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B4E1C3BFB90005C6CA3 /* NSInvocation+Bb.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891B71C3B9A03001327C8 /* NSInvocation+Bb.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B4F1C3BFB90005C6CA3 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893101C3B9A03001327C8 /* UIView+Animation.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B501C3BFB90005C6CA3 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894551C3B9D05001327C8 /* RDVTabBarController.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B511C3BFB90005C6CA3 /* NSURLConnection+SelfSigned.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892181C3B9A03001327C8 /* NSURLConnection+SelfSigned.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B521C3BFB90005C6CA3 /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8932C1C3B9A03001327C8 /* UIView+Shake.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B531C3BFB90005C6CA3 /* UIApplication+KeyboardFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892451C3B9A03001327C8 /* UIApplication+KeyboardFrame.m */; settings = {ASSET_TAGS = (); }; };
@@ -677,9 +674,6 @@
 		34E8944C1C3B9A97001327C8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E8944B1C3B9A97001327C8 /* MapKit.framework */; };
 		34E8944E1C3B9AA0001327C8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E8944D1C3B9AA0001327C8 /* CoreData.framework */; };
 		34E894501C3B9B18001327C8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E8944F1C3B9B18001327C8 /* libz.tbd */; };
-		34E894581C3B9D05001327C8 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894531C3B9D05001327C8 /* RDVTabBar.m */; settings = {ASSET_TAGS = (); }; };
-		34E894591C3B9D05001327C8 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894551C3B9D05001327C8 /* RDVTabBarController.m */; settings = {ASSET_TAGS = (); }; };
-		34E8945A1C3B9D05001327C8 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894571C3B9D05001327C8 /* RDVTabBarItem.m */; settings = {ASSET_TAGS = (); }; };
 		34E8945E1C3B9D6A001327C8 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8945D1C3B9D6A001327C8 /* iCarousel.m */; settings = {ASSET_TAGS = (); }; };
 		34E8948E1C3B9FC1001327C8 /* MJPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894611C3B9FC1001327C8 /* MJPhoto.m */; settings = {ASSET_TAGS = (); }; };
 		34E8948F1C3B9FC1001327C8 /* MJPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34E894621C3B9FC1001327C8 /* MJPhotoBrowser.bundle */; settings = {ASSET_TAGS = (); }; };
@@ -1386,12 +1380,6 @@
 		34E8944B1C3B9A97001327C8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		34E8944D1C3B9AA0001327C8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		34E8944F1C3B9B18001327C8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		34E894521C3B9D05001327C8 /* RDVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBar.h; sourceTree = "<group>"; };
-		34E894531C3B9D05001327C8 /* RDVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBar.m; sourceTree = "<group>"; };
-		34E894541C3B9D05001327C8 /* RDVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarController.h; sourceTree = "<group>"; };
-		34E894551C3B9D05001327C8 /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
-		34E894561C3B9D05001327C8 /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
-		34E894571C3B9D05001327C8 /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
 		34E8945C1C3B9D6A001327C8 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		34E8945D1C3B9D6A001327C8 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		34E894601C3B9FC1001327C8 /* MJPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhoto.h; sourceTree = "<group>"; };
@@ -1858,7 +1846,6 @@
 				34E8945F1C3B9FC1001327C8 /* MJPhotoBrowser */,
 				34E8946F1C3B9FC1001327C8 /* QBImagePickerController */,
 				34E8945B1C3B9D6A001327C8 /* iCarousel */,
-				34E894511C3B9D05001327C8 /* RDVTabBarController */,
 				34E891481C3B97C5001327C8 /* AFDownloadRequestOperation */,
 				34E890E21C3B92AA001327C8 /* MJRefresh */,
 			);
@@ -3229,19 +3216,6 @@
 			path = UIWindow;
 			sourceTree = "<group>";
 		};
-		34E894511C3B9D05001327C8 /* RDVTabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				34E894521C3B9D05001327C8 /* RDVTabBar.h */,
-				34E894531C3B9D05001327C8 /* RDVTabBar.m */,
-				34E894541C3B9D05001327C8 /* RDVTabBarController.h */,
-				34E894551C3B9D05001327C8 /* RDVTabBarController.m */,
-				34E894561C3B9D05001327C8 /* RDVTabBarItem.h */,
-				34E894571C3B9D05001327C8 /* RDVTabBarItem.m */,
-			);
-			path = RDVTabBarController;
-			sourceTree = "<group>";
-		};
 		34E8945B1C3B9D6A001327C8 /* iCarousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -4085,7 +4059,6 @@
 				34E08B0C1C3BFB90005C6CA3 /* MyFileLogger.m in Sources */,
 				34E08B0D1C3BFB90005C6CA3 /* QBAssetsCollectionFooterView.m in Sources */,
 				34E08B0E1C3BFB90005C6CA3 /* NSFileManager+Paths.m in Sources */,
-				34E08B0F1C3BFB90005C6CA3 /* RDVTabBarItem.m in Sources */,
 				3400E4C81D35F0690056B673 /* MPLkdbViewController.m in Sources */,
 				34E08B101C3BFB90005C6CA3 /* UIButton+CountDown.m in Sources */,
 				34E08B111C3BFB90005C6CA3 /* LoginModel.m in Sources */,
@@ -4153,11 +4126,9 @@
 				34E08B4A1C3BFB90005C6CA3 /* UIView+draggable.m in Sources */,
 				34E08B4B1C3BFB90005C6CA3 /* UIColor+Gradient.m in Sources */,
 				34E08B4C1C3BFB90005C6CA3 /* UITextField+Shake.m in Sources */,
-				34E08B4D1C3BFB90005C6CA3 /* RDVTabBar.m in Sources */,
 				34E08B4E1C3BFB90005C6CA3 /* NSInvocation+Bb.m in Sources */,
 				34E08B4F1C3BFB90005C6CA3 /* UIView+Animation.m in Sources */,
 				34E9D8481C59C33B00E98C2A /* BaiDuMapViewController.mm in Sources */,
-				34E08B501C3BFB90005C6CA3 /* RDVTabBarController.m in Sources */,
 				34E08B511C3BFB90005C6CA3 /* NSURLConnection+SelfSigned.m in Sources */,
 				34E08B521C3BFB90005C6CA3 /* UIView+Shake.m in Sources */,
 				34E08B531C3BFB90005C6CA3 /* UIApplication+KeyboardFrame.m in Sources */,
@@ -4432,7 +4403,6 @@
 				3400E4C71D35F0690056B673 /* MPLkdbViewController.m in Sources */,
 				34E894971C3B9FC1001327C8 /* QBAssetsCollectionFooterView.m in Sources */,
 				34E893871C3B9A03001327C8 /* NSFileManager+Paths.m in Sources */,
-				34E8945A1C3B9D05001327C8 /* RDVTabBarItem.m in Sources */,
 				34E893D11C3B9A03001327C8 /* UIButton+CountDown.m in Sources */,
 				34E894D61C3BCD2F001327C8 /* LoginModel.m in Sources */,
 				3400E4B41D35E1500056B673 /* SYSafeCategory.m in Sources */,
@@ -4495,11 +4465,9 @@
 				34E894241C3B9A03001327C8 /* UIView+draggable.m in Sources */,
 				34E893D61C3B9A03001327C8 /* UIColor+Gradient.m in Sources */,
 				34E8941B1C3B9A03001327C8 /* UITextField+Shake.m in Sources */,
-				34E894581C3B9D05001327C8 /* RDVTabBar.m in Sources */,
 				34E8938A1C3B9A03001327C8 /* NSInvocation+Bb.m in Sources */,
 				34E8941F1C3B9A03001327C8 /* UIView+Animation.m in Sources */,
 				34E9D8471C59C33B00E98C2A /* BaiDuMapViewController.mm in Sources */,
-				34E894591C3B9D05001327C8 /* RDVTabBarController.m in Sources */,
 				34E893B61C3B9A03001327C8 /* NSURLConnection+SelfSigned.m in Sources */,
 				34E8942D1C3B9A03001327C8 /* UIView+Shake.m in Sources */,
 				34E893C61C3B9A03001327C8 /* UIApplication+KeyboardFrame.m in Sources */,
