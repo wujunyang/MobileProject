@@ -27,4 +27,9 @@
 //对图片进行处理 画圆并增加外圈
 +(UIImage*) circleImage:(UIImage*) image withParam:(CGFloat) inset;
 
+//指定宽度按比例缩放
++(UIImage *) imageCompressForWidth:(UIImage *)sourceImage targetWidth:(CGFloat)defineWidth;
+
+//按比例缩放,size 是你要把图显示到 多大区域 CGSizeMake(300, 140)
++(UIImage *)compressImage:(UIImage *)sourceImage toTargetWidth:(CGFloat)targetWidth;
 @end
