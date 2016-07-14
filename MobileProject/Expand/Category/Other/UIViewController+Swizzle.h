@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
-#import "RDVTabBarController.h"
 
 @interface UIViewController (Swizzle)
 

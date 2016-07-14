@@ -59,7 +59,6 @@
 {
     
     if ([[self.navigationController childViewControllers] count] > 1) {
-        [self.rdv_tabBarController setTabBarHidden:YES animated:YES];
     }
     
     //umeng跟踪page 以本项目的VC页面才进入友盟统计

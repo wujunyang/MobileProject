@@ -9,6 +9,10 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+//引入Masonry两个宏 便于写布局代码
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+
 #import <DDLog.h>
 #import <CocoaLumberjack.h>
 #import <AFNetworking/AFNetworking.h>
