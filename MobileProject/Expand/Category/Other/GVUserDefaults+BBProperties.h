@@ -18,4 +18,7 @@
 @property (nonatomic,weak) NSString *role;
 
 @property(nonatomic,weak)NSDate *MBJsPatchTime;
+
+#pragma mark --是否是第一次启动APP程序
+@property (nonatomic,assign) BOOL isNoFirstLaunch;
 @end

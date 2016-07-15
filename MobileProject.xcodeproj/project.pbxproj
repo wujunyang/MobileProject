@@ -94,6 +94,10 @@
 		342582601D3734C4003906BB /* blankpage_image_Sleep@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3425825B1D3734C4003906BB /* blankpage_image_Sleep@2x.png */; settings = {ASSET_TAGS = (); }; };
 		342582611D3734C4003906BB /* blankpage_image_Sleep@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3425825C1D3734C4003906BB /* blankpage_image_Sleep@3x.png */; settings = {ASSET_TAGS = (); }; };
 		342582641D3736DA003906BB /* UIView+EaseBlankPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 342582631D3736DA003906BB /* UIView+EaseBlankPage.m */; settings = {ASSET_TAGS = (); }; };
+		3425826A1D379743003906BB /* introductoryPagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342582691D379743003906BB /* introductoryPagesView.m */; settings = {ASSET_TAGS = (); }; };
+		3425826B1D379743003906BB /* introductoryPagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342582691D379743003906BB /* introductoryPagesView.m */; settings = {ASSET_TAGS = (); }; };
+		3425826E1D379D2C003906BB /* introductoryPagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3425826D1D379D2C003906BB /* introductoryPagesHelper.m */; settings = {ASSET_TAGS = (); }; };
+		3425826F1D379D2C003906BB /* introductoryPagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3425826D1D379D2C003906BB /* introductoryPagesHelper.m */; settings = {ASSET_TAGS = (); }; };
 		34420CB91D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */; settings = {ASSET_TAGS = (); }; };
 		34420CBA1D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */; settings = {ASSET_TAGS = (); }; };
 		34420CBD1D0FAD10007D1AAC /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CBC1D0FAD10007D1AAC /* AdvertiseView.m */; settings = {ASSET_TAGS = (); }; };
@@ -841,6 +845,10 @@
 		3425825C1D3734C4003906BB /* blankpage_image_Sleep@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blankpage_image_Sleep@3x.png"; sourceTree = "<group>"; };
 		342582621D3736DA003906BB /* UIView+EaseBlankPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EaseBlankPage.h"; sourceTree = "<group>"; };
 		342582631D3736DA003906BB /* UIView+EaseBlankPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EaseBlankPage.m"; sourceTree = "<group>"; };
+		342582681D379743003906BB /* introductoryPagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = introductoryPagesView.h; sourceTree = "<group>"; };
+		342582691D379743003906BB /* introductoryPagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = introductoryPagesView.m; sourceTree = "<group>"; };
+		3425826C1D379D2C003906BB /* introductoryPagesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = introductoryPagesHelper.h; sourceTree = "<group>"; };
+		3425826D1D379D2C003906BB /* introductoryPagesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = introductoryPagesHelper.m; sourceTree = "<group>"; };
 		34420CB71D0FAC9E007D1AAC /* AdvertiseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseHelper.h; sourceTree = "<group>"; };
 		34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseHelper.m; sourceTree = "<group>"; };
 		34420CBB1D0FAD10007D1AAC /* AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseView.h; sourceTree = "<group>"; };
@@ -1700,6 +1708,18 @@
 			path = EaseBlankPage;
 			sourceTree = "<group>";
 		};
+		342582671D3796D6003906BB /* IntroductoryPages(引导页) */ = {
+			isa = PBXGroup;
+			children = (
+				342582681D379743003906BB /* introductoryPagesView.h */,
+				342582691D379743003906BB /* introductoryPagesView.m */,
+				3425826C1D379D2C003906BB /* introductoryPagesHelper.h */,
+				3425826D1D379D2C003906BB /* introductoryPagesHelper.m */,
+			);
+			name = "IntroductoryPages(引导页)";
+			path = IntroductoryPages;
+			sourceTree = "<group>";
+		};
 		34420CB61D0FABD1007D1AAC /* AdvertiseHelper(启动广告) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1954,6 +1974,7 @@
 		34E890BF1C3B8B36001327C8 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				342582671D3796D6003906BB /* IntroductoryPages(引导页) */,
 				342582531D373455003906BB /* EaseBlankPage(空白页提示) */,
 				3400E4BC1D35EC6A0056B673 /* LKDBHelper(数据库管理) */,
 				34420CB61D0FABD1007D1AAC /* AdvertiseHelper(启动广告) */,
@@ -4022,6 +4043,7 @@
 				34E08AC31C3BFB90005C6CA3 /* QBAssetsCollectionOverlayView.m in Sources */,
 				34E08AC41C3BFB90005C6CA3 /* UINavigationController+StackManager.m in Sources */,
 				34E08AC51C3BFB90005C6CA3 /* NSData+APNSToken.m in Sources */,
+				3425826F1D379D2C003906BB /* introductoryPagesHelper.m in Sources */,
 				34E08AC61C3BFB90005C6CA3 /* UINavigationController+JZExtension.m in Sources */,
 				34E08AC71C3BFB90005C6CA3 /* UIDevice+Hardware.m in Sources */,
 				34E08AC81C3BFB90005C6CA3 /* NSObject+GCD.m in Sources */,
@@ -4164,6 +4186,7 @@
 				34E08B4E1C3BFB90005C6CA3 /* NSInvocation+Bb.m in Sources */,
 				34E08B4F1C3BFB90005C6CA3 /* UIView+Animation.m in Sources */,
 				34E9D8481C59C33B00E98C2A /* BaiDuMapViewController.mm in Sources */,
+				3425826B1D379743003906BB /* introductoryPagesView.m in Sources */,
 				34E08B511C3BFB90005C6CA3 /* NSURLConnection+SelfSigned.m in Sources */,
 				34E08B521C3BFB90005C6CA3 /* UIView+Shake.m in Sources */,
 				34E08B531C3BFB90005C6CA3 /* UIApplication+KeyboardFrame.m in Sources */,
@@ -4296,6 +4319,7 @@
 				3452EB8B1D1A8BF00001732E /* AppDelegate.m in Sources */,
 				34E894301C3B9A03001327C8 /* UIView+Visuals.m in Sources */,
 				34E893B91C3B9A03001327C8 /* NSUserDefaults+iCloudSync.m in Sources */,
+				3425826A1D379743003906BB /* introductoryPagesView.m in Sources */,
 				340BCD171D0EFED10093CC7D /* MPWebViewController.m in Sources */,
 				34E894131C3B9A03001327C8 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				34E893911C3B9A03001327C8 /* NSNumber+Round.m in Sources */,
@@ -4548,6 +4572,7 @@
 				34E893AC1C3B9A03001327C8 /* NSString+Score.m in Sources */,
 				34E9D84B1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */,
 				34E893C21C3B9A03001327C8 /* CAShapeLayer+UIBezierPath.m in Sources */,
+				3425826E1D379D2C003906BB /* introductoryPagesHelper.m in Sources */,
 				34F49B2E1D261AE600FA003C /* MPBaseNavigationController.m in Sources */,
 				34E891231C3B92AA001327C8 /* MJRefreshNormalHeader.m in Sources */,
 				34EC96241C58A61F00985444 /* UMengSocialLoginViewController.m in Sources */,
@@ -4648,6 +4673,7 @@
 			baseConfigurationReference = 141989AA73B56A56D9B2BD49 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -4671,6 +4697,7 @@
 			baseConfigurationReference = A8A48D3EEAEFFB901D36D8E8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -4775,6 +4802,7 @@
 			baseConfigurationReference = 141989AA73B56A56D9B2BD49 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology CO.,LTD (469F2JN9F8)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology CO.,LTD (469F2JN9F8)";
 				ENABLE_BITCODE = NO;
@@ -4798,6 +4826,7 @@
 			baseConfigurationReference = A8A48D3EEAEFFB901D36D8E8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology CO.,LTD (469F2JN9F8)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shanghai Qijia Network Information Science & Technology CO.,LTD (469F2JN9F8)";
 				ENABLE_BITCODE = NO;

@@ -20,6 +20,7 @@
 #import <JSONModel/JSONModel.h>
 #import "SVProgressHUD.h"
 #import "UIImageView+WebCache.h"
+#import "KeyboardManager.h"
 #import "Macros.h"
 #import "MBTargetConfigContants.h"
 #import "MPTargetConfigMacros.h"

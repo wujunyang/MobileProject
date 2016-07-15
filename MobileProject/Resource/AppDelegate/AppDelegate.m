@@ -17,8 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-
-    
     //启动友盟统计
     [MPUmengHelper UMAnalyticStart];
     
@@ -30,6 +28,9 @@
     
     //统一处理一些为数组、集合等对nil插入会引起闪退
     [SYSafeCategory callSafeCategory];
+    
+    //键盘统一收回处理
+    [self configureBoardManager];
     
     //百度地图定位
     [[MPLocationManager shareInstance] startBMKLocationWithReg:^(BMKUserLocation *loction, NSError *error) {
@@ -77,6 +78,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self setupLoginViewController];
     
+    //引导页面加载
+    [self setupIntroductoryPage];
     
     //启动广告（记得放最后，才可以盖在页面上面）
     [self setupAdveriseView];
@@ -115,6 +118,28 @@
     [AdvertiseHelper showAdvertiserView:imageArray];
 }
 
+
+#pragma mark 引导页
+-(void)setupIntroductoryPage
+{
+    if (BBUserDefault.isNoFirstLaunch)
+    {
+        return;
+    }
+    BBUserDefault.isNoFirstLaunch=YES;
+    NSArray *images=@[@"introductoryPage1",@"introductoryPage2",@"introductoryPage3",@"introductoryPage4"];
+    [introductoryPagesHelper showIntroductoryPageView:images];
+}
+
+#pragma mark 键盘收回管理
+-(void)configureBoardManager
+{
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.shouldResignOnTouchOutside = YES;
+    manager.shouldToolbarUsesTextFieldTintColor = YES;
+    manager.enableAutoToolbar = NO;
+}
 
 #pragma mark 自定义跳转不同的页面
 //登录页面

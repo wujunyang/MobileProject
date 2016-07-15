@@ -21,6 +21,7 @@
 #import "AdvertiseHelper.h"
 #import "MPHomeViewController.h"
 #import "SYSafeCategory.h"
+#import "introductoryPagesHelper.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,UIAlertViewDelegate,GeTuiSdkDelegate>
 
