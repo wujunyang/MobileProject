@@ -41,37 +41,37 @@ Plist用于存放plist文件，主要是本项目中会创建多个的Tag,而每
 
 ## 功能模块的集成
 
-集成百度地图(3.0.0版)，目前有百度定位功能（ThirdMacros.h修改相应的key值）
+1 集成百度地图(3.0.0版)，目前有百度定位功能（ThirdMacros.h修改相应的key值）
 
-集成友盟统计（ThirdMacros.h修改相应的key值）
+2 集成友盟统计（ThirdMacros.h修改相应的key值）
 
-集成CocoaLumberjack日志记录
+3 集成CocoaLumberjack日志记录
 
-引入第三方inputAccessoryView 解决为一些无输入源的控件添加输入响应。比如按钮、cell、view等
+4 引入第三方inputAccessoryView 解决为一些无输入源的控件添加输入响应。比如按钮、cell、view等
 
-整理封装WJScrollerMenuView 用于解决滚动菜单的使用
+5 集成个推消息推送功能（ThirdMacros.h修改相应的key值），证书也要用你们自个的消息证书；
 
-集成个推消息推送功能（ThirdMacros.h修改相应的key值），证书也要用你们自个的消息证书；
+6 集成友盟分享SDK，并在登录页实现的（QQ,微信，新浪）三种的第三方登录功能（ThirdMacros.h修改相应的key值）
 
-集成友盟分享SDK，并在登录页实现的（QQ,微信，新浪）三种的第三方登录功能（ThirdMacros.h修改相应的key值）
+7 集成友盟第三方分享（QQ空间分享,微信朋友圈,新浪微博分享,QQ微博分享,微信好友）
 
-集成友盟第三方分享（QQ空间分享,微信朋友圈,新浪微博分享,QQ微博分享,微信好友）
+8 增加关于CocoaLumberjack日志记录的展示及查看页面
 
-增加关于CocoaLumberjack日志记录的展示及查看页面
+9 增加百度地图显示页面功能实例，实现在地图上显示几个坐标点，并自定义坐标点的图标跟弹出提示窗内容，实现当前定位并画出行车路线图；
 
-增加百度地图显示页面功能实例，实现在地图上显示几个坐标点，并自定义坐标点的图标跟弹出提示窗内容，实现当前定位并画出行车路线图；
+10 增加FLEX，在本地测试版本开启，FLEX是Flipboard官方发布的一组专门用于iOS开发的应用内调试工具，能在模拟器和物理设备上良好运作，而开发者也无需将其连接到LLDB/Xcode或其他远程调试服务器，即可直接查看或修改正在运行的App的每一处状态。
 
-增加FLEX，在本地测试版本开启，FLEX是Flipboard官方发布的一组专门用于iOS开发的应用内调试工具，能在模拟器和物理设备上良好运作，而开发者也无需将其连接到LLDB/Xcode或其他远程调试服务器，即可直接查看或修改正在运行的App的每一处状态。
+11 增加FCUIID帮助类，用于获取设备标识
 
-增加FCUIID帮助类，用于获取设备标识
+12 增加热更新JSPatch插件，并增加相应的帮助类及测试功能（JSPatchViewController）
 
-增加热更新JSPatch插件，并增加相应的帮助类及测试功能（JSPatchViewController）
+13 集成启动广告功能模块，如果不要功能可以在AppDelegate里面进行注掉
 
-集成启动广告功能模块，如果不要功能可以在AppDelegate里面进行注掉
+14 集成CYLTabBarController插件，为项目增加底部4个TabBar菜单
 
-集成CYLTabBarController插件，为项目增加底部4个TabBar菜单
+15 引入LKDBHelper并增加创建数据库帮助类，实现实体直接映射到数据库表
 
-引入LKDBHelper并增加创建数据库帮助类，实现实体直接映射到数据库表
+16 集成第一次启动的引导页功能模块
 
 
 ## 效果图
