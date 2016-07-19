@@ -46,6 +46,101 @@ Image用于存放图片资源，可以根据功能模块进行再分不同的xca
 Plist用于存放plist文件，主要是本项目中会创建多个的Tag,而每个Tag都会有自个的plist文件进行管理，所以统一存放方便管理；
 
 
+####  部分代码介绍
+
+1：定义宏进行区分不同的环境，可以根据要求再增加不同环境
+
+```obj-c
+#if PRODUCT  
+//产品环境
+
+#else   
+//测试环境
+
+#endif
+```
+
+2：对应不同的环境API前缀
+
+```obj-c
+        //测试环境
+        self.develpoerDictionary=@{ACCOUNT_SERVERCENTER_Key:@"http://private-eda65-mock.com/",PICTURE_SERVERCENTER_key:@"图片前缀",BUSINESSLOGIC_SERVERCENTER_key:@"业务逻辑前缀",UPDATEVERSION_SERVERCENTER_key:@"版本升级前缀"};
+        //产品环境
+        self.productDictionary=@{ACCOUNT_SERVERCENTER_Key:@"http://private-eda66-mock.com/",PICTURE_SERVERCENTER_key:@"图片前缀",BUSINESSLOGIC_SERVERCENTER_key:@"业务逻辑前缀",UPDATEVERSION_SERVERCENTER_key:@"版本升级前缀"};
+```
+
+3：网络请求
+
+```obj-c
+@interface LogInApi()
+{
+    NSString *_username;
+    NSString *_password;
+}
+@end
+
+@implementation LogInApi
+
+- (id)initWithUsername:(NSString *)username password:(NSString *)password {
+    self = [super init];
+    if (self) {
+        _username = username;
+        _password = password;
+    }
+    return self;
+}
+
+- (NSString *)requestUrl {
+    return @"user/login";
+}
+
+- (YTKRequestMethod)requestMethod {
+    return YTKRequestMethodPost;
+}
+
+-(SERVERCENTER_TYPE)centerType
+{
+    return ACCOUNT_SERVERCENTER;
+}
+
+- (id)requestArgument {
+    return @{
+             @"user_name": _username,
+             @"user_password": _password
+             };
+}
+
+@end
+```
+`可以指定不同的方式，以及请求对应的前缀类型如ACCOUNT_SERVERCENTER`
+
+
+4: 目前Pod管理的第三方插件
+
+```obj-c
+platform :ios, '7.0'
+pod 'AFNetworking', '~>2.6.0'
+pod 'SDWebImage', '~>3.7'
+pod 'JSONModel', '~> 1.0.1'
+pod 'Masonry','~>0.6.1'
+pod 'FMDB/common' , '~>2.5'
+pod 'FMDB/SQLCipher', '~>2.5'
+pod 'CocoaLumberjack', '~> 2.0.0-rc'
+pod 'BaiduMapKit' #百度地图SDK
+pod 'UMengAnalytics-NO-IDFA'#友盟统计无IDFA版SDK
+pod 'GTSDK'  #个推SDK
+pod 'UMengSocial', '~> 4.3'  #友盟社会化分享及第三方登录
+pod 'FLEX', '~> 2.0', :configurations => ['Debug']
+pod 'ActionSheetPicker-3.0'
+pod 'JSPatch'
+pod 'XAspect'
+pod 'CYLTabBarController'
+pod 'LKDBHelper'
+pod 'RegexKitLite', '4.0'
+pod 'IQKeyboardManager'
+```
+
+
 #### Vender(第三方)模块的内容
 
 虽然项目中已经用Pod来管理第三方插件，但对于一些可能要进行修改的第三方可以存放在这边，本实例中引用的几个比较常用的第三方插件，简单介绍其中的几个，GVUserDefaults是对UserDefaults的封装，简单就可以用于存取操作；JDStatusBarNotification是在状态栏提示效果的插件；ActionSheetPicker底部弹出如时间选择、选项的插件；QBImagePickerController是照片选择插件，支持多选并可以设置最多选择张数；
