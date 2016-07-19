@@ -85,8 +85,8 @@ MobileProject 使用 MIT 许可证，详情可见 [LICENSE](LICENSE) 文件。
 
 ## 效果图
 
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/1.png" width=“30%" height=“30%”></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/2.png" width=“30%" height=“30%”></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/1.png" width=“50%" height=“50%”></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/2.png" width=100px height=100px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/3.png" width=“30%" height=“30%”></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/4.png" width=“30%" height=“30%”></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/5.png" width=“30%" height=“30%”></img>
