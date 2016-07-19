@@ -74,16 +74,6 @@ Plist用于存放plist文件，主要是本项目中会创建多个的Tag,而每
 16 集成第一次启动的引导页功能模块
 
 
-## 效果图
-
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/1.png" width="50%" height="50%”></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/2.png" width="50%" height="50%”></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/3.png" width="50%" height="50%”></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/4.png" width="50%" height="50%”></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/5.png" width="50%" height="50%”></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/6.png" width="50%" height="50%”></img>
-
-
 ## 联系方式
 
 如果你在使用过程中有什么不明白或者问题可以wujunyang@126.com联系，当然如果你有时间也可以一起维护
@@ -91,6 +81,16 @@ Plist用于存放plist文件，主要是本项目中会创建多个的Tag,而每
 ##许可
 
 MobileProject 使用 MIT 许可证，详情可见 [LICENSE](LICENSE) 文件。
+
+
+## 效果图
+
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/1.png" width=“30%" height=“30%”>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/2.png" width=“30%" height=“30%”>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/3.png" width=“30%" height=“30%”>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/4.png" width=“30%" height=“30%”>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/5.png" width=“30%" height=“30%”>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/6.png" width=“30%" height=“30%”>
 
 
 
