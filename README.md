@@ -76,12 +76,9 @@ Plist用于存放plist文件，主要是本项目中会创建多个的Tag,而每
 
 ## 效果图
 
-![image](https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/1.png)
-![image](https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/2.png)
-![image](https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/3.png)
-![image](https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/4.png)
-![image](https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/5.png)
-![image](https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/6.png)
+![image](https://github.com/wujunyang/MobileProject/blob/master/MobileProject/%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95.png)
+![image](https://github.com/wujunyang/MobileProject/blob/master/MobileProject/%E5%B7%A5%E5%85%B7.png)
+![image](https://github.com/wujunyang/MobileProject/blob/master/MobileProject/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C.png)
 
 
 ## 联系方式
@@ -90,4 +87,7 @@ Plist用于存放plist文件，主要是本项目中会创建多个的Tag,而每
 
 ##许可
 
-JHUD 使用 MIT 许可证，详情可见 [LICENSE](LICENSE) 文件。
+MobileProject 使用 MIT 许可证，详情可见 [LICENSE](LICENSE) 文件。
+
+
+
