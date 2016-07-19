@@ -76,4 +76,5 @@
 效果图：
 
 ![image](https://github.com/wujunyang/MobileProject/blob/master/MobileProject/%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95.png)
+![image](https://github.com/wujunyang/MobileProject/blob/master/MobileProject/%E5%B7%A5%E5%85%B7.png)
 ![image](https://github.com/wujunyang/MobileProject/blob/master/MobileProject/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C.png)
