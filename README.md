@@ -76,12 +76,12 @@ Plist用于存放plist文件，主要是本项目中会创建多个的Tag,而每
 
 ## 效果图
 
-![image](https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/1.png)
-![image](https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/2.png)
-![image](https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/3.png)
-![image](https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/4.png)
-![image](https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/5.png)
-![image](https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/6.png)
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/1.png" width="50%" height="50%”></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/2.png" width="50%" height="50%”></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/3.png" width="50%" height="50%”></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/4.png" width="50%" height="50%”></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/5.png" width="50%" height="50%”></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/6.png" width="50%" height="50%”></img>
 
 
 ## 联系方式
