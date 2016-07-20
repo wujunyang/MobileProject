@@ -44,7 +44,7 @@
     UINavigationController *firstNavigationController = [[MPBaseNavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     
-    BaiDuMapViewController *secondViewController = [[BaiDuMapViewController alloc] init];
+    MPDiscoveryViewController *secondViewController = [[MPDiscoveryViewController alloc] init];
     UINavigationController *secondNavigationController = [[MPBaseNavigationController alloc]
                                                     initWithRootViewController:secondViewController];
     
@@ -101,9 +101,9 @@
 
 - (BOOL)tabBarController:(UITabBarController*)tabBarController shouldSelectViewController:(UINavigationController*)viewController {
     /// 特殊处理 - 是否需要登录
-    BOOL isBaiDuService = [viewController.topViewController isKindOfClass:[BaiDuMapViewController class]];
+    BOOL isBaiDuService = [viewController.topViewController isKindOfClass:[MPDiscoveryViewController class]];
     if (isBaiDuService) {
-        NSLog(@"我是百度地图，你点击了TabBar");
+        NSLog(@"你点击了TabBar第二个");
     }
     return YES;
 }

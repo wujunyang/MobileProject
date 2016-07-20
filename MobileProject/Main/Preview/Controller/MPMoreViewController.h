@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JSPatchViewController.h"
 #import "MPLkdbViewController.h"
+#import "BaiDuMapViewController.h"
 
 @interface MPMoreViewController : UIViewController
 

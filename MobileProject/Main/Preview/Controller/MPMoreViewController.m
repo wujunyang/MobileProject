@@ -27,7 +27,7 @@
     self.navigationItem.title=@"功能导航";
     
     if (!self.dataArray) {
-        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用"];
+        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图"];
     }
     
     if (!_myTableView) {
@@ -84,6 +84,12 @@
             case 1:
         {
             MPLkdbViewController *vc=[[MPLkdbViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            case 2:
+        {
+            BaiDuMapViewController *vc=[[BaiDuMapViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

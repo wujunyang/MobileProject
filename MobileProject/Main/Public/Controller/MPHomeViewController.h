@@ -13,7 +13,7 @@
 //底部四个ViewController
 #import "UMengSocialLoginViewController.h"
 #import "UMengSocialViewController.h"
-#import "BaiDuMapViewController.h"
+#import "MPDiscoveryViewController.h"
 #import "MPMoreViewController.h"
 
 
