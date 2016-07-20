@@ -10,6 +10,7 @@
 #import "JSPatchViewController.h"
 #import "MPLkdbViewController.h"
 #import "BaiDuMapViewController.h"
+#import "MPQRCodeViewController.h"
 
 @interface MPMoreViewController : UIViewController
 

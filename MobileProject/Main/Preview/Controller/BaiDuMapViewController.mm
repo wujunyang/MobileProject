@@ -9,10 +9,10 @@
 #import "BaiDuMapViewController.h"
 
 @interface BaiDuMapViewController ()
-@property(nonatomic,strong)BMKMapView* myMapView;
-@property(nonatomic,strong)BMKLocationService* locationService;
-@property(nonatomic,strong)BMKRouteSearch* routesearch;
-@property(nonatomic)CLLocationCoordinate2D curCoordinate;
+@property (nonatomic,strong) BMKMapView             * myMapView;
+@property (nonatomic,strong) BMKLocationService     * locationService;
+@property (nonatomic,strong) BMKRouteSearch         * routesearch;
+@property (nonatomic) CLLocationCoordinate2D curCoordinate;
 @end
 
 @implementation BaiDuMapViewController

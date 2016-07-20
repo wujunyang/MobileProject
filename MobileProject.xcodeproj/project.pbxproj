@@ -112,6 +112,8 @@
 		342A8FA71D3F1D8B000C7B98 /* UINavigationController+KeyboardFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 342A8F9D1D3F1D8B000C7B98 /* UINavigationController+KeyboardFix.m */; settings = {ASSET_TAGS = (); }; };
 		342A8FA81D3F1D8B000C7B98 /* UINavigationController+StackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 342A8F9F1D3F1D8B000C7B98 /* UINavigationController+StackManager.m */; settings = {ASSET_TAGS = (); }; };
 		342A8FA91D3F1D8B000C7B98 /* UINavigationController+StackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 342A8F9F1D3F1D8B000C7B98 /* UINavigationController+StackManager.m */; settings = {ASSET_TAGS = (); }; };
+		342A8FAC1D3F1ED1000C7B98 /* MPQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342A8FAB1D3F1ED1000C7B98 /* MPQRCodeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		342A8FAD1D3F1ED1000C7B98 /* MPQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342A8FAB1D3F1ED1000C7B98 /* MPQRCodeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34420CB91D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */; settings = {ASSET_TAGS = (); }; };
 		34420CBA1D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */; settings = {ASSET_TAGS = (); }; };
 		34420CBD1D0FAD10007D1AAC /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CBC1D0FAD10007D1AAC /* AdvertiseView.m */; settings = {ASSET_TAGS = (); }; };
@@ -863,6 +865,8 @@
 		342A8F9D1D3F1D8B000C7B98 /* UINavigationController+KeyboardFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+KeyboardFix.m"; sourceTree = "<group>"; };
 		342A8F9E1D3F1D8B000C7B98 /* UINavigationController+StackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+StackManager.h"; sourceTree = "<group>"; };
 		342A8F9F1D3F1D8B000C7B98 /* UINavigationController+StackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+StackManager.m"; sourceTree = "<group>"; };
+		342A8FAA1D3F1ED1000C7B98 /* MPQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPQRCodeViewController.h; sourceTree = "<group>"; };
+		342A8FAB1D3F1ED1000C7B98 /* MPQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPQRCodeViewController.m; sourceTree = "<group>"; };
 		34420CB71D0FAC9E007D1AAC /* AdvertiseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseHelper.h; sourceTree = "<group>"; };
 		34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseHelper.m; sourceTree = "<group>"; };
 		34420CBB1D0FAD10007D1AAC /* AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseView.h; sourceTree = "<group>"; };
@@ -3501,6 +3505,8 @@
 				342A8F8F1D3F15CB000C7B98 /* MPMoreViewController.m */,
 				342A8F921D3F1BF1000C7B98 /* MPDiscoveryViewController.h */,
 				342A8F931D3F1BF1000C7B98 /* MPDiscoveryViewController.m */,
+				342A8FAA1D3F1ED1000C7B98 /* MPQRCodeViewController.h */,
+				342A8FAB1D3F1ED1000C7B98 /* MPQRCodeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3998,6 +4004,7 @@
 				3400E4C01D35EDF50056B673 /* NSObject+PrintSQL.m in Sources */,
 				34E08A9A1C3BFB90005C6CA3 /* UIScrollView+EmptyDataSet.m in Sources */,
 				34E08A9B1C3BFB90005C6CA3 /* UIButton+MiddleAligning.m in Sources */,
+				342A8FAD1D3F1ED1000C7B98 /* MPQRCodeViewController.m in Sources */,
 				34E08A9C1C3BFB90005C6CA3 /* UIViewController+BackButtonTouched.m in Sources */,
 				34E08A9D1C3BFB90005C6CA3 /* MJPhoto.m in Sources */,
 				34E08A9E1C3BFB90005C6CA3 /* UIImageView+BetterFace.m in Sources */,
@@ -4496,6 +4503,7 @@
 				34E893BE1C3B9A03001327C8 /* CAAnimation+Blocks.m in Sources */,
 				34E8942A1C3B9A03001327C8 /* UIView+Recursion.m in Sources */,
 				340BCD1B1D0EFF3B0093CC7D /* MPRequstFailedHelper.m in Sources */,
+				342A8FAC1D3F1ED1000C7B98 /* MPQRCodeViewController.m in Sources */,
 				34E894C31C3BAEB9001327C8 /* NetWorkBaseUrlConfig.m in Sources */,
 				34E893B81C3B9A03001327C8 /* NSURLRequest+ParamsFromDictionary.m in Sources */,
 				34E893781C3B9A03001327C8 /* NSDate+Formatter.m in Sources */,
@@ -4676,8 +4684,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: xu shaoxiong (Q7ZH47H99W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xu shaoxiong (Q7ZH47H99W)";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MobileProject/Resource/Global/PrefixHeader.pch";
@@ -4688,9 +4696,9 @@
 				INFOPLIST_FILE = "$(SRCROOT)/MobileProject/Resource/Plist/MobileProject_Local-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.MobileProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sm.WirelessSanMing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "dbce7694-4d21-492c-bb1b-be2874b98b58";
 			};
 			name = Debug;
 		};
@@ -4700,8 +4708,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: xu shaoxiong (Q7ZH47H99W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xu shaoxiong (Q7ZH47H99W)";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MobileProject/Resource/Global/PrefixHeader.pch";
@@ -4713,9 +4721,9 @@
 				INFOPLIST_FILE = "$(SRCROOT)/MobileProject/Resource/Plist/MobileProject_Local-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.MobileProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sm.WirelessSanMing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "dbce7694-4d21-492c-bb1b-be2874b98b58";
 			};
 			name = Release;
 		};

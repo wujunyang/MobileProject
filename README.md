@@ -11,7 +11,8 @@ MobileProject项目是一个以MVC模式搭建的开源功能集合，基于Obje
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/4.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/5.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/6.png" width=250px height=350px></img>
-
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/7.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/8.png" width=250px height=350px></img>
 
 
 ## MobileProject模块简介
@@ -179,6 +180,7 @@ pod 'IQKeyboardManager'
 
 16 集成第一次启动的引导页功能模块
 
+17 集成LBXScan插件，实现二维码相关功能模块
 
 ## 联系方式
 

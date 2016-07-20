@@ -96,6 +96,7 @@ typedef enum {
  */
 + (void)setAllowedRotateUiOrientations:(NSArray *)orientations;
 
+
 #pragma mark -
 
 /**
@@ -135,7 +136,7 @@ typedef enum {
  *
  *  @param isValue 消息推送开发，YES.关闭消息推送 NO.开启消息推送
  *
- *  SDK-1.2.1
+ *  SDK-1.2.1+
  *
  */
 + (void)setPushModeForOff:(BOOL)isValue;
@@ -144,7 +145,7 @@ typedef enum {
  *  同步角标值到个推服务器
  *  该方法只是同步角标值到个推服务器，本地仍须调用setApplicationIconBadgeNumber函数
  *
- *  SDK-1.4.0
+ *  SDK-1.4.0+
  *
  *  @param value 角标数值
  */
@@ -153,7 +154,7 @@ typedef enum {
 /**
  *  复位角标，等同于"setBadge:0"
  *
- *  SDK-1.4.0
+ *  SDK-1.4.0+
  *
  */
 + (void)resetBadge;
@@ -180,7 +181,7 @@ typedef enum {
  *  @return BOOL，YES表示尝试提交成功，NO表示尝试提交失败。注：该结果不代表服务器收到该条数据
  *  该方法需要在回调方法“GeTuiSdkDidReceivePayload:andTaskId:andMessageId:andOffLine:fromApplication:”使用
  */
-+ (BOOL)sendFeedbackMessage:(NSInteger)actionId taskId:(NSString *)taskId msgId:(NSString *)msgId;
++ (BOOL)sendFeedbackMessage:(NSInteger)actionId andTaskId:(NSString *)taskId andMsgId:(NSString *)msgId;
 
 /**
  *  清空下拉通知栏全部通知,并将角标置“0”，不显示角标
