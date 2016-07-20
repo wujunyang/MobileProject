@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor=[UIColor whiteColor];
     self.navigationItem.title=@"热更新";
     
     if (!self.myLabel) {

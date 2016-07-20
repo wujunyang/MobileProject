@@ -98,6 +98,8 @@
 		3425826B1D379743003906BB /* introductoryPagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342582691D379743003906BB /* introductoryPagesView.m */; settings = {ASSET_TAGS = (); }; };
 		3425826E1D379D2C003906BB /* introductoryPagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3425826D1D379D2C003906BB /* introductoryPagesHelper.m */; settings = {ASSET_TAGS = (); }; };
 		3425826F1D379D2C003906BB /* introductoryPagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3425826D1D379D2C003906BB /* introductoryPagesHelper.m */; settings = {ASSET_TAGS = (); }; };
+		342A8F901D3F15CB000C7B98 /* MPMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342A8F8F1D3F15CB000C7B98 /* MPMoreViewController.m */; settings = {ASSET_TAGS = (); }; };
+		342A8F911D3F15CB000C7B98 /* MPMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342A8F8F1D3F15CB000C7B98 /* MPMoreViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34420CB91D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */; settings = {ASSET_TAGS = (); }; };
 		34420CBA1D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */; settings = {ASSET_TAGS = (); }; };
 		34420CBD1D0FAD10007D1AAC /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CBC1D0FAD10007D1AAC /* AdvertiseView.m */; settings = {ASSET_TAGS = (); }; };
@@ -725,8 +727,6 @@
 		34E9D84C1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D84A1C59DB8800E98C2A /* BaiDuRouteAnnotation.m */; settings = {ASSET_TAGS = (); }; };
 		34E9D84F1C59DD2800E98C2A /* BaiDuCoordinateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D84E1C59DD2800E98C2A /* BaiDuCoordinateModel.m */; settings = {ASSET_TAGS = (); }; };
 		34E9D8501C59DD2800E98C2A /* BaiDuCoordinateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D84E1C59DD2800E98C2A /* BaiDuCoordinateModel.m */; settings = {ASSET_TAGS = (); }; };
-		34EC47C01C3D6B490041CB85 /* 项目目录.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC47BF1C3D6B490041CB85 /* 项目目录.png */; settings = {ASSET_TAGS = (); }; };
-		34EC47C11C3D6B490041CB85 /* 项目目录.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC47BF1C3D6B490041CB85 /* 项目目录.png */; settings = {ASSET_TAGS = (); }; };
 		34EC806C1C472BF100C7E40A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC806B1C472BF100C7E40A /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34EC806D1C472BF100C7E40A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC806B1C472BF100C7E40A /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34EC80721C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC80711C472E2100C7E40A /* UIPlaceHolderTextView.m */; settings = {ASSET_TAGS = (); }; };
@@ -849,6 +849,8 @@
 		342582691D379743003906BB /* introductoryPagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = introductoryPagesView.m; sourceTree = "<group>"; };
 		3425826C1D379D2C003906BB /* introductoryPagesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = introductoryPagesHelper.h; sourceTree = "<group>"; };
 		3425826D1D379D2C003906BB /* introductoryPagesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = introductoryPagesHelper.m; sourceTree = "<group>"; };
+		342A8F8E1D3F15CB000C7B98 /* MPMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMoreViewController.h; sourceTree = "<group>"; };
+		342A8F8F1D3F15CB000C7B98 /* MPMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMoreViewController.m; sourceTree = "<group>"; };
 		34420CB71D0FAC9E007D1AAC /* AdvertiseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseHelper.h; sourceTree = "<group>"; };
 		34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseHelper.m; sourceTree = "<group>"; };
 		34420CBB1D0FAD10007D1AAC /* AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseView.h; sourceTree = "<group>"; };
@@ -1475,7 +1477,6 @@
 		34E9D84A1C59DB8800E98C2A /* BaiDuRouteAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiDuRouteAnnotation.m; sourceTree = "<group>"; };
 		34E9D84D1C59DD2800E98C2A /* BaiDuCoordinateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiDuCoordinateModel.h; sourceTree = "<group>"; };
 		34E9D84E1C59DD2800E98C2A /* BaiDuCoordinateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiDuCoordinateModel.m; sourceTree = "<group>"; };
-		34EC47BF1C3D6B490041CB85 /* 项目目录.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "项目目录.png"; sourceTree = "<group>"; };
 		34EC806A1C472BF100C7E40A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		34EC806B1C472BF100C7E40A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		34EC80701C472E2100C7E40A /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
@@ -1834,7 +1835,6 @@
 		34E890851C3B89B2001327C8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				34EC47BF1C3D6B490041CB85 /* 项目目录.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -3499,6 +3499,8 @@
 				341094011D0E982100A8D63F /* JSPatchViewController.m */,
 				3400E4C51D35F0690056B673 /* MPLkdbViewController.h */,
 				3400E4C61D35F0690056B673 /* MPLkdbViewController.m */,
+				342A8F8E1D3F15CB000C7B98 /* MPMoreViewController.h */,
+				342A8F8F1D3F15CB000C7B98 /* MPMoreViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3772,7 +3774,6 @@
 				340BCD621D0F03870093CC7D /* Placeholder in Resources */,
 				340BCD3A1D0F01910093CC7D /* Placeholder in Resources */,
 				34E08BA11C3BFB90005C6CA3 /* NSDateTimeAgo.bundle in Resources */,
-				34EC47C11C3D6B490041CB85 /* 项目目录.png in Resources */,
 				34EC96281C58AA9600985444 /* Preview.xcassets in Resources */,
 				340BCD5B1D0F02180093CC7D /* Placeholder in Resources */,
 				34E08BA21C3BFB90005C6CA3 /* Main.storyboard in Resources */,
@@ -3830,7 +3831,6 @@
 				340BCD4E1D0F01D60093CC7D /* Placeholder in Resources */,
 				340BCD511D0F01E50093CC7D /* Placeholder in Resources */,
 				340BCD391D0F01910093CC7D /* Placeholder in Resources */,
-				34EC47C01C3D6B490041CB85 /* 项目目录.png in Resources */,
 				34E8949E1C3B9FC1001327C8 /* QBImagePickerController.strings in Resources */,
 				34EC96271C58AA9600985444 /* Preview.xcassets in Resources */,
 				340BCD271D0F014B0093CC7D /* Placeholder in Resources */,
@@ -4161,6 +4161,7 @@
 				34E08B371C3BFB90005C6CA3 /* SVProgressHUD+BBBabyHelper.m in Sources */,
 				340BCD251D0F011A0093CC7D /* LogInApi.m in Sources */,
 				34E08B381C3BFB90005C6CA3 /* NSData+zlib.m in Sources */,
+				342A8F911D3F15CB000C7B98 /* MPMoreViewController.m in Sources */,
 				34E08B391C3BFB90005C6CA3 /* UIView+MJExtension.m in Sources */,
 				34E08B3A1C3BFB90005C6CA3 /* UIWebView+Style.m in Sources */,
 				34E08B3B1C3BFB90005C6CA3 /* NSDictionary+XML.m in Sources */,
@@ -4548,6 +4549,7 @@
 				34E894071C3B9A03001327C8 /* UIResponder+Chain.m in Sources */,
 				34E8939E1C3B9A03001327C8 /* NSSet+Block.m in Sources */,
 				34E893991C3B9A03001327C8 /* NSObject+KVOBlocks.m in Sources */,
+				342A8F901D3F15CB000C7B98 /* MPMoreViewController.m in Sources */,
 				34420CB91D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */,
 				34E893C91C3B9A03001327C8 /* UIBarButtonItem+Action.m in Sources */,
 				34E893EF1C3B9A03001327C8 /* UIImage+Resize.m in Sources */,

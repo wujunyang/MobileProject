@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor=[UIColor whiteColor];
     self.navigationItem.title=@"LKDB数据库操作";
 
     [self startLKDB];

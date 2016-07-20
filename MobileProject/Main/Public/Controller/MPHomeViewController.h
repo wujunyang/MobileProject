@@ -14,7 +14,7 @@
 #import "UMengSocialLoginViewController.h"
 #import "UMengSocialViewController.h"
 #import "BaiDuMapViewController.h"
-#import "JSPatchViewController.h"
+#import "MPMoreViewController.h"
 
 
 @interface MPHomeViewController : CYLTabBarController<UITabBarControllerDelegate>

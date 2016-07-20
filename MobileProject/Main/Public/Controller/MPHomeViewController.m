@@ -52,7 +52,7 @@
     UINavigationController *thirdNavigationController = [[MPBaseNavigationController alloc]
                                                    initWithRootViewController:thirdViewController];
     
-    JSPatchViewController *fourthViewController = [[JSPatchViewController alloc] init];
+    MPMoreViewController *fourthViewController = [[MPMoreViewController alloc] init];
     UINavigationController *fourthNavigationController = [[MPBaseNavigationController alloc]
                                                     initWithRootViewController:fourthViewController];
     
@@ -83,7 +83,7 @@
                                                  CYLTabBarItemSelectedImage : @"message_highlight",
                                                  };
     NSDictionary *fourthTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"我的",
+                                                  CYLTabBarItemTitle : @"更多",
                                                   CYLTabBarItemImage : @"account_normal",
                                                   CYLTabBarItemSelectedImage : @"account_highlight"
                                                   };

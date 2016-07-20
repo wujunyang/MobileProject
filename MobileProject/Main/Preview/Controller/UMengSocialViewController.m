@@ -8,7 +8,6 @@
 
 #import "UMengSocialViewController.h"
 
-#import "MPLkdbViewController.h"
 
 @interface UMengSocialViewController ()
 
@@ -23,10 +22,6 @@
     
     self.navigationItem.title=@"友盟分享跳转";
     [self.navigationController.tabBarItem setBadgeValue:@"2"];
-    
-    
-    MPLkdbViewController *vc=[[MPLkdbViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
