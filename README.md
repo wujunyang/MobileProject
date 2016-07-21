@@ -186,7 +186,7 @@ pod 'MWPhotoBrowser'
 
 16 集成第一次启动的引导页功能模块
 
-17 集成LBXScan插件，实现二维码相关功能模块
+17 集成LBXScan插件，实现二维码相关功能模块，包含扫二维码显示结果、从相册读取图片中的二维码结果
 
 18 封装MBProgressHUD扩展类，定义一些常见的提示效果，详见MBProgressHUD+MP类
 
