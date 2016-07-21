@@ -11,7 +11,8 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "qrcode_scan_btn_flash_nor@3x.png"
     }
   ],
   "info" : {

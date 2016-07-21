@@ -13,6 +13,8 @@ MobileProject项目是一个以MVC模式搭建的开源功能集合，基于Obje
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/6.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/7.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/8.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/9.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/10.png" width=250px height=350px></img>
 
 
 ## MobileProject模块简介
@@ -121,7 +123,8 @@ Plist用于存放plist文件，主要是本项目中会创建多个的Tag,而每
 ```obj-c
 platform :ios, '7.0'
 pod 'AFNetworking', '~>2.6.0'
-pod 'SDWebImage', '~>3.7'
+pod 'ReactiveCocoa', '~> 2.5'
+pod 'SDWebImage', '~> 3.7.5'
 pod 'JSONModel', '~> 1.0.1'
 pod 'Masonry','~>0.6.1'
 pod 'FMDB/common' , '~>2.5'
@@ -139,6 +142,9 @@ pod 'CYLTabBarController'
 pod 'LKDBHelper'
 pod 'RegexKitLite', '4.0'
 pod 'IQKeyboardManager'
+pod 'LBXScan','~> 1.1.1'
+pod 'MBProgressHUD', '~> 0.9'
+pod 'MWPhotoBrowser'
 ```
 
 
@@ -181,6 +187,10 @@ pod 'IQKeyboardManager'
 16 集成第一次启动的引导页功能模块
 
 17 集成LBXScan插件，实现二维码相关功能模块
+
+18 封装MBProgressHUD扩展类，定义一些常见的提示效果，详见MBProgressHUD+MP类
+
+19 开发关于图片上传，包含选择照片、拍照、浏览大图、获得图片GPS、图片名称、图片拍照时间、上传时对图片进行转正调整、压缩图片、图片展现效果
 
 ## 联系方式
 

@@ -12,8 +12,8 @@
 #define CHINESE_SYSTEM(x) [UIFont fontWithName:CHINESE_FONT_NAME size:x]
 
 //不同屏幕尺寸字体适配（320，568是因为效果图为IPHONE5 如果不是则根据实际情况修改）
-#define kScreenWidthRatio  (SCREEN_WIDTH / 320.0)
-#define kScreenHeightRatio (SCREEN_HEIGHT / 568.0)
+#define kScreenWidthRatio  (Main_Screen_Width / 320.0)
+#define kScreenHeightRatio (Main_Screen_Height / 568.0)
 #define AdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
 #define AdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
 #define kFontSize(R)     CHINESE_SYSTEM(AdaptedWidth(R))
@@ -119,8 +119,10 @@
 
 
 
-
-
+//上传图片相关
+#define kImageCollectionCell_Width floorf((Main_Screen_Width - 10*2- 10*3)/3)
+//最大的上传图片张数
+#define kupdateMaximumNumberOfImage 12
 
 
 

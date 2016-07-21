@@ -108,7 +108,7 @@
     //声音提醒
     //[LBXScanWrapper systemSound];
     
-    [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"扫码的内容为:%@",strResult]];
+    [MBProgressHUD showSuccess:[NSString stringWithFormat:@"扫码的内容为:%@",strResult] ToView:nil];
 }
 
 - (void)popAlertMsgWithScanResult:(NSString*)strResult
@@ -117,7 +117,7 @@
         strResult = @"识别失败";
     }
     
-    [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"扫码的内容为:%@",strResult]];
+    [MBProgressHUD showAutoMessage:[NSString stringWithFormat:@"扫码的内容为:%@",strResult]];
     
     //若想续约扫可以调用 //点击完，继续扫码[self reStartDevice];
 }

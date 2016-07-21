@@ -42,9 +42,9 @@ static NSString *const UPDATEVERSION_SERVERCENTER_key=@"UPDATEVERSION_SERVERCENT
 {
     if (self == [super init]) {
         //测试环境
-        self.develpoerDictionary=@{ACCOUNT_SERVERCENTER_Key:@"http://private-eda65-mock.com/",PICTURE_SERVERCENTER_key:@"图片前缀",BUSINESSLOGIC_SERVERCENTER_key:@"业务逻辑前缀",UPDATEVERSION_SERVERCENTER_key:@"版本升级前缀"};
+        self.develpoerDictionary=@{ACCOUNT_SERVERCENTER_Key:@"http://private-eda6s5-mocks.com/",PICTURE_SERVERCENTER_key:@"http://baidues.com/",BUSINESSLOGIC_SERVERCENTER_key:@"业务逻辑前缀",UPDATEVERSION_SERVERCENTER_key:@"版本升级前缀"};
         //产品环境
-        self.productDictionary=@{ACCOUNT_SERVERCENTER_Key:@"http://private-eda66-mock.com/",PICTURE_SERVERCENTER_key:@"图片前缀",BUSINESSLOGIC_SERVERCENTER_key:@"业务逻辑前缀",UPDATEVERSION_SERVERCENTER_key:@"版本升级前缀"};
+        self.productDictionary=@{ACCOUNT_SERVERCENTER_Key:@"http://private-eda66-mock.com/",PICTURE_SERVERCENTER_key:@"http://baidues.com/",BUSINESSLOGIC_SERVERCENTER_key:@"业务逻辑前缀",UPDATEVERSION_SERVERCENTER_key:@"版本升级前缀"};
         
         self.configDictionary = [NSMutableDictionary dictionary];
         [self.configDictionary setObject:self.develpoerDictionary forKey:developer];

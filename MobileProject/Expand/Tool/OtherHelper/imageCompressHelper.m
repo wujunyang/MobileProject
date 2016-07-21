@@ -152,4 +152,12 @@
     
     return newImage;
 }
+
+
++ (UIImage *)fullScreenImageALAsset:(ALAsset *)asset{
+    ALAssetRepresentation *assetRep = [asset defaultRepresentation];
+    CGImageRef imgRef = [assetRep fullScreenImage];//fullScreenImage已经调整过方向了
+    UIImage *img = [UIImage imageWithCGImage:imgRef];
+    return img;
+}
 @end

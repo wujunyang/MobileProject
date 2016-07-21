@@ -1,0 +1,1 @@
+../../../ReactiveCocoa/ReactiveCocoa/RACChannel.h

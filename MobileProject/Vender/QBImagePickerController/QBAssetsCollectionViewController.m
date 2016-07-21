@@ -199,7 +199,7 @@
     
     if (minimumNumberOfSelection <= self.maximumNumberOfSelection) {
         if (numberOfSelections > self.maximumNumberOfSelection) {
-            NSLog(@"最多只可选择%lu张照片", (unsigned long)self.maximumNumberOfSelection);
+            [MBProgressHUD showAutoMessage:[NSString stringWithFormat:@"最多只可选择%lu张照片", (unsigned long)self.maximumNumberOfSelection]];
         }
         return (numberOfSelections <= self.maximumNumberOfSelection);
     }

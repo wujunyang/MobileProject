@@ -84,7 +84,15 @@
     YTKRequestMethod method = [request requestMethod];
     NSString *url = [self buildRequestUrl:request];
     id param = request.requestArgument;
-    NSLog(@"请求参数%@",param);
+    
+    
+    
+    DDLogInfo(@"网络请求URL:[%@]",url);
+
+    DDLogInfo(@"网络请求方式:[%@]", [self showRequtestMethod:method]);
+    DDLogInfo(@"网络请求参数:%@",param);
+    
+    
     AFConstructingBlock constructingBlock = [request constructingBodyBlock];
 
     if (request.requestSerializerType == YTKRequestSerializerTypeHTTP) {
@@ -238,7 +246,7 @@
     NSLog(@"Request内容：%@",operation.response);
     NSString *key = [self requestHashKey:operation];
     YTKBaseRequest *request = _requestsRecord[key];
-    NSLog(@"Finished Request: %@", NSStringFromClass([request class]));
+    NSLog(@"请求类名: %@", NSStringFromClass([request class]));
     if (request) {
         BOOL succeed = [self checkResult:request];
         if (succeed) {
@@ -252,7 +260,7 @@
             }
             [request toggleAccessoriesDidStopCallBack];
         } else {
-            DDLogError(@"Request %@ failed, status code = %ld",
+            DDLogError(@"请求失败 %@ , 错误编码 = %ld",
                      NSStringFromClass([request class]), (long)request.responseStatusCode);
             [request toggleAccessoriesWillStopCallBack];
             [request requestFailedFilter];
@@ -289,6 +297,38 @@
         [_requestsRecord removeObjectForKey:key];
     }
     NSLog(@"Request queue size = %lu", (unsigned long)[_requestsRecord count]);
+}
+
+-(NSString *)showRequtestMethod:(YTKRequestMethod)method
+{
+    NSString *result=@"";
+    switch (method) {
+        case YTKRequestMethodGet: {
+            result=@"GET";
+            break;
+        }
+        case YTKRequestMethodPost: {
+            result=@"Post";
+            break;
+        }
+        case YTKRequestMethodHead: {
+            result=@"Head";
+            break;
+        }
+        case YTKRequestMethodPut: {
+            result=@"Put";
+            break;
+        }
+        case YTKRequestMethodDelete: {
+            result=@"Delete";
+            break;
+        }
+        case YTKRequestMethodPatch: {
+            result=@"Patch";
+            break;
+        }
+    }
+    return result;
 }
 
 @end

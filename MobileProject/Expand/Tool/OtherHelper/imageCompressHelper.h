@@ -7,6 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AssetsLibrary/ALAsset.h>
+#import <AssetsLibrary/ALAssetsLibrary.h>
+#import <AssetsLibrary/ALAssetsGroup.h>
+#import <AssetsLibrary/ALAssetRepresentation.h>
 
 @interface imageCompressHelper : NSObject
 
@@ -32,4 +36,7 @@
 
 //按比例缩放,size 是你要把图显示到 多大区域 CGSizeMake(300, 140)
 +(UIImage *)compressImage:(UIImage *)sourceImage toTargetWidth:(CGFloat)targetWidth;
+
+//调整图片方向
++ (UIImage *)fullScreenImageALAsset:(ALAsset *)asset;
 @end

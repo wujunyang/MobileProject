@@ -18,8 +18,12 @@
 #import <AFNetworking/AFNetworking.h>
 #import <Masonry/Masonry.h>
 #import <JSONModel/JSONModel.h>
-#import "SVProgressHUD.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveCocoa/RACEXTScope.h>
 #import "UIImageView+WebCache.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+MP.h"
+#import "MWPhotoBrowser.h"
 #import "KeyboardManager.h"
 #import "Macros.h"
 #import "MBTargetConfigContants.h"
@@ -29,7 +33,7 @@
 #import "NotificationContants.h"
 #import "MJRefresh.h"
 #import "GVUserDefaults+BBProperties.h"
-
+#import "MPRequstFailedHelper.h"
 #import "MPUmengHelper.h"
 
 #endif /* PrefixHeader_pch */
