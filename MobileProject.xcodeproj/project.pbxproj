@@ -94,6 +94,8 @@
 		341094071D0EAF0D00A8D63F /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 341094051D0EAF0D00A8D63F /* demo.js */; settings = {ASSET_TAGS = (); }; };
 		341C07D51D41A27E00FF905C /* BaseRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341C07D41D41A27E00FF905C /* BaseRequestService.m */; settings = {ASSET_TAGS = (); }; };
 		341C07D61D41A27E00FF905C /* BaseRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341C07D41D41A27E00FF905C /* BaseRequestService.m */; settings = {ASSET_TAGS = (); }; };
+		341C07DA1D41C6F200FF905C /* MPFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 341C07D91D41C6F200FF905C /* MPFileManager.m */; settings = {ASSET_TAGS = (); }; };
+		341C07DB1D41C6F200FF905C /* MPFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 341C07D91D41C6F200FF905C /* MPFileManager.m */; settings = {ASSET_TAGS = (); }; };
 		341CA90F1D3097AF008B85D3 /* MBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */; settings = {ASSET_TAGS = (); }; };
 		341CA9101D3097AF008B85D3 /* MBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */; settings = {ASSET_TAGS = (); }; };
 		342582561D3734B6003906BB /* EaseBlankPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342582551D3734B6003906BB /* EaseBlankPageView.m */; settings = {ASSET_TAGS = (); }; };
@@ -853,6 +855,8 @@
 		341094051D0EAF0D00A8D63F /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		341C07D31D41A27E00FF905C /* BaseRequestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequestService.h; sourceTree = "<group>"; };
 		341C07D41D41A27E00FF905C /* BaseRequestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequestService.m; sourceTree = "<group>"; };
+		341C07D81D41C6F200FF905C /* MPFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFileManager.h; sourceTree = "<group>"; };
+		341C07D91D41C6F200FF905C /* MPFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFileManager.m; sourceTree = "<group>"; };
 		341CA90D1D3097AF008B85D3 /* MBProgressHUD+MP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MP.h"; sourceTree = "<group>"; };
 		341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MP.m"; sourceTree = "<group>"; };
 		342582541D3734B6003906BB /* EaseBlankPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseBlankPageView.h; sourceTree = "<group>"; };
@@ -1721,6 +1725,16 @@
 			path = BaseService;
 			sourceTree = "<group>";
 		};
+		341C07D71D41C5D900FF905C /* FileManager(文件管理) */ = {
+			isa = PBXGroup;
+			children = (
+				341C07D81D41C6F200FF905C /* MPFileManager.h */,
+				341C07D91D41C6F200FF905C /* MPFileManager.m */,
+			);
+			name = "FileManager(文件管理)";
+			path = FileManager;
+			sourceTree = "<group>";
+		};
 		342582531D373455003906BB /* EaseBlankPage(空白页提示) */ = {
 			isa = PBXGroup;
 			children = (
@@ -2002,6 +2016,7 @@
 		34E890BF1C3B8B36001327C8 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				341C07D71D41C5D900FF905C /* FileManager(文件管理) */,
 				342582671D3796D6003906BB /* IntroductoryPages(引导页) */,
 				342582531D373455003906BB /* EaseBlankPage(空白页提示) */,
 				3400E4BC1D35EC6A0056B673 /* LKDBHelper(数据库管理) */,
@@ -4032,6 +4047,7 @@
 				34E08AA81C3BFB90005C6CA3 /* NSString+DictionaryValue.m in Sources */,
 				34E08AA91C3BFB90005C6CA3 /* UIWebView+JS.m in Sources */,
 				34E08AAB1C3BFB90005C6CA3 /* UIImage+Merge.m in Sources */,
+				341C07DB1D41C6F200FF905C /* MPFileManager.m in Sources */,
 				34E08AAC1C3BFB90005C6CA3 /* MJRefreshAutoGifFooter.m in Sources */,
 				34E08AAD1C3BFB90005C6CA3 /* UIScrollView+MJRefresh.m in Sources */,
 				34E08AAE1C3BFB90005C6CA3 /* MJRefreshBackFooter.m in Sources */,
@@ -4462,6 +4478,7 @@
 				34E893F41C3B9A03001327C8 /* UIImageView+FaceAwareFill.m in Sources */,
 				34E893831C3B9A03001327C8 /* NSDictionary+URL.m in Sources */,
 				34E893651C3B9A03001327C8 /* NSManagedObjectContext+Extensions.m in Sources */,
+				341C07DA1D41C6F200FF905C /* MPFileManager.m in Sources */,
 				342582561D3734B6003906BB /* EaseBlankPageView.m in Sources */,
 				34E893C41C3B9A03001327C8 /* UIAlertView+Block.m in Sources */,
 				34E893671C3B9A03001327C8 /* NSManagedObjectContext+FetchRequestsConstructors.m in Sources */,
