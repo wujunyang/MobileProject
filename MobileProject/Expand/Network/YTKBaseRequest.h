@@ -42,6 +42,9 @@ typedef NS_ENUM(NSInteger , YTKRequestSerializerType) {
 
 typedef void (^AFConstructingBlock)(id<AFMultipartFormData> formData);
 typedef void (^AFDownloadProgressBlock)(AFDownloadRequestOperation *operation, NSInteger bytesRead, long long totalBytesRead, long long totalBytesExpected, long long totalBytesReadForFile, long long totalBytesExpectedToReadForFile);
+typedef void (^YTKUploadPropress)(NSUInteger __unused bytesWritten,
+                                  long long totalBytesWritten,
+                                  long long totalBytesExpectedToWrite);
 
 @class YTKBaseRequest;
 
@@ -95,6 +98,9 @@ typedef void(^YTKRequestCompletionBlock)(__kindof YTKBaseRequest *request);
 @property (nonatomic, copy) YTKRequestCompletionBlock failureCompletionBlock;
 
 @property (nonatomic, strong) NSMutableArray *requestAccessories;
+
+//上传获取进度值
+@property (nonatomic, strong) YTKUploadPropress uploadPropressBlock;
 
 /// append self to request queue
 - (void)start;

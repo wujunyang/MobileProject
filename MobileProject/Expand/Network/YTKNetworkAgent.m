@@ -171,6 +171,19 @@
                                                   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                             [self handleRequestResult:operation];
                         }];
+                
+                __block YTKBaseRequest *blockSelf = request;
+                
+                [request.requestOperation setUploadProgressBlock:^(NSUInteger __unused bytesWritten,
+                                                                   long long totalBytesWritten,
+                                                                   long long totalBytesExpectedToWrite) {
+                    // NSLog(@"Wrote %lld/%lld", totalBytesWritten, totalBytesExpectedToWrite);
+                    if (blockSelf.uploadPropressBlock) {
+                        blockSelf.uploadPropressBlock(bytesWritten,totalBytesWritten,totalBytesExpectedToWrite);
+                    }
+                }];
+
+                
             } else {
                 request.requestOperation = [_manager POST:url parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
                     NSLog(@"请求回应：%@",responseObject);
