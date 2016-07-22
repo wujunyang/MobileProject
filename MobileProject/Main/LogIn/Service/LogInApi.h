@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YTKBaseRequest.h"
 
-@interface LogInApi : YTKBaseRequest
+@interface LogInApi : BaseRequestService
 
 - (id)initWithUsername:(NSString *)username password:(NSString *)password;
 @end

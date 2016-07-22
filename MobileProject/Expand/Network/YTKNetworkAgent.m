@@ -122,7 +122,7 @@
             }
         }
     }
-
+    NSLog(@"当前头部信息：[%@]",_manager.requestSerializer.HTTPRequestHeaders);
     // if api build custom url request
     NSURLRequest *customUrlRequest= [request buildCustomUrlRequest];
     if (customUrlRequest) {

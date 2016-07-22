@@ -92,6 +92,8 @@
 		341094031D0E982100A8D63F /* JSPatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341094011D0E982100A8D63F /* JSPatchViewController.m */; settings = {ASSET_TAGS = (); }; };
 		341094061D0EAF0D00A8D63F /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 341094051D0EAF0D00A8D63F /* demo.js */; settings = {ASSET_TAGS = (); }; };
 		341094071D0EAF0D00A8D63F /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 341094051D0EAF0D00A8D63F /* demo.js */; settings = {ASSET_TAGS = (); }; };
+		341C07D51D41A27E00FF905C /* BaseRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341C07D41D41A27E00FF905C /* BaseRequestService.m */; settings = {ASSET_TAGS = (); }; };
+		341C07D61D41A27E00FF905C /* BaseRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341C07D41D41A27E00FF905C /* BaseRequestService.m */; settings = {ASSET_TAGS = (); }; };
 		341CA90F1D3097AF008B85D3 /* MBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */; settings = {ASSET_TAGS = (); }; };
 		341CA9101D3097AF008B85D3 /* MBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */; settings = {ASSET_TAGS = (); }; };
 		342582561D3734B6003906BB /* EaseBlankPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342582551D3734B6003906BB /* EaseBlankPageView.m */; settings = {ASSET_TAGS = (); }; };
@@ -849,6 +851,8 @@
 		341094001D0E982100A8D63F /* JSPatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchViewController.h; sourceTree = "<group>"; };
 		341094011D0E982100A8D63F /* JSPatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchViewController.m; sourceTree = "<group>"; };
 		341094051D0EAF0D00A8D63F /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		341C07D31D41A27E00FF905C /* BaseRequestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequestService.h; sourceTree = "<group>"; };
+		341C07D41D41A27E00FF905C /* BaseRequestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequestService.m; sourceTree = "<group>"; };
 		341CA90D1D3097AF008B85D3 /* MBProgressHUD+MP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MP.h"; sourceTree = "<group>"; };
 		341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MP.m"; sourceTree = "<group>"; };
 		342582541D3734B6003906BB /* EaseBlankPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseBlankPageView.h; sourceTree = "<group>"; };
@@ -1708,6 +1712,15 @@
 			path = JsHtmlCss;
 			sourceTree = "<group>";
 		};
+		341C07D21D41A24F00FF905C /* BaseService */ = {
+			isa = PBXGroup;
+			children = (
+				341C07D31D41A27E00FF905C /* BaseRequestService.h */,
+				341C07D41D41A27E00FF905C /* BaseRequestService.m */,
+			);
+			path = BaseService;
+			sourceTree = "<group>";
+		};
 		342582531D373455003906BB /* EaseBlankPage(空白页提示) */ = {
 			isa = PBXGroup;
 			children = (
@@ -2098,6 +2111,7 @@
 		34E890C91C3B8D70001327C8 /* Base(基类) */ = {
 			isa = PBXGroup;
 			children = (
+				341C07D21D41A24F00FF905C /* BaseService */,
 				34E890CF1C3B8EE9001327C8 /* BaseOther */,
 				34E890CE1C3B8EC6001327C8 /* BaseView */,
 				34E890CD1C3B8E9B001327C8 /* BaseController */,
@@ -4151,6 +4165,7 @@
 				3403B0BF1D367954007CD7EF /* UITextField+Extension.m in Sources */,
 				340D879A1D3F6310003D9C88 /* dateTimeHelper.m in Sources */,
 				34E08B2A1C3BFB90005C6CA3 /* NSString+RegexCategory.m in Sources */,
+				341C07D61D41A27E00FF905C /* BaseRequestService.m in Sources */,
 				34E08B2B1C3BFB90005C6CA3 /* UIWebView+Canvas.m in Sources */,
 				34E08B2C1C3BFB90005C6CA3 /* LogInViewController.m in Sources */,
 				34E08B2D1C3BFB90005C6CA3 /* QBImagePickerController.m in Sources */,
@@ -4538,6 +4553,7 @@
 				34E893D61C3B9A03001327C8 /* UIColor+Gradient.m in Sources */,
 				34E8941B1C3B9A03001327C8 /* UITextField+Shake.m in Sources */,
 				34E8938A1C3B9A03001327C8 /* NSInvocation+Bb.m in Sources */,
+				341C07D51D41A27E00FF905C /* BaseRequestService.m in Sources */,
 				34E8941F1C3B9A03001327C8 /* UIView+Animation.m in Sources */,
 				34E9D8471C59C33B00E98C2A /* BaiDuMapViewController.mm in Sources */,
 				34E893B61C3B9A03001327C8 /* NSURLConnection+SelfSigned.m in Sources */,

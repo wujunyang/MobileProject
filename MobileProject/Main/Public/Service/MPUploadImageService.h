@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "MPUploadImageHelper.h"
-#import "YTKBaseRequest.h"
 
-@interface MPUploadImageService : YTKBaseRequest
+@interface MPUploadImageService : BaseRequestService
 
 - (instancetype)initWithUploadImages:(MPUploadImageHelper *)model;
 

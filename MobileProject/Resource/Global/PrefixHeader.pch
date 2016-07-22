@@ -35,5 +35,5 @@
 #import "GVUserDefaults+BBProperties.h"
 #import "MPRequstFailedHelper.h"
 #import "MPUmengHelper.h"
-
+#import "BaseRequestService.h"
 #endif /* PrefixHeader_pch */
