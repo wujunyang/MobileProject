@@ -12,18 +12,20 @@
 
 @implementation MPImageCollectionCell
 
--(void)setCurImageItem:(MPImageItemModel *)curImageItem
+- (id)initWithFrame:(CGRect)frame
 {
-    if (!_imgView) {
-        _imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kImageCollectionCell_Width, kImageCollectionCell_Width)];
-        _imgView.contentMode = UIViewContentModeScaleAspectFill;
-        _imgView.clipsToBounds = YES;
-        _imgView.layer.masksToBounds = YES;
-        _imgView.layer.cornerRadius = 2.0;
-        [self.contentView addSubview:_imgView];
-    }
-    _curImageItem=curImageItem;
-    if (_curImageItem) {
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+        if (!_imgView) {
+            _imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kImageCollectionCell_Width, kImageCollectionCell_Width)];
+            _imgView.contentMode = UIViewContentModeScaleAspectFill;
+            _imgView.clipsToBounds = YES;
+            _imgView.layer.masksToBounds = YES;
+            _imgView.layer.cornerRadius = 2.0;
+            [self.contentView addSubview:_imgView];
+        }
+        
         if (!_deleteBtn) {
             _deleteBtn = [[UIButton alloc] initWithFrame:CGRectMake(kImageCollectionCell_Width-20, 0, 20, 20)];
             [_deleteBtn setImage:[UIImage imageNamed:@"btn_right_delete_image"] forState:UIControlStateNormal];
@@ -33,8 +35,16 @@
             
             [_deleteBtn addTarget:self action:@selector(deleteBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
             [self.contentView addSubview:_deleteBtn];
-            
         }
+    }
+    return self;
+}
+
+
+-(void)setCurImageItem:(MPImageItemModel *)curImageItem
+{
+    _curImageItem=curImageItem;
+    if (_curImageItem) {
         
         RAC(self.imgView, image) = [RACObserve(self.curImageItem, thumbnailImage) takeUntil:self.rac_prepareForReuseSignal];
         _deleteBtn.hidden = NO;

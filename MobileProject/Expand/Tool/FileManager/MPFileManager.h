@@ -16,6 +16,11 @@
 
 + (MPFileManager *)sharedManager;
 
+//下载存放路径
++ (NSString *)downloadPath;
+//上载暂存路径
++ (NSString *)uploadPath;
+
 //把文件先写入到APP沙盒暂存
 + (BOOL)writeUploadDataWithName:(NSString *)fileName andAsset:(ALAsset *)asset;
 //把图片先写入到APP沙盒暂存

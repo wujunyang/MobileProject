@@ -12,6 +12,7 @@
 #import "BaiDuMapViewController.h"
 #import "MPQRCodeViewController.h"
 #import "MPUploadImagesViewController.h"
+#import "MPUploadWithPropressViewController.h"
 
 @interface MPMoreViewController : UIViewController
 

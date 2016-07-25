@@ -23,7 +23,7 @@
     self.navigationItem.title=@"上传图片";
     
     //初始化
-    _curUploadImageHelper=[MPUploadImageHelper MPUploadImageForSend];
+    _curUploadImageHelper=[MPUploadImageHelper MPUploadImageForSend:NO];
     
     //初始化表格
     if (!_myTableView) {

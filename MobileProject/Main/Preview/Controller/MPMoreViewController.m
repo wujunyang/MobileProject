@@ -26,7 +26,7 @@
     self.navigationItem.title=@"功能导航";
 
     if (!self.dataArray) {
-        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传"];
+        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传",@"照片上传附带进度"];
     }
 
     if (!_myTableView) {
@@ -101,6 +101,12 @@
             case 4:
         {
             MPUploadImagesViewController *vc=[[MPUploadImagesViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            case 5:
+        {
+            MPUploadWithPropressViewController *vc=[[MPUploadWithPropressViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

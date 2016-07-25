@@ -11,7 +11,7 @@
 
 @implementation MPImageItemModel
 
-+ (instancetype)imageWithAssetURL:(NSURL *)assetURL{
++ (instancetype)imageWithAssetURL:(NSURL *)assetURL isUploadProcess:(BOOL)isUploadProcess{
     MPImageItemModel *imageItem = [[MPImageItemModel alloc] init];
     imageItem.uploadState = MPImageUploadStateInit;
     imageItem.assetURL = assetURL;
@@ -30,6 +30,11 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 imageItem.image = [imageCompressHelper compressedImageToLimitSizeOfKB:100 image:highQualityImage];;
                 imageItem.thumbnailImage = thumbnailImage;
+                
+                if (isUploadProcess) {
+                    //上传到沙盒  成功上传后记得删除对应
+                    [MPFileManager writeUploadDataWithName:imageItem.photoName andImage:imageItem.image];
+                }
             });
         }
     };

@@ -20,6 +20,15 @@
 - (void)deleteASelectedAssetURL:(NSURL *)assetURL;
 - (void)deleteAImage:(MPImageItemModel *)imageInfo;
 
-+(MPUploadImageHelper *)MPUploadImageForSend;
+/**
+ *  @author wujunyang, 16-07-25 13:07:17
+ *
+ *  @brief  <#Description#>
+ *
+ *  @param isUploadProcess 是否缓存到沙盒中YES则会转到沙盒中
+ *
+ *  @return <#return value description#>
+ */
++(MPUploadImageHelper *)MPUploadImageForSend:(BOOL)isUploadProcess;
 
 @end

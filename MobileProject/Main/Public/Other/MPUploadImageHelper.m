@@ -8,14 +8,18 @@
 
 #import "MPUploadImageHelper.h"
 
+@interface MPUploadImageHelper()
+@property(nonatomic)BOOL isUploadProcess;
+@end
 
 static MPUploadImageHelper *_mpUploadImageHelper = nil;
 
 @implementation MPUploadImageHelper
 
-+(MPUploadImageHelper *)MPUploadImageForSend
++(MPUploadImageHelper *)MPUploadImageForSend:(BOOL)isUploadProcess
 {
     _mpUploadImageHelper = [[MPUploadImageHelper alloc] init];
+    _mpUploadImageHelper.isUploadProcess=isUploadProcess;
     return _mpUploadImageHelper;
 }
 
@@ -52,7 +56,7 @@ static MPUploadImageHelper *_mpUploadImageHelper = nil;
     [_selectedAssetURLs addObject:assetURL];
     
     NSMutableArray *imagesArray = [self mutableArrayValueForKey:@"imagesArray"];//为了kvo
-    MPImageItemModel *imageItem = [MPImageItemModel imageWithAssetURL:assetURL];
+    MPImageItemModel *imageItem = [MPImageItemModel imageWithAssetURL:assetURL isUploadProcess:self.isUploadProcess];
     [imagesArray addObject:imageItem];
 }
 

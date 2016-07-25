@@ -1,6 +1,6 @@
 ## MobileProject介绍![Platform info](http://img.shields.io/cocoapods/p/YTKNetwork.svg?style=flat)
 
-MobileProject项目是一个以MVC模式搭建的开源功能集合，基于Objective-C上面进行编写，意在解决新项目对于常见功能模块的重复开发，MobileProject对于项目的搭建也进行很明确的划分，各个模块职责也比较明确，MobileProject也引入的一些常用第三方插件、宏定义、工具帮助类等；整个项目也是在不断更新跟维护中，功能点也会不断更新；
+MobileProject项目是一个以MVC模式搭建的开源功能集合，基于Objective-C上面进行编写，意在解决新项目对于常见功能模块的重复开发，MobileProject对于项目的搭建也进行很明确的划分，各个模块职责也比较明确，MobileProject也引入的一些常用第三方插件、宏定义、工具帮助类等；整个项目也是在不断更新跟维护中，功能点也会不断更新；是代码支持iOS7以后版本；
 
 
 ## 效果图
@@ -15,6 +15,7 @@ MobileProject项目是一个以MVC模式搭建的开源功能集合，基于Obje
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/8.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/9.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/10.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/11.png" width=250px height=350px></img>
 
 
 ## MobileProject模块简介
@@ -145,6 +146,7 @@ pod 'IQKeyboardManager'
 pod 'LBXScan','~> 1.1.1'
 pod 'MBProgressHUD', '~> 0.9'
 pod 'MWPhotoBrowser'
+pod 'M13ProgressSuite', '~> 1.2.7'
 ```
 
 
@@ -191,6 +193,8 @@ pod 'MWPhotoBrowser'
 18 封装MBProgressHUD扩展类，定义一些常见的提示效果，详见MBProgressHUD+MP类
 
 19 开发关于图片上传，包含选择照片、拍照、浏览大图、获得图片GPS、图片名称、图片拍照时间、上传时对图片进行转正调整、压缩图片、图片展现效果
+
+20 开发关于图片上传带进度效果，并把照片先存入沙盒中，上传成功删除，引入M13ProgressSuite插件显示进度扇形效果，部分用到ReactiveCocoa知识；
 
 ## 联系方式
 

@@ -124,7 +124,7 @@
     NSString *filePath = [[self uploadPath] stringByAppendingPathComponent:fileName];
     NSFileManager *fm = [NSFileManager defaultManager];
     if ([fm fileExistsAtPath:filePath]) {
-        return [fm removeItemAtPath:fileName error:nil];
+        return [fm removeItemAtPath:filePath error:nil];
     }else{
         return YES;
     }
