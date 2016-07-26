@@ -18,13 +18,13 @@
 
 + (BOOL)checkPhotoLibraryAuthorizationStatus
 {
-    if ([ALAssetsLibrary respondsToSelector:@selector(authorizationStatus)]) {
+    //if ([ALAssetsLibrary respondsToSelector:@selector(authorizationStatus)]) {
         ALAuthorizationStatus authStatus = [ALAssetsLibrary authorizationStatus];
             if (ALAuthorizationStatusDenied == authStatus ||
                 ALAuthorizationStatusRestricted == authStatus) {
                 [MBProgressHUD showAutoMessage:@"请在iPhone的“设置->隐私->照片”中打开本应用的访问权限" ToView:nil];
                 return NO;
-            }
+        //    }
         }
     return YES;
 }

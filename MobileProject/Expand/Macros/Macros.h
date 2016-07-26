@@ -16,7 +16,7 @@
 #define kScreenHeightRatio (Main_Screen_Height / 568.0)
 #define AdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
 #define AdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
-#define kFontSize(R)     CHINESE_SYSTEM(AdaptedWidth(R))
+#define AdaptedFontSize(R)     CHINESE_SYSTEM(AdaptedWidth(R))
 
 #define UNICODETOUTF16(x) (((((x - 0x10000) >>10) | 0xD800) << 16)  | (((x-0x10000)&3FF) | 0xDC00))
 #define MULITTHREEBYTEUTF16TOUNICODE(x,y) (((((x ^ 0xD800) << 2) | ((y ^ 0xDC00) >> 8)) << 8) | ((y ^ 0xDC00) & 0xFF)) + 0x10000

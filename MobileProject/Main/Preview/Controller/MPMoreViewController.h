@@ -13,6 +13,7 @@
 #import "MPQRCodeViewController.h"
 #import "MPUploadImagesViewController.h"
 #import "MPUploadWithPropressViewController.h"
+#import "MPAdaptationFontViewController.h"
 
 @interface MPMoreViewController : UIViewController
 
