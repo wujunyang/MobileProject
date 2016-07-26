@@ -16,7 +16,7 @@ MobileProject项目是一个以MVC模式搭建的开源功能集合，基于Obje
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/9.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/10.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/11.png" width=250px height=350px></img>
-
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/12.png" width=250px height=350px></img>
 
 ## MobileProject模块简介
 
@@ -195,6 +195,8 @@ pod 'M13ProgressSuite', '~> 1.2.7'
 19 开发关于图片上传，包含选择照片、拍照、浏览大图、获得图片GPS、图片名称、图片拍照时间、上传时对图片进行转正调整、压缩图片、图片展现效果
 
 20 开发关于图片上传带进度效果，并把照片先存入沙盒中，上传成功删除，引入M13ProgressSuite插件显示进度扇形效果，部分用到ReactiveCocoa知识；
+
+21 编写一个以iphone5为效果图的字体适配屏幕，兼容iphone6+效果，如果你的效果图不是iphone5,可以修改相应的宏定义，现在是以iphone5为标准
 
 ## 联系方式
 
