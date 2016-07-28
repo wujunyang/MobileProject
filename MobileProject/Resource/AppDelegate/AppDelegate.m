@@ -40,33 +40,48 @@
         else
         {
             DDLogError(@"定位信息：%f,%f",loction.location.coordinate.latitude,loction.location.coordinate.longitude);
+            
+            CLGeocoder *geocoder=[[CLGeocoder alloc]init];
+            [geocoder reverseGeocodeLocation:loction.location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+                
+                //处理手机语言 获得城市的名称（中文）
+                NSMutableArray *userDefaultLanguages = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"];
+                NSString *currentLanguage = [userDefaultLanguages objectAtIndex:0];
+                //如果不是中文 则强制先转成中文 获得后再转成默认语言
+                if (![currentLanguage isEqualToString:@"zh-Hans"]&&![currentLanguage isEqualToString:@"zh-Hans-CN"]) {
+                    //IOS9前后区分
+                    if (isIOS9) {
+                        [[NSUserDefaults standardUserDefaults] setObject:[NSArray arrayWithObjects:@"zh-Hans-CN", nil] forKey:@"AppleLanguages"];
+                    }
+                    else
+                    {
+                        [[NSUserDefaults standardUserDefaults] setObject:[NSArray arrayWithObjects:@"zh-Hans", nil] forKey:@"AppleLanguages"];
+                    }
+                }
+                
+                //转换地理信息
+                if (placemarks.count>0) {
+                    CLPlacemark *placemark=[placemarks objectAtIndex:0];
+                    //获取城市
+                    NSString *city = placemark.locality;
+                    if (!city) {
+                        //四大直辖市的城市信息无法通过locality获得，只能通过获取省份的方法来获得（如果city为空，则可知为直辖市）
+                        city = placemark.administrativeArea;
+                    }
+                    
+                    NSLog(@"百度当前城市：[%@]",city);
+                    
+                    // 城市名传出去后,立即 Device 语言 还原为默认的语言
+                    [[NSUserDefaults standardUserDefaults] setObject:userDefaultLanguages forKey:@"AppleLanguages"];
+                }
+            }];
         }
     }];
     
-    //百度定位并获取相关城市信息
-    //    [[MPLocationManager shareInstance] startBMKLocationWithReg:^(BMKUserLocation *loction, NSError *error) {
-    //        if (!error) {
-    //            CLGeocoder *geocoder=[[CLGeocoder alloc]init];
-    //            [geocoder reverseGeocodeLocation:loction.location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
-    //                if (placemarks.count>0) {
-    //                    CLPlacemark *placemark=[placemarks objectAtIndex:0];
-    //                    //获取城市
-    //                    NSString *city = placemark.locality;
-    //                    if (!city) {
-    //                        //四大直辖市的城市信息无法通过locality获得，只能通过获取省份的方法来获得（如果city为空，则可知为直辖市）
-    //                        city = placemark.administrativeArea;
-    //                    }
-    //
-    //                    NSLog(@"百度当前城市：[%@]",city);
-    //                }
-    //            }];
-    //        }
-    //    }];
-    
     //系统自带定位
-    //[[MPLocationManager shareInstance]  startSystemLocationWithRes:^(CLLocation *loction, NSError *error) {
-    //    DDLogError(@"系统自带定位信息：%f,%f",loction.coordinate.latitude,loction.coordinate.longitude);
-    //}];
+//    [[MPLocationManager shareInstance]  startSystemLocationWithRes:^(CLLocation *loction, NSError *error) {
+//        DDLogError(@"系统自带定位信息：%f,%f",loction.coordinate.latitude,loction.coordinate.longitude);
+//    }];
     
 
     

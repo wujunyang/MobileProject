@@ -773,6 +773,8 @@
 		34F49B2F1D261AE600FA003C /* MPBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F49B2D1D261AE600FA003C /* MPBaseNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 		34F49B321D262AA400FA003C /* MPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F49B311D262AA400FA003C /* MPHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34F49B331D262AA400FA003C /* MPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F49B311D262AA400FA003C /* MPHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FFA1F21D49128100A7C342 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFA1F11D49128100A7C342 /* NSString+Additions.m */; settings = {ASSET_TAGS = (); }; };
+		34FFA1F31D49128100A7C342 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFA1F11D49128100A7C342 /* NSString+Additions.m */; settings = {ASSET_TAGS = (); }; };
 		9014C40DD45909D3FC1F2EBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 533C667C4AE7D52B4A1E63C2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -1542,6 +1544,8 @@
 		34F49B2D1D261AE600FA003C /* MPBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBaseNavigationController.m; sourceTree = "<group>"; };
 		34F49B301D262AA400FA003C /* MPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPHomeViewController.h; sourceTree = "<group>"; };
 		34F49B311D262AA400FA003C /* MPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPHomeViewController.m; sourceTree = "<group>"; };
+		34FFA1F01D49128100A7C342 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		34FFA1F11D49128100A7C342 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		533C667C4AE7D52B4A1E63C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A48D3EEAEFFB901D36D8E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1846,6 +1850,8 @@
 				341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */,
 				3403B0BC1D367954007CD7EF /* UITextField+Extension.h */,
 				3403B0BD1D367954007CD7EF /* UITextField+Extension.m */,
+				34FFA1F01D49128100A7C342 /* NSString+Additions.h */,
+				34FFA1F11D49128100A7C342 /* NSString+Additions.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -4215,6 +4221,7 @@
 				340D879A1D3F6310003D9C88 /* dateTimeHelper.m in Sources */,
 				34E08B2A1C3BFB90005C6CA3 /* NSString+RegexCategory.m in Sources */,
 				341C07D61D41A27E00FF905C /* BaseRequestService.m in Sources */,
+				34FFA1F31D49128100A7C342 /* NSString+Additions.m in Sources */,
 				34E08B2B1C3BFB90005C6CA3 /* UIWebView+Canvas.m in Sources */,
 				34E08B2C1C3BFB90005C6CA3 /* LogInViewController.m in Sources */,
 				34E08B2D1C3BFB90005C6CA3 /* QBImagePickerController.m in Sources */,
@@ -4625,6 +4632,7 @@
 				34E893851C3B9A03001327C8 /* NSException+Trace.m in Sources */,
 				3403B0BE1D367954007CD7EF /* UITextField+Extension.m in Sources */,
 				34E893FB1C3B9A03001327C8 /* UILabel+SuggestSize.m in Sources */,
+				34FFA1F21D49128100A7C342 /* NSString+Additions.m in Sources */,
 				34E8937F1C3B9A03001327C8 /* NSDictionary+Block.m in Sources */,
 				34E8937A1C3B9A03001327C8 /* NSDate+Reporting.m in Sources */,
 				342582641D3736DA003906BB /* UIView+EaseBlankPage.m in Sources */,

@@ -57,6 +57,8 @@
 #define isIOS6                  ([[[UIDevice currentDevice]systemVersion]floatValue] < 7.0)
 // 是否大于等于IOS8
 #define isIOS8                  ([[[UIDevice currentDevice]systemVersion]floatValue] >=8.0)
+// 是否大于IOS9
+#define isIOS9                  ([[[UIDevice currentDevice]systemVersion]floatValue] >=9.0)
 // 是否iPad
 #define isPad                   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
