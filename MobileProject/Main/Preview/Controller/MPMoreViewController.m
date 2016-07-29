@@ -26,7 +26,7 @@
     self.navigationItem.title=@"功能导航";
 
     if (!self.dataArray) {
-        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传",@"照片上传附带进度",@"字体适配机型"];
+        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传",@"照片上传附带进度",@"字体适配机型",@"日志记录"];
     }
 
     if (!_myTableView) {
@@ -113,6 +113,12 @@
         case 6:
         {
             MPAdaptationFontViewController *vc=[[MPAdaptationFontViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 7:
+        {
+            LoggerViewController *vc=[[LoggerViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

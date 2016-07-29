@@ -3,21 +3,6 @@
 MobileProject项目是一个以MVC模式搭建的开源功能集合，基于Objective-C上面进行编写，意在解决新项目对于常见功能模块的重复开发，MobileProject对于项目的搭建也进行很明确的划分，各个模块职责也比较明确，MobileProject也引入的一些常用第三方插件、宏定义、工具帮助类等；整个项目也是在不断更新跟维护中，功能点也会不断更新；是代码支持iOS7以后版本；
 
 
-## 效果图
-
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/1.png" width=250px height=350px></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/2.png" width=250px height=350px></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/3.png" width=250px height=350px></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/4.png" width=250px height=350px></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/5.png" width=250px height=350px></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/6.png" width=250px height=350px></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/7.png" width=250px height=350px></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/8.png" width=250px height=350px></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/9.png" width=250px height=350px></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/10.png" width=250px height=350px></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/11.png" width=250px height=350px></img>
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/12.png" width=250px height=350px></img>
-
 ## MobileProject模块简介
 
 主项目中的分层主要包含四个模块，Main(主要)、Expand(扩展)、Resource(资源)、Vender(第三方)，还有本项目是有多个Tag,用于区分不同的版本，比如本地环境测试版、产品版，主要是通过Tag来区分，不同的标识对应不同的连接地址；当然也可以设置其它不同的内容；
@@ -197,6 +182,22 @@ pod 'M13ProgressSuite', '~> 1.2.7'
 20 开发关于图片上传带进度效果，并把照片先存入沙盒中，上传成功删除，引入M13ProgressSuite插件显示进度扇形效果，部分用到ReactiveCocoa知识；
 
 21 编写一个以iphone5为效果图的字体适配屏幕，兼容iphone6+效果，如果你的效果图不是iphone5,可以修改相应的宏定义，现在是以iphone5为标准
+
+## 效果图
+
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/1.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/2.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/3.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/4.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/5.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/6.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/7.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/8.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/9.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/10.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/11.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/12.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/13.png" width=250px height=350px></img>
 
 ## 联系方式
 
