@@ -26,6 +26,7 @@
 #import "MWPhotoBrowser.h"
 #import "KeyboardManager.h"
 #import "Macros.h"
+#import "MPEnumerateHeader.h"
 #import "MBTargetConfigContants.h"
 #import "MPTargetConfigMacros.h"
 #import "ThirdMacros.h"

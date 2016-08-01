@@ -183,6 +183,8 @@ pod 'M13ProgressSuite', '~> 1.2.7'
 
 21 编写一个以iphone5为效果图的字体适配屏幕，兼容iphone6+效果，如果你的效果图不是iphone5,可以修改相应的宏定义，现在是以iphone5为标准
 
+22 编写一个UITableViewCell倒计时功能,实例因为没有服务端接口，所以时间都以本地时间为准，正式项目时间都要从服务端获取；
+
 ## 效果图
 
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/1.png" width=250px height=350px></img>
@@ -198,6 +200,7 @@ pod 'M13ProgressSuite', '~> 1.2.7'
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/11.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/12.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/13.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/14.png" width=250px height=350px></img>
 
 ## 联系方式
 

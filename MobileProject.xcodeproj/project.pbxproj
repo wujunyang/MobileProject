@@ -143,6 +143,12 @@
 		3452EBAB1D1A90DD0001732E /* XAspect-LogAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EBAA1D1A90DD0001732E /* XAspect-LogAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		3452EBAC1D1A90E00001732E /* XAspect-LogAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EBAA1D1A90DD0001732E /* XAspect-LogAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		3452EBAE1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EBAD1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		34683B0F1D4EE93C0041F8A0 /* MPReduceTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34683B0E1D4EE93C0041F8A0 /* MPReduceTimeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34683B101D4EE93C0041F8A0 /* MPReduceTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34683B0E1D4EE93C0041F8A0 /* MPReduceTimeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34683B131D4EEA0D0041F8A0 /* MPReduceTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34683B121D4EEA0D0041F8A0 /* MPReduceTimeCell.m */; settings = {ASSET_TAGS = (); }; };
+		34683B141D4EEA0D0041F8A0 /* MPReduceTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34683B121D4EEA0D0041F8A0 /* MPReduceTimeCell.m */; settings = {ASSET_TAGS = (); }; };
+		34683B231D4F19570041F8A0 /* MPReduceTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34683B221D4F19570041F8A0 /* MPReduceTimeModel.m */; settings = {ASSET_TAGS = (); }; };
+		34683B241D4F19570041F8A0 /* MPReduceTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34683B221D4F19570041F8A0 /* MPReduceTimeModel.m */; settings = {ASSET_TAGS = (); }; };
 		34799A5F1CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; settings = {ASSET_TAGS = (); }; };
 		34799A601CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; settings = {ASSET_TAGS = (); }; };
 		34799A611CD34C5A003518C5 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5C1CD34C5A003518C5 /* UICKeyChainStore.m */; settings = {ASSET_TAGS = (); }; };
@@ -917,6 +923,13 @@
 		3452EB8A1D1A8BF00001732E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3452EBAA1D1A90DD0001732E /* XAspect-LogAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-LogAppDelegate.m"; sourceTree = "<group>"; };
 		3452EBAD1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-GeTuiAppDelegate.m"; sourceTree = "<group>"; };
+		34683B0D1D4EE93C0041F8A0 /* MPReduceTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPReduceTimeViewController.h; sourceTree = "<group>"; };
+		34683B0E1D4EE93C0041F8A0 /* MPReduceTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPReduceTimeViewController.m; sourceTree = "<group>"; };
+		34683B111D4EEA0D0041F8A0 /* MPReduceTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPReduceTimeCell.h; sourceTree = "<group>"; };
+		34683B121D4EEA0D0041F8A0 /* MPReduceTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPReduceTimeCell.m; sourceTree = "<group>"; };
+		34683B161D4EEAF90041F8A0 /* MPEnumerateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEnumerateHeader.h; sourceTree = "<group>"; };
+		34683B211D4F19570041F8A0 /* MPReduceTimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPReduceTimeModel.h; sourceTree = "<group>"; };
+		34683B221D4F19570041F8A0 /* MPReduceTimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPReduceTimeModel.m; sourceTree = "<group>"; };
 		346FEC671D13C91400F4EAB8 /* MBTargetConfigContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBTargetConfigContants.h; sourceTree = "<group>"; };
 		34799A591CD34C5A003518C5 /* FCUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCUUID.h; sourceTree = "<group>"; };
 		34799A5A1CD34C5A003518C5 /* FCUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCUUID.m; sourceTree = "<group>"; };
@@ -2079,6 +2092,7 @@
 				341093FF1D0E86DC00A8D63F /* MBConstants.h */,
 				34A9A3401D104AB4006E6987 /* NotificationContants.h */,
 				346FEC671D13C91400F4EAB8 /* MBTargetConfigContants.h */,
+				34683B161D4EEAF90041F8A0 /* MPEnumerateHeader.h */,
 			);
 			name = "Const(常量)";
 			path = Const;
@@ -3577,6 +3591,8 @@
 				341C07DD1D41FD8E00FF905C /* MPUploadWithPropressViewController.m */,
 				3403847A1D47559A00E4A496 /* MPAdaptationFontViewController.h */,
 				3403847B1D47559A00E4A496 /* MPAdaptationFontViewController.m */,
+				34683B0D1D4EE93C0041F8A0 /* MPReduceTimeViewController.h */,
+				34683B0E1D4EE93C0041F8A0 /* MPReduceTimeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3590,6 +3606,8 @@
 				34E9D84E1C59DD2800E98C2A /* BaiDuCoordinateModel.m */,
 				3400E4C91D35F0CE0056B673 /* MPLKDBUserModel.h */,
 				3400E4CA1D35F0CE0056B673 /* MPLKDBUserModel.m */,
+				34683B211D4F19570041F8A0 /* MPReduceTimeModel.h */,
+				34683B221D4F19570041F8A0 /* MPReduceTimeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -3599,6 +3617,8 @@
 			children = (
 				3403847E1D47567900E4A496 /* MPAdaptationCell.h */,
 				3403847F1D47567900E4A496 /* MPAdaptationCell.m */,
+				34683B111D4EEA0D0041F8A0 /* MPReduceTimeCell.h */,
+				34683B121D4EEA0D0041F8A0 /* MPReduceTimeCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4015,6 +4035,7 @@
 				34E08A6A1C3BFB90005C6CA3 /* UIScrollView+Pages.m in Sources */,
 				34E08A6B1C3BFB90005C6CA3 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				342A8FA91D3F1D8B000C7B98 /* UINavigationController+StackManager.m in Sources */,
+				34683B141D4EEA0D0041F8A0 /* MPReduceTimeCell.m in Sources */,
 				34E08A6C1C3BFB90005C6CA3 /* NSObject+AssociatedObject.m in Sources */,
 				34E08A6D1C3BFB90005C6CA3 /* UIView+ViewController.m in Sources */,
 				34E08A6E1C3BFB90005C6CA3 /* UIViewController+BackButtonItemTitle.m in Sources */,
@@ -4200,6 +4221,8 @@
 				340D87A61D3F7079003D9C88 /* MPImageCollectionCell.m in Sources */,
 				34E08B181C3BFB90005C6CA3 /* UIView+GestureCallback.m in Sources */,
 				34E08B191C3BFB90005C6CA3 /* NSURL+Param.m in Sources */,
+				34683B101D4EE93C0041F8A0 /* MPReduceTimeViewController.m in Sources */,
+				34683B241D4F19570041F8A0 /* MPReduceTimeModel.m in Sources */,
 				34EC806D1C472BF100C7E40A /* HomeViewController.m in Sources */,
 				34E08B1A1C3BFB90005C6CA3 /* UIImageView+GeometryConversion.m in Sources */,
 				34E08B1B1C3BFB90005C6CA3 /* UIView+Debug.m in Sources */,
@@ -4377,6 +4400,7 @@
 				34E893DE1C3B9A03001327C8 /* UIDevice+PasscodeStatus.m in Sources */,
 				34E891271C3B92AA001327C8 /* UIScrollView+MJExtension.m in Sources */,
 				34E893C71C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.m in Sources */,
+				34683B0F1D4EE93C0041F8A0 /* MPReduceTimeViewController.m in Sources */,
 				341C07E41D421F2800FF905C /* MPImageProgressCollectionCell.m in Sources */,
 				3400E4B31D35E1500056B673 /* JRSwizzle.m in Sources */,
 				34E893B21C3B9A03001327C8 /* NSTimer+Addition.m in Sources */,
@@ -4389,6 +4413,7 @@
 				340D87A91D3F70E3003D9C88 /* MPImageUploadCell.m in Sources */,
 				34E894191C3B9A03001327C8 /* UITextField+History.m in Sources */,
 				342A8FA81D3F1D8B000C7B98 /* UINavigationController+StackManager.m in Sources */,
+				34683B131D4EEA0D0041F8A0 /* MPReduceTimeCell.m in Sources */,
 				34E893E31C3B9A03001327C8 /* UIImage+animatedGIF.m in Sources */,
 				341094021D0E982100A8D63F /* JSPatchViewController.m in Sources */,
 				34E9D84F1C59DD2800E98C2A /* BaiDuCoordinateModel.m in Sources */,
@@ -4550,6 +4575,7 @@
 				34E893661C3B9A03001327C8 /* NSManagedObjectContext+Fetching.m in Sources */,
 				34E893771C3B9A03001327C8 /* NSDate+Extension.m in Sources */,
 				34E08A5D1C3BEEF2005C6CA3 /* MyFileLogger.m in Sources */,
+				34683B231D4F19570041F8A0 /* MPReduceTimeModel.m in Sources */,
 				3400E4C71D35F0690056B673 /* MPLkdbViewController.m in Sources */,
 				34E894971C3B9FC1001327C8 /* QBAssetsCollectionFooterView.m in Sources */,
 				34E893871C3B9A03001327C8 /* NSFileManager+Paths.m in Sources */,

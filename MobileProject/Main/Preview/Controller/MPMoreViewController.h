@@ -15,6 +15,7 @@
 #import "MPUploadWithPropressViewController.h"
 #import "MPAdaptationFontViewController.h"
 #import "LoggerViewController.h"
+#import "MPReduceTimeViewController.h"
 
 @interface MPMoreViewController : UIViewController
 
