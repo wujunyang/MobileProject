@@ -71,7 +71,7 @@
     MPReduceTimeCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MPReduceTimeCell class]) forIndexPath:indexPath];
     MPReduceTimeModel *model=self.dataMutableArray[indexPath.row];
     [cell configCellWithImage:model.imageName name:model.name];
-    NSInteger seconders=[self getCurrentSecondsWithServerDate:self.server_DateTime start_date:model.date];
+    NSInteger seconders=[[[self.totalLastTime objectAtIndex:indexPath.row] objectForKey:@"lastTime"]integerValue];
     [cell configCellState:seconders>0?MPReduceTimeStateIng:MPReduceTimeStateEnd currentTime:[self lessSecondToDay:seconders]];
     return cell;
 }
