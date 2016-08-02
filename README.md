@@ -186,6 +186,8 @@ pod 'WebViewJavascriptBridge', '~> 5.0'
 
 22 编写一个UITableViewCell倒计时功能,实例因为没有服务端接口，所以时间都以本地时间为准，正式项目时间都要从服务端获取；
 
+23 引入WebViewJavascriptBridge进行H5交互，并对官网实例进行注解
+
 ## 效果图
 
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/1.png" width=250px height=350px></img>
@@ -202,6 +204,8 @@ pod 'WebViewJavascriptBridge', '~> 5.0'
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/12.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/13.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/14.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/15.png" width=250px height=350px></img>
+
 
 ## 联系方式
 
