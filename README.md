@@ -1,6 +1,6 @@
 ## MobileProject介绍![Platform info](http://img.shields.io/cocoapods/p/YTKNetwork.svg?style=flat)
 
-MobileProject项目是一个以MVC模式搭建的开源功能集合，基于Objective-C上面进行编写，意在解决新项目对于常见功能模块的重复开发，MobileProject对于项目的搭建也进行很明确的划分，各个模块职责也比较明确，MobileProject也引入的一些常用第三方插件、宏定义、工具帮助类等；整个项目也是在不断更新跟维护中，功能点也会不断更新；是代码支持iOS7以后版本；
+MobileProject项目是一个以MVC模式搭建的开源功能集合，基于Objective-C上面进行编写，意在解决新项目对于常见功能模块的重复开发，MobileProject对于项目的搭建也进行很明确的划分，各个模块职责也比较明确，MobileProject也引入的一些常用第三方插件、宏定义、工具帮助类等；整个项目也是在不断更新跟维护中，功能点也会不断更新；代码支持iOS7以后版本；
 
 
 ## MobileProject模块简介
@@ -132,6 +132,7 @@ pod 'LBXScan','~> 1.1.1'
 pod 'MBProgressHUD', '~> 0.9'
 pod 'MWPhotoBrowser'
 pod 'M13ProgressSuite', '~> 1.2.7'
+pod 'WebViewJavascriptBridge', '~> 5.0'
 ```
 
 
