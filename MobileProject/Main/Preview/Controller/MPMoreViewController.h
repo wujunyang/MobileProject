@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+#import "UIView+Extension.h"
 #import "JSPatchViewController.h"
 #import "MPLkdbViewController.h"
 #import "BaiDuMapViewController.h"
@@ -17,7 +19,9 @@
 #import "LoggerViewController.h"
 #import "MPReduceTimeViewController.h"
 #import "MPWebViewController.h"
+#import "MPChildrenViewController.h"
+#import "MPBlankPageViewController.h"
 
-@interface MPMoreViewController : UIViewController
+@interface MPMoreViewController : BaseViewController
 
 @end

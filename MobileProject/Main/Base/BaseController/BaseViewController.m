@@ -14,7 +14,6 @@
     CGFloat navBarY;
     CGFloat verticalY;
     BOOL _isShowMenu;
-    
 }
 @property CGFloat original_height;
 @property(nonatomic ,strong)UIView *overlay;
@@ -30,8 +29,6 @@
         [self.navigationController setNavigationBarHidden:YES];
         navBarY = 0;
         navigationY = 0;
-        
-        
     }
     return self;
 }
@@ -60,10 +57,6 @@
     if (![self rightButton]) {
         [self configRightBaritemWithImage];
     }
-    
-    //去掉系统自带的黑边
-    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
 }
 
 
@@ -87,6 +80,26 @@
         self.overlay.backgroundColor = backgroundColor;
         
     }
+    
+    UIImageView* blackLineImageView = [self findHairlineImageViewUnder:self.navigationController.navigationBar];
+    if ([self respondsToSelector:@selector(hideNavigationBottomLine)]) {
+        if ([self hideNavigationBottomLine]) {
+            //去掉系统自带的黑边
+
+            //隐藏黑线
+            blackLineImageView.hidden = YES;
+        }
+        else
+        {
+            //显示黑线
+            blackLineImageView.hidden = NO;
+        }
+    }
+    else
+    {
+        //显示黑线
+        blackLineImageView.hidden = NO;
+    }
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -106,23 +119,21 @@
 
 -(void)set_Title:(NSMutableAttributedString *)title
 {
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 120, 44)];
-    label.numberOfLines=0;//可能出现多行的标题
-    [label setAttributedText:title];
-    label.textAlignment = NSTextAlignmentCenter;
-    label.backgroundColor = [UIColor clearColor];
-    label.userInteractionEnabled = YES;
+    UILabel *navTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 120, 44)];
+    navTitleLabel.numberOfLines=0;//可能出现多行的标题
+    [navTitleLabel setAttributedText:title];
+    navTitleLabel.textAlignment = NSTextAlignmentCenter;
+    navTitleLabel.backgroundColor = [UIColor clearColor];
+    navTitleLabel.userInteractionEnabled = YES;
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(titleClick:)];
-    [label addGestureRecognizer:tap];
-    self.navigationItem.titleView = label;
-    
+    [navTitleLabel addGestureRecognizer:tap];
+    self.navigationItem.titleView = navTitleLabel;
 }
 
 
 -(void)titleClick:(UIGestureRecognizer*)Tap
 {
-    
     UIView *view = Tap.view;
     if ([self respondsToSelector:@selector(title_click_event:)]) {
         [self title_click_event:view];
@@ -197,12 +208,8 @@
                                                                     self.navigationController.navigationBar.frame.origin.x,
                                                                     navigationY,
                                                                     self.navigationController.navigationBar.frame.size.width,
-                                                                    self.navigationController.navigationBar.frame.size.height-offset
+                                                                    offset
                                                                     );
-        verticalY = verticalY+offset;
-        [self.navigationItem.leftBarButtonItem setBackgroundVerticalPositionAdjustment:verticalY forBarMetrics:UIBarMetricsDefault];
-        [self.navigationItem.rightBarButtonItem setBackgroundVerticalPositionAdjustment:verticalY forBarMetrics:UIBarMetricsDefault];
-        
     }];
     
 }
@@ -217,6 +224,22 @@
     for (UIView *subview in self.navigationController.navigationBar.subviews) {
         subview.alpha = alpha;
     }
+}
+
+//找查到Nav底部的黑线
+- (UIImageView *)findHairlineImageViewUnder:(UIView *)view
+{
+    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0)
+    {
+        return (UIImageView *)view;
+    }
+    for (UIView *subview in view.subviews) {
+        UIImageView *imageView = [self findHairlineImageViewUnder:subview];
+        if (imageView) {
+            return imageView;
+        }
+    }
+    return nil;
 }
 
 @end

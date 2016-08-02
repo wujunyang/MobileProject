@@ -145,6 +145,12 @@
 		34683B141D4EEA0D0041F8A0 /* MPReduceTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34683B121D4EEA0D0041F8A0 /* MPReduceTimeCell.m */; settings = {ASSET_TAGS = (); }; };
 		34683B231D4F19570041F8A0 /* MPReduceTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34683B221D4F19570041F8A0 /* MPReduceTimeModel.m */; settings = {ASSET_TAGS = (); }; };
 		34683B241D4F19570041F8A0 /* MPReduceTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34683B221D4F19570041F8A0 /* MPReduceTimeModel.m */; settings = {ASSET_TAGS = (); }; };
+		346BBF611D50C3940048DB05 /* UIView+EaseBlankPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 342582631D3736DA003906BB /* UIView+EaseBlankPage.m */; settings = {ASSET_TAGS = (); }; };
+		346BBF621D50C5300048DB05 /* blankpage_button_reload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342582581D3734C4003906BB /* blankpage_button_reload@2x.png */; settings = {ASSET_TAGS = (); }; };
+		346BBF631D50C5320048DB05 /* blankpage_image_loadFail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342582591D3734C4003906BB /* blankpage_image_loadFail@2x.png */; settings = {ASSET_TAGS = (); }; };
+		346BBF641D50C5350048DB05 /* blankpage_image_loadFail@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3425825A1D3734C4003906BB /* blankpage_image_loadFail@3x.png */; settings = {ASSET_TAGS = (); }; };
+		346BBF651D50C5370048DB05 /* blankpage_image_Sleep@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3425825B1D3734C4003906BB /* blankpage_image_Sleep@2x.png */; settings = {ASSET_TAGS = (); }; };
+		346BBF661D50C5390048DB05 /* blankpage_image_Sleep@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3425825C1D3734C4003906BB /* blankpage_image_Sleep@3x.png */; settings = {ASSET_TAGS = (); }; };
 		34799A5F1CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; settings = {ASSET_TAGS = (); }; };
 		34799A601CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; settings = {ASSET_TAGS = (); }; };
 		34799A611CD34C5A003518C5 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5C1CD34C5A003518C5 /* UICKeyChainStore.m */; settings = {ASSET_TAGS = (); }; };
@@ -780,6 +786,12 @@
 		34F9A8C01D4FA00600C2DEA5 /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 34F9A8BF1D4FA00600C2DEA5 /* demo.js */; settings = {ASSET_TAGS = (); }; };
 		34F9A8C21D4FA13700C2DEA5 /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = 34F9A8C11D4FA13700C2DEA5 /* ExampleApp.html */; settings = {ASSET_TAGS = (); }; };
 		34F9A8C31D4FA15100C2DEA5 /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = 34F9A8C11D4FA13700C2DEA5 /* ExampleApp.html */; };
+		34FA475E1D50961600D5B729 /* MPChildrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA475D1D50961600D5B729 /* MPChildrenViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FA475F1D50961600D5B729 /* MPChildrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA475D1D50961600D5B729 /* MPChildrenViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FA47621D50A61200D5B729 /* MPBlankPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FA47631D50A61200D5B729 /* MPBlankPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FD22861D50813300096706 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD22851D50813300096706 /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		34FD22871D50813300096706 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD22851D50813300096706 /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
 		34FFA1F21D49128100A7C342 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFA1F11D49128100A7C342 /* NSString+Additions.m */; settings = {ASSET_TAGS = (); }; };
 		34FFA1F31D49128100A7C342 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFA1F11D49128100A7C342 /* NSString+Additions.m */; settings = {ASSET_TAGS = (); }; };
 		9014C40DD45909D3FC1F2EBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 533C667C4AE7D52B4A1E63C2 /* libPods.a */; };
@@ -1559,6 +1571,12 @@
 		34F9A8971D4F735500C2DEA5 /* MPWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPWebViewController.m; sourceTree = "<group>"; };
 		34F9A8BF1D4FA00600C2DEA5 /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		34F9A8C11D4FA13700C2DEA5 /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
+		34FA475C1D50961600D5B729 /* MPChildrenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPChildrenViewController.h; sourceTree = "<group>"; };
+		34FA475D1D50961600D5B729 /* MPChildrenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPChildrenViewController.m; sourceTree = "<group>"; };
+		34FA47601D50A61200D5B729 /* MPBlankPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBlankPageViewController.h; sourceTree = "<group>"; };
+		34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBlankPageViewController.m; sourceTree = "<group>"; };
+		34FD22841D50813300096706 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		34FD22851D50813300096706 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		34FFA1F01D49128100A7C342 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		34FFA1F11D49128100A7C342 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		533C667C4AE7D52B4A1E63C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1866,6 +1884,8 @@
 				3403B0BD1D367954007CD7EF /* UITextField+Extension.m */,
 				34FFA1F01D49128100A7C342 /* NSString+Additions.h */,
 				34FFA1F11D49128100A7C342 /* NSString+Additions.m */,
+				34FD22841D50813300096706 /* UIView+Extension.h */,
+				34FD22851D50813300096706 /* UIView+Extension.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -3596,6 +3616,10 @@
 				34683B0E1D4EE93C0041F8A0 /* MPReduceTimeViewController.m */,
 				34F9A8961D4F735500C2DEA5 /* MPWebViewController.h */,
 				34F9A8971D4F735500C2DEA5 /* MPWebViewController.m */,
+				34FA475C1D50961600D5B729 /* MPChildrenViewController.h */,
+				34FA475D1D50961600D5B729 /* MPChildrenViewController.m */,
+				34FA47601D50A61200D5B729 /* MPBlankPageViewController.h */,
+				34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3857,6 +3881,7 @@
 				34F9A8C31D4FA15100C2DEA5 /* ExampleApp.html in Resources */,
 				340BCD311D0F016D0093CC7D /* Placeholder in Resources */,
 				340BCD461D0F01B80093CC7D /* Placeholder in Resources */,
+				346BBF621D50C5300048DB05 /* blankpage_button_reload@2x.png in Resources */,
 				34E08B9D1C3BFB90005C6CA3 /* LaunchScreen.storyboard in Resources */,
 				34E08B9F1C3BFB90005C6CA3 /* Assets.xcassets in Resources */,
 				340BCD681D0F039E0093CC7D /* Placeholder in Resources */,
@@ -3876,13 +3901,17 @@
 				34E08BA31C3BFB90005C6CA3 /* File.strings in Resources */,
 				340BCD431D0F01AF0093CC7D /* Placeholder in Resources */,
 				340BCD521D0F01E50093CC7D /* Placeholder in Resources */,
+				346BBF631D50C5320048DB05 /* blankpage_image_loadFail@2x.png in Resources */,
 				340BCD551D0F01ED0093CC7D /* Placeholder in Resources */,
 				340BCD3D1D0F019B0093CC7D /* Placeholder in Resources */,
 				34E08BA41C3BFB90005C6CA3 /* MJPhotoBrowser.bundle in Resources */,
+				346BBF661D50C5390048DB05 /* blankpage_image_Sleep@3x.png in Resources */,
 				340BCD281D0F014B0093CC7D /* Placeholder in Resources */,
 				34E08BA51C3BFB90005C6CA3 /* QBImagePickerController.strings in Resources */,
+				346BBF651D50C5370048DB05 /* blankpage_image_Sleep@2x.png in Resources */,
 				340BCD2B1D0F01570093CC7D /* Placeholder in Resources */,
 				340BCD651D0F03930093CC7D /* Placeholder in Resources */,
+				346BBF641D50C5350048DB05 /* blankpage_image_loadFail@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4230,6 +4259,7 @@
 				34683B241D4F19570041F8A0 /* MPReduceTimeModel.m in Sources */,
 				34EC806D1C472BF100C7E40A /* HomeViewController.m in Sources */,
 				34E08B1A1C3BFB90005C6CA3 /* UIImageView+GeometryConversion.m in Sources */,
+				346BBF611D50C3940048DB05 /* UIView+EaseBlankPage.m in Sources */,
 				34E08B1B1C3BFB90005C6CA3 /* UIView+Debug.m in Sources */,
 				34E08B1C1C3BFB90005C6CA3 /* NSArray+Block.m in Sources */,
 				34E08B1E1C3BFB90005C6CA3 /* NSDate+Utilities.m in Sources */,
@@ -4269,6 +4299,7 @@
 				34E08B3A1C3BFB90005C6CA3 /* UIWebView+Style.m in Sources */,
 				34E08B3B1C3BFB90005C6CA3 /* NSDictionary+XML.m in Sources */,
 				34E08B3C1C3BFB90005C6CA3 /* NSNumber+CGFloat.m in Sources */,
+				34FA475F1D50961600D5B729 /* MPChildrenViewController.m in Sources */,
 				34E08B3F1C3BFB90005C6CA3 /* NSString+Ruby.m in Sources */,
 				34E08B401C3BFB90005C6CA3 /* UISplitViewController+QuickAccess.m in Sources */,
 				34E08B421C3BFB90005C6CA3 /* NSURL+QueryDictionary.m in Sources */,
@@ -4298,6 +4329,7 @@
 				34E08B551C3BFB90005C6CA3 /* MJPhotoBrowser.m in Sources */,
 				34A14EE41D40974100ACCCCC /* MPUploadImageService.m in Sources */,
 				34E08B561C3BFB90005C6CA3 /* NetworkUnit.m in Sources */,
+				34FD22871D50813300096706 /* UIView+Extension.m in Sources */,
 				34E08B571C3BFB90005C6CA3 /* NSException+Trace.m in Sources */,
 				34E08B581C3BFB90005C6CA3 /* UILabel+SuggestSize.m in Sources */,
 				34E08B591C3BFB90005C6CA3 /* NSDictionary+Block.m in Sources */,
@@ -4363,6 +4395,7 @@
 				34EC96211C58A5BB00985444 /* UMengSocialViewController.m in Sources */,
 				34E08B8A1C3BFB90005C6CA3 /* UIFont+WDCustomLoader.m in Sources */,
 				34E08B8B1C3BFB90005C6CA3 /* MJRefreshFooter.m in Sources */,
+				34FA47631D50A61200D5B729 /* MPBlankPageViewController.m in Sources */,
 				341C07E91D421F5600FF905C /* MPImageUploadProgressCell.m in Sources */,
 				34E08B8C1C3BFB90005C6CA3 /* UIButton+Block.m in Sources */,
 				340BCD1C1D0EFF3B0093CC7D /* MPRequstFailedHelper.m in Sources */,
@@ -4531,6 +4564,7 @@
 				34E8911F1C3B92AA001327C8 /* MJRefreshBackGifFooter.m in Sources */,
 				34E8941E1C3B9A03001327C8 /* UITextView+Select.m in Sources */,
 				34E891241C3B92AA001327C8 /* MJRefreshStateHeader.m in Sources */,
+				34FA47621D50A61200D5B729 /* MPBlankPageViewController.m in Sources */,
 				34E891421C3B9739001327C8 /* YTKChainRequest.m in Sources */,
 				34E893701C3B9A03001327C8 /* NSData+Base64.m in Sources */,
 				34E894911C3B9FC1001327C8 /* MJPhotoLoadingView.m in Sources */,
@@ -4670,6 +4704,7 @@
 				34E8938C1C3B9A03001327C8 /* NSNotificationCenter+MainThread.m in Sources */,
 				34E893EA1C3B9A03001327C8 /* UIImage+GIF.m in Sources */,
 				34E8936D1C3B9A03001327C8 /* NSArray+SafeAccess.m in Sources */,
+				34FD22861D50813300096706 /* UIView+Extension.m in Sources */,
 				340242DF1D16F98700ECD131 /* MPLoggerFormatter.m in Sources */,
 				34E894071C3B9A03001327C8 /* UIResponder+Chain.m in Sources */,
 				34E8939E1C3B9A03001327C8 /* NSSet+Block.m in Sources */,
@@ -4727,6 +4762,7 @@
 				34E8939D1C3B9A03001327C8 /* NSRunLoop+PerformBlock.m in Sources */,
 				34E894171C3B9A03001327C8 /* UITableViewCell+TS_delaysContentTouches.m in Sources */,
 				34E893C31C3B9A03001327C8 /* CATransaction+AnimateWithDuration.m in Sources */,
+				34FA475E1D50961600D5B729 /* MPChildrenViewController.m in Sources */,
 				34E893901C3B9A03001327C8 /* NSNumber+RomanNumerals.m in Sources */,
 				34E893CF1C3B9A03001327C8 /* UIButton+BackgroundColor.m in Sources */,
 				34E893A01C3B9A03001327C8 /* NSString+Base64.m in Sources */,

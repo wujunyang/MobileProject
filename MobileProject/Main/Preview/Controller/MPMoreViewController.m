@@ -26,9 +26,13 @@
     self.navigationItem.title=@"功能导航";
 
     if (!self.dataArray) {
-        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传",@"照片上传附带进度",@"字体适配机型",@"日志记录",@"列表倒计时",@"H5交互WebViewJavascriptBridge"];
+        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传",@"照片上传附带进度",@"字体适配机型",@"日志记录",@"列表倒计时",@"H5交互WebViewJavascriptBridge",@"继承BaseViewController运用",@"列表空白页展现"];
     }
+    
+    //弹出提示
+    [self showNewStatusesCount:self.dataArray.count];
 
+    //初始化表格
     if (!_myTableView) {
         _myTableView                                = [[UITableView alloc] initWithFrame:CGRectMake(0,0.5, Main_Screen_Width, Main_Screen_Height) style:UITableViewStylePlain];
         _myTableView.showsVerticalScrollIndicator   = NO;
@@ -134,10 +138,78 @@
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
+        case 10:
+        {
+            MPChildrenViewController *vc=[[MPChildrenViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 11:
+        {
+            MPBlankPageViewController *vc=[[MPBlankPageViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
         default:
             break;
     }
 }
 
+
+#pragma mark 自定义代码
+
+- (void)showNewStatusesCount:(int)count
+{
+    // 1.创建一个UILabel
+    UILabel *label = [[UILabel alloc] init];
+    label.font = [UIFont systemFontOfSize:12];
+    
+    // 2.显示文字
+    if (count) {
+        label.text = [NSString stringWithFormat:@"共有%d条实例数据", count];
+    } else {
+        label.text = @"没有最新的数据";
+    }
+    
+    // 3.设置背景
+    label.backgroundColor = [UIColor colorWithRed:254/255.0  green:129/255.0 blue:0 alpha:1.0];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor whiteColor];
+    
+    // 4.设置frame
+    label.width = self.view.frame.size.width;
+    label.height = 35;
+    label.x = 0;
+    label.y = CGRectGetMaxY([self.navigationController navigationBar].frame) - label.frame.size.height;
+    
+    // 5.添加到导航控制器的view
+    //[self.navigationController.view addSubview:label];
+    [self.navigationController.view insertSubview:label belowSubview:self.navigationController.navigationBar];
+    
+    // 6.动画
+    CGFloat duration = 0.75;
+    //label.alpha = 0.0;
+    [UIView animateWithDuration:duration animations:^{
+        // 往下移动一个label的高度
+        label.transform = CGAffineTransformMakeTranslation(0, label.frame.size.height);
+        //label.alpha = 1.0;
+    } completion:^(BOOL finished) { // 向下移动完毕
+        
+        // 延迟delay秒后，再执行动画
+        CGFloat delay = 1.0;
+        
+        [UIView animateWithDuration:duration delay:delay options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            
+            // 恢复到原来的位置
+            label.transform = CGAffineTransformIdentity;
+            //label.alpha = 0.0;
+            
+        } completion:^(BOOL finished) {
+            
+            // 删除控件
+            [label removeFromSuperview];
+        }];
+    }];
+}
 
 @end

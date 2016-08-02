@@ -10,7 +10,7 @@
 #import "MPImageProgressCollectionCell.h"
 #import "MPImageItemModel.h"
 #import "MPUploadImageHelper.h"
-#import "UIView+Frame.h"
+#import "UIView+Extension.h"
 #import "UIView+ViewController.h"
 
 

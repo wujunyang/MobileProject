@@ -18,6 +18,7 @@
 -(CGFloat)set_navigationHeight;
 -(UIView*)set_bottomView;
 -(UIImage*)navBackgroundImage;
+-(BOOL)hideNavigationBottomLine;
 -(UIImage*)set_leftBarButtonItemWithImage;
 -(UIImage*)set_rightBarButtonItemWithImage;
 @end
@@ -34,7 +35,6 @@
 @interface BaseViewController : UIViewController<BBBaseViewControllerDataSource , BBBaseViewControllerDelegate>
 
 -(void)setContentAlpha:(CGFloat)alpha;
--(void)changeNavigationBarHeight:(CGFloat)offset;
 -(void)changeNavigationBarTranslationY:(CGFloat)translationY;
 -(void)set_Title:(NSMutableAttributedString *)title;
 @end

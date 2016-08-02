@@ -34,7 +34,6 @@
     //    文字
     if (!_tipLabel) {
         _tipLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        _tipLabel.backgroundColor = [UIColor clearColor];
         _tipLabel.numberOfLines = 0;
         _tipLabel.font = [UIFont systemFontOfSize:17];
         _tipLabel.textColor = [UIColor lightGrayColor];
