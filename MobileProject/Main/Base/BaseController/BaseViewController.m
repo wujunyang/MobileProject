@@ -82,23 +82,13 @@
     }
     
     UIImageView* blackLineImageView = [self findHairlineImageViewUnder:self.navigationController.navigationBar];
+    //默认显示黑线
+    blackLineImageView.hidden = NO;
     if ([self respondsToSelector:@selector(hideNavigationBottomLine)]) {
         if ([self hideNavigationBottomLine]) {
-            //去掉系统自带的黑边
-
             //隐藏黑线
             blackLineImageView.hidden = YES;
         }
-        else
-        {
-            //显示黑线
-            blackLineImageView.hidden = NO;
-        }
-    }
-    else
-    {
-        //显示黑线
-        blackLineImageView.hidden = NO;
     }
 }
 

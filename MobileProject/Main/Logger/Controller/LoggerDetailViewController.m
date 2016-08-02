@@ -82,27 +82,32 @@
 -(void)sendMailMessage
 {
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
-    if (![MFMailComposeViewController canSendMail]) {
+    if ([MFMailComposeViewController canSendMail]) {
+        mc.mailComposeDelegate = self;
+        [mc setSubject:@"关于错误日志内容"];
+        [mc setToRecipients:[NSArray arrayWithObjects:kMail_cc_ToRecipients_Address, nil]];
+        //设置cc
+        //[mc setCcRecipients:[NSArray arrayWithObject:@"xxxxx@163.com"]];
+        //设置bcc
+        //[mc setBccRecipients:[NSArray arrayWithObject:@"xxxxx@gmail.com"]];
+        //纯文本 如果是带html 可以把isHtml打开
+        [mc setMessageBody:_logText isHTML:YES];
+        
+        //如果有附件
+        //NSString *path = [[NSBundle mainBundle] pathForResource:@"blood_orange"
+        //                                                     ofType:@"png"];
+        //NSData *data = [NSData dataWithContentsOfFile:path];
+        //[mc addAttachmentData:data mimeType:@"image/png" fileName:@"blood_orange"];
+        
+        //在模拟器IOS9都会闪退
+        [self presentViewController:mc animated:YES completion:nil];
+    }
+    else
+    {
         // 在设备还没有添加邮件账户的时候mailViewController为空，下面的present view controller会导致程序崩溃，这里要作出判断
         [MBProgressHUD showMessage:@"设备还没有添加邮件账户,请先增加" ToView:self.view RemainTime:3];
-        return;
     }
-    mc.mailComposeDelegate = self;
-    [mc setSubject:@"关于错误日志内容"];
-    [mc setToRecipients:[NSArray arrayWithObjects:kMail_cc_ToRecipients_Address, nil]];
-    //设置cc
-    //[mc setCcRecipients:[NSArray arrayWithObject:@"xxxxx@163.com"]];
-    //设置bcc
-    //[mc setBccRecipients:[NSArray arrayWithObject:@"xxxxx@gmail.com"]];
-    //纯文本 如果是带html 可以把isHtml打开
-    [mc setMessageBody:_logText isHTML:YES];
-    
-    //如果有附件
-    //NSString *path = [[NSBundle mainBundle] pathForResource:@"blood_orange"
-    //                                                     ofType:@"png"];
-    //NSData *data = [NSData dataWithContentsOfFile:path];
-    //[mc addAttachmentData:data mimeType:@"image/png" fileName:@"blood_orange"];
-    [self presentViewController:mc animated:YES completion:nil];
+
 }
 
 
