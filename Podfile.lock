@@ -47,10 +47,9 @@ PODS:
   - JSPatch (1.1):
     - JSPatch/Core (= 1.1)
   - JSPatch/Core (1.1)
-  - KMCGeigerCounter (0.2.2)
   - LBXScan (1.1.1):
     - ZXingObjC (~> 3.0)
-  - LKDBHelper (2.3.1):
+  - LKDBHelper (2.3.2):
     - FMDB
   - M13ProgressSuite (1.2.7)
   - Masonry (0.6.4)
@@ -77,6 +76,7 @@ PODS:
     - SQLCipher/common
   - UMengAnalytics-NO-IDFA (4.0.5)
   - UMengSocial (4.4)
+  - WebViewJavascriptBridge (5.0.5)
   - XAspect (1.0.5):
     - XAspect/Core (= 1.0.5)
     - XAspect/Macros (= 1.0.5)
@@ -100,7 +100,6 @@ DEPENDENCIES:
   - IQKeyboardManager
   - JSONModel (~> 1.0.1)
   - JSPatch
-  - KMCGeigerCounter
   - LBXScan (~> 1.1.1)
   - LKDBHelper
   - M13ProgressSuite (~> 1.2.7)
@@ -112,6 +111,7 @@ DEPENDENCIES:
   - SDWebImage (~> 3.7.5)
   - UMengAnalytics-NO-IDFA
   - UMengSocial (~> 4.3)
+  - WebViewJavascriptBridge (~> 5.0)
   - XAspect
 
 SPEC CHECKSUMS:
@@ -127,9 +127,8 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
   JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
   JSPatch: ade285ad1d8f06146ed6054a39cef87509453299
-  KMCGeigerCounter: f8cc3c4aa19fc6f8cec168fb03b364b84c118a7a
   LBXScan: dfb4d8ae8e4cff2aa0c9e1771e43954dce1469a9
-  LKDBHelper: 8d140170652a1ceef59247af4fb55e0a0dcd91dc
+  LKDBHelper: 282cb4e56541e8f07d430465700bf2b891837a44
   M13ProgressSuite: 03d194af6359da440641ba758aed5a18b0386a86
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
@@ -140,6 +139,7 @@ SPEC CHECKSUMS:
   SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
   UMengAnalytics-NO-IDFA: 965a219b05475ff2a4c09a164139a27bbaa0e25b
   UMengSocial: aba7296602310385114d82c255539a7bef3b7ab0
+  WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
   XAspect: db50bf487f92dbb8557a7a5365556966c8493af8
   ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
 

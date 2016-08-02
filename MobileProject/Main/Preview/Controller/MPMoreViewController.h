@@ -16,6 +16,7 @@
 #import "MPAdaptationFontViewController.h"
 #import "LoggerViewController.h"
 #import "MPReduceTimeViewController.h"
+#import "MPWebViewController.h"
 
 @interface MPMoreViewController : UIViewController
 

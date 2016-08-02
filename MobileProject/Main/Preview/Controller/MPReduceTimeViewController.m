@@ -55,6 +55,9 @@
     [super didReceiveMemoryWarning];
 }
 
+-(void)viewWillDisappear:(BOOL)animated{
+    [self.timer invalidate];
+}
 
 #pragma mark UITableViewDataSource, UITableViewDelegate相关内容
 

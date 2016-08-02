@@ -94,7 +94,7 @@
 
 //lkdbhelper use
 - (id)modelGetValue:(LKDBProperty*)property;
-- (void)modelSetValue:(LKDBProperty*)property value:(id)value;
+- (void)modelSetValue:(LKDBProperty*)property value:(NSString*)value;
 
 - (id)singlePrimaryKeyValue;
 - (BOOL)singlePrimaryKeyValueIsEmpty;

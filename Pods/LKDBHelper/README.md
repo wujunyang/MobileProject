@@ -27,14 +27,14 @@ Requirements
 If you are using CocoaPods, then, just add this line to your PodFile<br>
 
 ```objective-c
-pod 'LKDBHelper', :head
+pod 'LKDBHelper'
 ```
 
 If you are using Encryption, Order can not be wrong<br>
 
 ```objective-c
-pod 'FMDB/SQLCipher',:head
-pod 'LKDBHelper',:head
+pod 'FMDB/SQLCipher'
+pod 'LKDBHelper'
 ```
 
 @property(strong,nonatomic)NSString* encryptionKey;
@@ -106,7 +106,7 @@ pod 'LKDBHelper',:head
     test.blah = @[@"0",@[@1],@{@"2":@2},foreign];
     test.hoho = @{@"array":test.blah,@"foreign":foreign,@"normal":@123456,@"date":[NSDate date]};
     
-    //异步 插入第一条 数据   Insert the first
+    //同步 插入第一条 数据   Insert the first
     [test saveToDB];
     //or
     //[globalHelper insertToDB:test];

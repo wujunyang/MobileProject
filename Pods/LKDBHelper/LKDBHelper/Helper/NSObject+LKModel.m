@@ -66,7 +66,7 @@ static char LKModelBase_Key_Inserting;
     return [objc_getAssociatedObject(self, &LKModelBase_Key_RowID) integerValue];
 }
 
-- (void)setDb_tableName:(NSString*)db_tableName
+- (void)setDb_tableName:(NSString *)db_tableName
 {
     objc_setAssociatedObject(self, &LKModelBase_Key_TableName, db_tableName, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
@@ -91,12 +91,12 @@ static char LKModelBase_Key_Inserting;
     objc_setAssociatedObject(self, &LKModelBase_Key_Inserting, number, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 #pragma 无关紧要的
-+ (NSString*)getDBImagePathWithName:(NSString*)filename
++ (NSString*)getDBImagePathWithName:(NSString *)filename
 {
     NSString* dir = [NSString stringWithFormat:@"dbimg/%@", NSStringFromClass(self)];
     return [LKDBUtils getPathForDocuments:filename inDir:dir];
 }
-+ (NSString*)getDBDataPathWithName:(NSString*)filename
++ (NSString*)getDBDataPathWithName:(NSString *)filename
 {
     NSString* dir = [NSString stringWithFormat:@"dbdata/%@", NSStringFromClass(self)];
     return [LKDBUtils getPathForDocuments:filename inDir:dir];
@@ -112,7 +112,7 @@ static char LKModelBase_Key_Inserting;
 }
 
 ///get
-- (id)modelGetValue:(LKDBProperty*)property
+- (id)modelGetValue:(LKDBProperty *)property
 {
     id value = [self valueForKey:property.propertyName];
     id returnValue = value;
@@ -180,8 +180,8 @@ static char LKModelBase_Key_Inserting;
         NSData* datas = UIImageJPEGRepresentation(value, 1);
 #else
         [value lockFocus];
-        NSBitmapImageRep* srcImageRep = [NSBitmapImageRep imageRepWithData:[value TIFFRepresentation]];
-        NSData* datas = [srcImageRep representationUsingType:NSJPEGFileType properties:@{}];
+        NSBitmapImageRep *srcImageRep = [NSBitmapImageRep imageRepWithData:[value TIFFRepresentation]];
+        NSData *datas = [srcImageRep representationUsingType:NSJPEGFileType properties:@{}];
         [value unlockFocus];
 #endif
         [datas writeToFile:[self.class getDBImagePathWithName:filename]
@@ -192,11 +192,14 @@ static char LKModelBase_Key_Inserting;
     else if ([value isKindOfClass:[NSData class]]) {
         long random = arc4random();
         long date = [[NSDate date] timeIntervalSince1970];
-        NSString* filename = [NSString stringWithFormat:@"data%ld%ld", date & 0xFFFFF, random & 0xFFF];
+        NSString *filename = [NSString stringWithFormat:@"data%ld%ld", date & 0xFFFFF, random & 0xFFF];
 
         [value writeToFile:[self.class getDBDataPathWithName:filename] atomically:YES];
 
         returnValue = filename;
+    }
+    else if ([value isKindOfClass:[NSURL class]]) {
+        returnValue = [value absoluteString];
     }
     else {
         if ([value isKindOfClass:[NSArray class]]) {
@@ -215,7 +218,7 @@ static char LKModelBase_Key_Inserting;
 }
 
 ///set
-- (void)modelSetValue:(LKDBProperty*)property value:(id)value
+- (void)modelSetValue:(LKDBProperty *)property value:(NSString *)value
 {
     ///参试获取属性的Class
     Class columnClass = NSClassFromString(property.propertyType);
@@ -224,8 +227,7 @@ static char LKModelBase_Key_Inserting;
 
     if (columnClass == nil) {
         ///当找不到 class 时，就是 基础类型 int,float CGRect 之类的
-
-        NSString* columnType = property.propertyType;
+        NSString *columnType = property.propertyType;
         if ([LKSQL_Convert_FloatType rangeOfString:columnType].location != NSNotFound) {
             modelValue = [[LKDBUtils numberFormatter] numberFromString:value];
         }
@@ -272,7 +274,7 @@ static char LKModelBase_Key_Inserting;
             modelValue = [NSNumber numberWithInt:0];
         }
     }
-    else if ([value length] == 0) {
+    else if (!value || ![value isKindOfClass:[NSString class]] || ![value length]) {
         //为了不继续遍历
     }
     else if ([columnClass isSubclassOfClass:[NSString class]]) {
@@ -292,41 +294,37 @@ static char LKModelBase_Key_Inserting;
         }
     }
     else if ([columnClass isSubclassOfClass:[LKDBColor class]]) {
-        NSString* color = value;
-        NSArray* array = [color componentsSeparatedByString:@","];
+        NSString *colorString = value;
+        NSArray *array = [colorString componentsSeparatedByString:@","];
         float r, g, b, a;
         r = [[array objectAtIndex:0] floatValue];
         g = [[array objectAtIndex:1] floatValue];
         b = [[array objectAtIndex:2] floatValue];
         a = [[array objectAtIndex:3] floatValue];
-
+        
         modelValue = [LKDBColor colorWithRed:r green:g blue:b alpha:a];
     }
     else if ([columnClass isSubclassOfClass:[LKDBImage class]]) {
-        NSString* filename = value;
-        NSString* filepath = [self.class getDBImagePathWithName:filename];
+        NSString *filename = value;
+        NSString *filepath = [self.class getDBImagePathWithName:filename];
         if ([LKDBUtils isFileExists:filepath]) {
-            LKDBImage* img = [[LKDBImage alloc] initWithContentsOfFile:filepath];
-            modelValue = img;
-        }
-        else {
-            modelValue = nil;
+            modelValue = [[LKDBImage alloc] initWithContentsOfFile:filepath];
         }
     }
     else if ([columnClass isSubclassOfClass:[NSData class]]) {
-        NSString* filename = value;
-        NSString* filepath = [self.class getDBDataPathWithName:filename];
+        NSString *filename = value;
+        NSString *filepath = [self.class getDBDataPathWithName:filename];
         if ([LKDBUtils isFileExists:filepath]) {
-            NSData* data = [NSData dataWithContentsOfFile:filepath];
-            modelValue = data;
+            modelValue = [NSData dataWithContentsOfFile:filepath];
         }
-        else {
-            modelValue = nil;
-        }
+    }
+    else if ([columnClass isSubclassOfClass:[NSURL class]]) {
+        NSString *urlString = value;
+        modelValue = [NSURL URLWithString:urlString];
     }
     else {
         modelValue = [self db_modelWithJsonValue:value];
-        if ([modelValue isKindOfClass:columnClass] == NO) {
+        if (![modelValue isKindOfClass:columnClass]) {
             modelValue = nil;
         }
     }
@@ -425,7 +423,7 @@ static char LKModelBase_Key_Inserting;
         jsonObject = [self db_readInfoWithModel:model class:clazz];
     }
     else {
-        if (model.db_inserting == NO && [clazz getModelInfos] > 0) {
+        if (model.db_inserting == NO && [clazz getModelInfos].count > 0) {
             BOOL success = [model saveToDB];
             if (success) {
                 jsonObject = [self db_readInfoWithModel:model class:clazz];
