@@ -17,19 +17,7 @@
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor grayColor];
     
-    UILabel *myLabel=[[UILabel alloc]init];
-    myLabel.font=CHINESE_SYSTEM(15);
-    myLabel.numberOfLines=0;
-    [myLabel sizeToFit];
-    myLabel.text=@"项目中可以让所有的页面都继承BaseViewController，可以重写它一些关于Nav的内容，不必要时可不重写，就不会有效果展现，以后也可以做统一处理";
-    myLabel.textAlignment=NSTextAlignmentCenter;
-    myLabel.textColor=[UIColor whiteColor];
-    [self.view addSubview:myLabel];
-    [myLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(0);
-        make.left.mas_equalTo(10);
-        make.right.mas_equalTo(-10);
-    }];
+    [self layoutPageView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -125,4 +113,59 @@
     return title;
 }
 
+-(void)layoutPageView
+{
+    UILabel *myLabel=[[UILabel alloc]init];
+    myLabel.font=CHINESE_SYSTEM(15);
+    myLabel.numberOfLines=0;
+    [myLabel sizeToFit];
+    myLabel.text=@"项目中可以让所有的页面都继承BaseViewController，可以重写它一些关于Nav的内容，不必要时可不重写，就不会有效果展现，以后也可以做统一处理";
+    myLabel.textAlignment=NSTextAlignmentCenter;
+    myLabel.textColor=[UIColor whiteColor];
+    [self.view addSubview:myLabel];
+    [myLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.mas_equalTo(0);
+        make.left.mas_equalTo(10);
+        make.right.mas_equalTo(-10);
+    }];
+    
+    UIButton *leftButton=[[UIButton alloc]init];
+    [leftButton setTitle:@"纯色导航" forState:UIControlStateNormal];
+    leftButton.backgroundColor=[UIColor blueColor];
+    [leftButton addTarget:self action:@selector(leftButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:leftButton];
+    [leftButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(0);
+        make.bottom.mas_equalTo(0);
+        make.height.mas_equalTo(44);
+        make.width.mas_equalTo(Main_Screen_Width/2);
+    }];
+    
+    UIButton *rightButton=[[UIButton alloc]init];
+    [rightButton setTitle:@"隐藏导航" forState:UIControlStateNormal];
+    rightButton.backgroundColor=[UIColor greenColor];
+    [rightButton addTarget:self action:@selector(rightButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:rightButton];
+    [rightButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(0);
+        make.bottom.mas_equalTo(0);
+        make.height.mas_equalTo(44);
+        make.width.mas_equalTo(Main_Screen_Width/2);
+    }];
+}
+
+
+-(void)leftButtonAction
+{
+    MPSolidColorViewController *vc=[[MPSolidColorViewController alloc]init];
+    //把动画关掉
+    [self.navigationController pushViewController:vc animated:NO];
+}
+
+-(void)rightButtonAction
+{
+    MPHideNavigationViewController *vc=[[MPHideNavigationViewController alloc]init];
+    //把动画关掉
+    [self.navigationController pushViewController:vc animated:YES];
+}
 @end

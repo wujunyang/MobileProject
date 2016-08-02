@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
+#import "MPSolidColorViewController.h"
+#import "MPHideNavigationViewController.h"
+
 @interface MPChildrenViewController :BaseViewController
 
 @end

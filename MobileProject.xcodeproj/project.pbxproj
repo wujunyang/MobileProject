@@ -792,6 +792,10 @@
 		34FA47631D50A61200D5B729 /* MPBlankPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34FD22861D50813300096706 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD22851D50813300096706 /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
 		34FD22871D50813300096706 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD22851D50813300096706 /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		34FE0B8D1D50FC2D00991E65 /* MPSolidColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE0B8C1D50FC2D00991E65 /* MPSolidColorViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FE0B8E1D50FC2D00991E65 /* MPSolidColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE0B8C1D50FC2D00991E65 /* MPSolidColorViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FE0B911D50FF7C00991E65 /* MPHideNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE0B901D50FF7C00991E65 /* MPHideNavigationViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FE0B921D50FF7C00991E65 /* MPHideNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE0B901D50FF7C00991E65 /* MPHideNavigationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34FFA1F21D49128100A7C342 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFA1F11D49128100A7C342 /* NSString+Additions.m */; settings = {ASSET_TAGS = (); }; };
 		34FFA1F31D49128100A7C342 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFA1F11D49128100A7C342 /* NSString+Additions.m */; settings = {ASSET_TAGS = (); }; };
 		9014C40DD45909D3FC1F2EBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 533C667C4AE7D52B4A1E63C2 /* libPods.a */; };
@@ -1577,6 +1581,10 @@
 		34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBlankPageViewController.m; sourceTree = "<group>"; };
 		34FD22841D50813300096706 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		34FD22851D50813300096706 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		34FE0B8B1D50FC2D00991E65 /* MPSolidColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSolidColorViewController.h; sourceTree = "<group>"; };
+		34FE0B8C1D50FC2D00991E65 /* MPSolidColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSolidColorViewController.m; sourceTree = "<group>"; };
+		34FE0B8F1D50FF7C00991E65 /* MPHideNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPHideNavigationViewController.h; sourceTree = "<group>"; };
+		34FE0B901D50FF7C00991E65 /* MPHideNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPHideNavigationViewController.m; sourceTree = "<group>"; };
 		34FFA1F01D49128100A7C342 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		34FFA1F11D49128100A7C342 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		533C667C4AE7D52B4A1E63C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3620,6 +3628,10 @@
 				34FA475D1D50961600D5B729 /* MPChildrenViewController.m */,
 				34FA47601D50A61200D5B729 /* MPBlankPageViewController.h */,
 				34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */,
+				34FE0B8B1D50FC2D00991E65 /* MPSolidColorViewController.h */,
+				34FE0B8C1D50FC2D00991E65 /* MPSolidColorViewController.m */,
+				34FE0B8F1D50FF7C00991E65 /* MPHideNavigationViewController.h */,
+				34FE0B901D50FF7C00991E65 /* MPHideNavigationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4300,6 +4312,7 @@
 				34E08B3B1C3BFB90005C6CA3 /* NSDictionary+XML.m in Sources */,
 				34E08B3C1C3BFB90005C6CA3 /* NSNumber+CGFloat.m in Sources */,
 				34FA475F1D50961600D5B729 /* MPChildrenViewController.m in Sources */,
+				34FE0B921D50FF7C00991E65 /* MPHideNavigationViewController.m in Sources */,
 				34E08B3F1C3BFB90005C6CA3 /* NSString+Ruby.m in Sources */,
 				34E08B401C3BFB90005C6CA3 /* UISplitViewController+QuickAccess.m in Sources */,
 				34E08B421C3BFB90005C6CA3 /* NSURL+QueryDictionary.m in Sources */,
@@ -4390,6 +4403,7 @@
 				340D87961D3F5FD3003D9C88 /* MPImageItemModel.m in Sources */,
 				34E08B871C3BFB90005C6CA3 /* NSMutableString+Ruby.m in Sources */,
 				34E08B881C3BFB90005C6CA3 /* UIFont+DynamicFontControl.m in Sources */,
+				34FE0B8E1D50FC2D00991E65 /* MPSolidColorViewController.m in Sources */,
 				34E08B891C3BFB90005C6CA3 /* UIViewController+StoreKit.m in Sources */,
 				3403847D1D47559A00E4A496 /* MPAdaptationFontViewController.m in Sources */,
 				34EC96211C58A5BB00985444 /* UMengSocialViewController.m in Sources */,
@@ -4725,6 +4739,7 @@
 				34E893CB1C3B9A03001327C8 /* UIBezierPath+Length.m in Sources */,
 				34E8911B1C3B92AA001327C8 /* MJRefreshHeader.m in Sources */,
 				34E893C81C3B9A03001327C8 /* UIApplication+Permissions.m in Sources */,
+				34FE0B911D50FF7C00991E65 /* MPHideNavigationViewController.m in Sources */,
 				34E894941C3B9FC1001327C8 /* MJPhotoView.m in Sources */,
 				34E894341C3B9A03001327C8 /* UIViewController+BlockSegue.m in Sources */,
 				34E891201C3B92AA001327C8 /* MJRefreshBackNormalFooter.m in Sources */,
@@ -4754,6 +4769,7 @@
 				34E8943D1C3B9A03001327C8 /* UIWebView+Blocks.m in Sources */,
 				34E8939F1C3B9A03001327C8 /* NSMutableString+Ruby.m in Sources */,
 				34E893DF1C3B9A03001327C8 /* UIFont+DynamicFontControl.m in Sources */,
+				34FE0B8D1D50FC2D00991E65 /* MPSolidColorViewController.m in Sources */,
 				34E894391C3B9A03001327C8 /* UIViewController+StoreKit.m in Sources */,
 				34EC96201C58A5BB00985444 /* UMengSocialViewController.m in Sources */,
 				34E893E01C3B9A03001327C8 /* UIFont+WDCustomLoader.m in Sources */,
