@@ -21,6 +21,7 @@
 #import "MPWebViewController.h"
 #import "MPChildrenViewController.h"
 #import "MPBlankPageViewController.h"
+#import "MPAddressPickViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 

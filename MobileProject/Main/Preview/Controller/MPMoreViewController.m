@@ -26,7 +26,7 @@
     self.navigationItem.title=@"功能导航";
 
     if (!self.dataArray) {
-        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传",@"照片上传附带进度",@"字体适配机型",@"日志记录",@"列表倒计时",@"H5交互WebViewJavascriptBridge",@"继承BaseViewController运用",@"列表空白页展现"];
+        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传",@"照片上传附带进度",@"字体适配机型",@"日志记录",@"列表倒计时",@"H5交互WebViewJavascriptBridge",@"继承BaseViewController运用",@"列表空白页展现",@"省市区三级联动"];
     }
     
     //弹出提示
@@ -147,6 +147,12 @@
         case 11:
         {
             MPBlankPageViewController *vc=[[MPBlankPageViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 12:
+        {
+            MPAddressPickViewController *vc=[[MPAddressPickViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

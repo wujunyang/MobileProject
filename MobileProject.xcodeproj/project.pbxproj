@@ -21,6 +21,12 @@
 		3400E4CC1D35F0CE0056B673 /* MPLKDBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4CA1D35F0CE0056B673 /* MPLKDBUserModel.m */; settings = {ASSET_TAGS = (); }; };
 		34013B571D5179620051000F /* MPHideNavigationChildrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34013B561D5179620051000F /* MPHideNavigationChildrenViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34013B581D5179620051000F /* MPHideNavigationChildrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34013B561D5179620051000F /* MPHideNavigationChildrenViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34013B5B1D51C7E40051000F /* addressData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34013B5A1D51C7E40051000F /* addressData.plist */; settings = {ASSET_TAGS = (); }; };
+		34013B5C1D51C7E40051000F /* addressData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34013B5A1D51C7E40051000F /* addressData.plist */; settings = {ASSET_TAGS = (); }; };
+		34013B5F1D51C9150051000F /* AddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34013B5E1D51C9150051000F /* AddressPickerView.m */; settings = {ASSET_TAGS = (); }; };
+		34013B601D51C9150051000F /* AddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34013B5E1D51C9150051000F /* AddressPickerView.m */; settings = {ASSET_TAGS = (); }; };
+		34013B631D51CEE20051000F /* MPAddressPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34013B621D51CEE20051000F /* MPAddressPickViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34013B641D51CEE20051000F /* MPAddressPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34013B621D51CEE20051000F /* MPAddressPickViewController.m */; settings = {ASSET_TAGS = (); }; };
 		340242DF1D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		340242E01D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		3403847C1D47559A00E4A496 /* MPAdaptationFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403847B1D47559A00E4A496 /* MPAdaptationFontViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -837,6 +843,11 @@
 		3400E4CA1D35F0CE0056B673 /* MPLKDBUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLKDBUserModel.m; sourceTree = "<group>"; };
 		34013B551D5179620051000F /* MPHideNavigationChildrenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPHideNavigationChildrenViewController.h; sourceTree = "<group>"; };
 		34013B561D5179620051000F /* MPHideNavigationChildrenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPHideNavigationChildrenViewController.m; sourceTree = "<group>"; };
+		34013B5A1D51C7E40051000F /* addressData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = addressData.plist; sourceTree = "<group>"; };
+		34013B5D1D51C9150051000F /* AddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressPickerView.h; sourceTree = "<group>"; };
+		34013B5E1D51C9150051000F /* AddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressPickerView.m; sourceTree = "<group>"; };
+		34013B611D51CEE20051000F /* MPAddressPickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAddressPickViewController.h; sourceTree = "<group>"; };
+		34013B621D51CEE20051000F /* MPAddressPickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAddressPickViewController.m; sourceTree = "<group>"; };
 		340242DD1D16F98700ECD131 /* MPLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLoggerFormatter.h; sourceTree = "<group>"; };
 		340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLoggerFormatter.m; sourceTree = "<group>"; };
 		3403847A1D47559A00E4A496 /* MPAdaptationFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdaptationFontViewController.h; sourceTree = "<group>"; };
@@ -1675,6 +1686,17 @@
 			path = LKDBHelper;
 			sourceTree = "<group>";
 		};
+		34013B591D51C7880051000F /* AddressManager(地址管理) */ = {
+			isa = PBXGroup;
+			children = (
+				34013B5A1D51C7E40051000F /* addressData.plist */,
+				34013B5D1D51C9150051000F /* AddressPickerView.h */,
+				34013B5E1D51C9150051000F /* AddressPickerView.m */,
+			);
+			name = "AddressManager(地址管理)";
+			path = AddressManager;
+			sourceTree = "<group>";
+		};
 		3403B0B91D367264007CD7EF /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -2091,6 +2113,7 @@
 		34E890BF1C3B8B36001327C8 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				34013B591D51C7880051000F /* AddressManager(地址管理) */,
 				341C07D71D41C5D900FF905C /* FileManager(文件管理) */,
 				342582671D3796D6003906BB /* IntroductoryPages(引导页) */,
 				342582531D373455003906BB /* EaseBlankPage(空白页提示) */,
@@ -3638,6 +3661,8 @@
 				34FE0B901D50FF7C00991E65 /* MPHideNavigationViewController.m */,
 				34013B551D5179620051000F /* MPHideNavigationChildrenViewController.h */,
 				34013B561D5179620051000F /* MPHideNavigationChildrenViewController.m */,
+				34013B611D51CEE20051000F /* MPAddressPickViewController.h */,
+				34013B621D51CEE20051000F /* MPAddressPickViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3900,6 +3925,7 @@
 				340BCD311D0F016D0093CC7D /* Placeholder in Resources */,
 				340BCD461D0F01B80093CC7D /* Placeholder in Resources */,
 				346BBF621D50C5300048DB05 /* blankpage_button_reload@2x.png in Resources */,
+				34013B5C1D51C7E40051000F /* addressData.plist in Resources */,
 				34E08B9D1C3BFB90005C6CA3 /* LaunchScreen.storyboard in Resources */,
 				34E08B9F1C3BFB90005C6CA3 /* Assets.xcassets in Resources */,
 				340BCD681D0F039E0093CC7D /* Placeholder in Resources */,
@@ -3954,6 +3980,7 @@
 				340BCD3C1D0F019B0093CC7D /* Placeholder in Resources */,
 				340BCD671D0F039E0093CC7D /* Placeholder in Resources */,
 				340BCD331D0F01790093CC7D /* Placeholder in Resources */,
+				34013B5B1D51C7E40051000F /* addressData.plist in Resources */,
 				34E08BAD1C3BFCE3005C6CA3 /* MobileProject_Local-Info.plist in Resources */,
 				340BCD2A1D0F01570093CC7D /* Placeholder in Resources */,
 				340BCD541D0F01ED0093CC7D /* Placeholder in Resources */,
@@ -4192,6 +4219,7 @@
 				34E08ACB1C3BFB90005C6CA3 /* CLLocation+CH1903.m in Sources */,
 				341093FE1D0E848F00A8D63F /* JSPatchHelper.m in Sources */,
 				34E08ACC1C3BFB90005C6CA3 /* MKMapView+BetterMaps.m in Sources */,
+				34013B601D51C9150051000F /* AddressPickerView.m in Sources */,
 				34E08ACD1C3BFB90005C6CA3 /* UIView+Frame.m in Sources */,
 				34E08ACE1C3BFB90005C6CA3 /* NSDictionary+JSONString.m in Sources */,
 				34E08ACF1C3BFB90005C6CA3 /* JDStatusBarNotification.m in Sources */,
@@ -4359,6 +4387,7 @@
 				34E08B5F1C3BFB90005C6CA3 /* NSArray+SafeAccess.m in Sources */,
 				34E08B611C3BFB90005C6CA3 /* UIResponder+Chain.m in Sources */,
 				34E08B621C3BFB90005C6CA3 /* NSSet+Block.m in Sources */,
+				34013B641D51CEE20051000F /* MPAddressPickViewController.m in Sources */,
 				34E08B631C3BFB90005C6CA3 /* NSObject+KVOBlocks.m in Sources */,
 				34E08B651C3BFB90005C6CA3 /* UIBarButtonItem+Action.m in Sources */,
 				340242E01D16F98700ECD131 /* MPLoggerFormatter.m in Sources */,
@@ -4617,6 +4646,7 @@
 				34E893891C3B9A03001327C8 /* NSIndexPath+Offset.m in Sources */,
 				34E8938D1C3B9A03001327C8 /* NSDecimalNumber+CalculatingByString.m in Sources */,
 				34E893E21C3B9A03001327C8 /* UIImage+Alpha.m in Sources */,
+				34013B631D51CEE20051000F /* MPAddressPickViewController.m in Sources */,
 				34E893681C3B9A03001327C8 /* NSManagedObjectContext+ObjectClear.m in Sources */,
 				340D87A11D3F6E44003D9C88 /* MPUploadImagesViewController.m in Sources */,
 				34E893E91C3B9A03001327C8 /* UIImage+FX.m in Sources */,
@@ -4792,6 +4822,7 @@
 				34E893A01C3B9A03001327C8 /* NSString+Base64.m in Sources */,
 				34E894921C3B9FC1001327C8 /* MJPhotoProgressView.m in Sources */,
 				34E893C01C3B9A03001327C8 /* CALayer+UIColor.m in Sources */,
+				34013B5F1D51C9150051000F /* AddressPickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

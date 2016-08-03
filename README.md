@@ -188,6 +188,8 @@ pod 'WebViewJavascriptBridge', '~> 5.0'
 
 23 引入WebViewJavascriptBridge进行H5交互，并对官网实例进行注解
 
+24 增加省市区三级联动的帮助类，可以设置绑定默认值，也可以查看当前的弹出窗状态，并实现其小实例
+
 ## 效果图
 
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/1.png" width=250px height=350px></img>
@@ -205,6 +207,7 @@ pod 'WebViewJavascriptBridge', '~> 5.0'
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/13.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/14.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/15.png" width=250px height=350px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/16.png" width=250px height=350px></img>
 
 
 ## 联系方式
