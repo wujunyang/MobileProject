@@ -194,7 +194,23 @@
         return;
     }
 
+    //是否已经全部上传
+    BOOL isAllComplete=YES;
+    for (MPImageItemModel *item in self.curUploadImageHelper.imagesArray) {
+        if (item.upServicePath.length==0) {
+            isAllComplete=NO;
+            break;
+        }
+    }
     
+    //是否未完成
+    if(!isAllComplete)
+    {
+        [MBProgressHUD showAutoMessage:@"照片还未全部上传" ToView:nil];
+        return;
+    }
+    
+    //可以接着处理逻辑，上传成功会把服务端的图片地址写在upServicePath,就可以写入到业务逻辑中
 }
 
 
