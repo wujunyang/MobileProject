@@ -21,6 +21,18 @@
         make.top.left.and.right.mas_equalTo(0);
         make.height.mas_equalTo(180);
     }];
+    
+    UIButton *rightButton=[[UIButton alloc]init];
+    [rightButton setTitle:@"再现导航" forState:UIControlStateNormal];
+    rightButton.backgroundColor=[UIColor blueColor];
+    [rightButton addTarget:self action:@selector(rightButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    [headerView addSubview:rightButton];
+    [rightButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(0);
+        make.top.mas_equalTo(64);
+        make.height.mas_equalTo(44);
+        make.width.mas_equalTo(Main_Screen_Width/2);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,12 +71,6 @@
     return NO;
 }
 
-////设置标题
--(NSMutableAttributedString*)setTitle
-{
-    return [self changeTitle:@"设置标题"];
-}
-
 //设置左边按键
 -(UIButton*)set_leftButton
 {
@@ -88,6 +94,12 @@
     [title addAttribute:NSForegroundColorAttributeName value:HEXCOLOR(0x333333) range:NSMakeRange(0, title.length)];
     [title addAttribute:NSFontAttributeName value:CHINESE_SYSTEM(18) range:NSMakeRange(0, title.length)];
     return title;
+}
+
+-(void)rightButtonAction
+{
+    MPHideNavigationChildrenViewController *vc=[[MPHideNavigationChildrenViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

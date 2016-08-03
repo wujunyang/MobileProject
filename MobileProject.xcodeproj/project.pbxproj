@@ -19,6 +19,8 @@
 		3400E4C81D35F0690056B673 /* MPLkdbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4C61D35F0690056B673 /* MPLkdbViewController.m */; settings = {ASSET_TAGS = (); }; };
 		3400E4CB1D35F0CE0056B673 /* MPLKDBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4CA1D35F0CE0056B673 /* MPLKDBUserModel.m */; settings = {ASSET_TAGS = (); }; };
 		3400E4CC1D35F0CE0056B673 /* MPLKDBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4CA1D35F0CE0056B673 /* MPLKDBUserModel.m */; settings = {ASSET_TAGS = (); }; };
+		34013B571D5179620051000F /* MPHideNavigationChildrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34013B561D5179620051000F /* MPHideNavigationChildrenViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34013B581D5179620051000F /* MPHideNavigationChildrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34013B561D5179620051000F /* MPHideNavigationChildrenViewController.m */; settings = {ASSET_TAGS = (); }; };
 		340242DF1D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		340242E01D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		3403847C1D47559A00E4A496 /* MPAdaptationFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403847B1D47559A00E4A496 /* MPAdaptationFontViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -833,6 +835,8 @@
 		3400E4C61D35F0690056B673 /* MPLkdbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLkdbViewController.m; sourceTree = "<group>"; };
 		3400E4C91D35F0CE0056B673 /* MPLKDBUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLKDBUserModel.h; sourceTree = "<group>"; };
 		3400E4CA1D35F0CE0056B673 /* MPLKDBUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLKDBUserModel.m; sourceTree = "<group>"; };
+		34013B551D5179620051000F /* MPHideNavigationChildrenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPHideNavigationChildrenViewController.h; sourceTree = "<group>"; };
+		34013B561D5179620051000F /* MPHideNavigationChildrenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPHideNavigationChildrenViewController.m; sourceTree = "<group>"; };
 		340242DD1D16F98700ECD131 /* MPLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLoggerFormatter.h; sourceTree = "<group>"; };
 		340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLoggerFormatter.m; sourceTree = "<group>"; };
 		3403847A1D47559A00E4A496 /* MPAdaptationFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdaptationFontViewController.h; sourceTree = "<group>"; };
@@ -3632,6 +3636,8 @@
 				34FE0B8C1D50FC2D00991E65 /* MPSolidColorViewController.m */,
 				34FE0B8F1D50FF7C00991E65 /* MPHideNavigationViewController.h */,
 				34FE0B901D50FF7C00991E65 /* MPHideNavigationViewController.m */,
+				34013B551D5179620051000F /* MPHideNavigationChildrenViewController.h */,
+				34013B561D5179620051000F /* MPHideNavigationChildrenViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4413,6 +4419,7 @@
 				341C07E91D421F5600FF905C /* MPImageUploadProgressCell.m in Sources */,
 				34E08B8C1C3BFB90005C6CA3 /* UIButton+Block.m in Sources */,
 				340BCD1C1D0EFF3B0093CC7D /* MPRequstFailedHelper.m in Sources */,
+				34013B581D5179620051000F /* MPHideNavigationChildrenViewController.m in Sources */,
 				34E08B8D1C3BFB90005C6CA3 /* NSRunLoop+PerformBlock.m in Sources */,
 				3400E4B61D35E15D0056B673 /* SYSafeCategory.m in Sources */,
 				34E08B8E1C3BFB90005C6CA3 /* UITableViewCell+TS_delaysContentTouches.m in Sources */,
@@ -4687,6 +4694,7 @@
 				34E891451C3B9739001327C8 /* YTKNetworkConfig.m in Sources */,
 				34799A631CD34C5A003518C5 /* UIDevice+FCUUID.m in Sources */,
 				34F213011C48C283003AC13D /* MPLocationManager.m in Sources */,
+				34013B571D5179620051000F /* MPHideNavigationChildrenViewController.m in Sources */,
 				34E893B11C3B9A03001327C8 /* NSString+XML.m in Sources */,
 				34E893951C3B9A03001327C8 /* NSObject+AutoCoding.m in Sources */,
 				34E893E81C3B9A03001327C8 /* UIImage+FileName.m in Sources */,

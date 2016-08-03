@@ -1,30 +1,19 @@
 //
-//  MPSolidColorViewController.m
+//  MPHideNavigationChildrenViewController.m
 //  MobileProject
 //
 //  Created by wujunyang on 16/8/3.
 //  Copyright © 2016年 wujunyang. All rights reserved.
 //
 
-#import "MPSolidColorViewController.h"
+#import "MPHideNavigationChildrenViewController.h"
 
-@implementation MPSolidColorViewController
+@implementation MPHideNavigationChildrenViewController
 
-
-#pragma mark viewController生命周期
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor grayColor];
-    
-    
-    UIView *headerView=[[UIView alloc]init];
-    headerView.backgroundColor=[UIColor blueColor];
-    [self.view addSubview:headerView];
-    [headerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.and.right.mas_equalTo(0);
-        make.height.mas_equalTo(120);
-    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,25 +21,18 @@
 }
 
 
-
 #pragma mark 重写BaseViewController设置内容
 
 //设置导航栏背景色
 -(UIColor*)set_colorBackground
 {
-    return [UIColor redColor];
-}
-
-//是否隐藏导航栏底部的黑线 默认也为NO
--(BOOL)hideNavigationBottomLine
-{
-    return YES;
+    return [UIColor whiteColor];
 }
 
 ////设置标题
 -(NSMutableAttributedString*)setTitle
 {
-    return [self changeTitle:@"纯色导航栏"];
+    return [self changeTitle:@"再现导航栏"];
 }
 
 //设置左边按键
@@ -65,10 +47,8 @@
 //设置左边事件
 -(void)left_button_event:(UIButton*)sender
 {
-    //把动画关掉
     [self.navigationController popViewControllerAnimated:YES];
 }
-
 
 #pragma mark 自定义代码
 

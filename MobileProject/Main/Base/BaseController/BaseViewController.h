@@ -34,7 +34,6 @@
 
 @interface BaseViewController : UIViewController<BBBaseViewControllerDataSource , BBBaseViewControllerDelegate>
 
--(void)setContentAlpha:(CGFloat)alpha;
 -(void)changeNavigationBarTranslationY:(CGFloat)translationY;
 -(void)set_Title:(NSMutableAttributedString *)title;
 @end

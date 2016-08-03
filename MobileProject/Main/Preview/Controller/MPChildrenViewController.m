@@ -159,7 +159,7 @@
 {
     MPSolidColorViewController *vc=[[MPSolidColorViewController alloc]init];
     //把动画关掉
-    [self.navigationController pushViewController:vc animated:NO];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)rightButtonAction
