@@ -226,7 +226,6 @@
 		34E08A9A1C3BFB90005C6CA3 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892E41C3B9A03001327C8 /* UIScrollView+EmptyDataSet.m */; settings = {ASSET_TAGS = (); }; };
 		34E08A9B1C3BFB90005C6CA3 /* UIButton+MiddleAligning.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892621C3B9A03001327C8 /* UIButton+MiddleAligning.m */; settings = {ASSET_TAGS = (); }; };
 		34E08A9C1C3BFB90005C6CA3 /* UIViewController+BackButtonTouched.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893391C3B9A03001327C8 /* UIViewController+BackButtonTouched.m */; settings = {ASSET_TAGS = (); }; };
-		34E08A9D1C3BFB90005C6CA3 /* MJPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894611C3B9FC1001327C8 /* MJPhoto.m */; settings = {ASSET_TAGS = (); }; };
 		34E08A9E1C3BFB90005C6CA3 /* UIImageView+BetterFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892A81C3B9A03001327C8 /* UIImageView+BetterFace.m */; settings = {ASSET_TAGS = (); }; };
 		34E08A9F1C3BFB90005C6CA3 /* YTKBatchRequestAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891321C3B9739001327C8 /* YTKBatchRequestAgent.m */; settings = {ASSET_TAGS = (); }; };
 		34E08AA01C3BFB90005C6CA3 /* NSObject+AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891CC1C3B9A03001327C8 /* NSObject+AppInfo.m */; settings = {ASSET_TAGS = (); }; };
@@ -290,7 +289,6 @@
 		34E08ADF1C3BFB90005C6CA3 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891041C3B92AA001327C8 /* MJRefreshStateHeader.m */; settings = {ASSET_TAGS = (); }; };
 		34E08AE01C3BFB90005C6CA3 /* YTKChainRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891341C3B9739001327C8 /* YTKChainRequest.m */; settings = {ASSET_TAGS = (); }; };
 		34E08AE11C3BFB90005C6CA3 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8917B1C3B9A03001327C8 /* NSData+Base64.m */; settings = {ASSET_TAGS = (); }; };
-		34E08AE21C3BFB90005C6CA3 /* MJPhotoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894661C3B9FC1001327C8 /* MJPhotoLoadingView.m */; settings = {ASSET_TAGS = (); }; };
 		34E08AE31C3BFB90005C6CA3 /* NSFetchRequest+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891551C3B9A02001327C8 /* NSFetchRequest+Extensions.m */; settings = {ASSET_TAGS = (); }; };
 		34E08AE41C3BFB90005C6CA3 /* NSObject+EasyCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891D41C3B9A03001327C8 /* NSObject+EasyCopy.m */; settings = {ASSET_TAGS = (); }; };
 		34E08AE51C3BFB90005C6CA3 /* YTKBatchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891301C3B9739001327C8 /* YTKBatchRequest.m */; settings = {ASSET_TAGS = (); }; };
@@ -333,7 +331,6 @@
 		34E08B0E1C3BFB90005C6CA3 /* NSFileManager+Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891AE1C3B9A03001327C8 /* NSFileManager+Paths.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B101C3BFB90005C6CA3 /* UIButton+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8925E1C3B9A03001327C8 /* UIButton+CountDown.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B111C3BFB90005C6CA3 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894D51C3BCD2F001327C8 /* LoginModel.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B121C3BFB90005C6CA3 /* SDWebImageManager+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8946E1C3B9FC1001327C8 /* SDWebImageManager+MJ.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B131C3BFB90005C6CA3 /* CLLocationManager+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8916D1C3B9A02001327C8 /* CLLocationManager+Blocks.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B141C3BFB90005C6CA3 /* NSString+Contains.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891EB1C3B9A03001327C8 /* NSString+Contains.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B151C3BFB90005C6CA3 /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891921C3B9A03001327C8 /* NSDate+TimeAgo.m */; settings = {ASSET_TAGS = (); }; };
@@ -391,7 +388,6 @@
 		34E08B521C3BFB90005C6CA3 /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8932C1C3B9A03001327C8 /* UIView+Shake.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B531C3BFB90005C6CA3 /* UIApplication+KeyboardFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892451C3B9A03001327C8 /* UIApplication+KeyboardFrame.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B541C3BFB90005C6CA3 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8933F1C3B9A03001327C8 /* UIViewController+MJPopupViewController.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B551C3BFB90005C6CA3 /* MJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894641C3B9FC1001327C8 /* MJPhotoBrowser.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B561C3BFB90005C6CA3 /* NetworkUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894C51C3BAF38001327C8 /* NetworkUnit.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B571C3BFB90005C6CA3 /* NSException+Trace.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891A81C3B9A03001327C8 /* NSException+Trace.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B581C3BFB90005C6CA3 /* UILabel+SuggestSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892B91C3B9A03001327C8 /* UILabel+SuggestSize.m */; settings = {ASSET_TAGS = (); }; };
@@ -415,7 +411,6 @@
 		34E08B6E1C3BFB90005C6CA3 /* UIBezierPath+Length.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892511C3B9A03001327C8 /* UIBezierPath+Length.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B6F1C3BFB90005C6CA3 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890ED1C3B92AA001327C8 /* MJRefreshHeader.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B701C3BFB90005C6CA3 /* UIApplication+Permissions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892491C3B9A03001327C8 /* UIApplication+Permissions.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B711C3BFB90005C6CA3 /* MJPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8946C1C3B9FC1001327C8 /* MJPhotoView.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B721C3BFB90005C6CA3 /* UIViewController+BlockSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8933B1C3B9A03001327C8 /* UIViewController+BlockSegue.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B731C3BFB90005C6CA3 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890FB1C3B92AA001327C8 /* MJRefreshBackNormalFooter.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B741C3BFB90005C6CA3 /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893141C3B9A03001327C8 /* UIView+Constraints.m */; settings = {ASSET_TAGS = (); }; };
@@ -429,7 +424,6 @@
 		34E08B7D1C3BFB90005C6CA3 /* QBAssetsCollectionCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894711C3B9FC1001327C8 /* QBAssetsCollectionCheckmarkView.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B7E1C3BFB90005C6CA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890861C3B89B2001327C8 /* main.m */; };
 		34E08B7F1C3BFB90005C6CA3 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890F61C3B92AA001327C8 /* MJRefreshAutoStateFooter.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B801C3BFB90005C6CA3 /* MJPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8946A1C3B9FC1001327C8 /* MJPhotoToolbar.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B811C3BFB90005C6CA3 /* NSObject+MKBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891DA1C3B9A03001327C8 /* NSObject+MKBlockTimer.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B821C3BFB90005C6CA3 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890E51C3B92AA001327C8 /* MJRefreshAutoFooter.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B831C3BFB90005C6CA3 /* NSUserDefaults+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892221C3B9A03001327C8 /* NSUserDefaults+SafeAccess.m */; settings = {ASSET_TAGS = (); }; };
@@ -447,7 +441,6 @@
 		34E08B901C3BFB90005C6CA3 /* NSNumber+RomanNumerals.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891C51C3B9A03001327C8 /* NSNumber+RomanNumerals.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B911C3BFB90005C6CA3 /* UIButton+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8925A1C3B9A03001327C8 /* UIButton+BackgroundColor.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B921C3BFB90005C6CA3 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891E91C3B9A03001327C8 /* NSString+Base64.m */; settings = {ASSET_TAGS = (); }; };
-		34E08B931C3BFB90005C6CA3 /* MJPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894681C3B9FC1001327C8 /* MJPhotoProgressView.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B941C3BFB90005C6CA3 /* CALayer+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892331C3B9A03001327C8 /* CALayer+UIColor.m */; settings = {ASSET_TAGS = (); }; };
 		34E08B961C3BFB90005C6CA3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E8944F1C3B9B18001327C8 /* libz.tbd */; };
 		34E08B971C3BFB90005C6CA3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E8944D1C3B9AA0001327C8 /* CoreData.framework */; };
@@ -461,7 +454,6 @@
 		34E08BA11C3BFB90005C6CA3 /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34E891951C3B9A03001327C8 /* NSDateTimeAgo.bundle */; settings = {ASSET_TAGS = (); }; };
 		34E08BA21C3BFB90005C6CA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E8908E1C3B89B2001327C8 /* Main.storyboard */; };
 		34E08BA31C3BFB90005C6CA3 /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34E891501C3B9986001327C8 /* File.strings */; };
-		34E08BA41C3BFB90005C6CA3 /* MJPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34E894621C3B9FC1001327C8 /* MJPhotoBrowser.bundle */; settings = {ASSET_TAGS = (); }; };
 		34E08BA51C3BFB90005C6CA3 /* QBImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34E894801C3B9FC1001327C8 /* QBImagePickerController.strings */; settings = {ASSET_TAGS = (); }; };
 		34E08BAD1C3BFCE3005C6CA3 /* MobileProject_Local-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34E08BAC1C3BFCE3005C6CA3 /* MobileProject_Local-Info.plist */; settings = {ASSET_TAGS = (); }; };
 		34E890871C3B89B2001327C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890861C3B89B2001327C8 /* main.m */; };
@@ -725,14 +717,6 @@
 		34E8944E1C3B9AA0001327C8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E8944D1C3B9AA0001327C8 /* CoreData.framework */; };
 		34E894501C3B9B18001327C8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E8944F1C3B9B18001327C8 /* libz.tbd */; };
 		34E8945E1C3B9D6A001327C8 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8945D1C3B9D6A001327C8 /* iCarousel.m */; settings = {ASSET_TAGS = (); }; };
-		34E8948E1C3B9FC1001327C8 /* MJPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894611C3B9FC1001327C8 /* MJPhoto.m */; settings = {ASSET_TAGS = (); }; };
-		34E8948F1C3B9FC1001327C8 /* MJPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34E894621C3B9FC1001327C8 /* MJPhotoBrowser.bundle */; settings = {ASSET_TAGS = (); }; };
-		34E894901C3B9FC1001327C8 /* MJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894641C3B9FC1001327C8 /* MJPhotoBrowser.m */; settings = {ASSET_TAGS = (); }; };
-		34E894911C3B9FC1001327C8 /* MJPhotoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894661C3B9FC1001327C8 /* MJPhotoLoadingView.m */; settings = {ASSET_TAGS = (); }; };
-		34E894921C3B9FC1001327C8 /* MJPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894681C3B9FC1001327C8 /* MJPhotoProgressView.m */; settings = {ASSET_TAGS = (); }; };
-		34E894931C3B9FC1001327C8 /* MJPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8946A1C3B9FC1001327C8 /* MJPhotoToolbar.m */; settings = {ASSET_TAGS = (); }; };
-		34E894941C3B9FC1001327C8 /* MJPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8946C1C3B9FC1001327C8 /* MJPhotoView.m */; settings = {ASSET_TAGS = (); }; };
-		34E894951C3B9FC1001327C8 /* SDWebImageManager+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8946E1C3B9FC1001327C8 /* SDWebImageManager+MJ.m */; settings = {ASSET_TAGS = (); }; };
 		34E894961C3B9FC1001327C8 /* QBAssetsCollectionCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894711C3B9FC1001327C8 /* QBAssetsCollectionCheckmarkView.m */; settings = {ASSET_TAGS = (); }; };
 		34E894971C3B9FC1001327C8 /* QBAssetsCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894731C3B9FC1001327C8 /* QBAssetsCollectionFooterView.m */; settings = {ASSET_TAGS = (); }; };
 		34E894981C3B9FC1001327C8 /* QBAssetsCollectionOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894751C3B9FC1001327C8 /* QBAssetsCollectionOverlayView.m */; settings = {ASSET_TAGS = (); }; };
@@ -1503,21 +1487,6 @@
 		34E8944F1C3B9B18001327C8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		34E8945C1C3B9D6A001327C8 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		34E8945D1C3B9D6A001327C8 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		34E894601C3B9FC1001327C8 /* MJPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhoto.h; sourceTree = "<group>"; };
-		34E894611C3B9FC1001327C8 /* MJPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhoto.m; sourceTree = "<group>"; };
-		34E894621C3B9FC1001327C8 /* MJPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJPhotoBrowser.bundle; sourceTree = "<group>"; };
-		34E894631C3B9FC1001327C8 /* MJPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoBrowser.h; sourceTree = "<group>"; };
-		34E894641C3B9FC1001327C8 /* MJPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoBrowser.m; sourceTree = "<group>"; };
-		34E894651C3B9FC1001327C8 /* MJPhotoLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoLoadingView.h; sourceTree = "<group>"; };
-		34E894661C3B9FC1001327C8 /* MJPhotoLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoLoadingView.m; sourceTree = "<group>"; };
-		34E894671C3B9FC1001327C8 /* MJPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoProgressView.h; sourceTree = "<group>"; };
-		34E894681C3B9FC1001327C8 /* MJPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoProgressView.m; sourceTree = "<group>"; };
-		34E894691C3B9FC1001327C8 /* MJPhotoToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoToolbar.h; sourceTree = "<group>"; };
-		34E8946A1C3B9FC1001327C8 /* MJPhotoToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoToolbar.m; sourceTree = "<group>"; };
-		34E8946B1C3B9FC1001327C8 /* MJPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoView.h; sourceTree = "<group>"; };
-		34E8946C1C3B9FC1001327C8 /* MJPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoView.m; sourceTree = "<group>"; };
-		34E8946D1C3B9FC1001327C8 /* SDWebImageManager+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebImageManager+MJ.h"; sourceTree = "<group>"; };
-		34E8946E1C3B9FC1001327C8 /* SDWebImageManager+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebImageManager+MJ.m"; sourceTree = "<group>"; };
 		34E894701C3B9FC1001327C8 /* QBAssetsCollectionCheckmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionCheckmarkView.h; sourceTree = "<group>"; };
 		34E894711C3B9FC1001327C8 /* QBAssetsCollectionCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionCheckmarkView.m; sourceTree = "<group>"; };
 		34E894721C3B9FC1001327C8 /* QBAssetsCollectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionFooterView.h; sourceTree = "<group>"; };
@@ -2056,7 +2025,6 @@
 				34EC806F1C472DFB00C7E40A /* UIPlaceHolderTextView */,
 				34E08A521C3BE80F005C6CA3 /* GVUserDefaults */,
 				34E894A81C3BA300001327C8 /* JDStatusBarNotification */,
-				34E8945F1C3B9FC1001327C8 /* MJPhotoBrowser */,
 				34E8946F1C3B9FC1001327C8 /* QBImagePickerController */,
 				34E8945B1C3B9D6A001327C8 /* iCarousel */,
 				34E891481C3B97C5001327C8 /* AFDownloadRequestOperation */,
@@ -3441,28 +3409,6 @@
 			path = iCarousel;
 			sourceTree = "<group>";
 		};
-		34E8945F1C3B9FC1001327C8 /* MJPhotoBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				34E894601C3B9FC1001327C8 /* MJPhoto.h */,
-				34E894611C3B9FC1001327C8 /* MJPhoto.m */,
-				34E894621C3B9FC1001327C8 /* MJPhotoBrowser.bundle */,
-				34E894631C3B9FC1001327C8 /* MJPhotoBrowser.h */,
-				34E894641C3B9FC1001327C8 /* MJPhotoBrowser.m */,
-				34E894651C3B9FC1001327C8 /* MJPhotoLoadingView.h */,
-				34E894661C3B9FC1001327C8 /* MJPhotoLoadingView.m */,
-				34E894671C3B9FC1001327C8 /* MJPhotoProgressView.h */,
-				34E894681C3B9FC1001327C8 /* MJPhotoProgressView.m */,
-				34E894691C3B9FC1001327C8 /* MJPhotoToolbar.h */,
-				34E8946A1C3B9FC1001327C8 /* MJPhotoToolbar.m */,
-				34E8946B1C3B9FC1001327C8 /* MJPhotoView.h */,
-				34E8946C1C3B9FC1001327C8 /* MJPhotoView.m */,
-				34E8946D1C3B9FC1001327C8 /* SDWebImageManager+MJ.h */,
-				34E8946E1C3B9FC1001327C8 /* SDWebImageManager+MJ.m */,
-			);
-			path = MJPhotoBrowser;
-			sourceTree = "<group>";
-		};
 		34E8946F1C3B9FC1001327C8 /* QBImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
@@ -3975,7 +3921,6 @@
 				346BBF631D50C5320048DB05 /* blankpage_image_loadFail@2x.png in Resources */,
 				340BCD551D0F01ED0093CC7D /* Placeholder in Resources */,
 				340BCD3D1D0F019B0093CC7D /* Placeholder in Resources */,
-				34E08BA41C3BFB90005C6CA3 /* MJPhotoBrowser.bundle in Resources */,
 				346BBF661D50C5390048DB05 /* blankpage_image_Sleep@3x.png in Resources */,
 				340BCD281D0F014B0093CC7D /* Placeholder in Resources */,
 				34E08BA51C3BFB90005C6CA3 /* QBImagePickerController.strings in Resources */,
@@ -4018,7 +3963,6 @@
 				34E8914E1C3B9986001327C8 /* File.strings in Resources */,
 				340BCD571D0F01F50093CC7D /* Placeholder in Resources */,
 				340BCD301D0F016D0093CC7D /* Placeholder in Resources */,
-				34E8948F1C3B9FC1001327C8 /* MJPhotoBrowser.bundle in Resources */,
 				340BCD3F1D0F01A40093CC7D /* Placeholder in Resources */,
 				340BCD511D0F01E50093CC7D /* Placeholder in Resources */,
 				340BCD391D0F01910093CC7D /* Placeholder in Resources */,
@@ -4192,7 +4136,6 @@
 				34E08A9B1C3BFB90005C6CA3 /* UIButton+MiddleAligning.m in Sources */,
 				342A8FAD1D3F1ED1000C7B98 /* MPQRCodeViewController.m in Sources */,
 				34E08A9C1C3BFB90005C6CA3 /* UIViewController+BackButtonTouched.m in Sources */,
-				34E08A9D1C3BFB90005C6CA3 /* MJPhoto.m in Sources */,
 				34E08A9E1C3BFB90005C6CA3 /* UIImageView+BetterFace.m in Sources */,
 				34E08A9F1C3BFB90005C6CA3 /* YTKBatchRequestAgent.m in Sources */,
 				3400E4B51D35E15A0056B673 /* JRSwizzle.m in Sources */,
@@ -4272,7 +4215,6 @@
 				34E08AE01C3BFB90005C6CA3 /* YTKChainRequest.m in Sources */,
 				342A8F951D3F1BF1000C7B98 /* MPDiscoveryViewController.m in Sources */,
 				34E08AE11C3BFB90005C6CA3 /* NSData+Base64.m in Sources */,
-				34E08AE21C3BFB90005C6CA3 /* MJPhotoLoadingView.m in Sources */,
 				34E08AE31C3BFB90005C6CA3 /* NSFetchRequest+Extensions.m in Sources */,
 				34E08AE41C3BFB90005C6CA3 /* NSObject+EasyCopy.m in Sources */,
 				34E08AE51C3BFB90005C6CA3 /* YTKBatchRequest.m in Sources */,
@@ -4320,7 +4262,6 @@
 				3400E4C81D35F0690056B673 /* MPLkdbViewController.m in Sources */,
 				34E08B101C3BFB90005C6CA3 /* UIButton+CountDown.m in Sources */,
 				34E08B111C3BFB90005C6CA3 /* LoginModel.m in Sources */,
-				34E08B121C3BFB90005C6CA3 /* SDWebImageManager+MJ.m in Sources */,
 				34E08B131C3BFB90005C6CA3 /* CLLocationManager+Blocks.m in Sources */,
 				34E08B141C3BFB90005C6CA3 /* NSString+Contains.m in Sources */,
 				34E08B151C3BFB90005C6CA3 /* NSDate+TimeAgo.m in Sources */,
@@ -4402,7 +4343,6 @@
 				34E08B521C3BFB90005C6CA3 /* UIView+Shake.m in Sources */,
 				34E08B531C3BFB90005C6CA3 /* UIApplication+KeyboardFrame.m in Sources */,
 				34E08B541C3BFB90005C6CA3 /* UIViewController+MJPopupViewController.m in Sources */,
-				34E08B551C3BFB90005C6CA3 /* MJPhotoBrowser.m in Sources */,
 				34A14EE41D40974100ACCCCC /* MPUploadImageService.m in Sources */,
 				34E08B561C3BFB90005C6CA3 /* NetworkUnit.m in Sources */,
 				34FD22871D50813300096706 /* UIView+Extension.m in Sources */,
@@ -4436,7 +4376,6 @@
 				34E08B6F1C3BFB90005C6CA3 /* MJRefreshHeader.m in Sources */,
 				340BCD6A1D0F04DE0093CC7D /* UITapImageView.m in Sources */,
 				34E08B701C3BFB90005C6CA3 /* UIApplication+Permissions.m in Sources */,
-				34E08B711C3BFB90005C6CA3 /* MJPhotoView.m in Sources */,
 				34E08B721C3BFB90005C6CA3 /* UIViewController+BlockSegue.m in Sources */,
 				34E08B731C3BFB90005C6CA3 /* MJRefreshBackNormalFooter.m in Sources */,
 				34E08B741C3BFB90005C6CA3 /* UIView+Constraints.m in Sources */,
@@ -4455,7 +4394,6 @@
 				34E08B7D1C3BFB90005C6CA3 /* QBAssetsCollectionCheckmarkView.m in Sources */,
 				34E08B7E1C3BFB90005C6CA3 /* main.m in Sources */,
 				34E08B7F1C3BFB90005C6CA3 /* MJRefreshAutoStateFooter.m in Sources */,
-				34E08B801C3BFB90005C6CA3 /* MJPhotoToolbar.m in Sources */,
 				34E08B811C3BFB90005C6CA3 /* NSObject+MKBlockTimer.m in Sources */,
 				34E08B821C3BFB90005C6CA3 /* MJRefreshAutoFooter.m in Sources */,
 				349F81D11D45E571002104E3 /* MPUploadImageItemService.m in Sources */,
@@ -4486,7 +4424,6 @@
 				34E08B901C3BFB90005C6CA3 /* NSNumber+RomanNumerals.m in Sources */,
 				34E08B911C3BFB90005C6CA3 /* UIButton+BackgroundColor.m in Sources */,
 				34E08B921C3BFB90005C6CA3 /* NSString+Base64.m in Sources */,
-				34E08B931C3BFB90005C6CA3 /* MJPhotoProgressView.m in Sources */,
 				34E08B941C3BFB90005C6CA3 /* CALayer+UIColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4574,7 +4511,6 @@
 				340757071D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m in Sources */,
 				34E894331C3B9A03001327C8 /* UIViewController+BackButtonTouched.m in Sources */,
 				34F49B321D262AA400FA003C /* MPHomeViewController.m in Sources */,
-				34E8948E1C3B9FC1001327C8 /* MJPhoto.m in Sources */,
 				34E893F31C3B9A03001327C8 /* UIImageView+BetterFace.m in Sources */,
 				34E891411C3B9739001327C8 /* YTKBatchRequestAgent.m in Sources */,
 				34E893931C3B9A03001327C8 /* NSObject+AppInfo.m in Sources */,
@@ -4648,7 +4584,6 @@
 				34FA47621D50A61200D5B729 /* MPBlankPageViewController.m in Sources */,
 				34E891421C3B9739001327C8 /* YTKChainRequest.m in Sources */,
 				34E893701C3B9A03001327C8 /* NSData+Base64.m in Sources */,
-				34E894911C3B9FC1001327C8 /* MJPhotoLoadingView.m in Sources */,
 				34E893621C3B9A03001327C8 /* NSFetchRequest+Extensions.m in Sources */,
 				34E893971C3B9A03001327C8 /* NSObject+EasyCopy.m in Sources */,
 				34E891401C3B9739001327C8 /* YTKBatchRequest.m in Sources */,
@@ -4703,7 +4638,6 @@
 				34E893D11C3B9A03001327C8 /* UIButton+CountDown.m in Sources */,
 				34E894D61C3BCD2F001327C8 /* LoginModel.m in Sources */,
 				3400E4B41D35E1500056B673 /* SYSafeCategory.m in Sources */,
-				34E894951C3B9FC1001327C8 /* SDWebImageManager+MJ.m in Sources */,
 				34E8936B1C3B9A03001327C8 /* CLLocationManager+Blocks.m in Sources */,
 				34E893A11C3B9A03001327C8 /* NSString+Contains.m in Sources */,
 				34E8937B1C3B9A03001327C8 /* NSDate+TimeAgo.m in Sources */,
@@ -4773,7 +4707,6 @@
 				34E893C61C3B9A03001327C8 /* UIApplication+KeyboardFrame.m in Sources */,
 				34E894361C3B9A03001327C8 /* UIViewController+MJPopupViewController.m in Sources */,
 				341093F41D0E605800A8D63F /* UITapImageView.m in Sources */,
-				34E894901C3B9FC1001327C8 /* MJPhotoBrowser.m in Sources */,
 				34E894C61C3BAF38001327C8 /* NetworkUnit.m in Sources */,
 				342A8FA61D3F1D8B000C7B98 /* UINavigationController+KeyboardFix.m in Sources */,
 				340384801D47567900E4A496 /* MPAdaptationCell.m in Sources */,
@@ -4810,7 +4743,6 @@
 				34E8911B1C3B92AA001327C8 /* MJRefreshHeader.m in Sources */,
 				34E893C81C3B9A03001327C8 /* UIApplication+Permissions.m in Sources */,
 				34FE0B911D50FF7C00991E65 /* MPHideNavigationViewController.m in Sources */,
-				34E894941C3B9FC1001327C8 /* MJPhotoView.m in Sources */,
 				34E894341C3B9A03001327C8 /* UIViewController+BlockSegue.m in Sources */,
 				34E891201C3B92AA001327C8 /* MJRefreshBackNormalFooter.m in Sources */,
 				34E894211C3B9A03001327C8 /* UIView+Constraints.m in Sources */,
@@ -4831,7 +4763,6 @@
 				34E894961C3B9FC1001327C8 /* QBAssetsCollectionCheckmarkView.m in Sources */,
 				34E890871C3B89B2001327C8 /* main.m in Sources */,
 				34E8911E1C3B92AA001327C8 /* MJRefreshAutoStateFooter.m in Sources */,
-				34E894931C3B9FC1001327C8 /* MJPhotoToolbar.m in Sources */,
 				34E8939A1C3B9A03001327C8 /* NSObject+MKBlockTimer.m in Sources */,
 				34E891171C3B92AA001327C8 /* MJRefreshAutoFooter.m in Sources */,
 				3403847C1D47559A00E4A496 /* MPAdaptationFontViewController.m in Sources */,
@@ -4853,7 +4784,6 @@
 				34E893901C3B9A03001327C8 /* NSNumber+RomanNumerals.m in Sources */,
 				34E893CF1C3B9A03001327C8 /* UIButton+BackgroundColor.m in Sources */,
 				34E893A01C3B9A03001327C8 /* NSString+Base64.m in Sources */,
-				34E894921C3B9FC1001327C8 /* MJPhotoProgressView.m in Sources */,
 				34E893C01C3B9A03001327C8 /* CALayer+UIColor.m in Sources */,
 				34013B5F1D51C9150051000F /* AddressPickerView.m in Sources */,
 			);
