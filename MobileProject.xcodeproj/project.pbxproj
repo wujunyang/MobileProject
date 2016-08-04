@@ -798,6 +798,12 @@
 		34FA475F1D50961600D5B729 /* MPChildrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA475D1D50961600D5B729 /* MPChildrenViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34FA47621D50A61200D5B729 /* MPBlankPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34FA47631D50A61200D5B729 /* MPBlankPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FC67911D52EE8B0049F144 /* WJYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC67901D52EE8B0049F144 /* WJYAlertView.m */; settings = {ASSET_TAGS = (); }; };
+		34FC67941D52EFFD0049F144 /* MPCustomAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC67931D52EFFD0049F144 /* MPCustomAlertViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FC67951D52EFFD0049F144 /* MPCustomAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC67931D52EFFD0049F144 /* MPCustomAlertViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FC67961D5304E60049F144 /* WJYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC67901D52EE8B0049F144 /* WJYAlertView.m */; settings = {ASSET_TAGS = (); }; };
+		34FC67991D5313710049F144 /* WJYAlertInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC67981D5313710049F144 /* WJYAlertInputTextView.m */; settings = {ASSET_TAGS = (); }; };
+		34FC679A1D5313710049F144 /* WJYAlertInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC67981D5313710049F144 /* WJYAlertInputTextView.m */; settings = {ASSET_TAGS = (); }; };
 		34FD22861D50813300096706 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD22851D50813300096706 /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
 		34FD22871D50813300096706 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD22851D50813300096706 /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
 		34FE0B8D1D50FC2D00991E65 /* MPSolidColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE0B8C1D50FC2D00991E65 /* MPSolidColorViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -1594,6 +1600,12 @@
 		34FA475D1D50961600D5B729 /* MPChildrenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPChildrenViewController.m; sourceTree = "<group>"; };
 		34FA47601D50A61200D5B729 /* MPBlankPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBlankPageViewController.h; sourceTree = "<group>"; };
 		34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBlankPageViewController.m; sourceTree = "<group>"; };
+		34FC678F1D52EE8B0049F144 /* WJYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJYAlertView.h; sourceTree = "<group>"; };
+		34FC67901D52EE8B0049F144 /* WJYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJYAlertView.m; sourceTree = "<group>"; };
+		34FC67921D52EFFD0049F144 /* MPCustomAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCustomAlertViewController.h; sourceTree = "<group>"; };
+		34FC67931D52EFFD0049F144 /* MPCustomAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCustomAlertViewController.m; sourceTree = "<group>"; };
+		34FC67971D5313710049F144 /* WJYAlertInputTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJYAlertInputTextView.h; sourceTree = "<group>"; };
+		34FC67981D5313710049F144 /* WJYAlertInputTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJYAlertInputTextView.m; sourceTree = "<group>"; };
 		34FD22841D50813300096706 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		34FD22851D50813300096706 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		34FE0B8B1D50FC2D00991E65 /* MPSolidColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSolidColorViewController.h; sourceTree = "<group>"; };
@@ -1695,6 +1707,18 @@
 			);
 			name = "AddressManager(地址管理)";
 			path = AddressManager;
+			sourceTree = "<group>";
+		};
+		34013B651D51F4580051000F /* AlertViewManager(弹出窗管理) */ = {
+			isa = PBXGroup;
+			children = (
+				34FC678F1D52EE8B0049F144 /* WJYAlertView.h */,
+				34FC67901D52EE8B0049F144 /* WJYAlertView.m */,
+				34FC67971D5313710049F144 /* WJYAlertInputTextView.h */,
+				34FC67981D5313710049F144 /* WJYAlertInputTextView.m */,
+			);
+			name = "AlertViewManager(弹出窗管理)";
+			path = AlertViewManager;
 			sourceTree = "<group>";
 		};
 		3403B0B91D367264007CD7EF /* Config */ = {
@@ -2113,6 +2137,7 @@
 		34E890BF1C3B8B36001327C8 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				34013B651D51F4580051000F /* AlertViewManager(弹出窗管理) */,
 				34013B591D51C7880051000F /* AddressManager(地址管理) */,
 				341C07D71D41C5D900FF905C /* FileManager(文件管理) */,
 				342582671D3796D6003906BB /* IntroductoryPages(引导页) */,
@@ -3663,6 +3688,8 @@
 				34013B561D5179620051000F /* MPHideNavigationChildrenViewController.m */,
 				34013B611D51CEE20051000F /* MPAddressPickViewController.h */,
 				34013B621D51CEE20051000F /* MPAddressPickViewController.m */,
+				34FC67921D52EFFD0049F144 /* MPCustomAlertViewController.h */,
+				34FC67931D52EFFD0049F144 /* MPCustomAlertViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4196,6 +4223,7 @@
 				34E08AB51C3BFB90005C6CA3 /* UIBezierPath+SVG.m in Sources */,
 				34E08AB61C3BFB90005C6CA3 /* WebView+Debug.m in Sources */,
 				34420CBE1D0FAD10007D1AAC /* AdvertiseView.m in Sources */,
+				34FC67951D52EFFD0049F144 /* MPCustomAlertViewController.m in Sources */,
 				34E08AB71C3BFB90005C6CA3 /* UIImage+Blur.m in Sources */,
 				34E08AB81C3BFB90005C6CA3 /* QBImagePickerGroupCell.m in Sources */,
 				34E08AB91C3BFB90005C6CA3 /* UIImage+RemoteSize.m in Sources */,
@@ -4257,6 +4285,7 @@
 				340D87AA1D3F70E3003D9C88 /* MPImageUploadCell.m in Sources */,
 				34E08AED1C3BFB90005C6CA3 /* UILabel+AutomaticWriting.m in Sources */,
 				34E08AEE1C3BFB90005C6CA3 /* UILabel+AutoSize.m in Sources */,
+				34FC679A1D5313710049F144 /* WJYAlertInputTextView.m in Sources */,
 				34F9A8991D4F735500C2DEA5 /* MPWebViewController.m in Sources */,
 				34E08AEF1C3BFB90005C6CA3 /* NSObject+Runtime.m in Sources */,
 				34E08AF01C3BFB90005C6CA3 /* UIColor+Modify.m in Sources */,
@@ -4437,6 +4466,7 @@
 				34E08B851C3BFB90005C6CA3 /* UIWebView+Blocks.m in Sources */,
 				340D87961D3F5FD3003D9C88 /* MPImageItemModel.m in Sources */,
 				34E08B871C3BFB90005C6CA3 /* NSMutableString+Ruby.m in Sources */,
+				34FC67961D5304E60049F144 /* WJYAlertView.m in Sources */,
 				34E08B881C3BFB90005C6CA3 /* UIFont+DynamicFontControl.m in Sources */,
 				34FE0B8E1D50FC2D00991E65 /* MPSolidColorViewController.m in Sources */,
 				34E08B891C3BFB90005C6CA3 /* UIViewController+StoreKit.m in Sources */,
@@ -4515,6 +4545,7 @@
 				342A8F941D3F1BF1000C7B98 /* MPDiscoveryViewController.m in Sources */,
 				34E8941C1C3B9A03001327C8 /* UITextView+PinchZoom.m in Sources */,
 				34E894351C3B9A03001327C8 /* UIViewController+DDPopUpViewController.m in Sources */,
+				34FC67991D5313710049F144 /* WJYAlertInputTextView.m in Sources */,
 				340D87AD1D3F7FC4003D9C88 /* cameraHelper.m in Sources */,
 				341CA90F1D3097AF008B85D3 /* MBProgressHUD+MP.m in Sources */,
 				34E893761C3B9A03001327C8 /* NSDate+CupertinoYankee.m in Sources */,
@@ -4636,6 +4667,7 @@
 				34E893F41C3B9A03001327C8 /* UIImageView+FaceAwareFill.m in Sources */,
 				34E893831C3B9A03001327C8 /* NSDictionary+URL.m in Sources */,
 				34E893651C3B9A03001327C8 /* NSManagedObjectContext+Extensions.m in Sources */,
+				34FC67911D52EE8B0049F144 /* WJYAlertView.m in Sources */,
 				341C07DA1D41C6F200FF905C /* MPFileManager.m in Sources */,
 				349F81D01D45E571002104E3 /* MPUploadImageItemService.m in Sources */,
 				342582561D3734B6003906BB /* EaseBlankPageView.m in Sources */,
@@ -4783,6 +4815,7 @@
 				34E891201C3B92AA001327C8 /* MJRefreshBackNormalFooter.m in Sources */,
 				34E894211C3B9A03001327C8 /* UIView+Constraints.m in Sources */,
 				34E891461C3B9739001327C8 /* YTKNetworkPrivate.m in Sources */,
+				34FC67941D52EFFD0049F144 /* MPCustomAlertViewController.m in Sources */,
 				34799A611CD34C5A003518C5 /* UICKeyChainStore.m in Sources */,
 				34E893AC1C3B9A03001327C8 /* NSString+Score.m in Sources */,
 				34E9D84B1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */,

@@ -19,7 +19,7 @@
     
     
     UIView *headerView=[[UIView alloc]init];
-    headerView.backgroundColor=[UIColor blueColor];
+    headerView.backgroundColor=[UIColor redColor];
     [self.view addSubview:headerView];
     [headerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.and.right.mas_equalTo(0);

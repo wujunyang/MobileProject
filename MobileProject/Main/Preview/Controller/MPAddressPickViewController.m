@@ -52,6 +52,12 @@
     return left_button;
 }
 
+//设置左边事件
+-(void)left_button_event:(UIButton*)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark 自定义代码
 
 -(NSMutableAttributedString *)changeTitle:(NSString *)curTitle

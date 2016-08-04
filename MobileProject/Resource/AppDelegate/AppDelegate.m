@@ -153,6 +153,7 @@
     manager.enable = YES;
     manager.shouldResignOnTouchOutside = YES;
     manager.shouldToolbarUsesTextFieldTintColor = YES;
+    manager.keyboardDistanceFromTextField=60;
     manager.enableAutoToolbar = NO;
 }
 

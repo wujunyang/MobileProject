@@ -22,6 +22,7 @@
 #import "MPChildrenViewController.h"
 #import "MPBlankPageViewController.h"
 #import "MPAddressPickViewController.h"
+#import "MPCustomAlertViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 

@@ -190,6 +190,8 @@ pod 'WebViewJavascriptBridge', '~> 5.0'
 
 24 增加省市区三级联动的帮助类，可以设置绑定默认值，也可以查看当前的弹出窗状态，并实现其小实例
 
+25 自定义弹出窗，模拟系统UIAlertView,可以设置样式，增加一个带UITextView的弹出效果，其它自定义视图根据项目再创建；
+
 ## 效果图
 
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/1.png" width=250px height=350px></img>
@@ -208,7 +210,7 @@ pod 'WebViewJavascriptBridge', '~> 5.0'
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/14.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/15.png" width=250px height=350px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/16.png" width=250px height=350px></img>
-
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/17.png" width=250px height=350px></img>
 
 ## 联系方式
 
