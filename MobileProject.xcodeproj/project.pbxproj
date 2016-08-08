@@ -796,6 +796,8 @@
 		34FE0B921D50FF7C00991E65 /* MPHideNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE0B901D50FF7C00991E65 /* MPHideNavigationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34FF0E381D5835C90027EEAE /* MPYYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FF0E371D5835C90027EEAE /* MPYYTextViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34FF0E391D5835C90027EEAE /* MPYYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FF0E371D5835C90027EEAE /* MPYYTextViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FF0E3D1D586F320027EEAE /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FF0E3C1D586F320027EEAE /* YYFPSLabel.m */; settings = {ASSET_TAGS = (); }; };
+		34FF0E3E1D586F320027EEAE /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FF0E3C1D586F320027EEAE /* YYFPSLabel.m */; settings = {ASSET_TAGS = (); }; };
 		34FFA1F21D49128100A7C342 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFA1F11D49128100A7C342 /* NSString+Additions.m */; settings = {ASSET_TAGS = (); }; };
 		34FFA1F31D49128100A7C342 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFA1F11D49128100A7C342 /* NSString+Additions.m */; settings = {ASSET_TAGS = (); }; };
 		9014C40DD45909D3FC1F2EBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 533C667C4AE7D52B4A1E63C2 /* libPods.a */; };
@@ -1585,6 +1587,8 @@
 		34FE0B901D50FF7C00991E65 /* MPHideNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPHideNavigationViewController.m; sourceTree = "<group>"; };
 		34FF0E361D5835C90027EEAE /* MPYYTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPYYTextViewController.h; sourceTree = "<group>"; };
 		34FF0E371D5835C90027EEAE /* MPYYTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPYYTextViewController.m; sourceTree = "<group>"; };
+		34FF0E3B1D586F320027EEAE /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		34FF0E3C1D586F320027EEAE /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
 		34FFA1F01D49128100A7C342 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		34FFA1F11D49128100A7C342 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		533C667C4AE7D52B4A1E63C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2109,6 +2113,7 @@
 		34E890BF1C3B8B36001327C8 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				34FF0E3A1D586EA00027EEAE /* YYFPSLabel(FPS查看) */,
 				34013B651D51F4580051000F /* AlertViewManager(弹出窗管理) */,
 				34013B591D51C7880051000F /* AddressManager(地址管理) */,
 				341C07D71D41C5D900FF905C /* FileManager(文件管理) */,
@@ -3751,6 +3756,16 @@
 			path = UmengHelper;
 			sourceTree = "<group>";
 		};
+		34FF0E3A1D586EA00027EEAE /* YYFPSLabel(FPS查看) */ = {
+			isa = PBXGroup;
+			children = (
+				34FF0E3B1D586F320027EEAE /* YYFPSLabel.h */,
+				34FF0E3C1D586F320027EEAE /* YYFPSLabel.m */,
+			);
+			name = "YYFPSLabel(FPS查看)";
+			path = YYFPSLabel;
+			sourceTree = "<group>";
+		};
 		549E38115AE0AD579BD3EB1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -4241,6 +4256,7 @@
 				34E08AF11C3BFB90005C6CA3 /* UITextField+Select.m in Sources */,
 				34E08AF21C3BFB90005C6CA3 /* UIImageView+FaceAwareFill.m in Sources */,
 				34E08AF31C3BFB90005C6CA3 /* NSDictionary+URL.m in Sources */,
+				34FF0E3E1D586F320027EEAE /* YYFPSLabel.m in Sources */,
 				34E08AF41C3BFB90005C6CA3 /* NSManagedObjectContext+Extensions.m in Sources */,
 				34E08AF51C3BFB90005C6CA3 /* UIAlertView+Block.m in Sources */,
 				34E08AF61C3BFB90005C6CA3 /* NSManagedObjectContext+FetchRequestsConstructors.m in Sources */,
@@ -4745,6 +4761,7 @@
 				34E894121C3B9A03001327C8 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				34E894091C3B9A03001327C8 /* UIResponder+UIAdapt.m in Sources */,
 				34EC96361C58C77400985444 /* LoggerViewController.m in Sources */,
+				34FF0E3D1D586F320027EEAE /* YYFPSLabel.m in Sources */,
 				34E893791C3B9A03001327C8 /* NSDate+InternetDateTime.m in Sources */,
 				34E893631C3B9A03001327C8 /* NSManagedObject+DictionaryExport.m in Sources */,
 				34E893CB1C3B9A03001327C8 /* UIBezierPath+Length.m in Sources */,
