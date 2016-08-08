@@ -17,6 +17,7 @@
 #import <CocoaLumberjack.h>
 #import <AFNetworking/AFNetworking.h>
 #import <Masonry/Masonry.h>
+#import <YYText/YYText.h>
 #import <JSONModel/JSONModel.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <ReactiveCocoa/RACEXTScope.h>

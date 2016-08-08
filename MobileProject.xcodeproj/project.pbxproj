@@ -794,6 +794,8 @@
 		34FE0B8E1D50FC2D00991E65 /* MPSolidColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE0B8C1D50FC2D00991E65 /* MPSolidColorViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34FE0B911D50FF7C00991E65 /* MPHideNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE0B901D50FF7C00991E65 /* MPHideNavigationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34FE0B921D50FF7C00991E65 /* MPHideNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE0B901D50FF7C00991E65 /* MPHideNavigationViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FF0E381D5835C90027EEAE /* MPYYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FF0E371D5835C90027EEAE /* MPYYTextViewController.m */; settings = {ASSET_TAGS = (); }; };
+		34FF0E391D5835C90027EEAE /* MPYYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FF0E371D5835C90027EEAE /* MPYYTextViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34FFA1F21D49128100A7C342 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFA1F11D49128100A7C342 /* NSString+Additions.m */; settings = {ASSET_TAGS = (); }; };
 		34FFA1F31D49128100A7C342 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFA1F11D49128100A7C342 /* NSString+Additions.m */; settings = {ASSET_TAGS = (); }; };
 		9014C40DD45909D3FC1F2EBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 533C667C4AE7D52B4A1E63C2 /* libPods.a */; };
@@ -1581,6 +1583,8 @@
 		34FE0B8C1D50FC2D00991E65 /* MPSolidColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSolidColorViewController.m; sourceTree = "<group>"; };
 		34FE0B8F1D50FF7C00991E65 /* MPHideNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPHideNavigationViewController.h; sourceTree = "<group>"; };
 		34FE0B901D50FF7C00991E65 /* MPHideNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPHideNavigationViewController.m; sourceTree = "<group>"; };
+		34FF0E361D5835C90027EEAE /* MPYYTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPYYTextViewController.h; sourceTree = "<group>"; };
+		34FF0E371D5835C90027EEAE /* MPYYTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPYYTextViewController.m; sourceTree = "<group>"; };
 		34FFA1F01D49128100A7C342 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		34FFA1F11D49128100A7C342 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		533C667C4AE7D52B4A1E63C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3636,6 +3640,8 @@
 				34013B621D51CEE20051000F /* MPAddressPickViewController.m */,
 				34FC67921D52EFFD0049F144 /* MPCustomAlertViewController.h */,
 				34FC67931D52EFFD0049F144 /* MPCustomAlertViewController.m */,
+				34FF0E361D5835C90027EEAE /* MPYYTextViewController.h */,
+				34FF0E371D5835C90027EEAE /* MPYYTextViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4185,6 +4191,7 @@
 				3425826F1D379D2C003906BB /* introductoryPagesHelper.m in Sources */,
 				34E08AC71C3BFB90005C6CA3 /* UIDevice+Hardware.m in Sources */,
 				34E08AC81C3BFB90005C6CA3 /* NSObject+GCD.m in Sources */,
+				34FF0E391D5835C90027EEAE /* MPYYTextViewController.m in Sources */,
 				34E08AC91C3BFB90005C6CA3 /* NSDictionary+Merge.m in Sources */,
 				34E08ACA1C3BFB90005C6CA3 /* NSString+UUID.m in Sources */,
 				34E08ACB1C3BFB90005C6CA3 /* CLLocation+CH1903.m in Sources */,
@@ -4656,6 +4663,7 @@
 				34E894141C3B9A03001327C8 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				34E893741C3B9A03001327C8 /* NSData+SDDataCache.m in Sources */,
 				34E893ED1C3B9A03001327C8 /* UIImage+PDF.m in Sources */,
+				34FF0E381D5835C90027EEAE /* MPYYTextViewController.m in Sources */,
 				34E893731C3B9A03001327C8 /* NSData+Hash.m in Sources */,
 				34E8913F1C3B9739001327C8 /* YTKBaseRequest.m in Sources */,
 				34E893E61C3B9A03001327C8 /* UIImage+Capture.m in Sources */,
