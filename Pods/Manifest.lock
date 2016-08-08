@@ -83,6 +83,7 @@ PODS:
   - XAspect/Core (1.0.5):
     - XAspect/Macros
   - XAspect/Macros (1.0.5)
+  - YYText (1.0.5)
   - ZXingObjC (3.1.0):
     - ZXingObjC/All (= 3.1.0)
   - ZXingObjC/All (3.1.0)
@@ -113,6 +114,7 @@ DEPENDENCIES:
   - UMengSocial (~> 4.3)
   - WebViewJavascriptBridge (~> 5.0)
   - XAspect
+  - YYText
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
@@ -141,6 +143,7 @@ SPEC CHECKSUMS:
   UMengSocial: aba7296602310385114d82c255539a7bef3b7ab0
   WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
   XAspect: db50bf487f92dbb8557a7a5365556966c8493af8
+  YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
   ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
 
 COCOAPODS: 0.39.0
