@@ -211,6 +211,7 @@ pod 'WebViewJavascriptBridge', '~> 5.0'
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/15.png" width=200px height=300px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/16.png" width=200px height=300px></img>
 <img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/17.png" width=200px height=300px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/18.png" width=200px height=300px></img>
 
 ## 联系方式
 
