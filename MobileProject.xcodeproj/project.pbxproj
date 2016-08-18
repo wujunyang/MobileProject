@@ -27,6 +27,14 @@
 		34013B601D51C9150051000F /* AddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34013B5E1D51C9150051000F /* AddressPickerView.m */; settings = {ASSET_TAGS = (); }; };
 		34013B631D51CEE20051000F /* MPAddressPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34013B621D51CEE20051000F /* MPAddressPickViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34013B641D51CEE20051000F /* MPAddressPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34013B621D51CEE20051000F /* MPAddressPickViewController.m */; settings = {ASSET_TAGS = (); }; };
+		340199F21D6561B5001C97E9 /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 340199EB1D6561B5001C97E9 /* GCDGroup.m */; settings = {ASSET_TAGS = (); }; };
+		340199F31D6561B5001C97E9 /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 340199ED1D6561B5001C97E9 /* GCDQueue.m */; settings = {ASSET_TAGS = (); }; };
+		340199F41D6561B5001C97E9 /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 340199EF1D6561B5001C97E9 /* GCDSemaphore.m */; settings = {ASSET_TAGS = (); }; };
+		340199F51D6561B5001C97E9 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 340199F11D6561B5001C97E9 /* GCDTimer.m */; settings = {ASSET_TAGS = (); }; };
+		340199F61D6561BB001C97E9 /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 340199EB1D6561B5001C97E9 /* GCDGroup.m */; settings = {ASSET_TAGS = (); }; };
+		340199F71D6561BE001C97E9 /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 340199ED1D6561B5001C97E9 /* GCDQueue.m */; settings = {ASSET_TAGS = (); }; };
+		340199F81D6561C0001C97E9 /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 340199EF1D6561B5001C97E9 /* GCDSemaphore.m */; settings = {ASSET_TAGS = (); }; };
+		340199F91D6561C3001C97E9 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 340199F11D6561B5001C97E9 /* GCDTimer.m */; settings = {ASSET_TAGS = (); }; };
 		340242DF1D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		340242E01D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		3403847C1D47559A00E4A496 /* MPAdaptationFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403847B1D47559A00E4A496 /* MPAdaptationFontViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -844,6 +852,15 @@
 		34013B5E1D51C9150051000F /* AddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressPickerView.m; sourceTree = "<group>"; };
 		34013B611D51CEE20051000F /* MPAddressPickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAddressPickViewController.h; sourceTree = "<group>"; };
 		34013B621D51CEE20051000F /* MPAddressPickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAddressPickViewController.m; sourceTree = "<group>"; };
+		340199E91D6561B5001C97E9 /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
+		340199EA1D6561B5001C97E9 /* GCDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDGroup.h; sourceTree = "<group>"; };
+		340199EB1D6561B5001C97E9 /* GCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroup.m; sourceTree = "<group>"; };
+		340199EC1D6561B5001C97E9 /* GCDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
+		340199ED1D6561B5001C97E9 /* GCDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
+		340199EE1D6561B5001C97E9 /* GCDSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphore.h; sourceTree = "<group>"; };
+		340199EF1D6561B5001C97E9 /* GCDSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphore.m; sourceTree = "<group>"; };
+		340199F01D6561B5001C97E9 /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		340199F11D6561B5001C97E9 /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
 		340242DD1D16F98700ECD131 /* MPLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLoggerFormatter.h; sourceTree = "<group>"; };
 		340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLoggerFormatter.m; sourceTree = "<group>"; };
 		3403847A1D47559A00E4A496 /* MPAdaptationFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdaptationFontViewController.h; sourceTree = "<group>"; };
@@ -1702,6 +1719,23 @@
 			path = AlertViewManager;
 			sourceTree = "<group>";
 		};
+		340199E81D656137001C97E9 /* GCDHelper(GCD助手) */ = {
+			isa = PBXGroup;
+			children = (
+				340199E91D6561B5001C97E9 /* GCD.h */,
+				340199EA1D6561B5001C97E9 /* GCDGroup.h */,
+				340199EB1D6561B5001C97E9 /* GCDGroup.m */,
+				340199EC1D6561B5001C97E9 /* GCDQueue.h */,
+				340199ED1D6561B5001C97E9 /* GCDQueue.m */,
+				340199EE1D6561B5001C97E9 /* GCDSemaphore.h */,
+				340199EF1D6561B5001C97E9 /* GCDSemaphore.m */,
+				340199F01D6561B5001C97E9 /* GCDTimer.h */,
+				340199F11D6561B5001C97E9 /* GCDTimer.m */,
+			);
+			name = "GCDHelper(GCD助手)";
+			path = GCDHelper;
+			sourceTree = "<group>";
+		};
 		3403B0B91D367264007CD7EF /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -2117,6 +2151,7 @@
 		34E890BF1C3B8B36001327C8 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				340199E81D656137001C97E9 /* GCDHelper(GCD助手) */,
 				34FF0E3A1D586EA00027EEAE /* YYFPSLabel(FPS查看) */,
 				34013B651D51F4580051000F /* AlertViewManager(弹出窗管理) */,
 				34013B591D51C7880051000F /* AddressManager(地址管理) */,
@@ -4295,6 +4330,7 @@
 				34E08B141C3BFB90005C6CA3 /* NSString+Contains.m in Sources */,
 				34E08B151C3BFB90005C6CA3 /* NSDate+TimeAgo.m in Sources */,
 				34E08B161C3BFB90005C6CA3 /* UIWebVIew+SwipeGesture.m in Sources */,
+				340199F81D6561C0001C97E9 /* GCDSemaphore.m in Sources */,
 				3452EB901D1A8DAA0001732E /* AppDelegate.m in Sources */,
 				34E08B171C3BFB90005C6CA3 /* UIImageView+Reflect.m in Sources */,
 				340D87A61D3F7079003D9C88 /* MPImageCollectionCell.m in Sources */,
@@ -4305,6 +4341,7 @@
 				34EC806D1C472BF100C7E40A /* HomeViewController.m in Sources */,
 				34E08B1A1C3BFB90005C6CA3 /* UIImageView+GeometryConversion.m in Sources */,
 				346BBF611D50C3940048DB05 /* UIView+EaseBlankPage.m in Sources */,
+				340199F71D6561BE001C97E9 /* GCDQueue.m in Sources */,
 				34E08B1B1C3BFB90005C6CA3 /* UIView+Debug.m in Sources */,
 				34E08B1C1C3BFB90005C6CA3 /* NSArray+Block.m in Sources */,
 				34E08B1E1C3BFB90005C6CA3 /* NSDate+Utilities.m in Sources */,
@@ -4388,6 +4425,7 @@
 				34E08B621C3BFB90005C6CA3 /* NSSet+Block.m in Sources */,
 				34013B641D51CEE20051000F /* MPAddressPickViewController.m in Sources */,
 				34E08B631C3BFB90005C6CA3 /* NSObject+KVOBlocks.m in Sources */,
+				340199F61D6561BB001C97E9 /* GCDGroup.m in Sources */,
 				34E08B651C3BFB90005C6CA3 /* UIBarButtonItem+Action.m in Sources */,
 				340242E01D16F98700ECD131 /* MPLoggerFormatter.m in Sources */,
 				34E08B661C3BFB90005C6CA3 /* UIImage+Resize.m in Sources */,
@@ -4413,6 +4451,7 @@
 				34799A621CD34C5A003518C5 /* UICKeyChainStore.m in Sources */,
 				34E08B761C3BFB90005C6CA3 /* NSString+Score.m in Sources */,
 				34E9D84C1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */,
+				340199F91D6561C3001C97E9 /* GCDTimer.m in Sources */,
 				34E08B771C3BFB90005C6CA3 /* CAShapeLayer+UIBezierPath.m in Sources */,
 				340BCD691D0F04DB0093CC7D /* imageCompressHelper.m in Sources */,
 				34E08B791C3BFB90005C6CA3 /* MJRefreshNormalHeader.m in Sources */,
@@ -4472,6 +4511,7 @@
 				34E894BA1C3BA300001327C8 /* JDStatusBarView.m in Sources */,
 				34E891471C3B9739001327C8 /* YTKRequest.m in Sources */,
 				34E8940E1C3B9A03001327C8 /* UIScrollView+Pages.m in Sources */,
+				340199F21D6561B5001C97E9 /* GCDGroup.m in Sources */,
 				34E894151C3B9A03001327C8 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				34E893941C3B9A03001327C8 /* NSObject+AssociatedObject.m in Sources */,
 				34E8942F1C3B9A03001327C8 /* UIView+ViewController.m in Sources */,
@@ -4491,6 +4531,7 @@
 				341093FD1D0E848F00A8D63F /* JSPatchHelper.m in Sources */,
 				34E894311C3B9A03001327C8 /* UIViewController+BackButtonHandler.m in Sources */,
 				34E891261C3B92AA001327C8 /* MJRefreshConst.m in Sources */,
+				340199F31D6561B5001C97E9 /* GCDQueue.m in Sources */,
 				34E8938E1C3B9A03001327C8 /* NSDecimalNumber+Extensions.m in Sources */,
 				34EC963A1C58C7A400985444 /* LoggerDetailViewController.m in Sources */,
 				34E893FA1C3B9A03001327C8 /* UILabel+ESAdjustableLabel.m in Sources */,
@@ -4639,6 +4680,7 @@
 				34E893C41C3B9A03001327C8 /* UIAlertView+Block.m in Sources */,
 				34E893671C3B9A03001327C8 /* NSManagedObjectContext+FetchRequestsConstructors.m in Sources */,
 				34E893D41C3B9A03001327C8 /* UIButton+Submitting.m in Sources */,
+				340199F41D6561B5001C97E9 /* GCDSemaphore.m in Sources */,
 				34E891441C3B9739001327C8 /* YTKNetworkAgent.m in Sources */,
 				34E893891C3B9A03001327C8 /* NSIndexPath+Offset.m in Sources */,
 				34E8938D1C3B9A03001327C8 /* NSDecimalNumber+CalculatingByString.m in Sources */,
@@ -4654,6 +4696,7 @@
 				34E894111C3B9A03001327C8 /* UITableView+iOS7Style.m in Sources */,
 				34E8911D1C3B92AA001327C8 /* MJRefreshAutoNormalFooter.m in Sources */,
 				34F9A8981D4F735500C2DEA5 /* MPWebViewController.m in Sources */,
+				340199F51D6561B5001C97E9 /* GCDTimer.m in Sources */,
 				34E8914B1C3B9808001327C8 /* AFDownloadRequestOperation.m in Sources */,
 				34E8940B1C3B9A03001327C8 /* UIScrollView+Addition.m in Sources */,
 				34E891191C3B92AA001327C8 /* MJRefreshComponent.m in Sources */,
