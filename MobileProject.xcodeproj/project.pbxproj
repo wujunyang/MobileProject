@@ -104,6 +104,10 @@
 		340EB2F71D669E7600BF9222 /* MPTitleAndPromptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB2F51D669E7600BF9222 /* MPTitleAndPromptCell.m */; settings = {ASSET_TAGS = (); }; };
 		340EB2FA1D66A24F00BF9222 /* MPMultitextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB2F91D66A24F00BF9222 /* MPMultitextCell.m */; settings = {ASSET_TAGS = (); }; };
 		340EB2FB1D66A24F00BF9222 /* MPMultitextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB2F91D66A24F00BF9222 /* MPMultitextCell.m */; settings = {ASSET_TAGS = (); }; };
+		340EB2FE1D66A92A00BF9222 /* MPIconAndTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB2FD1D66A92A00BF9222 /* MPIconAndTitleCell.m */; settings = {ASSET_TAGS = (); }; };
+		340EB2FF1D66A92A00BF9222 /* MPIconAndTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB2FD1D66A92A00BF9222 /* MPIconAndTitleCell.m */; settings = {ASSET_TAGS = (); }; };
+		340EB3021D66ACE300BF9222 /* MPFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB3011D66ACE300BF9222 /* MPFormViewController.m */; settings = {ASSET_TAGS = (); }; };
+		340EB3031D66ACE300BF9222 /* MPFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB3011D66ACE300BF9222 /* MPFormViewController.m */; settings = {ASSET_TAGS = (); }; };
 		341093F31D0E605800A8D63F /* imageCompressHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093EF1D0E605800A8D63F /* imageCompressHelper.m */; settings = {ASSET_TAGS = (); }; };
 		341093F41D0E605800A8D63F /* UITapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093F11D0E605800A8D63F /* UITapImageView.m */; settings = {ASSET_TAGS = (); }; };
 		341093FD1D0E848F00A8D63F /* JSPatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093FC1D0E848F00A8D63F /* JSPatchHelper.m */; settings = {ASSET_TAGS = (); }; };
@@ -918,6 +922,10 @@
 		340EB2F51D669E7600BF9222 /* MPTitleAndPromptCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTitleAndPromptCell.m; sourceTree = "<group>"; };
 		340EB2F81D66A24F00BF9222 /* MPMultitextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMultitextCell.h; sourceTree = "<group>"; };
 		340EB2F91D66A24F00BF9222 /* MPMultitextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMultitextCell.m; sourceTree = "<group>"; };
+		340EB2FC1D66A92A00BF9222 /* MPIconAndTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPIconAndTitleCell.h; sourceTree = "<group>"; };
+		340EB2FD1D66A92A00BF9222 /* MPIconAndTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPIconAndTitleCell.m; sourceTree = "<group>"; };
+		340EB3001D66ACE300BF9222 /* MPFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFormViewController.h; sourceTree = "<group>"; };
+		340EB3011D66ACE300BF9222 /* MPFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFormViewController.m; sourceTree = "<group>"; };
 		341093EE1D0E605800A8D63F /* imageCompressHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageCompressHelper.h; sourceTree = "<group>"; };
 		341093EF1D0E605800A8D63F /* imageCompressHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageCompressHelper.m; sourceTree = "<group>"; };
 		341093F01D0E605800A8D63F /* UITapImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITapImageView.h; sourceTree = "<group>"; };
@@ -1852,6 +1860,8 @@
 				340EB2F51D669E7600BF9222 /* MPTitleAndPromptCell.m */,
 				340EB2F81D66A24F00BF9222 /* MPMultitextCell.h */,
 				340EB2F91D66A24F00BF9222 /* MPMultitextCell.m */,
+				340EB2FC1D66A92A00BF9222 /* MPIconAndTitleCell.h */,
+				340EB2FD1D66A92A00BF9222 /* MPIconAndTitleCell.m */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -3731,6 +3741,8 @@
 				34FF0E371D5835C90027EEAE /* MPYYTextViewController.m */,
 				342202401D62A8A1003F81B2 /* MPExpandHideViewController.h */,
 				342202411D62A8A1003F81B2 /* MPExpandHideViewController.m */,
+				340EB3001D66ACE300BF9222 /* MPFormViewController.h */,
+				340EB3011D66ACE300BF9222 /* MPFormViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4253,6 +4265,7 @@
 				34E08AA51C3BFB90005C6CA3 /* NSObject+AddProperty.m in Sources */,
 				342582571D3734BA003906BB /* EaseBlankPageView.m in Sources */,
 				34E08AA61C3BFB90005C6CA3 /* QBAssetsCollectionViewController.m in Sources */,
+				340EB2FF1D66A92A00BF9222 /* MPIconAndTitleCell.m in Sources */,
 				34E08AA71C3BFB90005C6CA3 /* UIWebView+MetaParser.m in Sources */,
 				34E08AA81C3BFB90005C6CA3 /* NSString+DictionaryValue.m in Sources */,
 				34E08AA91C3BFB90005C6CA3 /* UIWebView+JS.m in Sources */,
@@ -4374,6 +4387,7 @@
 				34E08B141C3BFB90005C6CA3 /* NSString+Contains.m in Sources */,
 				34E08B151C3BFB90005C6CA3 /* NSDate+TimeAgo.m in Sources */,
 				34E08B161C3BFB90005C6CA3 /* UIWebVIew+SwipeGesture.m in Sources */,
+				340EB3031D66ACE300BF9222 /* MPFormViewController.m in Sources */,
 				340199F81D6561C0001C97E9 /* GCDSemaphore.m in Sources */,
 				3452EB901D1A8DAA0001732E /* AppDelegate.m in Sources */,
 				34E08B171C3BFB90005C6CA3 /* UIImageView+Reflect.m in Sources */,
@@ -4677,6 +4691,7 @@
 				34E893B01C3B9A03001327C8 /* NSString+UUID.m in Sources */,
 				34E8936A1C3B9A03001327C8 /* CLLocation+CH1903.m in Sources */,
 				34E893BB1C3B9A03001327C8 /* MKMapView+BetterMaps.m in Sources */,
+				340EB2FE1D66A92A00BF9222 /* MPIconAndTitleCell.m in Sources */,
 				34E894271C3B9A03001327C8 /* UIView+Frame.m in Sources */,
 				34E893801C3B9A03001327C8 /* NSDictionary+JSONString.m in Sources */,
 				34E894B81C3BA300001327C8 /* JDStatusBarNotification.m in Sources */,
@@ -4901,6 +4916,7 @@
 				34EC96201C58A5BB00985444 /* UMengSocialViewController.m in Sources */,
 				34E893E01C3B9A03001327C8 /* UIFont+WDCustomLoader.m in Sources */,
 				34E8911A1C3B92AA001327C8 /* MJRefreshFooter.m in Sources */,
+				340EB3021D66ACE300BF9222 /* MPFormViewController.m in Sources */,
 				34E893D01C3B9A03001327C8 /* UIButton+Block.m in Sources */,
 				34E8939D1C3B9A03001327C8 /* NSRunLoop+PerformBlock.m in Sources */,
 				34E894171C3B9A03001327C8 /* UITableViewCell+TS_delaysContentTouches.m in Sources */,

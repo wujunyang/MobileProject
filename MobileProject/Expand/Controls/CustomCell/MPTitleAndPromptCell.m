@@ -24,29 +24,30 @@ static const CGFloat spaceWith=15;
         //设置背影色
         self.backgroundColor=[UIColor whiteColor];
         self.accessoryType = UITableViewCellAccessoryNone;
+        self.selectionStyle=UITableViewCellSelectionStyleNone;
         
         if (self.keyLabel==nil) {
             self.keyLabel=[[UILabel alloc]init];
-            self.keyLabel.font=CHINESE_SYSTEM(14);
+            self.keyLabel.font=AdaptedFontSize(14);
             self.keyLabel.textColor=COLOR_WORD_GRAY_1;
             [self.contentView addSubview:self.keyLabel];
             [self.keyLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.left.mas_equalTo(self.left).with.offset(spaceWith);
-                make.centerY.mas_equalTo(self.contentView).with.offset(0);
-                make.size.mas_equalTo(CGSizeMake(80, 15));
+                make.left.mas_equalTo(spaceWith);
+                make.centerY.mas_equalTo(0);
+                make.size.mas_equalTo(CGSizeMake(80, AdaptedHeight(15)));
             }];
         }
         
         if (self.valueLabel==nil) {
             self.valueLabel=[[UILabel alloc]init];
             self.valueLabel.textAlignment=NSTextAlignmentRight;
-            self.valueLabel.font=CHINESE_SYSTEM(14);
+            self.valueLabel.font=AdaptedFontSize(14);
             self.valueLabel.textColor=COLOR_WORD_GRAY_2;
             [self.contentView addSubview:self.valueLabel];
             [self.valueLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.centerY.mas_equalTo(self.contentView).with.offset(0);
-                make.right.mas_equalTo(self.right).with.offset(-2*spaceWith);
-                make.size.mas_equalTo(CGSizeMake(Main_Screen_Width-80-2*spaceWith, 18));
+                make.centerY.mas_equalTo(0);
+                make.right.mas_equalTo(0);
+                make.size.mas_equalTo(CGSizeMake(Main_Screen_Width-80-2*spaceWith, AdaptedHeight(18)));
             }];
         }
         
@@ -56,9 +57,9 @@ static const CGFloat spaceWith=15;
             self.lineView.backgroundColor=COLOR_UNDER_LINE;
             [self.contentView addSubview:self.lineView];
             [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.left.mas_equalTo(self.left).with.offset(spaceWith);
-                make.right.mas_equalTo(self.right).with.offset(0);
-                make.top.mas_equalTo(self.bottom).with.offset(-0.5);
+                make.left.mas_equalTo(spaceWith);
+                make.right.mas_equalTo(self).offset(0);
+                make.bottom.mas_equalTo(0);
                 make.height.mas_equalTo(@0.5);
             }];
         }
@@ -83,6 +84,12 @@ static const CGFloat spaceWith=15;
     switch (cellType) {
         case MPTitleAndPromptCellTypeInput: {
             self.accessoryType = UITableViewCellAccessoryNone;
+            [self.valueLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.centerY.mas_equalTo(0);
+                make.right.mas_equalTo(-2*spaceWith);
+                make.size.mas_equalTo(CGSizeMake(Main_Screen_Width-80-2*spaceWith, AdaptedHeight(18)));
+            }];
+            [self.valueLabel layoutIfNeeded];
             break;
         }
         case MPTitleAndPromptCellTypeSelect: {

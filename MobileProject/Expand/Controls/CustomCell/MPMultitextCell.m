@@ -22,19 +22,20 @@
     if (self) {
         //设置背影色
         self.backgroundColor=[UIColor whiteColor];
+        self.selectionStyle=UITableViewCellSelectionStyleNone;
         self.accessoryType = UITableViewCellAccessoryNone;
         
         
         if (self.myTitleLabel==nil) {
             self.myTitleLabel=[[UILabel alloc]init];
-            self.myTitleLabel.font=CHINESE_SYSTEM(14);
+            self.myTitleLabel.font=AdaptedFontSize(14);
             self.myTitleLabel.textColor=COLOR_WORD_GRAY_1;
             [self.contentView addSubview:self.myTitleLabel];
             [self.myTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.mas_equalTo(self.top).with.offset(10);
-                make.left.mas_equalTo(self.left).with.offset(15);
-                make.right.mas_equalTo(self.right).with.offset(-10);
-                make.height.mas_equalTo(@16);
+                make.top.mas_equalTo(10);
+                make.left.mas_equalTo(15);
+                make.right.mas_equalTo(-10);
+                make.height.mas_equalTo(AdaptedHeight(16));
             }];
         }
         
@@ -45,13 +46,13 @@
             _textContentView.backgroundColor = [UIColor whiteColor];
             _textContentView.textColor=COLOR_WORD_BLACK;
             _textContentView.placeholderColor=COLOR_WORD_GRAY_2;
-            
+            _textContentView.font=AdaptedFontSize(14);
             [self.contentView addSubview:_textContentView];
             [_textContentView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.mas_equalTo(self.myTitleLabel.mas_bottom).with.offset(5);
-                make.left.mas_equalTo(self.myTitleLabel.mas_left).with.offset(-5);
-                make.right.mas_equalTo(self.mas_right).with.offset(0);
-                make.height.mas_equalTo(80);
+                make.top.mas_equalTo(self.myTitleLabel.mas_bottom).offset(5);
+                make.left.mas_equalTo(self.myTitleLabel.mas_left).offset(-5);
+                make.right.mas_equalTo(self.mas_right).offset(0);
+                make.height.mas_equalTo(AdaptedHeight(80));
             }];
         }
         
@@ -61,9 +62,9 @@
             self.lineView.backgroundColor=COLOR_UNDER_LINE;
             [self.contentView addSubview:self.lineView];
             [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.left.mas_equalTo(self.left).with.offset(15);
-                make.right.mas_equalTo(self.right).with.offset(0);
-                make.bottom.mas_equalTo(self.bottom).with.offset(0);
+                make.left.mas_equalTo(15);
+                make.right.mas_equalTo(self).offset(0);
+                make.bottom.mas_equalTo(0);
                 make.height.mas_equalTo(@0.5);
             }];
         }
@@ -81,7 +82,7 @@
     }
     else
     {
-        self.textContentView.text=blankvalue;
+        self.textContentView.placeholder=blankvalue;
     }
 }
 
@@ -136,12 +137,12 @@
 
 -(void)setPlaceFontSize:(CGFloat)placeFontSize
 {
-    _textContentView.font=CHINESE_SYSTEM(placeFontSize);
+    _textContentView.font=AdaptedFontSize(placeFontSize);
 }
 
 + (CGFloat)cellHeight
 {
-    return 120;
+    return AdaptedHeight(120);
 }
 
 
