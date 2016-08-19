@@ -46,6 +46,13 @@
 #define SYSTEMFONT(FONTSIZE)    [UIFont systemFontOfSize:FONTSIZE]
 #define FONT(NAME, FONTSIZE)    [UIFont fontWithName:(NAME) size:(FONTSIZE)]
 
+//字体色彩
+#define COLOR_WORD_BLACK HEXCOLOR(0x333333)
+#define COLOR_WORD_GRAY_1 HEXCOLOR(0x666666)
+#define COLOR_WORD_GRAY_2 HEXCOLOR(0x999999)
+
+#define COLOR_UNDER_LINE [UIColor colorWithRed:198/255.0 green:198/255.0 blue:198/255.0 alpha:1]
+
 // 当前版本
 #define FSystemVersion          ([[[UIDevice currentDevice] systemVersion] floatValue])
 #define DSystemVersion          ([[[UIDevice currentDevice] systemVersion] doubleValue])

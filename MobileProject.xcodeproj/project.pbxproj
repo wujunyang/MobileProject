@@ -35,6 +35,8 @@
 		340199F71D6561BE001C97E9 /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 340199ED1D6561B5001C97E9 /* GCDQueue.m */; settings = {ASSET_TAGS = (); }; };
 		340199F81D6561C0001C97E9 /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 340199EF1D6561B5001C97E9 /* GCDSemaphore.m */; settings = {ASSET_TAGS = (); }; };
 		340199F91D6561C3001C97E9 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 340199F11D6561B5001C97E9 /* GCDTimer.m */; settings = {ASSET_TAGS = (); }; };
+		340199FF1D65B1D5001C97E9 /* MPSolidColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 340199FE1D65B1D5001C97E9 /* MPSolidColorButton.m */; settings = {ASSET_TAGS = (); }; };
+		34019A001D65B1D5001C97E9 /* MPSolidColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 340199FE1D65B1D5001C97E9 /* MPSolidColorButton.m */; settings = {ASSET_TAGS = (); }; };
 		340242DF1D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		340242E01D16F98700ECD131 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		3403847C1D47559A00E4A496 /* MPAdaptationFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403847B1D47559A00E4A496 /* MPAdaptationFontViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -98,6 +100,10 @@
 		340D87AA1D3F70E3003D9C88 /* MPImageUploadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D87A81D3F70E3003D9C88 /* MPImageUploadCell.m */; settings = {ASSET_TAGS = (); }; };
 		340D87AD1D3F7FC4003D9C88 /* cameraHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D87AC1D3F7FC4003D9C88 /* cameraHelper.m */; settings = {ASSET_TAGS = (); }; };
 		340D87AE1D3F7FC4003D9C88 /* cameraHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D87AC1D3F7FC4003D9C88 /* cameraHelper.m */; settings = {ASSET_TAGS = (); }; };
+		340EB2F61D669E7600BF9222 /* MPTitleAndPromptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB2F51D669E7600BF9222 /* MPTitleAndPromptCell.m */; settings = {ASSET_TAGS = (); }; };
+		340EB2F71D669E7600BF9222 /* MPTitleAndPromptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB2F51D669E7600BF9222 /* MPTitleAndPromptCell.m */; settings = {ASSET_TAGS = (); }; };
+		340EB2FA1D66A24F00BF9222 /* MPMultitextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB2F91D66A24F00BF9222 /* MPMultitextCell.m */; settings = {ASSET_TAGS = (); }; };
+		340EB2FB1D66A24F00BF9222 /* MPMultitextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB2F91D66A24F00BF9222 /* MPMultitextCell.m */; settings = {ASSET_TAGS = (); }; };
 		341093F31D0E605800A8D63F /* imageCompressHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093EF1D0E605800A8D63F /* imageCompressHelper.m */; settings = {ASSET_TAGS = (); }; };
 		341093F41D0E605800A8D63F /* UITapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093F11D0E605800A8D63F /* UITapImageView.m */; settings = {ASSET_TAGS = (); }; };
 		341093FD1D0E848F00A8D63F /* JSPatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093FC1D0E848F00A8D63F /* JSPatchHelper.m */; settings = {ASSET_TAGS = (); }; };
@@ -861,6 +867,8 @@
 		340199EF1D6561B5001C97E9 /* GCDSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphore.m; sourceTree = "<group>"; };
 		340199F01D6561B5001C97E9 /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
 		340199F11D6561B5001C97E9 /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
+		340199FD1D65B1D5001C97E9 /* MPSolidColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSolidColorButton.h; sourceTree = "<group>"; };
+		340199FE1D65B1D5001C97E9 /* MPSolidColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSolidColorButton.m; sourceTree = "<group>"; };
 		340242DD1D16F98700ECD131 /* MPLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLoggerFormatter.h; sourceTree = "<group>"; };
 		340242DE1D16F98700ECD131 /* MPLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLoggerFormatter.m; sourceTree = "<group>"; };
 		3403847A1D47559A00E4A496 /* MPAdaptationFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdaptationFontViewController.h; sourceTree = "<group>"; };
@@ -906,6 +914,10 @@
 		340D87A81D3F70E3003D9C88 /* MPImageUploadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPImageUploadCell.m; sourceTree = "<group>"; };
 		340D87AB1D3F7FC4003D9C88 /* cameraHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cameraHelper.h; sourceTree = "<group>"; };
 		340D87AC1D3F7FC4003D9C88 /* cameraHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cameraHelper.m; sourceTree = "<group>"; };
+		340EB2F41D669E7600BF9222 /* MPTitleAndPromptCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTitleAndPromptCell.h; sourceTree = "<group>"; };
+		340EB2F51D669E7600BF9222 /* MPTitleAndPromptCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTitleAndPromptCell.m; sourceTree = "<group>"; };
+		340EB2F81D66A24F00BF9222 /* MPMultitextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMultitextCell.h; sourceTree = "<group>"; };
+		340EB2F91D66A24F00BF9222 /* MPMultitextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMultitextCell.m; sourceTree = "<group>"; };
 		341093EE1D0E605800A8D63F /* imageCompressHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageCompressHelper.h; sourceTree = "<group>"; };
 		341093EF1D0E605800A8D63F /* imageCompressHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageCompressHelper.m; sourceTree = "<group>"; };
 		341093F01D0E605800A8D63F /* UITapImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITapImageView.h; sourceTree = "<group>"; };
@@ -1736,6 +1748,25 @@
 			path = GCDHelper;
 			sourceTree = "<group>";
 		};
+		340199FA1D65B0A9001C97E9 /* Controls(自定义控件) */ = {
+			isa = PBXGroup;
+			children = (
+				340EB2F31D669DBE00BF9222 /* CustomCell */,
+				340199FB1D65B110001C97E9 /* CustomButton */,
+			);
+			name = "Controls(自定义控件)";
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		340199FB1D65B110001C97E9 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				340199FD1D65B1D5001C97E9 /* MPSolidColorButton.h */,
+				340199FE1D65B1D5001C97E9 /* MPSolidColorButton.m */,
+			);
+			path = CustomButton;
+			sourceTree = "<group>";
+		};
 		3403B0B91D367264007CD7EF /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -1812,6 +1843,17 @@
 				340BCD261D0F014B0093CC7D /* Placeholder */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		340EB2F31D669DBE00BF9222 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				340EB2F41D669E7600BF9222 /* MPTitleAndPromptCell.h */,
+				340EB2F51D669E7600BF9222 /* MPTitleAndPromptCell.m */,
+				340EB2F81D66A24F00BF9222 /* MPMultitextCell.h */,
+				340EB2F91D66A24F00BF9222 /* MPMultitextCell.m */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 		341093EB1D0E600200A8D63F /* OtherHelper */ = {
@@ -2053,6 +2095,7 @@
 		34E890B91C3B89FE001327C8 /* Expand(扩展) */ = {
 			isa = PBXGroup;
 			children = (
+				340199FA1D65B0A9001C97E9 /* Controls(自定义控件) */,
 				34E890C11C3B8B9A001327C8 /* Const(常量) */,
 				34E890C01C3B8B78001327C8 /* Macros(宏) */,
 				34E890BF1C3B8B36001327C8 /* Tool(工具类) */,
@@ -4297,6 +4340,7 @@
 				34E08AF11C3BFB90005C6CA3 /* UITextField+Select.m in Sources */,
 				34E08AF21C3BFB90005C6CA3 /* UIImageView+FaceAwareFill.m in Sources */,
 				34E08AF31C3BFB90005C6CA3 /* NSDictionary+URL.m in Sources */,
+				34019A001D65B1D5001C97E9 /* MPSolidColorButton.m in Sources */,
 				34FF0E3E1D586F320027EEAE /* YYFPSLabel.m in Sources */,
 				34E08AF41C3BFB90005C6CA3 /* NSManagedObjectContext+Extensions.m in Sources */,
 				34E08AF51C3BFB90005C6CA3 /* UIAlertView+Block.m in Sources */,
@@ -4369,6 +4413,7 @@
 				34E08B2F1C3BFB90005C6CA3 /* CAAnimation+Blocks.m in Sources */,
 				34E08B301C3BFB90005C6CA3 /* UIView+Recursion.m in Sources */,
 				34E08B321C3BFB90005C6CA3 /* NetWorkBaseUrlConfig.m in Sources */,
+				340EB2FB1D66A24F00BF9222 /* MPMultitextCell.m in Sources */,
 				34E08B331C3BFB90005C6CA3 /* NSURLRequest+ParamsFromDictionary.m in Sources */,
 				34E08B341C3BFB90005C6CA3 /* NSDate+Formatter.m in Sources */,
 				34E08B351C3BFB90005C6CA3 /* NSObject+Reflection.m in Sources */,
@@ -4446,6 +4491,7 @@
 				34E08B701C3BFB90005C6CA3 /* UIApplication+Permissions.m in Sources */,
 				34E08B721C3BFB90005C6CA3 /* UIViewController+BlockSegue.m in Sources */,
 				34E08B731C3BFB90005C6CA3 /* MJRefreshBackNormalFooter.m in Sources */,
+				340EB2F71D669E7600BF9222 /* MPTitleAndPromptCell.m in Sources */,
 				34E08B741C3BFB90005C6CA3 /* UIView+Constraints.m in Sources */,
 				34E08B751C3BFB90005C6CA3 /* YTKNetworkPrivate.m in Sources */,
 				34799A621CD34C5A003518C5 /* UICKeyChainStore.m in Sources */,
@@ -4731,6 +4777,7 @@
 				34E893ED1C3B9A03001327C8 /* UIImage+PDF.m in Sources */,
 				34FF0E381D5835C90027EEAE /* MPYYTextViewController.m in Sources */,
 				34E893731C3B9A03001327C8 /* NSData+Hash.m in Sources */,
+				340199FF1D65B1D5001C97E9 /* MPSolidColorButton.m in Sources */,
 				34E8913F1C3B9739001327C8 /* YTKBaseRequest.m in Sources */,
 				34E893E61C3B9A03001327C8 /* UIImage+Capture.m in Sources */,
 				34E893DC1C3B9A03001327C8 /* UIControl+Block.m in Sources */,
@@ -4769,6 +4816,7 @@
 				34E893B11C3B9A03001327C8 /* NSString+XML.m in Sources */,
 				34E893951C3B9A03001327C8 /* NSObject+AutoCoding.m in Sources */,
 				34E893E81C3B9A03001327C8 /* UIImage+FileName.m in Sources */,
+				340EB2FA1D66A24F00BF9222 /* MPMultitextCell.m in Sources */,
 				34E8940A1C3B9A03001327C8 /* UIScreen+Frame.m in Sources */,
 				34E894241C3B9A03001327C8 /* UIView+draggable.m in Sources */,
 				34E893D61C3B9A03001327C8 /* UIColor+Gradient.m in Sources */,
@@ -4782,6 +4830,7 @@
 				34E893C61C3B9A03001327C8 /* UIApplication+KeyboardFrame.m in Sources */,
 				34E894361C3B9A03001327C8 /* UIViewController+MJPopupViewController.m in Sources */,
 				341093F41D0E605800A8D63F /* UITapImageView.m in Sources */,
+				340EB2F61D669E7600BF9222 /* MPTitleAndPromptCell.m in Sources */,
 				34E894C61C3BAF38001327C8 /* NetworkUnit.m in Sources */,
 				342A8FA61D3F1D8B000C7B98 /* UINavigationController+KeyboardFix.m in Sources */,
 				340384801D47567900E4A496 /* MPAdaptationCell.m in Sources */,
