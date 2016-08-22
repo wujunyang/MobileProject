@@ -112,21 +112,16 @@
     [assistView becomeFirstResponder];
     shouldDismiss = NO;
     BtnSave.enabled = content.length>0;
-
-    //IQKeyboardManager有用时这样写 否则弹出窗会一闪
-    if (!shouldDismiss) {
-        [inputView becomeFirstResponder];
-    }
     
     //项目没有引入IQKeyboardManager时这样写 否则弹出窗会一闪
-//    [[NSNotificationCenter defaultCenter] addObserverForName:UIKeyboardDidShowNotification
-//                                                      object:nil
-//                                                       queue:nil
-//                                                  usingBlock:^(NSNotification * _Nonnull note) {
-//                                                      if (!shouldDismiss) {
-//                                                          [inputView becomeFirstResponder];
-//                                                      }
-//                                                  }];
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIKeyboardDidShowNotification
+                                                      object:nil
+                                                       queue:nil
+                                                  usingBlock:^(NSNotification * _Nonnull note) {
+                                                      if (!shouldDismiss) {
+                                                          [inputView becomeFirstResponder];
+                                                      }
+                                                  }];
 }
 
 - (void)saveContent

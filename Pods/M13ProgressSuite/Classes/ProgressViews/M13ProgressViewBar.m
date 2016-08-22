@@ -76,6 +76,7 @@
     self.animationDuration = .3;
     _progressDirection = M13ProgressViewBarProgressDirectionLeftToRight;
     _progressBarThickness = 2;
+    _progressBarCornerRadius = _progressBarThickness / 2.0;
     _percentagePosition = M13ProgressViewBarPercentagePositionRight;
     _showPercentage = YES;
     
@@ -92,7 +93,7 @@
     //Progress View
     _progressBar = [[UIView alloc] init];
     _progressBar.backgroundColor = self.secondaryColor;
-    _progressBar.layer.cornerRadius = _progressBarThickness / 2.0;
+    _progressBar.layer.cornerRadius = _progressBarCornerRadius;
     _progressBar.clipsToBounds = YES;
     [self addSubview:_progressBar];
     
@@ -115,7 +116,7 @@
     //IndeterminateLayer
     _indeterminateLayer = [CALayer layer];
     _indeterminateLayer.backgroundColor = self.primaryColor.CGColor;
-    _indeterminateLayer.cornerRadius = _progressBarThickness / 2.0;
+    _indeterminateLayer.cornerRadius = _progressBarCornerRadius;
     _indeterminateLayer.opacity = 0;
     [_progressBar.layer addSublayer:_indeterminateLayer];
     
@@ -185,6 +186,19 @@
     [self invalidateIntrinsicContentSize];
 }
 
+- (void)setProgressBarCornerRadius:(CGFloat)progressBarCornerRadius
+{
+    _progressBarCornerRadius = progressBarCornerRadius;
+    
+    // Update the layer size
+    [self setNeedsDisplay];
+    
+    // Update corner radius for layers
+    _progressBar.layer.cornerRadius = _progressBarCornerRadius;
+    _indeterminateLayer.cornerRadius = _progressBarCornerRadius;
+    [self invalidateIntrinsicContentSize];
+}
+
 #pragma mark Actions
 
 - (void)setProgress:(CGFloat)progress animated:(BOOL)animated
@@ -192,7 +206,7 @@
     if (animated == NO) {
         if (_displayLink) {
             //Kill running animations
-            [_displayLink removeFromRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+            [_displayLink invalidate];
             _displayLink = nil;
         }
         [super setProgress:progress animated:NO];
@@ -203,7 +217,7 @@
         _animationToValue = progress;
         if (!_displayLink) {
             //Create and setup the display link
-            [self.displayLink removeFromRunLoop:NSRunLoop.mainRunLoop forMode:NSRunLoopCommonModes];
+            [self.displayLink invalidate];
             self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(animateProgress:)];
             [self.displayLink addToRunLoop:NSRunLoop.mainRunLoop forMode:NSRunLoopCommonModes];
         } /*else {
@@ -215,18 +229,18 @@
 - (void)animateProgress:(CADisplayLink *)displayLink
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        CGFloat dt = (displayLink.timestamp - _animationStartTime) / self.animationDuration;
+        CGFloat dt = (displayLink.timestamp - self.animationStartTime) / self.animationDuration;
         if (dt >= 1.0) {
             //Order is important! Otherwise concurrency will cause errors, because setProgress: will detect an animation in progress and try to stop it by itself. Once over one, set to actual progress amount. Animation is over.
-            [self.displayLink removeFromRunLoop:NSRunLoop.mainRunLoop forMode:NSRunLoopCommonModes];
+            [self.displayLink invalidate];
             self.displayLink = nil;
-            [super setProgress:_animationToValue animated:NO];
+            [super setProgress:self.animationToValue animated:NO];
             [self setNeedsDisplay];
             return;
         }
         
         //Set progress
-        [super setProgress:_animationFromValue + dt * (_animationToValue - _animationFromValue) animated:YES];
+        [super setProgress:self.animationFromValue + dt * (self.animationToValue - self.animationFromValue) animated:YES];
         [self setNeedsDisplay];
         
     });
@@ -236,7 +250,7 @@
 {
     if (action == M13ProgressViewActionNone && _currentAction != M13ProgressViewActionNone) {
         _currentAction = action;
-        _percentageLabel.string = [_percentageFormatter stringFromNumber:[NSNumber numberWithFloat:self.progress]];
+        _percentageLabel.string = [self.percentageFormatter stringFromNumber:[NSNumber numberWithFloat:(float)self.progress]];
         [self setNeedsDisplay];
         [CATransaction begin];
         CABasicAnimation *barAnimation = [self barColorAnimation];
@@ -359,7 +373,7 @@
         //Remove all animations
         [_indeterminateLayer removeAnimationForKey:@"position"];
         //Reset progress text
-        _percentageLabel.string = [_percentageFormatter stringFromNumber:[NSNumber numberWithFloat:self.progress]];
+        _percentageLabel.string = [_percentageFormatter stringFromNumber:[NSNumber numberWithFloat:(float)self.progress]];
     }
 }
 
@@ -586,7 +600,7 @@
         _percentageLabel.string = @"✕";
     } else if (_currentAction == M13ProgressViewActionNone) {
         if (!self.indeterminate) {
-            _percentageLabel.string = [_percentageFormatter stringFromNumber:[NSNumber numberWithFloat:self.progress]];
+            _percentageLabel.string = [_percentageFormatter stringFromNumber:[NSNumber numberWithFloat:(float)self.progress]];
         } else {
             _percentageLabel.string = @"∞";
         }

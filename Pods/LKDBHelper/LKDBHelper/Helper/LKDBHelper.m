@@ -597,7 +597,7 @@ static BOOL LKDBLogErrorEnable = NO;
                 }
 
                 NSString* alertSQL = [NSString stringWithFormat:@"alter table %@ add column %@", tableName, addColumePars];
-                NSString* initColumnValue = [NSString stringWithFormat:@"update %@ set %@=%@", tableName, property.sqlColumnName, [property.sqlColumnType isEqualToString:LKSQL_Type_Text] ? @"''" : @"0"];
+                NSString* initColumnValue = [NSString stringWithFormat:@"update %@ set %@=%@", tableName, property.sqlColumnName, [property.sqlColumnType isEqualToString:LKSQL_Type_Text] ? @"null" : @"0"];
 
                 BOOL success = [db executeUpdate:alertSQL];
 
@@ -760,9 +760,9 @@ static BOOL LKDBLogErrorEnable = NO;
     }
 
     if (value == nil) {
-        value = @"";
+        value = [NSNull null];
     }
-
+    
     return value;
 }
 
@@ -1115,7 +1115,10 @@ static BOOL LKDBLogErrorEnable = NO;
                 }
                 else {
                     NSData* sqlData = [set dataForColumnIndex:i];
-                    NSString* sqlValue = [[NSString alloc] initWithData:sqlData encoding:NSUTF8StringEncoding];
+                    NSString* sqlValue = nil;
+                    if (sqlData) {
+                       sqlValue = [[NSString alloc] initWithData:sqlData encoding:NSUTF8StringEncoding];
+                    }
                     [bindingModel userSetValueForModel:property value:sqlValue ?: sqlData];
                 }
             }

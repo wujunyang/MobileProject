@@ -181,7 +181,7 @@
     if (animated == NO) {
         if (_displayLink) {
             //Kill running animations
-            [_displayLink removeFromRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+            [_displayLink invalidate];
             _displayLink = nil;
         }
         [super setProgress:progress animated:NO];
@@ -192,7 +192,7 @@
         _animationToValue = progress;
         if (!_displayLink) {
             //Create and setup the display link
-            [self.displayLink removeFromRunLoop:NSRunLoop.mainRunLoop forMode:NSRunLoopCommonModes];
+            [self.displayLink invalidate];
             self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(animateProgress:)];
             [self.displayLink addToRunLoop:NSRunLoop.mainRunLoop forMode:NSRunLoopCommonModes];
         } /*else {
@@ -204,18 +204,18 @@
 - (void)animateProgress:(CADisplayLink *)displayLink
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        CGFloat dt = (displayLink.timestamp - _animationStartTime) / self.animationDuration;
+        CGFloat dt = (displayLink.timestamp - self.animationStartTime) / self.animationDuration;
         if (dt >= 1.0) {
             //Order is important! Otherwise concurrency will cause errors, because setProgress: will detect an animation in progress and try to stop it by itself. Once over one, set to actual progress amount. Animation is over.
-            [self.displayLink removeFromRunLoop:NSRunLoop.mainRunLoop forMode:NSRunLoopCommonModes];
+            [self.displayLink invalidate];
             self.displayLink = nil;
-            [super setProgress:_animationToValue animated:NO];
+            [super setProgress:self.animationToValue animated:NO];
             [self setNeedsDisplay];
             return;
         }
         
         //Set progress
-        [super setProgress:_animationFromValue + dt * (_animationToValue - _animationFromValue) animated:YES];
+        [super setProgress:self.animationFromValue + dt * (self.animationToValue - self.animationFromValue) animated:YES];
         [self setNeedsDisplay];
         
     });
@@ -228,7 +228,7 @@
         [self setNeedsDisplay];
         [CATransaction begin];
         for (int i = 0; i < _numberOfSegments; i++) {
-            CAShapeLayer *layer = _segmentsLayer.sublayers[i];
+            CAShapeLayer *layer = (CAShapeLayer *)_segmentsLayer.sublayers[i];
             CABasicAnimation *barAnimation = [self barColorAnimation];
             barAnimation.fromValue = (id)layer.fillColor;
             barAnimation.toValue = (id)[self colorForSegment:i].CGColor;
@@ -240,7 +240,7 @@
         [self setNeedsDisplay];
         [CATransaction begin];
         for (int i = 0; i < _numberOfSegments; i++) {
-            CAShapeLayer *layer = _segmentsLayer.sublayers[i];
+            CAShapeLayer *layer = (CAShapeLayer *)_segmentsLayer.sublayers[i];
             CABasicAnimation *barAnimation = [self barColorAnimation];
             barAnimation.fromValue = (id)layer.fillColor;
             barAnimation.toValue = (id)_successColor.CGColor;
@@ -252,7 +252,7 @@
         [self setNeedsDisplay];
         [CATransaction begin];
         for (int i = 0; i < _numberOfSegments; i++) {
-            CAShapeLayer *layer = _segmentsLayer.sublayers[i];
+            CAShapeLayer *layer = (CAShapeLayer *)_segmentsLayer.sublayers[i];
             CABasicAnimation *barAnimation = [self barColorAnimation];
             barAnimation.fromValue = (id)layer.fillColor;
             barAnimation.toValue = (id)_failureColor.CGColor;
@@ -359,7 +359,7 @@
 
 - (NSInteger)numberOfFullSegments
 {
-    return (NSInteger)floorf(self.progress * _numberOfSegments);
+    return (NSInteger)floorf((float)self.progress * (float)_numberOfSegments);
 }
 
 - (UIColor *)colorForSegment:(NSUInteger)index
@@ -393,7 +393,7 @@
     if (_segmentShape == M13ProgressViewSegmentedBarSegmentShapeRoundedRect) {
         cornerRadius = _cornerRadius;
     } else if (_segmentShape == M13ProgressViewSegmentedBarSegmentShapeCircle) {
-        cornerRadius = floorf(self.bounds.size.height < segmentWidth ? self.bounds.size.height / 2.0 : segmentWidth / 2.0);
+        cornerRadius = floorf(self.bounds.size.height < segmentWidth ? (float)self.bounds.size.height / 2.0f : (float)segmentWidth / 2.0f);
     }
     
     //Iterate through all the segments that are full.
@@ -450,7 +450,7 @@
         }
         
         //Add segment to the proper layer, and color it
-        CAShapeLayer *layer = _segmentsLayer.sublayers[i];
+        CAShapeLayer *layer = (CAShapeLayer *)_segmentsLayer.sublayers[i];
         layer.path = path.CGPath;
         layer.fillColor = [self colorForSegment:i].CGColor;
     }
@@ -470,7 +470,7 @@
     if (_segmentShape == M13ProgressViewSegmentedBarSegmentShapeRoundedRect) {
         cornerRadius = _cornerRadius;
     } else if (_segmentShape == M13ProgressViewSegmentedBarSegmentShapeCircle) {
-        cornerRadius = floorf(self.bounds.size.height < segmentWidth ? self.bounds.size.height / 2.0 : segmentWidth / 2.0);
+        cornerRadius = floorf(self.bounds.size.height < segmentWidth ? (float)self.bounds.size.height / 2.0f : (float)segmentWidth / 2.0f);
     }
     //What index will the segments be colored from.
     NSInteger numberOfSegmentsToBeColored = _numberOfSegments / 4;
@@ -529,7 +529,7 @@
         }
         
         //Add the segment to the proper path //Add segment to the proper layer, and color it
-        CAShapeLayer *layer = _segmentsLayer.sublayers[i];
+        CAShapeLayer *layer = (CAShapeLayer *)_segmentsLayer.sublayers[i];
         layer.path = path.CGPath;
         if (i >= indeterminateIndex && i < indeterminateIndex + numberOfSegmentsToBeColored) {
             layer.fillColor = ((UIColor *)segmentColorsPrimary[i]).CGColor;

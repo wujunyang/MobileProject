@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIImage+Color.h"
+#import "Reachability.h"
 
 @protocol  BBBaseViewControllerDataSource<NSObject>
 

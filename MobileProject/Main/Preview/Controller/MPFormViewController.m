@@ -38,7 +38,7 @@
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
+    [[IQKeyboardManager sharedManager]setEnable:YES];
 }
 
 #pragma mark 重写BaseViewController设置内容
@@ -134,6 +134,9 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     __weak typeof(self)weakSelf = self;
     
+    //主要为了兼容UUInputAccessoryView跟IQKeyboardManager时的问题，凡是有用到UUInputAccessoryView都会关掉IQKeyboardManager，其它则打开
+    [[IQKeyboardManager sharedManager]setEnable:YES];
+    
     if (indexPath.row==0) {
         [MBProgressHUD showInfo:@"跳转成功" ToView:self.view];
     }
@@ -141,7 +144,8 @@
     {
         UIKeyboardType type = UIKeyboardTypeDefault;
         NSString *content = self.myUserName;
-        
+        //凡是有用到UUInputAccessoryView都会关掉IQKeyboardManager
+        [[IQKeyboardManager sharedManager]setEnable:NO];
         [UUInputAccessoryView showKeyboardType:type
                                        content:content
                                          Block:^(NSString *contentStr)
