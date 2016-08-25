@@ -26,6 +26,9 @@
     //热更新加载
     [JSPatchHelper HSDevaluateScript];
     
+    //科大讯飞 配置文件
+    [self makeConfiguration];
+    
     //统一处理一些为数组、集合等对nil插入会引起闪退
     [SYSafeCategory callSafeCategory];
     
@@ -266,6 +269,27 @@
 
     //热更新JS文件下载 最好做一个时间限制 比如隔多久进行下载(间隔一小时)
     [JSPatchHelper loadJSPatch];
+}
+
+#pragma mark --- 配置文件
+-(void)makeConfiguration
+{
+    //设置log等级，此处log为默认在app沙盒目录下的msc.log文件
+    [IFlySetting setLogFile:LVL_ALL];
+    
+    //输出在console的log开关
+    [IFlySetting showLogcat:YES];
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *cachePath = [paths objectAtIndex:0];
+    //设置msc.log的保存路径
+    [IFlySetting setLogFilePath:cachePath];
+    
+    //创建语音配置,appid必须要传入，仅执行一次则可
+    NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@,",USER_APPID];
+    
+    //所有服务启动前，需要确保执行createUtility
+    [IFlySpeechUtility createUtility:initString];
 }
 
 

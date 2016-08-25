@@ -22,6 +22,7 @@
 #import "MPHomeViewController.h"
 #import "SYSafeCategory.h"
 #import "introductoryPagesHelper.h"
+#import "iflyMSC/IFlyFaceSDK.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,UIAlertViewDelegate,GeTuiSdkDelegate>
 
