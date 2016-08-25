@@ -113,7 +113,6 @@
     shouldDismiss = NO;
     BtnSave.enabled = content.length>0;
     
-    //项目没有引入IQKeyboardManager时这样写 否则弹出窗会一闪
     [[NSNotificationCenter defaultCenter] addObserverForName:UIKeyboardDidShowNotification
                                                       object:nil
                                                        queue:nil
