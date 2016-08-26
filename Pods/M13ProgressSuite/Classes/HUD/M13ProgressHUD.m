@@ -320,7 +320,16 @@
     
     CABasicAnimation *positionAnimation = [CABasicAnimation animationWithKeyPath:@"position"];
     positionAnimation.duration = _animationDuration;
-    positionAnimation.fromValue = [NSValue valueWithCGPoint:_animationPoint];
+    
+    if (_animationCentered)
+    {
+        positionAnimation.fromValue = [NSValue valueWithCGPoint:backgroundView.layer.position];
+    }
+    else
+    {
+        positionAnimation.fromValue = [NSValue valueWithCGPoint:_animationPoint];
+    }
+
     positionAnimation.toValue = [NSValue valueWithCGPoint:backgroundView.layer.position];
     positionAnimation.removedOnCompletion = YES;
     
@@ -351,9 +360,22 @@
     scaleAnimation.removedOnCompletion = YES;
 
     CABasicAnimation *frameAnimation = [CABasicAnimation animationWithKeyPath:@"position"];
-    frameAnimation.fromValue = [NSValue valueWithCGPoint:backgroundView.layer.position];
-    frameAnimation.toValue = [NSValue valueWithCGPoint:_animationPoint];
+    
+    if (_animationCentered)
+    {
+        frameAnimation.toValue = [NSValue valueWithCGPoint:backgroundView.layer.position];
+    }
+    else
+    {
+        frameAnimation.toValue = [NSValue valueWithCGPoint:_animationPoint];
+    }
+    
     frameAnimation.removedOnCompletion = YES;
+    
+    if (!_animationCentered)
+    {
+        backgroundView.layer.position = _animationPoint;
+    }
     backgroundView.layer.position = _animationPoint;
     
     CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
@@ -554,19 +576,19 @@
     if (onScreen) {
         //Set the frame of the background and its subviews
         [UIView animateWithDuration:_animationDuration animations:^{
-            backgroundView.frame = CGRectIntegral(backgroundRect);
-            _progressView.frame = CGRectIntegral(progressRect);
-            backgroundView.transform = CGAffineTransformMakeRotation([self angleForDeviceOrientation]);
+            self->backgroundView.frame = CGRectIntegral(backgroundRect);
+            self.progressView.frame = CGRectIntegral(progressRect);
+            self->backgroundView.transform = CGAffineTransformMakeRotation([self angleForDeviceOrientation]);
             //Fade the label
-            statusLabel.alpha = 0.0;
+            self->statusLabel.alpha = 0.0;
         } completion:^(BOOL finished) {
             if (finished) {
                 //Set the label frame
-                statusLabel.frame = CGRectIntegral(statusRect);
-                statusLabel.text = optimalStatusString;
-                [UIView animateWithDuration:_animationDuration animations:^{
+                self->statusLabel.frame = CGRectIntegral(statusRect);
+                self->statusLabel.text = self->optimalStatusString;
+                [UIView animateWithDuration:self.animationDuration animations:^{
                     //Show the label
-                    statusLabel.alpha = 1.0;
+                    self->statusLabel.alpha = 1.0;
                 }];
             }
         }];
@@ -608,17 +630,17 @@
         for (NSString *rect in sizesArray) {
             CGRect theRect = CGRectFromString(rect);
             //Sum the widths to calculate the mean width
-            standardDeviation += exp2f(theRect.size.width - meanWidth);
+            standardDeviation += exp2f((float)theRect.size.width - meanWidth);
         }
         standardDeviation = sqrtf(standardDeviation / wordsArray.count);
         //Correct the mean width if it is below the minimum size
-        if (meanWidth < _minimumSize.width) {
-            meanWidth = _minimumSize.width;
+        if (meanWidth < self.minimumSize.width) {
+            meanWidth = (float)self.minimumSize.width;
         }
         
         //Now calculate where to put line breaks. Lines can exceed the minimum width, but cannot exceed the minimum width plus the standard deviation. Single words can excced these limits.
         NSMutableString *correctedString = [[NSMutableString alloc] initWithString:wordsArray[0]];
-        float lineSize = CGRectFromString(sizesArray[0]).size.width;
+        float lineSize = (float)CGRectFromString(sizesArray[0]).size.width;
         for (int i = 1; i < wordsArray.count; i++) {
             NSString *word = wordsArray[i];
             CGRect wordRect = CGRectFromString(sizesArray[i]);
@@ -683,7 +705,7 @@
         CGColorSpaceRelease(colorSpace);
         //Draw the gradient
         CGPoint center = CGPointMake(self.bounds.size.width / 2.0, self.bounds.size.height / 2.0);
-        float radius = MIN(self.bounds.size.width , self.bounds.size.height) ;
+        float radius = (float)MIN(self.bounds.size.width , self.bounds.size.height) ;
         CGContextDrawRadialGradient (context, gradient, center, 0, center, radius, kCGGradientDrawsAfterEndLocation);
         CGGradientRelease(gradient);
         //Get the gradient image
@@ -711,8 +733,8 @@
                         transition.duration = 0.3;
                         transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
                         transition.type = kCATransitionFade;
-                        [maskView.layer addAnimation:transition forKey:nil];
-                        maskView.backgroundColor = [UIColor colorWithPatternImage:image];
+                        [self->maskView.layer addAnimation:transition forKey:nil];
+                        self->maskView.backgroundColor = [UIColor colorWithPatternImage:image];
                     });
                 });
             }
@@ -731,8 +753,8 @@
                         transition.duration = 0.3;
                         transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
                         transition.type = kCATransitionFade;
-                        [backgroundView.layer addAnimation:transition forKey:nil];
-                        backgroundView.backgroundColor = [UIColor colorWithPatternImage:image];
+                        [self->backgroundView.layer addAnimation:transition forKey:nil];
+                        self->backgroundView.backgroundColor = [UIColor colorWithPatternImage:image];
                     });
                 });
             }

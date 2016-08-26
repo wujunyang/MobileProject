@@ -229,56 +229,100 @@ static char LKModelBase_Key_Inserting;
         ///当找不到 class 时，就是 基础类型 int,float CGRect 之类的
         NSString *columnType = property.propertyType;
         if ([LKSQL_Convert_FloatType rangeOfString:columnType].location != NSNotFound) {
-            modelValue = [[LKDBUtils numberFormatter] numberFromString:value];
+            if (value) {
+                modelValue = [[LKDBUtils numberFormatter] numberFromString:value];
+            }
         }
         else if ([LKSQL_Convert_IntType rangeOfString:columnType].location != NSNotFound) {
-            modelValue = [[LKDBUtils numberFormatter] numberFromString:value];
+            if (value) {
+                modelValue = [[LKDBUtils numberFormatter] numberFromString:value];
+            }
         }
 #ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
         else if ([columnType isEqualToString:@"CGRect"]) {
-            CGRect rect = CGRectFromString(value);
-            modelValue = [NSValue valueWithCGRect:rect];
+            if (value) {
+                CGRect rect = CGRectFromString(value);
+                modelValue = [NSValue valueWithCGRect:rect];
+            }
+            else {
+                modelValue = [NSValue valueWithCGRect:CGRectZero];
+            }
         }
         else if ([columnType isEqualToString:@"CGPoint"]) {
-            CGPoint point = CGPointFromString(value);
-            modelValue = [NSValue valueWithCGPoint:point];
+            if (value) {
+                CGPoint point = CGPointFromString(value);
+                modelValue = [NSValue valueWithCGPoint:point];
+            }
+            else {
+                modelValue = [NSValue valueWithCGPoint:CGPointZero];
+            }
         }
         else if ([columnType isEqualToString:@"CGSize"]) {
-            CGSize size = CGSizeFromString(value);
-            modelValue = [NSValue valueWithCGSize:size];
+            if (value) {
+                CGSize size = CGSizeFromString(value);
+                modelValue = [NSValue valueWithCGSize:size];
+            }
+            else {
+                modelValue = [NSValue valueWithCGSize:CGSizeZero];
+            }
         }
         else if ([columnType isEqualToString:@"_NSRange"]) {
-            NSRange range = NSRangeFromString(value);
-            modelValue = [NSValue valueWithRange:range];
+            if (value) {
+                NSRange range = NSRangeFromString(value);
+                modelValue = [NSValue valueWithRange:range];
+            }
+            else {
+                modelValue = [NSValue valueWithRange:NSMakeRange(0, 0)];
+            }
         }
 #else
         else if ([columnType hasSuffix:@"Rect"]) {
-            NSRect rect = NSRectFromString(value);
-            modelValue = [NSValue valueWithRect:rect];
+            if (value) {
+                NSRect rect = NSRectFromString(value);
+                modelValue = [NSValue valueWithRect:rect];
+            }
+            else {
+                modelValue = [NSValue valueWithRect:NSZeroRect];
+            }
         }
         else if ([columnType hasSuffix:@"Point"]) {
-            NSPoint point = NSPointFromString(value);
-            modelValue = [NSValue valueWithPoint:point];
+            if (value) {
+                NSPoint point = NSPointFromString(value);
+                modelValue = [NSValue valueWithPoint:point];
+            }
+            else {
+                modelValue = [NSValue valueWithPoint:NSZeroPoint];
+            }
         }
         else if ([columnType hasSuffix:@"Size"]) {
-            NSSize size = NSSizeFromString(value);
-            modelValue = [NSValue valueWithSize:size];
+            if (value) {
+                NSSize size = NSSizeFromString(value);
+                modelValue = [NSValue valueWithSize:size];
+            }
+            else {
+                modelValue = [NSValue valueWithSize:NSZeroSize];
+            }
         }
         else if ([columnType hasSuffix:@"Range"]) {
-            NSRange range = NSRangeFromString(value);
-            modelValue = [NSValue valueWithRange:range];
+            if (value) {
+                NSRange range = NSRangeFromString(value);
+                modelValue = [NSValue valueWithRange:range];
+            }
+            else {
+                modelValue = [NSValue valueWithRange:NSMakeRange(0, 0)];
+            }
         }
 #endif
         ///如果都没有值 默认给个0
         if (modelValue == nil) {
-            modelValue = [NSNumber numberWithInt:0];
+            modelValue = @0;
         }
     }
-    else if (!value || ![value isKindOfClass:[NSString class]] || ![value length]) {
-        //为了不继续遍历
+    else if (!value || ![value isKindOfClass:[NSString class]]) {
+        //不继续遍历
     }
     else if ([columnClass isSubclassOfClass:[NSString class]]) {
-        modelValue = value;
+        modelValue = [value copy];
     }
     else if ([columnClass isSubclassOfClass:[NSNumber class]]) {
         modelValue = [[LKDBUtils numberFormatter] numberFromString:value];

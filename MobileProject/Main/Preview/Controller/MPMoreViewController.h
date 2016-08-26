@@ -24,6 +24,8 @@
 #import "MPAddressPickViewController.h"
 #import "MPCustomAlertViewController.h"
 #import "MPYYTextViewController.h"
+#import "MPExpandHideViewController.h"
+#import "MPFormViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 
