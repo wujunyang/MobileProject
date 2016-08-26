@@ -29,6 +29,8 @@
 #define kSocial_Sina_Account @"3921700954"
 #define kSocial_Sina_RedirectURL @"http://sns.whalecloud.com/sina2/callback"
 
+// 科大讯飞
+#define USER_APPID           @"56ce54a5"
 
 //个推开发者网站中申请App时，注册的AppId、AppKey、AppSecret
 #define kGtAppId           @"0uuwznWonIANoK07JeRWgA"
