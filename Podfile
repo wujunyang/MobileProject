@@ -18,7 +18,7 @@ pod 'XAspect'
 pod 'CYLTabBarController'
 pod 'LKDBHelper'
 pod 'RegexKitLite', '4.0'
-pod 'IQKeyboardManager', '~> 3.3.7'  #最后一版技术IOS7以上
+pod 'IQKeyboardManager', '~> 3.3.7'  #兼容IOS7
 pod 'LBXScan','~> 1.1.1'
 pod 'MBProgressHUD', '~> 0.9'
 pod 'MWPhotoBrowser'

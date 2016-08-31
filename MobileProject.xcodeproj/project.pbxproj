@@ -132,6 +132,10 @@
 		3411EF1D1D6FEC3300A6C7F3 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3411EF091D6FEC1A00A6C7F3 /* UIImage+Extensions.m */; settings = {ASSET_TAGS = (); }; };
 		3411EF1E1D6FEC3800A6C7F3 /* PermissionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3411EF0C1D6FEC1A00A6C7F3 /* PermissionDetector.m */; settings = {ASSET_TAGS = (); }; };
 		3411EF1F1D6FEC3C00A6C7F3 /* IFlyFaceResultKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 3411EF0F1D6FEC1A00A6C7F3 /* IFlyFaceResultKeys.m */; settings = {ASSET_TAGS = (); }; };
+		34153A531D76D5DE00D94F4A /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 34153A501D76D5DE00D94F4A /* UIImage+RoundedCorner.m */; settings = {ASSET_TAGS = (); }; };
+		34153A541D76D5DE00D94F4A /* UIView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 34153A521D76D5DE00D94F4A /* UIView+RoundedCorner.m */; settings = {ASSET_TAGS = (); }; };
+		34153A551D76D5E800D94F4A /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 34153A501D76D5DE00D94F4A /* UIImage+RoundedCorner.m */; settings = {ASSET_TAGS = (); }; };
+		34153A561D76D5EA00D94F4A /* UIView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 34153A521D76D5DE00D94F4A /* UIView+RoundedCorner.m */; settings = {ASSET_TAGS = (); }; };
 		341C07D51D41A27E00FF905C /* BaseRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341C07D41D41A27E00FF905C /* BaseRequestService.m */; settings = {ASSET_TAGS = (); }; };
 		341C07D61D41A27E00FF905C /* BaseRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341C07D41D41A27E00FF905C /* BaseRequestService.m */; settings = {ASSET_TAGS = (); }; };
 		341C07DA1D41C6F200FF905C /* MPFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 341C07D91D41C6F200FF905C /* MPFileManager.m */; settings = {ASSET_TAGS = (); }; };
@@ -971,6 +975,10 @@
 		3411EF0C1D6FEC1A00A6C7F3 /* PermissionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionDetector.m; sourceTree = "<group>"; };
 		3411EF0E1D6FEC1A00A6C7F3 /* IFlyFaceResultKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceResultKeys.h; sourceTree = "<group>"; };
 		3411EF0F1D6FEC1A00A6C7F3 /* IFlyFaceResultKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceResultKeys.m; sourceTree = "<group>"; };
+		34153A4F1D76D5DE00D94F4A /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		34153A501D76D5DE00D94F4A /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		34153A511D76D5DE00D94F4A /* UIView+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundedCorner.h"; sourceTree = "<group>"; };
+		34153A521D76D5DE00D94F4A /* UIView+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundedCorner.m"; sourceTree = "<group>"; };
 		341C07D31D41A27E00FF905C /* BaseRequestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequestService.h; sourceTree = "<group>"; };
 		341C07D41D41A27E00FF905C /* BaseRequestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequestService.m; sourceTree = "<group>"; };
 		341C07D81D41C6F200FF905C /* MPFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFileManager.h; sourceTree = "<group>"; };
@@ -2006,6 +2014,17 @@
 			path = Result;
 			sourceTree = "<group>";
 		};
+		34153A4E1D76D5DE00D94F4A /* JMRoundedCorner */ = {
+			isa = PBXGroup;
+			children = (
+				34153A4F1D76D5DE00D94F4A /* UIImage+RoundedCorner.h */,
+				34153A501D76D5DE00D94F4A /* UIImage+RoundedCorner.m */,
+				34153A511D76D5DE00D94F4A /* UIView+RoundedCorner.h */,
+				34153A521D76D5DE00D94F4A /* UIView+RoundedCorner.m */,
+			);
+			path = JMRoundedCorner;
+			sourceTree = "<group>";
+		};
 		341C07D21D41A24F00FF905C /* BaseService */ = {
 			isa = PBXGroup;
 			children = (
@@ -2104,6 +2123,7 @@
 		34E08A561C3BE95A005C6CA3 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				34153A4E1D76D5DE00D94F4A /* JMRoundedCorner */,
 				3400E4AE1D35E1030056B673 /* SySafeCategory */,
 				340BCD5C1D0F027F0093CC7D /* UIViewController+Swizzle.h */,
 				340BCD5D1D0F027F0093CC7D /* UIViewController+Swizzle.m */,
@@ -4307,6 +4327,7 @@
 				34E08A651C3BFB90005C6CA3 /* UIView+FDCollapsibleConstraints.m in Sources */,
 				34E08A661C3BFB90005C6CA3 /* NSMutableURLRequest+Upload.m in Sources */,
 				34E08A671C3BFB90005C6CA3 /* JDStatusBarView.m in Sources */,
+				34153A561D76D5EA00D94F4A /* UIView+RoundedCorner.m in Sources */,
 				34E08A681C3BFB90005C6CA3 /* YTKRequest.m in Sources */,
 				34E08A6A1C3BFB90005C6CA3 /* UIScrollView+Pages.m in Sources */,
 				34E08A6B1C3BFB90005C6CA3 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
@@ -4511,6 +4532,7 @@
 				34E08B191C3BFB90005C6CA3 /* NSURL+Param.m in Sources */,
 				34683B101D4EE93C0041F8A0 /* MPReduceTimeViewController.m in Sources */,
 				34683B241D4F19570041F8A0 /* MPReduceTimeModel.m in Sources */,
+				34153A551D76D5E800D94F4A /* UIImage+RoundedCorner.m in Sources */,
 				34EC806D1C472BF100C7E40A /* HomeViewController.m in Sources */,
 				34E08B1A1C3BFB90005C6CA3 /* UIImageView+GeometryConversion.m in Sources */,
 				346BBF611D50C3940048DB05 /* UIView+EaseBlankPage.m in Sources */,
@@ -4793,6 +4815,7 @@
 				34E893E51C3B9A03001327C8 /* UIImage+Blur.m in Sources */,
 				340D87A51D3F7079003D9C88 /* MPImageCollectionCell.m in Sources */,
 				34E8949F1C3B9FC1001327C8 /* QBImagePickerGroupCell.m in Sources */,
+				34153A531D76D5DE00D94F4A /* UIImage+RoundedCorner.m in Sources */,
 				34E893EE1C3B9A03001327C8 /* UIImage+RemoteSize.m in Sources */,
 				34E894291C3B9A03001327C8 /* UIView+Nib.m in Sources */,
 				34E893D71C3B9A03001327C8 /* UIColor+HEX.m in Sources */,
@@ -4901,6 +4924,7 @@
 				34E894D61C3BCD2F001327C8 /* LoginModel.m in Sources */,
 				3400E4B41D35E1500056B673 /* SYSafeCategory.m in Sources */,
 				34E8936B1C3B9A03001327C8 /* CLLocationManager+Blocks.m in Sources */,
+				34153A541D76D5DE00D94F4A /* UIView+RoundedCorner.m in Sources */,
 				34E893A11C3B9A03001327C8 /* NSString+Contains.m in Sources */,
 				34E8937B1C3B9A03001327C8 /* NSDate+TimeAgo.m in Sources */,
 				34E894431C3B9A03001327C8 /* UIWebVIew+SwipeGesture.m in Sources */,
