@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Privacy - Location Always Usage Description</key>
+	<string>MobileProject需要在后台获取地理位置信息</string>
+	<key>Privacy - Location When In Use Usage Description </key>
+	<string>MobileProject需要获取地理位置信息</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>MobileProject需要访问您的相册</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>MobileProject需要使用您的麦克风</string>
+	<key>NSCameraUsageDescription</key>
+	<string>MobileProject需要使用您的相机</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>

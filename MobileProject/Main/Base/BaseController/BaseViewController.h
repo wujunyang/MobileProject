@@ -12,6 +12,7 @@
 
 @protocol  BBBaseViewControllerDataSource<NSObject>
 
+@optional
 -(NSMutableAttributedString*)setTitle;
 -(UIButton*)set_leftButton;
 -(UIButton*)set_rightButton;
