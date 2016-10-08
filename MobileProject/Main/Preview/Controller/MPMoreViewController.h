@@ -26,6 +26,7 @@
 #import "MPYYTextViewController.h"
 #import "MPExpandHideViewController.h"
 #import "MPFormViewController.h"
+#import "MPJavaScriptCoreViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 

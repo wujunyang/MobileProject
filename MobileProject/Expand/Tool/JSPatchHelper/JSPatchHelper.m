@@ -62,7 +62,7 @@ static NSString * const jsPatchJsFileName=@"main.js";
     if (!BBUserDefault.MBJsPatchTime) {
         BBUserDefault.MBJsPatchTime=myNowDate;
     }
-    
+    NSLog(@"%@",BBUserDefault.MBJsPatchTime);
     if ([myNowDate timeIntervalSinceDate:BBUserDefault.MBJsPatchTime]<3600) {
         return;
     }

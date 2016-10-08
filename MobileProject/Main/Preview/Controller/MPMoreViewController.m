@@ -26,7 +26,7 @@
     self.navigationItem.title=@"功能导航";
 
     if (!self.dataArray) {
-        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传",@"照片上传附带进度",@"字体适配机型",@"日志记录",@"列表倒计时",@"H5交互WebViewJavascriptBridge",@"继承BaseViewController运用",@"列表空白页展现",@"省市区三级联动",@"自定义弹出窗",@"YYText富文本实例",@"列表行展开跟回收隐藏",@"常见表单行类型" ,@"人脸识别注册及验证"];
+        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传",@"照片上传附带进度",@"字体适配机型",@"日志记录",@"列表倒计时",@"H5交互WebViewJavascriptBridge",@"继承BaseViewController运用",@"列表空白页展现",@"省市区三级联动",@"自定义弹出窗",@"YYText富文本实例",@"列表行展开跟回收隐藏",@"常见表单行类型" ,@"人脸识别注册及验证",@"JavaScriptCore运用"];
     }
     
     //弹出提示
@@ -185,6 +185,12 @@
             [self.navigationController pushViewController:[NSClassFromString(@"FaceRecognitionController") new] animated:YES];
             break;
         }
+            case 18:
+        {
+            MPJavaScriptCoreViewController *vc=[[MPJavaScriptCoreViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
         default:
             break;
     }
@@ -193,7 +199,7 @@
 
 #pragma mark 自定义代码
 
-- (void)showNewStatusesCount:(int)count
+- (void)showNewStatusesCount:(NSInteger)count
 {
     // 1.创建一个UILabel
     UILabel *label = [[UILabel alloc] init];
@@ -201,7 +207,7 @@
     
     // 2.显示文字
     if (count) {
-        label.text = [NSString stringWithFormat:@"共有%d条实例数据", count];
+        label.text = [NSString stringWithFormat:@"共有%ld条实例数据", count];
     } else {
         label.text = @"没有最新的数据";
     }
