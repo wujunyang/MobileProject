@@ -8,10 +8,10 @@
 	<string>MobileProject需要使用您的麦克风</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>MobileProject需要访问您的相册</string>
-	<key>Privacy - Location When In Use Usage Description </key>
-	<string>MobileProject需要获取地理位置信息</string>
-	<key>Privacy - Location Always Usage Description</key>
-	<string>MobileProject需要在后台获取地理位置信息</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>获取当前的位置</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>获取当前的位置</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -167,10 +167,6 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>获取当前的位置</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>获取当前的位置</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
