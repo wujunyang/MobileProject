@@ -49,7 +49,6 @@
         rect.origin = CGPointMake(0, 0);
         
         self.qRScanView = [[LBXScanView alloc]initWithFrame:rect style:_style];
-        
         [self.view addSubview:_qRScanView];
     
     }
@@ -88,21 +87,13 @@
             
             cropRect = [LBXScanView getScanRectWithPreView:self.view style:_style];
         }
-        
-        UIView *videoView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame))];
-        videoView.backgroundColor = [UIColor clearColor];
-        [self.view insertSubview:videoView atIndex:0];
 
-        self.scanObj = [[LBXScanWrapper alloc]initWithPreView:videoView
+        self.scanObj = [[LBXScanWrapper alloc]initWithPreView:self.view
                                               ArrayObjectType:nil
                                                      cropRect:cropRect
                                                       success:^(NSArray<LBXScanResult *> *array){
                                                           [weakSelf scanResultWithArray:array];
                                                       }];
-            
-        [_scanObj setNeedCaptureImage:_isNeedScanImage];
-        
-        [self cameraInitOver];
       
     }
     [_scanObj startScan];
@@ -115,10 +106,6 @@
     self.view.backgroundColor = [UIColor clearColor];
 }
 
-- (void)cameraInitOver
-{
-    
-}
 
 
 - (void)viewWillDisappear:(BOOL)animated

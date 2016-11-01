@@ -18,11 +18,6 @@
 
 
 /**
- @brief 是否需要扫码图像
- */
-@property (nonatomic, assign) BOOL isNeedScanImage;
-
-/**
  @brief  扫码功能封装对象
  */
 @property (nonatomic,strong) LBXScanWrapper* scanObj;
