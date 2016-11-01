@@ -7,6 +7,7 @@
 //
 
 #import "MPSolidColorViewController.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
 
 @implementation MPSolidColorViewController
 
@@ -25,6 +26,22 @@
         make.top.left.and.right.mas_equalTo(0);
         make.height.mas_equalTo(120);
     }];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    //进来就把全屏返回关掉
+    self.navigationController.fd_fullscreenPopGestureRecognizer.enabled=NO;
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    //进来就把全屏返回打开
+    self.navigationController.fd_fullscreenPopGestureRecognizer.enabled=YES;
 }
 
 - (void)didReceiveMemoryWarning {

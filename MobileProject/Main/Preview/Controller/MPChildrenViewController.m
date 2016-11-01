@@ -8,6 +8,7 @@
 
 #import "MPChildrenViewController.h"
 
+
 @implementation MPChildrenViewController
 
 
@@ -16,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor grayColor];
+
     
     [self layoutPageView];
 }
@@ -29,6 +31,7 @@
 {
     [super viewWillAppear:animated];
     
+
     //如果要隐藏NavigationBar
     //[self changeNavigationBarTranslationY:-64];
 }
@@ -36,7 +39,7 @@
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
+
     //如果隐藏NavigationBar,退出去时还得开放出来
     //[self changeNavigationBarTranslationY:0];
 }

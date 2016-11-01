@@ -1,6 +1,6 @@
 ## MobileProject介绍
 
-MobileProject项目是一个以MVC模式搭建的开源功能集合，基于Objective-C上面进行编写，意在解决新项目对于常见功能模块的重复开发，MobileProject对于项目的搭建也进行很明确的划分，各个模块职责也比较明确，MobileProject也引入的一些常用第三方插件、宏定义、工具帮助类等；整个项目也是在不断更新跟维护中，功能点也会不断更新；代码支持iOS7以后版本；
+MobileProject项目是一个以MVC模式搭建的开源功能集合，基于Objective-C上面进行编写，意在解决新项目对于常见功能模块的重复开发，MobileProject对于项目的搭建也进行很明确的划分，各个模块职责也比较明确，MobileProject也引入的一些常用第三方插件、宏定义、工具帮助类等；整个项目也是在不断更新跟维护中，功能点也会不断更新；代码支持iOS7以后版本；此项目比较着重是针对单个项目的功能，如果你对模块化封装更感兴趣可以了解我另一个仓库【jiaModuleDemo】
 
 
 ## MobileProject模块简介
@@ -108,31 +108,45 @@ Plist用于存放plist文件，主要是本项目中会创建多个的Tag,而每
 
 ```obj-c
 platform :ios, '7.0'
-pod 'AFNetworking', '~>2.6.0'
-pod 'ReactiveCocoa', '~> 2.5'
-pod 'SDWebImage', '~> 3.7.5'
-pod 'JSONModel', '~> 1.0.1'
-pod 'Masonry','~>0.6.1'
-pod 'FMDB/common' , '~>2.5'
-pod 'FMDB/SQLCipher', '~>2.5'
-pod 'CocoaLumberjack', '~> 2.0.0-rc'
-pod 'BaiduMapKit' #百度地图SDK
-pod 'UMengAnalytics-NO-IDFA'#友盟统计无IDFA版SDK
-pod 'GTSDK'  #个推SDK
-pod 'UMengSocial', '~> 4.3'  #友盟社会化分享及第三方登录
-pod 'FLEX', '~> 2.0', :configurations => ['Debug']
-pod 'ActionSheetPicker-3.0'
-pod 'JSPatch'
-pod 'XAspect'
-pod 'CYLTabBarController'
-pod 'LKDBHelper'
-pod 'RegexKitLite', '4.0'
-pod 'IQKeyboardManager'
-pod 'LBXScan','~> 1.1.1'
-pod 'MBProgressHUD', '~> 0.9'
-pod 'MWPhotoBrowser'
-pod 'M13ProgressSuite', '~> 1.2.7'
-pod 'WebViewJavascriptBridge', '~> 5.0'
+
+# There are no targets called "MobileProjectDefault" in any Xcode projects
+abstract_target 'MobileProjectDefault' do
+    pod 'AFNetworking', '~>2.6.0'
+    pod 'ReactiveCocoa', '~> 2.5'
+    pod 'SDWebImage', '~> 3.7.5'
+    pod 'JSONModel', '~> 1.0.1'
+    pod 'Masonry','~>0.6.1'
+    pod 'FMDB/common' , '~>2.5'
+    pod 'FMDB/SQLCipher', '~>2.5'
+    pod 'CocoaLumberjack', '~> 2.0.0-rc'
+    pod 'BaiduMapKit' #百度地图SDK
+    pod 'UMengAnalytics-NO-IDFA'#友盟统计无IDFA版SDK
+    pod 'GTSDK'  #个推SDK
+    pod 'UMengSocial', '~> 4.3'  #友盟社会化分享及第三方登录
+    pod 'FLEX', '~> 2.0', :configurations => ['Debug']
+    pod 'ActionSheetPicker-3.0'
+    pod 'JSPatch'
+    pod 'XAspect'
+    pod 'CYLTabBarController'
+    pod 'LKDBHelper'
+    pod 'RegexKitLite', '4.0'
+    pod 'IQKeyboardManager', '~> 3.3.7'  #兼容IOS7
+    pod 'LBXScan','~> 1.1.1'
+    pod 'MBProgressHUD', '~> 0.9'
+    pod 'MWPhotoBrowser'
+    pod 'M13ProgressSuite', '~> 1.2.7'
+    pod 'WebViewJavascriptBridge', '~> 5.0'
+    pod 'YYText'
+    
+    
+    target 'MobileProject_Local' do
+
+    end
+    
+    target 'MobileProject' do
+
+    end
+end
 ```
 
 
