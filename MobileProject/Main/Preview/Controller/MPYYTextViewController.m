@@ -144,9 +144,36 @@
     cLabel.backgroundColor=[UIColor blackColor];
     [self.view addSubview:cLabel];
     
+    
+    
+    NSString * htmlString = @"<html><body>显示HTML标签<font color=\"#ffffff\"> Some </font>html string \n <font size=\"13\" color=\"red\">This is some text!</font> </body></html>";
+    
+    YYLabel *htmlLabel=[[YYLabel alloc]init];
+    htmlLabel.attributedText = [self getAttr:htmlString];
+    htmlLabel.numberOfLines=0;
+    //htmlLabel.textColor=[UIColor yellowColor];
+    htmlLabel.frame=CGRectMake(20, CGRectGetMaxY(cLabel.frame)+20, Main_Screen_Width-40, 80);
+    [self.view addSubview:htmlLabel];
+    
 }
 
+- (NSMutableAttributedString*)getAttr:(NSString*)attributedString {
+    NSMutableAttributedString * resultAttr = [[NSMutableAttributedString alloc] initWithData:[attributedString dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
 
+    //对齐方式 这里是 两边对齐
+    resultAttr.yy_alignment = NSTextAlignmentJustified;
+    //设置行间距
+    resultAttr.yy_lineSpacing = 5;
+    //设置字体大小
+    resultAttr.yy_font = [UIFont systemFontOfSize:12];
+    //可以设置某段字体的大小
+    //[resultAttr yy_setFont:[UIFont boldSystemFontOfSize:CONTENT_FONT_SIZE] range:NSMakeRange(0, 3)];
+    //设置字间距
+    resultAttr.yy_kern = [NSNumber numberWithFloat:2.0];
+    
+    return resultAttr;
+    
+}
 
 
 @end
