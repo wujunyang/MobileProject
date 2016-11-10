@@ -77,7 +77,7 @@
     cell.accessoryType    = UITableViewCellAccessoryNone;
     cell.curUploadImageHelper=self.curUploadImageHelper;
     cell.addPicturesBlock = ^(){
-        [self showActionForPhoto];
+        [weakSelf showActionForPhoto];
     };
     cell.deleteImageBlock = ^(MPImageItemModel *toDelete){
         [weakSelf.curUploadImageHelper deleteAImage:toDelete];

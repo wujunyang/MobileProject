@@ -847,6 +847,8 @@
 		34FF0E391D5835C90027EEAE /* MPYYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FF0E371D5835C90027EEAE /* MPYYTextViewController.m */; };
 		34FF0E3D1D586F320027EEAE /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FF0E3C1D586F320027EEAE /* YYFPSLabel.m */; };
 		34FF0E3E1D586F320027EEAE /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FF0E3C1D586F320027EEAE /* YYFPSLabel.m */; };
+		34FF16A21DD466AD00E84DCC /* MPViewControllerLifeCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FF16A11DD466AD00E84DCC /* MPViewControllerLifeCycle.m */; };
+		34FF16A31DD466AD00E84DCC /* MPViewControllerLifeCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FF16A11DD466AD00E84DCC /* MPViewControllerLifeCycle.m */; };
 		34FFA1F21D49128100A7C342 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFA1F11D49128100A7C342 /* NSString+Additions.m */; };
 		34FFA1F31D49128100A7C342 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFA1F11D49128100A7C342 /* NSString+Additions.m */; };
 		426EC478C80F00D762378976 /* libPods-MobileProjectDefault-MobileProject_Local.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0AE21C88E51BA3C9370B2E /* libPods-MobileProjectDefault-MobileProject_Local.a */; };
@@ -1688,6 +1690,8 @@
 		34FF0E371D5835C90027EEAE /* MPYYTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPYYTextViewController.m; sourceTree = "<group>"; };
 		34FF0E3B1D586F320027EEAE /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		34FF0E3C1D586F320027EEAE /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		34FF16A01DD466AD00E84DCC /* MPViewControllerLifeCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPViewControllerLifeCycle.h; sourceTree = "<group>"; };
+		34FF16A11DD466AD00E84DCC /* MPViewControllerLifeCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPViewControllerLifeCycle.m; sourceTree = "<group>"; };
 		34FFA1F01D49128100A7C342 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		34FFA1F11D49128100A7C342 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		36EA9020A810C457491FAE4B /* Pods-MobileProjectDefault-MobileProject_Local.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProjectDefault-MobileProject_Local.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProjectDefault-MobileProject_Local/Pods-MobileProjectDefault-MobileProject_Local.release.xcconfig"; sourceTree = "<group>"; };
@@ -3898,6 +3902,8 @@
 				340EB3011D66ACE300BF9222 /* MPFormViewController.m */,
 				348D000D1DA8853800B890F4 /* MPJavaScriptCoreViewController.h */,
 				348D000E1DA8853800B890F4 /* MPJavaScriptCoreViewController.m */,
+				34FF16A01DD466AD00E84DCC /* MPViewControllerLifeCycle.h */,
+				34FF16A11DD466AD00E84DCC /* MPViewControllerLifeCycle.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4281,7 +4287,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		55BCC76C791DACB0E95ED028 /* [CP] Check Pods Manifest.lock */ = {
@@ -4296,7 +4302,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		7EE8EFC23A6A98B193AA3C1B /* [CP] Embed Pods Frameworks */ = {
@@ -4489,6 +4495,7 @@
 				341093FE1D0E848F00A8D63F /* JSPatchHelper.m in Sources */,
 				34E08ACC1C3BFB90005C6CA3 /* MKMapView+BetterMaps.m in Sources */,
 				34013B601D51C9150051000F /* AddressPickerView.m in Sources */,
+				34FF16A31DD466AD00E84DCC /* MPViewControllerLifeCycle.m in Sources */,
 				34E08ACD1C3BFB90005C6CA3 /* UIView+Frame.m in Sources */,
 				34E08ACE1C3BFB90005C6CA3 /* NSDictionary+JSONString.m in Sources */,
 				34E08ACF1C3BFB90005C6CA3 /* JDStatusBarNotification.m in Sources */,
@@ -4842,6 +4849,7 @@
 				34E893CC1C3B9A03001327C8 /* UIBezierPath+LxThroughPointsBezier.m in Sources */,
 				34E893C51C3B9A03001327C8 /* UIApplication+ApplicationSize.m in Sources */,
 				34E8937E1C3B9A03001327C8 /* NSDateFormatter+Make.m in Sources */,
+				34FF16A21DD466AD00E84DCC /* MPViewControllerLifeCycle.m in Sources */,
 				34E893F01C3B9A03001327C8 /* UIImage+RoundedCorner.m in Sources */,
 				34E893921C3B9A03001327C8 /* NSObject+AddProperty.m in Sources */,
 				34E8949B1C3B9FC1001327C8 /* QBAssetsCollectionViewController.m in Sources */,

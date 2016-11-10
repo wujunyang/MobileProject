@@ -9,7 +9,7 @@
 //    [_fpsLabel sizeToFit];
 //    _fpsLabel.bottom = 100;
 //    _fpsLabel.left = 10;
-//    _fpsLabel.alpha = 0;
+//    _fpsLabel.alpha = 1;
 //    [self.view addSubview:_fpsLabel];
 //
 //  Created by ibireme on 15/9/3.

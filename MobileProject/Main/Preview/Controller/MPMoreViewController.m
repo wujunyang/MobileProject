@@ -7,10 +7,13 @@
 //
 
 #import "MPMoreViewController.h"
+#import "YYFPSLabel.h"
 
 @interface MPMoreViewController()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic,strong) NSArray             *dataArray;
 @property (nonatomic,strong) UITableView         *myTableView;
+
+@property (nonatomic, strong) YYFPSLabel *fpsLabel;
 @end
 
 
@@ -24,14 +27,14 @@
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor whiteColor];
     self.navigationItem.title=@"功能导航";
-
+    
     if (!self.dataArray) {
-        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传",@"照片上传附带进度",@"字体适配机型",@"日志记录",@"列表倒计时",@"H5交互WebViewJavascriptBridge",@"继承BaseViewController运用",@"列表空白页展现",@"省市区三级联动",@"自定义弹出窗",@"YYText富文本实例",@"列表行展开跟回收隐藏",@"常见表单行类型" ,@"人脸识别注册及验证",@"JavaScriptCore运用"];
+        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传",@"照片上传附带进度",@"字体适配机型",@"日志记录",@"列表倒计时",@"H5交互WebViewJavascriptBridge",@"继承BaseViewController运用",@"列表空白页展现",@"省市区三级联动",@"自定义弹出窗",@"YYText富文本实例",@"列表行展开跟回收隐藏",@"常见表单行类型" ,@"人脸识别注册及验证",@"JavaScriptCore运用",@"viewController生命周期"];
     }
     
     //弹出提示
     [self showNewStatusesCount:self.dataArray.count];
-
+    
     //初始化表格
     if (!_myTableView) {
         _myTableView                                = [[UITableView alloc] initWithFrame:CGRectMake(0,0.5, Main_Screen_Width, Main_Screen_Height) style:UITableViewStylePlain];
@@ -44,6 +47,15 @@
         [_myTableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
         }];
+    }
+    
+    
+    if (!_fpsLabel) {
+        _fpsLabel = [YYFPSLabel new];
+        _fpsLabel.frame=CGRectMake(20, 80, 30, 30);
+        [_fpsLabel sizeToFit];
+        _fpsLabel.alpha = 0.6;
+        [self.view addSubview:_fpsLabel];
     }
 }
 
@@ -188,6 +200,12 @@
             case 18:
         {
             MPJavaScriptCoreViewController *vc=[[MPJavaScriptCoreViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            case 19:
+        {
+            MPViewControllerLifeCycle *vc=[[MPViewControllerLifeCycle alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
