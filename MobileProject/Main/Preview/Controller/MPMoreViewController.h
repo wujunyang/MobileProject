@@ -28,6 +28,7 @@
 #import "MPFormViewController.h"
 #import "MPJavaScriptCoreViewController.h"
 #import "MPViewControllerLifeCycle.h"
+#import "MPMasonryViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 

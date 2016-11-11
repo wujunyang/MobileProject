@@ -189,6 +189,10 @@
 		3452EBAB1D1A90DD0001732E /* XAspect-LogAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EBAA1D1A90DD0001732E /* XAspect-LogAppDelegate.m */; };
 		3452EBAC1D1A90E00001732E /* XAspect-LogAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EBAA1D1A90DD0001732E /* XAspect-LogAppDelegate.m */; };
 		3452EBAE1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EBAD1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m */; };
+		3461BD081DD5AA1E00F8FC14 /* MPMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461BD071DD5AA1E00F8FC14 /* MPMasonryViewController.m */; };
+		3461BD091DD5AA1E00F8FC14 /* MPMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461BD071DD5AA1E00F8FC14 /* MPMasonryViewController.m */; };
+		3461BD0C1DD5C4FE00F8FC14 /* MPMasonryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461BD0B1DD5C4FE00F8FC14 /* MPMasonryView.m */; };
+		3461BD0D1DD5C4FE00F8FC14 /* MPMasonryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461BD0B1DD5C4FE00F8FC14 /* MPMasonryView.m */; };
 		34683B0F1D4EE93C0041F8A0 /* MPReduceTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34683B0E1D4EE93C0041F8A0 /* MPReduceTimeViewController.m */; };
 		34683B101D4EE93C0041F8A0 /* MPReduceTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34683B0E1D4EE93C0041F8A0 /* MPReduceTimeViewController.m */; };
 		34683B131D4EEA0D0041F8A0 /* MPReduceTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34683B121D4EEA0D0041F8A0 /* MPReduceTimeCell.m */; };
@@ -1041,6 +1045,10 @@
 		3452EB8A1D1A8BF00001732E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3452EBAA1D1A90DD0001732E /* XAspect-LogAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-LogAppDelegate.m"; sourceTree = "<group>"; };
 		3452EBAD1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-GeTuiAppDelegate.m"; sourceTree = "<group>"; };
+		3461BD061DD5AA1D00F8FC14 /* MPMasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMasonryViewController.h; sourceTree = "<group>"; };
+		3461BD071DD5AA1E00F8FC14 /* MPMasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMasonryViewController.m; sourceTree = "<group>"; };
+		3461BD0A1DD5C4FE00F8FC14 /* MPMasonryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMasonryView.h; sourceTree = "<group>"; };
+		3461BD0B1DD5C4FE00F8FC14 /* MPMasonryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMasonryView.m; sourceTree = "<group>"; };
 		34683B0D1D4EE93C0041F8A0 /* MPReduceTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPReduceTimeViewController.h; sourceTree = "<group>"; };
 		34683B0E1D4EE93C0041F8A0 /* MPReduceTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPReduceTimeViewController.m; sourceTree = "<group>"; };
 		34683B111D4EEA0D0041F8A0 /* MPReduceTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPReduceTimeCell.h; sourceTree = "<group>"; };
@@ -3850,6 +3858,8 @@
 		34EC961B1C58A52800985444 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3461BD061DD5AA1D00F8FC14 /* MPMasonryViewController.h */,
+				3461BD071DD5AA1E00F8FC14 /* MPMasonryViewController.m */,
 				34EC961E1C58A5BB00985444 /* UMengSocialViewController.h */,
 				34EC961F1C58A5BB00985444 /* UMengSocialViewController.m */,
 				34EC96221C58A61F00985444 /* UMengSocialLoginViewController.h */,
@@ -3932,6 +3942,8 @@
 				3403847F1D47567900E4A496 /* MPAdaptationCell.m */,
 				34683B111D4EEA0D0041F8A0 /* MPReduceTimeCell.h */,
 				34683B121D4EEA0D0041F8A0 /* MPReduceTimeCell.m */,
+				3461BD0A1DD5C4FE00F8FC14 /* MPMasonryView.h */,
+				3461BD0B1DD5C4FE00F8FC14 /* MPMasonryView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4428,6 +4440,7 @@
 				3411EF1E1D6FEC3800A6C7F3 /* PermissionDetector.m in Sources */,
 				34E08A911C3BFB90005C6CA3 /* BaseViewController.m in Sources */,
 				34E08A921C3BFB90005C6CA3 /* UIButton+Indicator.m in Sources */,
+				3461BD0D1DD5C4FE00F8FC14 /* MPMasonryView.m in Sources */,
 				34E08A941C3BFB90005C6CA3 /* NSHTTPCookieStorage+FreezeDry.m in Sources */,
 				34E08A951C3BFB90005C6CA3 /* CAMediaTimingFunction+AdditionalEquations.m in Sources */,
 				34E08A961C3BFB90005C6CA3 /* Reachability.m in Sources */,
@@ -4493,6 +4506,7 @@
 				34E08ACA1C3BFB90005C6CA3 /* NSString+UUID.m in Sources */,
 				34E08ACB1C3BFB90005C6CA3 /* CLLocation+CH1903.m in Sources */,
 				341093FE1D0E848F00A8D63F /* JSPatchHelper.m in Sources */,
+				3461BD091DD5AA1E00F8FC14 /* MPMasonryViewController.m in Sources */,
 				34E08ACC1C3BFB90005C6CA3 /* MKMapView+BetterMaps.m in Sources */,
 				34013B601D51C9150051000F /* AddressPickerView.m in Sources */,
 				34FF16A31DD466AD00E84DCC /* MPViewControllerLifeCycle.m in Sources */,
@@ -4796,6 +4810,7 @@
 				34E8938E1C3B9A03001327C8 /* NSDecimalNumber+Extensions.m in Sources */,
 				34EC963A1C58C7A400985444 /* LoggerDetailViewController.m in Sources */,
 				34E893FA1C3B9A03001327C8 /* UILabel+ESAdjustableLabel.m in Sources */,
+				3461BD0C1DD5C4FE00F8FC14 /* MPMasonryView.m in Sources */,
 				340D87A91D3F70E3003D9C88 /* MPImageUploadCell.m in Sources */,
 				34E894191C3B9A03001327C8 /* UITextField+History.m in Sources */,
 				342A8FA81D3F1D8B000C7B98 /* UINavigationController+StackManager.m in Sources */,
@@ -4979,6 +4994,7 @@
 				34E893871C3B9A03001327C8 /* NSFileManager+Paths.m in Sources */,
 				34E893D11C3B9A03001327C8 /* UIButton+CountDown.m in Sources */,
 				34E894D61C3BCD2F001327C8 /* LoginModel.m in Sources */,
+				3461BD081DD5AA1E00F8FC14 /* MPMasonryViewController.m in Sources */,
 				3400E4B41D35E1500056B673 /* SYSafeCategory.m in Sources */,
 				34E8936B1C3B9A03001327C8 /* CLLocationManager+Blocks.m in Sources */,
 				34153A541D76D5DE00D94F4A /* UIView+RoundedCorner.m in Sources */,
