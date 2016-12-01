@@ -45,7 +45,7 @@
     [self setNeedsUpdateConstraints];
 }
 
-
+//setNeedsUpdateConstraints 要结合[super updateConstraints]用不然会报错
 //***** [super updateConstraints]的运用
 - (void)updateConstraints
 {

@@ -7,12 +7,14 @@
  
     就可以避免下面的闪退：
     NSMutableArray* array  =[NSMutableArray array];
-    [array objectAtIndex:10];
+
     [array addObject:nil];
     NSMutableDictionary* dic = [NSMutableDictionary dictionary];
     [dic setObject:nil forKey:nil];
     id item1,item2;
     [NSArray arrayWithObjects:item1,item2,nil];
+ 
+    关于objectAtIndex超过数组的已经被拿掉了
  
  *  @return
  */

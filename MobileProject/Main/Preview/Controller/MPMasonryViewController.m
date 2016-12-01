@@ -295,7 +295,7 @@
             make.size.mas_equalTo(CGSizeMake(200, 100));
         }];
         
-        
+        //增加点击事件
         UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
         
         [self.myMasonryView addGestureRecognizer:singleTap];
