@@ -14,7 +14,7 @@
     id item1,item2;
     [NSArray arrayWithObjects:item1,item2,nil];
  
-    关于objectAtIndex超过数组的已经被拿掉了
+ 
  
  *  @return
  */

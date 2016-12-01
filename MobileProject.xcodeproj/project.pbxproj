@@ -5257,6 +5257,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: xu shaoxiong (Q7ZH47H99W)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xu shaoxiong (Q7ZH47H99W)";
+				DEVELOPMENT_TEAM = AN3JWU2V6V;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5275,7 +5276,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sm.WirelessSanMing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "dbce7694-4d21-492c-bb1b-be2874b98b58";
+				PROVISIONING_PROFILE = "1afc8801-8d86-42cc-b98c-96e505b89c50";
+				PROVISIONING_PROFILE_SPECIFIER = WirelessSanMingProfile;
 			};
 			name = Release;
 		};

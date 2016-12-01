@@ -6,6 +6,7 @@
 #define LOG_Error {if(error)NSLog(@"%@",error.debugDescription);error = nil;}
 
 @interface NSArray(SYSafeCategory)
+-(id)SY_safeObjectAtIndex:(int)index;
 -(id)SY_safeInitWithObjects:(const id [])objects count:(NSUInteger)cnt;
 @end
 @interface NSMutableArray(SYSafeCategory)
@@ -20,7 +21,13 @@
 @end
 
 @implementation NSArray(SYSafeCategory)
-
+-(id)SY_safeObjectAtIndex:(int)index{
+    if(index>=0 && index < self.count)
+    {
+        return [self SY_safeObjectAtIndex:index];
+    }
+    return nil;
+}
 -(id)SY_safeInitWithObjects:(const id [])objects count:(NSUInteger)cnt
 {
     for (int i=0; i<cnt; i++) {
@@ -48,8 +55,8 @@
         return nil;
     id value = [self SY_safeObjectForKey:aKey];
     if (value == [NSNull null]) {
-		return nil;
-	}
+        return nil;
+    }
     return value;
 }
 @end
@@ -95,6 +102,11 @@
     [objc_getClass("__NSPlaceholderArray") jr_swizzleMethod:@selector(initWithObjects:count:) withMethod:@selector(SY_safeInitWithObjects:count:) error:&error];
     LOG_Error
     
+    [objc_getClass("__NSArrayI") jr_swizzleMethod:@selector(objectAtIndex:) withMethod:@selector(SY_safeObjectAtIndex:) error:&error];
+    LOG_Error
+    
+    [objc_getClass("__NSArrayM") jr_swizzleMethod:@selector(objectAtIndex:) withMethod:@selector(SY_safeObjectAtIndex:) error:&error];
+    LOG_Error
     [objc_getClass("__NSArrayM") jr_swizzleMethod:@selector(addObject:) withMethod:@selector(SY_safeAddObject:) error:&error];
     LOG_Error
     
@@ -114,4 +126,3 @@
     LOG_Error
 }
 @end
-
