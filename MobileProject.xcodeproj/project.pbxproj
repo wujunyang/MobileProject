@@ -46,6 +46,8 @@
 		3403B0BE1D367954007CD7EF /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403B0BD1D367954007CD7EF /* UITextField+Extension.m */; };
 		3403B0BF1D367954007CD7EF /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403B0BD1D367954007CD7EF /* UITextField+Extension.m */; };
 		340757071D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */; };
+		340AED351DF45A59007B5CEE /* MPKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */; };
+		340AED361DF45A59007B5CEE /* MPKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */; };
 		340BCD1B1D0EFF3B0093CC7D /* MPRequstFailedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD1A1D0EFF3B0093CC7D /* MPRequstFailedHelper.m */; };
 		340BCD1C1D0EFF3B0093CC7D /* MPRequstFailedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD1A1D0EFF3B0093CC7D /* MPRequstFailedHelper.m */; };
 		340BCD241D0F011A0093CC7D /* LogInApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD231D0F011A0093CC7D /* LogInApi.m */; };
@@ -920,6 +922,8 @@
 		3403B0BC1D367954007CD7EF /* UITextField+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extension.h"; sourceTree = "<group>"; };
 		3403B0BD1D367954007CD7EF /* UITextField+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension.m"; sourceTree = "<group>"; };
 		340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-UmengShareAppDelegate.m"; sourceTree = "<group>"; };
+		340AED331DF45A59007B5CEE /* MPKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKeyboardViewController.h; sourceTree = "<group>"; };
+		340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKeyboardViewController.m; sourceTree = "<group>"; };
 		340BCD191D0EFF3B0093CC7D /* MPRequstFailedHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPRequstFailedHelper.h; sourceTree = "<group>"; };
 		340BCD1A1D0EFF3B0093CC7D /* MPRequstFailedHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPRequstFailedHelper.m; sourceTree = "<group>"; };
 		340BCD221D0F011A0093CC7D /* LogInApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInApi.h; sourceTree = "<group>"; };
@@ -3914,6 +3918,8 @@
 				348D000E1DA8853800B890F4 /* MPJavaScriptCoreViewController.m */,
 				34FF16A01DD466AD00E84DCC /* MPViewControllerLifeCycle.h */,
 				34FF16A11DD466AD00E84DCC /* MPViewControllerLifeCycle.m */,
+				340AED331DF45A59007B5CEE /* MPKeyboardViewController.h */,
+				340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4426,6 +4432,7 @@
 				34E08A821C3BFB90005C6CA3 /* NSString+Emoji.m in Sources */,
 				34E08A831C3BFB90005C6CA3 /* UITextView+PinchZoom.m in Sources */,
 				34E08A841C3BFB90005C6CA3 /* UIViewController+DDPopUpViewController.m in Sources */,
+				340AED361DF45A59007B5CEE /* MPKeyboardViewController.m in Sources */,
 				34E08A851C3BFB90005C6CA3 /* NSDate+CupertinoYankee.m in Sources */,
 				34E08A871C3BFB90005C6CA3 /* UIView+Visuals.m in Sources */,
 				34E08A881C3BFB90005C6CA3 /* NSUserDefaults+iCloudSync.m in Sources */,
@@ -4966,6 +4973,7 @@
 				340199F41D6561B5001C97E9 /* GCDSemaphore.m in Sources */,
 				34E891441C3B9739001327C8 /* YTKNetworkAgent.m in Sources */,
 				34E893891C3B9A03001327C8 /* NSIndexPath+Offset.m in Sources */,
+				340AED351DF45A59007B5CEE /* MPKeyboardViewController.m in Sources */,
 				34E8938D1C3B9A03001327C8 /* NSDecimalNumber+CalculatingByString.m in Sources */,
 				34E893E21C3B9A03001327C8 /* UIImage+Alpha.m in Sources */,
 				34013B631D51CEE20051000F /* MPAddressPickViewController.m in Sources */,

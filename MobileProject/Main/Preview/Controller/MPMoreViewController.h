@@ -29,6 +29,7 @@
 #import "MPJavaScriptCoreViewController.h"
 #import "MPViewControllerLifeCycle.h"
 #import "MPMasonryViewController.h"
+#import "MPKeyboardViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 
