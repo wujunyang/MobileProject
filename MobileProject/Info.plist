@@ -2,16 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>MobileProject需要访问您的相册</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>MobileProject需要使用您的麦克风</string>
-	<key>NSCameraUsageDescription</key>
-	<string>MobileProject需要使用您的相机</string>
+    <key>NSCameraUsageDescription</key>
+    <string>MobileProject需要使用您的相机</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>MobileProject需要使用您的麦克风</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>MobileProject需要访问您的相册</string>
     <key>NSLocationAlwaysUsageDescription</key>
     <string>获取当前的位置</string>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>获取当前的位置</string>
+    <key>NSCalendarsUsageDescription</key>
+    <string>App需要您的同意,才能访问日历</string>
+    <key>NSMotionUsageDescription</key>
+    <string>App需要您的同意,才能访问运动与健身</string>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>App需要您的同意,才能访问蓝牙</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
