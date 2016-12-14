@@ -29,6 +29,7 @@
 
 typedef enum {
     BMKUserTrackingModeNone = 0,             /// 普通定位模式
+    BMKUserTrackingModeHeading,              /// 定位方向模式
 	BMKUserTrackingModeFollow,               /// 定位跟随模式
 	BMKUserTrackingModeFollowWithHeading,    /// 定位罗盘模式
 } BMKUserTrackingMode;
@@ -575,6 +576,12 @@ typedef enum {
  *@param mapview 地图View
  */
 - (void)mapViewDidFinishLoading:(BMKMapView *)mapView;
+
+/**
+ *地图渲染完毕后会调用此接口
+ *@param mapview 地图View
+ */
+- (void)mapViewDidFinishRendering:(BMKMapView *)mapView;
 
 /**
  *地图渲染每一帧画面过程中，以及每次需要重绘地图时（例如添加覆盖物）都会调用此接口

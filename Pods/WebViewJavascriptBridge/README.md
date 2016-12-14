@@ -22,6 +22,7 @@ WebViewJavascriptBridge is used by a range of companies and projects. This is a 
 - [鼎盛中华](https://itunes.apple.com/us/app/ding-sheng-zhong-hua/id537273940?mt=8)
 - [FRIL](https://fril.jp)
 - [留白·WHITE](http://liubaiapp.com)
+- [BrowZine](http://thirdiron.com/browzine/)
 
 Installation (iOS & OSX)
 ------------------------
@@ -74,7 +75,7 @@ self.bridge = [WebViewJavascriptBridge bridgeForWebView:webView];
 	NSLog(@"ObjC Echo called with: %@", data);
 	responseCallback(data);
 }];
-[self.bridge callHandler:@"JS Echo" responseCallback:^(id responseData) {
+[self.bridge callHandler:@"JS Echo" data:nil responseCallback:^(id responseData) {
 	NSLog(@"ObjC received response: %@", responseData);
 }];
 ```
@@ -105,7 +106,7 @@ setupWebViewJavascriptBridge(function(bridge) {
 		console.log("JS Echo called with:", data)
 		responseCallback(data)
 	})
-	bridge.callHandler('ObjC Echo', function responseCallback(responseData) {
+	bridge.callHandler('ObjC Echo', {'key':'value'}, function responseCallback(responseData) {
 		console.log("JS received response:", responseData)
 	})
 })
@@ -129,6 +130,19 @@ WebViewJavascriptBridge supports [WKWebView](http://nshipster.com/wkwebkit/) for
 ```objc
 WKWebViewJavascriptBridge* bridge = [WKWebViewJavascriptBridge bridgeForWebView:webView];
 ```
+
+Automatic reference counting (ARC)
+----------------------------------
+This library relies on ARC, so if you use ARC in you project, all works fine.
+But if your project have no ARC support, be sure to do next steps:
+
+1) In your Xcode project open project settings -> 'Build Phases'
+
+2) Expand 'Compile Sources' header and find all *.m files which are belongs to this library. Make attention on the 'Compiler Flags' in front of each source file in this list
+
+3) For each file add '-fobjc-arc' flag
+
+Now all WVJB files will be compiled with ARC support.
 
 Contributors & Forks
 --------------------
@@ -181,10 +195,17 @@ Example:
 }];
 ```
 
-#### `[bridge setWebViewDelegate:UIWebViewDelegate*)webViewDelegate]`
+#### `[bridge setWebViewDelegate:(NSObject<UIWebViewDelegate> *)webViewDelegate]`
 
 Optionally, set a `UIWebViewDelegate` if you need to respond to the [web view's lifecycle events](http://developer.apple.com/library/ios/documentation/uikit/reference/UIWebViewDelegate_Protocol/Reference/Reference.html).
 
+##### `[bridge disableJavscriptAlertBoxSafetyTimeout]`
+
+UNSAFE. Speed up bridge message passing by disabling the setTimeout safety check. It is only safe to disable this safety check if you do not call any of the javascript popup box functions (alert, confirm, and prompt). If you call any of these functions from the bridged javascript code, the app will hang.
+
+Example:
+
+	[self.bridge disableJavscriptAlertBoxSafetyTimeout];
 
 
 
@@ -204,8 +225,8 @@ bridge.registerHandler("getCurrentPageUrl", function(data, responseCallback) {
 ```
 
 
-##### `bridge.callHander("handlerName", data)`
-##### `bridge.callHander("handlerName", data, function responseCallback(responseData) { ... })`
+##### `bridge.callHandler("handlerName", data)`
+##### `bridge.callHandler("handlerName", data, function responseCallback(responseData) { ... })`
 
 Call an ObjC handler called `handlerName`. If a `responseCallback` function is given the ObjC handler can respond.
 
@@ -216,4 +237,15 @@ bridge.callHandler("Log", "Foo")
 bridge.callHandler("getScreenHeight", null, function(response) {
 	alert('Screen height:' + response)
 })
+```
+
+
+##### `bridge.disableJavscriptAlertBoxSafetyTimeout()`
+
+Calling `bridge.disableJavscriptAlertBoxSafetyTimeout()` has the same effect as calling `[bridge disableJavscriptAlertBoxSafetyTimeout];` in ObjC.
+
+Example:
+
+```javascript
+bridge.disableJavscriptAlertBoxSafetyTimeout()
 ```

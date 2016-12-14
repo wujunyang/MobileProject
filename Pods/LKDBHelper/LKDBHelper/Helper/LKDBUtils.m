@@ -9,7 +9,7 @@
 #import "LKDBUtils.h"
 
 @interface LKDateFormatter : NSDateFormatter
-@property (nonatomic, strong) NSRecursiveLock* lock;
+@property (nonatomic, strong) NSRecursiveLock *lock;
 @end
 
 @implementation LKDateFormatter
@@ -23,7 +23,7 @@
         self.timeStyle = NSDateFormatterNoStyle;
         self.AMSymbol = nil;
         self.PMSymbol = nil;
-        NSLocale* locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+        NSLocale *locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
         if (locale) {
             [self setLocale:locale];
         }
@@ -31,17 +31,17 @@
     return self;
 }
 //防止在IOS5下 多线程 格式化时间时 崩溃
-- (NSDate*)dateFromString:(NSString*)string
+- (NSDate *)dateFromString:(NSString *)string
 {
     [_lock lock];
-    NSDate* date = [super dateFromString:string];
+    NSDate *date = [super dateFromString:string];
     [_lock unlock];
     return date;
 }
-- (NSString*)stringFromDate:(NSDate*)date
+- (NSString *)stringFromDate:(NSDate *)date
 {
     [_lock lock];
-    NSString* string = [super stringFromDate:date];
+    NSString *string = [super stringFromDate:date];
     [_lock unlock];
     return string;
 }
@@ -52,66 +52,66 @@
 @end
 
 @implementation LKNumberFormatter
--(NSString *)stringFromNumber:(NSNumber *)number
+- (NSString *)stringFromNumber:(NSNumber *)number
 {
-    NSString* string = [number stringValue];
+    NSString *string = [number stringValue];
     return string;
 }
--(NSNumber *)numberFromString:(NSString *)string
+- (NSNumber *)numberFromString:(NSString *)string
 {
-    NSNumber* number = [super numberFromString:string];
+    NSNumber *number = [super numberFromString:string];
     return number;
 }
 @end
 
 @implementation LKDBUtils
-+ (NSString*)getDocumentPath
++ (NSString *)getDocumentPath
 {
 #ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
-    NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString* documentsDirectory = [paths objectAtIndex:0];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
     return documentsDirectory;
 #else
-    NSString* homePath = [[NSBundle mainBundle] resourcePath];
+    NSString *homePath = [[NSBundle mainBundle] resourcePath];
     return homePath;
 #endif
 }
-+ (NSString*)getDirectoryForDocuments:(NSString*)dir
++ (NSString *)getDirectoryForDocuments:(NSString *)dir
 {
-    NSString* dirPath = [[self getDocumentPath] stringByAppendingPathComponent:dir];
+    NSString *dirPath = [[self getDocumentPath] stringByAppendingPathComponent:dir];
     BOOL isDir = NO;
     BOOL isCreated = [[NSFileManager defaultManager] fileExistsAtPath:dirPath isDirectory:&isDir];
     if (isCreated == NO || isDir == NO) {
-        NSError* error = nil;
+        NSError *error = nil;
         BOOL success = [[NSFileManager defaultManager] createDirectoryAtPath:dirPath withIntermediateDirectories:YES attributes:nil error:&error];
         if (success == NO)
             NSLog(@"create dir error: %@", error.debugDescription);
     }
     return dirPath;
 }
-+ (NSString*)getPathForDocuments:(NSString*)filename
++ (NSString *)getPathForDocuments:(NSString *)filename
 {
     return [[self getDocumentPath] stringByAppendingPathComponent:filename];
 }
-+ (NSString*)getPathForDocuments:(NSString*)filename inDir:(NSString*)dir
++ (NSString *)getPathForDocuments:(NSString *)filename inDir:(NSString *)dir
 {
     return [[self getDirectoryForDocuments:dir] stringByAppendingPathComponent:filename];
 }
-+ (BOOL)isFileExists:(NSString*)filepath
++ (BOOL)isFileExists:(NSString *)filepath
 {
     return [[NSFileManager defaultManager] fileExistsAtPath:filepath];
 }
-+ (BOOL)deleteWithFilepath:(NSString*)filepath
++ (BOOL)deleteWithFilepath:(NSString *)filepath
 {
     return [[NSFileManager defaultManager] removeItemAtPath:filepath error:nil];
 }
-+ (NSArray*)getFilenamesWithDir:(NSString*)dir
++ (NSArray *)getFilenamesWithDir:(NSString *)dir
 {
-    NSFileManager* fileManager = [NSFileManager defaultManager];
-    NSArray* fileList = [fileManager contentsOfDirectoryAtPath:dir error:nil];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSArray *fileList = [fileManager contentsOfDirectoryAtPath:dir error:nil];
     return fileList;
 }
-+ (BOOL)checkStringIsEmpty:(NSString*)string
++ (BOOL)checkStringIsEmpty:(NSString *)string
 {
     if (string == nil) {
         return YES;
@@ -124,14 +124,14 @@
     }
     return [[self getTrimStringWithString:string] isEqualToString:@""];
 }
-+ (NSString*)getTrimStringWithString:(NSString*)string
++ (NSString *)getTrimStringWithString:(NSString *)string
 {
     return [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
-+ (NSDateFormatter*)getDBDateFormat
++ (NSDateFormatter *)getDBDateFormat
 {
-    static NSDateFormatter* format;
+    static NSDateFormatter *format;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         format = [[LKDateFormatter alloc] init];
@@ -139,24 +139,24 @@
     });
     return format;
 }
-+ (NSString*)stringWithDate:(NSDate*)date
++ (NSString *)stringWithDate:(NSDate *)date
 {
-    NSDateFormatter* formatter = [self getDBDateFormat];
-    NSString* datestr = [formatter stringFromDate:date];
+    NSDateFormatter *formatter = [self getDBDateFormat];
+    NSString *datestr = [formatter stringFromDate:date];
     if (datestr.length > 19) {
         datestr = [datestr substringToIndex:19];
     }
     return datestr;
 }
-+ (NSDate*)dateWithString:(NSString*)str
++ (NSDate *)dateWithString:(NSString *)str
 {
-    NSDateFormatter* formatter = [self getDBDateFormat];
-    NSDate* date = [formatter dateFromString:str];
+    NSDateFormatter *formatter = [self getDBDateFormat];
+    NSDate *date = [formatter dateFromString:str];
     return date;
 }
-+(NSNumberFormatter *)numberFormatter
++ (NSNumberFormatter *)numberFormatter
 {
-    static NSNumberFormatter* numberFormatter = nil;
+    static NSNumberFormatter *numberFormatter = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         numberFormatter = [[LKNumberFormatter alloc] init];
@@ -165,7 +165,7 @@
 }
 @end
 
-inline NSString* LKSQLTypeFromObjcType(NSString* objcType)
+inline NSString *LKSQLTypeFromObjcType(NSString *objcType)
 {
     if ([LKSQL_Convert_IntType rangeOfString:objcType].length > 0) {
         return LKSQL_Type_Int;

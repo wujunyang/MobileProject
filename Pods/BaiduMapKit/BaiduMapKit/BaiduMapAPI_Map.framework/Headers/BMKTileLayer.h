@@ -66,4 +66,19 @@
 
 @end
 
+/**
+ @brief 通过异步方法获取瓦片数据，是一个抽象类，需要通过继承该类，并重载 loadTileForX:y:zoom:result: 方法
+ *瓦片图片是jpeg或者png格式，size为256x256
+ */
+@interface BMKAsyncTileLayer : BMKTileLayer
+
+/**
+ @brief 通过异步方法获取瓦片数据，子类必须实现该方法
+ @param (x, y, zoom)瓦片坐标
+ @return result 用来传入瓦片数据或加载瓦片失败的error访问的回调block
+ */
+- (void)loadTileForX:(NSInteger)x y:(NSInteger)y zoom:(NSInteger)zoom result:(void (^)(UIImage *tileImage, NSError *error))result;
+
+@end
+
 #endif /* BMKTileLayer_h */

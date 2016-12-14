@@ -78,13 +78,14 @@ static double _YYDeviceSystemVersion() {
 }
 
 - (NSDictionary *)yy_attributesAtIndex:(NSUInteger)index {
+    if (index > self.length || self.length == 0) return nil;
     if (self.length > 0 && index == self.length) index--;
     return [self attributesAtIndex:index effectiveRange:NULL];
 }
 
 - (id)yy_attribute:(NSString *)attributeName atIndex:(NSUInteger)index {
     if (!attributeName) return nil;
-    if (self.length == 0) return nil;
+    if (index > self.length || self.length == 0) return nil;
     if (self.length > 0 && index == self.length) index--;
     return [self attribute:attributeName atIndex:index effectiveRange:NULL];
 }
@@ -824,7 +825,7 @@ return style. _attr_;
 }
 
 - (void)setYy_strikethroughColor:(UIColor *)strikethroughColor {
-    [self yy_setStrokeColor:strikethroughColor range:NSMakeRange(0, self.length)];
+    [self yy_setStrikethroughColor:strikethroughColor range:NSMakeRange(0, self.length)];
 }
 
 - (void)setYy_underlineStyle:(NSUnderlineStyle)underlineStyle {

@@ -156,7 +156,15 @@
 #define MPWeakSelf(type)  __weak typeof(type) weak##type = type;
 #define MPStrongSelf(type)  __strong typeof(type) type = weak##type;
 
-
+#define weakify(...) \
+ext_keywordify \
+metamacro_foreach_cxt(ext_weakify_,, __weak, __VA_ARGS__)
+#define strongify(...) \
+ext_keywordify \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wshadow\"") \
+metamacro_foreach(ext_strongify_,, __VA_ARGS__) \
+_Pragma("clang diagnostic pop")
 
 //上传图片相关
 #define kImageCollectionCell_Width floorf((Main_Screen_Width - 10*2- 10*3)/3)

@@ -1,3 +1,4 @@
+
 LKDBHelper
 ====================================
 this is sqlite ORM (an automatic database operation) <br>
@@ -5,8 +6,7 @@ thread-safe and not afraid of recursive deadlock
 
 QQ群号 113767274  有什么问题或者改进的地方大家一起讨论
 
-推荐个  json 和 model  互转非常好用的工具类 https://github.com/dcty/YYJSON 作者是个大神级的人物
-支持 NSData 直接转换成 model array
+简书：不定时更新  [http://www.jianshu.com/users/376b950a20ec](http://www.jianshu.com/users/376b950a20ec/latest_articles)
 
 #Big Upgrade 2.0
 
@@ -15,6 +15,7 @@ Supported  __NSArray__,__NSDictionary__, __ModelClass__, __NSNumber__, __NSStrin
 全面支持 __NSArray__,__NSDictionary__, __ModelClass__, __NSNumber__, __NSString__, __NSDate__, __NSData__, __UIColor__, __UIImage__, __CGRect__, __CGPoint__, __CGSize__, __NSRange__, __int__,__char__,__float__, __double__, __long__.. 等属性的自动化操作(插入和查询)
 
 ------------------------------------
+
 Requirements
 ====================================
 
@@ -221,6 +222,10 @@ overwirte getTableMapping Function (option)
 ![](https://github.com/li6185377/LKDBHelper-SQLite-ORM/raw/master/screenshot/Snip20130620_7.png)
 
 ----------
+# Use in swift
+
+Remember to override the class function `getTableName` for model.
+
 Change-log
 ==========
 
@@ -248,18 +253,21 @@ Change-log
 
 
 -------
+
 License
 =======
 
 This code is distributed under the terms and conditions of the MIT license. 
 
 -------
+
 Contribution guidelines
 =======
 
 * if you are fixing a bug you discovered, please add also a unit test so I know how exactly to reproduce the bug before merging
 
 -------
+
 Contributors
 =======
 

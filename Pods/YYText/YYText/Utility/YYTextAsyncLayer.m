@@ -35,8 +35,7 @@ static dispatch_queue_t YYTextAsyncLayerGetDisplayQueue() {
             }
         }
     });
-    int32_t cur = OSAtomicIncrement32(&counter);
-    if (cur < 0) cur = -cur;
+    uint32_t cur = (uint32_t)OSAtomicIncrement32(&counter);
     return queues[(cur) % queueCount];
 #undef MAX_QUEUE_COUNT
 }
@@ -118,7 +117,7 @@ static dispatch_queue_t YYTextAsyncLayerGetReleaseQueue() {
 #pragma mark - Private
 
 - (void)_displayAsync:(BOOL)async {
-    __strong id<YYTextAsyncLayerDelegate> delegate = self.delegate;
+    __strong id<YYTextAsyncLayerDelegate> delegate = (id)self.delegate;
     YYTextAsyncLayerDisplayTask *task = [delegate newAsyncDisplayTask];
     if (!task.display) {
         if (task.willDisplay) task.willDisplay(self);

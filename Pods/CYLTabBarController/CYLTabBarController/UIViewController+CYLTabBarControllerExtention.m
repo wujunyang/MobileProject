@@ -2,7 +2,7 @@
 //  UIViewController+CYLTabBarControllerExtention.m
 //  CYLTabBarController
 //
-//  Created by 微博@iOS程序犭袁 ( http://weibo.com/luohanchenyilong/ ) on 16/2/26.
+//  v1.7.0 Created by 微博@iOS程序犭袁 ( http://weibo.com/luohanchenyilong/ ) on 16/2/26.
 //  Copyright © 2016年 https://github.com/ChenYilong .All rights reserved.
 //
 
@@ -66,6 +66,11 @@
     @try {
         UIViewController *viewController;
         viewController = tabBarController.viewControllers[index];
+        UIButton *plusButton = CYLExternPlusButton;
+        BOOL shouldConfigureSelectionStatus = (CYLPlusChildViewController) && ((index != CYLPlusButtonIndex) && (viewController != CYLPlusChildViewController));
+        if (shouldConfigureSelectionStatus) {
+            plusButton.selected = NO;
+        }
     } @catch (NSException *exception) {
         NSString *formatString = @"\n\n\
         ------ BEGIN NSException Log ---------------------------------------------------------------------\n \

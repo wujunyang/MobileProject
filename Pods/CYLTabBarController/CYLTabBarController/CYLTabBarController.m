@@ -2,7 +2,7 @@
 //  CYLTabBarController.m
 //  CYLTabBarController
 //
-//  Created by 微博@iOS程序犭袁 ( http://weibo.com/luohanchenyilong/ ) on 10/20/15.
+//  v1.7.0 Created by 微博@iOS程序犭袁 ( http://weibo.com/luohanchenyilong/ ) on 10/20/15.
 //  Copyright © 2015 https://github.com/ChenYilong . All rights reserved.
 //
 
@@ -50,6 +50,11 @@ static void * const CYLSwappableImageViewDefaultOffsetContext = (void*)&CYLSwapp
     self.delegate = self;
 }
 
+//Fix issue #93
+- (void)viewDidLayoutSubviews {
+    [self.tabBar layoutSubviews];
+}
+
 - (void)viewWillLayoutSubviews {
     if (!self.tabBarHeight) {
         return;
@@ -61,6 +66,16 @@ static void * const CYLSwappableImageViewDefaultOffsetContext = (void*)&CYLSwapp
         frame.origin.y = self.view.frame.size.height - tabBarHeight;
         frame;
     });
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    UIViewController *controller = self.selectedViewController;
+    if ([controller isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *navigationController = (UINavigationController *)controller;
+        return navigationController.topViewController.supportedInterfaceOrientations;
+    } else {
+        return controller.supportedInterfaceOrientations;
+    }
 }
 
 - (void)dealloc {
@@ -82,8 +97,7 @@ static void * const CYLSwappableImageViewDefaultOffsetContext = (void*)&CYLSwapp
 }
 
 + (instancetype)tabBarControllerWithViewControllers:(NSArray<UIViewController *> *)viewControllers tabBarItemsAttributes:(NSArray<NSDictionary *> *)tabBarItemsAttributes {
-    CYLTabBarController *tabBarController = [[CYLTabBarController alloc] initWithViewControllers:viewControllers tabBarItemsAttributes:tabBarItemsAttributes];
-    return tabBarController;
+   return [[self alloc] initWithViewControllers:viewControllers tabBarItemsAttributes:tabBarItemsAttributes];
 }
 
 + (BOOL)havePlusButton {
@@ -254,14 +268,17 @@ static void * const CYLSwappableImageViewDefaultOffsetContext = (void*)&CYLSwapp
 
 #pragma mark - delegate
 
-- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController*)viewController {
+- (void)updateSelectionStatusIfNeededForTabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
     NSUInteger selectedIndex = tabBarController.selectedIndex;
     UIButton *plusButton = CYLExternPlusButton;
-    if (CYLPlusChildViewController) {
-        if ((selectedIndex == CYLPlusButtonIndex) && (viewController != CYLPlusChildViewController)) {
-            plusButton.selected = NO;
-        }
+    BOOL shouldConfigureSelectionStatus = CYLPlusChildViewController && ((selectedIndex == CYLPlusButtonIndex) && (viewController != CYLPlusChildViewController));
+    if (shouldConfigureSelectionStatus) {
+        plusButton.selected = NO;
     }
+}
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+    [[self cyl_tabBarController] updateSelectionStatusIfNeededForTabBarController:tabBarController shouldSelectViewController:viewController];
     return YES;
 }
 

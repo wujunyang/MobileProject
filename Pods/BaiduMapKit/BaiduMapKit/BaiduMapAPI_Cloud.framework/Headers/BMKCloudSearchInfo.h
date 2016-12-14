@@ -6,6 +6,8 @@
  *
  */
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+
 /// 云检索基础信息类，所有类型云检索的基类
 @interface BMKBaseCloudSearchInfo : NSObject
 {
@@ -97,5 +99,15 @@
 }
 ///uid为poi点的id值
 @property (nonatomic, strong) NSString *uid;
+@end
+
+///云RGC检索参数信息类
+@interface BMKCloudReverseGeoCodeSearchInfo : NSObject
+
+///geo table 表主键（必须）
+@property (nonatomic, assign) NSInteger geoTableId;
+///经纬度
+@property (nonatomic, assign) CLLocationCoordinate2D reverseGeoPoint;
+
 @end
 

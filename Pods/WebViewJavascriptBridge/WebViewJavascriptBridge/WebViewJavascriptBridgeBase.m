@@ -10,7 +10,7 @@
 #import "WebViewJavascriptBridge_JS.h"
 
 @implementation WebViewJavascriptBridgeBase {
-    id _webViewDelegate;
+    __weak id _webViewDelegate;
     long _uniqueId;
 }
 
@@ -151,6 +151,10 @@ static int logMaxLength = 500;
 
 -(NSString *)webViewJavascriptFetchQueyCommand {
     return @"WebViewJavascriptBridge._fetchQueue();";
+}
+
+- (void)disableJavscriptAlertBoxSafetyTimeout {
+    [self sendData:nil responseCallback:nil handlerName:@"_disableJavascriptAlertBoxSafetyTimeout"];
 }
 
 // Private

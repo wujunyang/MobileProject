@@ -61,6 +61,9 @@ typedef enum{
     BMK_SEARCH_PERMISSION_UNFINISHED,///还未完成鉴权，请在鉴权通过后重试
     BMK_SEARCH_INDOOR_ID_ERROR,///室内图ID错误
     BMK_SEARCH_FLOOR_ERROR,///室内图检索楼层错误
+    BMK_SEARCH_INDOOR_ROUTE_NO_IN_BUILDING,///起终点不在支持室内路线的室内图内
+    BMK_SEARCH_INDOOR_ROUTE_NO_IN_SAME_BUILDING,///起终点不在同一个室内
+    BMK_SEARCH_PARAMETER_ERROR,///参数错误
 }BMKSearchErrorCode;
 
 //调起百度地图结果状态码
@@ -149,4 +152,28 @@ UIKIT_EXTERN const BMKMapRect BMKMapRectNull;
 @property (nonatomic) CLLocationCoordinate2D pt;
 @end
 
+///室内路线检索节点信息
+@interface BMKIndoorPlanNode : NSObject
 
+///节点所在楼层
+@property (nonatomic, retain) NSString* floor;
+///节点坐标
+@property (nonatomic) CLLocationCoordinate2D pt;
+
+@end
+
+///此类表示地址结果的层次化信息
+@interface BMKAddressComponent : NSObject
+
+/// 街道号码
+@property (nonatomic, strong) NSString* streetNumber;
+/// 街道名称
+@property (nonatomic, strong) NSString* streetName;
+/// 区县名称
+@property (nonatomic, strong) NSString* district;
+/// 城市名称
+@property (nonatomic, strong) NSString* city;
+/// 省份名称
+@property (nonatomic, strong) NSString* province;
+
+@end

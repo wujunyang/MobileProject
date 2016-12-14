@@ -4,7 +4,7 @@
 
 --------------------------------------------------------------------------------------
 
-iOS 地图 SDK v3.0.0是适用于iOS系统移动设备的矢量地图开发包
+iOS 地图 SDK v3.1.0是适用于iOS系统移动设备的矢量地图开发包
 
 --------------------------------------------------------------------------------------
 
@@ -45,70 +45,46 @@ LBS云检索：支持查询存储在LBS云内的自有数据；
 
 
 ---------------------------------------------------------------------------------------
-
- 【 新版提示 】
- 1.自v3.0.0起，iOS SDK全面支持ipv6网格
  
  【 新  增 】
    基础地图
- 1、新增室内地图功能
- 新增室内地图信息类：BMKBaseIndoorMapInfo
- BMKMapView新增接口:
- /// 设定地图是否显示室内图（包含室内图标注），默认不显示
- @property (nonatomic, assign) BOOL baseIndoorMapEnabled;
- /// 设定室内图标注是否显示，默认YES，仅当显示室内图（baseIndoorMapEnabled为YES）时生效
- @property (nonatomic, assign) BOOL showIndoorMapPoi;
- // 设置室内图楼层
- - (BMKSwitchIndoorFloorError)switchBaseIndoorMapFloor:(NSString*)strFloor withID:(NSString*)strID;
- // 获取当前聚焦的室内图信息
- - (BMKBaseIndoorMapInfo*)getFocusedBaseIndoorMapInfo;
- BMKMapViewDelegate新增接口：
- //地图进入/移出室内图会调用此接口
- - (void)mapview:(BMKMapView *)mapView baseIndoorMapWithIn:(BOOL)flag baseIndoorMapInfo:(BMKBaseIndoorMapInfo *)info;
- 2、普通地图与个性化地图切换可以自由切换，BMKMapView新增接口:
- + (void)enableCustomMapStyle:(BOOL) enable;
- 3、个性化地图配置json文件出错时，打印log提示
- 4、设置mapPadding时可控制地图中心是否跟着移动，BMKMapView新增接口:
- @property (nonatomic) BOOL updateTargetScreenPtWhenMapPaddingChanged;
- 5、BMKMapPoi中新增属性：
- ///点标注的uid，可能为空
- @property (nonatomic,strong) NSString* uid;
+ 1、开放高清4K地图显示（无需设置）
+ 2、瓦片图新增异步加载方法：
+    新增异步加载类：BMKAsyncTileLayer
+ 3、新增地图渲染完成回调方法：
+    - (void)mapViewDidFinishRendering:(BMKMapView *)mapView;
+ 4、新增定位显示类型：BMKUserTrackingModeHeading（在普通定位模式的基础上显示方向）
  
    检索功能
- 1、新增室内POI检索
- 新增室内POI检索参数信息类：BMKPoiIndoorSearchOption
- 新增室内POI搜索结果类：BMKPoiIndoorResult
- 新增室内POI信息类：BMKPoiIndoorInfo
- BMKPoiSearch新增接口：
- //poi室内检索
- - (BOOL)poiIndoorSearch:(BMKPoiIndoorSearchOption*)option;
- BMKPoiSearchDelegate新增接口：
- //返回POI室内搜索结果
-- (void)onGetPoiIndoorResult:(BMKPoiSearch*)searcher result:(BMKPoiIndoorResult*)poiIndoorResult errorCode:(BMKSearchErrorCode)errorCode;
- 2、驾车路线规划结果新增3个属性：打车费用信息、拥堵米数、红路灯个数，BMKDrivingRouteLine新增接口：
- ///路线红绿灯个数
- @property (nonatomic, assign) NSInteger lightNum;
- ///路线拥堵米数，发起请求时需设置参数 drivingRequestTrafficType = BMK_DRIVING_REQUEST_TRAFFICE_TYPE_PATH_AND_TRAFFICE 才有值
- @property (nonatomic, assign) NSInteger congestionMetres;
- ///路线预估打车费(元)，负数表示无打车费信息
- @property (nonatomic, assign) NSInteger taxiFares;
- 3、busline检索新增参考票价和上下线行信息，BMKBusLineResult新增接口：
- ///公交线路方向
- @property (nonatomic, strong) NSString* busLineDirection;
- ///起步票价
- @property (nonatomic, assign) CGFloat basicPrice;
- ///全程票价
- @property (nonatomic, assign) CGFloat totalPrice;
- 4、poi检索结果新增是否有全景信息，BMKPoiInfo新增接口：
- @property (nonatomic, assign) BOOL panoFlag;
+ 1、新增室内路径规划
+    BMKRouteSearch新增发起室内路径规划接口：
+    - (BOOL)indoorRoutePlanSearch:(BMKIndoorRoutePlanOption*) indoorRoutePlanOption;
+    BMKRouteSearchDelegate新增室内路径规划结果回调：
+    - (void)onGetIndoorRouteResult:(BMKRouteSearch*)searcher result:(BMKIndoorRouteResult*)result errorCode:(BMKSearchErrorCode)error;
+    新增室内路径规划检索参数类：BMKIndoorRoutePlanOption
+    新增室内路径规划检索结果类：BMKIndoorRouteResult
+ 2、增加新的公共交通线路规划（支持同城和跨城）
+    BMKRouteSearch增加新的公共交通线路规划接口：
+    - (BOOL)massTransitSearch:(BMKMassTransitRoutePlanOption*)routePlanOption;
+    BMKRouteSearchDelegate增加新的公共交通线路规划结果回调：
+    - (void)onGetMassTransitRouteResult:(BMKRouteSearch*)searcher result:(BMKMassTransitRouteResult*)result errorCode:(BMKSearchErrorCode)error;
+    增加新的公共交通线路规划检索参数类：BMKMassTransitRoutePlanOption
+    增加新的公共交通线路规划检索结果类：BMKMassTransitRouteResult
  
-   计算工具
- 新增调起百度地图客户端全景功能
- 新增调起百度地图全景类：BMKOpenPanorama
- 新增调起百度地图全景参数类：BMKOpenPanoramaOption
- 新增调起百度地图全景delegate：BMKOpenPanoramaDelegate
+   LBS云检索
+1、新增云RGC检索功能
+    BMKCloudSearch新增发起云RGC检索接口：
+    - (BOOL)cloudReverseGeoCodeSearch:(BMKCloudReverseGeoCodeSearchInfo*)searchInfo;
+    BMKCloudSearchDelegate新增云RGC检索结果回调：
+    - (void)onGetCloudReverseGeoCodeResult:(BMKCloudReverseGeoCodeResult*)cloudRGCResult searchType:(BMKCloudSearchType) type errorCode:(NSInteger) errorCode;
+    新增云RGC检索参数类：BMKCloudReverseGeoCodeSearchInfo
+    新增云RGC检索结果类：BMKCloudReverseGeoCodeResult
+ 
+ 【 优  化 】
+ 1、优化Marker加载性能：添加Marker和加载大量Marker时，性能大幅提高。
+ 2、优化地图内存
  
  【 修  复 】
- 1、修复反复添加移除离线瓦片图时偶现的crash问题
- 2、修复上传AppStore时提示访问私有api:-setOverlayGeometryDelegate:的问题
- 3、修复地图网络解析时偶现的crash问题
+ 1、长按地图某区域，OnLongClick会被不停调用的问题
+ 2、绘制弧线，特殊case提示画弧失败的问题
+ 3、一次点击事件，点击地图空白处回调和点击覆盖物回调都会调用的问题

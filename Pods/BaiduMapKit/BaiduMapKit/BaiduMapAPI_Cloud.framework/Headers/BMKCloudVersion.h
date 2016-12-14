@@ -18,7 +18,7 @@
 
 /**
  *获取当前地图API cloud组件 的版本号
- *当前cloud组件版本 : 3.0.0
+ *当前cloud组件版本 : 3.1.0
  *return  返回当前API cloud组件 的版本号
  */
 UIKIT_EXTERN NSString* BMKGetMapApiCloudComponentVersion();

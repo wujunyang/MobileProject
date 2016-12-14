@@ -8,32 +8,34 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface LKDBUtils : NSObject
 ///返回根目录路径 "document"
-+ (NSString*)getDocumentPath;
++ (NSString *)getDocumentPath;
 ///返回 "document/dir/" 文件夹路径
-+ (NSString*)getDirectoryForDocuments:(NSString*)dir;
++ (NSString *)getDirectoryForDocuments:(NSString *)dir;
 ///返回 "document/filename" 路径
-+ (NSString*)getPathForDocuments:(NSString*)filename;
++ (NSString *)getPathForDocuments:(NSString *)filename;
 ///返回 "document/dir/filename" 路径
-+ (NSString*)getPathForDocuments:(NSString*)filename inDir:(NSString*)dir;
++ (NSString *)getPathForDocuments:(NSString *)filename inDir:(NSString *)dir;
 ///文件是否存在
-+ (BOOL)isFileExists:(NSString*)filepath;
++ (BOOL)isFileExists:(NSString *)filepath;
 ///删除文件
-+ (BOOL)deleteWithFilepath:(NSString*)filepath;
++ (BOOL)deleteWithFilepath:(NSString *)filepath;
 ///返回该文件目录下 所有文件名
-+ (NSArray*)getFilenamesWithDir:(NSString*)dir;
++ (nullable NSArray *)getFilenamesWithDir:(NSString *)dir;
 
 ///检测字符串是否为空
-+ (BOOL)checkStringIsEmpty:(NSString*)string;
-+ (NSString*)getTrimStringWithString:(NSString*)string;
++ (BOOL)checkStringIsEmpty:(NSString *)string;
++ (nullable NSString *)getTrimStringWithString:(nullable NSString *)string;
 
 ///把Date 转换成String
-+ (NSString*)stringWithDate:(NSDate*)date;
++ (NSString *)stringWithDate:(NSDate *)date;
 ///把String 转换成Date
-+ (NSDate*)dateWithString:(NSString*)str;
++ (NSDate *)dateWithString:(NSString *)str;
 ///单例formatter
-+ (NSNumberFormatter*)numberFormatter;
++ (NSNumberFormatter *)numberFormatter;
 
 @end
 
@@ -55,62 +57,65 @@
 #define __LKDBWeak
 #endif
 
-static NSString* const LKSQL_Type_Text = @"text";
-static NSString* const LKSQL_Type_Int = @"integer";
-static NSString* const LKSQL_Type_Double = @"double";
-static NSString* const LKSQL_Type_Blob = @"blob";
+static NSString * const LKSQL_Type_Text = @"text";
+static NSString * const LKSQL_Type_Int = @"integer";
+static NSString * const LKSQL_Type_Double = @"double";
+static NSString * const LKSQL_Type_Blob = @"blob";
 
-static NSString* const LKSQL_Attribute_NotNull = @"NOT NULL";
-static NSString* const LKSQL_Attribute_PrimaryKey = @"PRIMARY KEY";
-static NSString* const LKSQL_Attribute_Default = @"DEFAULT";
-static NSString* const LKSQL_Attribute_Unique = @"UNIQUE";
-static NSString* const LKSQL_Attribute_Check = @"CHECK";
-static NSString* const LKSQL_Attribute_ForeignKey = @"FOREIGN KEY";
+static NSString * const LKSQL_Attribute_NotNull = @"NOT NULL";
+static NSString * const LKSQL_Attribute_PrimaryKey = @"PRIMARY KEY";
+static NSString * const LKSQL_Attribute_Default = @"DEFAULT";
+static NSString * const LKSQL_Attribute_Unique = @"UNIQUE";
+static NSString * const LKSQL_Attribute_Check = @"CHECK";
+static NSString * const LKSQL_Attribute_ForeignKey = @"FOREIGN KEY";
 
-static NSString* const LKSQL_Convert_FloatType = @"float_double_decimal";
-static NSString* const LKSQL_Convert_IntType = @"int_char_short_long";
-static NSString* const LKSQL_Convert_BlobType = @"";
+static NSString * const LKSQL_Convert_FloatType = @"float_double_decimal";
+static NSString * const LKSQL_Convert_IntType = @"int_char_short_long";
+static NSString * const LKSQL_Convert_BlobType = @"";
 
-static NSString* const LKSQL_Mapping_Inherit = @"LKDBInherit";
-static NSString* const LKSQL_Mapping_Binding = @"LKDBBinding";
-static NSString* const LKSQL_Mapping_UserCalculate = @"LKDBUserCalculate";
+static NSString * const LKSQL_Mapping_Inherit = @"LKDBInherit";
+static NSString * const LKSQL_Mapping_Binding = @"LKDBBinding";
+static NSString * const LKSQL_Mapping_UserCalculate = @"LKDBUserCalculate";
 
-static NSString* const LKDB_TypeKey = @"DB_Type";
+static NSString * const LKDB_TypeKey = @"DB_Type";
 
-static NSString* const LKDB_TypeKey_Model = @"DB_Type_Model";
-static NSString* const LKDB_TypeKey_JSON = @"DB_Type_JSON";
-static NSString* const LKDB_TypeKey_Combo = @"DB_Type_Combo";
-static NSString* const LKDB_TypeKey_Date = @"DB_Type_Date";
+static NSString * const LKDB_TypeKey_Model = @"DB_Type_Model";
+static NSString * const LKDB_TypeKey_JSON = @"DB_Type_JSON";
+static NSString * const LKDB_TypeKey_Combo = @"DB_Type_Combo";
+static NSString * const LKDB_TypeKey_Date = @"DB_Type_Date";
 
-static NSString* const LKDB_ValueKey = @"DB_Value";
+static NSString * const LKDB_ValueKey = @"DB_Value";
 
-static NSString* const LKDB_TableNameKey = @"DB_TableName";
-static NSString* const LKDB_ClassKey = @"DB_Class";
-static NSString* const LKDB_RowIdKey = @"DB_RowId";
-static NSString* const LKDB_PValueKey = @"DB_PKeyValue";
+static NSString * const LKDB_TableNameKey = @"DB_TableName";
+static NSString * const LKDB_ClassKey = @"DB_Class";
+static NSString * const LKDB_RowIdKey = @"DB_RowId";
+static NSString * const LKDB_PValueKey = @"DB_PKeyValue";
 
 ///Object-c type converted to SQLite type  把Object-c 类型 转换为sqlite 类型
-extern NSString* LKSQLTypeFromObjcType(NSString* objcType);
+extern NSString *LKSQLTypeFromObjcType(NSString *objcType);
 
 @interface LKDBQueryParams : NSObject
 
 ///columns or array
-@property (nonatomic, copy) NSString* columns;
-@property (nonatomic, copy) NSArray* columnArray;
+@property (nullable, nonatomic, copy) NSString *columns;
+@property (nullable, nonatomic, copy) NSArray *columnArray;
 
-@property (nonatomic, copy) NSString* tableName;
+@property (nullable, nonatomic, copy) NSString *tableName;
 
 ///where or dic
-@property (nonatomic, copy) NSString* where;
-@property (nonatomic, copy) NSDictionary* whereDic;
+@property (nullable, nonatomic, copy) NSString *where;
+@property (nullable, nonatomic, copy) NSDictionary *whereDic;
 
-@property (nonatomic, copy) NSString* groupBy;
-@property (nonatomic, copy) NSString* orderBy;
+@property (nullable, nonatomic, copy) NSString *groupBy;
+@property (nullable, nonatomic, copy) NSString *orderBy;
 
 @property (nonatomic, assign) NSInteger offset;
 @property (nonatomic, assign) NSInteger count;
 
-@property (nonatomic, assign) Class toClass;
+@property (nullable, nonatomic, assign) Class toClass;
 
-@property (nonatomic, copy) void (^callback)(NSMutableArray* results);
+@property (nullable, nonatomic, copy) void (^callback)(NSMutableArray * _Nullable results);
+
 @end
+
+NS_ASSUME_NONNULL_END
