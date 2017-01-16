@@ -149,6 +149,8 @@
 		341C07E91D421F5600FF905C /* MPImageUploadProgressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 341C07E71D421F5600FF905C /* MPImageUploadProgressCell.m */; };
 		341CA90F1D3097AF008B85D3 /* MBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */; };
 		341CA9101D3097AF008B85D3 /* MBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */; };
+		34213BE01E2C9B4D0065C675 /* UIImage+OuterCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 34213BDF1E2C9B4D0065C675 /* UIImage+OuterCircle.m */; };
+		34213BE11E2C9B4D0065C675 /* UIImage+OuterCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 34213BDF1E2C9B4D0065C675 /* UIImage+OuterCircle.m */; };
 		342202421D62A8A1003F81B2 /* MPExpandHideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342202411D62A8A1003F81B2 /* MPExpandHideViewController.m */; };
 		342202431D62A8A1003F81B2 /* MPExpandHideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342202411D62A8A1003F81B2 /* MPExpandHideViewController.m */; };
 		342202451D62BB1D003F81B2 /* team_dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 342202441D62BB1D003F81B2 /* team_dictionary.plist */; };
@@ -923,7 +925,7 @@
 		3404B5DE1E1CE20000FB6C2A /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
 		3404B5DF1E1CE20000FB6C2A /* UIViewController+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzle.m"; sourceTree = "<group>"; };
 		340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-UmengShareAppDelegate.m"; sourceTree = "<group>"; };
-		3408A9F91E00D7A0001A0EC8 /* MobileProject_Local.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MobileProject_Local.entitlements; sourceTree = "<group>"; };
+		3408A9F91E00D7A0001A0EC8 /* MobileProject_Local.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MobileProject_Local.entitlements; sourceTree = SOURCE_ROOT; };
 		3408A9FA1E00D7A3001A0EC8 /* MobileProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MobileProject.entitlements; sourceTree = "<group>"; };
 		340AED331DF45A59007B5CEE /* MPKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKeyboardViewController.h; sourceTree = "<group>"; };
 		340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKeyboardViewController.m; sourceTree = "<group>"; };
@@ -1009,6 +1011,8 @@
 		341C07E71D421F5600FF905C /* MPImageUploadProgressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPImageUploadProgressCell.m; sourceTree = "<group>"; };
 		341CA90D1D3097AF008B85D3 /* MBProgressHUD+MP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MP.h"; sourceTree = "<group>"; };
 		341CA90E1D3097AF008B85D3 /* MBProgressHUD+MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MP.m"; sourceTree = "<group>"; };
+		34213BDE1E2C9B4D0065C675 /* UIImage+OuterCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OuterCircle.h"; sourceTree = "<group>"; };
+		34213BDF1E2C9B4D0065C675 /* UIImage+OuterCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+OuterCircle.m"; sourceTree = "<group>"; };
 		342202401D62A8A1003F81B2 /* MPExpandHideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPExpandHideViewController.h; sourceTree = "<group>"; };
 		342202411D62A8A1003F81B2 /* MPExpandHideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPExpandHideViewController.m; sourceTree = "<group>"; };
 		342202441D62BB1D003F81B2 /* team_dictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team_dictionary.plist; sourceTree = "<group>"; };
@@ -2174,6 +2178,8 @@
 				34FFA1F11D49128100A7C342 /* NSString+Additions.m */,
 				34FD22841D50813300096706 /* UIView+Extension.h */,
 				34FD22851D50813300096706 /* UIView+Extension.m */,
+				34213BDE1E2C9B4D0065C675 /* UIImage+OuterCircle.h */,
+				34213BDF1E2C9B4D0065C675 /* UIImage+OuterCircle.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -2193,7 +2199,6 @@
 		34E890791C3B89B2001327C8 = {
 			isa = PBXGroup;
 			children = (
-				3408A9F91E00D7A0001A0EC8 /* MobileProject_Local.entitlements */,
 				34E890841C3B89B2001327C8 /* MobileProject */,
 				34E8909E1C3B89B3001327C8 /* MobileProjectTests */,
 				34E890A91C3B89B3001327C8 /* MobileProjectUITests */,
@@ -2217,6 +2222,7 @@
 		34E890841C3B89B2001327C8 /* MobileProject */ = {
 			isa = PBXGroup;
 			children = (
+				3408A9F91E00D7A0001A0EC8 /* MobileProject_Local.entitlements */,
 				3408A9FA1E00D7A3001A0EC8 /* MobileProject.entitlements */,
 				34E890851C3B89B2001327C8 /* Supporting Files */,
 				34E890B81C3B89D0001327C8 /* Main(主要) */,
@@ -4712,6 +4718,7 @@
 				34E08B681C3BFB90005C6CA3 /* QBAssetsCollectionViewLayout.m in Sources */,
 				34420CBA1D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */,
 				34F212FE1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */,
+				34213BE11E2C9B4D0065C675 /* UIImage+OuterCircle.m in Sources */,
 				34E08B6A1C3BFB90005C6CA3 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				34E08B6B1C3BFB90005C6CA3 /* UIResponder+UIAdapt.m in Sources */,
 				3452EBAC1D1A90E00001732E /* XAspect-LogAppDelegate.m in Sources */,
@@ -4894,6 +4901,7 @@
 				34E894061C3B9A03001327C8 /* UIPopoverController+iPhone.m in Sources */,
 				34420CBD1D0FAD10007D1AAC /* AdvertiseView.m in Sources */,
 				34E893F21C3B9A03001327C8 /* UIImageView+Addition.m in Sources */,
+				34213BE01E2C9B4D0065C675 /* UIImage+OuterCircle.m in Sources */,
 				34E8943C1C3B9A03001327C8 /* UIWebView+Alert.m in Sources */,
 				34E893CD1C3B9A03001327C8 /* UIBezierPath+SVG.m in Sources */,
 				34E894451C3B9A03001327C8 /* WebView+Debug.m in Sources */,
