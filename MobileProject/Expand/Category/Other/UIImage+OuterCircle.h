@@ -1,7 +1,7 @@
 //
 //  UIImage+OuterCircle.h
 //  MobileProject
-//  用法
+//  用法 圆形图片外加边框
 //  UIImage *image = [UIImage circleImageWithName:@"bj.jpg" borderWidth:1 borderColor:[UIColor greenColor]];
 //
 //  Created by wujunyang on 2017/1/16.
