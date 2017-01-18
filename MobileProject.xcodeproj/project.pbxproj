@@ -47,6 +47,8 @@
 		3403B0BF1D367954007CD7EF /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403B0BD1D367954007CD7EF /* UITextField+Extension.m */; };
 		3404B5E01E1CE20000FB6C2A /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404B5DF1E1CE20000FB6C2A /* UIViewController+Swizzle.m */; };
 		3404B5E11E1CE20500FB6C2A /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404B5DF1E1CE20000FB6C2A /* UIViewController+Swizzle.m */; };
+		340674201E2F6207008EF20F /* UIView+Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3406741F1E2F6207008EF20F /* UIView+Empty.m */; };
+		340674211E2F6207008EF20F /* UIView+Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3406741F1E2F6207008EF20F /* UIView+Empty.m */; };
 		340757071D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */; };
 		3408A9FB1E00D7DF001A0EC8 /* XAspect-GeTuiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EBAD1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m */; };
 		340AED351DF45A59007B5CEE /* MPKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */; };
@@ -924,6 +926,8 @@
 		3403B0BD1D367954007CD7EF /* UITextField+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension.m"; sourceTree = "<group>"; };
 		3404B5DE1E1CE20000FB6C2A /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
 		3404B5DF1E1CE20000FB6C2A /* UIViewController+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzle.m"; sourceTree = "<group>"; };
+		3406741E1E2F6207008EF20F /* UIView+Empty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Empty.h"; sourceTree = "<group>"; };
+		3406741F1E2F6207008EF20F /* UIView+Empty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Empty.m"; sourceTree = "<group>"; };
 		340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-UmengShareAppDelegate.m"; sourceTree = "<group>"; };
 		3408A9F91E00D7A0001A0EC8 /* MobileProject_Local.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MobileProject_Local.entitlements; sourceTree = SOURCE_ROOT; };
 		3408A9FA1E00D7A3001A0EC8 /* MobileProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MobileProject.entitlements; sourceTree = "<group>"; };
@@ -2180,6 +2184,8 @@
 				34FD22851D50813300096706 /* UIView+Extension.m */,
 				34213BDE1E2C9B4D0065C675 /* UIImage+OuterCircle.h */,
 				34213BDF1E2C9B4D0065C675 /* UIImage+OuterCircle.m */,
+				3406741E1E2F6207008EF20F /* UIView+Empty.h */,
+				3406741F1E2F6207008EF20F /* UIView+Empty.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -4779,6 +4785,7 @@
 				34013B581D5179620051000F /* MPHideNavigationChildrenViewController.m in Sources */,
 				34E08B8D1C3BFB90005C6CA3 /* NSRunLoop+PerformBlock.m in Sources */,
 				3400E4B61D35E15D0056B673 /* SYSafeCategory.m in Sources */,
+				340674211E2F6207008EF20F /* UIView+Empty.m in Sources */,
 				34E08B8E1C3BFB90005C6CA3 /* UITableViewCell+TS_delaysContentTouches.m in Sources */,
 				34E08B8F1C3BFB90005C6CA3 /* CATransaction+AnimateWithDuration.m in Sources */,
 				34E08B901C3BFB90005C6CA3 /* NSNumber+RomanNumerals.m in Sources */,
@@ -5010,6 +5017,7 @@
 				34E893661C3B9A03001327C8 /* NSManagedObjectContext+Fetching.m in Sources */,
 				34E893771C3B9A03001327C8 /* NSDate+Extension.m in Sources */,
 				34E08A5D1C3BEEF2005C6CA3 /* MyFileLogger.m in Sources */,
+				340674201E2F6207008EF20F /* UIView+Empty.m in Sources */,
 				34683B231D4F19570041F8A0 /* MPReduceTimeModel.m in Sources */,
 				3400E4C71D35F0690056B673 /* MPLkdbViewController.m in Sources */,
 				34E894971C3B9FC1001327C8 /* QBAssetsCollectionFooterView.m in Sources */,
