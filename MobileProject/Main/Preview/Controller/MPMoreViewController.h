@@ -30,6 +30,7 @@
 #import "MPViewControllerLifeCycle.h"
 #import "MPMasonryViewController.h"
 #import "MPKeyboardViewController.h"
+#import "MPNavigationViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 

@@ -185,6 +185,10 @@
 		342A8FA91D3F1D8B000C7B98 /* UINavigationController+StackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 342A8F9F1D3F1D8B000C7B98 /* UINavigationController+StackManager.m */; };
 		342A8FAC1D3F1ED1000C7B98 /* MPQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342A8FAB1D3F1ED1000C7B98 /* MPQRCodeViewController.m */; };
 		342A8FAD1D3F1ED1000C7B98 /* MPQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342A8FAB1D3F1ED1000C7B98 /* MPQRCodeViewController.m */; };
+		34300A481E308391000C1FA5 /* MPNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34300A471E308391000C1FA5 /* MPNavigationViewController.m */; };
+		34300A491E308391000C1FA5 /* MPNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34300A471E308391000C1FA5 /* MPNavigationViewController.m */; };
+		34300A4C1E30840E000C1FA5 /* MPNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34300A4B1E30840E000C1FA5 /* MPNavView.m */; };
+		34300A4D1E30840E000C1FA5 /* MPNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34300A4B1E30840E000C1FA5 /* MPNavView.m */; };
 		34420CB91D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */; };
 		34420CBA1D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */; };
 		34420CBD1D0FAD10007D1AAC /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34420CBC1D0FAD10007D1AAC /* AdvertiseView.m */; };
@@ -1049,6 +1053,10 @@
 		342A8F9F1D3F1D8B000C7B98 /* UINavigationController+StackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+StackManager.m"; sourceTree = "<group>"; };
 		342A8FAA1D3F1ED1000C7B98 /* MPQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPQRCodeViewController.h; sourceTree = "<group>"; };
 		342A8FAB1D3F1ED1000C7B98 /* MPQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPQRCodeViewController.m; sourceTree = "<group>"; };
+		34300A461E308391000C1FA5 /* MPNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNavigationViewController.h; sourceTree = "<group>"; };
+		34300A471E308391000C1FA5 /* MPNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNavigationViewController.m; sourceTree = "<group>"; };
+		34300A4A1E30840E000C1FA5 /* MPNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNavView.h; sourceTree = "<group>"; };
+		34300A4B1E30840E000C1FA5 /* MPNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNavView.m; sourceTree = "<group>"; };
 		34420CB71D0FAC9E007D1AAC /* AdvertiseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseHelper.h; sourceTree = "<group>"; };
 		34420CB81D0FAC9E007D1AAC /* AdvertiseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseHelper.m; sourceTree = "<group>"; };
 		34420CBB1D0FAD10007D1AAC /* AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseView.h; sourceTree = "<group>"; };
@@ -3933,6 +3941,8 @@
 				34FF16A11DD466AD00E84DCC /* MPViewControllerLifeCycle.m */,
 				340AED331DF45A59007B5CEE /* MPKeyboardViewController.h */,
 				340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */,
+				34300A461E308391000C1FA5 /* MPNavigationViewController.h */,
+				34300A471E308391000C1FA5 /* MPNavigationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3963,6 +3973,8 @@
 				34683B121D4EEA0D0041F8A0 /* MPReduceTimeCell.m */,
 				3461BD0A1DD5C4FE00F8FC14 /* MPMasonryView.h */,
 				3461BD0B1DD5C4FE00F8FC14 /* MPMasonryView.m */,
+				34300A4A1E30840E000C1FA5 /* MPNavView.h */,
+				34300A4B1E30840E000C1FA5 /* MPNavView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4620,6 +4632,7 @@
 				3452EB901D1A8DAA0001732E /* AppDelegate.m in Sources */,
 				34E08B171C3BFB90005C6CA3 /* UIImageView+Reflect.m in Sources */,
 				340D87A61D3F7079003D9C88 /* MPImageCollectionCell.m in Sources */,
+				34300A491E308391000C1FA5 /* MPNavigationViewController.m in Sources */,
 				34E08B181C3BFB90005C6CA3 /* UIView+GestureCallback.m in Sources */,
 				34E08B191C3BFB90005C6CA3 /* NSURL+Param.m in Sources */,
 				34683B101D4EE93C0041F8A0 /* MPReduceTimeViewController.m in Sources */,
@@ -4759,6 +4772,7 @@
 				34E08B7D1C3BFB90005C6CA3 /* QBAssetsCollectionCheckmarkView.m in Sources */,
 				34E08B7E1C3BFB90005C6CA3 /* main.m in Sources */,
 				34E08B7F1C3BFB90005C6CA3 /* MJRefreshAutoStateFooter.m in Sources */,
+				34300A4D1E30840E000C1FA5 /* MPNavView.m in Sources */,
 				34E08B811C3BFB90005C6CA3 /* NSObject+MKBlockTimer.m in Sources */,
 				34E08B821C3BFB90005C6CA3 /* MJRefreshAutoFooter.m in Sources */,
 				349F81D11D45E571002104E3 /* MPUploadImageItemService.m in Sources */,
@@ -4945,6 +4959,7 @@
 				34E893FC1C3B9A03001327C8 /* UINavigationBar+Awesome.m in Sources */,
 				34E893641C3B9A03001327C8 /* NSManagedObject+Extensions.m in Sources */,
 				34E8943A1C3B9A03001327C8 /* UIViewController+TopBarMessage.m in Sources */,
+				34300A481E308391000C1FA5 /* MPNavigationViewController.m in Sources */,
 				34E893961C3B9A03001327C8 /* NSObject+Blocks.m in Sources */,
 				34E8940F1C3B9A03001327C8 /* UISearchBar+Blocks.m in Sources */,
 				34E894181C3B9A03001327C8 /* UITextField+Blocks.m in Sources */,
@@ -5161,6 +5176,7 @@
 				34E894961C3B9FC1001327C8 /* QBAssetsCollectionCheckmarkView.m in Sources */,
 				34E890871C3B89B2001327C8 /* main.m in Sources */,
 				34E8911E1C3B92AA001327C8 /* MJRefreshAutoStateFooter.m in Sources */,
+				34300A4C1E30840E000C1FA5 /* MPNavView.m in Sources */,
 				34E8939A1C3B9A03001327C8 /* NSObject+MKBlockTimer.m in Sources */,
 				34E891171C3B92AA001327C8 /* MJRefreshAutoFooter.m in Sources */,
 				3403847C1D47559A00E4A496 /* MPAdaptationFontViewController.m in Sources */,
