@@ -24,6 +24,8 @@
 #import "introductoryPagesHelper.h"
 #import "iflyMSC/IFlyFaceSDK.h"
 
+#import "MPAllModel.h"
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate,UIAlertViewDelegate,GeTuiSdkDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

@@ -31,6 +31,7 @@
 #import "MPMasonryViewController.h"
 #import "MPKeyboardViewController.h"
 #import "MPNavigationViewController.h"
+#import "MPTableSDWebImageViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 
