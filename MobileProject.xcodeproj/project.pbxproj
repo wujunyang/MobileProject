@@ -868,6 +868,10 @@
 		34FFA1F31D49128100A7C342 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFA1F11D49128100A7C342 /* NSString+Additions.m */; };
 		34FFF4EF1E4BF8C200875ED9 /* MPTableSDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFF4EE1E4BF8C200875ED9 /* MPTableSDWebImageViewController.m */; };
 		34FFF4F01E4BF8C200875ED9 /* MPTableSDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFF4EE1E4BF8C200875ED9 /* MPTableSDWebImageViewController.m */; };
+		34FFF4F31E4C323300875ED9 /* MPRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFF4F21E4C323200875ED9 /* MPRunTimeViewController.m */; };
+		34FFF4F41E4C323300875ED9 /* MPRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFF4F21E4C323200875ED9 /* MPRunTimeViewController.m */; };
+		34FFF4F71E4C32AD00875ED9 /* MPRunTimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFF4F61E4C32AD00875ED9 /* MPRunTimeTest.m */; };
+		34FFF4F81E4C32AD00875ED9 /* MPRunTimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FFF4F61E4C32AD00875ED9 /* MPRunTimeTest.m */; };
 		426EC478C80F00D762378976 /* libPods-MobileProjectDefault-MobileProject_Local.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0AE21C88E51BA3C9370B2E /* libPods-MobileProjectDefault-MobileProject_Local.a */; };
 		7D92D9CFC649C4B2022931C3 /* libPods-MobileProjectDefault-MobileProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EE4EC42E510E1E13986DB8 /* libPods-MobileProjectDefault-MobileProject.a */; };
 		FD0BF4111D6F33E2001E6F19 /* FaceRecognitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0BF40E1D6F33E2001E6F19 /* FaceRecognitionController.m */; };
@@ -1730,6 +1734,10 @@
 		34FFA1F11D49128100A7C342 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		34FFF4ED1E4BF8C200875ED9 /* MPTableSDWebImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTableSDWebImageViewController.h; sourceTree = "<group>"; };
 		34FFF4EE1E4BF8C200875ED9 /* MPTableSDWebImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTableSDWebImageViewController.m; sourceTree = "<group>"; };
+		34FFF4F11E4C323200875ED9 /* MPRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPRunTimeViewController.h; sourceTree = "<group>"; };
+		34FFF4F21E4C323200875ED9 /* MPRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPRunTimeViewController.m; sourceTree = "<group>"; };
+		34FFF4F51E4C32AD00875ED9 /* MPRunTimeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPRunTimeTest.h; sourceTree = "<group>"; };
+		34FFF4F61E4C32AD00875ED9 /* MPRunTimeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPRunTimeTest.m; sourceTree = "<group>"; };
 		36EA9020A810C457491FAE4B /* Pods-MobileProjectDefault-MobileProject_Local.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProjectDefault-MobileProject_Local.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProjectDefault-MobileProject_Local/Pods-MobileProjectDefault-MobileProject_Local.release.xcconfig"; sourceTree = "<group>"; };
 		BBF76F1CE38BF37F8EA429C8 /* Pods-MobileProjectDefault-MobileProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProjectDefault-MobileProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProjectDefault-MobileProject/Pods-MobileProjectDefault-MobileProject.release.xcconfig"; sourceTree = "<group>"; };
 		DC5571108C6CF02B1E863B5F /* Pods-MobileProjectDefault-MobileProject_Local.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProjectDefault-MobileProject_Local.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProjectDefault-MobileProject_Local/Pods-MobileProjectDefault-MobileProject_Local.debug.xcconfig"; sourceTree = "<group>"; };
@@ -3884,6 +3892,8 @@
 			isa = PBXGroup;
 			children = (
 				342202441D62BB1D003F81B2 /* team_dictionary.plist */,
+				34FFF4F51E4C32AD00875ED9 /* MPRunTimeTest.h */,
+				34FFF4F61E4C32AD00875ED9 /* MPRunTimeTest.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -3953,6 +3963,8 @@
 				34300A471E308391000C1FA5 /* MPNavigationViewController.m */,
 				34FFF4ED1E4BF8C200875ED9 /* MPTableSDWebImageViewController.h */,
 				34FFF4EE1E4BF8C200875ED9 /* MPTableSDWebImageViewController.m */,
+				34FFF4F11E4C323200875ED9 /* MPRunTimeViewController.h */,
+				34FFF4F21E4C323200875ED9 /* MPRunTimeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4449,6 +4461,7 @@
 				34E08A6D1C3BFB90005C6CA3 /* UIView+ViewController.m in Sources */,
 				34E08A6E1C3BFB90005C6CA3 /* UIViewController+BackButtonItemTitle.m in Sources */,
 				3404B5E11E1CE20500FB6C2A /* UIViewController+Swizzle.m in Sources */,
+				34FFF4F41E4C323300875ED9 /* MPRunTimeViewController.m in Sources */,
 				341CA9101D3097AF008B85D3 /* MBProgressHUD+MP.m in Sources */,
 				34E08A6F1C3BFB90005C6CA3 /* UIViewController+Visible.m in Sources */,
 				34E08A701C3BFB90005C6CA3 /* MKMapView+ZoomLevel.m in Sources */,
@@ -4489,6 +4502,7 @@
 				34E08A911C3BFB90005C6CA3 /* BaseViewController.m in Sources */,
 				34E08A921C3BFB90005C6CA3 /* UIButton+Indicator.m in Sources */,
 				3461BD0D1DD5C4FE00F8FC14 /* MPMasonryView.m in Sources */,
+				34FFF4F81E4C32AD00875ED9 /* MPRunTimeTest.m in Sources */,
 				34E08A941C3BFB90005C6CA3 /* NSHTTPCookieStorage+FreezeDry.m in Sources */,
 				34E08A951C3BFB90005C6CA3 /* CAMediaTimingFunction+AdditionalEquations.m in Sources */,
 				34E08A961C3BFB90005C6CA3 /* Reachability.m in Sources */,
@@ -5035,6 +5049,7 @@
 				340D87951D3F5FD3003D9C88 /* MPImageItemModel.m in Sources */,
 				34E893A41C3B9A03001327C8 /* NSString+Encrypt.m in Sources */,
 				3411EF101D6FEC1A00A6C7F3 /* CanvasView.m in Sources */,
+				34FFF4F31E4C323300875ED9 /* MPRunTimeViewController.m in Sources */,
 				34E893A61C3B9A03001327C8 /* NSString+Matcher.m in Sources */,
 				34E894111C3B9A03001327C8 /* UITableView+iOS7Style.m in Sources */,
 				34E8911D1C3B92AA001327C8 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -5197,6 +5212,7 @@
 				34E891171C3B92AA001327C8 /* MJRefreshAutoFooter.m in Sources */,
 				3403847C1D47559A00E4A496 /* MPAdaptationFontViewController.m in Sources */,
 				34E893BA1C3B9A03001327C8 /* NSUserDefaults+SafeAccess.m in Sources */,
+				34FFF4F71E4C32AD00875ED9 /* MPRunTimeTest.m in Sources */,
 				34E8942C1C3B9A03001327C8 /* UIView+Screenshot.m in Sources */,
 				34E8943D1C3B9A03001327C8 /* UIWebView+Blocks.m in Sources */,
 				34E8939F1C3B9A03001327C8 /* NSMutableString+Ruby.m in Sources */,

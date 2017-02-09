@@ -32,6 +32,7 @@
 #import "MPKeyboardViewController.h"
 #import "MPNavigationViewController.h"
 #import "MPTableSDWebImageViewController.h"
+#import "MPRunTimeViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 
