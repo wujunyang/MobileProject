@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong) MPRunTimeTest *myRunTimeTest;
 
+@property(nonatomic,strong)UIButton *myButton;
+
 @end
 
 @implementation MPRunTimeViewController
@@ -28,11 +30,36 @@
     [self getClassMethod];
     [self getClassProtocol];
     [self addClassAction];
+    [self addCategoryProperty];
+    [self changeMethod];
+    
+    //利用关联 封装BLOCK调用
+    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"提示" message:@"可以直接查看输出信息" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确认", nil];
+    
+    [alert showWithBlock:^(NSInteger buttonIndex) {
+        NSLog(@"当前选中了%ld",buttonIndex);
+    }];
+    
+    //HOCK 注入影响方法里面
+    self.myButton=[[UIButton alloc]init];
+    self.myButton.backgroundColor=[UIColor blueColor];
+    [self.myButton setTitle:@"实现方法注入" forState:UIControlStateNormal];
+    [self.view addSubview:self.myButton];
+    [self.myButton addTarget:self action:@selector(saveAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.myButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(-10);
+        make.bottom.mas_equalTo(-10);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)saveAction
+{
+    NSLog(@"saveAction");
 }
 
 #pragma mark 重写BaseViewController设置内容
@@ -158,6 +185,33 @@
     
     //******显示内容如下******
     //当前存在变量 _UserAge
+    
+    
+    //动态修改变量的值
+    MPRunTimeTest *testModel=[[MPRunTimeTest alloc]init];
+    testModel.name=@"wujunyang";
+    
+    NSLog(@"当前值没有被修改为：%@",testModel.name);
+    
+    unsigned int myCount = 0;
+    Ivar *ivar = class_copyIvarList([testModel class], &myCount);
+    for (int i = 0; i<myCount; i++) {
+        Ivar var = ivar[i];
+        const char *varName = ivar_getName(var);
+        NSString *proname = [NSString stringWithUTF8String:varName];
+        
+        if ([proname isEqualToString:@"_name"]) {   //这里别忘了给属性加下划线
+            object_setIvar(testModel, var, @"Good");
+            break;
+        }
+    }
+    free(ivar);
+    NSLog(@"当前修改后的变量值为：%@",testModel.name);
+    
+    //******显示内容如下******
+    //可以用来动态改变一些已经存在的值，或者是统一变量处理
+    //当前值没有被修改为：wujunyang
+    //当前修改后的变量值为：Good
 }
 
 //获取方法
@@ -253,6 +307,37 @@
 void guessAnswer(id self,SEL _cmd){
     //一个Objective-C方法是一个简单的C函数，它至少包含两个参数–self和_cmd。所以，我们的实现函数(IMP参数指向的函数)至少需要两个参数
     NSLog(@"我是动态增加的方法响应");
+}
+
+//分类动态增加属性
+-(void)addCategoryProperty
+{
+    MPRunTimeTest *test=[[MPRunTimeTest alloc]init];
+    [test setWorkName:@"XM"];
+    
+    NSLog(@"当前的公司为：%@",test.getWorkName);
+    
+    //******显示内容如下******
+    //可以为已经存在的类进行分类动态增加属性
+    //当前的公司为：XM
+}
+
+
+//动态交换两个方法的实现
+-(void)changeMethod
+{
+    Method m1 = class_getInstanceMethod([self.myRunTimeTest class], @selector(showUserName:));
+    Method m2 = class_getInstanceMethod([self.myRunTimeTest class], @selector(showUserAge:));
+    
+    method_exchangeImplementations(m1, m2);
+    
+    NSLog([self.myRunTimeTest showUserName:@"wujunyang"]);
+    NSLog([self.myRunTimeTest showUserAge:@"20"]);
+    
+    //******显示内容如下******
+    //注意 如果有参数 记得参数的类型要一般 或者可以进行相应的转换 或者两个方法类型不同会闪退
+    //当前显示年龄wujunyang
+    //user name is 20
 }
 
 

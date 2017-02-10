@@ -13,21 +13,24 @@
 
 + (void)load
 {
-    SEL origSel = @selector(viewDidAppear:);
-    SEL swizSel = @selector(swiz_viewDidAppear:);
-    [UIViewController swizzleMethods:[self class] originalSelector:origSel swizzledSelector:swizSel];
-    
-    SEL vcWillAppearSel=@selector(viewWillAppear:);
-    SEL swizWillAppearSel=@selector(swiz_viewWillAppear:);
-    [UIViewController swizzleMethods:[self class] originalSelector:vcWillAppearSel swizzledSelector:swizWillAppearSel];
-    
-    SEL vcDidDisappearSel=@selector(viewDidDisappear:);
-    SEL swizDidDisappearSel=@selector(swiz_viewDidDisappear:);
-    [UIViewController swizzleMethods:[self class] originalSelector:vcDidDisappearSel swizzledSelector:swizDidDisappearSel];
-    
-    SEL vcWillDisappearSel=@selector(viewWillDisappear:);
-    SEL swizWillDisappearSel=@selector(swiz_viewWillDisappear:);
-    [UIViewController swizzleMethods:[self class] originalSelector:vcWillDisappearSel swizzledSelector:swizWillDisappearSel];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        SEL origSel = @selector(viewDidAppear:);
+        SEL swizSel = @selector(swiz_viewDidAppear:);
+        [UIViewController swizzleMethods:[self class] originalSelector:origSel swizzledSelector:swizSel];
+        
+        SEL vcWillAppearSel=@selector(viewWillAppear:);
+        SEL swizWillAppearSel=@selector(swiz_viewWillAppear:);
+        [UIViewController swizzleMethods:[self class] originalSelector:vcWillAppearSel swizzledSelector:swizWillAppearSel];
+        
+        SEL vcDidDisappearSel=@selector(viewDidDisappear:);
+        SEL swizDidDisappearSel=@selector(swiz_viewDidDisappear:);
+        [UIViewController swizzleMethods:[self class] originalSelector:vcDidDisappearSel swizzledSelector:swizDidDisappearSel];
+        
+        SEL vcWillDisappearSel=@selector(viewWillDisappear:);
+        SEL swizWillDisappearSel=@selector(swiz_viewWillDisappear:);
+        [UIViewController swizzleMethods:[self class] originalSelector:vcWillDisappearSel swizzledSelector:swizWillDisappearSel];
+    });
 }
 
 + (void)swizzleMethods:(Class)class originalSelector:(SEL)origSel swizzledSelector:(SEL)swizSel
