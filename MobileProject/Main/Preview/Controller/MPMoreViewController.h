@@ -33,6 +33,7 @@
 #import "MPNavigationViewController.h"
 #import "MPTableSDWebImageViewController.h"
 #import "MPRunTimeViewController.h"
+#import "MPDragTableViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 

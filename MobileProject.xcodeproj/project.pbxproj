@@ -97,6 +97,8 @@
 		340BCD681D0F039E0093CC7D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 340BCD661D0F039E0093CC7D /* Placeholder */; };
 		340BCD691D0F04DB0093CC7D /* imageCompressHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093EF1D0E605800A8D63F /* imageCompressHelper.m */; };
 		340BCD6A1D0F04DE0093CC7D /* UITapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093F11D0E605800A8D63F /* UITapImageView.m */; };
+		340CCCAF1E519F310037BE4D /* MPDragTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340CCCAE1E519F310037BE4D /* MPDragTableViewController.m */; };
+		340CCCB01E519F310037BE4D /* MPDragTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340CCCAE1E519F310037BE4D /* MPDragTableViewController.m */; };
 		340D87951D3F5FD3003D9C88 /* MPImageItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D87941D3F5FD3003D9C88 /* MPImageItemModel.m */; };
 		340D87961D3F5FD3003D9C88 /* MPImageItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D87941D3F5FD3003D9C88 /* MPImageItemModel.m */; };
 		340D87991D3F6310003D9C88 /* dateTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D87981D3F6310003D9C88 /* dateTimeHelper.m */; };
@@ -981,6 +983,8 @@
 		340BCD561D0F01F50093CC7D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
 		340BCD631D0F03930093CC7D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
 		340BCD661D0F039E0093CC7D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
+		340CCCAD1E519F310037BE4D /* MPDragTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDragTableViewController.h; sourceTree = "<group>"; };
+		340CCCAE1E519F310037BE4D /* MPDragTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDragTableViewController.m; sourceTree = "<group>"; };
 		340D87931D3F5FD3003D9C88 /* MPImageItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPImageItemModel.h; sourceTree = "<group>"; };
 		340D87941D3F5FD3003D9C88 /* MPImageItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPImageItemModel.m; sourceTree = "<group>"; };
 		340D87971D3F6310003D9C88 /* dateTimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dateTimeHelper.h; sourceTree = "<group>"; };
@@ -3997,6 +4001,8 @@
 				34FFF4EE1E4BF8C200875ED9 /* MPTableSDWebImageViewController.m */,
 				34FFF4F11E4C323200875ED9 /* MPRunTimeViewController.h */,
 				34FFF4F21E4C323200875ED9 /* MPRunTimeViewController.m */,
+				340CCCAD1E519F310037BE4D /* MPDragTableViewController.h */,
+				340CCCAE1E519F310037BE4D /* MPDragTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4735,6 +4741,7 @@
 				340EB2FB1D66A24F00BF9222 /* MPMultitextCell.m in Sources */,
 				34E08B331C3BFB90005C6CA3 /* NSURLRequest+ParamsFromDictionary.m in Sources */,
 				34E08B341C3BFB90005C6CA3 /* NSDate+Formatter.m in Sources */,
+				340CCCB01E519F310037BE4D /* MPDragTableViewController.m in Sources */,
 				34E08B351C3BFB90005C6CA3 /* NSObject+Reflection.m in Sources */,
 				340D879E1D3F6B43003D9C88 /* MPUploadImageHelper.m in Sources */,
 				34E08B361C3BFB90005C6CA3 /* NSTimer+Blocks.m in Sources */,
@@ -5034,6 +5041,7 @@
 				34E894461C3B9A03001327C8 /* UIWindow+Hierarchy.m in Sources */,
 				34E893DA1C3B9A03001327C8 /* UIColor+Web.m in Sources */,
 				34E894B91C3BA300001327C8 /* JDStatusBarStyle.m in Sources */,
+				340CCCAF1E519F310037BE4D /* MPDragTableViewController.m in Sources */,
 				34E893E11C3B9A03001327C8 /* UIFont-TTF.m in Sources */,
 				34799A5F1CD34C5A003518C5 /* FCUUID.m in Sources */,
 				34E8911F1C3B92AA001327C8 /* MJRefreshBackGifFooter.m in Sources */,
