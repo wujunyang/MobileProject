@@ -1,5 +1,5 @@
 
-<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/MobileProject.png" width=80% height=300px></img>
+<img src="https://github.com/wujunyang/MobileProject/blob/master/ObjcUML/MobileProject.png" width=90% height=250px></img>
 
 ## MobileProject介绍
 
