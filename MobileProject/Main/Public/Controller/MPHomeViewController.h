@@ -15,6 +15,7 @@
 #import "UMengSocialViewController.h"
 #import "MPDiscoveryViewController.h"
 #import "MPMoreViewController.h"
+#import "MPTheoryViewController.h"
 
 
 @interface MPHomeViewController : CYLTabBarController<UITabBarControllerDelegate>

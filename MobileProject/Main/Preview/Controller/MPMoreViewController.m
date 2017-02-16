@@ -29,7 +29,7 @@
     self.navigationItem.title=@"功能导航";
     
     if (!self.dataArray) {
-        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传",@"照片上传附带进度",@"字体适配机型",@"日志记录",@"列表倒计时",@"H5交互WebViewJavascriptBridge",@"继承BaseViewController运用",@"列表空白页展现",@"省市区三级联动",@"自定义弹出窗",@"YYText富文本实例",@"列表行展开跟回收隐藏",@"常见表单行类型" ,@"人脸识别注册及验证",@"JavaScriptCore运用",@"viewController生命周期",@"Masonry布局实例",@"键盘处理操作",@"自定义导航栏动态显现效果",@"列表只加载显示时Cell的SDWebImage图",@"运行时RunTime知识运用",@"长按列表行拖动效果"];
+        self.dataArray=@[@"JSPatch热更新",@"LKDB数据库运用",@"百度地图",@"二维码",@"照片上传",@"照片上传附带进度",@"字体适配机型",@"日志记录",@"列表倒计时",@"H5交互WebViewJavascriptBridge",@"继承BaseViewController运用",@"列表空白页展现",@"省市区三级联动",@"自定义弹出窗",@"YYText富文本实例",@"列表行展开跟回收隐藏",@"常见表单行类型" ,@"人脸识别注册及验证",@"JavaScriptCore运用",@"Masonry布局实例",@"键盘处理操作",@"自定义导航栏动态显现效果",@"列表只加载显示时Cell的SDWebImage图",@"长按列表行拖动效果"];
     }
     
     //弹出提示
@@ -205,41 +205,29 @@
         }
             case 19:
         {
-            MPViewControllerLifeCycle *vc=[[MPViewControllerLifeCycle alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
-            break;
-        }
-            case 20:
-        {
             MPMasonryViewController *vc=[[MPMasonryViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-        case 21:
+        case 20:
         {
             MPKeyboardViewController *vc=[[MPKeyboardViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-        case 22:
+        case 21:
         {
             MPNavigationViewController *vc=[[MPNavigationViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-        case 23:
+        case 22:
         {
             MPTableSDWebImageViewController *vc=[[MPTableSDWebImageViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-        case 24:
-        {
-            MPRunTimeViewController *vc=[[MPRunTimeViewController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
-            break;
-        }
-        case 25:
+        case 23:
         {
             MPDragTableViewController *vc=[[MPDragTableViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];

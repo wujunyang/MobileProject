@@ -44,7 +44,7 @@
     UINavigationController *firstNavigationController = [[MPBaseNavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     
-    MPDiscoveryViewController *secondViewController = [[MPDiscoveryViewController alloc] init];
+    MPTheoryViewController *secondViewController = [[MPTheoryViewController alloc] init];
     UINavigationController *secondNavigationController = [[MPBaseNavigationController alloc]
                                                     initWithRootViewController:secondViewController];
     
@@ -73,7 +73,7 @@
                                                  CYLTabBarItemSelectedImage : @"home_highlight",
                                                  };
     NSDictionary *secondTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"发现",
+                                                  CYLTabBarItemTitle : @"基础",
                                                   CYLTabBarItemImage : @"mycity_normal",
                                                   CYLTabBarItemSelectedImage : @"mycity_highlight",
                                                   };
