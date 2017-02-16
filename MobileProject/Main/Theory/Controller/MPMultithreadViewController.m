@@ -1,30 +1,28 @@
 //
-//  MPTheoryViewController.m
+//  MPMultithreadViewController.m
 //  MobileProject
 //
 //  Created by wujunyang on 2017/2/16.
 //  Copyright © 2017年 wujunyang. All rights reserved.
 //
 
-#import "MPTheoryViewController.h"
+#import "MPMultithreadViewController.h"
 
-@interface MPTheoryViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface MPMultithreadViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic,strong) NSArray             *dataArray;
 @property (nonatomic,strong) UITableView         *myTableView;
 
 @end
 
-@implementation MPTheoryViewController
-
-#pragma mark 生命周期
+@implementation MPMultithreadViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor whiteColor];
-    self.navigationItem.title=@"基础知识点";
+    self.navigationItem.title=@"多线程知识";
     
     if (!self.dataArray) {
-        self.dataArray=@[@"viewController生命周期",@"运行时RunTime知识运用",@"多线程知识运用"];
+        self.dataArray=@[@"NSThread多线程",@"GCD多线程",@"NSOperation多线程",@"同步锁知识"];
     }
     
     //初始化表格
@@ -40,7 +38,7 @@
             make.edges.equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
         }];
     }
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -76,19 +74,25 @@
     switch (indexPath.row) {
         case 0:
         {
-            MPViewControllerLifeCycle *vc=[[MPViewControllerLifeCycle alloc]init];
+            MPThreadViewController *vc=[[MPThreadViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 1:
         {
-            MPRunTimeViewController *vc=[[MPRunTimeViewController alloc]init];
+            MPGCDViewController *vc=[[MPGCDViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 2:
         {
-            MPMultithreadViewController *vc=[[MPMultithreadViewController alloc]init];
+            MPOperationViewController *vc=[[MPOperationViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 3:
+        {
+            MPLockViewController *vc=[[MPLockViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
@@ -96,7 +100,5 @@
             break;
     }
 }
-
-
 
 @end
