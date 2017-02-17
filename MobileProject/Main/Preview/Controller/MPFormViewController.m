@@ -91,6 +91,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    MPWeakSelf(self)
     if (indexPath.row==0) {
         MPIconAndTitleCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MPIconAndTitleCell class]) forIndexPath:indexPath];
         [cell configCellIconName:@"mine_setting_icon" cellTitle:@"系统设置" showLine:YES];
@@ -121,6 +122,7 @@
         cell.placeFontSize=15;
         cell.textValueChangedBlock=^(NSString* text)
         {
+            MPStrongSelf(self)
             self.myAddress=text;
         };
         return cell;

@@ -48,7 +48,6 @@
     
     [self.myThreadList removeAllObjects];
     
-    
     for(int i=0; i<10;i++)
     {
         NSThread *thread=[[NSThread alloc]initWithTarget:self selector:@selector(loadAction:) object:[NSNumber numberWithInt:i]];
@@ -56,6 +55,7 @@
         
         [self.myThreadList addObject:thread];
     }
+    
     
     for (int i=0; i<self.myThreadList.count-1; i++) {
         NSThread *thread=self.myThreadList[i];
@@ -67,6 +67,7 @@
 {
     NSThread *thread=[NSThread currentThread];
     NSLog(@"loadAction是在线程%@中执行",thread.name);
+    
     
     
     //第一种情况，第二种情况：
@@ -108,6 +109,19 @@
     NSLog(@"执行完成了");
     //输出：执行方法updateImage是在主线程中
 }
+
+
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    self.myMutableList=nil;
+    self.mylock=nil;
+    self.myThreadList=nil;
+}
+
+
 
 //------------------------------------------------------------------------------------------
 //第一种情况

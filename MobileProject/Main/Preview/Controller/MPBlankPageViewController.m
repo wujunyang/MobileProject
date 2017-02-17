@@ -34,9 +34,10 @@
         _myTableView.delegate                       = self;
         [_myTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
         [self.view addSubview:_myTableView];
-        
+        MPWeakSelf(self);
         _myTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             //模拟加载服务端数据
+            MPStrongSelf(self);
             [self loadMyTableData];
         }];
         
@@ -165,7 +166,7 @@
     //增加无数据展现
     
     [self.view configBlankPage:EaseBlankPageTypeView hasData:self.dataArray.count hasError:(self.dataArray.count>0) reloadButtonBlock:^(id sender) {
-        [MBProgressHUD showInfo:@"重新加载的数据" ToView:self.view];
+        [MBProgressHUD showInfo:@"重新加载的数据" ToView:weakSelf.view];
         [weakSelf.myTableView.mj_header beginRefreshing];
     }];
     

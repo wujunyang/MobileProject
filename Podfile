@@ -28,7 +28,7 @@ abstract_target 'MobileProjectDefault' do
     pod 'M13ProgressSuite', '~> 1.2.7'
     pod 'WebViewJavascriptBridge', '~> 5.0'
     pod 'YYText'
-    
+    pod 'MLeaksFinder'
     
     target 'MobileProject_Local' do
 

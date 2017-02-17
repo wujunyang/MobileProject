@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FBRetainCycleDetector.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FLEX.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -70,6 +75,11 @@
 			<false/>
 		</dict>
 		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MLeaksFinder.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -147,7 +157,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>0578067CA5314399B3BE997D802EFB7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0659B71386995AC7EE2A305F0A360EB1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0CBA00E44B2997AE686790C4A86C097B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -172,17 +192,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1C831BB861FFE6755059892F17C9F022</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2596169E954907C07413FA0DF674480A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>439E5E9F016413BC0C517272B2834C51</key>
+		<key>351172CFD46CF0BD397CE6D35D8FB033</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -197,17 +212,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>63B129BBB63B4468A48E4FE40ECC58A8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>695CC512BB920DB2DF2D1ABDF434F3BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6C3639FD50FD661394C919128D8423A1</key>
+		<key>83AA4FFCE4A8B6E96BCF1DC1B105B6C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>987EF208FB46DA3E97B53ED2C8FD960F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -222,12 +237,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>AC139CEF10BCCB200972B4617F3CA14E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AF9D6EADD8E530631B349B6FDC56DA82</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AFAFB55453D161D2BB5CFB30C68A54D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B30A0E6EE3A3E8F6CC345AC5AF607A06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA0DC429C0705E6D5191DECC4E779A4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -242,22 +272,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CB1D01420639646D68E2417BBFD4C94A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>D31F2E1140FD881D5FEB76F35D954576</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D97B7609FA33A9F0CD17F5E7E7C468B4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E6D762314757BCAF921DE2310AD6F974</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -268,6 +283,11 @@
 			<true/>
 		</dict>
 		<key>F1A57F063DAC9B33748B129DD30F145E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F833627A197BD9E014EB2D8EAE575FA6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

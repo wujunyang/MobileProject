@@ -71,15 +71,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     MPImageUploadProgressCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MPImageUploadProgressCell class]) forIndexPath:indexPath];
-    __weak typeof(self)weakSelf = self;
+    MPWeakSelf(self);
     cell.accessoryType    = UITableViewCellAccessoryNone;
     cell.curUploadImageHelper=self.curUploadImageHelper;
     cell.addPicturesBlock = ^(){
+        MPStrongSelf(self);
         [self showActionForPhoto];
     };
     cell.deleteImageBlock = ^(MPImageItemModel *toDelete){
-        [weakSelf.curUploadImageHelper deleteAImage:toDelete];
-        [weakSelf.myTableView reloadData];
+        MPStrongSelf(self);
+        [self.curUploadImageHelper deleteAImage:toDelete];
+        [self.myTableView reloadData];
     };
     return cell;
 }
@@ -130,7 +132,9 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     UIImage *pickerImage = [info objectForKey:UIImagePickerControllerOriginalImage];
     ALAssetsLibrary *assetsLibrary = [[ALAssetsLibrary alloc] init];
+    MPWeakSelf(self);
     [assetsLibrary writeImageToSavedPhotosAlbum:[pickerImage CGImage] orientation:(ALAssetOrientation)pickerImage.imageOrientation completionBlock:^(NSURL *assetURL, NSError *error) {
+        MPStrongSelf(self);
         [self.curUploadImageHelper addASelectedAssetURL:assetURL];
         //局部刷新 根据布局相应调整
         [self partialTableViewRefresh];
@@ -152,6 +156,7 @@
     }];
     MPWeakSelf(self)
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        MPStrongSelf(self)
         self.curUploadImageHelper.selectedAssetURLs = selectedAssetURLs;
         dispatch_async(dispatch_get_main_queue(), ^{
             MPStrongSelf(self)
