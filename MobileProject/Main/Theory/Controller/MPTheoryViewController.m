@@ -41,6 +41,14 @@
         }];
     }
 
+    
+    //代码规范
+    MPCodeStandards *codeStandards=[[MPCodeStandards alloc]initWithUserName:@"wujunyang" andAge:2];
+    [codeStandards addWork:@"编程"];
+    [codeStandards addWork:@"洗碗"];
+    NSLog(@"当前名字：%@",codeStandards.userName);
+    NSLog(@"当前信息：%@",codeStandards);
+    [codeStandards removeWork:@"洗碗"];
 }
 
 - (void)didReceiveMemoryWarning {

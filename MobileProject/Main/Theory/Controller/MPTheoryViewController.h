@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "MPCodeStandards.h"
 #import "MPViewControllerLifeCycle.h"
 #import "MPRunTimeViewController.h"
 #import "MPMultithreadViewController.h"

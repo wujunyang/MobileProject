@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340050DE1E5C14AE00044EA1 /* UIApplication+Permissions.m in Sources */ = {isa = PBXBuildFile; fileRef = 340050DD1E5C14AE00044EA1 /* UIApplication+Permissions.m */; };
 		340067401E499C7000DAF86E /* MPAllModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400673F1E499C7000DAF86E /* MPAllModel.m */; };
 		340067411E499C7000DAF86E /* MPAllModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400673F1E499C7000DAF86E /* MPAllModel.m */; };
 		3400E4B31D35E1500056B673 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400E4B01D35E1500056B673 /* JRSwizzle.m */; };
@@ -513,7 +514,6 @@
 		34E08B6D1C3BFB90005C6CA3 /* NSManagedObject+DictionaryExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891581C3B9A02001327C8 /* NSManagedObject+DictionaryExport.m */; };
 		34E08B6E1C3BFB90005C6CA3 /* UIBezierPath+Length.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892511C3B9A03001327C8 /* UIBezierPath+Length.m */; };
 		34E08B6F1C3BFB90005C6CA3 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890ED1C3B92AA001327C8 /* MJRefreshHeader.m */; };
-		34E08B701C3BFB90005C6CA3 /* UIApplication+Permissions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892491C3B9A03001327C8 /* UIApplication+Permissions.m */; };
 		34E08B721C3BFB90005C6CA3 /* UIViewController+BlockSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8933B1C3B9A03001327C8 /* UIViewController+BlockSegue.m */; };
 		34E08B731C3BFB90005C6CA3 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E890FB1C3B92AA001327C8 /* MJRefreshBackNormalFooter.m */; };
 		34E08B741C3BFB90005C6CA3 /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893141C3B9A03001327C8 /* UIView+Constraints.m */; };
@@ -696,7 +696,6 @@
 		34E893C51C3B9A03001327C8 /* UIApplication+ApplicationSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892431C3B9A03001327C8 /* UIApplication+ApplicationSize.m */; };
 		34E893C61C3B9A03001327C8 /* UIApplication+KeyboardFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892451C3B9A03001327C8 /* UIApplication+KeyboardFrame.m */; };
 		34E893C71C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892471C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.m */; };
-		34E893C81C3B9A03001327C8 /* UIApplication+Permissions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892491C3B9A03001327C8 /* UIApplication+Permissions.m */; };
 		34E893C91C3B9A03001327C8 /* UIBarButtonItem+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8924C1C3B9A03001327C8 /* UIBarButtonItem+Action.m */; };
 		34E893CA1C3B9A03001327C8 /* UIBezierPath+BasicShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8924F1C3B9A03001327C8 /* UIBezierPath+BasicShapes.m */; };
 		34E893CB1C3B9A03001327C8 /* UIBezierPath+Length.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892511C3B9A03001327C8 /* UIBezierPath+Length.m */; };
@@ -882,6 +881,12 @@
 		34FA475F1D50961600D5B729 /* MPChildrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA475D1D50961600D5B729 /* MPChildrenViewController.m */; };
 		34FA47621D50A61200D5B729 /* MPBlankPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */; };
 		34FA47631D50A61200D5B729 /* MPBlankPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */; };
+		34FAEFBE1E5AD78000CED341 /* MPCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAEFBD1E5AD78000CED341 /* MPCalendarViewController.m */; };
+		34FAEFBF1E5AD78000CED341 /* MPCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAEFBD1E5AD78000CED341 /* MPCalendarViewController.m */; };
+		34FAEFC21E5AD83400CED341 /* MPEventCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAEFC11E5AD83400CED341 /* MPEventCalendar.m */; };
+		34FAEFC31E5AD83400CED341 /* MPEventCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAEFC11E5AD83400CED341 /* MPEventCalendar.m */; };
+		34FBEBB21E5D345000F545FC /* MPCodeStandards.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBEBB11E5D345000F545FC /* MPCodeStandards.m */; };
+		34FBEBB31E5D345000F545FC /* MPCodeStandards.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBEBB11E5D345000F545FC /* MPCodeStandards.m */; };
 		34FC67911D52EE8B0049F144 /* WJYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC67901D52EE8B0049F144 /* WJYAlertView.m */; };
 		34FC67941D52EFFD0049F144 /* MPCustomAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC67931D52EFFD0049F144 /* MPCustomAlertViewController.m */; };
 		34FC67951D52EFFD0049F144 /* MPCustomAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC67931D52EFFD0049F144 /* MPCustomAlertViewController.m */; };
@@ -927,6 +932,8 @@
 
 /* Begin PBXFileReference section */
 		17EE4EC42E510E1E13986DB8 /* libPods-MobileProjectDefault-MobileProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileProjectDefault-MobileProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		340050DC1E5C14AE00044EA1 /* UIApplication+Permissions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Permissions.h"; sourceTree = "<group>"; };
+		340050DD1E5C14AE00044EA1 /* UIApplication+Permissions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Permissions.m"; sourceTree = "<group>"; };
 		3400673E1E499C7000DAF86E /* MPAllModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAllModel.h; sourceTree = "<group>"; };
 		3400673F1E499C7000DAF86E /* MPAllModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAllModel.m; sourceTree = "<group>"; };
 		3400E4AF1D35E1500056B673 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
@@ -1453,8 +1460,6 @@
 		34E892451C3B9A03001327C8 /* UIApplication+KeyboardFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+KeyboardFrame.m"; sourceTree = "<group>"; };
 		34E892461C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+NetworkActivityIndicator.h"; sourceTree = "<group>"; };
 		34E892471C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+NetworkActivityIndicator.m"; sourceTree = "<group>"; };
-		34E892481C3B9A03001327C8 /* UIApplication+Permissions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Permissions.h"; sourceTree = "<group>"; };
-		34E892491C3B9A03001327C8 /* UIApplication+Permissions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Permissions.m"; sourceTree = "<group>"; };
 		34E8924B1C3B9A03001327C8 /* UIBarButtonItem+Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Action.h"; sourceTree = "<group>"; };
 		34E8924C1C3B9A03001327C8 /* UIBarButtonItem+Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Action.m"; sourceTree = "<group>"; };
 		34E8924E1C3B9A03001327C8 /* UIBezierPath+BasicShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+BasicShapes.h"; sourceTree = "<group>"; };
@@ -1775,6 +1780,12 @@
 		34FA475D1D50961600D5B729 /* MPChildrenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPChildrenViewController.m; sourceTree = "<group>"; };
 		34FA47601D50A61200D5B729 /* MPBlankPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBlankPageViewController.h; sourceTree = "<group>"; };
 		34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBlankPageViewController.m; sourceTree = "<group>"; };
+		34FAEFBC1E5AD78000CED341 /* MPCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCalendarViewController.h; sourceTree = "<group>"; };
+		34FAEFBD1E5AD78000CED341 /* MPCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCalendarViewController.m; sourceTree = "<group>"; };
+		34FAEFC01E5AD83400CED341 /* MPEventCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEventCalendar.h; sourceTree = "<group>"; };
+		34FAEFC11E5AD83400CED341 /* MPEventCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEventCalendar.m; sourceTree = "<group>"; };
+		34FBEBB01E5D345000F545FC /* MPCodeStandards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCodeStandards.h; sourceTree = "<group>"; };
+		34FBEBB11E5D345000F545FC /* MPCodeStandards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCodeStandards.m; sourceTree = "<group>"; };
 		34FC678F1D52EE8B0049F144 /* WJYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJYAlertView.h; sourceTree = "<group>"; };
 		34FC67901D52EE8B0049F144 /* WJYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJYAlertView.m; sourceTree = "<group>"; };
 		34FC67921D52EFFD0049F144 /* MPCustomAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCustomAlertViewController.h; sourceTree = "<group>"; };
@@ -2191,6 +2202,8 @@
 				341DF02C1E5541A10007907A /* RunTime */,
 				341DF0671E558F650007907A /* MPOperation.h */,
 				341DF0681E558F650007907A /* MPOperation.m */,
+				34FBEBB01E5D345000F545FC /* MPCodeStandards.h */,
+				34FBEBB11E5D345000F545FC /* MPCodeStandards.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -3405,14 +3418,14 @@
 		34E892411C3B9A03001327C8 /* UIApplication */ = {
 			isa = PBXGroup;
 			children = (
+				340050DC1E5C14AE00044EA1 /* UIApplication+Permissions.h */,
+				340050DD1E5C14AE00044EA1 /* UIApplication+Permissions.m */,
 				34E892421C3B9A03001327C8 /* UIApplication+ApplicationSize.h */,
 				34E892431C3B9A03001327C8 /* UIApplication+ApplicationSize.m */,
 				34E892441C3B9A03001327C8 /* UIApplication+KeyboardFrame.h */,
 				34E892451C3B9A03001327C8 /* UIApplication+KeyboardFrame.m */,
 				34E892461C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.h */,
 				34E892471C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.m */,
-				34E892481C3B9A03001327C8 /* UIApplication+Permissions.h */,
-				34E892491C3B9A03001327C8 /* UIApplication+Permissions.m */,
 			);
 			path = UIApplication;
 			sourceTree = "<group>";
@@ -4045,6 +4058,8 @@
 			isa = PBXGroup;
 			children = (
 				342202441D62BB1D003F81B2 /* team_dictionary.plist */,
+				34FAEFC01E5AD83400CED341 /* MPEventCalendar.h */,
+				34FAEFC11E5AD83400CED341 /* MPEventCalendar.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -4114,6 +4129,8 @@
 				34FFF4EE1E4BF8C200875ED9 /* MPTableSDWebImageViewController.m */,
 				340CCCAD1E519F310037BE4D /* MPDragTableViewController.h */,
 				340CCCAE1E519F310037BE4D /* MPDragTableViewController.m */,
+				34FAEFBC1E5AD78000CED341 /* MPCalendarViewController.h */,
+				34FAEFBD1E5AD78000CED341 /* MPCalendarViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4599,6 +4616,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34E08A611C3BFB90005C6CA3 /* iCarousel.m in Sources */,
+				34FAEFC31E5AD83400CED341 /* MPEventCalendar.m in Sources */,
 				34E08A621C3BFB90005C6CA3 /* UIView+Toast.m in Sources */,
 				34E08A631C3BFB90005C6CA3 /* NSInvocation+Block.m in Sources */,
 				341DF05A1E5546410007907A /* MPThreadViewController.m in Sources */,
@@ -4724,6 +4742,7 @@
 				34E08AC71C3BFB90005C6CA3 /* UIDevice+Hardware.m in Sources */,
 				34E08AC81C3BFB90005C6CA3 /* NSObject+GCD.m in Sources */,
 				34FF0E391D5835C90027EEAE /* MPYYTextViewController.m in Sources */,
+				34FBEBB31E5D345000F545FC /* MPCodeStandards.m in Sources */,
 				34E08AC91C3BFB90005C6CA3 /* NSDictionary+Merge.m in Sources */,
 				34E08ACA1C3BFB90005C6CA3 /* NSString+UUID.m in Sources */,
 				34E08ACB1C3BFB90005C6CA3 /* CLLocation+CH1903.m in Sources */,
@@ -4905,6 +4924,7 @@
 				342202431D62A8A1003F81B2 /* MPExpandHideViewController.m in Sources */,
 				34E08B531C3BFB90005C6CA3 /* UIApplication+KeyboardFrame.m in Sources */,
 				34E08B541C3BFB90005C6CA3 /* UIViewController+MJPopupViewController.m in Sources */,
+				34FAEFBF1E5AD78000CED341 /* MPCalendarViewController.m in Sources */,
 				34A14EE41D40974100ACCCCC /* MPUploadImageService.m in Sources */,
 				3408A9FB1E00D7DF001A0EC8 /* XAspect-GeTuiAppDelegate.m in Sources */,
 				34E08B561C3BFB90005C6CA3 /* NetworkUnit.m in Sources */,
@@ -4941,7 +4961,6 @@
 				34E08B6E1C3BFB90005C6CA3 /* UIBezierPath+Length.m in Sources */,
 				34E08B6F1C3BFB90005C6CA3 /* MJRefreshHeader.m in Sources */,
 				340BCD6A1D0F04DE0093CC7D /* UITapImageView.m in Sources */,
-				34E08B701C3BFB90005C6CA3 /* UIApplication+Permissions.m in Sources */,
 				34E08B721C3BFB90005C6CA3 /* UIViewController+BlockSegue.m in Sources */,
 				34E08B731C3BFB90005C6CA3 /* MJRefreshBackNormalFooter.m in Sources */,
 				340EB2F71D669E7600BF9222 /* MPTitleAndPromptCell.m in Sources */,
@@ -5173,6 +5192,7 @@
 				34E8941E1C3B9A03001327C8 /* UITextView+Select.m in Sources */,
 				34E891241C3B92AA001327C8 /* MJRefreshStateHeader.m in Sources */,
 				34FA47621D50A61200D5B729 /* MPBlankPageViewController.m in Sources */,
+				340050DE1E5C14AE00044EA1 /* UIApplication+Permissions.m in Sources */,
 				FD0BF4121D6F33E2001E6F19 /* FaceStreamDetectorViewController.m in Sources */,
 				34E891421C3B9739001327C8 /* YTKChainRequest.m in Sources */,
 				34E893701C3B9A03001327C8 /* NSData+Base64.m in Sources */,
@@ -5182,6 +5202,7 @@
 				34E891401C3B9739001327C8 /* YTKBatchRequest.m in Sources */,
 				34E894041C3B9A03001327C8 /* UINavigationItem+Lock.m in Sources */,
 				34E894401C3B9A03001327C8 /* UIWebView+Load.m in Sources */,
+				34FBEBB21E5D345000F545FC /* MPCodeStandards.m in Sources */,
 				34E893EC1C3B9A03001327C8 /* UIImage+Orientation.m in Sources */,
 				34E893CE1C3B9A03001327C8 /* UIBezierPath+Symbol.m in Sources */,
 				34E08A551C3BE80F005C6CA3 /* GVUserDefaults.m in Sources */,
@@ -5239,6 +5260,7 @@
 				34E894971C3B9FC1001327C8 /* QBAssetsCollectionFooterView.m in Sources */,
 				34E893871C3B9A03001327C8 /* NSFileManager+Paths.m in Sources */,
 				34E893D11C3B9A03001327C8 /* UIButton+CountDown.m in Sources */,
+				34FAEFC21E5AD83400CED341 /* MPEventCalendar.m in Sources */,
 				34E894D61C3BCD2F001327C8 /* LoginModel.m in Sources */,
 				3461BD081DD5AA1E00F8FC14 /* MPMasonryViewController.m in Sources */,
 				3400E4B41D35E1500056B673 /* SYSafeCategory.m in Sources */,
@@ -5267,6 +5289,7 @@
 				340199FF1D65B1D5001C97E9 /* MPSolidColorButton.m in Sources */,
 				34E8913F1C3B9739001327C8 /* YTKBaseRequest.m in Sources */,
 				34E893E61C3B9A03001327C8 /* UIImage+Capture.m in Sources */,
+				34FAEFBE1E5AD78000CED341 /* MPCalendarViewController.m in Sources */,
 				34E893DC1C3B9A03001327C8 /* UIControl+Block.m in Sources */,
 				34E95EBA1C4F82F600376777 /* UUInputAccessoryView.m in Sources */,
 				342202421D62A8A1003F81B2 /* MPExpandHideViewController.m in Sources */,
@@ -5360,7 +5383,6 @@
 				34E893631C3B9A03001327C8 /* NSManagedObject+DictionaryExport.m in Sources */,
 				34E893CB1C3B9A03001327C8 /* UIBezierPath+Length.m in Sources */,
 				34E8911B1C3B92AA001327C8 /* MJRefreshHeader.m in Sources */,
-				34E893C81C3B9A03001327C8 /* UIApplication+Permissions.m in Sources */,
 				34FE0B911D50FF7C00991E65 /* MPHideNavigationViewController.m in Sources */,
 				34E894341C3B9A03001327C8 /* UIViewController+BlockSegue.m in Sources */,
 				34E891201C3B92AA001327C8 /* MJRefreshBackNormalFooter.m in Sources */,

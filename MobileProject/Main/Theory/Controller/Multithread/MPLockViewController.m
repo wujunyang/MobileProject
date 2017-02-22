@@ -65,6 +65,7 @@
 
 -(void)loadAction:(NSNumber *)index
 {
+
     NSThread *thread=[NSThread currentThread];
     NSLog(@"loadAction是在线程%@中执行",thread.name);
     
@@ -106,7 +107,10 @@
 
 -(void)updateImage
 {
-    NSLog(@"执行完成了");
+    @autoreleasepool {
+        NSLog(@"执行完成了");
+    }
+    
     //输出：执行方法updateImage是在主线程中
 }
 

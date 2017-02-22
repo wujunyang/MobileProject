@@ -28,7 +28,7 @@ abstract_target 'MobileProjectDefault' do
     pod 'M13ProgressSuite', '~> 1.2.7'
     pod 'WebViewJavascriptBridge', '~> 5.0'
     pod 'YYText'
-    pod 'MLeaksFinder'
+    pod 'MLeaksFinder'  #可以把它放在MobileProject_Local的target中 这样就不会影响到产品环境
     
     target 'MobileProject_Local' do
 

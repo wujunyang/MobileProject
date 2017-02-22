@@ -34,6 +34,7 @@
 #import "MPTableSDWebImageViewController.h"
 #import "MPRunTimeViewController.h"
 #import "MPDragTableViewController.h"
+#import "MPCalendarViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 
