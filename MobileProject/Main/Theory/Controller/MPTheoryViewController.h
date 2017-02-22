@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 #import "MPCodeStandards.h"
+#import "MPCodeStarndardCoping.h"
+#import "MPDelegateCodeStandards.h"
 #import "MPViewControllerLifeCycle.h"
 #import "MPRunTimeViewController.h"
 #import "MPMultithreadViewController.h"
 
-@interface MPTheoryViewController : BaseViewController
+@interface MPTheoryViewController : BaseViewController<MPCodeStandardsDelegate>
 
 @end

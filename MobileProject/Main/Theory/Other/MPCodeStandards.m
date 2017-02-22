@@ -14,6 +14,9 @@
 @property(nonatomic,strong,readwrite)NSMutableArray *myMutableWorkList;
 @end
 
+//内部进行赋值
+NSString *const MPErrorDomain=@"MPErrorDomain";
+
 @implementation MPCodeStandards
 
 -(NSArray *)workList
@@ -21,8 +24,21 @@
     return [self.myMutableWorkList copy];
 }
 
+-(instancetype)init
+{
+    return [self initWithUserName:@""];
+}
+
 -(instancetype)initWithUserName:(NSString *)userName
 {
+    return [self initWithUserName:userName andAge:0];
+}
+
+-(instancetype)initWithUserName:(NSString *)userName withError:(NSError **)error
+{
+    if (userName.length==0) {
+        *error=[NSError errorWithDomain:MPErrorDomain code:MPErrorBadInput userInfo:@{@"errorInfo":@"当前没有输入用户名"}];
+    }
     return [self initWithUserName:userName andAge:0];
 }
 
@@ -47,6 +63,14 @@
     [_myMutableWorkList removeObject:workName];
 }
 
+
+//私有方法的定义 可以在名字上有所区别开 比如以p_开头
+-(void)p_changeUserName
+{
+    if (_userName.length>0) {
+        _userName=[NSString stringWithFormat:@"MP-%@",_userName];
+    }
+}
 
 // 重写打印内容 代码打印NSLog(@"当前信息：%@",codeStandards); 只会 打印codeStandards.description
 - (NSString *)description

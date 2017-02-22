@@ -11,7 +11,7 @@
 @interface MPTheoryViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic,strong) NSArray             *dataArray;
 @property (nonatomic,strong) UITableView         *myTableView;
-
+@property (nonatomic,strong)MPDelegateCodeStandards *codeStandards,*otherCodeStandards;
 @end
 
 @implementation MPTheoryViewController
@@ -41,14 +41,15 @@
         }];
     }
 
+
+    _codeStandards=[[MPDelegateCodeStandards alloc]initWithUserName:@"wujunyang"];
+    _codeStandards.delegate=self;
+    [_codeStandards changeUserName:2];
+    [_codeStandards getUserAddressWithName:@"厦门"];
     
-    //代码规范
-    MPCodeStandards *codeStandards=[[MPCodeStandards alloc]initWithUserName:@"wujunyang" andAge:2];
-    [codeStandards addWork:@"编程"];
-    [codeStandards addWork:@"洗碗"];
-    NSLog(@"当前名字：%@",codeStandards.userName);
-    NSLog(@"当前信息：%@",codeStandards);
-    [codeStandards removeWork:@"洗碗"];
+    _otherCodeStandards=[[MPDelegateCodeStandards alloc]initWithUserName:@"cnblogs"];
+    _otherCodeStandards.delegate=self;
+    [_otherCodeStandards changeUserName:10];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -106,5 +107,27 @@
 }
 
 
+#pragma mark MPCodeStandardsDelegate
+
+-(NSString *)selectIndexFetcher:(MPDelegateCodeStandards *)codestandards withIndex:(NSInteger)index
+{
+    if (codestandards ==_codeStandards) {
+        NSLog(@"_codeStandards 当前的值为：%ld",index);
+        NSLog(@"_codeStandards 当前的名字为：%@",codestandards.userName);
+        return codestandards.userName;
+    }
+    else if (codestandards==_otherCodeStandards)
+    {
+        NSLog(@"_otherCodeStandards 当前的值为：%ld",index);
+        NSLog(@"_otherCodeStandards 当前的名字为：%@",codestandards.userName);
+        return codestandards.userName;
+    }
+    return @"";
+}
+
+-(void)networkFetcher:(MPDelegateCodeStandards *)codestandards didReceiveName:(NSString *)name
+{
+    NSLog(@"networkFetcher %@",name);
+}
 
 @end

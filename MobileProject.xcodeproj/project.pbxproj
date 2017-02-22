@@ -887,6 +887,10 @@
 		34FAEFC31E5AD83400CED341 /* MPEventCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAEFC11E5AD83400CED341 /* MPEventCalendar.m */; };
 		34FBEBB21E5D345000F545FC /* MPCodeStandards.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBEBB11E5D345000F545FC /* MPCodeStandards.m */; };
 		34FBEBB31E5D345000F545FC /* MPCodeStandards.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBEBB11E5D345000F545FC /* MPCodeStandards.m */; };
+		34FBEBB71E5D6E0200F545FC /* MPCodeStarndardCoping.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBEBB61E5D6E0200F545FC /* MPCodeStarndardCoping.m */; };
+		34FBEBB81E5D6E0200F545FC /* MPCodeStarndardCoping.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBEBB61E5D6E0200F545FC /* MPCodeStarndardCoping.m */; };
+		34FBEBBF1E5D763000F545FC /* MPDelegateCodeStandards.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBEBBE1E5D763000F545FC /* MPDelegateCodeStandards.m */; };
+		34FBEBC01E5D763000F545FC /* MPDelegateCodeStandards.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBEBBE1E5D763000F545FC /* MPDelegateCodeStandards.m */; };
 		34FC67911D52EE8B0049F144 /* WJYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC67901D52EE8B0049F144 /* WJYAlertView.m */; };
 		34FC67941D52EFFD0049F144 /* MPCustomAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC67931D52EFFD0049F144 /* MPCustomAlertViewController.m */; };
 		34FC67951D52EFFD0049F144 /* MPCustomAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC67931D52EFFD0049F144 /* MPCustomAlertViewController.m */; };
@@ -1784,8 +1788,12 @@
 		34FAEFBD1E5AD78000CED341 /* MPCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCalendarViewController.m; sourceTree = "<group>"; };
 		34FAEFC01E5AD83400CED341 /* MPEventCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEventCalendar.h; sourceTree = "<group>"; };
 		34FAEFC11E5AD83400CED341 /* MPEventCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEventCalendar.m; sourceTree = "<group>"; };
-		34FBEBB01E5D345000F545FC /* MPCodeStandards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCodeStandards.h; sourceTree = "<group>"; };
-		34FBEBB11E5D345000F545FC /* MPCodeStandards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCodeStandards.m; sourceTree = "<group>"; };
+		34FBEBB01E5D345000F545FC /* MPCodeStandards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPCodeStandards.h; path = ../MPCodeStandards.h; sourceTree = "<group>"; };
+		34FBEBB11E5D345000F545FC /* MPCodeStandards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPCodeStandards.m; path = ../MPCodeStandards.m; sourceTree = "<group>"; };
+		34FBEBB51E5D6E0200F545FC /* MPCodeStarndardCoping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCodeStarndardCoping.h; sourceTree = "<group>"; };
+		34FBEBB61E5D6E0200F545FC /* MPCodeStarndardCoping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCodeStarndardCoping.m; sourceTree = "<group>"; };
+		34FBEBBD1E5D763000F545FC /* MPDelegateCodeStandards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDelegateCodeStandards.h; sourceTree = "<group>"; };
+		34FBEBBE1E5D763000F545FC /* MPDelegateCodeStandards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDelegateCodeStandards.m; sourceTree = "<group>"; };
 		34FC678F1D52EE8B0049F144 /* WJYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJYAlertView.h; sourceTree = "<group>"; };
 		34FC67901D52EE8B0049F144 /* WJYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJYAlertView.m; sourceTree = "<group>"; };
 		34FC67921D52EFFD0049F144 /* MPCustomAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCustomAlertViewController.h; sourceTree = "<group>"; };
@@ -2199,11 +2207,10 @@
 		341DF0201E553E850007907A /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				34FBEBB41E5D6D8B00F545FC /* CodeStandards */,
 				341DF02C1E5541A10007907A /* RunTime */,
 				341DF0671E558F650007907A /* MPOperation.h */,
 				341DF0681E558F650007907A /* MPOperation.m */,
-				34FBEBB01E5D345000F545FC /* MPCodeStandards.h */,
-				34FBEBB11E5D345000F545FC /* MPCodeStandards.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -4248,6 +4255,19 @@
 			path = UmengHelper;
 			sourceTree = "<group>";
 		};
+		34FBEBB41E5D6D8B00F545FC /* CodeStandards */ = {
+			isa = PBXGroup;
+			children = (
+				34FBEBB01E5D345000F545FC /* MPCodeStandards.h */,
+				34FBEBB11E5D345000F545FC /* MPCodeStandards.m */,
+				34FBEBB51E5D6E0200F545FC /* MPCodeStarndardCoping.h */,
+				34FBEBB61E5D6E0200F545FC /* MPCodeStarndardCoping.m */,
+				34FBEBBD1E5D763000F545FC /* MPDelegateCodeStandards.h */,
+				34FBEBBE1E5D763000F545FC /* MPDelegateCodeStandards.m */,
+			);
+			path = CodeStandards;
+			sourceTree = "<group>";
+		};
 		34FF0E3A1D586EA00027EEAE /* YYFPSLabel(FPS查看) */ = {
 			isa = PBXGroup;
 			children = (
@@ -4712,6 +4732,7 @@
 				34E08AAC1C3BFB90005C6CA3 /* MJRefreshAutoGifFooter.m in Sources */,
 				34E08AAD1C3BFB90005C6CA3 /* UIScrollView+MJRefresh.m in Sources */,
 				341C07DF1D41FD8E00FF905C /* MPUploadWithPropressViewController.m in Sources */,
+				34FBEBB81E5D6E0200F545FC /* MPCodeStarndardCoping.m in Sources */,
 				34E08AAE1C3BFB90005C6CA3 /* MJRefreshBackFooter.m in Sources */,
 				34E08AB01C3BFB90005C6CA3 /* UIColor+Random.m in Sources */,
 				34E08AB11C3BFB90005C6CA3 /* UIView+CustomBorder.m in Sources */,
@@ -4719,6 +4740,7 @@
 				34E08AB21C3BFB90005C6CA3 /* UIPopoverController+iPhone.m in Sources */,
 				34E08AB31C3BFB90005C6CA3 /* UIImageView+Addition.m in Sources */,
 				34E08AB41C3BFB90005C6CA3 /* UIWebView+Alert.m in Sources */,
+				34FBEBC01E5D763000F545FC /* MPDelegateCodeStandards.m in Sources */,
 				34E08AB51C3BFB90005C6CA3 /* UIBezierPath+SVG.m in Sources */,
 				34E08AB61C3BFB90005C6CA3 /* WebView+Debug.m in Sources */,
 				34420CBE1D0FAD10007D1AAC /* AdvertiseView.m in Sources */,
@@ -5160,6 +5182,7 @@
 				34E894981C3B9FC1001327C8 /* QBAssetsCollectionOverlayView.m in Sources */,
 				34E8936F1C3B9A03001327C8 /* NSData+APNSToken.m in Sources */,
 				34E893DD1C3B9A03001327C8 /* UIDevice+Hardware.m in Sources */,
+				34FBEBB71E5D6E0200F545FC /* MPCodeStarndardCoping.m in Sources */,
 				34E893981C3B9A03001327C8 /* NSObject+GCD.m in Sources */,
 				34E893811C3B9A03001327C8 /* NSDictionary+Merge.m in Sources */,
 				342A8FA01D3F1D8B000C7B98 /* UINavigationController+BATransitions.m in Sources */,
@@ -5310,6 +5333,7 @@
 				34E893B31C3B9A03001327C8 /* NSTimer+Blocks.m in Sources */,
 				34E893751C3B9A03001327C8 /* NSData+zlib.m in Sources */,
 				34E891291C3B92AA001327C8 /* UIView+MJExtension.m in Sources */,
+				34FBEBBF1E5D763000F545FC /* MPDelegateCodeStandards.m in Sources */,
 				341DF0451E5541C70007907A /* MPRunTimeViewController.m in Sources */,
 				34E894421C3B9A03001327C8 /* UIWebView+Style.m in Sources */,
 				34E893841C3B9A03001327C8 /* NSDictionary+XML.m in Sources */,
