@@ -48,6 +48,14 @@
 		340384811D47567900E4A496 /* MPAdaptationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403847F1D47567900E4A496 /* MPAdaptationCell.m */; };
 		3403B0BE1D367954007CD7EF /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403B0BD1D367954007CD7EF /* UITextField+Extension.m */; };
 		3403B0BF1D367954007CD7EF /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403B0BD1D367954007CD7EF /* UITextField+Extension.m */; };
+		3404A48E1E5EB0BF002673F9 /* MPEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404A48D1E5EB0BF002673F9 /* MPEmployee.m */; };
+		3404A48F1E5EB0BF002673F9 /* MPEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404A48D1E5EB0BF002673F9 /* MPEmployee.m */; };
+		3404A4921E5EB302002673F9 /* MPEmployeeDeveloper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404A4911E5EB302002673F9 /* MPEmployeeDeveloper.m */; };
+		3404A4931E5EB302002673F9 /* MPEmployeeDeveloper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404A4911E5EB302002673F9 /* MPEmployeeDeveloper.m */; };
+		3404A4961E5EB317002673F9 /* MPEmployeeDesigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404A4951E5EB317002673F9 /* MPEmployeeDesigner.m */; };
+		3404A4971E5EB317002673F9 /* MPEmployeeDesigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404A4951E5EB317002673F9 /* MPEmployeeDesigner.m */; };
+		3404A49A1E5EB32E002673F9 /* MPEmployeeFinance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404A4991E5EB32E002673F9 /* MPEmployeeFinance.m */; };
+		3404A49B1E5EB32E002673F9 /* MPEmployeeFinance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404A4991E5EB32E002673F9 /* MPEmployeeFinance.m */; };
 		3404B5E01E1CE20000FB6C2A /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404B5DF1E1CE20000FB6C2A /* UIViewController+Swizzle.m */; };
 		3404B5E11E1CE20500FB6C2A /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404B5DF1E1CE20000FB6C2A /* UIViewController+Swizzle.m */; };
 		340674201E2F6207008EF20F /* UIView+Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3406741F1E2F6207008EF20F /* UIView+Empty.m */; };
@@ -979,6 +987,14 @@
 		3403847F1D47567900E4A496 /* MPAdaptationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAdaptationCell.m; sourceTree = "<group>"; };
 		3403B0BC1D367954007CD7EF /* UITextField+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extension.h"; sourceTree = "<group>"; };
 		3403B0BD1D367954007CD7EF /* UITextField+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension.m"; sourceTree = "<group>"; };
+		3404A48C1E5EB0BF002673F9 /* MPEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEmployee.h; sourceTree = "<group>"; };
+		3404A48D1E5EB0BF002673F9 /* MPEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEmployee.m; sourceTree = "<group>"; };
+		3404A4901E5EB302002673F9 /* MPEmployeeDeveloper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEmployeeDeveloper.h; sourceTree = "<group>"; };
+		3404A4911E5EB302002673F9 /* MPEmployeeDeveloper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEmployeeDeveloper.m; sourceTree = "<group>"; };
+		3404A4941E5EB317002673F9 /* MPEmployeeDesigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEmployeeDesigner.h; sourceTree = "<group>"; };
+		3404A4951E5EB317002673F9 /* MPEmployeeDesigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEmployeeDesigner.m; sourceTree = "<group>"; };
+		3404A4981E5EB32E002673F9 /* MPEmployeeFinance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEmployeeFinance.h; sourceTree = "<group>"; };
+		3404A4991E5EB32E002673F9 /* MPEmployeeFinance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEmployeeFinance.m; sourceTree = "<group>"; };
 		3404B5DE1E1CE20000FB6C2A /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
 		3404B5DF1E1CE20000FB6C2A /* UIViewController+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzle.m"; sourceTree = "<group>"; };
 		3406741E1E2F6207008EF20F /* UIView+Empty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Empty.h"; sourceTree = "<group>"; };
@@ -1993,6 +2009,29 @@
 			path = PRODUCT;
 			sourceTree = "<group>";
 		};
+		3404A48A1E5EB016002673F9 /* DesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				3404A48B1E5EB033002673F9 /* FactoryPattern */,
+			);
+			path = DesignPattern;
+			sourceTree = "<group>";
+		};
+		3404A48B1E5EB033002673F9 /* FactoryPattern */ = {
+			isa = PBXGroup;
+			children = (
+				3404A48C1E5EB0BF002673F9 /* MPEmployee.h */,
+				3404A48D1E5EB0BF002673F9 /* MPEmployee.m */,
+				3404A4901E5EB302002673F9 /* MPEmployeeDeveloper.h */,
+				3404A4911E5EB302002673F9 /* MPEmployeeDeveloper.m */,
+				3404A4941E5EB317002673F9 /* MPEmployeeDesigner.h */,
+				3404A4951E5EB317002673F9 /* MPEmployeeDesigner.m */,
+				3404A4981E5EB32E002673F9 /* MPEmployeeFinance.h */,
+				3404A4991E5EB32E002673F9 /* MPEmployeeFinance.m */,
+			);
+			path = FactoryPattern;
+			sourceTree = "<group>";
+		};
 		340BCD141D0EF1770093CC7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -2207,6 +2246,7 @@
 		341DF0201E553E850007907A /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				3404A48A1E5EB016002673F9 /* DesignPattern */,
 				34FBEBB41E5D6D8B00F545FC /* CodeStandards */,
 				341DF02C1E5541A10007907A /* RunTime */,
 				341DF0671E558F650007907A /* MPOperation.h */,
@@ -4671,6 +4711,7 @@
 				341DF0401E5541B20007907A /* UIButton+MPHock.m in Sources */,
 				34EC963B1C58C7A400985444 /* LoggerDetailViewController.m in Sources */,
 				34E08A7A1C3BFB90005C6CA3 /* UILabel+ESAdjustableLabel.m in Sources */,
+				3404A48F1E5EB0BF002673F9 /* MPEmployee.m in Sources */,
 				34E08A7B1C3BFB90005C6CA3 /* UITextField+History.m in Sources */,
 				34E08A7C1C3BFB90005C6CA3 /* UIImage+animatedGIF.m in Sources */,
 				34E9D8501C59DD2800E98C2A /* BaiDuCoordinateModel.m in Sources */,
@@ -4693,6 +4734,7 @@
 				34E08A8E1C3BFB90005C6CA3 /* QBImagePickerThumbnailView.m in Sources */,
 				34E08A8F1C3BFB90005C6CA3 /* UIImage+Color.m in Sources */,
 				34E08A901C3BFB90005C6CA3 /* UINavigationItem+Loading.m in Sources */,
+				3404A4931E5EB302002673F9 /* MPEmployeeDeveloper.m in Sources */,
 				3411EF1E1D6FEC3800A6C7F3 /* PermissionDetector.m in Sources */,
 				34E08A911C3BFB90005C6CA3 /* BaseViewController.m in Sources */,
 				34E08A921C3BFB90005C6CA3 /* UIButton+Indicator.m in Sources */,
@@ -4712,6 +4754,7 @@
 				34E08A9E1C3BFB90005C6CA3 /* UIImageView+BetterFace.m in Sources */,
 				341DF05E1E55464E0007907A /* MPGCDViewController.m in Sources */,
 				34E08A9F1C3BFB90005C6CA3 /* YTKBatchRequestAgent.m in Sources */,
+				3404A4971E5EB317002673F9 /* MPEmployeeDesigner.m in Sources */,
 				3400E4B51D35E15A0056B673 /* JRSwizzle.m in Sources */,
 				34E08AA01C3BFB90005C6CA3 /* NSObject+AppInfo.m in Sources */,
 				34E08AA11C3BFB90005C6CA3 /* UIBezierPath+LxThroughPointsBezier.m in Sources */,
@@ -4839,6 +4882,7 @@
 				34E08B031C3BFB90005C6CA3 /* UITableView+iOS7Style.m in Sources */,
 				34E08B041C3BFB90005C6CA3 /* MJRefreshAutoNormalFooter.m in Sources */,
 				341DF0621E5546670007907A /* MPOperationViewController.m in Sources */,
+				3404A49B1E5EB32E002673F9 /* MPEmployeeFinance.m in Sources */,
 				34E08B051C3BFB90005C6CA3 /* AFDownloadRequestOperation.m in Sources */,
 				34E08B061C3BFB90005C6CA3 /* UIScrollView+Addition.m in Sources */,
 				34E08B071C3BFB90005C6CA3 /* MJRefreshComponent.m in Sources */,
@@ -5089,6 +5133,7 @@
 				34EC963A1C58C7A400985444 /* LoggerDetailViewController.m in Sources */,
 				34E893FA1C3B9A03001327C8 /* UILabel+ESAdjustableLabel.m in Sources */,
 				3461BD0C1DD5C4FE00F8FC14 /* MPMasonryView.m in Sources */,
+				3404A49A1E5EB32E002673F9 /* MPEmployeeFinance.m in Sources */,
 				340D87A91D3F70E3003D9C88 /* MPImageUploadCell.m in Sources */,
 				34E894191C3B9A03001327C8 /* UITextField+History.m in Sources */,
 				342A8FA81D3F1D8B000C7B98 /* UINavigationController+StackManager.m in Sources */,
@@ -5211,6 +5256,7 @@
 				340CCCAF1E519F310037BE4D /* MPDragTableViewController.m in Sources */,
 				34E893E11C3B9A03001327C8 /* UIFont-TTF.m in Sources */,
 				34799A5F1CD34C5A003518C5 /* FCUUID.m in Sources */,
+				3404A48E1E5EB0BF002673F9 /* MPEmployee.m in Sources */,
 				34E8911F1C3B92AA001327C8 /* MJRefreshBackGifFooter.m in Sources */,
 				34E8941E1C3B9A03001327C8 /* UITextView+Select.m in Sources */,
 				34E891241C3B92AA001327C8 /* MJRefreshStateHeader.m in Sources */,
@@ -5245,6 +5291,7 @@
 				34FC67911D52EE8B0049F144 /* WJYAlertView.m in Sources */,
 				341C07DA1D41C6F200FF905C /* MPFileManager.m in Sources */,
 				3411EF171D6FEC1A00A6C7F3 /* IFlyFaceResultKeys.m in Sources */,
+				3404A4961E5EB317002673F9 /* MPEmployeeDesigner.m in Sources */,
 				349F81D01D45E571002104E3 /* MPUploadImageItemService.m in Sources */,
 				342582561D3734B6003906BB /* EaseBlankPageView.m in Sources */,
 				341DF0271E553F380007907A /* MPTheoryViewController.m in Sources */,
@@ -5346,6 +5393,7 @@
 				34E891211C3B92AA001327C8 /* MJRefreshBackStateFooter.m in Sources */,
 				34E893691C3B9A03001327C8 /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				34E891451C3B9739001327C8 /* YTKNetworkConfig.m in Sources */,
+				3404A4921E5EB302002673F9 /* MPEmployeeDeveloper.m in Sources */,
 				34799A631CD34C5A003518C5 /* UIDevice+FCUUID.m in Sources */,
 				34F213011C48C283003AC13D /* MPLocationManager.m in Sources */,
 				34013B571D5179620051000F /* MPHideNavigationChildrenViewController.m in Sources */,

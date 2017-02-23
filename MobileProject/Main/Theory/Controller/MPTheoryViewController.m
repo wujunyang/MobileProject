@@ -8,6 +8,8 @@
 
 #import "MPTheoryViewController.h"
 
+#import "MPEmployee.h"
+
 @interface MPTheoryViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic,strong) NSArray             *dataArray;
 @property (nonatomic,strong) UITableView         *myTableView;
@@ -42,6 +44,7 @@
     }
 
 
+    //测试Delegate
     _codeStandards=[[MPDelegateCodeStandards alloc]initWithUserName:@"wujunyang"];
     _codeStandards.delegate=self;
     [_codeStandards changeUserName:2];
@@ -50,6 +53,7 @@
     _otherCodeStandards=[[MPDelegateCodeStandards alloc]initWithUserName:@"cnblogs"];
     _otherCodeStandards.delegate=self;
     [_otherCodeStandards changeUserName:10];
+    
 }
 
 - (void)didReceiveMemoryWarning {
