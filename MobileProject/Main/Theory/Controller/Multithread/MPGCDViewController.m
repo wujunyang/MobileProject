@@ -29,6 +29,8 @@
     //[self syncMain];
     //六：主队列 + 异步执行
     [self asyncMain];
+    //七：全局队列+ 异步执行
+    [self asyncGloba];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,6 +57,8 @@
 ////创建全局并发队列
 //dispatch_get_global_queue来创建全局并发队列
 
+
+//dispatch_queue_t queue = dispatch_get_main_queue() 程序一启动，主线程就已经存在，主队列也同时就存在了，所以主队列不需要创建，只需要获取
 
 //------------------------------------------------------------------------------------------
 //六种类型：
@@ -305,5 +309,32 @@
 //    所有任务是在打印的syncConcurrent---begin和syncConcurrent---end之后才开始执行的。说明任务不是马上执行，而是将所有任务添加到队列之后才开始同步执行
 }
 
+
+//七：全局队列+ 异步执行
+-(void)asyncGloba
+{
+    dispatch_queue_t q = dispatch_get_global_queue(0, 0);
+    // 2. 异步执行
+    for (int i = 0; i < 10; ++i) {
+        dispatch_async(q, ^{
+            NSLog(@"asyncGloba：%@ %d", [NSThread currentThread], i);
+        });
+    }
+    NSLog(@"come here");
+    
+    //输出内容：
+//    come here
+//    asyncGloba：<NSThread: 0x608000464600>{number = 5, name = (null)} 0
+//    asyncGloba：<NSThread: 0x608000464600>{number = 5, name = (null)} 3
+//    asyncGloba：<NSThread: 0x60000027d480>{number = 18, name = (null)} 1
+//    asyncGloba：<NSThread: 0x60000027d480>{number = 18, name = (null)} 5
+//    asyncGloba：<NSThread: 0x60000027d480>{number = 18, name = (null)} 6
+//    asyncGloba：<NSThread: 0x60000027d480>{number = 18, name = (null)} 7
+//    asyncGloba：<NSThread: 0x60800047e100>{number = 19, name = (null)} 2
+//    asyncGloba：<NSThread: 0x608000464600>{number = 5, name = (null)} 4
+//    asyncGloba：<NSThread: 0x60800047e100>{number = 19, name = (null)} 9
+//    asyncGloba：<NSThread: 0x60000027d480>{number = 18, name = (null)} 8
+//    说明：come here 说明是异步执行，没有马上执行，并且有开子线程执行
+}
 
 @end

@@ -1,5 +1,5 @@
 //
-//  MPEmployee.h  工厂模式
+//  MPEmployee.h  工厂模式 根据不同的类型去实例化不同的实现方式
 //  MobileProject
 //
 //运用

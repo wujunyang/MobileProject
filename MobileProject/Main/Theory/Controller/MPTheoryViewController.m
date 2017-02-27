@@ -54,6 +54,7 @@
     _otherCodeStandards.delegate=self;
     [_otherCodeStandards changeUserName:10];
     
+
 }
 
 - (void)didReceiveMemoryWarning {
