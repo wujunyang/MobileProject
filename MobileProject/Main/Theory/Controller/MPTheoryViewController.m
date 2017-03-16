@@ -26,7 +26,7 @@
     self.navigationItem.title=@"基础知识点";
     
     if (!self.dataArray) {
-        self.dataArray=@[@"viewController生命周期",@"运行时RunTime知识运用",@"多线程知识运用"];
+        self.dataArray=@[@"viewController生命周期",@"运行时RunTime知识运用",@"多线程知识运用",@"Protocol实现类"];
     }
     
     //初始化表格
@@ -103,6 +103,12 @@
         case 2:
         {
             MPMultithreadViewController *vc=[[MPMultithreadViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 3:
+        {
+            MPProtocolOptionalViewController *vc=[[MPProtocolOptionalViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

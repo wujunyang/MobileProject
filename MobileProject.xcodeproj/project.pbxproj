@@ -98,6 +98,14 @@
 		340BCD681D0F039E0093CC7D /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 340BCD661D0F039E0093CC7D /* Placeholder */; };
 		340BCD691D0F04DB0093CC7D /* imageCompressHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093EF1D0E605800A8D63F /* imageCompressHelper.m */; };
 		340BCD6A1D0F04DE0093CC7D /* UITapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093F11D0E605800A8D63F /* UITapImageView.m */; };
+		340C85311E723BF400B59C2E /* MPOraceDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C85301E723BF400B59C2E /* MPOraceDataBase.m */; };
+		340C85321E723BF400B59C2E /* MPOraceDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C85301E723BF400B59C2E /* MPOraceDataBase.m */; };
+		340C85351E723C1B00B59C2E /* MPMSSqlDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C85341E723C1B00B59C2E /* MPMSSqlDataBase.m */; };
+		340C85361E723C1B00B59C2E /* MPMSSqlDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C85341E723C1B00B59C2E /* MPMSSqlDataBase.m */; };
+		340C85391E723E8C00B59C2E /* MPUseProtocolOptional.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C85381E723E8C00B59C2E /* MPUseProtocolOptional.m */; };
+		340C853A1E723E8C00B59C2E /* MPUseProtocolOptional.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C85381E723E8C00B59C2E /* MPUseProtocolOptional.m */; };
+		340C853D1E724BCF00B59C2E /* MPProtocolOptionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C853C1E724BCF00B59C2E /* MPProtocolOptionalViewController.m */; };
+		340C853E1E724BCF00B59C2E /* MPProtocolOptionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C853C1E724BCF00B59C2E /* MPProtocolOptionalViewController.m */; };
 		340CCCAF1E519F310037BE4D /* MPDragTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340CCCAE1E519F310037BE4D /* MPDragTableViewController.m */; };
 		340CCCB01E519F310037BE4D /* MPDragTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340CCCAE1E519F310037BE4D /* MPDragTableViewController.m */; };
 		340D87951D3F5FD3003D9C88 /* MPImageItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D87941D3F5FD3003D9C88 /* MPImageItemModel.m */; };
@@ -1022,6 +1030,15 @@
 		340BCD561D0F01F50093CC7D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
 		340BCD631D0F03930093CC7D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
 		340BCD661D0F039E0093CC7D /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
+		340C852E1E723B8F00B59C2E /* MPDataBaseConnectionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDataBaseConnectionProtocol.h; sourceTree = "<group>"; };
+		340C852F1E723BF400B59C2E /* MPOraceDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOraceDataBase.h; sourceTree = "<group>"; };
+		340C85301E723BF400B59C2E /* MPOraceDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOraceDataBase.m; sourceTree = "<group>"; };
+		340C85331E723C1B00B59C2E /* MPMSSqlDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMSSqlDataBase.h; sourceTree = "<group>"; };
+		340C85341E723C1B00B59C2E /* MPMSSqlDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMSSqlDataBase.m; sourceTree = "<group>"; };
+		340C85371E723E8C00B59C2E /* MPUseProtocolOptional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUseProtocolOptional.h; sourceTree = "<group>"; };
+		340C85381E723E8C00B59C2E /* MPUseProtocolOptional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPUseProtocolOptional.m; sourceTree = "<group>"; };
+		340C853B1E724BCF00B59C2E /* MPProtocolOptionalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPProtocolOptionalViewController.h; sourceTree = "<group>"; };
+		340C853C1E724BCF00B59C2E /* MPProtocolOptionalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPProtocolOptionalViewController.m; sourceTree = "<group>"; };
 		340CCCAD1E519F310037BE4D /* MPDragTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDragTableViewController.h; sourceTree = "<group>"; };
 		340CCCAE1E519F310037BE4D /* MPDragTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDragTableViewController.m; sourceTree = "<group>"; };
 		340D87931D3F5FD3003D9C88 /* MPImageItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPImageItemModel.h; sourceTree = "<group>"; };
@@ -2087,6 +2104,20 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		340C852D1E723AFE00B59C2E /* UseProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				340C852E1E723B8F00B59C2E /* MPDataBaseConnectionProtocol.h */,
+				340C852F1E723BF400B59C2E /* MPOraceDataBase.h */,
+				340C85301E723BF400B59C2E /* MPOraceDataBase.m */,
+				340C85331E723C1B00B59C2E /* MPMSSqlDataBase.h */,
+				340C85341E723C1B00B59C2E /* MPMSSqlDataBase.m */,
+				340C85371E723E8C00B59C2E /* MPUseProtocolOptional.h */,
+				340C85381E723E8C00B59C2E /* MPUseProtocolOptional.m */,
+			);
+			path = UseProtocol;
+			sourceTree = "<group>";
+		};
 		340EB2F31D669DBE00BF9222 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -2246,6 +2277,7 @@
 		341DF0201E553E850007907A /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				340C852D1E723AFE00B59C2E /* UseProtocol */,
 				3404A48A1E5EB016002673F9 /* DesignPattern */,
 				34FBEBB41E5D6D8B00F545FC /* CodeStandards */,
 				341DF02C1E5541A10007907A /* RunTime */,
@@ -2267,6 +2299,8 @@
 				341DF0261E553F380007907A /* MPTheoryViewController.m */,
 				341DF0521E5545490007907A /* MPMultithreadViewController.h */,
 				341DF0531E5545490007907A /* MPMultithreadViewController.m */,
+				340C853B1E724BCF00B59C2E /* MPProtocolOptionalViewController.h */,
+				340C853C1E724BCF00B59C2E /* MPProtocolOptionalViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4905,6 +4939,7 @@
 				340199F81D6561C0001C97E9 /* GCDSemaphore.m in Sources */,
 				3452EB901D1A8DAA0001732E /* AppDelegate.m in Sources */,
 				34E08B171C3BFB90005C6CA3 /* UIImageView+Reflect.m in Sources */,
+				340C853A1E723E8C00B59C2E /* MPUseProtocolOptional.m in Sources */,
 				340D87A61D3F7079003D9C88 /* MPImageCollectionCell.m in Sources */,
 				34300A491E308391000C1FA5 /* MPNavigationViewController.m in Sources */,
 				34E08B181C3BFB90005C6CA3 /* UIView+GestureCallback.m in Sources */,
@@ -4927,6 +4962,7 @@
 				34E08B231C3BFB90005C6CA3 /* UIImage+PDF.m in Sources */,
 				34E08B241C3BFB90005C6CA3 /* NSData+Hash.m in Sources */,
 				34E08B251C3BFB90005C6CA3 /* YTKBaseRequest.m in Sources */,
+				340C85321E723BF400B59C2E /* MPOraceDataBase.m in Sources */,
 				341DF0661E5547320007907A /* MPLockViewController.m in Sources */,
 				34E08B261C3BFB90005C6CA3 /* UIImage+Capture.m in Sources */,
 				34E08B271C3BFB90005C6CA3 /* UIControl+Block.m in Sources */,
@@ -5044,6 +5080,8 @@
 				3411EF1D1D6FEC3300A6C7F3 /* UIImage+Extensions.m in Sources */,
 				34EC96251C58A61F00985444 /* UMengSocialLoginViewController.m in Sources */,
 				341DF06A1E558F650007907A /* MPOperation.m in Sources */,
+				340C853E1E724BCF00B59C2E /* MPProtocolOptionalViewController.m in Sources */,
+				340C85361E723C1B00B59C2E /* MPMSSqlDataBase.m in Sources */,
 				34E08B7A1C3BFB90005C6CA3 /* CAAnimation+EasingEquations.m in Sources */,
 				34F49B2F1D261AE600FA003C /* MPBaseNavigationController.m in Sources */,
 				34E08B7B1C3BFB90005C6CA3 /* NSDictionary+SafeAccess.m in Sources */,
@@ -5098,6 +5136,7 @@
 				341C07E81D421F5600FF905C /* MPImageUploadProgressCell.m in Sources */,
 				34E8938B1C3B9A03001327C8 /* NSInvocation+Block.m in Sources */,
 				3411EF131D6FEC1A00A6C7F3 /* IFlyFaceImage.m in Sources */,
+				340C85351E723C1B00B59C2E /* MPMSSqlDataBase.m in Sources */,
 				34E893721C3B9A03001327C8 /* NSData+Gzip.m in Sources */,
 				3411EF141D6FEC1A00A6C7F3 /* UIImage+compress.m in Sources */,
 				34E894251C3B9A03001327C8 /* UIView+FDCollapsibleConstraints.m in Sources */,
@@ -5259,6 +5298,7 @@
 				3404A48E1E5EB0BF002673F9 /* MPEmployee.m in Sources */,
 				34E8911F1C3B92AA001327C8 /* MJRefreshBackGifFooter.m in Sources */,
 				34E8941E1C3B9A03001327C8 /* UITextView+Select.m in Sources */,
+				340C85311E723BF400B59C2E /* MPOraceDataBase.m in Sources */,
 				34E891241C3B92AA001327C8 /* MJRefreshStateHeader.m in Sources */,
 				34FA47621D50A61200D5B729 /* MPBlankPageViewController.m in Sources */,
 				340050DE1E5C14AE00044EA1 /* UIApplication+Permissions.m in Sources */,
@@ -5313,6 +5353,7 @@
 				34E893A41C3B9A03001327C8 /* NSString+Encrypt.m in Sources */,
 				3411EF101D6FEC1A00A6C7F3 /* CanvasView.m in Sources */,
 				34E893A61C3B9A03001327C8 /* NSString+Matcher.m in Sources */,
+				340C853D1E724BCF00B59C2E /* MPProtocolOptionalViewController.m in Sources */,
 				34E894111C3B9A03001327C8 /* UITableView+iOS7Style.m in Sources */,
 				34E8911D1C3B92AA001327C8 /* MJRefreshAutoNormalFooter.m in Sources */,
 				34F9A8981D4F735500C2DEA5 /* MPWebViewController.m in Sources */,
@@ -5431,6 +5472,7 @@
 				342582641D3736DA003906BB /* UIView+EaseBlankPage.m in Sources */,
 				34E08A591C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.m in Sources */,
 				34E8938C1C3B9A03001327C8 /* NSNotificationCenter+MainThread.m in Sources */,
+				340C85391E723E8C00B59C2E /* MPUseProtocolOptional.m in Sources */,
 				34E893EA1C3B9A03001327C8 /* UIImage+GIF.m in Sources */,
 				34E8936D1C3B9A03001327C8 /* NSArray+SafeAccess.m in Sources */,
 				34FD22861D50813300096706 /* UIView+Extension.m in Sources */,
