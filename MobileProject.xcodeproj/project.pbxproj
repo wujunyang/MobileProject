@@ -130,6 +130,12 @@
 		340EB2FF1D66A92A00BF9222 /* MPIconAndTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB2FD1D66A92A00BF9222 /* MPIconAndTitleCell.m */; };
 		340EB3021D66ACE300BF9222 /* MPFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB3011D66ACE300BF9222 /* MPFormViewController.m */; };
 		340EB3031D66ACE300BF9222 /* MPFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340EB3011D66ACE300BF9222 /* MPFormViewController.m */; };
+		340F88DA1E82077400C20F37 /* MPBlockLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340F88D91E82077400C20F37 /* MPBlockLoopViewController.m */; };
+		340F88DB1E82077400C20F37 /* MPBlockLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340F88D91E82077400C20F37 /* MPBlockLoopViewController.m */; };
+		340F88DE1E8208AD00C20F37 /* MPBlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 340F88DD1E8208AD00C20F37 /* MPBlockView.m */; };
+		340F88DF1E8208AD00C20F37 /* MPBlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 340F88DD1E8208AD00C20F37 /* MPBlockView.m */; };
+		340F88E21E8240C700C20F37 /* MPBlockLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340F88E11E8240C700C20F37 /* MPBlockLoopOperation.m */; };
+		340F88E31E8240C700C20F37 /* MPBlockLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340F88E11E8240C700C20F37 /* MPBlockLoopOperation.m */; };
 		341093F31D0E605800A8D63F /* imageCompressHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093EF1D0E605800A8D63F /* imageCompressHelper.m */; };
 		341093F41D0E605800A8D63F /* UITapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093F11D0E605800A8D63F /* UITapImageView.m */; };
 		341093FD1D0E848F00A8D63F /* JSPatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 341093FC1D0E848F00A8D63F /* JSPatchHelper.m */; };
@@ -1063,6 +1069,12 @@
 		340EB2FD1D66A92A00BF9222 /* MPIconAndTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPIconAndTitleCell.m; sourceTree = "<group>"; };
 		340EB3001D66ACE300BF9222 /* MPFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFormViewController.h; sourceTree = "<group>"; };
 		340EB3011D66ACE300BF9222 /* MPFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFormViewController.m; sourceTree = "<group>"; };
+		340F88D81E82077400C20F37 /* MPBlockLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBlockLoopViewController.h; sourceTree = "<group>"; };
+		340F88D91E82077400C20F37 /* MPBlockLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBlockLoopViewController.m; sourceTree = "<group>"; };
+		340F88DC1E8208AD00C20F37 /* MPBlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBlockView.h; sourceTree = "<group>"; };
+		340F88DD1E8208AD00C20F37 /* MPBlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBlockView.m; sourceTree = "<group>"; };
+		340F88E01E8240C700C20F37 /* MPBlockLoopOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBlockLoopOperation.h; sourceTree = "<group>"; };
+		340F88E11E8240C700C20F37 /* MPBlockLoopOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBlockLoopOperation.m; sourceTree = "<group>"; };
 		341093EE1D0E605800A8D63F /* imageCompressHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageCompressHelper.h; sourceTree = "<group>"; };
 		341093EF1D0E605800A8D63F /* imageCompressHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageCompressHelper.m; sourceTree = "<group>"; };
 		341093F01D0E605800A8D63F /* UITapImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITapImageView.h; sourceTree = "<group>"; };
@@ -2131,6 +2143,15 @@
 			path = CustomCell;
 			sourceTree = "<group>";
 		};
+		340F88D71E82071800C20F37 /* BlockLoop */ = {
+			isa = PBXGroup;
+			children = (
+				340F88E01E8240C700C20F37 /* MPBlockLoopOperation.h */,
+				340F88E11E8240C700C20F37 /* MPBlockLoopOperation.m */,
+			);
+			path = BlockLoop;
+			sourceTree = "<group>";
+		};
 		341093EB1D0E600200A8D63F /* OtherHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -2277,6 +2298,7 @@
 		341DF0201E553E850007907A /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				340F88D71E82071800C20F37 /* BlockLoop */,
 				340C852D1E723AFE00B59C2E /* UseProtocol */,
 				3404A48A1E5EB016002673F9 /* DesignPattern */,
 				34FBEBB41E5D6D8B00F545FC /* CodeStandards */,
@@ -2301,6 +2323,8 @@
 				341DF0531E5545490007907A /* MPMultithreadViewController.m */,
 				340C853B1E724BCF00B59C2E /* MPProtocolOptionalViewController.h */,
 				340C853C1E724BCF00B59C2E /* MPProtocolOptionalViewController.m */,
+				340F88D81E82077400C20F37 /* MPBlockLoopViewController.h */,
+				340F88D91E82077400C20F37 /* MPBlockLoopViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2317,6 +2341,8 @@
 			isa = PBXGroup;
 			children = (
 				341DF04C1E5543A70007907A /* Placeholder */,
+				340F88DC1E8208AD00C20F37 /* MPBlockView.h */,
+				340F88DD1E8208AD00C20F37 /* MPBlockView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4769,6 +4795,7 @@
 				34E08A8F1C3BFB90005C6CA3 /* UIImage+Color.m in Sources */,
 				34E08A901C3BFB90005C6CA3 /* UINavigationItem+Loading.m in Sources */,
 				3404A4931E5EB302002673F9 /* MPEmployeeDeveloper.m in Sources */,
+				340F88DF1E8208AD00C20F37 /* MPBlockView.m in Sources */,
 				3411EF1E1D6FEC3800A6C7F3 /* PermissionDetector.m in Sources */,
 				34E08A911C3BFB90005C6CA3 /* BaseViewController.m in Sources */,
 				34E08A921C3BFB90005C6CA3 /* UIButton+Indicator.m in Sources */,
@@ -4828,6 +4855,7 @@
 				34E08ABA1C3BFB90005C6CA3 /* UIView+Nib.m in Sources */,
 				34E08ABB1C3BFB90005C6CA3 /* UIColor+HEX.m in Sources */,
 				340D87AE1D3F7FC4003D9C88 /* cameraHelper.m in Sources */,
+				340F88DB1E82077400C20F37 /* MPBlockLoopViewController.m in Sources */,
 				34E08ABC1C3BFB90005C6CA3 /* NSData+Encrypt.m in Sources */,
 				34F213071C48DB97003AC13D /* MPUmengHelper.m in Sources */,
 				34E08ABD1C3BFB90005C6CA3 /* UIScrollView+APParallaxHeader.m in Sources */,
@@ -4907,6 +4935,7 @@
 				34E08AFA1C3BFB90005C6CA3 /* NSIndexPath+Offset.m in Sources */,
 				34E08AFB1C3BFB90005C6CA3 /* NSDecimalNumber+CalculatingByString.m in Sources */,
 				34E08AFC1C3BFB90005C6CA3 /* UIImage+Alpha.m in Sources */,
+				340F88E31E8240C700C20F37 /* MPBlockLoopOperation.m in Sources */,
 				34E08AFD1C3BFB90005C6CA3 /* NSManagedObjectContext+ObjectClear.m in Sources */,
 				34E08AFE1C3BFB90005C6CA3 /* UIImage+FX.m in Sources */,
 				34E08AFF1C3BFB90005C6CA3 /* UIImage+Vector.m in Sources */,
@@ -5133,6 +5162,7 @@
 			files = (
 				34E8945E1C3B9D6A001327C8 /* iCarousel.m in Sources */,
 				34E8942E1C3B9A03001327C8 /* UIView+Toast.m in Sources */,
+				340F88DE1E8208AD00C20F37 /* MPBlockView.m in Sources */,
 				341C07E81D421F5600FF905C /* MPImageUploadProgressCell.m in Sources */,
 				34E8938B1C3B9A03001327C8 /* NSInvocation+Block.m in Sources */,
 				3411EF131D6FEC1A00A6C7F3 /* IFlyFaceImage.m in Sources */,
@@ -5170,6 +5200,7 @@
 				340199F31D6561B5001C97E9 /* GCDQueue.m in Sources */,
 				34E8938E1C3B9A03001327C8 /* NSDecimalNumber+Extensions.m in Sources */,
 				34EC963A1C58C7A400985444 /* LoggerDetailViewController.m in Sources */,
+				340F88E21E8240C700C20F37 /* MPBlockLoopOperation.m in Sources */,
 				34E893FA1C3B9A03001327C8 /* UILabel+ESAdjustableLabel.m in Sources */,
 				3461BD0C1DD5C4FE00F8FC14 /* MPMasonryView.m in Sources */,
 				3404A49A1E5EB32E002673F9 /* MPEmployeeFinance.m in Sources */,
@@ -5236,6 +5267,7 @@
 				34E893EB1C3B9A03001327C8 /* UIImage+Merge.m in Sources */,
 				34E8911C1C3B92AA001327C8 /* MJRefreshAutoGifFooter.m in Sources */,
 				34E891281C3B92AA001327C8 /* UIScrollView+MJRefresh.m in Sources */,
+				340F88DA1E82077400C20F37 /* MPBlockLoopViewController.m in Sources */,
 				341093F31D0E605800A8D63F /* imageCompressHelper.m in Sources */,
 				34E891181C3B92AA001327C8 /* MJRefreshBackFooter.m in Sources */,
 				34E893D91C3B9A03001327C8 /* UIColor+Random.m in Sources */,
