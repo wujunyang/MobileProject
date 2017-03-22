@@ -16,6 +16,8 @@
 
 @property(nonatomic,copy,readwrite)NSString *myAddress;
 
+@property(nonatomic,copy,readwrite)NSString *myPhone;
+
 @end
 
 
@@ -27,6 +29,12 @@
         _myAddress=address;
     }
     return self;
+}
+
+-(void)startNoBlockShow:(NSString *)phone
+{
+    _myPhone=phone;
+    NSLog(@"当前的电话号码为：%@",_myPhone);
 }
 
 -(void)startWithAddBlock:(addBlockHandle)blockHandle;
@@ -57,8 +65,6 @@
 {
     if (_mySuccessBlockHandle) {
         _mySuccessBlockHandle();
-        
-        [self clearSuccessBlock];
     }
 }
 

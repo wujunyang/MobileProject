@@ -1,5 +1,5 @@
 //
-//  MPBlockLoopViewController.h
+//  MPChildBlockViewController.h
 //  MobileProject
 //
 //  Created by wujunyang on 2017/3/22.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
-#import "MPBlockView.h"
-#import "MPBlockLoopOperation.h"
 
-@interface MPBlockLoopViewController : BaseViewController
+@interface MPChildBlockViewController : BaseViewController
 
+@property(nonatomic,copy) void(^successBlock)();
 
 @end

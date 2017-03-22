@@ -84,7 +84,6 @@
         MPUploadImageHelper *curUploadImage = (MPUploadImageHelper *)obj;
         NSInteger row;
         if (curUploadImage.imagesArray.count <= 0) {
-            row = 0;
             cellHeight+=kImageCollectionCell_Width;
         }else{
             NSInteger curRowImageCount=curUploadImage.imagesArray.count<kupdateMaximumNumberOfImage?curUploadImage.imagesArray.count +1:kupdateMaximumNumberOfImage;

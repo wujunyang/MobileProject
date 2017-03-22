@@ -59,6 +59,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self.myMapView viewWillAppear];
     self.myMapView.delegate = self; // 此处记得不用的时候需要置nil，否则影响内存的释放
     self.locationService.delegate=self;  //定位
@@ -66,6 +67,7 @@
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
     [self.myMapView viewWillDisappear];
     self.myMapView.delegate = nil; // 不用时，置nil
     self.locationService.delegate=nil;

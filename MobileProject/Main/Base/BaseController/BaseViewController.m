@@ -23,7 +23,7 @@
 
 -(id)init
 {
-    if (self == [super init]) {
+    if (self= [super init]) {
         [self.navigationController.navigationBar setTranslucent:NO];
         [self.navigationController setNavigationBarHidden:YES];
         navBarY = 0;

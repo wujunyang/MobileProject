@@ -8,58 +8,51 @@
 
 #import "MPBlockView.h"
 
+
 @interface MPBlockView()
 
 @property(nonatomic,copy)blockViewErrorHandle myErrorBlock;
+
+@property(nonatomic,strong)UIButton *myViewButton;
 
 @end
 
 @implementation MPBlockView
 
--(instancetype)initWithErrorBlcok:(blockViewErrorHandle)errorBlock
+-(instancetype)initWithFrame:(CGRect)frame
 {
-    if (self=[super init]) {
-        
-        _myErrorBlock=errorBlock;
-        
-        UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
-        
-        [self addGestureRecognizer:singleTap];
+    if (self=[super initWithFrame:frame]) {
+        [self addSubview:self.myViewButton];
+        [self.myViewButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.mas_equalTo(0);
+        }];
     }
     return self;
 }
 
--(instancetype)initWithNoClearErrorBlock:(blockViewErrorHandle)errorBlock
+
+-(void)startWithErrorBlcok:(blockViewErrorHandle)errorBlock
 {
-    if (self=[super init]) {
-        
-        _myErrorBlock=errorBlock;
-        
-        UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleNoClearSingleTap:)];
-        
-        [self addGestureRecognizer:singleTap];
-    }
-    return self;
+    _myErrorBlock=errorBlock;
 }
 
--(void)handleSingleTap:(UITapGestureRecognizer *)sender
+
+-(UIButton *)myViewButton
+{
+    if (!_myViewButton) {
+        _myViewButton=[UIButton new];
+        _myViewButton.backgroundColor=[UIColor redColor];
+        [_myViewButton setTitle:@"点我" forState:UIControlStateNormal];
+        [_myViewButton addTarget:self action:@selector(myViewButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _myViewButton;
+}
+
+-(void)myViewButtonAction
 {
     if (self.myErrorBlock) {
         self.myErrorBlock(@"调用block里面不用做处理，已经在调用block里面清空的block,打破循环");
-        [self clearBlock];
     }
-}
-
--(void)handleNoClearSingleTap:(UITapGestureRecognizer *)sender
-{
-    if (self.myErrorBlock) {
-        self.myErrorBlock(@"记得调用地方block里要清空MPBlockView对象，打破循环");
-    }
-}
-
--(void)clearBlock
-{
-    self.myErrorBlock=nil;
 }
 
 @end

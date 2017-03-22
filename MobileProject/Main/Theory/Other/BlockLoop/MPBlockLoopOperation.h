@@ -15,6 +15,8 @@ typedef void(^successBlockHandle)();
 
 -(instancetype)initWithAddress:(NSString *)address;
 
+-(void)startNoBlockShow:(NSString *)phone;
+
 -(void)startWithAddBlock:(addBlockHandle)blockHandle;
 
 +(instancetype)operateWithSuccessBlock:(successBlockHandle)successHandle;

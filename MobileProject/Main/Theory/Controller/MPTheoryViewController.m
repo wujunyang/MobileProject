@@ -26,7 +26,7 @@
     self.navigationItem.title=@"基础知识点";
     
     if (!self.dataArray) {
-        self.dataArray=@[@"viewController生命周期",@"运行时RunTime知识运用",@"多线程知识运用",@"Protocol实现类",@"Block释放知识点"];
+        self.dataArray=@[@"viewController生命周期",@"运行时RunTime知识运用",@"多线程知识运用",@"Protocol实现类",@"Block内存释放知识点"];
     }
     
     //初始化表格
@@ -115,16 +115,7 @@
         case 4:
         {            
             MPBlockLoopViewController *vc=[[MPBlockLoopViewController alloc]init];
-            __weak MPBlockLoopViewController *weakMyVC=vc;
-            weakMyVC.successBlock=^()
-            {
-                MPBlockLoopViewController *strongMyVC=weakMyVC;
-                if (strongMyVC) {
-                    [strongMyVC dismissViewControllerAnimated:YES completion:nil];
-                }
-            };
-            
-            [self presentViewController:vc animated:YES completion:nil];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         default:
