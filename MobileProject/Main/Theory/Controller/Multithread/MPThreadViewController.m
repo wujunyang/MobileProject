@@ -130,6 +130,19 @@
         NSLog(@"当前thread-exit线程被cancel的状态 %@",[self.myThread isCancelled]?@"被标识为Cancel":@"没有被标识");
         //cancel 只是一个标识 最下退出强制终止线程的操作是exit 如果单写cancel 线程还是会继续执行
     }
+    
+    
+    //结合VC生命周期 viewWillDisappear退出页面时就把线程标识为cancel 使用Thread一定要在退出前进行退出，否则会有闪存泄露的问题
+    for (int i=0; i<self.myThreadList.count; i++){
+        NSThread *thread=self.myThreadList[i];
+        if (![thread isCancelled]) {
+            NSLog(@"当前thread-exit线程被cancel");
+            [thread cancel];
+            //cancel 只是一个标识 最下退出强制终止线程的操作是exit 如果单写cancel 线程还是会继续执行
+        }}
+    
+    
+    //这页会报内存问题，是因为上面还有一些Thread没有进行退出操作
 }
 
 
@@ -151,7 +164,7 @@
         [self.myThreadList addObject:thread];
     }
     
-    for (int i=0; i<self.myThreadList.count-1; i++) {
+    for (int i=0; i<self.myThreadList.count; i++) {
         NSThread *thread=self.myThreadList[i];
         [thread start];
     }

@@ -11,7 +11,7 @@
 @interface MPLockViewController ()
 @property(atomic,strong)NSMutableArray *myMutableList;
 
-//要运用atomic 线程安全
+//要运用atomic 线程安全 只能是相对安全 只有这个属性也会出现线程问题
 @property(strong,atomic)NSMutableArray *myThreadList;
 
 @property(strong)NSLock *mylock;
@@ -57,7 +57,7 @@
     }
     
     
-    for (int i=0; i<self.myThreadList.count-1; i++) {
+    for (int i=0; i<self.myThreadList.count; i++) {
         NSThread *thread=self.myThreadList[i];
         [thread start];
     }
@@ -69,7 +69,11 @@
     NSThread *thread=[NSThread currentThread];
     NSLog(@"loadAction是在线程%@中执行",thread.name);
     
-    
+    //结合下面的cancel运用 进行强制退出线程的操作
+    if ([[NSThread currentThread] isCancelled]) {
+        NSLog(@"当前thread-exit被exit动作了");
+        [NSThread exit];
+    }
     
     //第一种情况，第二种情况：
 //    NSString *name;
@@ -115,14 +119,19 @@
 }
 
 
-
+//******解决Thread中的内存问题
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     
-    self.myMutableList=nil;
-    self.mylock=nil;
-    self.myThreadList=nil;
+    //结合VC生命周期 viewWillDisappear退出页面时就把线程标识为cancel 使用Thread一定要在退出前进行退出，否则会有闪存泄露的问题
+    for (int i=0; i<self.myThreadList.count; i++){
+        NSThread *thread=self.myThreadList[i];
+        if (![thread isCancelled]) {
+            NSLog(@"当前thread-exit线程被cancel");
+            [thread cancel];
+            //cancel 只是一个标识 最下退出强制终止线程的操作是exit 如果单写cancel 线程还是会继续执行
+        }}
 }
 
 
