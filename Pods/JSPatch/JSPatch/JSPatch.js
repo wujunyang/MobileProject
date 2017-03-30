@@ -128,11 +128,13 @@ var global = this
     return global[clsName]
   }
 
-  global.require = function(clsNames) {
+  global.require = function() {
     var lastRequire
-    clsNames.split(',').forEach(function(clsName) {
-      lastRequire = _require(clsName.trim())
-    })
+    for (var i = 0; i < arguments.length; i ++) {
+      arguments[i].split(',').forEach(function(clsName) {
+        lastRequire = _require(clsName.trim())
+      })
+    }
     return lastRequire
   }
 
@@ -263,16 +265,22 @@ var global = this
   }
 
   global.block = function(args, cb) {
-    var slf = this
+    var that = this
+    var slf = global.self
     if (args instanceof Function) {
       cb = args
       args = ''
     }
     var callback = function() {
       var args = Array.prototype.slice.call(arguments)
-      return cb.apply(slf, _formatOCToJS(args))
+      global.self = slf
+      return cb.apply(that, _formatOCToJS(args))
     }
-    return {args: args, cb: callback, __isBlock: 1}
+    var ret = {args: args, cb: callback, argCount: cb.length, __isBlock: 1}
+    if (global.__genBlock) {
+      ret['blockObj'] = global.__genBlock(args, cb)
+    }
+    return ret
   }
   
   if (global.console) {

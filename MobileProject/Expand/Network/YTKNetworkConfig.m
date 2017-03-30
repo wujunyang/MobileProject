@@ -1,7 +1,7 @@
 //
 //  YTKNetworkConfig.m
 //
-//  Copyright (c) 2012-2014 YTKNetwork https://github.com/yuantiku
+//  Copyright (c) 2012-2016 YTKNetwork https://github.com/yuantiku
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -22,13 +22,20 @@
 //  THE SOFTWARE.
 
 #import "YTKNetworkConfig.h"
+#import "YTKBaseRequest.h"
+
+#if __has_include(<AFNetworking/AFNetworking.h>)
+#import <AFNetworking/AFNetworking.h>
+#else
+#import "AFNetworking.h"
+#endif
 
 @implementation YTKNetworkConfig {
-    NSMutableArray *_urlFilters;
-    NSMutableArray *_cacheDirPathFilters;
+    NSMutableArray<id<YTKUrlFilterProtocol>> *_urlFilters;
+    NSMutableArray<id<YTKCacheDirPathFilterProtocol>> *_cacheDirPathFilters;
 }
 
-+ (YTKNetworkConfig *)sharedInstance {
++ (YTKNetworkConfig *)sharedConfig {
     static id sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -37,11 +44,15 @@
     return sharedInstance;
 }
 
-- (id)init {
+- (instancetype)init {
     self = [super init];
     if (self) {
+        _baseUrl = @"";
+        _cdnUrl = @"";
         _urlFilters = [NSMutableArray array];
         _cacheDirPathFilters = [NSMutableArray array];
+        _securityPolicy = [AFSecurityPolicy defaultPolicy];
+        _debugLogEnabled = NO;
     }
     return self;
 }
@@ -50,16 +61,30 @@
     [_urlFilters addObject:filter];
 }
 
+- (void)clearUrlFilter {
+    [_urlFilters removeAllObjects];
+}
+
 - (void)addCacheDirPathFilter:(id<YTKCacheDirPathFilterProtocol>)filter {
     [_cacheDirPathFilters addObject:filter];
 }
 
-- (NSArray *)urlFilters {
+- (void)clearCacheDirPathFilter {
+    [_cacheDirPathFilters removeAllObjects];
+}
+
+- (NSArray<id<YTKUrlFilterProtocol>> *)urlFilters {
     return [_urlFilters copy];
 }
 
-- (NSArray *)cacheDirPathFilters {
+- (NSArray<id<YTKCacheDirPathFilterProtocol>> *)cacheDirPathFilters {
     return [_cacheDirPathFilters copy];
+}
+
+#pragma mark - NSObject
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"<%@: %p>{ baseURL: %@ } { cdnURL: %@ }", NSStringFromClass([self class]), self, self.baseUrl, self.cdnUrl];
 }
 
 @end

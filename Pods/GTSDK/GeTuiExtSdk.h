@@ -14,7 +14,10 @@
 /**
  *  统计APNs到达情况
  */
-+ (void)handelNotificationServiceRequest:(UNNotificationRequest *) request withComplete:(void (^)(void))completeBlock;
-
++ (void)handelNotificationServiceRequest:(UNNotificationRequest *)request withComplete:(void (^)(void))completeBlock;
+/**
+ *  统计APNs到达情况和多媒体推送支持
+ */
++ (void)handelNotificationServiceRequest:(UNNotificationRequest *)request withAttachmentsComplete:(void (^)(NSArray *attachments, NSArray *errors))completeBlock;
 
 @end

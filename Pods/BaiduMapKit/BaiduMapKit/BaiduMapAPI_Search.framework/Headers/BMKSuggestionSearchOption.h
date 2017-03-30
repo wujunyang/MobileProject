@@ -18,6 +18,8 @@
 @property (nonatomic, strong) NSString *keyword;
 ///城市名
 @property (nonatomic, strong) NSString *cityname;
+///是否只返回指定城市检索结果（默认：NO）（提示：海外区域暂不支持设置cityLimit）
+@property (nonatomic, assign) BOOL cityLimit;
 
 @end
 

@@ -35,6 +35,8 @@ typedef enum{
 }
 ///区域名称(市或区的名字，如北京市，海淀区)，必选, 必须最长25个字符
 @property (nonatomic, strong) NSString *city;
+///是否请求门址信息列表，默认为YES
+@property (nonatomic, assign) BOOL requestPoiAddressInfoList;
 @end
 
 ///周边云检索参数信息类

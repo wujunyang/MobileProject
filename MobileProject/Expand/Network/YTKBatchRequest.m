@@ -1,7 +1,7 @@
 //
 //  YTKBatchRequest.m
 //
-//  Copyright (c) 2012-2014 YTKNetwork https://github.com/yuantiku
+//  Copyright (c) 2012-2016 YTKNetwork https://github.com/yuantiku
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -24,6 +24,7 @@
 #import "YTKBatchRequest.h"
 #import "YTKNetworkPrivate.h"
 #import "YTKBatchRequestAgent.h"
+#import "YTKRequest.h"
 
 @interface YTKBatchRequest() <YTKRequestDelegate>
 
@@ -33,7 +34,7 @@
 
 @implementation YTKBatchRequest
 
-- (id)initWithRequestArray:(NSArray *)requestArray {
+- (instancetype)initWithRequestArray:(NSArray<YTKRequest *> *)requestArray {
     self = [super init];
     if (self) {
         _requestArray = [requestArray copy];
@@ -53,10 +54,12 @@
         YTKLog(@"Error! Batch request has already started.");
         return;
     }
-    [[YTKBatchRequestAgent sharedInstance] addBatchRequest:self];
+    _failedRequest = nil;
+    [[YTKBatchRequestAgent sharedAgent] addBatchRequest:self];
     [self toggleAccessoriesWillStartCallBack];
     for (YTKRequest * req in _requestArray) {
         req.delegate = self;
+        [req clearCompletionBlock];
         [req start];
     }
 }
@@ -66,7 +69,7 @@
     _delegate = nil;
     [self clearRequest];
     [self toggleAccessoriesDidStopCallBack];
-    [[YTKBatchRequestAgent sharedInstance] removeBatchRequest:self];
+    [[YTKBatchRequestAgent sharedAgent] removeBatchRequest:self];
 }
 
 - (void)startWithCompletionBlockWithSuccess:(void (^)(YTKBatchRequest *batchRequest))success
@@ -116,10 +119,12 @@
         }
         [self clearCompletionBlock];
         [self toggleAccessoriesDidStopCallBack];
+        [[YTKBatchRequestAgent sharedAgent] removeBatchRequest:self];
     }
 }
 
 - (void)requestFailed:(YTKRequest *)request {
+    _failedRequest = request;
     [self toggleAccessoriesWillStopCallBack];
     // Stop
     for (YTKRequest *req in _requestArray) {
@@ -134,9 +139,9 @@
     }
     // Clear
     [self clearCompletionBlock];
-    
+
     [self toggleAccessoriesDidStopCallBack];
-    [[YTKBatchRequestAgent sharedInstance] removeBatchRequest:self];
+    [[YTKBatchRequestAgent sharedAgent] removeBatchRequest:self];
 }
 
 - (void)clearRequest {

@@ -28,7 +28,7 @@
 
 
 - (YTKRequestMethod)requestMethod {
-    return YTKRequestMethodPost;
+    return YTKRequestMethodPOST;
 }
 
 - (NSTimeInterval)requestTimeoutInterval

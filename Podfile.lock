@@ -1,27 +1,21 @@
 PODS:
   - ActionSheetPicker-3.0 (2.2.0)
-  - AFNetworking (2.6.3):
-    - AFNetworking/NSURLConnection (= 2.6.3)
-    - AFNetworking/NSURLSession (= 2.6.3)
-    - AFNetworking/Reachability (= 2.6.3)
-    - AFNetworking/Security (= 2.6.3)
-    - AFNetworking/Serialization (= 2.6.3)
-    - AFNetworking/UIKit (= 2.6.3)
-  - AFNetworking/NSURLConnection (2.6.3):
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.3)
-  - AFNetworking/Security (2.6.3)
-  - AFNetworking/Serialization (2.6.3)
-  - AFNetworking/UIKit (2.6.3):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - BaiduMapKit (3.1.0)
+  - BaiduMapKit (3.2.1)
   - CocoaLumberjack (2.0.3):
     - CocoaLumberjack/Default (= 2.0.3)
     - CocoaLumberjack/Extensions (= 2.0.3)
@@ -30,7 +24,7 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.0.3):
     - CocoaLumberjack/Default
-  - CYLTabBarController (1.7.0)
+  - CYLTabBarController (1.10.0)
   - DACircularProgress (2.3.1)
   - FBRetainCycleDetector (0.1.3)
   - FLEX (2.1.1)
@@ -42,15 +36,15 @@ PODS:
     - SQLCipher
   - FMDB/standard (2.5):
     - FMDB/common
-  - GTSDK (1.5.3)
+  - GTSDK (1.6.2.0)
   - IQKeyboardManager (3.3.7)
   - JSONModel (1.0.2)
-  - JSPatch (1.1.2):
-    - JSPatch/Core (= 1.1.2)
-  - JSPatch/Core (1.1.2)
+  - JSPatch (1.1.3):
+    - JSPatch/Core (= 1.1.3)
+  - JSPatch/Core (1.1.3)
   - LBXScan (1.1.1):
     - ZXingObjC (~> 3.0)
-  - LKDBHelper (2.4):
+  - LKDBHelper (2.4.1):
     - FMDB
   - M13ProgressSuite (1.2.9)
   - Masonry (0.6.4)
@@ -77,9 +71,9 @@ PODS:
   - SQLCipher/common (3.1.0)
   - SQLCipher/standard (3.1.0):
     - SQLCipher/common
-  - UMengAnalytics-NO-IDFA (4.1.9)
+  - UMengAnalytics-NO-IDFA (4.2.5)
   - UMengSocial (4.4)
-  - WebViewJavascriptBridge (5.0.7)
+  - WebViewJavascriptBridge (5.2.0)
   - XAspect (1.0.5):
     - XAspect/Core (= 1.0.5)
     - XAspect/Macros (= 1.0.5)
@@ -93,7 +87,7 @@ PODS:
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0
-  - AFNetworking (~> 2.6.0)
+  - AFNetworking (~> 3.0)
   - BaiduMapKit
   - CocoaLumberjack (~> 2.0.0-rc)
   - CYLTabBarController
@@ -122,20 +116,20 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
-  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  BaiduMapKit: 4cfaedb118cff7e157e9771859a4bf65a261b2a1
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BaiduMapKit: 9c748785aa3dddfc41dcb70c14b21ce32f680930
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
-  CYLTabBarController: 925ec82de4ae6f89b6277c8d406853d2d29b5562
+  CYLTabBarController: 2de9a4c26f50d33574398becf8e7b0aaed794240
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
   FLEX: 27b768fcae23a313a1eb115076d429180ca9b472
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
-  GTSDK: 1b55fc5b0f29c7ea9061946f07aeee49ef70c90e
+  GTSDK: 6089897a86579d4a7d66eb4245f2c8639c2e5e8f
   IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
   JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
-  JSPatch: 741205ebb2e2238c223a436e4c8cf75cf40a345f
+  JSPatch: 02cfed591cb907bbfe80a346666e5a35fc2d349d
   LBXScan: dfb4d8ae8e4cff2aa0c9e1771e43954dce1469a9
-  LKDBHelper: 1162892ca4ffc28029070d6f40f57b333133f1c4
+  LKDBHelper: 531581fa6a7d0f14236cc028ce0d277bca73436a
   M13ProgressSuite: ea9f7263e73e9215e6849dfa54e29ee0ad6a145c
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
@@ -145,13 +139,13 @@ SPEC CHECKSUMS:
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
-  UMengAnalytics-NO-IDFA: 985292af177111685325c90c321094172b95d2cb
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
   UMengSocial: aba7296602310385114d82c255539a7bef3b7ab0
-  WebViewJavascriptBridge: e4302f8c3988a447ae6e144656eac51f3f0f04c8
+  WebViewJavascriptBridge: a00b2d61252aec5207e3263d46fd0fd3cfaf7895
   XAspect: db50bf487f92dbb8557a7a5365556966c8493af8
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
 
-PODFILE CHECKSUM: 8b04ff276bade12781b42876a78b975fa1fa887d
+PODFILE CHECKSUM: 803203380c474c9a74a66085f67a8f194345b397
 
 COCOAPODS: 1.2.0.beta.1

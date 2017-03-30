@@ -1,7 +1,7 @@
 //
 //  YTKNetworkPrivate.h
 //
-//  Copyright (c) 2012-2014 YTKNetwork https://github.com/yuantiku
+//  Copyright (c) 2012-2016 YTKNetwork https://github.com/yuantiku
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -22,24 +22,49 @@
 //  THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
+#import "YTKRequest.h"
 #import "YTKBaseRequest.h"
 #import "YTKBatchRequest.h"
 #import "YTKChainRequest.h"
+#import "YTKNetworkAgent.h"
+#import "YTKNetworkConfig.h"
+
+NS_ASSUME_NONNULL_BEGIN
 
 FOUNDATION_EXPORT void YTKLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2);
 
-@interface YTKNetworkPrivate : NSObject
+@class AFHTTPSessionManager;
 
-+ (BOOL)checkJson:(id)json withValidator:(id)validatorJson;
+@interface YTKNetworkUtils : NSObject
 
-+ (NSString *)urlStringWithOriginUrlString:(NSString *)originUrlString
-                          appendParameters:(NSDictionary *)parameters;
++ (BOOL)validateJSON:(id)json withValidator:(id)jsonValidator;
 
 + (void)addDoNotBackupAttribute:(NSString *)path;
 
 + (NSString *)md5StringFromString:(NSString *)string;
 
 + (NSString *)appVersionString;
+
++ (NSStringEncoding)stringEncodingWithRequest:(YTKBaseRequest *)request;
+
++ (BOOL)validateResumeData:(NSData *)data;
+
+@end
+
+@interface YTKRequest (Getter)
+
+- (NSString *)cacheBasePath;
+
+@end
+
+@interface YTKBaseRequest (Setter)
+
+@property (nonatomic, strong, readwrite) NSURLSessionTask *requestTask;
+@property (nonatomic, strong, readwrite, nullable) NSData *responseData;
+@property (nonatomic, strong, readwrite, nullable) id responseJSONObject;
+@property (nonatomic, strong, readwrite, nullable) id responseObject;
+@property (nonatomic, strong, readwrite, nullable) NSString *responseString;
+@property (nonatomic, strong, readwrite, nullable) NSError *error;
 
 @end
 
@@ -67,4 +92,15 @@ FOUNDATION_EXPORT void YTKLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2);
 
 @end
 
+@interface YTKNetworkAgent (Private)
+
+- (AFHTTPSessionManager *)manager;
+- (void)resetURLSessionManager;
+- (void)resetURLSessionManagerWithConfiguration:(NSURLSessionConfiguration *)configuration;
+
+- (NSString *)incompleteDownloadTempCacheFolder;
+
+@end
+
+NS_ASSUME_NONNULL_END
 

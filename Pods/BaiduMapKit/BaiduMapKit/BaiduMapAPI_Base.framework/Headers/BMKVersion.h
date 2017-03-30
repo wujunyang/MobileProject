@@ -801,7 +801,7 @@
  自v2.9.0起，采用分包的形式提供 .framework包，请广大开发者使用时确保各分包的版本保持一致。其中BaiduMapAPI_Base.framework为基础包，使用SDK任何功能都需导入，其他分包可按需导入。
 
  【 新版提示 】
- 1.自v3.0.0起，iOS SDK全面支持ipv6网格
+ 1.自v3.0.0起，iOS SDK全面支持ipv6网络
  
  【 新  增 】
    基础地图
@@ -919,6 +919,50 @@ v3.1.0
  3、一次点击事件，点击地图空白处回调和点击覆盖物回调都会调用的问题
  
  
+ --------------------
+ v3.2.0
+ 
+ 注：自v3.2.0起，百度地图iOS SDK全面支持HTTPS，需要广大开发者导入第三方openssl静态库：libssl.a和libcrypto.a（存放于thirdlib目录下）。
+ 
+ 【 新版提示 】
+ 1、自v3.2.0起，全面支持HTTPS
+ 2、自v3.2.0起，地图引擎全面升级，主要升级特征有：
+    渲染架构技术升级，OpenGL ES从1.0升级到2.0
+    地图数据加载升级，加载性能大幅提升
+ 
+ 【 新  增 】
+   检索功能
+ 1、建议检索支持港澳台；建议检索可控制只返回指定城市的检索结果
+ BMKSuggestionSearchOption新增属性：
+ ///是否只返回指定城市检索结果（默认：NO）（提示：海外区域暂不支持设置cityLimit）
+ @property (nonatomic, assign) BOOL cityLimit;
+ 2、反地址编码结果BMKReverseGeoCodeResult新增属性：
+ ///结合当前位置POI的语义化结果描述
+ @property (nonatomic, strong) NSString* sematicDescription;
+ 
+ 【 优  化 】
+ 1、建议检索和反地址编码检索服务升级，提供更加优质的服务
+ 
+ 【 修  复 】
+ 1、修复国外定位偏移的问题
+ 2、修复特殊情况下，移除BMKGroundOverlay时的问题
+ 
+ 
+ --------------------
+ v3.2.1
+ 
+ 注：自v3.2.0起，百度地图iOS SDK全面支持HTTPS，需要广大开发者导入第三方openssl静态库：libssl.a和libcrypto.a（存放于thirdlib目录下）。
+ 
+ 【 新版提示 】
+ 1、自v3.2.0起，全面支持HTTPS
+ 2、自v3.2.0起，地图引擎全面升级，主要升级特征有：
+ 渲染架构技术升级，OpenGL ES从1.0升级到2.0
+ 地图数据加载升级，加载性能大幅提升
+ 
+ 【 修  复 】
+ 修复下载离线地图时，delegate方法返回state错误问题
+ 
+ 
  *********************/
 /**
  *获取当前地图API的版本号
@@ -926,12 +970,12 @@ v3.1.0
  */
 UIKIT_STATIC_INLINE NSString* BMKGetMapApiVersion()
 {
-    return @"3.1.0";
+    return @"3.2.1";
 }
 
 /**
  *获取当前地图API base组件 的版本号
- *当前base组件版本 : 3.1.0
+ *当前base组件版本 : 3.2.1
  *return  返回当前API base组件 的版本号
  */
 UIKIT_EXTERN NSString* BMKGetMapApiBaseComponentVersion();

@@ -32,7 +32,7 @@
 }
 
 - (YTKRequestMethod)requestMethod {
-    return YTKRequestMethodPost;
+    return YTKRequestMethodPOST;
 }
 
 -(SERVERCENTER_TYPE)centerType

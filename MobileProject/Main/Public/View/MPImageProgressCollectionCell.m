@@ -83,7 +83,18 @@
             MPStrongSelf(self)
             if (imageItem&&self.curImageItem.uploadState!=MPImageUploadStateSuccess) {
                     MPUploadImageItemService *req=[[MPUploadImageItemService alloc]initWithUploadImageItem:self.curImageItem];
+                
+                //上传进度 记得放上面才会进行触发
+                req.uploadPropressBlock = ^(NSProgress *uploadProgress){
                     
+                    MPStrongSelf(self);
+                    CGFloat propress = uploadProgress.completedUnitCount*1.0/uploadProgress.totalUnitCount;
+                    NSLog(@"进度进度：%lld/%lld___%2f",uploadProgress.completedUnitCount,uploadProgress.completedUnitCount,propress);
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        self.propress=propress;
+                    });
+                };
+                
                     [req startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest *request) {
                         //上传成功后返回图片信息
                         self.curImageItem.upServicePath=@"2sdfsdfsdf.JPG";
@@ -91,19 +102,7 @@
                     } failure:^(__kindof YTKBaseRequest *request) {
                         [MPRequstFailedHelper requstFailed:request];
                     }];
-                    
-                    //上传进度
-                    req.uploadPropressBlock = ^(NSUInteger __unused bytesWritten,
-                                                long long totalBytesWritten,
-                                                long long totalBytesExpectedToWrite){
-                        
-                        MPStrongSelf(self);
-                        CGFloat propress = totalBytesWritten*1.0/totalBytesExpectedToWrite;
-                        NSLog(@"进度进度：%lld/%lld___%2f",totalBytesWritten,totalBytesExpectedToWrite,propress);
-                        dispatch_async(dispatch_get_main_queue(), ^{
-                            self.propress=propress;
-                        });
-                    };
+                
             }
         }];
     }

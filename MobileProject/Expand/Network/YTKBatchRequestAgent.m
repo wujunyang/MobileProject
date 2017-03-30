@@ -1,7 +1,7 @@
 //
 //  YTKBatchRequestAgent.m
 //
-//  Copyright (c) 2012-2014 YTKNetwork https://github.com/yuantiku
+//  Copyright (c) 2012-2016 YTKNetwork https://github.com/yuantiku
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -22,16 +22,17 @@
 //  THE SOFTWARE.
 
 #import "YTKBatchRequestAgent.h"
+#import "YTKBatchRequest.h"
 
 @interface YTKBatchRequestAgent()
 
-@property (strong, nonatomic) NSMutableArray *requestArray;
+@property (strong, nonatomic) NSMutableArray<YTKBatchRequest *> *requestArray;
 
 @end
 
 @implementation YTKBatchRequestAgent
 
-+ (YTKBatchRequestAgent *)sharedInstance {
++ (YTKBatchRequestAgent *)sharedAgent {
     static id sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -40,8 +41,7 @@
     return sharedInstance;
 }
 
-
-- (id)init {
+- (instancetype)init {
     self = [super init];
     if (self) {
         _requestArray = [NSMutableArray array];

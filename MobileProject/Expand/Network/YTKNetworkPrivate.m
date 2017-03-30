@@ -1,7 +1,7 @@
 //
 //  YTKNetworkPrivate.m
 //
-//  Copyright (c) 2012-2014 YTKNetwork https://github.com/yuantiku
+//  Copyright (c) 2012-2016 YTKNetwork https://github.com/yuantiku
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -24,8 +24,17 @@
 #import <CommonCrypto/CommonDigest.h>
 #import "YTKNetworkPrivate.h"
 
+#if __has_include(<AFNetworking/AFNetworking.h>)
+#import <AFNetworking/AFURLRequestSerialization.h>
+#else
+#import "AFURLRequestSerialization.h"
+#endif
+
 void YTKLog(NSString *format, ...) {
 #ifdef DEBUG
+    if (![YTKNetworkConfig sharedConfig].debugLogEnabled) {
+        return;
+    }
     va_list argptr;
     va_start(argptr, format);
     NSLogv(format, argptr);
@@ -33,13 +42,13 @@ void YTKLog(NSString *format, ...) {
 #endif
 }
 
-@implementation YTKNetworkPrivate
+@implementation YTKNetworkUtils
 
-+ (BOOL)checkJson:(id)json withValidator:(id)validatorJson {
++ (BOOL)validateJSON:(id)json withValidator:(id)jsonValidator {
     if ([json isKindOfClass:[NSDictionary class]] &&
-        [validatorJson isKindOfClass:[NSDictionary class]]) {
+        [jsonValidator isKindOfClass:[NSDictionary class]]) {
         NSDictionary * dict = json;
-        NSDictionary * validator = validatorJson;
+        NSDictionary * validator = jsonValidator;
         BOOL result = YES;
         NSEnumerator * enumerator = [validator keyEnumerator];
         NSString * key;
@@ -48,7 +57,7 @@ void YTKLog(NSString *format, ...) {
             id format = validator[key];
             if ([value isKindOfClass:[NSDictionary class]]
                 || [value isKindOfClass:[NSArray class]]) {
-                result = [self checkJson:value withValidator:format];
+                result = [self validateJSON:value withValidator:format];
                 if (!result) {
                     break;
                 }
@@ -62,61 +71,24 @@ void YTKLog(NSString *format, ...) {
         }
         return result;
     } else if ([json isKindOfClass:[NSArray class]] &&
-               [validatorJson isKindOfClass:[NSArray class]]) {
-        NSArray * validatorArray = (NSArray *)validatorJson;
+               [jsonValidator isKindOfClass:[NSArray class]]) {
+        NSArray * validatorArray = (NSArray *)jsonValidator;
         if (validatorArray.count > 0) {
             NSArray * array = json;
-            NSDictionary * validator = validatorJson[0];
+            NSDictionary * validator = jsonValidator[0];
             for (id item in array) {
-                BOOL result = [self checkJson:item withValidator:validator];
+                BOOL result = [self validateJSON:item withValidator:validator];
                 if (!result) {
                     return NO;
                 }
             }
         }
         return YES;
-    } else if ([json isKindOfClass:validatorJson]) {
+    } else if ([json isKindOfClass:jsonValidator]) {
         return YES;
     } else {
         return NO;
     }
-}
-
-+ (NSString *)urlParametersStringFromParameters:(NSDictionary *)parameters {
-    NSMutableString *urlParametersString = [[NSMutableString alloc] initWithString:@""];
-    if (parameters && parameters.count > 0) {
-        for (NSString *key in parameters) {
-            NSString *value = parameters[key];
-            value = [NSString stringWithFormat:@"%@",value];
-            value = [self urlEncode:value];
-            [urlParametersString appendFormat:@"&%@=%@", key, value];
-        }
-    }
-    return urlParametersString;
-}
-
-+ (NSString *)urlStringWithOriginUrlString:(NSString *)originUrlString appendParameters:(NSDictionary *)parameters {
-    NSString *filteredUrl = originUrlString;
-    NSString *paraUrlString = [self urlParametersStringFromParameters:parameters];
-    if (paraUrlString && paraUrlString.length > 0) {
-        if ([originUrlString rangeOfString:@"?"].location != NSNotFound) {
-            filteredUrl = [filteredUrl stringByAppendingString:paraUrlString];
-        } else {
-            filteredUrl = [filteredUrl stringByAppendingFormat:@"?%@", [paraUrlString substringFromIndex:1]];
-        }
-        return filteredUrl;
-    } else {
-        return originUrlString;
-    }
-}
-
-
-+ (NSString*)urlEncode:(NSString*)str {
-    //different library use slightly different escaped and unescaped set.
-    //below is copied from AFNetworking but still escaped [] as AF leave them for Rails array parameter which we don't use.
-    //https://github.com/AFNetworking/AFNetworking/pull/555
-    NSString *result = (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge CFStringRef)str, CFSTR("."), CFSTR(":/?#[]@!$&'()*+,;="), kCFStringEncodingUTF8);
-    return result;
 }
 
 + (void)addDoNotBackupAttribute:(NSString *)path {
@@ -129,8 +101,7 @@ void YTKLog(NSString *format, ...) {
 }
 
 + (NSString *)md5StringFromString:(NSString *)string {
-    if(string == nil || [string length] == 0)
-        return nil;
+    NSParameterAssert(string != nil && [string length] > 0);
 
     const char *value = [string UTF8String];
 
@@ -147,6 +118,39 @@ void YTKLog(NSString *format, ...) {
 
 + (NSString *)appVersionString {
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+}
+
++ (NSStringEncoding)stringEncodingWithRequest:(YTKBaseRequest *)request {
+    // From AFNetworking 2.6.3
+    NSStringEncoding stringEncoding = NSUTF8StringEncoding;
+    if (request.response.textEncodingName) {
+        CFStringEncoding encoding = CFStringConvertIANACharSetNameToEncoding((CFStringRef)request.response.textEncodingName);
+        if (encoding != kCFStringEncodingInvalidId) {
+            stringEncoding = CFStringConvertEncodingToNSStringEncoding(encoding);
+        }
+    }
+    return stringEncoding;
+}
+
++ (BOOL)validateResumeData:(NSData *)data {
+    // From http://stackoverflow.com/a/22137510/3562486
+    if (!data || [data length] < 1) return NO;
+
+    NSError *error;
+    NSDictionary *resumeDictionary = [NSPropertyListSerialization propertyListWithData:data options:NSPropertyListImmutable format:NULL error:&error];
+    if (!resumeDictionary || error) return NO;
+
+    // Before iOS 9 & Mac OS X 10.11
+#if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED < 90000)\
+|| (defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && __MAC_OS_X_VERSION_MAX_ALLOWED < 101100)
+    NSString *localFilePath = [resumeDictionary objectForKey:@"NSURLSessionResumeInfoLocalPath"];
+    if ([localFilePath length] < 1) return NO;
+    return [[NSFileManager defaultManager] fileExistsAtPath:localFilePath];
+#endif
+    // After iOS 9 we can not actually detects if the cache file exists. This plist file has a somehow
+    // complicated structue. Besides, the plist structure is different between iOS 9 and iOS 10.
+    // We can only assume that the plist being successfully parsed means the resume data is valid.
+    return YES;
 }
 
 @end

@@ -198,6 +198,17 @@
     
     MPUploadImageService *req=[[MPUploadImageService alloc]initWithUploadImages:self.curUploadImageHelper];
     
+    //上传进度
+    MPWeakSelf(self)
+    req.uploadPropressBlock = ^(NSProgress *uploadProgress){
+        MPStrongSelf(self);
+        CGFloat propress = uploadProgress.completedUnitCount*1.0/uploadProgress.totalUnitCount;
+        NSLog(@"进度进度：%lld/%lld___%2f",uploadProgress.completedUnitCount,uploadProgress.completedUnitCount,propress);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //更新UI
+        });
+    };
+    
     [req startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest *request) {
         //进行上传后的图片地址
         
@@ -205,20 +216,5 @@
         [MPRequstFailedHelper requstFailed:request];
     }];
     
-    //上传进度
-    MPWeakSelf(self)
-    req.uploadPropressBlock = ^(NSUInteger __unused bytesWritten,
-                                     long long totalBytesWritten,
-                                     long long totalBytesExpectedToWrite){
-        
-        MPStrongSelf(self);
-        CGFloat propress = totalBytesWritten*1.0/totalBytesExpectedToWrite;
-        NSLog(@"进度进度：%lld/%lld___%2f",totalBytesWritten,totalBytesExpectedToWrite,propress);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            //更新UI
-        });
-        
-        
-    };
 }
 @end
