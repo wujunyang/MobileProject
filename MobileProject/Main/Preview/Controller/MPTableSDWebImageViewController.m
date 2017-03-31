@@ -80,7 +80,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 150;
+    return 80;
 }
 
 #pragma mark 自定义代码
@@ -109,7 +109,7 @@
         if (shouldLoadImage) {
             NSLog(@"我这时加载的图片是%ld",indexPath.row);
             
-            [cell.imageView sd_setImageWithURL:targetURL placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            [cell.imageView sd_setImageWithURL:targetURL placeholderImage:[UIImage imageNamed:@"public_empty_loading"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                 if (!error && [imageURL isEqual:targetURL]) {
                     [UIView animateWithDuration:0.25 animations:^{
                         cell.imageView.alpha = 1.0;
