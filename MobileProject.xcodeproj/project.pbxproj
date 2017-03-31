@@ -919,6 +919,14 @@
 		34FAEFBF1E5AD78000CED341 /* MPCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAEFBD1E5AD78000CED341 /* MPCalendarViewController.m */; };
 		34FAEFC21E5AD83400CED341 /* MPEventCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAEFC11E5AD83400CED341 /* MPEventCalendar.m */; };
 		34FAEFC31E5AD83400CED341 /* MPEventCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAEFC11E5AD83400CED341 /* MPEventCalendar.m */; };
+		34FB62B61E8DFD810036AA3D /* MPDataSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FB62B51E8DFD810036AA3D /* MPDataSourceViewController.m */; };
+		34FB62B71E8DFD810036AA3D /* MPDataSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FB62B51E8DFD810036AA3D /* MPDataSourceViewController.m */; };
+		34FB62BB1E8DFE050036AA3D /* MPArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FB62BA1E8DFE050036AA3D /* MPArrayDataSource.m */; };
+		34FB62BC1E8DFE050036AA3D /* MPArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FB62BA1E8DFE050036AA3D /* MPArrayDataSource.m */; };
+		34FB62BF1E8DFE820036AA3D /* MPPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FB62BE1E8DFE820036AA3D /* MPPhotoCell.m */; };
+		34FB62C01E8DFE820036AA3D /* MPPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FB62BE1E8DFE820036AA3D /* MPPhotoCell.m */; };
+		34FB62C31E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FB62C21E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.m */; };
+		34FB62C41E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FB62C21E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.m */; };
 		34FBEBB21E5D345000F545FC /* MPCodeStandards.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBEBB11E5D345000F545FC /* MPCodeStandards.m */; };
 		34FBEBB31E5D345000F545FC /* MPCodeStandards.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBEBB11E5D345000F545FC /* MPCodeStandards.m */; };
 		34FBEBB71E5D6E0200F545FC /* MPCodeStarndardCoping.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBEBB61E5D6E0200F545FC /* MPCodeStarndardCoping.m */; };
@@ -1858,6 +1866,14 @@
 		34FAEFBD1E5AD78000CED341 /* MPCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCalendarViewController.m; sourceTree = "<group>"; };
 		34FAEFC01E5AD83400CED341 /* MPEventCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEventCalendar.h; sourceTree = "<group>"; };
 		34FAEFC11E5AD83400CED341 /* MPEventCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEventCalendar.m; sourceTree = "<group>"; };
+		34FB62B41E8DFD810036AA3D /* MPDataSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDataSourceViewController.h; sourceTree = "<group>"; };
+		34FB62B51E8DFD810036AA3D /* MPDataSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDataSourceViewController.m; sourceTree = "<group>"; };
+		34FB62B91E8DFE050036AA3D /* MPArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPArrayDataSource.h; sourceTree = "<group>"; };
+		34FB62BA1E8DFE050036AA3D /* MPArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPArrayDataSource.m; sourceTree = "<group>"; };
+		34FB62BD1E8DFE820036AA3D /* MPPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPPhotoCell.h; sourceTree = "<group>"; };
+		34FB62BE1E8DFE820036AA3D /* MPPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPPhotoCell.m; sourceTree = "<group>"; };
+		34FB62C11E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPPhotoCell+ConfigureForPhoto.h"; sourceTree = "<group>"; };
+		34FB62C21E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPPhotoCell+ConfigureForPhoto.m"; sourceTree = "<group>"; };
 		34FBEBB01E5D345000F545FC /* MPCodeStandards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPCodeStandards.h; path = ../MPCodeStandards.h; sourceTree = "<group>"; };
 		34FBEBB11E5D345000F545FC /* MPCodeStandards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPCodeStandards.m; path = ../MPCodeStandards.m; sourceTree = "<group>"; };
 		34FBEBB51E5D6E0200F545FC /* MPCodeStarndardCoping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCodeStarndardCoping.h; sourceTree = "<group>"; };
@@ -2323,6 +2339,7 @@
 		341DF0201E553E850007907A /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				34FB62B81E8DFDCC0036AA3D /* DataSource */,
 				340F88D71E82071800C20F37 /* BlockLoop */,
 				340C852D1E723AFE00B59C2E /* UseProtocol */,
 				3404A48A1E5EB016002673F9 /* DesignPattern */,
@@ -2354,6 +2371,8 @@
 				34B8DAFA1E82A29B009649A5 /* MPChildBlockViewController.m */,
 				34B8DAFD1E82A5ED009649A5 /* MPModelBlockViewController.h */,
 				34B8DAFE1E82A5ED009649A5 /* MPModelBlockViewController.m */,
+				34FB62B41E8DFD810036AA3D /* MPDataSourceViewController.h */,
+				34FB62B51E8DFD810036AA3D /* MPDataSourceViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2372,6 +2391,10 @@
 				341DF04C1E5543A70007907A /* Placeholder */,
 				340F88DC1E8208AD00C20F37 /* MPBlockView.h */,
 				340F88DD1E8208AD00C20F37 /* MPBlockView.m */,
+				34FB62BD1E8DFE820036AA3D /* MPPhotoCell.h */,
+				34FB62BE1E8DFE820036AA3D /* MPPhotoCell.m */,
+				34FB62C11E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.h */,
+				34FB62C21E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4394,6 +4417,15 @@
 			path = NavigationController;
 			sourceTree = "<group>";
 		};
+		34FB62B81E8DFDCC0036AA3D /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				34FB62B91E8DFE050036AA3D /* MPArrayDataSource.h */,
+				34FB62BA1E8DFE050036AA3D /* MPArrayDataSource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		34FBEBB41E5D6D8B00F545FC /* CodeStandards */ = {
 			isa = PBXGroup;
 			children = (
@@ -4821,6 +4853,7 @@
 				34E08A831C3BFB90005C6CA3 /* UITextView+PinchZoom.m in Sources */,
 				34E08A841C3BFB90005C6CA3 /* UIViewController+DDPopUpViewController.m in Sources */,
 				340AED361DF45A59007B5CEE /* MPKeyboardViewController.m in Sources */,
+				34FB62C01E8DFE820036AA3D /* MPPhotoCell.m in Sources */,
 				34F4972B1E837B1200663245 /* MPFDWithNoBarViewController.m in Sources */,
 				34E08A851C3BFB90005C6CA3 /* NSDate+CupertinoYankee.m in Sources */,
 				34E08A871C3BFB90005C6CA3 /* UIView+Visuals.m in Sources */,
@@ -5008,6 +5041,7 @@
 				340C853A1E723E8C00B59C2E /* MPUseProtocolOptional.m in Sources */,
 				340D87A61D3F7079003D9C88 /* MPImageCollectionCell.m in Sources */,
 				34300A491E308391000C1FA5 /* MPNavigationViewController.m in Sources */,
+				34FB62C41E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.m in Sources */,
 				34E08B181C3BFB90005C6CA3 /* UIView+GestureCallback.m in Sources */,
 				34E08B191C3BFB90005C6CA3 /* NSURL+Param.m in Sources */,
 				34683B101D4EE93C0041F8A0 /* MPReduceTimeViewController.m in Sources */,
@@ -5172,6 +5206,7 @@
 				34E08B851C3BFB90005C6CA3 /* UIWebView+Blocks.m in Sources */,
 				340D87961D3F5FD3003D9C88 /* MPImageItemModel.m in Sources */,
 				34F497231E83793D00663245 /* MPFDFullscreenPopDemoViewController.m in Sources */,
+				34FB62B71E8DFD810036AA3D /* MPDataSourceViewController.m in Sources */,
 				34E08B871C3BFB90005C6CA3 /* NSMutableString+Ruby.m in Sources */,
 				34FC67961D5304E60049F144 /* WJYAlertView.m in Sources */,
 				34E08B881C3BFB90005C6CA3 /* UIFont+DynamicFontControl.m in Sources */,
@@ -5186,6 +5221,7 @@
 				341C07E91D421F5600FF905C /* MPImageUploadProgressCell.m in Sources */,
 				34E08B8C1C3BFB90005C6CA3 /* UIButton+Block.m in Sources */,
 				340BCD1C1D0EFF3B0093CC7D /* MPRequstFailedHelper.m in Sources */,
+				34FB62BC1E8DFE050036AA3D /* MPArrayDataSource.m in Sources */,
 				341DF03A1E5541B20007907A /* MPRunTimeTest+MPMehtod.m in Sources */,
 				34013B581D5179620051000F /* MPHideNavigationChildrenViewController.m in Sources */,
 				34E08B8D1C3BFB90005C6CA3 /* NSRunLoop+PerformBlock.m in Sources */,
@@ -5250,6 +5286,7 @@
 				340D87A91D3F70E3003D9C88 /* MPImageUploadCell.m in Sources */,
 				34E894191C3B9A03001327C8 /* UITextField+History.m in Sources */,
 				342A8FA81D3F1D8B000C7B98 /* UINavigationController+StackManager.m in Sources */,
+				34FB62BB1E8DFE050036AA3D /* MPArrayDataSource.m in Sources */,
 				34683B131D4EEA0D0041F8A0 /* MPReduceTimeCell.m in Sources */,
 				34E893E31C3B9A03001327C8 /* UIImage+animatedGIF.m in Sources */,
 				341094021D0E982100A8D63F /* JSPatchViewController.m in Sources */,
@@ -5313,6 +5350,7 @@
 				34E8911C1C3B92AA001327C8 /* MJRefreshAutoGifFooter.m in Sources */,
 				34E891281C3B92AA001327C8 /* UIScrollView+MJRefresh.m in Sources */,
 				340F88DA1E82077400C20F37 /* MPBlockLoopViewController.m in Sources */,
+				34FB62C31E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.m in Sources */,
 				341093F31D0E605800A8D63F /* imageCompressHelper.m in Sources */,
 				34E891181C3B92AA001327C8 /* MJRefreshBackFooter.m in Sources */,
 				34E893D91C3B9A03001327C8 /* UIColor+Random.m in Sources */,
@@ -5384,6 +5422,7 @@
 				34E893701C3B9A03001327C8 /* NSData+Base64.m in Sources */,
 				341DF0591E5546410007907A /* MPThreadViewController.m in Sources */,
 				34E893621C3B9A03001327C8 /* NSFetchRequest+Extensions.m in Sources */,
+				34FB62BF1E8DFE820036AA3D /* MPPhotoCell.m in Sources */,
 				34E893971C3B9A03001327C8 /* NSObject+EasyCopy.m in Sources */,
 				34E894041C3B9A03001327C8 /* UINavigationItem+Lock.m in Sources */,
 				34E894401C3B9A03001327C8 /* UIWebView+Load.m in Sources */,
@@ -5499,6 +5538,7 @@
 				34E893781C3B9A03001327C8 /* NSDate+Formatter.m in Sources */,
 				34E8939B1C3B9A03001327C8 /* NSObject+Reflection.m in Sources */,
 				34E893B31C3B9A03001327C8 /* NSTimer+Blocks.m in Sources */,
+				34FB62B61E8DFD810036AA3D /* MPDataSourceViewController.m in Sources */,
 				34F72FCD1E8C95E9002B0709 /* YTKBaseRequest.m in Sources */,
 				34F72FD21E8C95E9002B0709 /* YTKNetworkAgent.m in Sources */,
 				34E893751C3B9A03001327C8 /* NSData+zlib.m in Sources */,

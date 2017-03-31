@@ -16,6 +16,7 @@
 #import "MPMultithreadViewController.h"
 #import "MPProtocolOptionalViewController.h"
 #import "MPBlockLoopViewController.h"
+#import "MPDataSourceViewController.h"
 
 @interface MPTheoryViewController : BaseViewController<MPCodeStandardsDelegate>
 
