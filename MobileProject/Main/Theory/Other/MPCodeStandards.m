@@ -36,6 +36,7 @@ NSString *const MPErrorDomain=@"MPErrorDomain";
 
 -(instancetype)initWithUserName:(NSString *)userName withError:(NSError **)error
 {
+    *error=nil;
     if (userName.length==0) {
         *error=[NSError errorWithDomain:MPErrorDomain code:MPErrorBadInput userInfo:@{@"errorInfo":@"当前没有输入用户名"}];
     }

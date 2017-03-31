@@ -51,7 +51,7 @@
 - (void)swiz_viewDidAppear:(BOOL)animated
 {
     //可以对控制器名称做过滤 达到过滤哪些是不操作
-    NSString *curClassName=NSStringFromClass([self class]);
+  //  NSString *curClassName=NSStringFromClass([self class]);
 //    if (curClassName.length>0&&([curClassName isEqualToString:@"ZUHomeRecommendViewController"]||[curClassName isEqualToString:@"ZUHomeServiceViewController"]||[curClassName isEqualToString:@"ZUHomeBroadcastViewController"]||[curClassName isEqualToString:@"ZUHomeMineViewController"])) {
 //        [self.rdv_tabBarController setTabBarHidden:NO animated:YES];
 //    }
