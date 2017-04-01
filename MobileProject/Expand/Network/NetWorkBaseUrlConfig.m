@@ -42,7 +42,7 @@ static NSString *const UPDATEVERSION_SERVERCENTER_key=@"UPDATEVERSION_SERVERCENT
 {
     if (self = [super init]) {
         //测试环境
-        self.develpoerDictionary=@{ACCOUNT_SERVERCENTER_Key:@"http://private-eda65-blossom.apiary-mock.com/",PICTURE_SERVERCENTER_key:@"http://192.168.254.188:8095/image-service/",BUSINESSLOGIC_SERVERCENTER_key:@"业务逻辑前缀",UPDATEVERSION_SERVERCENTER_key:@"版本升级前缀"};
+        self.develpoerDictionary=@{ACCOUNT_SERVERCENTER_Key:@"http://private-eda65-blossom.apiary-mock.com/",PICTURE_SERVERCENTER_key:@"http://198:85/image-service/",BUSINESSLOGIC_SERVERCENTER_key:@"业务逻辑前缀",UPDATEVERSION_SERVERCENTER_key:@"版本升级前缀"};
         //产品环境
         self.productDictionary=@{ACCOUNT_SERVERCENTER_Key:@"http://private-eda66-mock.com/",PICTURE_SERVERCENTER_key:@"http://baidues.com/",BUSINESSLOGIC_SERVERCENTER_key:@"业务逻辑前缀",UPDATEVERSION_SERVERCENTER_key:@"版本升级前缀"};
         
