@@ -59,12 +59,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kiwi.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>LBXScan.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>LKDBHelper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LazyScroll.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -105,6 +115,11 @@
 			<false/>
 		</dict>
 		<key>Pods-MobileProjectDefault-MobileProject_Local.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MobileProjectTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -157,17 +172,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0578067CA5314399B3BE997D802EFB7F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>0659B71386995AC7EE2A305F0A360EB1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>0CBA00E44B2997AE686790C4A86C097B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -192,12 +197,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>251856C3CEE28BC75A001FFA69A161A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2596169E954907C07413FA0DF674480A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>351172CFD46CF0BD397CE6D35D8FB033</key>
+		<key>31C0B597AD8FA08B1ECD684C4255D432</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -212,17 +222,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5AD9FAE53656CCA86A7168BC75D37E55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>695CC512BB920DB2DF2D1ABDF434F3BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>83AA4FFCE4A8B6E96BCF1DC1B105B6C3</key>
+		<key>6B9A12AECF98F3656CE50290643E5CC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>987EF208FB46DA3E97B53ED2C8FD960F</key>
+		<key>8B9D701345946478AA18CD78ADCC05B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -242,6 +257,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A70C23D379E6176CA06335FC2FB336EB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AC139CEF10BCCB200972B4617F3CA14E</key>
 		<dict>
 			<key>primary</key>
@@ -257,11 +277,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA0DC429C0705E6D5191DECC4E779A4A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>BDB45DD6D41488A346190E17DEF63592</key>
 		<dict>
 			<key>primary</key>
@@ -272,7 +287,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C8384F58A42FD4B2D7B7BBDE9C87E06F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CAA9D02F4DB58A28AFF73C808911FF9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D31F2E1140FD881D5FEB76F35D954576</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E5BF153222920C8BD66CA564F76AB8C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -287,7 +317,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F833627A197BD9E014EB2D8EAE575FA6</key>
+		<key>F5954A7AC2C86CC0827E941E29AE59A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

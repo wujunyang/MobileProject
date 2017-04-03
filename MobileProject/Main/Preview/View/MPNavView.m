@@ -24,7 +24,7 @@
     if (self) {
         
         self.headBackView=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
-        self.headBackView.backgroundColor=[UIColor whiteColor];
+        self.headBackView.backgroundColor=[UIColor grayColor];
         
         self.headBackView.alpha = 0;
         

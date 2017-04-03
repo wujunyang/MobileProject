@@ -36,6 +36,7 @@
 #import "MPDragTableViewController.h"
 #import "MPCalendarViewController.h"
 #import "MPFDFullscreenPopDemoViewController.h"
+#import "MPLazyScrollViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 

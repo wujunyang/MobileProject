@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C6DE0AD0AAE9E46CD23548B /* libPods-MobileProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8AD550FC0CDC01CC9FDB28 /* libPods-MobileProjectTests.a */; };
 		340050DE1E5C14AE00044EA1 /* UIApplication+Permissions.m in Sources */ = {isa = PBXBuildFile; fileRef = 340050DD1E5C14AE00044EA1 /* UIApplication+Permissions.m */; };
 		340067401E499C7000DAF86E /* MPAllModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400673F1E499C7000DAF86E /* MPAllModel.m */; };
 		340067411E499C7000DAF86E /* MPAllModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400673F1E499C7000DAF86E /* MPAllModel.m */; };
@@ -915,6 +916,14 @@
 		34FA475F1D50961600D5B729 /* MPChildrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA475D1D50961600D5B729 /* MPChildrenViewController.m */; };
 		34FA47621D50A61200D5B729 /* MPBlankPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */; };
 		34FA47631D50A61200D5B729 /* MPBlankPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */; };
+		34FA850A1E909B9000A61464 /* MPLazyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA85091E909B9000A61464 /* MPLazyScrollViewController.m */; };
+		34FA850B1E909B9000A61464 /* MPLazyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA85091E909B9000A61464 /* MPLazyScrollViewController.m */; };
+		34FA851B1E90C45E00A61464 /* MPLazyTitleViewCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA851A1E90C45E00A61464 /* MPLazyTitleViewCustomView.m */; };
+		34FA851C1E90C45E00A61464 /* MPLazyTitleViewCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA851A1E90C45E00A61464 /* MPLazyTitleViewCustomView.m */; };
+		34FA851F1E90C47C00A61464 /* MPLazyImageViewCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA851E1E90C47C00A61464 /* MPLazyImageViewCustomView.m */; };
+		34FA85201E90C47C00A61464 /* MPLazyImageViewCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA851E1E90C47C00A61464 /* MPLazyImageViewCustomView.m */; };
+		34FA85231E920A9800A61464 /* MPLazyLableViewCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA85221E920A9800A61464 /* MPLazyLableViewCustomView.m */; };
+		34FA85241E920A9800A61464 /* MPLazyLableViewCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA85221E920A9800A61464 /* MPLazyLableViewCustomView.m */; };
 		34FAEFBE1E5AD78000CED341 /* MPCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAEFBD1E5AD78000CED341 /* MPCalendarViewController.m */; };
 		34FAEFBF1E5AD78000CED341 /* MPCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAEFBD1E5AD78000CED341 /* MPCalendarViewController.m */; };
 		34FAEFC21E5AD83400CED341 /* MPEventCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAEFC11E5AD83400CED341 /* MPEventCalendar.m */; };
@@ -1862,6 +1871,14 @@
 		34FA475D1D50961600D5B729 /* MPChildrenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPChildrenViewController.m; sourceTree = "<group>"; };
 		34FA47601D50A61200D5B729 /* MPBlankPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBlankPageViewController.h; sourceTree = "<group>"; };
 		34FA47611D50A61200D5B729 /* MPBlankPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBlankPageViewController.m; sourceTree = "<group>"; };
+		34FA85081E909B9000A61464 /* MPLazyScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLazyScrollViewController.h; sourceTree = "<group>"; };
+		34FA85091E909B9000A61464 /* MPLazyScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLazyScrollViewController.m; sourceTree = "<group>"; };
+		34FA85191E90C45E00A61464 /* MPLazyTitleViewCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLazyTitleViewCustomView.h; sourceTree = "<group>"; };
+		34FA851A1E90C45E00A61464 /* MPLazyTitleViewCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLazyTitleViewCustomView.m; sourceTree = "<group>"; };
+		34FA851D1E90C47C00A61464 /* MPLazyImageViewCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLazyImageViewCustomView.h; sourceTree = "<group>"; };
+		34FA851E1E90C47C00A61464 /* MPLazyImageViewCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLazyImageViewCustomView.m; sourceTree = "<group>"; };
+		34FA85211E920A9800A61464 /* MPLazyLableViewCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLazyLableViewCustomView.h; sourceTree = "<group>"; };
+		34FA85221E920A9800A61464 /* MPLazyLableViewCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLazyLableViewCustomView.m; sourceTree = "<group>"; };
 		34FAEFBC1E5AD78000CED341 /* MPCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCalendarViewController.h; sourceTree = "<group>"; };
 		34FAEFBD1E5AD78000CED341 /* MPCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCalendarViewController.m; sourceTree = "<group>"; };
 		34FAEFC01E5AD83400CED341 /* MPEventCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEventCalendar.h; sourceTree = "<group>"; };
@@ -1901,10 +1918,13 @@
 		34FFF4ED1E4BF8C200875ED9 /* MPTableSDWebImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTableSDWebImageViewController.h; sourceTree = "<group>"; };
 		34FFF4EE1E4BF8C200875ED9 /* MPTableSDWebImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTableSDWebImageViewController.m; sourceTree = "<group>"; };
 		36EA9020A810C457491FAE4B /* Pods-MobileProjectDefault-MobileProject_Local.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProjectDefault-MobileProject_Local.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProjectDefault-MobileProject_Local/Pods-MobileProjectDefault-MobileProject_Local.release.xcconfig"; sourceTree = "<group>"; };
+		6E687BB00B6BDBBC3B9F2BC9 /* Pods-MobileProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProjectTests/Pods-MobileProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A65811902A9BF167920E92E5 /* Pods-MobileProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProjectTests/Pods-MobileProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		BBF76F1CE38BF37F8EA429C8 /* Pods-MobileProjectDefault-MobileProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProjectDefault-MobileProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProjectDefault-MobileProject/Pods-MobileProjectDefault-MobileProject.release.xcconfig"; sourceTree = "<group>"; };
 		DC5571108C6CF02B1E863B5F /* Pods-MobileProjectDefault-MobileProject_Local.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProjectDefault-MobileProject_Local.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProjectDefault-MobileProject_Local/Pods-MobileProjectDefault-MobileProject_Local.debug.xcconfig"; sourceTree = "<group>"; };
 		E55772F89C6713171843531A /* Pods-MobileProjectDefault-MobileProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProjectDefault-MobileProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProjectDefault-MobileProject/Pods-MobileProjectDefault-MobileProject.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0AE21C88E51BA3C9370B2E /* libPods-MobileProjectDefault-MobileProject_Local.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileProjectDefault-MobileProject_Local.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8AD550FC0CDC01CC9FDB28 /* libPods-MobileProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0BF40D1D6F33E2001E6F19 /* FaceRecognitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceRecognitionController.h; sourceTree = "<group>"; };
 		FD0BF40E1D6F33E2001E6F19 /* FaceRecognitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceRecognitionController.m; sourceTree = "<group>"; };
 		FD0BF40F1D6F33E2001E6F19 /* FaceStreamDetectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceStreamDetectorViewController.h; sourceTree = "<group>"; };
@@ -1946,6 +1966,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C6DE0AD0AAE9E46CD23548B /* libPods-MobileProjectTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1970,6 +1991,7 @@
 				34E894471C3B9A85001327C8 /* QuartzCore.framework */,
 				17EE4EC42E510E1E13986DB8 /* libPods-MobileProjectDefault-MobileProject.a */,
 				EF0AE21C88E51BA3C9370B2E /* libPods-MobileProjectDefault-MobileProject_Local.a */,
+				FA8AD550FC0CDC01CC9FDB28 /* libPods-MobileProjectTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4282,6 +4304,8 @@
 				340CCCAE1E519F310037BE4D /* MPDragTableViewController.m */,
 				34FAEFBC1E5AD78000CED341 /* MPCalendarViewController.h */,
 				34FAEFBD1E5AD78000CED341 /* MPCalendarViewController.m */,
+				34FA85081E909B9000A61464 /* MPLazyScrollViewController.h */,
+				34FA85091E909B9000A61464 /* MPLazyScrollViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4308,6 +4332,7 @@
 		34EC961D1C58A53700985444 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				34FA85101E90C3DC00A61464 /* LazyView */,
 				3403847E1D47567900E4A496 /* MPAdaptationCell.h */,
 				3403847F1D47567900E4A496 /* MPAdaptationCell.m */,
 				34683B111D4EEA0D0041F8A0 /* MPReduceTimeCell.h */,
@@ -4417,6 +4442,19 @@
 			path = NavigationController;
 			sourceTree = "<group>";
 		};
+		34FA85101E90C3DC00A61464 /* LazyView */ = {
+			isa = PBXGroup;
+			children = (
+				34FA85191E90C45E00A61464 /* MPLazyTitleViewCustomView.h */,
+				34FA851A1E90C45E00A61464 /* MPLazyTitleViewCustomView.m */,
+				34FA851D1E90C47C00A61464 /* MPLazyImageViewCustomView.h */,
+				34FA851E1E90C47C00A61464 /* MPLazyImageViewCustomView.m */,
+				34FA85211E920A9800A61464 /* MPLazyLableViewCustomView.h */,
+				34FA85221E920A9800A61464 /* MPLazyLableViewCustomView.m */,
+			);
+			path = LazyView;
+			sourceTree = "<group>";
+		};
 		34FB62B81E8DFDCC0036AA3D /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -4456,6 +4494,8 @@
 				BBF76F1CE38BF37F8EA429C8 /* Pods-MobileProjectDefault-MobileProject.release.xcconfig */,
 				DC5571108C6CF02B1E863B5F /* Pods-MobileProjectDefault-MobileProject_Local.debug.xcconfig */,
 				36EA9020A810C457491FAE4B /* Pods-MobileProjectDefault-MobileProject_Local.release.xcconfig */,
+				6E687BB00B6BDBBC3B9F2BC9 /* Pods-MobileProjectTests.debug.xcconfig */,
+				A65811902A9BF167920E92E5 /* Pods-MobileProjectTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -4507,9 +4547,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34E890B21C3B89B3001327C8 /* Build configuration list for PBXNativeTarget "MobileProjectTests" */;
 			buildPhases = (
+				DD930E494A6AAA9DFA8D51FD /* [CP] Check Pods Manifest.lock */,
 				34E890971C3B89B3001327C8 /* Sources */,
 				34E890981C3B89B3001327C8 /* Frameworks */,
 				34E890991C3B89B3001327C8 /* Resources */,
+				CF529033B35A8A732AC0D577 /* [CP] Embed Pods Frameworks */,
+				3C957CED43A1D501AD184EDA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -4724,6 +4767,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		3C957CED43A1D501AD184EDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileProjectTests/Pods-MobileProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		55BCC76C791DACB0E95ED028 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -4782,6 +4840,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileProjectDefault-MobileProject_Local/Pods-MobileProjectDefault-MobileProject_Local-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF529033B35A8A732AC0D577 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileProjectTests/Pods-MobileProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD930E494A6AAA9DFA8D51FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FD74EFBC4875F1E8F8AAF1D3 /* [CP] Copy Pods Resources */ = {
@@ -4844,6 +4932,7 @@
 				3404A48F1E5EB0BF002673F9 /* MPEmployee.m in Sources */,
 				34E08A7B1C3BFB90005C6CA3 /* UITextField+History.m in Sources */,
 				34E08A7C1C3BFB90005C6CA3 /* UIImage+animatedGIF.m in Sources */,
+				34FA851C1E90C45E00A61464 /* MPLazyTitleViewCustomView.m in Sources */,
 				34E9D8501C59DD2800E98C2A /* BaiDuCoordinateModel.m in Sources */,
 				34E08A7D1C3BFB90005C6CA3 /* NSString+Trims.m in Sources */,
 				34E08A7E1C3BFB90005C6CA3 /* UIResponder+FirstResponder.m in Sources */,
@@ -4889,6 +4978,7 @@
 				341DF05E1E55464E0007907A /* MPGCDViewController.m in Sources */,
 				3404A4971E5EB317002673F9 /* MPEmployeeDesigner.m in Sources */,
 				3400E4B51D35E15A0056B673 /* JRSwizzle.m in Sources */,
+				34FA85241E920A9800A61464 /* MPLazyLableViewCustomView.m in Sources */,
 				34E08AA01C3BFB90005C6CA3 /* NSObject+AppInfo.m in Sources */,
 				34E08AA11C3BFB90005C6CA3 /* UIBezierPath+LxThroughPointsBezier.m in Sources */,
 				34E08AA21C3BFB90005C6CA3 /* UIApplication+ApplicationSize.m in Sources */,
@@ -4957,6 +5047,7 @@
 				341DF0551E5545490007907A /* MPMultithreadViewController.m in Sources */,
 				34E08AD11C3BFB90005C6CA3 /* NSManagedObject+Extensions.m in Sources */,
 				34E08AD21C3BFB90005C6CA3 /* UIViewController+TopBarMessage.m in Sources */,
+				34FA850B1E909B9000A61464 /* MPLazyScrollViewController.m in Sources */,
 				34E08AD31C3BFB90005C6CA3 /* NSObject+Blocks.m in Sources */,
 				34E08AD41C3BFB90005C6CA3 /* UISearchBar+Blocks.m in Sources */,
 				342A8FA71D3F1D8B000C7B98 /* UINavigationController+KeyboardFix.m in Sources */,
@@ -5185,6 +5276,7 @@
 				34EC96251C58A61F00985444 /* UMengSocialLoginViewController.m in Sources */,
 				341DF06A1E558F650007907A /* MPOperation.m in Sources */,
 				34F72FD81E8C95FB002B0709 /* YTKBatchRequestAgent.m in Sources */,
+				34FA85201E90C47C00A61464 /* MPLazyImageViewCustomView.m in Sources */,
 				340C853E1E724BCF00B59C2E /* MPProtocolOptionalViewController.m in Sources */,
 				340C85361E723C1B00B59C2E /* MPMSSqlDataBase.m in Sources */,
 				34E08B7A1C3BFB90005C6CA3 /* CAAnimation+EasingEquations.m in Sources */,
@@ -5411,6 +5503,7 @@
 				340CCCAF1E519F310037BE4D /* MPDragTableViewController.m in Sources */,
 				34E893E11C3B9A03001327C8 /* UIFont-TTF.m in Sources */,
 				34799A5F1CD34C5A003518C5 /* FCUUID.m in Sources */,
+				34FA851F1E90C47C00A61464 /* MPLazyImageViewCustomView.m in Sources */,
 				3404A48E1E5EB0BF002673F9 /* MPEmployee.m in Sources */,
 				34E8911F1C3B92AA001327C8 /* MJRefreshBackGifFooter.m in Sources */,
 				34E8941E1C3B9A03001327C8 /* UITextView+Select.m in Sources */,
@@ -5424,6 +5517,7 @@
 				34E893621C3B9A03001327C8 /* NSFetchRequest+Extensions.m in Sources */,
 				34FB62BF1E8DFE820036AA3D /* MPPhotoCell.m in Sources */,
 				34E893971C3B9A03001327C8 /* NSObject+EasyCopy.m in Sources */,
+				34FA850A1E909B9000A61464 /* MPLazyScrollViewController.m in Sources */,
 				34E894041C3B9A03001327C8 /* UINavigationItem+Lock.m in Sources */,
 				34E894401C3B9A03001327C8 /* UIWebView+Load.m in Sources */,
 				34FBEBB21E5D345000F545FC /* MPCodeStandards.m in Sources */,
@@ -5500,6 +5594,7 @@
 				34E893F71C3B9A03001327C8 /* UIImageView+Reflect.m in Sources */,
 				34E894281C3B9A03001327C8 /* UIView+GestureCallback.m in Sources */,
 				34E893B41C3B9A03001327C8 /* NSURL+Param.m in Sources */,
+				34FA851B1E90C45E00A61464 /* MPLazyTitleViewCustomView.m in Sources */,
 				342A8FA41D3F1D8B000C7B98 /* UINavigationController+JZExtension.m in Sources */,
 				3411EF111D6FEC1A00A6C7F3 /* CaptureManager.m in Sources */,
 				34EC806C1C472BF100C7E40A /* HomeViewController.m in Sources */,
@@ -5508,6 +5603,7 @@
 				34E8936C1C3B9A03001327C8 /* NSArray+Block.m in Sources */,
 				34E8937C1C3B9A03001327C8 /* NSDate+Utilities.m in Sources */,
 				34E8949A1C3B9FC1001327C8 /* QBAssetsCollectionViewCell.m in Sources */,
+				34FA85231E920A9800A61464 /* MPLazyLableViewCustomView.m in Sources */,
 				34E893A51C3B9A03001327C8 /* NSString+Hash.m in Sources */,
 				34E894141C3B9A03001327C8 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				34F497221E83793D00663245 /* MPFDFullscreenPopDemoViewController.m in Sources */,
@@ -5944,6 +6040,7 @@
 		};
 		34E890B31C3B89B3001327C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E687BB00B6BDBBC3B9F2BC9 /* Pods-MobileProjectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MobileProjectTests/Info.plist;
@@ -5956,6 +6053,7 @@
 		};
 		34E890B41C3B89B3001327C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A65811902A9BF167920E92E5 /* Pods-MobileProjectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MobileProjectTests/Info.plist;
