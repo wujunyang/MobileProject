@@ -94,6 +94,10 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self setupLoginViewController];
     
+    //清空未读标识
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    
     //引导页面加载
     [self setupIntroductoryPage];
     

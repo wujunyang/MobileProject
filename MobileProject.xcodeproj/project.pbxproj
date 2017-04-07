@@ -59,6 +59,8 @@
 		3404A49B1E5EB32E002673F9 /* MPEmployeeFinance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404A4991E5EB32E002673F9 /* MPEmployeeFinance.m */; };
 		3404B5E01E1CE20000FB6C2A /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404B5DF1E1CE20000FB6C2A /* UIViewController+Swizzle.m */; };
 		3404B5E11E1CE20500FB6C2A /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404B5DF1E1CE20000FB6C2A /* UIViewController+Swizzle.m */; };
+		3404DF591E973CE9002B9F94 /* MPUIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404DF581E973CE9002B9F94 /* MPUIBezierPathViewController.m */; };
+		3404DF5A1E973CE9002B9F94 /* MPUIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3404DF581E973CE9002B9F94 /* MPUIBezierPathViewController.m */; };
 		340674201E2F6207008EF20F /* UIView+Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3406741F1E2F6207008EF20F /* UIView+Empty.m */; };
 		340674211E2F6207008EF20F /* UIView+Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3406741F1E2F6207008EF20F /* UIView+Empty.m */; };
 		340757071D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */; };
@@ -167,6 +169,8 @@
 		34153A541D76D5DE00D94F4A /* UIView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 34153A521D76D5DE00D94F4A /* UIView+RoundedCorner.m */; };
 		34153A551D76D5E800D94F4A /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 34153A501D76D5DE00D94F4A /* UIImage+RoundedCorner.m */; };
 		34153A561D76D5EA00D94F4A /* UIView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 34153A521D76D5DE00D94F4A /* UIView+RoundedCorner.m */; };
+		3416E1911E94C01D00F3A678 /* MPCADisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3416E1901E94C01D00F3A678 /* MPCADisplayLinkViewController.m */; };
+		3416E1921E94C01D00F3A678 /* MPCADisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3416E1901E94C01D00F3A678 /* MPCADisplayLinkViewController.m */; };
 		341C07D51D41A27E00FF905C /* BaseRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341C07D41D41A27E00FF905C /* BaseRequestService.m */; };
 		341C07D61D41A27E00FF905C /* BaseRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341C07D41D41A27E00FF905C /* BaseRequestService.m */; };
 		341C07DA1D41C6F200FF905C /* MPFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 341C07D91D41C6F200FF905C /* MPFileManager.m */; };
@@ -1040,6 +1044,8 @@
 		3404A4991E5EB32E002673F9 /* MPEmployeeFinance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEmployeeFinance.m; sourceTree = "<group>"; };
 		3404B5DE1E1CE20000FB6C2A /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
 		3404B5DF1E1CE20000FB6C2A /* UIViewController+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzle.m"; sourceTree = "<group>"; };
+		3404DF571E973CE9002B9F94 /* MPUIBezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUIBezierPathViewController.h; sourceTree = "<group>"; };
+		3404DF581E973CE9002B9F94 /* MPUIBezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPUIBezierPathViewController.m; sourceTree = "<group>"; };
 		3406741E1E2F6207008EF20F /* UIView+Empty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Empty.h"; sourceTree = "<group>"; };
 		3406741F1E2F6207008EF20F /* UIView+Empty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Empty.m"; sourceTree = "<group>"; };
 		340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-UmengShareAppDelegate.m"; sourceTree = "<group>"; };
@@ -1134,6 +1140,8 @@
 		34153A501D76D5DE00D94F4A /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		34153A511D76D5DE00D94F4A /* UIView+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundedCorner.h"; sourceTree = "<group>"; };
 		34153A521D76D5DE00D94F4A /* UIView+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundedCorner.m"; sourceTree = "<group>"; };
+		3416E18F1E94C01D00F3A678 /* MPCADisplayLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCADisplayLinkViewController.h; sourceTree = "<group>"; };
+		3416E1901E94C01D00F3A678 /* MPCADisplayLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCADisplayLinkViewController.m; sourceTree = "<group>"; };
 		341C07D31D41A27E00FF905C /* BaseRequestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequestService.h; sourceTree = "<group>"; };
 		341C07D41D41A27E00FF905C /* BaseRequestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequestService.m; sourceTree = "<group>"; };
 		341C07D81D41C6F200FF905C /* MPFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFileManager.h; sourceTree = "<group>"; };
@@ -2395,6 +2403,10 @@
 				34B8DAFE1E82A5ED009649A5 /* MPModelBlockViewController.m */,
 				34FB62B41E8DFD810036AA3D /* MPDataSourceViewController.h */,
 				34FB62B51E8DFD810036AA3D /* MPDataSourceViewController.m */,
+				3416E18F1E94C01D00F3A678 /* MPCADisplayLinkViewController.h */,
+				3416E1901E94C01D00F3A678 /* MPCADisplayLinkViewController.m */,
+				3404DF571E973CE9002B9F94 /* MPUIBezierPathViewController.h */,
+				3404DF581E973CE9002B9F94 /* MPUIBezierPathViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4604,6 +4616,7 @@
 					};
 					34E890811C3B89B2001327C8 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 49DZ72G7R4;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -4919,6 +4932,7 @@
 				34E08A701C3BFB90005C6CA3 /* MKMapView+ZoomLevel.m in Sources */,
 				34EC80731C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */,
 				34E08A721C3BFB90005C6CA3 /* UIDevice+PasscodeStatus.m in Sources */,
+				3416E1921E94C01D00F3A678 /* MPCADisplayLinkViewController.m in Sources */,
 				34E08A731C3BFB90005C6CA3 /* UIScrollView+MJExtension.m in Sources */,
 				34E08A741C3BFB90005C6CA3 /* UIApplication+NetworkActivityIndicator.m in Sources */,
 				34E08A761C3BFB90005C6CA3 /* NSTimer+Addition.m in Sources */,
@@ -5282,6 +5296,7 @@
 				34E08B7A1C3BFB90005C6CA3 /* CAAnimation+EasingEquations.m in Sources */,
 				34F49B2F1D261AE600FA003C /* MPBaseNavigationController.m in Sources */,
 				34E08B7B1C3BFB90005C6CA3 /* NSDictionary+SafeAccess.m in Sources */,
+				3404DF5A1E973CE9002B9F94 /* MPUIBezierPathViewController.m in Sources */,
 				34E08B7C1C3BFB90005C6CA3 /* UIView+BlockGesture.m in Sources */,
 				34E08B7D1C3BFB90005C6CA3 /* QBAssetsCollectionCheckmarkView.m in Sources */,
 				34E08B7E1C3BFB90005C6CA3 /* main.m in Sources */,
@@ -5466,6 +5481,7 @@
 				34F213061C48DB97003AC13D /* MPUmengHelper.m in Sources */,
 				34E8940C1C3B9A03001327C8 /* UIScrollView+APParallaxHeader.m in Sources */,
 				34E893A81C3B9A03001327C8 /* NSString+Pinyin.m in Sources */,
+				3404DF591E973CE9002B9F94 /* MPUIBezierPathViewController.m in Sources */,
 				34E893BC1C3B9A03001327C8 /* MKMapView+MoveLogo.m in Sources */,
 				34E893AF1C3B9A03001327C8 /* NSString+UrlEncode.m in Sources */,
 				3411EF121D6FEC1A00A6C7F3 /* CalculatorTools.m in Sources */,
@@ -5622,6 +5638,7 @@
 				34E893A91C3B9A03001327C8 /* NSString+RegexCategory.m in Sources */,
 				34E8943E1C3B9A03001327C8 /* UIWebView+Canvas.m in Sources */,
 				34E894D31C3BC153001327C8 /* LogInViewController.m in Sources */,
+				3416E1911E94C01D00F3A678 /* MPCADisplayLinkViewController.m in Sources */,
 				34E8949D1C3B9FC1001327C8 /* QBImagePickerController.m in Sources */,
 				34E894991C3B9FC1001327C8 /* QBAssetsCollectionVideoIndicatorView.m in Sources */,
 				34E893BE1C3B9A03001327C8 /* CAAnimation+Blocks.m in Sources */,
@@ -5983,8 +6000,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = MobileProject/MobileProject.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 49DZ72G7R4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6002,7 +6019,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.MobileProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "760c276a-ffd4-48d6-932c-e00dd4be8c47";
+				PROVISIONING_PROFILE_SPECIFIER = MobileProject;
 			};
 			name = Debug;
 		};
@@ -6014,8 +6032,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = MobileProject/MobileProject.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 49DZ72G7R4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6034,7 +6052,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.MobileProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "760c276a-ffd4-48d6-932c-e00dd4be8c47";
+				PROVISIONING_PROFILE_SPECIFIER = MobileProject;
 			};
 			name = Release;
 		};

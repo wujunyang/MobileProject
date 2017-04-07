@@ -26,7 +26,7 @@
     self.navigationItem.title=@"基础知识点";
     
     if (!self.dataArray) {
-        self.dataArray=@[@"viewController生命周期",@"运行时RunTime知识运用",@"多线程知识运用",@"Protocol实现类",@"Block内存释放知识点",@"TableViewDataSource提取"];
+        self.dataArray=@[@"viewController生命周期",@"运行时RunTime知识运用",@"多线程知识运用",@"Protocol实现类",@"Block内存释放知识点",@"TableViewDataSource提取",@"CADisplayLink知识运用",@"CAShapeLayer与UIBezierPath知识运用"];
     }
     
     //初始化表格
@@ -121,6 +121,18 @@
         case 5:
         {
             MPDataSourceViewController *vc=[[MPDataSourceViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 6:
+        {
+            MPCADisplayLinkViewController *vc=[[MPCADisplayLinkViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 7:
+        {
+            MPUIBezierPathViewController *vc=[[MPUIBezierPathViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

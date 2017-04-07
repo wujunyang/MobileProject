@@ -17,6 +17,8 @@
 #import "MPProtocolOptionalViewController.h"
 #import "MPBlockLoopViewController.h"
 #import "MPDataSourceViewController.h"
+#import "MPCADisplayLinkViewController.h"
+#import "MPUIBezierPathViewController.h"
 
 @interface MPTheoryViewController : BaseViewController<MPCodeStandardsDelegate>
 
