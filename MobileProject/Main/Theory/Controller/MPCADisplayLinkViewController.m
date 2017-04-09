@@ -10,6 +10,12 @@
 
 @interface MPCADisplayLinkViewController ()
 @property(nonatomic)CADisplayLink *myLink;
+
+//实例属性
+@property(nonatomic)CAShapeLayer *animationLayer;
+@property(nonatomic)CGFloat startAngle;
+@property(nonatomic)CGFloat endAngle;
+@property(nonatomic)CGFloat progress;
 @end
 
 
@@ -41,8 +47,10 @@
     self.view.backgroundColor=[UIColor whiteColor];
     
     MPWeakSelf(self);
-    self.myLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(tick:)];
+    self.myLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLinkAction)];
     [self.myLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+    
+    [self buildUI];
     
     //操作link的运行跟停止
     [self.view addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
@@ -68,12 +76,61 @@
     [super viewWillDisappear:animated];
 }
 
-- (void)tick:(CADisplayLink *)link {
+//- (void)tick:(CADisplayLink *)link {
+//    
+//    //可以在这边进行一些操作 比如YYFPSLabel在这查看 滚动的丢帧情况  还有如 UIBezierPath实现果冻效果 用它来时时反映出当前被拉动点的位置坐标
+//    //iOS设备的刷新频率事60HZ也就是每秒60次。那么每一次刷新的时间就是1/60秒 大概16.7毫秒。当我们的frameInterval值为1的时候我们需要保证的是 CADisplayLink调用的｀target｀的函数计算时间不应该大于 16.7否则就会出现严重的丢帧现象
+//    NSLog(@"当前的: %f",link.duration);
+//}
+
+
+
+-(void)buildUI{
+    _animationLayer = [CAShapeLayer layer];
+    _animationLayer.bounds = CGRectMake(0, 0, 60, 60);
+    _animationLayer.position = CGPointMake(Main_Screen_Width/2.0f, Main_Screen_Height/2.0);
+    _animationLayer.fillColor = [UIColor clearColor].CGColor;
+    _animationLayer.strokeColor = [UIColor colorWithRed:78/255.0f green:158/255.0f blue:216/255.0f alpha:1].CGColor;
+    _animationLayer.lineWidth = 5;
+    _animationLayer.lineCap = kCALineCapRound;
+    [self.view.layer addSublayer:_animationLayer];
     
-    //可以在这边进行一些操作 比如YYFPSLabel在这查看 滚动的丢帧情况  还有如 UIBezierPath实现果冻效果 用它来时时反映出当前被拉动点的位置坐标
-    //iOS设备的刷新频率事60HZ也就是每秒60次。那么每一次刷新的时间就是1/60秒 大概16.7毫秒。当我们的frameInterval值为1的时候我们需要保证的是 CADisplayLink调用的｀target｀的函数计算时间不应该大于 16.7否则就会出现严重的丢帧现象
-    NSLog(@"当前的: %f",link.duration);
 }
+
+-(void)displayLinkAction{
+    //可以在这边进行一些操作 比如YYFPSLabel在这查看 滚动的丢帧情况  还有如 UIBezierPath实现果冻效果 用它来时时反映出当前被拉动点的位置坐标
+    // iOS设备的刷新频率事60HZ也就是每秒60次。那么每一次刷新的时间就是1/60秒 大概16.7毫秒。当我们的frameInterval值为1的时候我们需要保证的是 CADisplayLink调用的｀target｀的函数计算时间不应该大于 16.7否则就会出现严重的丢帧现象
+    
+    _progress += [self speed];
+    if (_progress >= 1) {
+        _progress = 0;
+    }
+    [self updateAnimationLayer];
+}
+
+-(void)updateAnimationLayer{
+    _startAngle = -M_PI_2;
+    _endAngle = -M_PI_2 +_progress * M_PI * 2;
+    if (_endAngle > M_PI) {
+        CGFloat progress1 = 1 - (1 - _progress)/0.25;
+        _startAngle = -M_PI_2 + progress1 * M_PI * 2;
+    }
+    CGFloat radius = _animationLayer.bounds.size.width/2.0f - 5/2.0f;
+    CGFloat centerX = _animationLayer.bounds.size.width/2.0f;
+    CGFloat centerY = _animationLayer.bounds.size.height/2.0f;
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(centerX, centerY) radius:radius startAngle:_startAngle endAngle:_endAngle clockwise:true];
+    path.lineCapStyle = kCGLineCapRound;
+    
+    _animationLayer.path = path.CGPath;
+}
+
+-(CGFloat)speed{
+    if (_endAngle > M_PI) {
+        return 0.3/60.0f;
+    }
+    return 2/60.0f;
+}
+
 
 
 #pragma mark 重写BaseViewController设置内容
