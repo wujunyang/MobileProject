@@ -8,7 +8,7 @@
 
 #import "MPCGContextViewController.h"
 
-@interface MPCGContextViewController ()<CALayerDelegate>
+@interface MPCGContextViewController ()
 @property(nonatomic,strong)MPContextView *myMPContextView;
 @end
 
@@ -123,37 +123,14 @@ static const CGFloat PHOTO_HEIGHT=100;
     layer.masksToBounds=YES;
     layer.borderColor=[UIColor whiteColor].CGColor;
     layer.borderWidth=borderWidth;
-    
-    //设置图层代理
-    layer.delegate=self;
+    //设置内容（注意这里一定要转换为CGImage）
+    UIImage *image=[UIImage imageNamed:@"photo_header"];
+    //    layer.contents=(id)image.CGImage;
+    [layer setContents:(id)image.CGImage];
     
     //添加图层到根图层
     [self.view.layer addSublayer:layer];
-    
-    //调用图层setNeedDisplay,否则代理方法不会被调用
-    [layer setNeedsDisplay];
 }
 
-#pragma mark CALayerDelegate 绘制图形、图像到图层，注意参数中的ctx是图层的图形上下文，其中绘图位置也是相对图层而言的
--(void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx{
-    //    NSLog(@"%@",layer);//这个图层正是上面定义的图层
-    CGContextSaveGState(ctx);
-    
-    //图形上下文形变，解决图片倒立的问题
-    CGContextScaleCTM(ctx, 1, -1);
-    CGContextTranslateCTM(ctx, 0, -PHOTO_HEIGHT);
-    
-    UIImage *image=[UIImage imageNamed:@"photo_header"];
-    
-    //解决图片模糊问题
-    layer.contentsScale = [UIScreen mainScreen].scale;
-    //注意这个位置是相对于图层而言的不是屏幕
-    CGContextDrawImage(ctx, CGRectMake(0, 0, PHOTO_HEIGHT, PHOTO_HEIGHT), image.CGImage);
-    
-    //    CGContextFillRect(ctx, CGRectMake(0, 0, 100, 100));
-    //    CGContextDrawPath(ctx, kCGPathFillStroke);
-    
-    CGContextRestoreGState(ctx);
-}
 
 @end
