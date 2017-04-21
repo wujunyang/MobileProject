@@ -64,6 +64,10 @@
 		340674201E2F6207008EF20F /* UIView+Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3406741F1E2F6207008EF20F /* UIView+Empty.m */; };
 		340674211E2F6207008EF20F /* UIView+Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3406741F1E2F6207008EF20F /* UIView+Empty.m */; };
 		340757071D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */; };
+		340793811EA9A3BE00AF184A /* MPCGContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340793801EA9A3BE00AF184A /* MPCGContextViewController.m */; };
+		340793821EA9A3BE00AF184A /* MPCGContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340793801EA9A3BE00AF184A /* MPCGContextViewController.m */; };
+		340793851EA9A49400AF184A /* MPContextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 340793841EA9A49400AF184A /* MPContextView.m */; };
+		340793861EA9A49400AF184A /* MPContextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 340793841EA9A49400AF184A /* MPContextView.m */; };
 		3408A9FB1E00D7DF001A0EC8 /* XAspect-GeTuiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EBAD1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m */; };
 		340AED351DF45A59007B5CEE /* MPKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */; };
 		340AED361DF45A59007B5CEE /* MPKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */; };
@@ -1049,6 +1053,10 @@
 		3406741E1E2F6207008EF20F /* UIView+Empty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Empty.h"; sourceTree = "<group>"; };
 		3406741F1E2F6207008EF20F /* UIView+Empty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Empty.m"; sourceTree = "<group>"; };
 		340757061D1AE486004EFAB4 /* XAspect-UmengShareAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XAspect-UmengShareAppDelegate.m"; sourceTree = "<group>"; };
+		3407937F1EA9A3BE00AF184A /* MPCGContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCGContextViewController.h; sourceTree = "<group>"; };
+		340793801EA9A3BE00AF184A /* MPCGContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCGContextViewController.m; sourceTree = "<group>"; };
+		340793831EA9A49400AF184A /* MPContextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPContextView.h; sourceTree = "<group>"; };
+		340793841EA9A49400AF184A /* MPContextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPContextView.m; sourceTree = "<group>"; };
 		3408A9F91E00D7A0001A0EC8 /* MobileProject_Local.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MobileProject_Local.entitlements; sourceTree = SOURCE_ROOT; };
 		3408A9FA1E00D7A3001A0EC8 /* MobileProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MobileProject.entitlements; sourceTree = "<group>"; };
 		340AED331DF45A59007B5CEE /* MPKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKeyboardViewController.h; sourceTree = "<group>"; };
@@ -2407,6 +2415,8 @@
 				3416E1901E94C01D00F3A678 /* MPCADisplayLinkViewController.m */,
 				3404DF571E973CE9002B9F94 /* MPUIBezierPathViewController.h */,
 				3404DF581E973CE9002B9F94 /* MPUIBezierPathViewController.m */,
+				3407937F1EA9A3BE00AF184A /* MPCGContextViewController.h */,
+				340793801EA9A3BE00AF184A /* MPCGContextViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2429,6 +2439,8 @@
 				34FB62BE1E8DFE820036AA3D /* MPPhotoCell.m */,
 				34FB62C11E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.h */,
 				34FB62C21E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.m */,
+				340793831EA9A49400AF184A /* MPContextView.h */,
+				340793841EA9A49400AF184A /* MPContextView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4962,6 +4974,7 @@
 				34E08A871C3BFB90005C6CA3 /* UIView+Visuals.m in Sources */,
 				34E08A881C3BFB90005C6CA3 /* NSUserDefaults+iCloudSync.m in Sources */,
 				34E08A891C3BFB90005C6CA3 /* UITableView+FDKeyedHeightCache.m in Sources */,
+				340793861EA9A49400AF184A /* MPContextView.m in Sources */,
 				34E08A8A1C3BFB90005C6CA3 /* NSNumber+Round.m in Sources */,
 				34E08A8B1C3BFB90005C6CA3 /* UIBezierPath+BasicShapes.m in Sources */,
 				34E08A8C1C3BFB90005C6CA3 /* NSString+MIME.m in Sources */,
@@ -5097,6 +5110,7 @@
 				341DF0281E553F380007907A /* MPTheoryViewController.m in Sources */,
 				34E08AF01C3BFB90005C6CA3 /* UIColor+Modify.m in Sources */,
 				34E08AF11C3BFB90005C6CA3 /* UITextField+Select.m in Sources */,
+				340793821EA9A3BE00AF184A /* MPCGContextViewController.m in Sources */,
 				34E08AF21C3BFB90005C6CA3 /* UIImageView+FaceAwareFill.m in Sources */,
 				34E08AF31C3BFB90005C6CA3 /* NSDictionary+URL.m in Sources */,
 				3411EF1F1D6FEC3C00A6C7F3 /* IFlyFaceResultKeys.m in Sources */,
@@ -5551,6 +5565,7 @@
 				3400E4BF1D35EDF50056B673 /* NSObject+PrintSQL.m in Sources */,
 				34E893F41C3B9A03001327C8 /* UIImageView+FaceAwareFill.m in Sources */,
 				34E893831C3B9A03001327C8 /* NSDictionary+URL.m in Sources */,
+				340793851EA9A49400AF184A /* MPContextView.m in Sources */,
 				3404B5E01E1CE20000FB6C2A /* UIViewController+Swizzle.m in Sources */,
 				34E893651C3B9A03001327C8 /* NSManagedObjectContext+Extensions.m in Sources */,
 				34F72FD41E8C95E9002B0709 /* YTKNetworkPrivate.m in Sources */,
@@ -5663,6 +5678,7 @@
 				341DF0611E5546670007907A /* MPOperationViewController.m in Sources */,
 				34E8938F1C3B9A03001327C8 /* NSNumber+CGFloat.m in Sources */,
 				34E893AB1C3B9A03001327C8 /* NSString+Ruby.m in Sources */,
+				340793811EA9A3BE00AF184A /* MPCGContextViewController.m in Sources */,
 				34E894101C3B9A03001327C8 /* UISplitViewController+QuickAccess.m in Sources */,
 				340D87991D3F6310003D9C88 /* dateTimeHelper.m in Sources */,
 				34E893B51C3B9A03001327C8 /* NSURL+QueryDictionary.m in Sources */,

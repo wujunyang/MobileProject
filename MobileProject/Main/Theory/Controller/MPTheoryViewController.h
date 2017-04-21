@@ -19,6 +19,7 @@
 #import "MPDataSourceViewController.h"
 #import "MPCADisplayLinkViewController.h"
 #import "MPUIBezierPathViewController.h"
+#import "MPCGContextViewController.h"
 
 @interface MPTheoryViewController : BaseViewController<MPCodeStandardsDelegate>
 
