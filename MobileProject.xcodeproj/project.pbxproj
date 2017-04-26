@@ -169,6 +169,14 @@
 		3411EF1D1D6FEC3300A6C7F3 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3411EF091D6FEC1A00A6C7F3 /* UIImage+Extensions.m */; };
 		3411EF1E1D6FEC3800A6C7F3 /* PermissionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3411EF0C1D6FEC1A00A6C7F3 /* PermissionDetector.m */; };
 		3411EF1F1D6FEC3C00A6C7F3 /* IFlyFaceResultKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 3411EF0F1D6FEC1A00A6C7F3 /* IFlyFaceResultKeys.m */; };
+		3412E3061EB07E5B00D8DFA1 /* UIDevice+JKHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 3412E3031EB07E5B00D8DFA1 /* UIDevice+JKHardware.m */; };
+		3412E3071EB07E5B00D8DFA1 /* UIDevice+JKPasscodeStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 3412E3051EB07E5B00D8DFA1 /* UIDevice+JKPasscodeStatus.m */; };
+		3412E30A1EB07EEC00D8DFA1 /* MPMemoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3412E3091EB07EEC00D8DFA1 /* MPMemoryHelper.m */; };
+		3412E30B1EB07EEC00D8DFA1 /* MPMemoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3412E3091EB07EEC00D8DFA1 /* MPMemoryHelper.m */; };
+		3412E30E1EB083ED00D8DFA1 /* UIButton+JKImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3412E30D1EB083ED00D8DFA1 /* UIButton+JKImagePosition.m */; };
+		3412E30F1EB083ED00D8DFA1 /* UIButton+JKImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3412E30D1EB083ED00D8DFA1 /* UIButton+JKImagePosition.m */; };
+		3412E3121EB085A800D8DFA1 /* UITextField+JKInputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3412E3111EB085A800D8DFA1 /* UITextField+JKInputLimit.m */; };
+		3412E3131EB085A800D8DFA1 /* UITextField+JKInputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3412E3111EB085A800D8DFA1 /* UITextField+JKInputLimit.m */; };
 		34153A531D76D5DE00D94F4A /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 34153A501D76D5DE00D94F4A /* UIImage+RoundedCorner.m */; };
 		34153A541D76D5DE00D94F4A /* UIView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 34153A521D76D5DE00D94F4A /* UIView+RoundedCorner.m */; };
 		34153A551D76D5E800D94F4A /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 34153A501D76D5DE00D94F4A /* UIImage+RoundedCorner.m */; };
@@ -325,7 +333,6 @@
 		34E08A6E1C3BFB90005C6CA3 /* UIViewController+BackButtonItemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893371C3B9A03001327C8 /* UIViewController+BackButtonItemTitle.m */; };
 		34E08A6F1C3BFB90005C6CA3 /* UIViewController+Visible.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893491C3B9A03001327C8 /* UIViewController+Visible.m */; };
 		34E08A701C3BFB90005C6CA3 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8922A1C3B9A03001327C8 /* MKMapView+ZoomLevel.m */; };
-		34E08A721C3BFB90005C6CA3 /* UIDevice+PasscodeStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8927B1C3B9A03001327C8 /* UIDevice+PasscodeStatus.m */; };
 		34E08A731C3BFB90005C6CA3 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8910A1C3B92AA001327C8 /* UIScrollView+MJExtension.m */; };
 		34E08A741C3BFB90005C6CA3 /* UIApplication+NetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892471C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.m */; };
 		34E08A761C3BFB90005C6CA3 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8920E1C3B9A03001327C8 /* NSTimer+Addition.m */; };
@@ -398,7 +405,6 @@
 		34E08AC21C3BFB90005C6CA3 /* UITableViewCell+NIB.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892FB1C3B9A03001327C8 /* UITableViewCell+NIB.m */; };
 		34E08AC31C3BFB90005C6CA3 /* QBAssetsCollectionOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894751C3B9FC1001327C8 /* QBAssetsCollectionOverlayView.m */; };
 		34E08AC51C3BFB90005C6CA3 /* NSData+APNSToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891791C3B9A03001327C8 /* NSData+APNSToken.m */; };
-		34E08AC71C3BFB90005C6CA3 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892791C3B9A03001327C8 /* UIDevice+Hardware.m */; };
 		34E08AC81C3BFB90005C6CA3 /* NSObject+GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891D61C3B9A03001327C8 /* NSObject+GCD.m */; };
 		34E08AC91C3BFB90005C6CA3 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8919F1C3B9A03001327C8 /* NSDictionary+Merge.m */; };
 		34E08ACA1C3BFB90005C6CA3 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892091C3B9A03001327C8 /* NSString+UUID.m */; };
@@ -731,8 +737,6 @@
 		34E893DA1C3B9A03001327C8 /* UIColor+Web.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892711C3B9A03001327C8 /* UIColor+Web.m */; };
 		34E893DB1C3B9A03001327C8 /* UIControl+ActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892741C3B9A03001327C8 /* UIControl+ActionBlocks.m */; };
 		34E893DC1C3B9A03001327C8 /* UIControl+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892761C3B9A03001327C8 /* UIControl+Block.m */; };
-		34E893DD1C3B9A03001327C8 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892791C3B9A03001327C8 /* UIDevice+Hardware.m */; };
-		34E893DE1C3B9A03001327C8 /* UIDevice+PasscodeStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8927B1C3B9A03001327C8 /* UIDevice+PasscodeStatus.m */; };
 		34E893DF1C3B9A03001327C8 /* UIFont+DynamicFontControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8927E1C3B9A03001327C8 /* UIFont+DynamicFontControl.m */; };
 		34E893E01C3B9A03001327C8 /* UIFont+WDCustomLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892801C3B9A03001327C8 /* UIFont+WDCustomLoader.m */; };
 		34E893E11C3B9A03001327C8 /* UIFont-TTF.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892821C3B9A03001327C8 /* UIFont-TTF.m */; };
@@ -1144,6 +1148,16 @@
 		3411EF0C1D6FEC1A00A6C7F3 /* PermissionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionDetector.m; sourceTree = "<group>"; };
 		3411EF0E1D6FEC1A00A6C7F3 /* IFlyFaceResultKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceResultKeys.h; sourceTree = "<group>"; };
 		3411EF0F1D6FEC1A00A6C7F3 /* IFlyFaceResultKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceResultKeys.m; sourceTree = "<group>"; };
+		3412E3021EB07E5B00D8DFA1 /* UIDevice+JKHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+JKHardware.h"; sourceTree = "<group>"; };
+		3412E3031EB07E5B00D8DFA1 /* UIDevice+JKHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+JKHardware.m"; sourceTree = "<group>"; };
+		3412E3041EB07E5B00D8DFA1 /* UIDevice+JKPasscodeStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+JKPasscodeStatus.h"; sourceTree = "<group>"; };
+		3412E3051EB07E5B00D8DFA1 /* UIDevice+JKPasscodeStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+JKPasscodeStatus.m"; sourceTree = "<group>"; };
+		3412E3081EB07EEC00D8DFA1 /* MPMemoryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMemoryHelper.h; sourceTree = "<group>"; };
+		3412E3091EB07EEC00D8DFA1 /* MPMemoryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMemoryHelper.m; sourceTree = "<group>"; };
+		3412E30C1EB083ED00D8DFA1 /* UIButton+JKImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JKImagePosition.h"; sourceTree = "<group>"; };
+		3412E30D1EB083ED00D8DFA1 /* UIButton+JKImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JKImagePosition.m"; sourceTree = "<group>"; };
+		3412E3101EB085A800D8DFA1 /* UITextField+JKInputLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+JKInputLimit.h"; sourceTree = "<group>"; };
+		3412E3111EB085A800D8DFA1 /* UITextField+JKInputLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JKInputLimit.m"; sourceTree = "<group>"; };
 		34153A4F1D76D5DE00D94F4A /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		34153A501D76D5DE00D94F4A /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		34153A511D76D5DE00D94F4A /* UIView+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundedCorner.h"; sourceTree = "<group>"; };
@@ -1578,10 +1592,6 @@
 		34E892741C3B9A03001327C8 /* UIControl+ActionBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ActionBlocks.m"; sourceTree = "<group>"; };
 		34E892751C3B9A03001327C8 /* UIControl+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Block.h"; sourceTree = "<group>"; };
 		34E892761C3B9A03001327C8 /* UIControl+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Block.m"; sourceTree = "<group>"; };
-		34E892781C3B9A03001327C8 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
-		34E892791C3B9A03001327C8 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
-		34E8927A1C3B9A03001327C8 /* UIDevice+PasscodeStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+PasscodeStatus.h"; sourceTree = "<group>"; };
-		34E8927B1C3B9A03001327C8 /* UIDevice+PasscodeStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+PasscodeStatus.m"; sourceTree = "<group>"; };
 		34E8927D1C3B9A03001327C8 /* UIFont+DynamicFontControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+DynamicFontControl.h"; sourceTree = "<group>"; };
 		34E8927E1C3B9A03001327C8 /* UIFont+DynamicFontControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+DynamicFontControl.m"; sourceTree = "<group>"; };
 		34E8927F1C3B9A03001327C8 /* UIFont+WDCustomLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+WDCustomLoader.h"; sourceTree = "<group>"; };
@@ -2242,6 +2252,8 @@
 				340D87981D3F6310003D9C88 /* dateTimeHelper.m */,
 				340D87AB1D3F7FC4003D9C88 /* cameraHelper.h */,
 				340D87AC1D3F7FC4003D9C88 /* cameraHelper.m */,
+				3412E3081EB07EEC00D8DFA1 /* MPMemoryHelper.h */,
+				3412E3091EB07EEC00D8DFA1 /* MPMemoryHelper.m */,
 			);
 			path = OtherHelper;
 			sourceTree = "<group>";
@@ -3655,6 +3667,8 @@
 		34E892581C3B9A03001327C8 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				3412E30C1EB083ED00D8DFA1 /* UIButton+JKImagePosition.h */,
+				3412E30D1EB083ED00D8DFA1 /* UIButton+JKImagePosition.m */,
 				34E892591C3B9A03001327C8 /* UIButton+BackgroundColor.h */,
 				34E8925A1C3B9A03001327C8 /* UIButton+BackgroundColor.m */,
 				34E8925B1C3B9A03001327C8 /* UIButton+Block.h */,
@@ -3704,10 +3718,10 @@
 		34E892771C3B9A03001327C8 /* UIDevice */ = {
 			isa = PBXGroup;
 			children = (
-				34E892781C3B9A03001327C8 /* UIDevice+Hardware.h */,
-				34E892791C3B9A03001327C8 /* UIDevice+Hardware.m */,
-				34E8927A1C3B9A03001327C8 /* UIDevice+PasscodeStatus.h */,
-				34E8927B1C3B9A03001327C8 /* UIDevice+PasscodeStatus.m */,
+				3412E3021EB07E5B00D8DFA1 /* UIDevice+JKHardware.h */,
+				3412E3031EB07E5B00D8DFA1 /* UIDevice+JKHardware.m */,
+				3412E3041EB07E5B00D8DFA1 /* UIDevice+JKPasscodeStatus.h */,
+				3412E3051EB07E5B00D8DFA1 /* UIDevice+JKPasscodeStatus.m */,
 			);
 			path = UIDevice;
 			sourceTree = "<group>";
@@ -3940,6 +3954,8 @@
 		34E892FE1C3B9A03001327C8 /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
+				3412E3101EB085A800D8DFA1 /* UITextField+JKInputLimit.h */,
+				3412E3111EB085A800D8DFA1 /* UITextField+JKInputLimit.m */,
 				34E892FF1C3B9A03001327C8 /* UITextField+Blocks.h */,
 				34E893001C3B9A03001327C8 /* UITextField+Blocks.m */,
 				34E893011C3B9A03001327C8 /* UITextField+History.h */,
@@ -4943,7 +4959,6 @@
 				34E08A6F1C3BFB90005C6CA3 /* UIViewController+Visible.m in Sources */,
 				34E08A701C3BFB90005C6CA3 /* MKMapView+ZoomLevel.m in Sources */,
 				34EC80731C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */,
-				34E08A721C3BFB90005C6CA3 /* UIDevice+PasscodeStatus.m in Sources */,
 				3416E1921E94C01D00F3A678 /* MPCADisplayLinkViewController.m in Sources */,
 				34E08A731C3BFB90005C6CA3 /* UIScrollView+MJExtension.m in Sources */,
 				34E08A741C3BFB90005C6CA3 /* UIApplication+NetworkActivityIndicator.m in Sources */,
@@ -5056,7 +5071,6 @@
 				34E08AC31C3BFB90005C6CA3 /* QBAssetsCollectionOverlayView.m in Sources */,
 				34E08AC51C3BFB90005C6CA3 /* NSData+APNSToken.m in Sources */,
 				3425826F1D379D2C003906BB /* introductoryPagesHelper.m in Sources */,
-				34E08AC71C3BFB90005C6CA3 /* UIDevice+Hardware.m in Sources */,
 				34E08AC81C3BFB90005C6CA3 /* NSObject+GCD.m in Sources */,
 				34FF0E391D5835C90027EEAE /* MPYYTextViewController.m in Sources */,
 				34FBEBB31E5D345000F545FC /* MPCodeStandards.m in Sources */,
@@ -5188,6 +5202,7 @@
 				34E95EBB1C4F82F700376777 /* UUInputAccessoryView.m in Sources */,
 				34E08B291C3BFB90005C6CA3 /* UINavigationItem+Margin.m in Sources */,
 				3403B0BF1D367954007CD7EF /* UITextField+Extension.m in Sources */,
+				3412E30B1EB07EEC00D8DFA1 /* MPMemoryHelper.m in Sources */,
 				340D879A1D3F6310003D9C88 /* dateTimeHelper.m in Sources */,
 				34E08B2A1C3BFB90005C6CA3 /* NSString+RegexCategory.m in Sources */,
 				341C07D61D41A27E00FF905C /* BaseRequestService.m in Sources */,
@@ -5276,6 +5291,7 @@
 				34E08B681C3BFB90005C6CA3 /* QBAssetsCollectionViewLayout.m in Sources */,
 				34420CBA1D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */,
 				34F212FE1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */,
+				3412E3131EB085A800D8DFA1 /* UITextField+JKInputLimit.m in Sources */,
 				34213BE11E2C9B4D0065C675 /* UIImage+OuterCircle.m in Sources */,
 				34E08B6A1C3BFB90005C6CA3 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				34E08B6B1C3BFB90005C6CA3 /* UIResponder+UIAdapt.m in Sources */,
@@ -5355,6 +5371,7 @@
 				34E08B911C3BFB90005C6CA3 /* UIButton+BackgroundColor.m in Sources */,
 				34E08B921C3BFB90005C6CA3 /* NSString+Base64.m in Sources */,
 				34E08B941C3BFB90005C6CA3 /* CALayer+UIColor.m in Sources */,
+				3412E30F1EB083ED00D8DFA1 /* UIButton+JKImagePosition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5382,11 +5399,11 @@
 				3400E4C31D35EEF00056B673 /* MPLKDBHelper.m in Sources */,
 				FD0BF4111D6F33E2001E6F19 /* FaceRecognitionController.m in Sources */,
 				34E894321C3B9A03001327C8 /* UIViewController+BackButtonItemTitle.m in Sources */,
+				3412E30A1EB07EEC00D8DFA1 /* MPMemoryHelper.m in Sources */,
 				34E8943B1C3B9A03001327C8 /* UIViewController+Visible.m in Sources */,
 				34E893BD1C3B9A03001327C8 /* MKMapView+ZoomLevel.m in Sources */,
 				34EC80721C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */,
 				348D00161DA888D600B890F4 /* MPJavaScriptModel.m in Sources */,
-				34E893DE1C3B9A03001327C8 /* UIDevice+PasscodeStatus.m in Sources */,
 				34E891271C3B92AA001327C8 /* UIScrollView+MJExtension.m in Sources */,
 				34E893C71C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.m in Sources */,
 				34683B0F1D4EE93C0041F8A0 /* MPReduceTimeViewController.m in Sources */,
@@ -5457,6 +5474,7 @@
 				34F49B321D262AA400FA003C /* MPHomeViewController.m in Sources */,
 				34E893F31C3B9A03001327C8 /* UIImageView+BetterFace.m in Sources */,
 				34E893931C3B9A03001327C8 /* NSObject+AppInfo.m in Sources */,
+				3412E3071EB07E5B00D8DFA1 /* UIDevice+JKPasscodeStatus.m in Sources */,
 				34E893CC1C3B9A03001327C8 /* UIBezierPath+LxThroughPointsBezier.m in Sources */,
 				34E893C51C3B9A03001327C8 /* UIApplication+ApplicationSize.m in Sources */,
 				34E8937E1C3B9A03001327C8 /* NSDateFormatter+Make.m in Sources */,
@@ -5502,7 +5520,6 @@
 				34E894161C3B9A03001327C8 /* UITableViewCell+NIB.m in Sources */,
 				34E894981C3B9FC1001327C8 /* QBAssetsCollectionOverlayView.m in Sources */,
 				34E8936F1C3B9A03001327C8 /* NSData+APNSToken.m in Sources */,
-				34E893DD1C3B9A03001327C8 /* UIDevice+Hardware.m in Sources */,
 				34FBEBB71E5D6E0200F545FC /* MPCodeStarndardCoping.m in Sources */,
 				34E893981C3B9A03001327C8 /* NSObject+GCD.m in Sources */,
 				34E893811C3B9A03001327C8 /* NSDictionary+Merge.m in Sources */,
@@ -5625,6 +5642,7 @@
 				34E893F71C3B9A03001327C8 /* UIImageView+Reflect.m in Sources */,
 				34E894281C3B9A03001327C8 /* UIView+GestureCallback.m in Sources */,
 				34E893B41C3B9A03001327C8 /* NSURL+Param.m in Sources */,
+				3412E3061EB07E5B00D8DFA1 /* UIDevice+JKHardware.m in Sources */,
 				34FA851B1E90C45E00A61464 /* MPLazyTitleViewCustomView.m in Sources */,
 				342A8FA41D3F1D8B000C7B98 /* UINavigationController+JZExtension.m in Sources */,
 				3411EF111D6FEC1A00A6C7F3 /* CaptureManager.m in Sources */,
@@ -5720,6 +5738,7 @@
 				34E893FB1C3B9A03001327C8 /* UILabel+SuggestSize.m in Sources */,
 				34FFA1F21D49128100A7C342 /* NSString+Additions.m in Sources */,
 				34E8937F1C3B9A03001327C8 /* NSDictionary+Block.m in Sources */,
+				3412E30E1EB083ED00D8DFA1 /* UIButton+JKImagePosition.m in Sources */,
 				34E8937A1C3B9A03001327C8 /* NSDate+Reporting.m in Sources */,
 				342582641D3736DA003906BB /* UIView+EaseBlankPage.m in Sources */,
 				34E08A591C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.m in Sources */,
@@ -5748,6 +5767,7 @@
 				34E893791C3B9A03001327C8 /* NSDate+InternetDateTime.m in Sources */,
 				34E893631C3B9A03001327C8 /* NSManagedObject+DictionaryExport.m in Sources */,
 				34E893CB1C3B9A03001327C8 /* UIBezierPath+Length.m in Sources */,
+				3412E3121EB085A800D8DFA1 /* UITextField+JKInputLimit.m in Sources */,
 				34E8911B1C3B92AA001327C8 /* MJRefreshHeader.m in Sources */,
 				34FE0B911D50FF7C00991E65 /* MPHideNavigationViewController.m in Sources */,
 				34E894341C3B9A03001327C8 /* UIViewController+BlockSegue.m in Sources */,

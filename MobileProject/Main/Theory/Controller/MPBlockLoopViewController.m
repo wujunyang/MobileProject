@@ -25,6 +25,10 @@
     
     self.view.backgroundColor=[UIColor whiteColor];
     
+    MPMemoryHelper *memoryHelper=[[MPMemoryHelper alloc]init];
+    NSLog(@"当前占用的内存：%f",[memoryHelper usedMemory]);
+    NSLog(@"当前设备可用的内存：%f",[memoryHelper availableMemory]);
+    
     [self.view addSubview:self.myButton];
     [self.myButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(100);

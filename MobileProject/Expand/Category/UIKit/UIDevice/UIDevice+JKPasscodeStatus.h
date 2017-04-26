@@ -20,26 +20,26 @@
  */
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSUInteger, LNPasscodeStatus){
+typedef NS_ENUM(NSUInteger, JKPasscodeStatus){
     /* The passcode status was unknown */
-    LNPasscodeStatusUnknown   = 0,
+    JKPasscodeStatusUnknown   = 0,
     /* The passcode is enabled */
-    LNPasscodeStatusEnabled   = 1,
+    JKPasscodeStatusEnabled   = 1,
     /* The passcode is disabled */
-    LNPasscodeStatusDisabled  = 2
+    JKPasscodeStatusDisabled  = 2
 };
 
-@interface UIDevice (PasscodeStatus)
+@interface UIDevice (JKPasscodeStatus)
 
 /**
  *  Determines if the device supports the `passcodeStatus` check. Passcode check is only supported on iOS 8.
  */
-@property (readonly) BOOL passcodeStatusSupported;
+@property (readonly) BOOL jk_passcodeStatusSupported;
 
 /**
  *  Checks and returns the devices current passcode status.
  *  If `passcodeStatusSupported` returns NO then `LNPasscodeStatusUnknown` will be returned.
  */
-@property (readonly) LNPasscodeStatus passcodeStatus;
+@property (readonly) JKPasscodeStatus jk_passcodeStatus;
 
 @end

@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Liam Nichols. All rights reserved.
 //
 
-#import "UIDevice+PasscodeStatus.h"
+#import "UIDevice+JKPasscodeStatus.h"
 #import <Security/Security.h>
 
 NSString * const UIDevicePasscodeKeychainService = @"UIDevice-PasscodeStatus_KeychainService";
 NSString * const UIDevicePasscodeKeychainAccount = @"UIDevice-PasscodeStatus_KeychainAccount";
 
-@implementation UIDevice (PasscodeStatus)
+@implementation UIDevice (JKPasscodeStatus)
 
-- (BOOL)passcodeStatusSupported
+- (BOOL)jk_passcodeStatusSupported
 {
 #if TARGET_IPHONE_SIMULATOR
     return NO;
@@ -27,16 +27,18 @@ NSString * const UIDevicePasscodeKeychainAccount = @"UIDevice-PasscodeStatus_Key
 #endif
 }
 
-- (LNPasscodeStatus)passcodeStatus
+- (JKPasscodeStatus)jk_passcodeStatus
 {
 #if TARGET_IPHONE_SIMULATOR
     NSLog(@"-[%@ %@] - not supported in simulator", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
-    return LNPasscodeStatusUnknown;
+    return JKPasscodeStatusUnknown;
 #endif
     
 #ifdef __IPHONE_8_0
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunreachable-code"
     if (&kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly != NULL) {
-        
+#pragma clang diagnostic pop
         static NSData *password = nil;
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
@@ -56,7 +58,7 @@ NSString * const UIDevicePasscodeKeychainAccount = @"UIDevice-PasscodeStatus_Key
         
         // unable to create the access control item.
         if (sacObject == NULL || sacError != NULL) {
-            return LNPasscodeStatusUnknown;
+            return JKPasscodeStatusUnknown;
         }
         
         
@@ -69,24 +71,24 @@ NSString * const UIDevicePasscodeKeychainAccount = @"UIDevice-PasscodeStatus_Key
         
         // if it failed to add the item.
         if (status == errSecDecode) {
-            return LNPasscodeStatusDisabled;
+            return JKPasscodeStatusDisabled;
         }
         
         status = SecItemCopyMatching((__bridge CFDictionaryRef)query, NULL);
         
         // it managed to retrieve data successfully
         if (status == errSecSuccess) {
-            return LNPasscodeStatusEnabled;
+            return JKPasscodeStatusEnabled;
         }
         
         // not sure what happened, returning unknown
-        return LNPasscodeStatusUnknown;
+        return JKPasscodeStatusUnknown;
         
     } else {
-        return LNPasscodeStatusUnknown;
+        return JKPasscodeStatusUnknown;
     }
 #else
-    return LNPasscodeStatusUnknown;
+    return JKPasscodeStatusUnknown;
 #endif
 }
 

@@ -10,6 +10,7 @@
 #import "BaseViewController.h"
 #import "MPBlockView.h"
 #import "MPBlockLoopOperation.h"
+#import "MPMemoryHelper.h"
 
 @interface MPBlockLoopViewController : BaseViewController
 
