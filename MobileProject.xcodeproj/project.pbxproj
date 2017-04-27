@@ -312,6 +312,8 @@
 		349F81D11D45E571002104E3 /* MPUploadImageItemService.m in Sources */ = {isa = PBXBuildFile; fileRef = 349F81CF1D45E571002104E3 /* MPUploadImageItemService.m */; };
 		34A14EE31D40974100ACCCCC /* MPUploadImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A14EE21D40974100ACCCCC /* MPUploadImageService.m */; };
 		34A14EE41D40974100ACCCCC /* MPUploadImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A14EE21D40974100ACCCCC /* MPUploadImageService.m */; };
+		34AE75F41EB17FBB00948A06 /* MPLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE75F31EB17FBB00948A06 /* MPLocationConverter.m */; };
+		34AE75F51EB17FBB00948A06 /* MPLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AE75F31EB17FBB00948A06 /* MPLocationConverter.m */; };
 		34B8DAFB1E82A29B009649A5 /* MPChildBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8DAFA1E82A29B009649A5 /* MPChildBlockViewController.m */; };
 		34B8DAFC1E82A29B009649A5 /* MPChildBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8DAFA1E82A29B009649A5 /* MPChildBlockViewController.m */; };
 		34B8DAFF1E82A5ED009649A5 /* MPModelBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8DAFE1E82A5ED009649A5 /* MPModelBlockViewController.m */; };
@@ -1283,6 +1285,8 @@
 		34A14EE11D40974100ACCCCC /* MPUploadImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUploadImageService.h; sourceTree = "<group>"; };
 		34A14EE21D40974100ACCCCC /* MPUploadImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPUploadImageService.m; sourceTree = "<group>"; };
 		34A9A3401D104AB4006E6987 /* NotificationContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationContants.h; sourceTree = "<group>"; };
+		34AE75F21EB17FBB00948A06 /* MPLocationConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLocationConverter.h; sourceTree = "<group>"; };
+		34AE75F31EB17FBB00948A06 /* MPLocationConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLocationConverter.m; sourceTree = "<group>"; };
 		34B8DAF91E82A29B009649A5 /* MPChildBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPChildBlockViewController.h; sourceTree = "<group>"; };
 		34B8DAFA1E82A29B009649A5 /* MPChildBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPChildBlockViewController.m; sourceTree = "<group>"; };
 		34B8DAFD1E82A5ED009649A5 /* MPModelBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPModelBlockViewController.h; sourceTree = "<group>"; };
@@ -4447,6 +4451,8 @@
 			children = (
 				34F212FB1C48C133003AC13D /* CLLocation+MPLocation.h */,
 				34F212FC1C48C133003AC13D /* CLLocation+MPLocation.m */,
+				34AE75F21EB17FBB00948A06 /* MPLocationConverter.h */,
+				34AE75F31EB17FBB00948A06 /* MPLocationConverter.m */,
 				34F212FF1C48C283003AC13D /* MPLocationManager.h */,
 				34F213001C48C283003AC13D /* MPLocationManager.m */,
 			);
@@ -5221,6 +5227,7 @@
 				34E08B341C3BFB90005C6CA3 /* NSDate+Formatter.m in Sources */,
 				340CCCB01E519F310037BE4D /* MPDragTableViewController.m in Sources */,
 				34E08B351C3BFB90005C6CA3 /* NSObject+Reflection.m in Sources */,
+				34AE75F51EB17FBB00948A06 /* MPLocationConverter.m in Sources */,
 				34F4972F1E837B2D00663245 /* MPFDWithScrollViewController.m in Sources */,
 				340D879E1D3F6B43003D9C88 /* MPUploadImageHelper.m in Sources */,
 				34E08B361C3BFB90005C6CA3 /* NSTimer+Blocks.m in Sources */,
@@ -5713,6 +5720,7 @@
 				34E893E81C3B9A03001327C8 /* UIImage+FileName.m in Sources */,
 				340EB2FA1D66A24F00BF9222 /* MPMultitextCell.m in Sources */,
 				34E8940A1C3B9A03001327C8 /* UIScreen+Frame.m in Sources */,
+				34AE75F41EB17FBB00948A06 /* MPLocationConverter.m in Sources */,
 				34E894241C3B9A03001327C8 /* UIView+draggable.m in Sources */,
 				34E893D61C3B9A03001327C8 /* UIColor+Gradient.m in Sources */,
 				34E8941B1C3B9A03001327C8 /* UITextField+Shake.m in Sources */,
