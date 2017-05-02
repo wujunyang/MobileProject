@@ -71,6 +71,16 @@
 		3408A9FB1E00D7DF001A0EC8 /* XAspect-GeTuiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EBAD1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m */; };
 		340AED351DF45A59007B5CEE /* MPKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */; };
 		340AED361DF45A59007B5CEE /* MPKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */; };
+		340B25B91EB82FE100A56792 /* MPAudioVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340B25B81EB82FE100A56792 /* MPAudioVideoViewController.m */; };
+		340B25BA1EB82FE100A56792 /* MPAudioVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340B25B81EB82FE100A56792 /* MPAudioVideoViewController.m */; };
+		340B25BD1EB831C800A56792 /* MPAudioToolboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340B25BC1EB831C800A56792 /* MPAudioToolboxViewController.m */; };
+		340B25BE1EB831C800A56792 /* MPAudioToolboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340B25BC1EB831C800A56792 /* MPAudioToolboxViewController.m */; };
+		340B25C11EB8341000A56792 /* videoRing.caf in Resources */ = {isa = PBXBuildFile; fileRef = 340B25C01EB8341000A56792 /* videoRing.caf */; };
+		340B25C21EB8341000A56792 /* videoRing.caf in Resources */ = {isa = PBXBuildFile; fileRef = 340B25C01EB8341000A56792 /* videoRing.caf */; };
+		340B25C51EB836F300A56792 /* MPAVFoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340B25C41EB836F300A56792 /* MPAVFoundationViewController.m */; };
+		340B25C61EB836F300A56792 /* MPAVFoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340B25C41EB836F300A56792 /* MPAVFoundationViewController.m */; };
+		340B25C81EB8772000A56792 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 340B25C71EB8772000A56792 /* audio.mp3 */; };
+		340B25C91EB8772000A56792 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 340B25C71EB8772000A56792 /* audio.mp3 */; };
 		340BCD1B1D0EFF3B0093CC7D /* MPRequstFailedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD1A1D0EFF3B0093CC7D /* MPRequstFailedHelper.m */; };
 		340BCD1C1D0EFF3B0093CC7D /* MPRequstFailedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD1A1D0EFF3B0093CC7D /* MPRequstFailedHelper.m */; };
 		340BCD241D0F011A0093CC7D /* LogInApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 340BCD231D0F011A0093CC7D /* LogInApi.m */; };
@@ -1067,6 +1077,14 @@
 		3408A9FA1E00D7A3001A0EC8 /* MobileProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MobileProject.entitlements; sourceTree = "<group>"; };
 		340AED331DF45A59007B5CEE /* MPKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKeyboardViewController.h; sourceTree = "<group>"; };
 		340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKeyboardViewController.m; sourceTree = "<group>"; };
+		340B25B71EB82FE100A56792 /* MPAudioVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAudioVideoViewController.h; sourceTree = "<group>"; };
+		340B25B81EB82FE100A56792 /* MPAudioVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAudioVideoViewController.m; sourceTree = "<group>"; };
+		340B25BB1EB831C800A56792 /* MPAudioToolboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAudioToolboxViewController.h; sourceTree = "<group>"; };
+		340B25BC1EB831C800A56792 /* MPAudioToolboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAudioToolboxViewController.m; sourceTree = "<group>"; };
+		340B25C01EB8341000A56792 /* videoRing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoRing.caf; sourceTree = "<group>"; };
+		340B25C31EB836F300A56792 /* MPAVFoundationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAVFoundationViewController.h; sourceTree = "<group>"; };
+		340B25C41EB836F300A56792 /* MPAVFoundationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAVFoundationViewController.m; sourceTree = "<group>"; };
+		340B25C71EB8772000A56792 /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
 		340BCD191D0EFF3B0093CC7D /* MPRequstFailedHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPRequstFailedHelper.h; sourceTree = "<group>"; };
 		340BCD1A1D0EFF3B0093CC7D /* MPRequstFailedHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPRequstFailedHelper.m; sourceTree = "<group>"; };
 		340BCD221D0F011A0093CC7D /* LogInApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInApi.h; sourceTree = "<group>"; };
@@ -2154,6 +2172,28 @@
 			path = FactoryPattern;
 			sourceTree = "<group>";
 		};
+		340B25B61EB82E1800A56792 /* AudioVideoController */ = {
+			isa = PBXGroup;
+			children = (
+				340B25B71EB82FE100A56792 /* MPAudioVideoViewController.h */,
+				340B25B81EB82FE100A56792 /* MPAudioVideoViewController.m */,
+				340B25BB1EB831C800A56792 /* MPAudioToolboxViewController.h */,
+				340B25BC1EB831C800A56792 /* MPAudioToolboxViewController.m */,
+				340B25C31EB836F300A56792 /* MPAVFoundationViewController.h */,
+				340B25C41EB836F300A56792 /* MPAVFoundationViewController.m */,
+			);
+			path = AudioVideoController;
+			sourceTree = "<group>";
+		};
+		340B25BF1EB833BC00A56792 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				340B25C71EB8772000A56792 /* audio.mp3 */,
+				340B25C01EB8341000A56792 /* videoRing.caf */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		340BCD141D0EF1770093CC7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -2723,6 +2763,7 @@
 		34E890BB1C3B8A7C001327C8 /* Resource(资源) */ = {
 			isa = PBXGroup;
 			children = (
+				340B25BF1EB833BC00A56792 /* Audio */,
 				3403B0B91D367264007CD7EF /* Config */,
 				3452EB881D1A8B720001732E /* AppDelegate */,
 				341094041D0EA14900A8D63F /* JsHtmlCss */,
@@ -4283,6 +4324,7 @@
 		34EC961B1C58A52800985444 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				340B25B61EB82E1800A56792 /* AudioVideoController */,
 				34F4971F1E8378CC00663245 /* FDNavigationController */,
 				3461BD061DD5AA1D00F8FC14 /* MPMasonryViewController.h */,
 				3461BD071DD5AA1E00F8FC14 /* MPMasonryViewController.m */,
@@ -4700,6 +4742,7 @@
 			files = (
 				34F9A8C31D4FA15100C2DEA5 /* ExampleApp.html in Resources */,
 				340BCD311D0F016D0093CC7D /* Placeholder in Resources */,
+				340B25C21EB8341000A56792 /* videoRing.caf in Resources */,
 				340BCD461D0F01B80093CC7D /* Placeholder in Resources */,
 				348D001D1DA88D5000B890F4 /* test1.html in Resources */,
 				346BBF621D50C5300048DB05 /* blankpage_button_reload@2x.png in Resources */,
@@ -4722,6 +4765,7 @@
 				340BCD341D0F01790093CC7D /* Placeholder in Resources */,
 				34E08BA31C3BFB90005C6CA3 /* File.strings in Resources */,
 				340BCD431D0F01AF0093CC7D /* Placeholder in Resources */,
+				340B25C91EB8772000A56792 /* audio.mp3 in Resources */,
 				340BCD521D0F01E50093CC7D /* Placeholder in Resources */,
 				346BBF631D50C5320048DB05 /* blankpage_image_loadFail@2x.png in Resources */,
 				340BCD551D0F01ED0093CC7D /* Placeholder in Resources */,
@@ -4759,6 +4803,7 @@
 				340BCD451D0F01B80093CC7D /* Placeholder in Resources */,
 				342582611D3734C4003906BB /* blankpage_image_Sleep@3x.png in Resources */,
 				34E891251C3B92AA001327C8 /* MJRefresh.bundle in Resources */,
+				340B25C11EB8341000A56792 /* videoRing.caf in Resources */,
 				340BCD3C1D0F019B0093CC7D /* Placeholder in Resources */,
 				340BCD671D0F039E0093CC7D /* Placeholder in Resources */,
 				341DF0501E5543AF0007907A /* Placeholder in Resources */,
@@ -4773,6 +4818,7 @@
 				340BCD571D0F01F50093CC7D /* Placeholder in Resources */,
 				340BCD301D0F016D0093CC7D /* Placeholder in Resources */,
 				340BCD3F1D0F01A40093CC7D /* Placeholder in Resources */,
+				340B25C81EB8772000A56792 /* audio.mp3 in Resources */,
 				340BCD511D0F01E50093CC7D /* Placeholder in Resources */,
 				34E8949E1C3B9FC1001327C8 /* QBImagePickerController.strings in Resources */,
 				342202451D62BB1D003F81B2 /* team_dictionary.plist in Resources */,
@@ -4955,6 +5001,7 @@
 				34E08A6A1C3BFB90005C6CA3 /* UIScrollView+Pages.m in Sources */,
 				34E08A6B1C3BFB90005C6CA3 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				3411EF191D6FEC2300A6C7F3 /* CaptureManager.m in Sources */,
+				340B25BE1EB831C800A56792 /* MPAudioToolboxViewController.m in Sources */,
 				342A8FA91D3F1D8B000C7B98 /* UINavigationController+StackManager.m in Sources */,
 				34683B141D4EEA0D0041F8A0 /* MPReduceTimeCell.m in Sources */,
 				34E08A6C1C3BFB90005C6CA3 /* NSObject+AssociatedObject.m in Sources */,
@@ -5088,6 +5135,7 @@
 				34E08ACC1C3BFB90005C6CA3 /* MKMapView+BetterMaps.m in Sources */,
 				34013B601D51C9150051000F /* AddressPickerView.m in Sources */,
 				34E08ACD1C3BFB90005C6CA3 /* UIView+Frame.m in Sources */,
+				340B25BA1EB82FE100A56792 /* MPAudioVideoViewController.m in Sources */,
 				34E08ACE1C3BFB90005C6CA3 /* NSDictionary+JSONString.m in Sources */,
 				34E08ACF1C3BFB90005C6CA3 /* JDStatusBarNotification.m in Sources */,
 				34E08AD01C3BFB90005C6CA3 /* UINavigationBar+Awesome.m in Sources */,
@@ -5196,6 +5244,7 @@
 				34E08B1F1C3BFB90005C6CA3 /* QBAssetsCollectionViewCell.m in Sources */,
 				34E08B201C3BFB90005C6CA3 /* NSString+Hash.m in Sources */,
 				34E08B211C3BFB90005C6CA3 /* UITableView+FDTemplateLayoutCell.m in Sources */,
+				340B25C61EB836F300A56792 /* MPAVFoundationViewController.m in Sources */,
 				34E08B221C3BFB90005C6CA3 /* NSData+SDDataCache.m in Sources */,
 				341094031D0E982100A8D63F /* JSPatchViewController.m in Sources */,
 				34E08B231C3BFB90005C6CA3 /* UIImage+PDF.m in Sources */,
@@ -5498,6 +5547,7 @@
 				340F88DA1E82077400C20F37 /* MPBlockLoopViewController.m in Sources */,
 				34FB62C31E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.m in Sources */,
 				341093F31D0E605800A8D63F /* imageCompressHelper.m in Sources */,
+				340B25C51EB836F300A56792 /* MPAVFoundationViewController.m in Sources */,
 				34E891181C3B92AA001327C8 /* MJRefreshBackFooter.m in Sources */,
 				34E893D91C3B9A03001327C8 /* UIColor+Random.m in Sources */,
 				34E894221C3B9A03001327C8 /* UIView+CustomBorder.m in Sources */,
@@ -5681,6 +5731,7 @@
 				3416E1911E94C01D00F3A678 /* MPCADisplayLinkViewController.m in Sources */,
 				34E8949D1C3B9FC1001327C8 /* QBImagePickerController.m in Sources */,
 				34E894991C3B9FC1001327C8 /* QBAssetsCollectionVideoIndicatorView.m in Sources */,
+				340B25B91EB82FE100A56792 /* MPAudioVideoViewController.m in Sources */,
 				34E893BE1C3B9A03001327C8 /* CAAnimation+Blocks.m in Sources */,
 				34E8942A1C3B9A03001327C8 /* UIView+Recursion.m in Sources */,
 				34F497321E83842700663245 /* MPFDWithBarChildViewController.m in Sources */,
@@ -5703,6 +5754,7 @@
 				341DF0611E5546670007907A /* MPOperationViewController.m in Sources */,
 				34E8938F1C3B9A03001327C8 /* NSNumber+CGFloat.m in Sources */,
 				34E893AB1C3B9A03001327C8 /* NSString+Ruby.m in Sources */,
+				340B25BD1EB831C800A56792 /* MPAudioToolboxViewController.m in Sources */,
 				340793811EA9A3BE00AF184A /* MPCGContextViewController.m in Sources */,
 				34E894101C3B9A03001327C8 /* UISplitViewController+QuickAccess.m in Sources */,
 				340D87991D3F6310003D9C88 /* dateTimeHelper.m in Sources */,
