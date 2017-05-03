@@ -269,7 +269,7 @@ end
 
 ## 许可
 
-MobileProject 使用 MIT 许可证，详情可见 [LICENSE](LICENSE) 文件。
+MobileProject 使用 MIT 许可证，详情可见 LICENSE 文件。
 
 
 
