@@ -267,7 +267,7 @@ end
 
 如果你在使用过程中有什么不明白或者问题可以wujunyang@126.com联系，当然如果你有时间也可以一起维护
 
-##许可
+## 许可
 
 MobileProject 使用 MIT 许可证，详情可见 [LICENSE](LICENSE) 文件。
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C6DE0AD0AAE9E46CD23548B /* libPods-MobileProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8AD550FC0CDC01CC9FDB28 /* libPods-MobileProjectTests.a */; };
+		340049611EB96EC800581F44 /* MPPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340049601EB96EC800581F44 /* MPPlayerViewController.m */; };
+		340049621EB96EC800581F44 /* MPPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340049601EB96EC800581F44 /* MPPlayerViewController.m */; };
 		340050DE1E5C14AE00044EA1 /* UIApplication+Permissions.m in Sources */ = {isa = PBXBuildFile; fileRef = 340050DD1E5C14AE00044EA1 /* UIApplication+Permissions.m */; };
 		340067401E499C7000DAF86E /* MPAllModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400673F1E499C7000DAF86E /* MPAllModel.m */; };
 		340067411E499C7000DAF86E /* MPAllModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400673F1E499C7000DAF86E /* MPAllModel.m */; };
@@ -1011,6 +1013,8 @@
 
 /* Begin PBXFileReference section */
 		17EE4EC42E510E1E13986DB8 /* libPods-MobileProjectDefault-MobileProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileProjectDefault-MobileProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3400495F1EB96EC800581F44 /* MPPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPPlayerViewController.h; sourceTree = "<group>"; };
+		340049601EB96EC800581F44 /* MPPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPPlayerViewController.m; sourceTree = "<group>"; };
 		340050DC1E5C14AE00044EA1 /* UIApplication+Permissions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Permissions.h"; sourceTree = "<group>"; };
 		340050DD1E5C14AE00044EA1 /* UIApplication+Permissions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Permissions.m"; sourceTree = "<group>"; };
 		3400673E1E499C7000DAF86E /* MPAllModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAllModel.h; sourceTree = "<group>"; };
@@ -2181,6 +2185,8 @@
 				340B25BC1EB831C800A56792 /* MPAudioToolboxViewController.m */,
 				340B25C31EB836F300A56792 /* MPAVFoundationViewController.h */,
 				340B25C41EB836F300A56792 /* MPAVFoundationViewController.m */,
+				3400495F1EB96EC800581F44 /* MPPlayerViewController.h */,
+				340049601EB96EC800581F44 /* MPPlayerViewController.m */,
 			);
 			path = AudioVideoController;
 			sourceTree = "<group>";
@@ -5343,6 +5349,7 @@
 				340242E01D16F98700ECD131 /* MPLoggerFormatter.m in Sources */,
 				34E08B661C3BFB90005C6CA3 /* UIImage+Resize.m in Sources */,
 				34E08B671C3BFB90005C6CA3 /* NSString+RemoveEmoji.m in Sources */,
+				340049621EB96EC800581F44 /* MPPlayerViewController.m in Sources */,
 				3411EF1A1D6FEC2800A6C7F3 /* CalculatorTools.m in Sources */,
 				34E08B681C3BFB90005C6CA3 /* QBAssetsCollectionViewLayout.m in Sources */,
 				34420CBA1D0FAC9E007D1AAC /* AdvertiseHelper.m in Sources */,
@@ -5841,6 +5848,7 @@
 				341DF0651E5547320007907A /* MPLockViewController.m in Sources */,
 				3425826E1D379D2C003906BB /* introductoryPagesHelper.m in Sources */,
 				34F49B2E1D261AE600FA003C /* MPBaseNavigationController.m in Sources */,
+				340049611EB96EC800581F44 /* MPPlayerViewController.m in Sources */,
 				342A8FA21D3F1D8B000C7B98 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				34E891231C3B92AA001327C8 /* MJRefreshNormalHeader.m in Sources */,
 				34EC96241C58A61F00985444 /* UMengSocialLoginViewController.m in Sources */,

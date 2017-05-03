@@ -173,6 +173,8 @@
 	<string>App需要您的同意,才能访问运动与健身</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>MobileProject需要访问您的相册</string>
+    <key>NSAppleMusicUsageDescription</key>
+    <string>App需要您的同意,才能访问媒体资料库</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
