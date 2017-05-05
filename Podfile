@@ -29,6 +29,7 @@ abstract_target 'MobileProjectDefault' do
     pod 'WebViewJavascriptBridge', '~> 5.0'
     pod 'YYText'
     pod 'LazyScroll'
+    pod 'ZFPlayer'
     pod 'MLeaksFinder'  #可以把它放在MobileProject_Local的target中 这样就不会影响到产品环境
     
     target 'MobileProject_Local' do

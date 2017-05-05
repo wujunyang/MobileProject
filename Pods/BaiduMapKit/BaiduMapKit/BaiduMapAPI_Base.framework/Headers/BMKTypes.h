@@ -12,8 +12,9 @@
 #import <UIKit/UIKit.h>
 typedef enum
 {
-    BMK_COORDTYPE_GPS = 0, ///GPS设备采集的原始GPS坐标
-    BMK_COORDTYPE_COMMON,  ///google地图、soso地图、aliyun地图、mapabc地图和amap地图所用坐标
+    BMK_COORDTYPE_GPS = 0, ///GPS设备采集的原始GPS坐标（WGS-84）
+    BMK_COORDTYPE_COMMON,  ///GCJ坐标，google地图、soso地图、aliyun地图、mapabc地图和amap地图所用坐标
+    BMK_COORDTYPE_BD09LL,    ///bd09ll 百度经纬度坐标
 } BMK_COORD_TYPE;
 enum {
     BMKMapTypeNone       = 0,               ///< 空白地图

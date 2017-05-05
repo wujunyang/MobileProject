@@ -337,7 +337,6 @@
 		34E08A621C3BFB90005C6CA3 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8932E1C3B9A03001327C8 /* UIView+Toast.m */; };
 		34E08A631C3BFB90005C6CA3 /* NSInvocation+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891B91C3B9A03001327C8 /* NSInvocation+Block.m */; };
 		34E08A641C3BFB90005C6CA3 /* NSData+Gzip.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8917F1C3B9A03001327C8 /* NSData+Gzip.m */; };
-		34E08A651C3BFB90005C6CA3 /* UIView+FDCollapsibleConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8931C1C3B9A03001327C8 /* UIView+FDCollapsibleConstraints.m */; };
 		34E08A661C3BFB90005C6CA3 /* NSMutableURLRequest+Upload.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8921B1C3B9A03001327C8 /* NSMutableURLRequest+Upload.m */; };
 		34E08A671C3BFB90005C6CA3 /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894AE1C3BA300001327C8 /* JDStatusBarView.m */; };
 		34E08A6A1C3BFB90005C6CA3 /* UIScrollView+Pages.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892E61C3B9A03001327C8 /* UIScrollView+Pages.m */; };
@@ -815,7 +814,6 @@
 		34E894221C3B9A03001327C8 /* UIView+CustomBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893161C3B9A03001327C8 /* UIView+CustomBorder.m */; };
 		34E894231C3B9A03001327C8 /* UIView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893181C3B9A03001327C8 /* UIView+Debug.m */; };
 		34E894241C3B9A03001327C8 /* UIView+draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8931A1C3B9A03001327C8 /* UIView+draggable.m */; };
-		34E894251C3B9A03001327C8 /* UIView+FDCollapsibleConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8931C1C3B9A03001327C8 /* UIView+FDCollapsibleConstraints.m */; };
 		34E894261C3B9A03001327C8 /* UIView+Find.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8931E1C3B9A03001327C8 /* UIView+Find.m */; };
 		34E894271C3B9A03001327C8 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893201C3B9A03001327C8 /* UIView+Frame.m */; };
 		34E894281C3B9A03001327C8 /* UIView+GestureCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893221C3B9A03001327C8 /* UIView+GestureCallback.m */; };
@@ -879,6 +877,16 @@
 		34E9D84C1C59DB8800E98C2A /* BaiDuRouteAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D84A1C59DB8800E98C2A /* BaiDuRouteAnnotation.m */; };
 		34E9D84F1C59DD2800E98C2A /* BaiDuCoordinateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D84E1C59DD2800E98C2A /* BaiDuCoordinateModel.m */; };
 		34E9D8501C59DD2800E98C2A /* BaiDuCoordinateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E9D84E1C59DD2800E98C2A /* BaiDuCoordinateModel.m */; };
+		34EA324E1EB9BF8D00FA120A /* MPZFPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EA324D1EB9BF8D00FA120A /* MPZFPlayerViewController.m */; };
+		34EA324F1EB9BF8D00FA120A /* MPZFPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EA324D1EB9BF8D00FA120A /* MPZFPlayerViewController.m */; };
+		34EA32521EB9C35400FA120A /* MPVideoResolutionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EA32511EB9C35400FA120A /* MPVideoResolutionModel.m */; };
+		34EA32531EB9C35400FA120A /* MPVideoResolutionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EA32511EB9C35400FA120A /* MPVideoResolutionModel.m */; };
+		34EA32561EB9C36D00FA120A /* MPVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EA32551EB9C36D00FA120A /* MPVideoModel.m */; };
+		34EA32571EB9C36D00FA120A /* MPVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EA32551EB9C36D00FA120A /* MPVideoModel.m */; };
+		34EA32591EB9C3BD00FA120A /* videoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 34EA32581EB9C3BD00FA120A /* videoData.json */; };
+		34EA325A1EB9C3BD00FA120A /* videoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 34EA32581EB9C3BD00FA120A /* videoData.json */; };
+		34EA325D1EB9C44800FA120A /* MPPlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EA325C1EB9C44800FA120A /* MPPlayerCell.m */; };
+		34EA325E1EB9C44800FA120A /* MPPlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EA325C1EB9C44800FA120A /* MPPlayerCell.m */; };
 		34EC806C1C472BF100C7E40A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC806B1C472BF100C7E40A /* HomeViewController.m */; };
 		34EC806D1C472BF100C7E40A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC806B1C472BF100C7E40A /* HomeViewController.m */; };
 		34EC80721C472E2100C7E40A /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EC80711C472E2100C7E40A /* UIPlaceHolderTextView.m */; };
@@ -1746,8 +1754,6 @@
 		34E893181C3B9A03001327C8 /* UIView+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Debug.m"; sourceTree = "<group>"; };
 		34E893191C3B9A03001327C8 /* UIView+draggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+draggable.h"; sourceTree = "<group>"; };
 		34E8931A1C3B9A03001327C8 /* UIView+draggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+draggable.m"; sourceTree = "<group>"; };
-		34E8931B1C3B9A03001327C8 /* UIView+FDCollapsibleConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FDCollapsibleConstraints.h"; sourceTree = "<group>"; };
-		34E8931C1C3B9A03001327C8 /* UIView+FDCollapsibleConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FDCollapsibleConstraints.m"; sourceTree = "<group>"; };
 		34E8931D1C3B9A03001327C8 /* UIView+Find.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Find.h"; sourceTree = "<group>"; };
 		34E8931E1C3B9A03001327C8 /* UIView+Find.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Find.m"; sourceTree = "<group>"; };
 		34E8931F1C3B9A03001327C8 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -1862,6 +1868,15 @@
 		34E9D84A1C59DB8800E98C2A /* BaiDuRouteAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiDuRouteAnnotation.m; sourceTree = "<group>"; };
 		34E9D84D1C59DD2800E98C2A /* BaiDuCoordinateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiDuCoordinateModel.h; sourceTree = "<group>"; };
 		34E9D84E1C59DD2800E98C2A /* BaiDuCoordinateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiDuCoordinateModel.m; sourceTree = "<group>"; };
+		34EA324C1EB9BF8D00FA120A /* MPZFPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPZFPlayerViewController.h; sourceTree = "<group>"; };
+		34EA324D1EB9BF8D00FA120A /* MPZFPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPZFPlayerViewController.m; sourceTree = "<group>"; };
+		34EA32501EB9C35400FA120A /* MPVideoResolutionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPVideoResolutionModel.h; sourceTree = "<group>"; };
+		34EA32511EB9C35400FA120A /* MPVideoResolutionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPVideoResolutionModel.m; sourceTree = "<group>"; };
+		34EA32541EB9C36D00FA120A /* MPVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPVideoModel.h; sourceTree = "<group>"; };
+		34EA32551EB9C36D00FA120A /* MPVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPVideoModel.m; sourceTree = "<group>"; };
+		34EA32581EB9C3BD00FA120A /* videoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videoData.json; sourceTree = "<group>"; };
+		34EA325B1EB9C44800FA120A /* MPPlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPPlayerCell.h; sourceTree = "<group>"; };
+		34EA325C1EB9C44800FA120A /* MPPlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPPlayerCell.m; sourceTree = "<group>"; };
 		34EC806A1C472BF100C7E40A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		34EC806B1C472BF100C7E40A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		34EC80701C472E2100C7E40A /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
@@ -2187,6 +2202,8 @@
 				340B25C41EB836F300A56792 /* MPAVFoundationViewController.m */,
 				3400495F1EB96EC800581F44 /* MPPlayerViewController.h */,
 				340049601EB96EC800581F44 /* MPPlayerViewController.m */,
+				34EA324C1EB9BF8D00FA120A /* MPZFPlayerViewController.h */,
+				34EA324D1EB9BF8D00FA120A /* MPZFPlayerViewController.m */,
 			);
 			path = AudioVideoController;
 			sourceTree = "<group>";
@@ -4047,8 +4064,6 @@
 				34E893181C3B9A03001327C8 /* UIView+Debug.m */,
 				34E893191C3B9A03001327C8 /* UIView+draggable.h */,
 				34E8931A1C3B9A03001327C8 /* UIView+draggable.m */,
-				34E8931B1C3B9A03001327C8 /* UIView+FDCollapsibleConstraints.h */,
-				34E8931C1C3B9A03001327C8 /* UIView+FDCollapsibleConstraints.m */,
 				34E8931D1C3B9A03001327C8 /* UIView+Find.h */,
 				34E8931E1C3B9A03001327C8 /* UIView+Find.m */,
 				34E8931F1C3B9A03001327C8 /* UIView+Frame.h */,
@@ -4320,6 +4335,7 @@
 		34EC961A1C58A52100985444 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				34EA32581EB9C3BD00FA120A /* videoData.json */,
 				342202441D62BB1D003F81B2 /* team_dictionary.plist */,
 				34FAEFC01E5AD83400CED341 /* MPEventCalendar.h */,
 				34FAEFC11E5AD83400CED341 /* MPEventCalendar.m */,
@@ -4417,6 +4433,10 @@
 				348D00151DA888D600B890F4 /* MPJavaScriptModel.m */,
 				3400673E1E499C7000DAF86E /* MPAllModel.h */,
 				3400673F1E499C7000DAF86E /* MPAllModel.m */,
+				34EA32501EB9C35400FA120A /* MPVideoResolutionModel.h */,
+				34EA32511EB9C35400FA120A /* MPVideoResolutionModel.m */,
+				34EA32541EB9C36D00FA120A /* MPVideoModel.h */,
+				34EA32551EB9C36D00FA120A /* MPVideoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4433,6 +4453,8 @@
 				3461BD0B1DD5C4FE00F8FC14 /* MPMasonryView.m */,
 				34300A4A1E30840E000C1FA5 /* MPNavView.h */,
 				34300A4B1E30840E000C1FA5 /* MPNavView.m */,
+				34EA325B1EB9C44800FA120A /* MPPlayerCell.h */,
+				34EA325C1EB9C44800FA120A /* MPPlayerCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4751,6 +4773,7 @@
 				340B25C21EB8341000A56792 /* videoRing.caf in Resources */,
 				340BCD461D0F01B80093CC7D /* Placeholder in Resources */,
 				348D001D1DA88D5000B890F4 /* test1.html in Resources */,
+				34EA325A1EB9C3BD00FA120A /* videoData.json in Resources */,
 				346BBF621D50C5300048DB05 /* blankpage_button_reload@2x.png in Resources */,
 				34013B5C1D51C7E40051000F /* addressData.plist in Resources */,
 				341DF0511E5543AF0007907A /* Placeholder in Resources */,
@@ -4806,6 +4829,7 @@
 				341DF04D1E5543A70007907A /* Placeholder in Resources */,
 				340BCD641D0F03930093CC7D /* Placeholder in Resources */,
 				3425825E1D3734C4003906BB /* blankpage_image_loadFail@2x.png in Resources */,
+				34EA32591EB9C3BD00FA120A /* videoData.json in Resources */,
 				340BCD451D0F01B80093CC7D /* Placeholder in Resources */,
 				342582611D3734C4003906BB /* blankpage_image_Sleep@3x.png in Resources */,
 				34E891251C3B92AA001327C8 /* MJRefresh.bundle in Resources */,
@@ -4999,7 +5023,6 @@
 				34E08A631C3BFB90005C6CA3 /* NSInvocation+Block.m in Sources */,
 				341DF05A1E5546410007907A /* MPThreadViewController.m in Sources */,
 				34E08A641C3BFB90005C6CA3 /* NSData+Gzip.m in Sources */,
-				34E08A651C3BFB90005C6CA3 /* UIView+FDCollapsibleConstraints.m in Sources */,
 				341DF0481E5541C70007907A /* MPViewControllerLifeCycle.m in Sources */,
 				34E08A661C3BFB90005C6CA3 /* NSMutableURLRequest+Upload.m in Sources */,
 				34E08A671C3BFB90005C6CA3 /* JDStatusBarView.m in Sources */,
@@ -5007,6 +5030,7 @@
 				34E08A6A1C3BFB90005C6CA3 /* UIScrollView+Pages.m in Sources */,
 				34E08A6B1C3BFB90005C6CA3 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				3411EF191D6FEC2300A6C7F3 /* CaptureManager.m in Sources */,
+				34EA32571EB9C36D00FA120A /* MPVideoModel.m in Sources */,
 				340B25BE1EB831C800A56792 /* MPAudioToolboxViewController.m in Sources */,
 				342A8FA91D3F1D8B000C7B98 /* UINavigationController+StackManager.m in Sources */,
 				34683B141D4EEA0D0041F8A0 /* MPReduceTimeCell.m in Sources */,
@@ -5029,6 +5053,7 @@
 				341DF0401E5541B20007907A /* UIButton+MPHock.m in Sources */,
 				34EC963B1C58C7A400985444 /* LoggerDetailViewController.m in Sources */,
 				34E08A7A1C3BFB90005C6CA3 /* UILabel+ESAdjustableLabel.m in Sources */,
+				34EA32531EB9C35400FA120A /* MPVideoResolutionModel.m in Sources */,
 				3404A48F1E5EB0BF002673F9 /* MPEmployee.m in Sources */,
 				34E08A7B1C3BFB90005C6CA3 /* UITextField+History.m in Sources */,
 				34E08A7C1C3BFB90005C6CA3 /* UIImage+animatedGIF.m in Sources */,
@@ -5338,6 +5363,7 @@
 				34E08B5B1C3BFB90005C6CA3 /* GVUserDefaults+BBProperties.m in Sources */,
 				34E08B5C1C3BFB90005C6CA3 /* NSNotificationCenter+MainThread.m in Sources */,
 				34E08B5D1C3BFB90005C6CA3 /* UIImage+GIF.m in Sources */,
+				34EA325E1EB9C44800FA120A /* MPPlayerCell.m in Sources */,
 				34F497271E837AFF00663245 /* MPFDWithBarViewController.m in Sources */,
 				34E08B5F1C3BFB90005C6CA3 /* NSArray+SafeAccess.m in Sources */,
 				34E08B611C3BFB90005C6CA3 /* UIResponder+Chain.m in Sources */,
@@ -5377,6 +5403,7 @@
 				340199F91D6561C3001C97E9 /* GCDTimer.m in Sources */,
 				34E08B771C3BFB90005C6CA3 /* CAShapeLayer+UIBezierPath.m in Sources */,
 				3411EEF51D6FEA3900A6C7F3 /* FaceRecognitionController.m in Sources */,
+				34EA324F1EB9BF8D00FA120A /* MPZFPlayerViewController.m in Sources */,
 				340BCD691D0F04DB0093CC7D /* imageCompressHelper.m in Sources */,
 				34E08B791C3BFB90005C6CA3 /* MJRefreshNormalHeader.m in Sources */,
 				3411EF1D1D6FEC3300A6C7F3 /* UIImage+Extensions.m in Sources */,
@@ -5451,7 +5478,6 @@
 				340C85351E723C1B00B59C2E /* MPMSSqlDataBase.m in Sources */,
 				34E893721C3B9A03001327C8 /* NSData+Gzip.m in Sources */,
 				3411EF141D6FEC1A00A6C7F3 /* UIImage+compress.m in Sources */,
-				34E894251C3B9A03001327C8 /* UIView+FDCollapsibleConstraints.m in Sources */,
 				34E893B71C3B9A03001327C8 /* NSMutableURLRequest+Upload.m in Sources */,
 				34E894BA1C3BA300001327C8 /* JDStatusBarView.m in Sources */,
 				34E8940E1C3B9A03001327C8 /* UIScrollView+Pages.m in Sources */,
@@ -5510,6 +5536,7 @@
 				341CA90F1D3097AF008B85D3 /* MBProgressHUD+MP.m in Sources */,
 				34E893761C3B9A03001327C8 /* NSDate+CupertinoYankee.m in Sources */,
 				3452EB8B1D1A8BF00001732E /* AppDelegate.m in Sources */,
+				34EA324E1EB9BF8D00FA120A /* MPZFPlayerViewController.m in Sources */,
 				34E894301C3B9A03001327C8 /* UIView+Visuals.m in Sources */,
 				34E893B91C3B9A03001327C8 /* NSUserDefaults+iCloudSync.m in Sources */,
 				3425826A1D379743003906BB /* introductoryPagesView.m in Sources */,
@@ -5741,6 +5768,7 @@
 				340B25B91EB82FE100A56792 /* MPAudioVideoViewController.m in Sources */,
 				34E893BE1C3B9A03001327C8 /* CAAnimation+Blocks.m in Sources */,
 				34E8942A1C3B9A03001327C8 /* UIView+Recursion.m in Sources */,
+				34EA32521EB9C35400FA120A /* MPVideoResolutionModel.m in Sources */,
 				34F497321E83842700663245 /* MPFDWithBarChildViewController.m in Sources */,
 				340BCD1B1D0EFF3B0093CC7D /* MPRequstFailedHelper.m in Sources */,
 				342A8FAC1D3F1ED1000C7B98 /* MPQRCodeViewController.m in Sources */,
@@ -5783,6 +5811,7 @@
 				34E894241C3B9A03001327C8 /* UIView+draggable.m in Sources */,
 				34E893D61C3B9A03001327C8 /* UIColor+Gradient.m in Sources */,
 				34E8941B1C3B9A03001327C8 /* UITextField+Shake.m in Sources */,
+				34EA32561EB9C36D00FA120A /* MPVideoModel.m in Sources */,
 				34E8938A1C3B9A03001327C8 /* NSInvocation+Bb.m in Sources */,
 				341C07D51D41A27E00FF905C /* BaseRequestService.m in Sources */,
 				34E8941F1C3B9A03001327C8 /* UIView+Animation.m in Sources */,
@@ -5802,6 +5831,7 @@
 				34E893851C3B9A03001327C8 /* NSException+Trace.m in Sources */,
 				3403B0BE1D367954007CD7EF /* UITextField+Extension.m in Sources */,
 				3411EF151D6FEC1A00A6C7F3 /* UIImage+Extensions.m in Sources */,
+				34EA325D1EB9C44800FA120A /* MPPlayerCell.m in Sources */,
 				34E893FB1C3B9A03001327C8 /* UILabel+SuggestSize.m in Sources */,
 				34FFA1F21D49128100A7C342 /* NSString+Additions.m in Sources */,
 				34E8937F1C3B9A03001327C8 /* NSDictionary+Block.m in Sources */,

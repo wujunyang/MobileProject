@@ -15,7 +15,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - BaiduMapKit (3.2.1)
+  - BaiduMapKit (3.3.0)
   - CocoaLumberjack (2.0.3):
     - CocoaLumberjack/Default (= 2.0.3)
     - CocoaLumberjack/Extensions (= 2.0.3)
@@ -36,7 +36,7 @@ PODS:
     - SQLCipher
   - FMDB/standard (2.5):
     - FMDB/common
-  - GTSDK (1.6.2.0)
+  - GTSDK (1.6.3.0)
   - IQKeyboardManager (3.3.7)
   - JSONModel (1.0.2)
   - JSPatch (1.1.3):
@@ -46,7 +46,7 @@ PODS:
   - LazyScroll (0.0.2)
   - LBXScan (1.1.1):
     - ZXingObjC (~> 3.0)
-  - LKDBHelper (2.4.1):
+  - LKDBHelper (2.4.2):
     - FMDB
   - M13ProgressSuite (1.2.9)
   - Masonry (0.6.4)
@@ -83,6 +83,8 @@ PODS:
     - XAspect/Macros
   - XAspect/Macros (1.0.5)
   - YYText (1.0.7)
+  - ZFPlayer (2.1.3):
+    - Masonry
   - ZXingObjC (3.1.0):
     - ZXingObjC/All (= 3.1.0)
   - ZXingObjC/All (3.1.0)
@@ -117,25 +119,26 @@ DEPENDENCIES:
   - WebViewJavascriptBridge (~> 5.0)
   - XAspect
   - YYText
+  - ZFPlayer
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  BaiduMapKit: 9c748785aa3dddfc41dcb70c14b21ce32f680930
+  BaiduMapKit: 6517f84bdca032170ee9da39985bb64eba8ed900
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
   CYLTabBarController: 2de9a4c26f50d33574398becf8e7b0aaed794240
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
   FLEX: 27b768fcae23a313a1eb115076d429180ca9b472
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
-  GTSDK: 6089897a86579d4a7d66eb4245f2c8639c2e5e8f
+  GTSDK: 2969a96c0fc55421033f8131952d78d612fcdef4
   IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
   JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
   JSPatch: 02cfed591cb907bbfe80a346666e5a35fc2d349d
   Kiwi: f038a6c61f7a9e4d7766bff5717aa3b3fdb75f55
   LazyScroll: 614022689b8e3b93c7bbe268c1a47b76e4265941
   LBXScan: dfb4d8ae8e4cff2aa0c9e1771e43954dce1469a9
-  LKDBHelper: 531581fa6a7d0f14236cc028ce0d277bca73436a
+  LKDBHelper: ab67373b32f47463bf5f838d730f225824f4492a
   M13ProgressSuite: ea9f7263e73e9215e6849dfa54e29ee0ad6a145c
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
@@ -150,8 +153,9 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: a00b2d61252aec5207e3263d46fd0fd3cfaf7895
   XAspect: db50bf487f92dbb8557a7a5365556966c8493af8
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  ZFPlayer: 8dc82b4508fbba4ee59d0304c52e30f8b3390244
   ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
 
-PODFILE CHECKSUM: b38f7c940c2b7de95645303d5bcb5490813d0448
+PODFILE CHECKSUM: 38be615afe76df2b435ec7bc4c2247beb673bde5
 
 COCOAPODS: 1.2.0.beta.1
