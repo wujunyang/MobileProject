@@ -330,6 +330,8 @@
 		34B8DAFC1E82A29B009649A5 /* MPChildBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8DAFA1E82A29B009649A5 /* MPChildBlockViewController.m */; };
 		34B8DAFF1E82A5ED009649A5 /* MPModelBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8DAFE1E82A5ED009649A5 /* MPModelBlockViewController.m */; };
 		34B8DB001E82A5ED009649A5 /* MPModelBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8DAFE1E82A5ED009649A5 /* MPModelBlockViewController.m */; };
+		34C089681EC1AAAF004A6B03 /* MPVideoClipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C089671EC1AAAF004A6B03 /* MPVideoClipViewController.m */; };
+		34C089691EC1AAAF004A6B03 /* MPVideoClipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C089671EC1AAAF004A6B03 /* MPVideoClipViewController.m */; };
 		34E08A551C3BE80F005C6CA3 /* GVUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E08A541C3BE80F005C6CA3 /* GVUserDefaults.m */; };
 		34E08A591C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E08A581C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.m */; };
 		34E08A5D1C3BEEF2005C6CA3 /* MyFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E08A5C1C3BEEF2005C6CA3 /* MyFileLogger.m */; };
@@ -1321,6 +1323,8 @@
 		34B8DAFA1E82A29B009649A5 /* MPChildBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPChildBlockViewController.m; sourceTree = "<group>"; };
 		34B8DAFD1E82A5ED009649A5 /* MPModelBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPModelBlockViewController.h; sourceTree = "<group>"; };
 		34B8DAFE1E82A5ED009649A5 /* MPModelBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPModelBlockViewController.m; sourceTree = "<group>"; };
+		34C089661EC1AAAF004A6B03 /* MPVideoClipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPVideoClipViewController.h; sourceTree = "<group>"; };
+		34C089671EC1AAAF004A6B03 /* MPVideoClipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPVideoClipViewController.m; sourceTree = "<group>"; };
 		34E08A531C3BE80F005C6CA3 /* GVUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVUserDefaults.h; sourceTree = "<group>"; };
 		34E08A541C3BE80F005C6CA3 /* GVUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVUserDefaults.m; sourceTree = "<group>"; };
 		34E08A571C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults+BBProperties.h"; sourceTree = "<group>"; };
@@ -2204,6 +2208,8 @@
 				340049601EB96EC800581F44 /* MPPlayerViewController.m */,
 				34EA324C1EB9BF8D00FA120A /* MPZFPlayerViewController.h */,
 				34EA324D1EB9BF8D00FA120A /* MPZFPlayerViewController.m */,
+				34C089661EC1AAAF004A6B03 /* MPVideoClipViewController.h */,
+				34C089671EC1AAAF004A6B03 /* MPVideoClipViewController.m */,
 			);
 			path = AudioVideoController;
 			sourceTree = "<group>";
@@ -5100,6 +5106,7 @@
 				34F72FDE1E8C9613002B0709 /* YTKRequest.m in Sources */,
 				342A8FAD1D3F1ED1000C7B98 /* MPQRCodeViewController.m in Sources */,
 				34E08A9C1C3BFB90005C6CA3 /* UIViewController+BackButtonTouched.m in Sources */,
+				34C089691EC1AAAF004A6B03 /* MPVideoClipViewController.m in Sources */,
 				34E08A9E1C3BFB90005C6CA3 /* UIImageView+BetterFace.m in Sources */,
 				341DF05E1E55464E0007907A /* MPGCDViewController.m in Sources */,
 				3404A4971E5EB317002673F9 /* MPEmployeeDesigner.m in Sources */,
@@ -5618,6 +5625,7 @@
 				34E893B01C3B9A03001327C8 /* NSString+UUID.m in Sources */,
 				34E8936A1C3B9A03001327C8 /* CLLocation+CH1903.m in Sources */,
 				34E893BB1C3B9A03001327C8 /* MKMapView+BetterMaps.m in Sources */,
+				34C089681EC1AAAF004A6B03 /* MPVideoClipViewController.m in Sources */,
 				340EB2FE1D66A92A00BF9222 /* MPIconAndTitleCell.m in Sources */,
 				34E894271C3B9A03001327C8 /* UIView+Frame.m in Sources */,
 				34E893801C3B9A03001327C8 /* NSDictionary+JSONString.m in Sources */,
