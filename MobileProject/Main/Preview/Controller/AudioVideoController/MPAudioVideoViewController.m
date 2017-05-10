@@ -10,6 +10,7 @@
 #import "MPAudioToolboxViewController.h"
 #import "MPAVFoundationViewController.h"
 #import "MPPlayerViewController.h"
+#import "MPVideoClipViewController.h"
 
 @interface MPAudioVideoViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) NSArray             *dataArray;
@@ -24,7 +25,7 @@
     self.view.backgroundColor=[UIColor whiteColor];
     
     if (!self.dataArray) {
-        self.dataArray=@[@"音效(AudioToolbox)运用",@"音乐AVFoundation运用",@"音乐库中的音乐MPMediaPickerController"];
+        self.dataArray=@[@"音效(AudioToolbox)运用",@"音乐AVFoundation运用",@"音乐库中的音乐MPMediaPickerController",@"视频剪编效果的实例"];
     }
     
     //初始化表格
@@ -89,6 +90,12 @@
         case 2:
         {
             MPPlayerViewController *vc=[[MPPlayerViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 3:
+        {
+            MPVideoClipViewController *vc=[[MPVideoClipViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

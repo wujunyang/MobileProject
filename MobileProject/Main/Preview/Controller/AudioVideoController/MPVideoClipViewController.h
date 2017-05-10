@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface MPVideoClipViewController : UIViewController
+@interface MPVideoClipViewController : BaseViewController
 
 @end
