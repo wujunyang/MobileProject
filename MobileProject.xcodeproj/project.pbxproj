@@ -71,6 +71,8 @@
 		340793851EA9A49400AF184A /* MPContextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 340793841EA9A49400AF184A /* MPContextView.m */; };
 		340793861EA9A49400AF184A /* MPContextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 340793841EA9A49400AF184A /* MPContextView.m */; };
 		3408A9FB1E00D7DF001A0EC8 /* XAspect-GeTuiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3452EBAD1D1A919D0001732E /* XAspect-GeTuiAppDelegate.m */; };
+		340A46C11EC5AE0B00D578E7 /* MPWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A46C01EC5AE0B00D578E7 /* MPWeakTimer.m */; };
+		340A46C21EC5AE0B00D578E7 /* MPWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A46C01EC5AE0B00D578E7 /* MPWeakTimer.m */; };
 		340AED351DF45A59007B5CEE /* MPKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */; };
 		340AED361DF45A59007B5CEE /* MPKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */; };
 		340B25B91EB82FE100A56792 /* MPAudioVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340B25B81EB82FE100A56792 /* MPAudioVideoViewController.m */; };
@@ -320,6 +322,10 @@
 		348D001A1DA88A7600B890F4 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 348D00181DA88A7600B890F4 /* test.html */; };
 		348D001C1DA88D5000B890F4 /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = 348D001B1DA88D5000B890F4 /* test1.html */; };
 		348D001D1DA88D5000B890F4 /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = 348D001B1DA88D5000B890F4 /* test1.html */; };
+		3497FEF41EC2DC950073CE26 /* MPClearCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3497FEF31EC2DC950073CE26 /* MPClearCacheTool.m */; };
+		3497FEF51EC2DC950073CE26 /* MPClearCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3497FEF31EC2DC950073CE26 /* MPClearCacheTool.m */; };
+		3497FEF81EC2DF9A0073CE26 /* MPvideoRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3497FEF71EC2DF9A0073CE26 /* MPvideoRecordingViewController.m */; };
+		3497FEF91EC2DF9A0073CE26 /* MPvideoRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3497FEF71EC2DF9A0073CE26 /* MPvideoRecordingViewController.m */; };
 		349F81D01D45E571002104E3 /* MPUploadImageItemService.m in Sources */ = {isa = PBXBuildFile; fileRef = 349F81CF1D45E571002104E3 /* MPUploadImageItemService.m */; };
 		349F81D11D45E571002104E3 /* MPUploadImageItemService.m in Sources */ = {isa = PBXBuildFile; fileRef = 349F81CF1D45E571002104E3 /* MPUploadImageItemService.m */; };
 		34A14EE31D40974100ACCCCC /* MPUploadImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A14EE21D40974100ACCCCC /* MPUploadImageService.m */; };
@@ -1089,6 +1095,8 @@
 		340793841EA9A49400AF184A /* MPContextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPContextView.m; sourceTree = "<group>"; };
 		3408A9F91E00D7A0001A0EC8 /* MobileProject_Local.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MobileProject_Local.entitlements; sourceTree = SOURCE_ROOT; };
 		3408A9FA1E00D7A3001A0EC8 /* MobileProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MobileProject.entitlements; sourceTree = "<group>"; };
+		340A46BF1EC5AE0B00D578E7 /* MPWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPWeakTimer.h; sourceTree = "<group>"; };
+		340A46C01EC5AE0B00D578E7 /* MPWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPWeakTimer.m; sourceTree = "<group>"; };
 		340AED331DF45A59007B5CEE /* MPKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKeyboardViewController.h; sourceTree = "<group>"; };
 		340AED341DF45A59007B5CEE /* MPKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKeyboardViewController.m; sourceTree = "<group>"; };
 		340B25B71EB82FE100A56792 /* MPAudioVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAudioVideoViewController.h; sourceTree = "<group>"; };
@@ -1312,6 +1320,10 @@
 		348D00151DA888D600B890F4 /* MPJavaScriptModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPJavaScriptModel.m; sourceTree = "<group>"; };
 		348D00181DA88A7600B890F4 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		348D001B1DA88D5000B890F4 /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
+		3497FEF21EC2DC950073CE26 /* MPClearCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPClearCacheTool.h; sourceTree = "<group>"; };
+		3497FEF31EC2DC950073CE26 /* MPClearCacheTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPClearCacheTool.m; sourceTree = "<group>"; };
+		3497FEF61EC2DF9A0073CE26 /* MPvideoRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPvideoRecordingViewController.h; sourceTree = "<group>"; };
+		3497FEF71EC2DF9A0073CE26 /* MPvideoRecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPvideoRecordingViewController.m; sourceTree = "<group>"; };
 		349F81CE1D45E571002104E3 /* MPUploadImageItemService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUploadImageItemService.h; sourceTree = "<group>"; };
 		349F81CF1D45E571002104E3 /* MPUploadImageItemService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPUploadImageItemService.m; sourceTree = "<group>"; };
 		34A14EE11D40974100ACCCCC /* MPUploadImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUploadImageService.h; sourceTree = "<group>"; };
@@ -2210,6 +2222,8 @@
 				34EA324D1EB9BF8D00FA120A /* MPZFPlayerViewController.m */,
 				34C089661EC1AAAF004A6B03 /* MPVideoClipViewController.h */,
 				34C089671EC1AAAF004A6B03 /* MPVideoClipViewController.m */,
+				3497FEF61EC2DF9A0073CE26 /* MPvideoRecordingViewController.h */,
+				3497FEF71EC2DF9A0073CE26 /* MPvideoRecordingViewController.m */,
 			);
 			path = AudioVideoController;
 			sourceTree = "<group>";
@@ -2327,6 +2341,8 @@
 				340D87AC1D3F7FC4003D9C88 /* cameraHelper.m */,
 				3412E3081EB07EEC00D8DFA1 /* MPMemoryHelper.h */,
 				3412E3091EB07EEC00D8DFA1 /* MPMemoryHelper.m */,
+				340A46BF1EC5AE0B00D578E7 /* MPWeakTimer.h */,
+				340A46C01EC5AE0B00D578E7 /* MPWeakTimer.m */,
 			);
 			path = OtherHelper;
 			sourceTree = "<group>";
@@ -4345,6 +4361,8 @@
 				342202441D62BB1D003F81B2 /* team_dictionary.plist */,
 				34FAEFC01E5AD83400CED341 /* MPEventCalendar.h */,
 				34FAEFC11E5AD83400CED341 /* MPEventCalendar.m */,
+				3497FEF21EC2DC950073CE26 /* MPClearCacheTool.h */,
+				3497FEF31EC2DC950073CE26 /* MPClearCacheTool.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -5033,6 +5051,7 @@
 				34E08A661C3BFB90005C6CA3 /* NSMutableURLRequest+Upload.m in Sources */,
 				34E08A671C3BFB90005C6CA3 /* JDStatusBarView.m in Sources */,
 				34153A561D76D5EA00D94F4A /* UIView+RoundedCorner.m in Sources */,
+				340A46C21EC5AE0B00D578E7 /* MPWeakTimer.m in Sources */,
 				34E08A6A1C3BFB90005C6CA3 /* UIScrollView+Pages.m in Sources */,
 				34E08A6B1C3BFB90005C6CA3 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				3411EF191D6FEC2300A6C7F3 /* CaptureManager.m in Sources */,
@@ -5301,6 +5320,7 @@
 				341C07D61D41A27E00FF905C /* BaseRequestService.m in Sources */,
 				34FFA1F31D49128100A7C342 /* NSString+Additions.m in Sources */,
 				34E08B2B1C3BFB90005C6CA3 /* UIWebView+Canvas.m in Sources */,
+				3497FEF91EC2DF9A0073CE26 /* MPvideoRecordingViewController.m in Sources */,
 				34E08B2C1C3BFB90005C6CA3 /* LogInViewController.m in Sources */,
 				34E08B2D1C3BFB90005C6CA3 /* QBImagePickerController.m in Sources */,
 				34E08B2E1C3BFB90005C6CA3 /* QBAssetsCollectionVideoIndicatorView.m in Sources */,
@@ -5355,6 +5375,7 @@
 				3425826B1D379743003906BB /* introductoryPagesView.m in Sources */,
 				34E08B511C3BFB90005C6CA3 /* NSURLConnection+SelfSigned.m in Sources */,
 				34E08B521C3BFB90005C6CA3 /* UIView+Shake.m in Sources */,
+				3497FEF51EC2DC950073CE26 /* MPClearCacheTool.m in Sources */,
 				342202431D62A8A1003F81B2 /* MPExpandHideViewController.m in Sources */,
 				34E08B531C3BFB90005C6CA3 /* UIApplication+KeyboardFrame.m in Sources */,
 				34E08B541C3BFB90005C6CA3 /* UIViewController+MJPopupViewController.m in Sources */,
@@ -5503,6 +5524,7 @@
 				34E891271C3B92AA001327C8 /* UIScrollView+MJExtension.m in Sources */,
 				34E893C71C3B9A03001327C8 /* UIApplication+NetworkActivityIndicator.m in Sources */,
 				34683B0F1D4EE93C0041F8A0 /* MPReduceTimeViewController.m in Sources */,
+				3497FEF41EC2DC950073CE26 /* MPClearCacheTool.m in Sources */,
 				341C07E41D421F2800FF905C /* MPImageProgressCollectionCell.m in Sources */,
 				3400E4B31D35E1500056B673 /* JRSwizzle.m in Sources */,
 				34E893B21C3B9A03001327C8 /* NSTimer+Addition.m in Sources */,
@@ -5823,6 +5845,7 @@
 				34E8938A1C3B9A03001327C8 /* NSInvocation+Bb.m in Sources */,
 				341C07D51D41A27E00FF905C /* BaseRequestService.m in Sources */,
 				34E8941F1C3B9A03001327C8 /* UIView+Animation.m in Sources */,
+				340A46C11EC5AE0B00D578E7 /* MPWeakTimer.m in Sources */,
 				34E9D8471C59C33B00E98C2A /* BaiDuMapViewController.mm in Sources */,
 				34E893B61C3B9A03001327C8 /* NSURLConnection+SelfSigned.m in Sources */,
 				34FFF4EF1E4BF8C200875ED9 /* MPTableSDWebImageViewController.m in Sources */,
@@ -5837,6 +5860,7 @@
 				342A8FA61D3F1D8B000C7B98 /* UINavigationController+KeyboardFix.m in Sources */,
 				340384801D47567900E4A496 /* MPAdaptationCell.m in Sources */,
 				34E893851C3B9A03001327C8 /* NSException+Trace.m in Sources */,
+				3497FEF81EC2DF9A0073CE26 /* MPvideoRecordingViewController.m in Sources */,
 				3403B0BE1D367954007CD7EF /* UITextField+Extension.m in Sources */,
 				3411EF151D6FEC1A00A6C7F3 /* UIImage+Extensions.m in Sources */,
 				34EA325D1EB9C44800FA120A /* MPPlayerCell.m in Sources */,
