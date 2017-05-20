@@ -7,6 +7,8 @@
 //
 
 #import "MPUIBezierPathViewController.h"
+#import "MPBarChartView.h"
+#import "MPPieChartView.h"
 
 @interface MPUIBezierPathViewController ()<CAAnimationDelegate>
 {
@@ -43,6 +45,17 @@
     [self Bubble];
     
     [self circleAnimation];
+    
+    
+    //画柱状图
+    MPBarChartView *barChartView=[[MPBarChartView alloc]initWithFrame:CGRectMake(20, 440, 200, 150)];
+    barChartView.backgroundColor=[UIColor grayColor];
+    [self.view addSubview:barChartView];
+    
+    //画饼图
+    MPPieChartView *pieChartView=[[MPPieChartView alloc]initWithFrame:CGRectMake(230, 350, 150, 150)];
+    pieChartView.backgroundColor=[UIColor whiteColor];
+    [self.view addSubview:pieChartView];
 }
 
 

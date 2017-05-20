@@ -24,6 +24,7 @@
     [self masonryLabelHeightLayout];
     
     [self masonryPriorityLayout];
+    
     [self masonryPriorityOtherLayout];
     
     [self masonryEdgesCenterLayout];
@@ -31,7 +32,6 @@
     [self masonryScrollViewLayout];
     
     [self masonryUpdateLayout];
-    
 }
 
 - (void)didReceiveMemoryWarning {

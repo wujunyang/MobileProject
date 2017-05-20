@@ -338,6 +338,10 @@
 		34B8DB001E82A5ED009649A5 /* MPModelBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8DAFE1E82A5ED009649A5 /* MPModelBlockViewController.m */; };
 		34C089681EC1AAAF004A6B03 /* MPVideoClipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C089671EC1AAAF004A6B03 /* MPVideoClipViewController.m */; };
 		34C089691EC1AAAF004A6B03 /* MPVideoClipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C089671EC1AAAF004A6B03 /* MPVideoClipViewController.m */; };
+		34D5A1771ECE8B4E0093FAE0 /* MPBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5A1761ECE8B4E0093FAE0 /* MPBarChartView.m */; };
+		34D5A1781ECE8B4E0093FAE0 /* MPBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5A1761ECE8B4E0093FAE0 /* MPBarChartView.m */; };
+		34D5A17B1ECE8FD70093FAE0 /* MPPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5A17A1ECE8FD60093FAE0 /* MPPieChartView.m */; };
+		34D5A17C1ECE8FD70093FAE0 /* MPPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5A17A1ECE8FD60093FAE0 /* MPPieChartView.m */; };
 		34E08A551C3BE80F005C6CA3 /* GVUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E08A541C3BE80F005C6CA3 /* GVUserDefaults.m */; };
 		34E08A591C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E08A581C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.m */; };
 		34E08A5D1C3BEEF2005C6CA3 /* MyFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E08A5C1C3BEEF2005C6CA3 /* MyFileLogger.m */; };
@@ -1337,6 +1341,10 @@
 		34B8DAFE1E82A5ED009649A5 /* MPModelBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPModelBlockViewController.m; sourceTree = "<group>"; };
 		34C089661EC1AAAF004A6B03 /* MPVideoClipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPVideoClipViewController.h; sourceTree = "<group>"; };
 		34C089671EC1AAAF004A6B03 /* MPVideoClipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPVideoClipViewController.m; sourceTree = "<group>"; };
+		34D5A1751ECE8B4E0093FAE0 /* MPBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBarChartView.h; sourceTree = "<group>"; };
+		34D5A1761ECE8B4E0093FAE0 /* MPBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBarChartView.m; sourceTree = "<group>"; };
+		34D5A1791ECE8FD60093FAE0 /* MPPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPPieChartView.h; sourceTree = "<group>"; };
+		34D5A17A1ECE8FD60093FAE0 /* MPPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPPieChartView.m; sourceTree = "<group>"; };
 		34E08A531C3BE80F005C6CA3 /* GVUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVUserDefaults.h; sourceTree = "<group>"; };
 		34E08A541C3BE80F005C6CA3 /* GVUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVUserDefaults.m; sourceTree = "<group>"; };
 		34E08A571C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults+BBProperties.h"; sourceTree = "<group>"; };
@@ -2542,6 +2550,10 @@
 				34FB62C21E8DFFBC0036AA3D /* MPPhotoCell+ConfigureForPhoto.m */,
 				340793831EA9A49400AF184A /* MPContextView.h */,
 				340793841EA9A49400AF184A /* MPContextView.m */,
+				34D5A1751ECE8B4E0093FAE0 /* MPBarChartView.h */,
+				34D5A1761ECE8B4E0093FAE0 /* MPBarChartView.m */,
+				34D5A1791ECE8FD60093FAE0 /* MPPieChartView.h */,
+				34D5A17A1ECE8FD60093FAE0 /* MPPieChartView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5349,11 +5361,13 @@
 				34E08B3C1C3BFB90005C6CA3 /* NSNumber+CGFloat.m in Sources */,
 				34FA475F1D50961600D5B729 /* MPChildrenViewController.m in Sources */,
 				34FE0B921D50FF7C00991E65 /* MPHideNavigationViewController.m in Sources */,
+				34D5A1781ECE8B4E0093FAE0 /* MPBarChartView.m in Sources */,
 				34E08B3F1C3BFB90005C6CA3 /* NSString+Ruby.m in Sources */,
 				34E08B401C3BFB90005C6CA3 /* UISplitViewController+QuickAccess.m in Sources */,
 				34F72FD91E8C95FF002B0709 /* YTKChainRequest.m in Sources */,
 				34E08B421C3BFB90005C6CA3 /* NSURL+QueryDictionary.m in Sources */,
 				3400E4C41D35EEF00056B673 /* MPLKDBHelper.m in Sources */,
+				34D5A17C1ECE8FD70093FAE0 /* MPPieChartView.m in Sources */,
 				34E08B431C3BFB90005C6CA3 /* MJRefreshBackStateFooter.m in Sources */,
 				34E08B441C3BFB90005C6CA3 /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				34799A641CD34C5A003518C5 /* UIDevice+FCUUID.m in Sources */,
@@ -5733,6 +5747,7 @@
 				34E893A41C3B9A03001327C8 /* NSString+Encrypt.m in Sources */,
 				3411EF101D6FEC1A00A6C7F3 /* CanvasView.m in Sources */,
 				34E893A61C3B9A03001327C8 /* NSString+Matcher.m in Sources */,
+				34D5A1771ECE8B4E0093FAE0 /* MPBarChartView.m in Sources */,
 				34F72FD31E8C95E9002B0709 /* YTKNetworkConfig.m in Sources */,
 				340C853D1E724BCF00B59C2E /* MPProtocolOptionalViewController.m in Sources */,
 				34E894111C3B9A03001327C8 /* UITableView+iOS7Style.m in Sources */,
@@ -5823,6 +5838,7 @@
 				340793811EA9A3BE00AF184A /* MPCGContextViewController.m in Sources */,
 				34E894101C3B9A03001327C8 /* UISplitViewController+QuickAccess.m in Sources */,
 				340D87991D3F6310003D9C88 /* dateTimeHelper.m in Sources */,
+				34D5A17B1ECE8FD70093FAE0 /* MPPieChartView.m in Sources */,
 				34E893B51C3B9A03001327C8 /* NSURL+QueryDictionary.m in Sources */,
 				34E891211C3B92AA001327C8 /* MJRefreshBackStateFooter.m in Sources */,
 				34E893691C3B9A03001327C8 /* NSPersistentStoreCoordinator+Custom.m in Sources */,
