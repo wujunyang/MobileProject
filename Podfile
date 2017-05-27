@@ -31,7 +31,7 @@ abstract_target 'MobileProjectDefault' do
     pod 'LazyScroll'
     pod 'ZFPlayer'
     pod 'TZImagePickerController'  #照片选择浏览器
-
+    pod 'UITableView+FDTemplateLayoutCell'
     
     target 'MobileProject_Local' do
         pod 'MLeaksFinder'  #可以把它放在MobileProject_Local的target中 这样就不会影响到产品环境

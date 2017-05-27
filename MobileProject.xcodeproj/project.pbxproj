@@ -352,7 +352,6 @@
 		34E08A661C3BFB90005C6CA3 /* NSMutableURLRequest+Upload.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8921B1C3B9A03001327C8 /* NSMutableURLRequest+Upload.m */; };
 		34E08A671C3BFB90005C6CA3 /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894AE1C3BA300001327C8 /* JDStatusBarView.m */; };
 		34E08A6A1C3BFB90005C6CA3 /* UIScrollView+Pages.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892E61C3B9A03001327C8 /* UIScrollView+Pages.m */; };
-		34E08A6B1C3BFB90005C6CA3 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892F81C3B9A03001327C8 /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		34E08A6C1C3BFB90005C6CA3 /* NSObject+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891CE1C3B9A03001327C8 /* NSObject+AssociatedObject.m */; };
 		34E08A6D1C3BFB90005C6CA3 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893301C3B9A03001327C8 /* UIView+ViewController.m */; };
 		34E08A6E1C3BFB90005C6CA3 /* UIViewController+BackButtonItemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893371C3B9A03001327C8 /* UIViewController+BackButtonItemTitle.m */; };
@@ -377,7 +376,6 @@
 		34E08A851C3BFB90005C6CA3 /* NSDate+CupertinoYankee.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891881C3B9A03001327C8 /* NSDate+CupertinoYankee.m */; };
 		34E08A871C3BFB90005C6CA3 /* UIView+Visuals.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893321C3B9A03001327C8 /* UIView+Visuals.m */; };
 		34E08A881C3BFB90005C6CA3 /* NSUserDefaults+iCloudSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892201C3B9A03001327C8 /* NSUserDefaults+iCloudSync.m */; };
-		34E08A891C3BFB90005C6CA3 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892F41C3B9A03001327C8 /* UITableView+FDKeyedHeightCache.m */; };
 		34E08A8A1C3BFB90005C6CA3 /* NSNumber+Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891C71C3B9A03001327C8 /* NSNumber+Round.m */; };
 		34E08A8B1C3BFB90005C6CA3 /* UIBezierPath+BasicShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8924F1C3B9A03001327C8 /* UIBezierPath+BasicShapes.m */; };
 		34E08A8C1C3BFB90005C6CA3 /* NSString+MIME.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891F71C3B9A03001327C8 /* NSString+MIME.m */; };
@@ -507,7 +505,6 @@
 		34E08B1E1C3BFB90005C6CA3 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891941C3B9A03001327C8 /* NSDate+Utilities.m */; };
 		34E08B1F1C3BFB90005C6CA3 /* QBAssetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E894791C3B9FC1001327C8 /* QBAssetsCollectionViewCell.m */; };
 		34E08B201C3BFB90005C6CA3 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891F31C3B9A03001327C8 /* NSString+Hash.m */; };
-		34E08B211C3BFB90005C6CA3 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892F61C3B9A03001327C8 /* UITableView+FDTemplateLayoutCell.m */; };
 		34E08B221C3BFB90005C6CA3 /* NSData+SDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891831C3B9A03001327C8 /* NSData+SDDataCache.m */; };
 		34E08B231C3BFB90005C6CA3 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8929B1C3B9A03001327C8 /* UIImage+PDF.m */; };
 		34E08B241C3BFB90005C6CA3 /* NSData+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891811C3B9A03001327C8 /* NSData+Hash.m */; };
@@ -565,7 +562,6 @@
 		34E08B661C3BFB90005C6CA3 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8929F1C3B9A03001327C8 /* UIImage+Resize.m */; };
 		34E08B671C3BFB90005C6CA3 /* NSString+RemoveEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891FD1C3B9A03001327C8 /* NSString+RemoveEmoji.m */; };
 		34E08B681C3BFB90005C6CA3 /* QBAssetsCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8947D1C3B9FC1001327C8 /* QBAssetsCollectionViewLayout.m */; };
-		34E08B6A1C3BFB90005C6CA3 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892F21C3B9A03001327C8 /* UITableView+FDIndexPathHeightCache.m */; };
 		34E08B6B1C3BFB90005C6CA3 /* UIResponder+UIAdapt.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892DA1C3B9A03001327C8 /* UIResponder+UIAdapt.m */; };
 		34E08B6C1C3BFB90005C6CA3 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E8918E1C3B9A03001327C8 /* NSDate+InternetDateTime.m */; };
 		34E08B6D1C3BFB90005C6CA3 /* NSManagedObject+DictionaryExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E891581C3B9A02001327C8 /* NSManagedObject+DictionaryExport.m */; };
@@ -807,10 +803,6 @@
 		34E8940F1C3B9A03001327C8 /* UISearchBar+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892E91C3B9A03001327C8 /* UISearchBar+Blocks.m */; };
 		34E894101C3B9A03001327C8 /* UISplitViewController+QuickAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892EC1C3B9A03001327C8 /* UISplitViewController+QuickAccess.m */; };
 		34E894111C3B9A03001327C8 /* UITableView+iOS7Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892EF1C3B9A03001327C8 /* UITableView+iOS7Style.m */; };
-		34E894121C3B9A03001327C8 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892F21C3B9A03001327C8 /* UITableView+FDIndexPathHeightCache.m */; };
-		34E894131C3B9A03001327C8 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892F41C3B9A03001327C8 /* UITableView+FDKeyedHeightCache.m */; };
-		34E894141C3B9A03001327C8 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892F61C3B9A03001327C8 /* UITableView+FDTemplateLayoutCell.m */; };
-		34E894151C3B9A03001327C8 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892F81C3B9A03001327C8 /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		34E894161C3B9A03001327C8 /* UITableViewCell+NIB.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892FB1C3B9A03001327C8 /* UITableViewCell+NIB.m */; };
 		34E894171C3B9A03001327C8 /* UITableViewCell+TS_delaysContentTouches.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E892FD1C3B9A03001327C8 /* UITableViewCell+TS_delaysContentTouches.m */; };
 		34E894181C3B9A03001327C8 /* UITextField+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E893001C3B9A03001327C8 /* UITextField+Blocks.m */; };
@@ -1740,14 +1732,6 @@
 		34E892EC1C3B9A03001327C8 /* UISplitViewController+QuickAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+QuickAccess.m"; sourceTree = "<group>"; };
 		34E892EE1C3B9A03001327C8 /* UITableView+iOS7Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+iOS7Style.h"; sourceTree = "<group>"; };
 		34E892EF1C3B9A03001327C8 /* UITableView+iOS7Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+iOS7Style.m"; sourceTree = "<group>"; };
-		34E892F11C3B9A03001327C8 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
-		34E892F21C3B9A03001327C8 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
-		34E892F31C3B9A03001327C8 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
-		34E892F41C3B9A03001327C8 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
-		34E892F51C3B9A03001327C8 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
-		34E892F61C3B9A03001327C8 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
-		34E892F71C3B9A03001327C8 /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
-		34E892F81C3B9A03001327C8 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
 		34E892FA1C3B9A03001327C8 /* UITableViewCell+NIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+NIB.h"; sourceTree = "<group>"; };
 		34E892FB1C3B9A03001327C8 /* UITableViewCell+NIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+NIB.m"; sourceTree = "<group>"; };
 		34E892FC1C3B9A03001327C8 /* UITableViewCell+TS_delaysContentTouches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+TS_delaysContentTouches.h"; sourceTree = "<group>"; };
@@ -4022,24 +4006,8 @@
 			children = (
 				34E892EE1C3B9A03001327C8 /* UITableView+iOS7Style.h */,
 				34E892EF1C3B9A03001327C8 /* UITableView+iOS7Style.m */,
-				34E892F01C3B9A03001327C8 /* UITableView-FDTemplateLayoutCell */,
 			);
 			path = UITableView;
-			sourceTree = "<group>";
-		};
-		34E892F01C3B9A03001327C8 /* UITableView-FDTemplateLayoutCell */ = {
-			isa = PBXGroup;
-			children = (
-				34E892F11C3B9A03001327C8 /* UITableView+FDIndexPathHeightCache.h */,
-				34E892F21C3B9A03001327C8 /* UITableView+FDIndexPathHeightCache.m */,
-				34E892F31C3B9A03001327C8 /* UITableView+FDKeyedHeightCache.h */,
-				34E892F41C3B9A03001327C8 /* UITableView+FDKeyedHeightCache.m */,
-				34E892F51C3B9A03001327C8 /* UITableView+FDTemplateLayoutCell.h */,
-				34E892F61C3B9A03001327C8 /* UITableView+FDTemplateLayoutCell.m */,
-				34E892F71C3B9A03001327C8 /* UITableView+FDTemplateLayoutCellDebug.h */,
-				34E892F81C3B9A03001327C8 /* UITableView+FDTemplateLayoutCellDebug.m */,
-			);
-			path = "UITableView-FDTemplateLayoutCell";
 			sourceTree = "<group>";
 		};
 		34E892F91C3B9A03001327C8 /* UITableViewCell */ = {
@@ -5065,7 +5033,6 @@
 				34153A561D76D5EA00D94F4A /* UIView+RoundedCorner.m in Sources */,
 				340A46C21EC5AE0B00D578E7 /* MPWeakTimer.m in Sources */,
 				34E08A6A1C3BFB90005C6CA3 /* UIScrollView+Pages.m in Sources */,
-				34E08A6B1C3BFB90005C6CA3 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				3411EF191D6FEC2300A6C7F3 /* CaptureManager.m in Sources */,
 				34EA32571EB9C36D00FA120A /* MPVideoModel.m in Sources */,
 				340B25BE1EB831C800A56792 /* MPAudioToolboxViewController.m in Sources */,
@@ -5109,7 +5076,6 @@
 				34E08A851C3BFB90005C6CA3 /* NSDate+CupertinoYankee.m in Sources */,
 				34E08A871C3BFB90005C6CA3 /* UIView+Visuals.m in Sources */,
 				34E08A881C3BFB90005C6CA3 /* NSUserDefaults+iCloudSync.m in Sources */,
-				34E08A891C3BFB90005C6CA3 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				340793861EA9A49400AF184A /* MPContextView.m in Sources */,
 				34E08A8A1C3BFB90005C6CA3 /* NSNumber+Round.m in Sources */,
 				34E08A8B1C3BFB90005C6CA3 /* UIBezierPath+BasicShapes.m in Sources */,
@@ -5312,7 +5278,6 @@
 				34E08B1E1C3BFB90005C6CA3 /* NSDate+Utilities.m in Sources */,
 				34E08B1F1C3BFB90005C6CA3 /* QBAssetsCollectionViewCell.m in Sources */,
 				34E08B201C3BFB90005C6CA3 /* NSString+Hash.m in Sources */,
-				34E08B211C3BFB90005C6CA3 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				340B25C61EB836F300A56792 /* MPAVFoundationViewController.m in Sources */,
 				34E08B221C3BFB90005C6CA3 /* NSData+SDDataCache.m in Sources */,
 				341094031D0E982100A8D63F /* JSPatchViewController.m in Sources */,
@@ -5424,7 +5389,6 @@
 				34F212FE1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */,
 				3412E3131EB085A800D8DFA1 /* UITextField+JKInputLimit.m in Sources */,
 				34213BE11E2C9B4D0065C675 /* UIImage+OuterCircle.m in Sources */,
-				34E08B6A1C3BFB90005C6CA3 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				34E08B6B1C3BFB90005C6CA3 /* UIResponder+UIAdapt.m in Sources */,
 				3452EBAC1D1A90E00001732E /* XAspect-LogAppDelegate.m in Sources */,
 				34EC96371C58C77400985444 /* LoggerViewController.m in Sources */,
@@ -5524,7 +5488,6 @@
 				34E894BA1C3BA300001327C8 /* JDStatusBarView.m in Sources */,
 				34E8940E1C3B9A03001327C8 /* UIScrollView+Pages.m in Sources */,
 				340199F21D6561B5001C97E9 /* GCDGroup.m in Sources */,
-				34E894151C3B9A03001327C8 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				34E893941C3B9A03001327C8 /* NSObject+AssociatedObject.m in Sources */,
 				34E8942F1C3B9A03001327C8 /* UIView+ViewController.m in Sources */,
 				3400E4C31D35EEF00056B673 /* MPLKDBHelper.m in Sources */,
@@ -5583,7 +5546,6 @@
 				34E894301C3B9A03001327C8 /* UIView+Visuals.m in Sources */,
 				34E893B91C3B9A03001327C8 /* NSUserDefaults+iCloudSync.m in Sources */,
 				3425826A1D379743003906BB /* introductoryPagesView.m in Sources */,
-				34E894131C3B9A03001327C8 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				34E893911C3B9A03001327C8 /* NSNumber+Round.m in Sources */,
 				34E893CA1C3B9A03001327C8 /* UIBezierPath+BasicShapes.m in Sources */,
 				34E893A71C3B9A03001327C8 /* NSString+MIME.m in Sources */,
@@ -5790,7 +5752,6 @@
 				34E8949A1C3B9FC1001327C8 /* QBAssetsCollectionViewCell.m in Sources */,
 				34FA85231E920A9800A61464 /* MPLazyLableViewCustomView.m in Sources */,
 				34E893A51C3B9A03001327C8 /* NSString+Hash.m in Sources */,
-				34E894141C3B9A03001327C8 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				34F497221E83793D00663245 /* MPFDFullscreenPopDemoViewController.m in Sources */,
 				34E893741C3B9A03001327C8 /* NSData+SDDataCache.m in Sources */,
 				34F72FD51E8C95E9002B0709 /* YTKRequest.m in Sources */,
@@ -5905,7 +5866,6 @@
 				3452EBAB1D1A90DD0001732E /* XAspect-LogAppDelegate.m in Sources */,
 				34E8949C1C3B9FC1001327C8 /* QBAssetsCollectionViewLayout.m in Sources */,
 				34F212FD1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */,
-				34E894121C3B9A03001327C8 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				34E894091C3B9A03001327C8 /* UIResponder+UIAdapt.m in Sources */,
 				34EC96361C58C77400985444 /* LoggerViewController.m in Sources */,
 				34FF0E3D1D586F320027EEAE /* YYFPSLabel.m in Sources */,
