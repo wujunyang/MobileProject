@@ -129,6 +129,16 @@
 		340C853E1E724BCF00B59C2E /* MPProtocolOptionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C853C1E724BCF00B59C2E /* MPProtocolOptionalViewController.m */; };
 		340CCCAF1E519F310037BE4D /* MPDragTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340CCCAE1E519F310037BE4D /* MPDragTableViewController.m */; };
 		340CCCB01E519F310037BE4D /* MPDragTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340CCCAE1E519F310037BE4D /* MPDragTableViewController.m */; };
+		340D29301EE12DF200945F13 /* MPTagCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D292F1EE12DF200945F13 /* MPTagCollectionViewFlowLayout.m */; };
+		340D29311EE12DF200945F13 /* MPTagCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D292F1EE12DF200945F13 /* MPTagCollectionViewFlowLayout.m */; };
+		340D29341EE12E6700945F13 /* MPTagCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D29331EE12E6700945F13 /* MPTagCollectionViewCell.m */; };
+		340D29351EE12E6700945F13 /* MPTagCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D29331EE12E6700945F13 /* MPTagCollectionViewCell.m */; };
+		340D29381EE12EC200945F13 /* MPTagAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D29371EE12EC200945F13 /* MPTagAttribute.m */; };
+		340D29391EE12EC200945F13 /* MPTagAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D29371EE12EC200945F13 /* MPTagAttribute.m */; };
+		340D293C1EE12F0A00945F13 /* MPTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D293B1EE12F0A00945F13 /* MPTagsView.m */; };
+		340D293D1EE12F0A00945F13 /* MPTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D293B1EE12F0A00945F13 /* MPTagsView.m */; };
+		340D29401EE1300300945F13 /* MPTagsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D293F1EE1300300945F13 /* MPTagsCell.m */; };
+		340D29411EE1300300945F13 /* MPTagsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D293F1EE1300300945F13 /* MPTagsCell.m */; };
 		340D87951D3F5FD3003D9C88 /* MPImageItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D87941D3F5FD3003D9C88 /* MPImageItemModel.m */; };
 		340D87961D3F5FD3003D9C88 /* MPImageItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D87941D3F5FD3003D9C88 /* MPImageItemModel.m */; };
 		340D87991D3F6310003D9C88 /* dateTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 340D87981D3F6310003D9C88 /* dateTimeHelper.m */; };
@@ -1132,6 +1142,16 @@
 		340C853C1E724BCF00B59C2E /* MPProtocolOptionalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPProtocolOptionalViewController.m; sourceTree = "<group>"; };
 		340CCCAD1E519F310037BE4D /* MPDragTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDragTableViewController.h; sourceTree = "<group>"; };
 		340CCCAE1E519F310037BE4D /* MPDragTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDragTableViewController.m; sourceTree = "<group>"; };
+		340D292E1EE12DF200945F13 /* MPTagCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTagCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		340D292F1EE12DF200945F13 /* MPTagCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTagCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		340D29321EE12E6700945F13 /* MPTagCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTagCollectionViewCell.h; sourceTree = "<group>"; };
+		340D29331EE12E6700945F13 /* MPTagCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTagCollectionViewCell.m; sourceTree = "<group>"; };
+		340D29361EE12EC200945F13 /* MPTagAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTagAttribute.h; sourceTree = "<group>"; };
+		340D29371EE12EC200945F13 /* MPTagAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTagAttribute.m; sourceTree = "<group>"; };
+		340D293A1EE12F0A00945F13 /* MPTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTagsView.h; sourceTree = "<group>"; };
+		340D293B1EE12F0A00945F13 /* MPTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTagsView.m; sourceTree = "<group>"; };
+		340D293E1EE1300300945F13 /* MPTagsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTagsCell.h; sourceTree = "<group>"; };
+		340D293F1EE1300300945F13 /* MPTagsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTagsCell.m; sourceTree = "<group>"; };
 		340D87931D3F5FD3003D9C88 /* MPImageItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPImageItemModel.h; sourceTree = "<group>"; };
 		340D87941D3F5FD3003D9C88 /* MPImageItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPImageItemModel.m; sourceTree = "<group>"; };
 		340D87971D3F6310003D9C88 /* dateTimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dateTimeHelper.h; sourceTree = "<group>"; };
@@ -2137,6 +2157,7 @@
 		340199FA1D65B0A9001C97E9 /* Controls(自定义控件) */ = {
 			isa = PBXGroup;
 			children = (
+				3408F5EA1EE008CA00B8AF57 /* CustomTagView */,
 				340EB2F31D669DBE00BF9222 /* CustomCell */,
 				340199FB1D65B110001C97E9 /* CustomButton */,
 			);
@@ -2197,6 +2218,23 @@
 				3404A4991E5EB32E002673F9 /* MPEmployeeFinance.m */,
 			);
 			path = FactoryPattern;
+			sourceTree = "<group>";
+		};
+		3408F5EA1EE008CA00B8AF57 /* CustomTagView */ = {
+			isa = PBXGroup;
+			children = (
+				340D292E1EE12DF200945F13 /* MPTagCollectionViewFlowLayout.h */,
+				340D292F1EE12DF200945F13 /* MPTagCollectionViewFlowLayout.m */,
+				340D29321EE12E6700945F13 /* MPTagCollectionViewCell.h */,
+				340D29331EE12E6700945F13 /* MPTagCollectionViewCell.m */,
+				340D29361EE12EC200945F13 /* MPTagAttribute.h */,
+				340D29371EE12EC200945F13 /* MPTagAttribute.m */,
+				340D293A1EE12F0A00945F13 /* MPTagsView.h */,
+				340D293B1EE12F0A00945F13 /* MPTagsView.m */,
+				340D293E1EE1300300945F13 /* MPTagsCell.h */,
+				340D293F1EE1300300945F13 /* MPTagsCell.m */,
+			);
+			path = CustomTagView;
 			sourceTree = "<group>";
 		};
 		340B25B61EB82E1800A56792 /* AudioVideoController */ = {
@@ -5095,6 +5133,7 @@
 				34E08A961C3BFB90005C6CA3 /* Reachability.m in Sources */,
 				34E08A971C3BFB90005C6CA3 /* UIControl+ActionBlocks.m in Sources */,
 				341DF03C1E5541B20007907A /* MPRunTimeTest+Other.m in Sources */,
+				340D29351EE12E6700945F13 /* MPTagCollectionViewCell.m in Sources */,
 				34E08A981C3BFB90005C6CA3 /* UIImageView+Letters.m in Sources */,
 				34FFF4F01E4BF8C200875ED9 /* MPTableSDWebImageViewController.m in Sources */,
 				3400E4C01D35EDF50056B673 /* NSObject+PrintSQL.m in Sources */,
@@ -5135,6 +5174,7 @@
 				341DF03E1E5541B20007907A /* UIAlertView+MPBlock.m in Sources */,
 				34E08AB21C3BFB90005C6CA3 /* UIPopoverController+iPhone.m in Sources */,
 				34E08AB31C3BFB90005C6CA3 /* UIImageView+Addition.m in Sources */,
+				340D29411EE1300300945F13 /* MPTagsCell.m in Sources */,
 				34E08AB41C3BFB90005C6CA3 /* UIWebView+Alert.m in Sources */,
 				34FBEBC01E5D763000F545FC /* MPDelegateCodeStandards.m in Sources */,
 				34E08AB51C3BFB90005C6CA3 /* UIBezierPath+SVG.m in Sources */,
@@ -5150,6 +5190,7 @@
 				340D87AE1D3F7FC4003D9C88 /* cameraHelper.m in Sources */,
 				340F88DB1E82077400C20F37 /* MPBlockLoopViewController.m in Sources */,
 				34E08ABC1C3BFB90005C6CA3 /* NSData+Encrypt.m in Sources */,
+				340D29391EE12EC200945F13 /* MPTagAttribute.m in Sources */,
 				34F213071C48DB97003AC13D /* MPUmengHelper.m in Sources */,
 				34E08ABD1C3BFB90005C6CA3 /* UIScrollView+APParallaxHeader.m in Sources */,
 				34E08ABE1C3BFB90005C6CA3 /* NSString+Pinyin.m in Sources */,
@@ -5389,6 +5430,7 @@
 				34F212FE1C48C133003AC13D /* CLLocation+MPLocation.m in Sources */,
 				3412E3131EB085A800D8DFA1 /* UITextField+JKInputLimit.m in Sources */,
 				34213BE11E2C9B4D0065C675 /* UIImage+OuterCircle.m in Sources */,
+				340D29311EE12DF200945F13 /* MPTagCollectionViewFlowLayout.m in Sources */,
 				34E08B6B1C3BFB90005C6CA3 /* UIResponder+UIAdapt.m in Sources */,
 				3452EBAC1D1A90E00001732E /* XAspect-LogAppDelegate.m in Sources */,
 				34EC96371C58C77400985444 /* LoggerViewController.m in Sources */,
@@ -5463,6 +5505,7 @@
 				340674211E2F6207008EF20F /* UIView+Empty.m in Sources */,
 				34E08B8E1C3BFB90005C6CA3 /* UITableViewCell+TS_delaysContentTouches.m in Sources */,
 				34E08B8F1C3BFB90005C6CA3 /* CATransaction+AnimateWithDuration.m in Sources */,
+				340D293D1EE12F0A00945F13 /* MPTagsView.m in Sources */,
 				34E08B901C3BFB90005C6CA3 /* NSNumber+RomanNumerals.m in Sources */,
 				34E08B911C3BFB90005C6CA3 /* UIButton+BackgroundColor.m in Sources */,
 				34E08B921C3BFB90005C6CA3 /* NSString+Base64.m in Sources */,
@@ -5599,6 +5642,7 @@
 				34E894451C3B9A03001327C8 /* WebView+Debug.m in Sources */,
 				34E893E51C3B9A03001327C8 /* UIImage+Blur.m in Sources */,
 				340D87A51D3F7079003D9C88 /* MPImageCollectionCell.m in Sources */,
+				340D29301EE12DF200945F13 /* MPTagCollectionViewFlowLayout.m in Sources */,
 				34E8949F1C3B9FC1001327C8 /* QBImagePickerGroupCell.m in Sources */,
 				34153A531D76D5DE00D94F4A /* UIImage+RoundedCorner.m in Sources */,
 				34E893EE1C3B9A03001327C8 /* UIImage+RemoteSize.m in Sources */,
@@ -5648,6 +5692,7 @@
 				34E893E11C3B9A03001327C8 /* UIFont-TTF.m in Sources */,
 				34799A5F1CD34C5A003518C5 /* FCUUID.m in Sources */,
 				34FA851F1E90C47C00A61464 /* MPLazyImageViewCustomView.m in Sources */,
+				340D293C1EE12F0A00945F13 /* MPTagsView.m in Sources */,
 				3404A48E1E5EB0BF002673F9 /* MPEmployee.m in Sources */,
 				34E8911F1C3B92AA001327C8 /* MJRefreshBackGifFooter.m in Sources */,
 				34E8941E1C3B9A03001327C8 /* UITextView+Select.m in Sources */,
@@ -5704,6 +5749,7 @@
 				34E893681C3B9A03001327C8 /* NSManagedObjectContext+ObjectClear.m in Sources */,
 				340D87A11D3F6E44003D9C88 /* MPUploadImagesViewController.m in Sources */,
 				34E893E91C3B9A03001327C8 /* UIImage+FX.m in Sources */,
+				340D29381EE12EC200945F13 /* MPTagAttribute.m in Sources */,
 				34E893F11C3B9A03001327C8 /* UIImage+Vector.m in Sources */,
 				340D87951D3F5FD3003D9C88 /* MPImageItemModel.m in Sources */,
 				34E893A41C3B9A03001327C8 /* NSString+Encrypt.m in Sources */,
@@ -5755,6 +5801,7 @@
 				34F497221E83793D00663245 /* MPFDFullscreenPopDemoViewController.m in Sources */,
 				34E893741C3B9A03001327C8 /* NSData+SDDataCache.m in Sources */,
 				34F72FD51E8C95E9002B0709 /* YTKRequest.m in Sources */,
+				340D29401EE1300300945F13 /* MPTagsCell.m in Sources */,
 				34E893ED1C3B9A03001327C8 /* UIImage+PDF.m in Sources */,
 				34FF0E381D5835C90027EEAE /* MPYYTextViewController.m in Sources */,
 				34E893731C3B9A03001327C8 /* NSData+Hash.m in Sources */,
@@ -5812,6 +5859,7 @@
 				34E893B11C3B9A03001327C8 /* NSString+XML.m in Sources */,
 				34E893951C3B9A03001327C8 /* NSObject+AutoCoding.m in Sources */,
 				34E893E81C3B9A03001327C8 /* UIImage+FileName.m in Sources */,
+				340D29341EE12E6700945F13 /* MPTagCollectionViewCell.m in Sources */,
 				340EB2FA1D66A24F00BF9222 /* MPMultitextCell.m in Sources */,
 				34E8940A1C3B9A03001327C8 /* UIScreen+Frame.m in Sources */,
 				34AE75F41EB17FBB00948A06 /* MPLocationConverter.m in Sources */,
