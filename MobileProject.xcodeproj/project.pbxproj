@@ -316,6 +316,10 @@
 		346BBF641D50C5350048DB05 /* blankpage_image_loadFail@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3425825A1D3734C4003906BB /* blankpage_image_loadFail@3x.png */; };
 		346BBF651D50C5370048DB05 /* blankpage_image_Sleep@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3425825B1D3734C4003906BB /* blankpage_image_Sleep@2x.png */; };
 		346BBF661D50C5390048DB05 /* blankpage_image_Sleep@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3425825C1D3734C4003906BB /* blankpage_image_Sleep@3x.png */; };
+		3472863D1F38641400D36BF5 /* MPDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3472863C1F38641400D36BF5 /* MPDatePickerView.m */; };
+		3472863E1F38641400D36BF5 /* MPDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3472863C1F38641400D36BF5 /* MPDatePickerView.m */; };
+		347286411F38652500D36BF5 /* MPDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347286401F38652500D36BF5 /* MPDatePickerViewController.m */; };
+		347286421F38652500D36BF5 /* MPDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347286401F38652500D36BF5 /* MPDatePickerViewController.m */; };
 		34799A5F1CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; };
 		34799A601CD34C5A003518C5 /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5A1CD34C5A003518C5 /* FCUUID.m */; };
 		34799A611CD34C5A003518C5 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 34799A5C1CD34C5A003518C5 /* UICKeyChainStore.m */; };
@@ -1323,6 +1327,10 @@
 		34683B211D4F19570041F8A0 /* MPReduceTimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPReduceTimeModel.h; sourceTree = "<group>"; };
 		34683B221D4F19570041F8A0 /* MPReduceTimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPReduceTimeModel.m; sourceTree = "<group>"; };
 		346FEC671D13C91400F4EAB8 /* MBTargetConfigContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBTargetConfigContants.h; sourceTree = "<group>"; };
+		3472863B1F38641400D36BF5 /* MPDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDatePickerView.h; sourceTree = "<group>"; };
+		3472863C1F38641400D36BF5 /* MPDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDatePickerView.m; sourceTree = "<group>"; };
+		3472863F1F38652500D36BF5 /* MPDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDatePickerViewController.h; sourceTree = "<group>"; };
+		347286401F38652500D36BF5 /* MPDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDatePickerViewController.m; sourceTree = "<group>"; };
 		34799A591CD34C5A003518C5 /* FCUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCUUID.h; sourceTree = "<group>"; };
 		34799A5A1CD34C5A003518C5 /* FCUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCUUID.m; sourceTree = "<group>"; };
 		34799A5B1CD34C5A003518C5 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
@@ -4456,6 +4464,8 @@
 				34FAEFBD1E5AD78000CED341 /* MPCalendarViewController.m */,
 				34FA85081E909B9000A61464 /* MPLazyScrollViewController.h */,
 				34FA85091E909B9000A61464 /* MPLazyScrollViewController.m */,
+				3472863F1F38652500D36BF5 /* MPDatePickerViewController.h */,
+				347286401F38652500D36BF5 /* MPDatePickerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4497,6 +4507,8 @@
 				34300A4B1E30840E000C1FA5 /* MPNavView.m */,
 				34EA325B1EB9C44800FA120A /* MPPlayerCell.h */,
 				34EA325C1EB9C44800FA120A /* MPPlayerCell.m */,
+				3472863B1F38641400D36BF5 /* MPDatePickerView.h */,
+				3472863C1F38641400D36BF5 /* MPDatePickerView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5164,6 +5176,7 @@
 				34E08AAB1C3BFB90005C6CA3 /* UIImage+Merge.m in Sources */,
 				341C07DB1D41C6F200FF905C /* MPFileManager.m in Sources */,
 				340384811D47567900E4A496 /* MPAdaptationCell.m in Sources */,
+				347286421F38652500D36BF5 /* MPDatePickerViewController.m in Sources */,
 				34E08AAC1C3BFB90005C6CA3 /* MJRefreshAutoGifFooter.m in Sources */,
 				34E08AAD1C3BFB90005C6CA3 /* UIScrollView+MJRefresh.m in Sources */,
 				341C07DF1D41FD8E00FF905C /* MPUploadWithPropressViewController.m in Sources */,
@@ -5441,6 +5454,7 @@
 				34E08B6F1C3BFB90005C6CA3 /* MJRefreshHeader.m in Sources */,
 				340BCD6A1D0F04DE0093CC7D /* UITapImageView.m in Sources */,
 				34E08B721C3BFB90005C6CA3 /* UIViewController+BlockSegue.m in Sources */,
+				3472863E1F38641400D36BF5 /* MPDatePickerView.m in Sources */,
 				34E08B731C3BFB90005C6CA3 /* MJRefreshBackNormalFooter.m in Sources */,
 				340EB2F71D669E7600BF9222 /* MPTitleAndPromptCell.m in Sources */,
 				34E08B741C3BFB90005C6CA3 /* UIView+Constraints.m in Sources */,
@@ -5579,6 +5593,7 @@
 				342A8F941D3F1BF1000C7B98 /* MPDiscoveryViewController.m in Sources */,
 				34E8941C1C3B9A03001327C8 /* UITextView+PinchZoom.m in Sources */,
 				34E894351C3B9A03001327C8 /* UIViewController+DDPopUpViewController.m in Sources */,
+				347286411F38652500D36BF5 /* MPDatePickerViewController.m in Sources */,
 				341DF03D1E5541B20007907A /* UIAlertView+MPBlock.m in Sources */,
 				34FC67991D5313710049F144 /* WJYAlertInputTextView.m in Sources */,
 				340D87AD1D3F7FC4003D9C88 /* cameraHelper.m in Sources */,
@@ -5896,6 +5911,7 @@
 				34E8937A1C3B9A03001327C8 /* NSDate+Reporting.m in Sources */,
 				342582641D3736DA003906BB /* UIView+EaseBlankPage.m in Sources */,
 				34E08A591C3BEA89005C6CA3 /* GVUserDefaults+BBProperties.m in Sources */,
+				3472863D1F38641400D36BF5 /* MPDatePickerView.m in Sources */,
 				34E8938C1C3B9A03001327C8 /* NSNotificationCenter+MainThread.m in Sources */,
 				340C85391E723E8C00B59C2E /* MPUseProtocolOptional.m in Sources */,
 				34E893EA1C3B9A03001327C8 /* UIImage+GIF.m in Sources */,

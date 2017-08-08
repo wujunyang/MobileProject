@@ -38,6 +38,7 @@
 #import "MPFDFullscreenPopDemoViewController.h"
 #import "MPLazyScrollViewController.h"
 #import "MPAudioVideoViewController.h"
+#import "MPDatePickerViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 
