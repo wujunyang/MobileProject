@@ -273,10 +273,10 @@ MobileProject 使用 MIT 许可证，详情可见 LICENSE 文件。
 
 # 订阅号
 
-最近有个妹子弄的一个关于扩大眼界跟内含的订阅号，每天都会更新一些深度内容，在这里如果你感兴趣也可以关注一下，当然可以关注后输入：github  会有我的微信号，如果有问题你也可以在那找到我；当然不感兴趣无视此信息；
+最近有个妹子弄的一个关于扩大眼界跟内含的订阅号，每天都会更新一些深度内容，在这里如果你感兴趣也可以关注一下(嘿对美女跟知识感兴趣)，当然可以关注后输入：github  会有我的微信号，如果有问题你也可以在那找到我；当然不感兴趣无视此信息；
 
 
-<img src="https://github.com/wujunyang/jiaModuleDemo/blob/master/jiaModuleDemo/ProjectImage/dy.jpg” width=200px height=200px></img>
+<img src="https://github.com/wujunyang/jiaModuleDemo/blob/master/jiaModuleDemo/ProjectImage/dy.jpg" width=200px height=200px></img>
 
 
 
