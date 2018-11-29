@@ -39,6 +39,7 @@
 #import "MPLazyScrollViewController.h"
 #import "MPAudioVideoViewController.h"
 #import "MPDatePickerViewController.h"
+#import "MPScrollViewViewController.h"
 
 @interface MPMoreViewController : BaseViewController
 

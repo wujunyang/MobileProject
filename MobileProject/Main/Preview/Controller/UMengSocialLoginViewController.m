@@ -92,30 +92,6 @@
         //weiboBtn.hidden=YES;
         NSLog(@"新浪客户端没有安装，要把页面的新浪隐藏起来，否则会被拒绝上架");
     }
-    
-    
-    UIImage *wxImage=[UIImage imageNamed:@"dy"];
-    
-    self.wxImageView=[[UIImageView alloc]init];
-    self.wxImageView.image=wxImage;
-    [self.view addSubview:self.wxImageView];
-    
-    [self.wxImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(-60);
-        make.centerX.mas_equalTo(0);
-        make.size.mas_equalTo(wxImage.size);
-    }];
-    
-    self.wxLabel=[UILabel new];
-    self.wxLabel.font=CHINESE_SYSTEM(13);
-    self.wxLabel.textColor=[UIColor greenColor];
-    self.wxLabel.text=@"假如成功运可以帮忙关注一下下面这个订阅号，内幕分享";
-    self.wxLabel.textAlignment=NSTextAlignmentCenter;
-    [self.view addSubview:self.wxLabel];
-    [self.wxLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(self.wxImageView.top).offset(-10);
-        make.centerX.mas_equalTo(0);
-    }];
 }
 
 #pragma mark 第三方登录

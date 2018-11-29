@@ -7,7 +7,7 @@
 //
 
 #import "MPTheoryViewController.h"
-
+#import "MPBinaryTreeViewController.h"
 #import "MPEmployee.h"
 
 @interface MPTheoryViewController ()<UITableViewDataSource, UITableViewDelegate>
@@ -26,7 +26,7 @@
     self.navigationItem.title=@"基础知识点";
     
     if (!self.dataArray) {
-        self.dataArray=@[@"viewController生命周期",@"运行时RunTime知识运用",@"多线程知识运用",@"Protocol实现类",@"Block内存释放知识点",@"TableViewDataSource提取",@"CADisplayLink知识运用",@"CAShapeLayer与UIBezierPath知识运用",@"CGContext知识点运用"];
+        self.dataArray=@[@"viewController生命周期",@"运行时RunTime知识运用",@"多线程知识运用",@"Protocol实现类",@"Block内存释放知识点",@"TableViewDataSource提取",@"CADisplayLink知识运用",@"CAShapeLayer与UIBezierPath知识运用",@"CGContext知识点运用",@"二叉树相关内容",@"常见算法知识"];
     }
     
     //初始化表格
@@ -139,6 +139,18 @@
         case 8:
         {
             MPCGContextViewController *vc=[[MPCGContextViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 9:
+        {
+            MPBinaryTreeViewController *vc=[[MPBinaryTreeViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 10:
+        {
+            MPBasicAlgorithmViewController *vc=[[MPBasicAlgorithmViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

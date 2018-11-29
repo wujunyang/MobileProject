@@ -20,6 +20,7 @@
 #import "MPCADisplayLinkViewController.h"
 #import "MPUIBezierPathViewController.h"
 #import "MPCGContextViewController.h"
+#import "MPBasicAlgorithmViewController.h"
 
 @interface MPTheoryViewController : BaseViewController<MPCodeStandardsDelegate>
 

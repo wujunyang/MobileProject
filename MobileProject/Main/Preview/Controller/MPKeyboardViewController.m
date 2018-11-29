@@ -105,6 +105,12 @@ static const CGFloat topViewHeigt=100;
 }
 
 
+- (void)dealloc {
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    // 注意：记得要移除
+    [center removeObserver:self];
+}
+
 #pragma mark 重写BaseViewController设置内容
 
 //设置导航栏背景色
