@@ -28,6 +28,9 @@
     NSArray *testArray = @[@"2",@3,@[@"re",@"fd"],@[@"rr",@"ll",@[@[@8,@"fd"],@"jj"]]];
     NSMutableArray *resultArray = [self outputArray:testArray];
     NSLog(@"递归：%@",resultArray);
+    
+    //字符反转
+    [self stringInversion];
 }
 
 
@@ -96,5 +99,30 @@
     }
     return _tmpArray;
 }
+
+#pragma mark -- 字符串反转
+
+-(void)stringInversion
+{
+    //字符反转
+    NSString *name=@"wujun";
+    NSMutableString *reverseString = [NSMutableString string];
+    for (NSInteger i = name.length -1 ; i >= 0; i--) {
+        unichar c = [name characterAtIndex:i];
+        NSString *s = [NSString stringWithCharacters:&c length:1];
+        [reverseString appendString:s];
+    }
+    NSLog(@"当前的值%@",reverseString);
+    
+    //单词反转
+    NSString *text=@"hellow wujun";
+    NSArray *strArray = [text componentsSeparatedByString:@" "];
+    NSMutableArray *mArray = [NSMutableArray array];
+    for (NSInteger i = strArray.count - 1;i >= 0; i--) {
+        [mArray addObject:strArray[i]];
+    }
+    NSLog(@"当前的值%@",[mArray componentsJoinedByString:@" "]);
+}
+
 
 @end
